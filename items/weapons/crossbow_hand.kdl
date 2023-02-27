@@ -1,0 +1,13 @@
+item name="Crossbow (Hand)" weight=3 {
+	worth 75 (Currency)Gold
+	kind Equipment {
+		weapon Martial class="CrossbowHand" {
+			damage (Damage)1d6 Piercing
+			property Light
+			range 30 120 {
+				ammunition
+				loading
+			}
+		}
+	}
+}

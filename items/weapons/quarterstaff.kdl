@@ -1,0 +1,9 @@
+item name="Quarterstaff" weight=4 {
+	worth 2 (Currency)Silver
+	kind Equipment {
+		weapon Simple class="Quarterstaff" {
+			damage (Damage)1d6 Bludgeoning
+			property Versatile (Damage)1d8
+		}
+	}
+}

@@ -1,0 +1,11 @@
+item name="Leather Armor" weight=10 {
+	description "The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials."
+	worth 10 (Currency)Gold
+	kind Equipment {
+		armor Light {
+			formula base=11 {
+				bonus (Ability)Dexterity
+			}
+		}
+	}
+}

@@ -1,0 +1,14 @@
+item name="Crossbow (Heavy)" weight=18 {
+	worth 50 (Currency)Gold
+	kind Equipment {
+		weapon Martial class="CrossbowHeavy" {
+			damage (Damage)1d10 Piercing
+			property Heavy
+			property TwoHanded
+			range 100 400 {
+				ammunition
+				loading
+			}
+		}
+	}
+}

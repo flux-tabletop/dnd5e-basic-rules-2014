@@ -1,0 +1,9 @@
+item name="Warhammer" weight=2 {
+	worth 15 (Currency)Gold
+	kind Equipment {
+		weapon Martial class="Warhammer" {
+			damage (Damage)1d8 Bludgeoning
+			property Versatile (Damage)1d10
+		}
+	}
+}

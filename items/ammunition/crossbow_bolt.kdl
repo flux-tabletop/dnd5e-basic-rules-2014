@@ -1,0 +1,4 @@
+item name="Crossbow Bolt" weight=0.075 {
+	worth 5 (Currency)Copper
+	kind Simple count=1
+}

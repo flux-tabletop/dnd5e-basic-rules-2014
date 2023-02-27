@@ -1,0 +1,13 @@
+item name="Crossbow (Light)" weight=5 {
+	worth 25 (Currency)Gold
+	kind Equipment {
+		weapon Simple class="CrossbowLight" {
+			damage (Damage)1d8 Piercing
+			property TwoHanded
+			range 80 320 {
+				ammunition
+				loading
+			}
+		}
+	}
+}

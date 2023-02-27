@@ -1,0 +1,12 @@
+item name="Padded Leather Armor" weight=8 {
+	description "Padded armor consists of quilted layers of cloth and batting."
+	worth 5 (Currency)Gold
+	kind Equipment {
+		armor Light {
+			formula base=11 {
+				bonus (Ability)Dexterity
+			}
+		}
+		modifier add_skill_modifier (Skill)Stealth (Modifier)Disadvantage
+	}
+}

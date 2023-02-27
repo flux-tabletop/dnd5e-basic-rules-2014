@@ -1,0 +1,11 @@
+item name="Glaive" weight=6 {
+	worth 20 (Currency)Gold
+	kind Equipment {
+		weapon Martial class="Glaive" {
+			damage (Damage)1d10 Slashing
+			property Heavy
+			property Reach
+			property TwoHanded
+		}
+	}
+}

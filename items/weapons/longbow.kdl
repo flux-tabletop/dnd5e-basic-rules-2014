@@ -1,0 +1,13 @@
+item name="Longbow" weight=2 {
+	worth 50 (Currency)Gold
+	kind Equipment {
+		weapon Martial class="Longbow" {
+			damage (Damage)1d8 Piercing
+			property Heavy
+			property TwoHanded
+			range 150 600 {
+				ammunition
+			}
+		}
+	}
+}

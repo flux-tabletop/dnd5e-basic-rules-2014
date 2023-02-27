@@ -1,0 +1,8 @@
+item name="War Pick" weight=2 {
+	worth 5 (Currency)Gold
+	kind Equipment {
+		weapon Martial class="WarPick" {
+			damage (Damage)1d8 Piercing
+		}
+	}
+}

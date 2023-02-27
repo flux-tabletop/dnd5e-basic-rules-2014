@@ -1,0 +1,10 @@
+item name="Greataxe" weight=7 {
+	worth 30 (Currency)Gold
+	kind Equipment {
+		weapon Martial class="Greataxe" {
+			damage (Damage)1d12 Slashing
+			property Heavy
+			property TwoHanded
+		}
+	}
+}

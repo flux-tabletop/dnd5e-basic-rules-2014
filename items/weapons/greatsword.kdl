@@ -1,0 +1,10 @@
+item name="Greatsword" weight=6 {
+	worth 50 (Currency)Gold
+	kind Equipment {
+		weapon Martial class="Greatsword" {
+			damage (Damage)2d6 Slashing
+			property Heavy
+			property TwoHanded
+		}
+	}
+}

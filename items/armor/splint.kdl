@@ -1,0 +1,11 @@
+item name="Splint Armor" weight=60 {
+	description "This armor is made of narrow vertical strips of metal riveted to a backing of leather that is worn over cloth padding. Flexible chain mail protects the joints."
+	worth 200 (Currency)Gold
+	kind Equipment {
+		armor Heavy {
+			formula base=17
+			min-strength 15
+		}
+		modifier add_skill_modifier (Skill)Stealth (Modifier)Disadvantage
+	}
+}

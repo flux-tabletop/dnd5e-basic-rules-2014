@@ -1,0 +1,10 @@
+item name="Light Hammer" weight=2 {
+	worth 2 (Currency)Gold
+	kind Equipment {
+		weapon Simple class="Javelin" {
+			damage (Damage)1d4 Bludgeoning
+			property Light
+			property Thrown 20 60
+		}
+	}
+}

@@ -1,0 +1,11 @@
+item name="Breastplate" weight=20 {
+	description "This armor consists of a fitted metal chest piece worn with supple leather. Although it leaves the legs and arms relatively unprotected, this armor provides good protection for the wearer's vital organs while leaving the wearer relatively unencumbered."
+	worth 400 (Currency)Gold
+	kind Equipment {
+		armor Medium {
+			formula base=14 {
+				bonus (Ability)Dexterity max=2
+			}
+		}
+	}
+}

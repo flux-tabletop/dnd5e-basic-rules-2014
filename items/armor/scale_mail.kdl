@@ -1,0 +1,12 @@
+item name="Scale Mail" weight=45 {
+	description "This armor consists of a coat and leggings (and perhaps a separate skirt) of leather covered with overlapping pieces of metal, much like the scales of a fish. The suit includes gauntlets."
+	worth 50 (Currency)Gold
+	kind Equipment {
+		armor Medium {
+			formula base=14 {
+				bonus (Ability)Dexterity max=2
+			}
+		}
+		modifier add_skill_modifier (Skill)Stealth (Modifier)Disadvantage
+	}
+}

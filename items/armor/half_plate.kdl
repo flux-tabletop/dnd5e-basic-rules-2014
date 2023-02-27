@@ -1,0 +1,12 @@
+item name="Half Plate" weight=40 {
+	description "Half plate consists of shaped metal plates that cover most of the wearer's body. It does not include leg protection beyond simple greaves that are attached with leather straps."
+	worth 750 (Currency)Gold
+	kind Equipment {
+		armor Medium {
+			formula base=15 {
+				bonus (Ability)Dexterity max=2
+			}
+		}
+		modifier add_skill_modifier (Skill)Stealth (Modifier)Disadvantage
+	}
+}

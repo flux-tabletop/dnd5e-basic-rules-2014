@@ -1,0 +1,10 @@
+item name="Dart" weight=0.25 {
+	worth 5 (Currency)Copper
+	kind Equipment {
+		weapon Simple class="Dart" {
+			damage (Damage)1d4 Piercing
+			property Finesse
+			range 20 60
+		}
+	}
+}

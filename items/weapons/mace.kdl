@@ -1,0 +1,8 @@
+item name="Mace" weight=4 {
+	worth 5 (Currency)Gold
+	kind Equipment {
+		weapon Simple class="Mace" {
+			damage (Damage)1d6 Bludgeoning
+		}
+	}
+}

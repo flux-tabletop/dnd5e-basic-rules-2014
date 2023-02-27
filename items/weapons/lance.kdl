@@ -1,0 +1,10 @@
+item name="Lance" weight=6 {
+	description "You have disadvantage when you use a lance to attack a target within 5 feet of you. Also, a lance requires two hands to wield when you aren't mounted."
+	worth 10 (Currency)Gold
+	kind Equipment {
+		weapon Martial class="Lance" {
+			damage (Damage)1d12 Piercing
+			property Reach
+		}
+	}
+}

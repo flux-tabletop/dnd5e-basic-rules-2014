@@ -1,0 +1,10 @@
+item name="Maul" weight=10 {
+	worth 10 (Currency)Gold
+	kind Equipment {
+		weapon Martial class="Maul" {
+			damage (Damage)2d6 Bludgeoning
+			property Heavy
+			property TwoHanded
+		}
+	}
+}

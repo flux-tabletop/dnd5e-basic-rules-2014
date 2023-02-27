@@ -1,0 +1,9 @@
+item name="Club" weight=2 {
+	worth 1 (Currency)Silver
+	kind Equipment {
+		weapon Simple class="Club" {
+			damage (Damage)1d4 Bludgeoning
+			property Light
+		}
+	}
+}

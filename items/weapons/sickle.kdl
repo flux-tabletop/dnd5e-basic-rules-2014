@@ -1,0 +1,9 @@
+item name="Sickle" weight=2 {
+	worth 1 (Currency)Gold
+	kind Equipment {
+		weapon Simple class="Sickle" {
+			damage (Damage)1d4 Slashing
+			property Light
+		}
+	}
+}

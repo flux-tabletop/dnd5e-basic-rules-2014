@@ -1,0 +1,9 @@
+item name="Longsword" weight=3 {
+	worth 15 (Currency)Gold
+	kind Equipment {
+		weapon Martial class="Longsword" {
+			damage (Damage)1d8 Slashing
+			property Versatile (Damage)1d10
+		}
+	}
+}

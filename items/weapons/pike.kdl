@@ -1,0 +1,11 @@
+item name="Pike" weight=18 {
+	worth 5 (Currency)Gold
+	kind Equipment {
+		weapon Martial class="Pike" {
+			damage (Damage)1d10 Piercing
+			property Heavy
+			property Reach
+			property TwoHanded
+		}
+	}
+}

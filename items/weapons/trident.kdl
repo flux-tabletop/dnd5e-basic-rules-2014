@@ -1,0 +1,10 @@
+item name="Trident" weight=4 {
+	worth 5 (Currency)Gold
+	kind Equipment {
+		weapon Martial class="Trident" {
+			damage (Damage)1d6 Piercing
+			property Thrown 20 60
+			property Versatile (Damage)1d8
+		}
+	}
+}
