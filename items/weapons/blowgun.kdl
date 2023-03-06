@@ -1,8 +1,9 @@
-item name="Blowgun" weight=1 {
-	worth 10 (Currency)Gold
-	kind Equipment {
-		weapon Martial class="Blowgun" {
-			damage (Damage)1 Piercing
+system "dnd5e"
+item name="Blowgun" weight=1.0 {
+	worth 10 (Currency)"Gold"
+	kind "Equipment" {
+		weapon "Martial" class="Blowgun" {
+			damage "Piercing" base=1
 			range 25 100 {
 				ammunition
 				loading

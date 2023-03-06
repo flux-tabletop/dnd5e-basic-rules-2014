@@ -15,22 +15,26 @@ Sack	1 cubic foot/30 pounds of gear
 Vial	4 ounces liquid
 Waterskin	4 pints liquid
 */
-item name="Backpack" weight=5 {
-	worth 2 (Currency)Gold
-	kind Simple
+system "dnd5e"
+item name="Backpack" weight=5.0 {
+	worth 2 (Currency)"Gold"
+	kind "Simple"
 }
-item name="Pouch" weight=1 {
+system "dnd5e"
+item name="Pouch" weight=1.0 {
 	description "A cloth or leather pouch can hold up to 20 sling bullets or 50 blowgun needles, among other things. A compartmentalized pouch for holding spell components is called a component pouch (described earlier in this section)."
-	worth 5 (Currency)Silver
-	kind Simple
+	worth 5 (Currency)"Silver"
+	kind "Simple"
 }
-item name="Quiver" weight=1 {
+system "dnd5e"
+item name="Quiver" weight=1.0 {
 	description "A quiver can hold up to 20 arrows."
-	worth 1 (Currency)Gold
-	kind Simple
+	worth 1 (Currency)"Gold"
+	kind "Simple"
 }
-item name="Spellbook" weight=3 {
+system "dnd5e"
+item name="Spellbook" weight=3.0 {
 	description "Essential for wizards, a spellbook is a leather-bound tome with 100 blank vellum pages suitable for recording spells."
-	worth 50 (Currency)Gold
-	kind Simple
+	worth 50 (Currency)"Gold"
+	kind "Simple"
 }

@@ -1,9 +1,10 @@
-item name="Club" weight=2 {
-	worth 1 (Currency)Silver
-	kind Equipment {
-		weapon Simple class="Club" {
-			damage (Damage)1d4 Bludgeoning
-			property Light
+system "dnd5e"
+item name="Club" weight=2.0 {
+	worth 1 (Currency)"Silver"
+	kind "Equipment" {
+		weapon "Simple" class="Club" {
+			damage "Bludgeoning" roll="1d4"
+			property "Light"
 		}
 	}
 }

@@ -1,10 +1,11 @@
-item name="Spear" weight=3 {
-	worth 1 (Currency)Gold
-	kind Equipment {
-		weapon Simple class="Spear" {
-			damage (Damage)1d6 Piercing
-			property Thrown 20 60
-			property Versatile (Damage)1d8
+system "dnd5e"
+item name="Spear" weight=3.0 {
+	worth 1 (Currency)"Gold"
+	kind "Equipment" {
+		weapon "Simple" class="Spear" {
+			damage "Piercing" roll="1d6"
+			property "Thrown" 20 60
+			property "Versatile" "1d8"
 		}
 	}
 }

@@ -1,9 +1,10 @@
-item name="Sickle" weight=2 {
-	worth 1 (Currency)Gold
-	kind Equipment {
-		weapon Simple class="Sickle" {
-			damage (Damage)1d4 Slashing
-			property Light
+system "dnd5e"
+item name="Sickle" weight=2.0 {
+	worth 1 (Currency)"Gold"
+	kind "Equipment" {
+		weapon "Simple" class="Sickle" {
+			damage "Slashing" roll="1d4"
+			property "Light"
 		}
 	}
 }

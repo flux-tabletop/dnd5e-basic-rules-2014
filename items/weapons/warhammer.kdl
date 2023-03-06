@@ -1,9 +1,10 @@
-item name="Warhammer" weight=2 {
-	worth 15 (Currency)Gold
-	kind Equipment {
-		weapon Martial class="Warhammer" {
-			damage (Damage)1d8 Bludgeoning
-			property Versatile (Damage)1d10
+system "dnd5e"
+item name="Warhammer" weight=2.0 {
+	worth 15 (Currency)"Gold"
+	kind "Equipment" {
+		weapon "Martial" class="Warhammer" {
+			damage "Bludgeoning" roll="1d8"
+			property "Versatile" "1d10"
 		}
 	}
 }

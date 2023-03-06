@@ -1,8 +1,9 @@
+system "dnd5e"
 item name="Sling" {
-	worth 1 (Currency)Silver
-	kind Equipment {
-		weapon Simple class="Sling" {
-			damage (Damage)1d4 Bludeoning
+	worth 1 (Currency)"Silver"
+	kind "Equipment" {
+		weapon "Simple" class="Sling" {
+			damage "Bludeoning" roll="1d4"
 			range 30 120 {
 				ammunition
 			}

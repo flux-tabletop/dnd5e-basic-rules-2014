@@ -1,8 +1,9 @@
-item name="Morningstar" weight=4 {
-	worth 15 (Currency)Gold
-	kind Equipment {
-		weapon Martial class="Morningstar" {
-			damage (Damage)1d8 Piercing
+system "dnd5e"
+item name="Morningstar" weight=4.0 {
+	worth 15 (Currency)"Gold"
+	kind "Equipment" {
+		weapon "Martial" class="Morningstar" {
+			damage "Piercing" roll="1d8"
 		}
 	}
 }

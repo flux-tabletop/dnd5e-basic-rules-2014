@@ -1,9 +1,10 @@
-item name="Battleaxe" weight=4 {
-	worth 10 (Currency)Gold
-	kind Equipment {
-		weapon Martial class="Battleaxe" {
-			damage (Damage)1d8 Slashing
-			property Versatile (Damage)1d10
+system "dnd5e"
+item name="Battleaxe" weight=4.0 {
+	worth 10 (Currency)"Gold"
+	kind "Equipment" {
+		weapon "Martial" class="Battleaxe" {
+			damage "Slashing" roll="1d8"
+			property "Versatile" "1d10"
 		}
 	}
 }

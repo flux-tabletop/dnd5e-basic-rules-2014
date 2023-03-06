@@ -1,10 +1,11 @@
-item name="Whip" weight=3 {
-	worth 2 (Currency)Gold
-	kind Equipment {
-		weapon Martial class="Whip" {
-			damage (Damage)1d4 Slashing
-			property Finesse
-			property Reach
+system "dnd5e"
+item name="Whip" weight=3.0 {
+	worth 2 (Currency)"Gold"
+	kind "Equipment" {
+		weapon "Martial" class="Whip" {
+			damage "Slashing" roll="1d4"
+			property "Finesse"
+			property "Reach"
 		}
 	}
 }

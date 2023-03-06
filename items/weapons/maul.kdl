@@ -1,10 +1,11 @@
-item name="Maul" weight=10 {
-	worth 10 (Currency)Gold
-	kind Equipment {
-		weapon Martial class="Maul" {
-			damage (Damage)2d6 Bludgeoning
-			property Heavy
-			property TwoHanded
+system "dnd5e"
+item name="Maul" weight=10.0 {
+	worth 10 (Currency)"Gold"
+	kind "Equipment" {
+		weapon "Martial" class="Maul" {
+			damage "Bludgeoning" roll="2d6"
+			property "Heavy"
+			property "TwoHanded"
 		}
 	}
 }

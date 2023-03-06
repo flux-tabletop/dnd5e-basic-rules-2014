@@ -1,10 +1,11 @@
-item name="Handaxe" weight=2 {
-	worth 5 (Currency)Gold
-	kind Equipment {
-		weapon Simple class="Handaxe" {
-			damage (Damage)1d6 Slashing
-			property Light
-			property Thrown 20 60
+system "dnd5e"
+item name="Handaxe" weight=2.0 {
+	worth 5 (Currency)"Gold"
+	kind "Equipment" {
+		weapon "Simple" class="Handaxe" {
+			damage "Slashing" roll="1d6"
+			property "Light"
+			property "Thrown" 20 60
 		}
 	}
 }

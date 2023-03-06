@@ -1,9 +1,10 @@
-item name="Javelin" weight=2 {
-	worth 5 (Currency)Silver
-	kind Equipment {
-		weapon Simple class="Javelin" {
-			damage (Damage)1d6 Piercing
-			property Thrown 30 120
+system "dnd5e"
+item name="Javelin" weight=2.0 {
+	worth 5 (Currency)"Silver"
+	kind "Equipment" {
+		weapon "Simple" class="Javelin" {
+			damage "Piercing" roll="1d6"
+			property "Thrown" 30 120
 		}
 	}
 }

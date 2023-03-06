@@ -1,10 +1,11 @@
-item name="Longbow" weight=2 {
-	worth 50 (Currency)Gold
-	kind Equipment {
-		weapon Martial class="Longbow" {
-			damage (Damage)1d8 Piercing
-			property Heavy
-			property TwoHanded
+system "dnd5e"
+item name="Longbow" weight=2.0 {
+	worth 50 (Currency)"Gold"
+	kind "Equipment" {
+		weapon "Martial" class="Longbow" {
+			damage "Piercing" roll="1d8"
+			property "Heavy"
+			property "TwoHanded"
 			range 150 600 {
 				ammunition
 			}

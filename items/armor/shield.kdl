@@ -1,6 +1,7 @@
-item name="Shield" weight=6 {
-	worth 10 (Currency)Gold
-	kind Equipment {
+system "dnd5e"
+item name="Shield" weight=6.0 {
+	worth 10 (Currency)"Gold"
+	kind "Equipment" {
 		shield bonus=2
 	}
 }

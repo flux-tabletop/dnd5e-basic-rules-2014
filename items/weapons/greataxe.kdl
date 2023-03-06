@@ -1,10 +1,11 @@
-item name="Greataxe" weight=7 {
-	worth 30 (Currency)Gold
-	kind Equipment {
-		weapon Martial class="Greataxe" {
-			damage (Damage)1d12 Slashing
-			property Heavy
-			property TwoHanded
+system "dnd5e"
+item name="Greataxe" weight=7.0 {
+	worth 30 (Currency)"Gold"
+	kind "Equipment" {
+		weapon "Martial" class="Greataxe" {
+			damage "Slashing" roll="1d12"
+			property "Heavy"
+			property "TwoHanded"
 		}
 	}
 }

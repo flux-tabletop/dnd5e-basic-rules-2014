@@ -1,10 +1,11 @@
-item name="Studded Leather Armor" weight=13 {
+system "dnd5e"
+item name="Studded Leather Armor" weight=13.0 {
 	description "Made from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes."
-	worth 45 (Currency)Gold
-	kind Equipment {
-		armor Light {
+	worth 45 (Currency)"Gold"
+	kind "Equipment" {
+		armor "Light" {
 			formula base=12 {
-				bonus (Ability)Dexterity
+				bonus (Ability)"Dexterity"
 			}
 		}
 	}

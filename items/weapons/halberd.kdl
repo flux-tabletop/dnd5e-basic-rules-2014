@@ -1,11 +1,12 @@
-item name="Halberd" weight=6 {
-	worth 20 (Currency)Gold
-	kind Equipment {
-		weapon Martial class="Halberd" {
-			damage (Damage)1d10 Slashing
-			property Heavy
-			property Reach
-			property TwoHanded
+system "dnd5e"
+item name="Halberd" weight=6.0 {
+	worth 20 (Currency)"Gold"
+	kind "Equipment" {
+		weapon "Martial" class="Halberd" {
+			damage "Slashing" roll="1d10"
+			property "Heavy"
+			property "Reach"
+			property "TwoHanded"
 		}
 	}
 }

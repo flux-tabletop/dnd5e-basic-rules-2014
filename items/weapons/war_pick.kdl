@@ -1,8 +1,9 @@
-item name="War Pick" weight=2 {
-	worth 5 (Currency)Gold
-	kind Equipment {
-		weapon Martial class="WarPick" {
-			damage (Damage)1d8 Piercing
+system "dnd5e"
+item name="War Pick" weight=2.0 {
+	worth 5 (Currency)"Gold"
+	kind "Equipment" {
+		weapon "Martial" class="WarPick" {
+			damage "Piercing" roll="1d8"
 		}
 	}
 }
