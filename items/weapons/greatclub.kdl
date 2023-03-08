@@ -3,7 +3,7 @@ item name="Greatclub" weight=10.0 {
 	worth 2 (Currency)"Silver"
 	kind "Equipment" {
 		weapon "Simple" class="Greatclub" {
-			damage "Blugeoning" roll="1d8"
+			damage "Bludgeoning" roll="1d8"
 			property "TwoHanded"
 		}
 	}
