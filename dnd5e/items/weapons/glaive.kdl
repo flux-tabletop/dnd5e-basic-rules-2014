@@ -1,0 +1,11 @@
+item name="Glaive" weight=6.0 {
+	worth 20 (Currency)"Gold"
+	kind "Equipment" {
+		weapon "Martial" class="Glaive" {
+			damage "Slashing" roll="1d10"
+			property "Heavy"
+			property "Reach"
+			property "TwoHanded"
+		}
+	}
+}

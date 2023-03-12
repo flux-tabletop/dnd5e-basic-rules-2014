@@ -1,0 +1,10 @@
+item name="Shortsword" weight=2.0 {
+	worth 10 (Currency)"Gold"
+	kind "Equipment" {
+		weapon "Martial" class="Shortsword" {
+			damage "Piercing" roll="1d6"
+			property "Finesse"
+			property "Light"
+		}
+	}
+}

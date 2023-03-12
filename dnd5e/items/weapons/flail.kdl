@@ -1,0 +1,8 @@
+item name="Flail" weight=2.0 {
+	worth 10 (Currency)"Gold"
+	kind "Equipment" {
+		weapon "Martial" class="Flail" {
+			damage "Bludgeoning" roll="1d8"
+		}
+	}
+}

@@ -1,5 +1,0 @@
-system "dnd5e"
-item name="Sling Bullet" weight=0.075 {
-	worth 1 (Currency)"Copper"
-	kind "Simple" count=5
-}

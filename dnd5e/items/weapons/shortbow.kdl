@@ -1,0 +1,12 @@
+item name="Shortbow" weight=2.0 {
+	worth 25 (Currency)"Gold"
+	kind "Equipment" {
+		weapon "Simple" class="Shortbow" {
+			damage "Piercing" roll="1d6"
+			property "TwoHanded"
+			range 80 320 {
+				ammunition
+			}
+		}
+	}
+}

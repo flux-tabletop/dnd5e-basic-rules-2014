@@ -1,5 +1,0 @@
-system "dnd5e"
-item name="Arrow" weight=0.05 {
-	worth 5 (Currency)"Copper"
-	kind "Simple" count=1
-}

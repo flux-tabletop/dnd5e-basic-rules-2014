@@ -1,0 +1,9 @@
+item name="Rapier" weight=2.0 {
+	worth 25 (Currency)"Gold"
+	kind "Equipment" {
+		weapon "Martial" class="Rapier" {
+			damage "Piercing" roll="1d8"
+			property "Finesse"
+		}
+	}
+}

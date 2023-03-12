@@ -1,0 +1,10 @@
+item name="Scimitar" weight=3.0 {
+	worth 25 (Currency)"Gold"
+	kind "Equipment" {
+		weapon "Martial" class="Scimitar" {
+			damage "Slashing" roll="1d6"
+			property "Finesse"
+			property "Light"
+		}
+	}
+}

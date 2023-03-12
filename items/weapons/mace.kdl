@@ -1,9 +1,0 @@
-system "dnd5e"
-item name="Mace" weight=4.0 {
-	worth 5 (Currency)"Gold"
-	kind "Equipment" {
-		weapon "Simple" class="Mace" {
-			damage "Bludgeoning" roll="1d6"
-		}
-	}
-}

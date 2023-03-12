@@ -1,0 +1,9 @@
+item name="Battleaxe" weight=4.0 {
+	worth 10 (Currency)"Gold"
+	kind "Equipment" {
+		weapon "Martial" class="Battleaxe" {
+			damage "Slashing" roll="1d8"
+			property "Versatile" "1d10"
+		}
+	}
+}

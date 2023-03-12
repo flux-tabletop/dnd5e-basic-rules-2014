@@ -1,0 +1,9 @@
+item name="Javelin" weight=2.0 {
+	worth 5 (Currency)"Silver"
+	kind "Equipment" {
+		weapon "Simple" class="Javelin" {
+			damage "Piercing" roll="1d6"
+			property "Thrown" 30 120
+		}
+	}
+}

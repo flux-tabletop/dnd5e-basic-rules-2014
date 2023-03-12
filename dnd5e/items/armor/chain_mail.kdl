@@ -1,0 +1,11 @@
+item name="Chain Mail" weight=55.0 {
+	description "Made of interlocking metal rings, chain mail includes a layer of quilted fabric worn underneath the mail to prevent chafing and to cushion the impact of blows. The suit includes gauntlets."
+	worth 75 (Currency)"Gold"
+	kind "Equipment" {
+		armor "Heavy" {
+			formula base=16
+			min-strength 13
+		}
+		mutator "add_skill_modifier" (Skill)"Stealth" "Disadvantage"
+	}
+}

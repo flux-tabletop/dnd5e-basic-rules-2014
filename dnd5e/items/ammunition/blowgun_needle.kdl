@@ -1,0 +1,4 @@
+item name="Blowgun Needle" weight=0.02 {
+	worth 2 (Currency)"Copper"
+	kind "Simple" count=1
+}
