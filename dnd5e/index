@@ -1,5 +1,6 @@
 background/acolyte.kdl
 background.kdl
+class/barbarian/beserker.kdl
 class/barbarian.kdl
 class/bard.kdl
 class/cleric.kdl
