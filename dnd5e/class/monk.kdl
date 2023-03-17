@@ -1,0 +1,8 @@
+class name="Monk" {
+	description "A master of martial arts, harnessing the power of the body in pursuit of physical and spiritual perfection"
+	hit-die "d8"
+	mutator "add_proficiency" (SavingThrow)"Strength"
+	mutator "add_proficiency" (SavingThrow)"Dexterity"
+	mutator "add_proficiency" (Weapon)"Simple"
+	mutator "add_proficiency" (Weapon)"Shortsword"
+}

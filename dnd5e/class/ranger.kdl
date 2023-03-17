@@ -1,0 +1,12 @@
+class name="Ranger" {
+	description "A warrior who uses martial prowess and nature magic to combat threats on the edges of civilization"
+	hit-die "d10"
+	mutator "add_proficiency" (SavingThrow)"Strength"
+	mutator "add_proficiency" (SavingThrow)"Dexterity"
+	mutator "add_proficiency" (Armor)"Light"
+	mutator "add_proficiency" (Armor)"Medium"
+	// TODO: Shield proficiency as armor
+	//mutator "add_proficiency" (Armor)"Shield"
+	mutator "add_proficiency" (Weapon)"Simple"
+	mutator "add_proficiency" (Weapon)"Martial"
+}

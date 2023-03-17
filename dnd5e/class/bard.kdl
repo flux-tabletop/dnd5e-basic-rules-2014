@@ -1,0 +1,12 @@
+class name="Bard" {
+	description "An inspiring magician whose power echoes the music of creation"
+	hit-die "d8"
+	mutator "add_proficiency" (SavingThrow)"Dexterity"
+	mutator "add_proficiency" (SavingThrow)"Charisma"
+	mutator "add_proficiency" (Armor)"Light"
+	mutator "add_proficiency" (Weapon)"Simple"
+	mutator "add_proficiency" (Weapon)"CrossbowHand"
+	mutator "add_proficiency" (Weapon)"Longsword"
+	mutator "add_proficiency" (Weapon)"Rapier"
+	mutator "add_proficiency" (Weapon)"Shortsword"
+}

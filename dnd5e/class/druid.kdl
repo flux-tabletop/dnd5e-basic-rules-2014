@@ -1,0 +1,20 @@
+class name="Druid" {
+	description "A priest of the Old Faith, wielding the powers of nature — moonlight and plant growth, fire and lightning — and adopting animal forms"
+	hit-die "d8"
+	mutator "add_proficiency" (SavingThrow)"Intelligence"
+	mutator "add_proficiency" (SavingThrow)"Wisdom"
+	mutator "add_proficiency" (Armor)"Light" // TODO: nonmetal
+	mutator "add_proficiency" (Armor)"Medium" // TODO: nonmetal
+	// TODO: Shield proficiency as armor
+	//mutator "add_proficiency" (Armor)"Shield" // TODO: nonmetal
+	mutator "add_proficiency" (Weapon)"Club"
+	mutator "add_proficiency" (Weapon)"Dagger"
+	mutator "add_proficiency" (Weapon)"Dart"
+	mutator "add_proficiency" (Weapon)"Javelin"
+	mutator "add_proficiency" (Weapon)"Mace"
+	mutator "add_proficiency" (Weapon)"Quarterstaff"
+	mutator "add_proficiency" (Weapon)"Scimitar"
+	mutator "add_proficiency" (Weapon)"Sickle"
+	mutator "add_proficiency" (Weapon)"Sling"
+	mutator "add_proficiency" (Weapon)"Spear"
+}

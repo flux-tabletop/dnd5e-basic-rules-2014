@@ -1,0 +1,12 @@
+class name="Rogue" {
+	description "A scoundrel who uses stealth and trickery to overcome obstacles and enemies"
+	hit-die "d8"
+	mutator "add_proficiency" (SavingThrow)"Dexterity"
+	mutator "add_proficiency" (SavingThrow)"Intelligence"
+	mutator "add_proficiency" (Armor)"Light"
+	mutator "add_proficiency" (Weapon)"Simple"
+	mutator "add_proficiency" (Weapon)"CrossbowHand"
+	mutator "add_proficiency" (Weapon)"Longsword"
+	mutator "add_proficiency" (Weapon)"Rapier"
+	mutator "add_proficiency" (Weapon)"Shortsword"
+}

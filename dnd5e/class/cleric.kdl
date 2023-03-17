@@ -1,0 +1,11 @@
+class name="Cleric" {
+	description "A priestly champion who wields divine magic in service of a higher power"
+	hit-die "d8"
+	mutator "add_proficiency" (SavingThrow)"Wisdom"
+	mutator "add_proficiency" (SavingThrow)"Charisma"
+	mutator "add_proficiency" (Armor)"Light"
+	mutator "add_proficiency" (Armor)"Medium"
+	// TODO: Shield proficiency as armor
+	//mutator "add_proficiency" (Armor)"Shield"
+	mutator "add_proficiency" (Weapon)"Simple"
+}

@@ -1,0 +1,12 @@
+class name="Barbarian" {
+	description "A fierce warrior of primitive background who can enter a battle rage"
+	hit-die "d12"
+	mutator "add_proficiency" (SavingThrow)"Strength"
+	mutator "add_proficiency" (SavingThrow)"Constitution"
+	mutator "add_proficiency" (Armor)"Light"
+	mutator "add_proficiency" (Armor)"Medium"
+	// TODO: Shield proficiency as armor
+	//mutator "add_proficiency" (Armor)"Shield"
+	mutator "add_proficiency" (Weapon)"Simple"
+	mutator "add_proficiency" (Weapon)"Martial"
+}

@@ -1,0 +1,8 @@
+class name="Warlock" {
+	description "A wielder of magic that is derived from a bargain with an extraplanar entity"
+	hit-die "d8"
+	mutator "add_proficiency" (SavingThrow)"Wisdom"
+	mutator "add_proficiency" (SavingThrow)"Charisma"
+	mutator "add_proficiency" (Armor)"Light"
+	mutator "add_proficiency" (Weapon)"Simple"
+}

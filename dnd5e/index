@@ -1,5 +1,17 @@
 background/acolyte.kdl
 background.kdl
+class/barbarian.kdl
+class/bard.kdl
+class/cleric.kdl
+class/druid.kdl
+class/fighter.kdl
+class/monk.kdl
+class/paladin.kdl
+class/ranger.kdl
+class/rogue.kdl
+class/sorcerer.kdl
+class/warlock.kdl
+class/wizard.kdl
 items/ammunition/arrow.kdl
 items/ammunition/blowgun_needle.kdl
 items/ammunition/crossbow_bolt.kdl
