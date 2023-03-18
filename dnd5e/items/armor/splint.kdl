@@ -6,6 +6,6 @@ item name="Splint Armor" weight=60.0 {
 			formula base=17
 			min-strength 15
 		}
-		mutator "add_skill_modifier" (Skill)"Stealth" "Disadvantage"
+		mutator "add_modifier" "Disadvantage" (Skill)"Specific" "Stealth"
 	}
 }
