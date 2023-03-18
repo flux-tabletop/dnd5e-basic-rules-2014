@@ -1,0 +1,56 @@
+race name="Halfling" {
+	mutator "ability_score" {
+		ability "Specific" "Dexterity"
+		bonus 2
+	}
+	mutator "extend_life_expectancy" 250
+	mutator "add_max_height" 34
+	mutator "add_max_height" (Roll)"1d10"
+	mutator "speed" "Walking" (Minimum)25
+	mutator "add_proficiency" (Language)"Specific" "Common"
+	mutator "add_proficiency" (Language)"Specific" "Halfling"
+	feature name="Lucky" {
+		description "When you roll a 1 on the d20 for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll."
+	}
+	feature name="Brave" {
+		description "You have advantage on saving throws against being frightened."
+		mutator "add_modifier" "Advantage" (SavingThrow)"All" context="being frightened"
+	}
+	feature name="Halfling Nimbleness" {
+		description "You can move through the space of any creature that is of a size larger than yours."
+	}
+}
+/*
+	A halfling has a given name, a family name, and possibly a nickname. Family names are often nicknames that stuck so tenaciously they have been passed down through the generations.
+
+	Male Names: Alton, Ander, Cade, Corrin, Eldon, Errich, Finnan, Garret, Lindal, Lyle, Merric, Milo, Osborn, Perrin, Reed, Roscoe, Wellby
+
+	Female Names: Andry, Bree, Callie, Cora, Euphemia, Jillian, Kithri, Lavinia, Lidda, Merla, Nedda, Paela, Portia, Seraphina, Shaena, Trym, Vani, Verna
+
+	Family Names: Brushgather, Goodbarrel, Greenbottle, High-hill, Hilltopple, Leagallow, Tealeaf, Thorngage, Tosscobble, Underbough
+*/
+subrace name="Lightfoot" {
+	requirement "Race" "Halfling"
+	description "As a lightfoot halfling, you can easily hide from notice, even using other people as cover. You're inclined to be affable and get along well with others. In the Forgotten Realms, lightfoot halflings have spread the farthest and thus are the most common variety.
+	Lightfoots are more prone to wanderlust than other halflings, and often dwell alongside other races or take up a nomadic life. In the world of Greyhawk, these halflings are called hairfeet or tallfellows."
+	mutator "ability_score" {
+		ability "Specific" "Charisma"
+		bonus 1
+	}
+	feature name="Naturally Stealthy" {
+		description "You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you."
+	}
+}
+subrace name="Lightfoot" {
+	requirement "Race" "Halfling"
+	description "As a stout halfling, you're hardier than average and have some resistance to poison. Some say that stouts have dwarven blood. In the Forgotten Realms, these halflings are called stronghearts, and they're most common in the south."
+	mutator "ability_score" {
+		ability "Specific" "Constitution"
+		bonus 1
+	}
+	feature name="Stout Resilience" {
+		description "You have advantage on saving throws against poison, and you have resistance against poison damage."
+		mutator "add_modifier" "Advantage" (SavingThrow)"All" context="poison"
+		mutator "add_defense" "Resistance" (DamageType)"Poison" 
+	}
+}
