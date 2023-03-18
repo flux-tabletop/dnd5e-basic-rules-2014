@@ -1,7 +1,7 @@
 class name="Barbarian" {
 	description "A fierce warrior of primitive background who can enter a battle rage"
 	hit-die "d12"
-	subclass level=3
+	subclass-level 3
 
 	// Mutators applied when this is a primary class
 	mutator "add_proficiency" (SavingThrow)"Strength"
@@ -26,6 +26,11 @@ class name="Barbarian" {
 		option "Perception"
 		option "Survival"
 	}
+	/* TODO: add_starting_equipment
+		(a) a greataxe or (b) any martial melee weapon
+		(a) two handaxes or (b) any simple weapon
+		An explorer’s pack and four javelins
+	*/
 
 	// Levels
 	level 1 {
