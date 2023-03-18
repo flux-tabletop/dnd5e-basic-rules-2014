@@ -1,5 +1,5 @@
 race name="Dwarf" {
-	mutator "add_ability_score" {
+	mutator "ability_score" {
 		ability "Specific" (Ability)"Constitution"
 		bonus 2
 	}
@@ -42,7 +42,7 @@ race name="Dwarf" {
 subrace name="Hill Dwarf" {
 	requirement "Race" "Dwarf"
 	description "As a hill dwarf, you have keen senses, deep intuition, and remarkable resilience. The gold dwarves of Faerûn in their mighty southern kingdom are hill dwarves, as are the exiled Neidar and the debased Klar of Krynn in the Dragonlance setting."
-	mutator "add_ability_score" {
+	mutator "ability_score" {
 		ability "Specific" (Ability)"Wisdom"
 		bonus 1
 	}
@@ -54,7 +54,7 @@ subrace name="Hill Dwarf" {
 subrace name="Mountain Dwarf" {
 	requirement "Race" "Dwarf"
 	description "As a mountain dwarf, you're strong and hardy, accustomed to a difficult life in rugged terrain. You're probably on the tall side (for a dwarf), and tend toward lighter coloration. The shield dwarves of northern Faerûn, as well as the ruling Hylar clan and the noble Daewar clan of Dragonlance, are mountain dwarves."
-	mutator "add_ability_score" {
+	mutator "ability_score" {
 		ability "Specific" (Ability)"Strength"
 		bonus 2
 	}
