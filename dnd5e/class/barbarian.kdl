@@ -112,7 +112,7 @@ class name="Barbarian" {
 	level 5 {
 		feature name="Extra Attack" unique=true {
 			description "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
-			mutator "add_extra_attack"
+			// TODO: mutator "add_extra_attack"
 		}
 		feature name="Fast Movement" {
 			description "Starting at 5th level, your speed increases by 10 feet while you aren't wearing heavy armor."

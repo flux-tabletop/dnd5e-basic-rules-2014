@@ -84,4 +84,6 @@ items/weapons/warhammer.kdl
 items/weapons/war_pick.kdl
 items/weapons/whip.kdl
 race/dwarf.kdl
+race/elf.kdl
+race/halfling.kdl
 race.kdl
