@@ -41,7 +41,7 @@ subrace name="Lightfoot" {
 		description "You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you."
 	}
 }
-subrace name="Lightfoot" {
+subrace name="Stout" {
 	requirement "Race" "Halfling"
 	description "As a stout halfling, you're hardier than average and have some resistance to poison. Some say that stouts have dwarven blood. In the Forgotten Realms, these halflings are called stronghearts, and they're most common in the south."
 	mutator "ability_score" {
