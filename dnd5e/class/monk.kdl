@@ -5,7 +5,7 @@ class name="Monk" {
 	mutator "add_proficiency" (SavingThrow)"Strength"
 	mutator "add_proficiency" (SavingThrow)"Dexterity"
 	mutator "add_proficiency" (Skill)"AnyOf" id="skillA" {
-		cannot-match "skillB" // TODO: cannot-match for AnyOf
+		cannot-match "skillB"
 		option "Acrobatics"
 		option "Athletics"
 		option "History"
@@ -14,7 +14,7 @@ class name="Monk" {
 		option "Stealth"
 	}
 	mutator "add_proficiency" (Skill)"AnyOf" id="skillB" {
-		cannot-match "skillA" // TODO: cannot-match for AnyOf
+		cannot-match "skillA"
 		option "Acrobatics"
 		option "Athletics"
 		option "History"
@@ -45,7 +45,7 @@ class name="Monk" {
 		mutator "add_proficiency" (Weapon)"Shortsword"
 		feature name="Unarmored Defense" unique=true {
 			description "Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier."
-			criteria "has_armor_equipped" inverted=true include_shield=true // TODO: has_armor_equipped include_shield
+			criteria "has_armor_equipped" inverted=true
 			mutator "add_armor_class_formula" base=10 {
 				bonus "Dexterity"
 				bonus "Wisdom"
@@ -81,7 +81,7 @@ class name="Monk" {
 			Some of your ki features require your target to make a saving throw to resist the feature's effects. The saving throw DC is calculated as follows:
 
 			Ki save DC = 8 + your proficiency bonus + your Wisdom modifier" // TODO: figure out how to display this saving throw in the UI as a computed value
-			// TODO: Limited use no-action feature
+			// TODO: Limited use on no-action is a special action (no particular trigger) and should appear in its own tab
 			limited_use {
 				// TODO: max_uses "Scaled" type takes the "Level" enum name, with the sub-enum name "AsValue"
 				// to turn the Monk level in to the value for the max_uses
@@ -109,7 +109,7 @@ class name="Monk" {
 		// TODO: when not in hierarchial display, collapse all features with the same name into one section (groups annotated with level)
 		feature name="Unarmored Movement" {
 			description "Starting at 2nd level, your speed increases by 10 feet while you are not wearing armor or wielding a shield."
-			criteria "has_armor_equipped" inverted=true include_shield=true // TODO: has_armor_equipped include_shield
+			criteria "has_armor_equipped" inverted=true
 			mutator "speed" "Walking" (Additive)10
 		}
 	}
@@ -152,7 +152,7 @@ class name="Monk" {
 	level 6 {
 		feature name="Unarmored Movement" {
 			description "At 6th level, your speed increases by 5 more feet (+15ft total) while you are not wearing armor or wielding a shield."
-			criteria "has_armor_equipped" inverted=true include_shield=true // TODO: has_armor_equipped include_shield
+			criteria "has_armor_equipped" inverted=true
 			mutator "speed" "Walking" (Additive)10
 		}
 		feature name="Ki-Empowered Strikes" {
@@ -175,7 +175,7 @@ class name="Monk" {
 	level 10 {
 		feature name="Unarmored Movement" {
 			description "At 10th level, your speed increases by 5 more feet (+20ft total) while you are not wearing armor or wielding a shield."
-			criteria "has_armor_equipped" inverted=true include_shield=true // TODO: has_armor_equipped include_shield
+			criteria "has_armor_equipped" inverted=true
 			mutator "speed" "Walking" (Additive)10
 		}
 		feature name="Purity of Body" {
@@ -190,7 +190,7 @@ class name="Monk" {
 	level 14 {
 		feature name="Unarmored Movement" {
 			description "At 14th level, your speed increases by 5 more feet (+25ft total) while you are not wearing armor or wielding a shield."
-			criteria "has_armor_equipped" inverted=true include_shield=true // TODO: has_armor_equipped include_shield
+			criteria "has_armor_equipped" inverted=true
 			mutator "speed" "Walking" (Additive)10
 		}
 		/* Diamond Soul
@@ -207,7 +207,7 @@ class name="Monk" {
 	level 18 {
 		feature name="Unarmored Movement" {
 			description "At 18th level, your speed increases by 5 more feet (+30ft total) while you are not wearing armor or wielding a shield."
-			criteria "has_armor_equipped" inverted=true include_shield=true // TODO: has_armor_equipped include_shield
+			criteria "has_armor_equipped" inverted=true
 			mutator "speed" "Walking" (Additive)10
 		}
 		/* Empty Body

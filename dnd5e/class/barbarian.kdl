@@ -87,7 +87,11 @@ class name="Barbarian" {
 		}
 		feature name="Unarmored Defense" unique=true {
 			description "While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit."
-			criteria "has_armor_equipped" inverted=true
+			criteria "has_armor_equipped" inverted=true {
+				kind "Light"
+				kind "Medium"
+				kind "Heavy"
+			}
 			mutator "add_armor_class_formula" base=10 {
 				bonus "Dexterity"
 				bonus "Constitution"
