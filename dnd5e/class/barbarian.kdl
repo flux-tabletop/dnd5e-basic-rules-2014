@@ -9,7 +9,7 @@ class name="Barbarian" {
 	mutator "add_proficiency" (Armor)"Light"
 	mutator "add_proficiency" (Armor)"Medium"
 	mutator "add_proficiency" (Skill)"AnyOf" id="skillA" {
-		cannot-match "skillB" // TODO: cannot-match for AnyOf
+		cannot-match "skillB"
 		option "AnimalHandling"
 		option "Athletics"
 		option "Intimidation"
@@ -18,7 +18,7 @@ class name="Barbarian" {
 		option "Survival"
 	}
 	mutator "add_proficiency" (Skill)"AnyOf" id="skillB" {
-		cannot-match "skillA" // TODO: cannot-match for AnyOf
+		cannot-match "skillA"
 		option "AnimalHandling"
 		option "Athletics"
 		option "Intimidation"
@@ -35,8 +35,7 @@ class name="Barbarian" {
 	// Levels
 	level 1 {
 		// Mutators applied for primary or multiclassing
-		// TODO: Shield proficiency as armor
-		//mutator "add_proficiency" (Armor)"Shield"
+		mutator "add_proficiency" (Armor)"Shield"
 		mutator "add_proficiency" (Weapon)"Simple"
 		mutator "add_proficiency" (Weapon)"Martial"
 

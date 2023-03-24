@@ -5,8 +5,7 @@ class name="Ranger" {
 	mutator "add_proficiency" (SavingThrow)"Dexterity"
 	mutator "add_proficiency" (Armor)"Light"
 	mutator "add_proficiency" (Armor)"Medium"
-	// TODO: Shield proficiency as armor
-	//mutator "add_proficiency" (Armor)"Shield"
+	mutator "add_proficiency" (Armor)"Shield"
 	mutator "add_proficiency" (Weapon)"Simple"
 	mutator "add_proficiency" (Weapon)"Martial"
 }
