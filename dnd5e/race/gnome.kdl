@@ -1,0 +1,67 @@
+race name="Gnome" {
+	mutator "ability_score" {
+		ability "Specific" (Ability)"Intelligence"
+		bonus 2
+	}
+	mutator "extend_life_expectancy" 500
+	// TODO: mutator "size" "Small"
+	mutator "add_max_height" 36
+	mutator "add_max_height" (Roll)"1d12"
+	mutator "speed" "Walking" (Minimum)25
+	mutator "sense" "Darkvision" (Minimum)60
+	feature name="Gnome Cunning" {
+		description "You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic."
+		mutator "add_modifier" "Advantage" (SavingThrow)"Specific" "Intelligence" context="magic"
+		mutator "add_modifier" "Advantage" (SavingThrow)"Specific" "Wisdom" context="magic"
+		mutator "add_modifier" "Advantage" (SavingThrow)"Specific" "Charisma" context="magic"
+	}
+	mutator "add_proficiency" (Language)"Specific" "Common"
+	mutator "add_proficiency" (Language)"Specific" "Gnomish"
+}
+subrace name="Rock Gnome" {
+	requirement "Race" "Gnome"
+	description "As a rock gnome, you have a natural inventiveness and hardiness beyond that of other gnomes. Most gnomes in the worlds of D&D are rock gnomes."
+	mutator "ability_score" {
+		ability "Specific" (Ability)"Constitution"
+		bonus 1
+	}
+	feature name="Artificer's Lore" {
+		description "Whenever you make an Intelligence (History) check related to magic items, alchemical objects, or technological devices, you can add twice your proficiency bonus, instead of any proficiency bonus you normally apply."
+	}
+	feature name="Tinker" {
+		description "You have proficiency with artisan's tools (tinker's tools). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up to three such devices active at a time.
+
+		When you create a device, choose one of the following options:
+		- Clockwork Toy. This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in a random direction. It makes noises as appropriate to the creature it represents.
+		- Fire Starter. The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.
+		- Music Box. When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed."
+		mutator "add_proficiency" (Tool)"Specific" "Tinker's Tools"
+	}
+}
+subrace name="Forest Gnome" {
+	requirement "Race" "Gnome"
+	description "As a forest gnome, you have a natural knack for illusion and inherent quickness and stealth. In the worlds of D&D, forest gnomes are rare and secretive. They gather in hidden communities in sylvan forests, using illusions and trickery to conceal themselves from threats or to mask their escape should they be detected. Forest gnomes tend to be friendly with other good-spirited woodland folk, and they regard elves and good fey as their most important allies. These gnomes also befriend small forest animals and rely on them for information about threats that might prowl their lands."
+	mutator "ability_score" {
+		ability "Specific" (Ability)"Dexterity"
+		bonus 1
+	}
+	feature name="Natural Illusionist" {
+		description "You know the minor illusion cantrip. Intelligence is your spellcasting ability for it."
+		// TODO: Spellcasting
+	}
+	feature name="Speak with Small Beasts" {
+		description "Through sounds and gestures, you can communicate simple ideas with Small or smaller beasts. Forest gnomes love animals and often keep squirrels, badgers, rabbits, moles, woodpeckers, and other creatures as beloved pets."
+	}
+}
+/*
+	Gnome Names
+	Gnomes love names, and most have half a dozen or so. A gnome’s mother, father, clan elder, aunts, and uncles each give the gnome a name, and various nicknames from just about everyone else might or might not stick over time. Gnome names are typically variants on the names of ancestors or distant relatives, though some are purely new inventions. When dealing with humans and others who are “stuffy” about names, a gnome learns to use no more than three names: a personal name, a clan name, and a nickname, choosing the one in each category that’s the most fun to say.
+
+	Male Names: Alston, Alvyn, Boddynock, Brocc, Burgell, Dimble, Eldon, Erky, Fonkin, Frug, Gerbo, Gimble, Glim, Jebeddo, Kellen, Namfoodle, Orryn, Roondar, Seebo, Sindri, Warryn, Wrenn, Zook
+
+	Female Names: Bimpnottin, Breena, Caramip, Carlin, Donella, Duvamil, Ella, Ellyjobell, Ellywick, Lilli, Loopmottin, Lorilla, Mardnab, Nissa, Nyx, Oda, Orla, Roywyn, Shamil, Tana, Waywocket, Zanna
+
+	Clan Names: Beren, Daergel, Folkor, Garrick, Nackle, Murnig, Ningel, Raulnor, Scheppen, Timbers, Turen
+
+	Nicknames: Aleslosh, Ashhearth, Badger, Cloak, Doublelock, Filchbatter, Fnipper, Ku, Nim, Oneshoe, Pock, Sparklegem, Stumbleduck
+*/

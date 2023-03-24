@@ -1,0 +1,53 @@
+race name="Half-Elf" {
+	mutator "ability_score" {
+		ability "Specific" (Ability)"Charisma"
+		bonus 2
+	}
+	mutator "ability_score" {
+		ability "AnyOf" id="abilityA" {
+			cannot-match "abilityB"
+			option "Strength"
+			option "Dexterity"
+			option "Constitution"
+			option "Intelligence"
+			option "Wisdom"
+		}
+		bonus 1
+	}
+	mutator "ability_score" {
+		ability "AnyOf" id="abilityB" {
+			cannot-match "abilityA"
+			option "Strength"
+			option "Dexterity"
+			option "Constitution"
+			option "Intelligence"
+			option "Wisdom"
+		}
+		bonus 1
+	}
+	mutator "extend_life_expectancy" 220
+	mutator "add_max_height" 58
+	mutator "add_max_height" (Roll)"2d10"
+	mutator "speed" "Walking" (Minimum)30
+	mutator "sense" "Darkvision" (Minimum)60
+	feature name="Fey Ancestry" {
+		description "You have advantage on saving throws against being charmed, and magic can't put you to sleep."
+		mutator "add_modifier" "Advantage" (SavingThrow)"All" context="being charmed"
+	}
+	mutator "add_proficiency" (Language)"Specific" "Common"
+	mutator "add_proficiency" (Language)"Specific" "Elvish"
+	mutator "add_proficiency" (Language)"Any"
+	feature name="Skill Versatility" {
+		description "You gain proficiency in two skills of your choice."
+		mutator "add_proficiency" (Skill)"Any" id="skillA" {
+			cannot-match "skillB"
+		}
+		mutator "add_proficiency" (Skill)"Any" id="skillB" {
+			cannot-match "skillA"
+		}
+	}
+}
+/*
+	Half-Elf Names
+	Half-elves use either human or elven naming conventions. As if to emphasize that they don’t really fit in to either society, half-elves raised among humans are often given elven names, and those raised among elves often take human names.
+*/

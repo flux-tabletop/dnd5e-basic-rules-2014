@@ -1,0 +1,37 @@
+race name="Half-Orc" {
+	mutator "ability_score" {
+		ability "Specific" (Ability)"Strength"
+		bonus 2
+	}
+	mutator "ability_score" {
+		ability "Specific" (Ability)"Constitution"
+		bonus 1
+	}
+	mutator "extend_life_expectancy" 75
+	mutator "add_max_height" 58
+	mutator "add_max_height" (Roll)"2d10"
+	mutator "speed" "Walking" (Minimum)30
+	mutator "sense" "Darkvision" (Minimum)60
+	mutator "add_proficiency" (Skill)"Specific" "Intimidation"
+	mutator "add_proficiency" (Language)"Specific" "Common"
+	mutator "add_proficiency" (Language)"Specific" "Orc"
+	mutator "add_action" name="Relentless Endurance" {
+		description "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest."
+		activation "Action" // "Special" // TODO: Special activation on actions
+		limited_uses {
+			max_uses 1
+			reset_on "Short"
+		}
+	}
+	feature name="Savage Attacks" {
+		description "When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit."
+	}
+}
+/*
+	Half-Orc Names
+	Half-orcs usually have names appropriate to the culture in which they were raised. A half-orc who wants to fit in among humans might trade an orc name for a human name. Some half-orcs with human names decide to adopt a guttural orc name because they think it makes them more intimidating.
+
+	Male Orc Names: Dench, Feng, Gell, Henk, Holg, Imsh, Keth, Krusk, Mhurren, Ront, Shump, Thokk
+
+	Female Orc Names: Baggi, Emen, Engong, Kansif, Myev, Neega, Ovak, Ownka, Shautha, Sutha, Vola, Volen, Yevelda
+*/

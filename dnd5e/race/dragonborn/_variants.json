@@ -1,0 +1,72 @@
+{
+	"black": {
+		"color": "Black",
+		"damage_type": "Acid",
+		"save": "Dexterity",
+		"aoe_desc": "5 by 30 ft. line",
+		"area_of_effect": "\"Line\" width=5 length=30"
+	},
+	"blue": {
+		"color": "Blue",
+		"damage_type": "Lightning",
+		"save": "Dexterity",
+		"aoe_desc": "5 by 30 ft. line",
+		"area_of_effect": "\"Line\" width=5 length=30"
+	},
+	"brass": {
+		"color": "Brass",
+		"damage_type": "Fire",
+		"save": "Dexterity",
+		"aoe_desc": "5 by 30 ft. line",
+		"area_of_effect": "\"Line\" width=5 length=30"
+	},
+	"bronze": {
+		"color": "Bronze",
+		"damage_type": "Lightning",
+		"save": "Dexterity",
+		"aoe_desc": "5 by 30 ft. line",
+		"area_of_effect": "\"Line\" width=5 length=30"
+	},
+	"copper": {
+		"color": "Copper",
+		"damage_type": "Acid",
+		"save": "Dexterity",
+		"aoe_desc": "5 by 30 ft. line",
+		"area_of_effect": "\"Line\" width=5 length=30"
+	},
+	"gold": {
+		"color": "Gold",
+		"damage_type": "Fire",
+		"save": "Dexterity",
+		"aoe_desc": "15 ft. cone",
+		"area_of_effect": "\"Cone\" length=15"
+	},
+	"green": {
+		"color": "Green",
+		"damage_type": "Poison",
+		"save": "Constitution",
+		"aoe_desc": "15 ft. cone",
+		"area_of_effect": "\"Cone\" length=15"
+	},
+	"red": {
+		"color": "Red",
+		"damage_type": "Fire",
+		"save": "Dexterity",
+		"aoe_desc": "15 ft. cone",
+		"area_of_effect": "\"Cone\" length=15"
+	},
+	"silver": {
+		"color": "Silver",
+		"damage_type": "Cold",
+		"save": "Constitution",
+		"aoe_desc": "15 ft. cone",
+		"area_of_effect": "\"Cone\" length=15"
+	},
+	"white": {
+		"color": "White",
+		"damage_type": "Cold",
+		"save": "Constitution",
+		"aoe_desc": "15 ft. cone",
+		"area_of_effect": "\"Cone\" length=15"
+	}
+}

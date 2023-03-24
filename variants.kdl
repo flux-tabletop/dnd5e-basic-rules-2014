@@ -1,0 +1,2 @@
+// TODO: During RunBinary, execute `gen_variants.py` on each template to generate its variants before validating the module's contents
+variant /*module*/"dnd5e" /*path*/"race" /*name*/"dragonborn"
