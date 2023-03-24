@@ -46,12 +46,10 @@ class name="Monk" {
 		feature name="Unarmored Defense" unique=true {
 			description "Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier."
 			criteria "has_armor_equipped" inverted=true include_shield=true // TODO: has_armor_equipped include_shield
-			/* TODO: add_armor_class_formula
 			mutator "add_armor_class_formula" base=10 {
 				bonus "Dexterity"
 				bonus "Wisdom"
 			}
-			*/
 		}
 		feature name="Martial Arts" {
 			description "At 1st level, your practice of martial arts gives you mastery of combat styles that use unarmed strikes and monk weapons, which are shortswords and any simple melee weapons that don't have the two-handed or heavy property.
