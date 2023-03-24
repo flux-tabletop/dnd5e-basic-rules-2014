@@ -153,7 +153,7 @@ class name="Monk" {
 		feature name="Unarmored Movement" {
 			description "At 6th level, your speed increases by 5 more feet (+15ft total) while you are not wearing armor or wielding a shield."
 			criteria "has_armor_equipped" inverted=true
-			mutator "speed" "Walking" (Additive)10
+			mutator "speed" "Walking" (Additive)5
 		}
 		feature name="Ki-Empowered Strikes" {
 			description "Starting at 6th level, your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
@@ -176,7 +176,7 @@ class name="Monk" {
 		feature name="Unarmored Movement" {
 			description "At 10th level, your speed increases by 5 more feet (+20ft total) while you are not wearing armor or wielding a shield."
 			criteria "has_armor_equipped" inverted=true
-			mutator "speed" "Walking" (Additive)10
+			mutator "speed" "Walking" (Additive)5
 		}
 		feature name="Purity of Body" {
 			description "At 10th level, your mastery of the ki flowing through you makes you immune to disease and poison."
@@ -191,7 +191,7 @@ class name="Monk" {
 		feature name="Unarmored Movement" {
 			description "At 14th level, your speed increases by 5 more feet (+25ft total) while you are not wearing armor or wielding a shield."
 			criteria "has_armor_equipped" inverted=true
-			mutator "speed" "Walking" (Additive)10
+			mutator "speed" "Walking" (Additive)5
 		}
 		/* Diamond Soul
 			Beginning at 14th level, your mastery of ki grants you proficiency in all saving throws.
@@ -208,7 +208,7 @@ class name="Monk" {
 		feature name="Unarmored Movement" {
 			description "At 18th level, your speed increases by 5 more feet (+30ft total) while you are not wearing armor or wielding a shield."
 			criteria "has_armor_equipped" inverted=true
-			mutator "speed" "Walking" (Additive)10
+			mutator "speed" "Walking" (Additive)5
 		}
 		/* Empty Body
 			Beginning at 18th level, you can use your action to spend 4 ki points to become invisible for 1 minute. During that time, you also have resistance to all damage but force damage.
