@@ -8,13 +8,13 @@ background name="Acolyte" {
 	mutator "add_proficiency" (Language)"Any" id="langB"
 	/* TODO: add_starting_equipment
 	mutator "add_starting_equipment" {
-		item name="Holy Symbol" // TODO: Selector for any item with the tag "Holy Symbol"
-		item name="A prayer book or prayer wheel"
-		item name="Stick of Incense" {
+		item "Select" tag="Holy Symbol"
+		item "Custom" name="A prayer book or prayer wheel"
+		item "Custom" name="Stick of Incense" {
 			kind "Simple" count=5
 		}
-		item name="Vestments"
-		item name="Common Clothes"
+		item "Custom" name="Vestments"
+		item "Custom" name="Common Clothes"
 		currency 15 (Currency)"Gold"
 	}
 	*/

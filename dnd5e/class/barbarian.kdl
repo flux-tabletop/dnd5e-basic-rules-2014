@@ -27,9 +27,18 @@ class name="Barbarian" {
 		option "Survival"
 	}
 	/* TODO: add_starting_equipment
-		(a) a greataxe or (b) any martial melee weapon
-		(a) two handaxes or (b) any simple weapon
-		An explorer’s pack and four javelins
+	mutator "add_starting_equipment" {
+		pick-one {
+			item "Specific" "github://fluxtabletop:basic-rules@dnd5e/items/weapons/greataxe.kdl"
+			item "Select" kind="Martial" has_range=false
+		}
+		pick-one {
+			item "Specific" "github://fluxtabletop:basic-rules@dnd5e/items/weapons/handaxe.kdl" count=2
+			item "Select" kind="Simple"
+		}
+		item "Specific" "github://fluxtabletop:basic-rules@dnd5e/items/bundles/explorer.kdl"
+		item "Specific" "github://fluxtabletop:basic-rules@dnd5e/items/weapons/javelin.kdl" count=4
+	}
 	*/
 
 	// Levels

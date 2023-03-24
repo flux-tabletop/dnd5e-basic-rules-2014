@@ -27,9 +27,17 @@ class name="Monk" {
 		- One Musical Instrument
 	*/
 	/* TODO: add_starting_equipment
-		(a) a shortsword or (b) any simple weapon
-		(a) a dungeoneer’s pack or (b) an explorer’s pack
-		10 darts
+	mutator "add_starting_equipment" {
+		pick-one {
+			item "Specific" "github://fluxtabletop:basic-rules@dnd5e/items/weapons/shortsword.kdl"
+			item "Select" kind="Simple"
+		}
+		pick-one {
+			item "Specific" "github://fluxtabletop:basic-rules@dnd5e/items/bundles/dungeoneer.kdl"
+			item "Specific" "github://fluxtabletop:basic-rules@dnd5e/items/bundles/explorer.kdl"
+		}
+		item "Specific" "github://fluxtabletop:basic-rules@dnd5e/items/weapons/dart.kdl" count=10
+	}
 	*/
 
 	level 1 {
