@@ -47,16 +47,28 @@ class name="Barbarian" {
 		mutator "add_proficiency" (Armor)"Shield"
 		mutator "add_proficiency" (Weapon)"Simple"
 		mutator "add_proficiency" (Weapon)"Martial"
-
-		feature name="Rage" {
-			// TODO: Bonus action
+		mutator "add_action" name="Rage" {
+			activation "Bonus"
 			description "In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action.
 
 			Your rage lasts for 1 minute. It ends early if you are knocked unconscious or if your turn ends and you haven't attacked a hostile creature since your last turn or taken damage since then. You can also end your rage on your turn as a bonus action.
 
 			Once you have used all your rages, you must finish a long rest before you can rage again."
-			// TODO: limited uses based on level
-			// TODO: Long rest reset on uses
+			limited_uses {
+				// TODO: max_uses "Scaled" type takes the "Level" enum name
+				// with levels provided, any unmapped levels use the value of the closest level less than it.
+				// if a value is not provided, None is returned.
+				max_uses 1 /* max_uses (Scaled)"Level" class="Barbarian" {
+					level 1 2
+					level 3 3
+					level 6 4
+					level 12 5
+					level 17 6
+					level 20 // unlimited
+				}
+				*/
+				reset_on "Long"
+			}
 			// TODO: Apply a condition when this action is used
 			condition "Raging" {
 				description "While raging, you gain benefits listed below if you aren't wearing heavy armor.
@@ -79,6 +91,7 @@ class name="Barbarian" {
 					}
 					restriction {
 						attack "Melee"
+						tag "Weapon"
 						ability "Strength"
 					}
 				}
