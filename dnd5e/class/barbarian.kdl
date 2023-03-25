@@ -29,15 +29,15 @@ class name="Barbarian" {
 	/* TODO: add_starting_equipment
 	mutator "add_starting_equipment" {
 		pick-one {
-			item "Specific" "github://fluxtabletop:basic-rules@dnd5e/items/weapons/greataxe.kdl"
+			item "Specific" "items/weapons/greataxe.kdl"
 			item "Select" kind="Martial" has_range=false
 		}
 		pick-one {
-			item "Specific" "github://fluxtabletop:basic-rules@dnd5e/items/weapons/handaxe.kdl" count=2
+			item "Specific" "items/weapons/handaxe.kdl" count=2
 			item "Select" kind="Simple"
 		}
-		item "Specific" "github://fluxtabletop:basic-rules@dnd5e/items/bundles/explorer.kdl"
-		item "Specific" "github://fluxtabletop:basic-rules@dnd5e/items/weapons/javelin.kdl" count=4
+		item "Specific" "items/bundles/explorer.kdl"
+		item "Specific" "items/weapons/javelin.kdl" count=4
 	}
 	*/
 
