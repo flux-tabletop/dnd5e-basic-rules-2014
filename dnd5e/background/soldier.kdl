@@ -1,0 +1,72 @@
+background name="Soldier" {
+	description "War has been your life for as long as you care to remember. You trained as a youth, studied the use of weapons and armor, learned basic survival techniques, including how to stay alive on the battlefield. You might have been part of a standing national army or a mercenary company, or perhaps a member of a local militia who rose to prominence during a recent war.
+
+	When you choose this background, work with your DM to determine which military organization you were a part of, how far through its ranks you progressed, and what kind of experiences you had during your military career. Was it a standing army, a town guard, or a village militia? Or it might have been a noble's or merchant's private army, or a mercenary company."
+	selection name="Specialty" {
+		description "During your time as a soldier, you had a specific role to play in your unit or army."
+		option "Officer"
+		option "Scout"
+		option "Infantry"
+		option "Cavalry"
+		option "Healer"
+		option "Quartermaster"
+		option "Standard bearer"
+		option "Support staff (cook, blacksmith, or the like)"
+	}
+	mutator "add_proficiency" (Skill)"Specific" "Athletics"
+	mutator "add_proficiency" (Skill)"Specific" "Intimidation"
+	// mutator "add_proficiency" (Tool)"Any" // TODO:  One type of gaming set
+	mutator "add_proficiency" (Tool)"Specific" "Vehicles (land)"
+	/* TODO: add_starting_equipment
+	mutator "add_starting_equipment" {
+		item "Specific" "items/gear/clothesCommon.kdl"
+		item "Custom" name="Insignia of Rank"
+		item "Custom" name="Trophy" {
+			description "trophy taken from a fallen enemy (a dagger, broken blade, or piece of a banner)"
+		}
+		item "Custom" name="Dice or Cards" {
+			description "set of bone dice or deck of cards"
+		}
+		currency 10 (Currency)"Gold"
+	}
+	*/
+	feature name="Military Rank" {
+		description "You have a military rank from your career as a soldier. Soldiers loyal to your former military organization still recognize your authority and influence, and they defer to you if they are of a lower rank. You can invoke your rank to exert influence over other soldiers and requisition simple equipment or horses for temporary use. You can also usually gain access to friendly military encampments and fortresses where your rank is recognized."
+	}
+	/*
+	mutator "suggested_trait" "Personality" {
+		option "I'm always polite and respectful."
+		option "I'm haunted by memories of war. I can't get the images of violence out of my mind."
+		option "I've lost too many friends, and I'm slow to make new ones."
+		option "I'm full of inspiring and cautionary tales from my military experience relevant to almost every combat situation."
+		option "I can stare down a hell hound without flinching."
+		option "I enjoy being strong and like breaking things."
+		option "I have a crude sense of humor."
+		option "I face problems head-on. A simple, direct solution is the best path to success."
+	}
+	mutator "suggested_trait" "Ideal" {
+		option "Greater Good. Our lot is to lay down our lives in defense of others. (Good)"
+		option "Responsibility. I do what I must and obey just authority. (Lawful)"
+		option "Independence. When people follow orders blindly, they embrace a kind of tyranny. (Chaotic)"
+		option "Might. In life as in war, the stronger force wins. (Evil)"
+		option "Live and Let Live. Ideals aren't worth killing over or going to war for. (Neutral)"
+		option "Nation. My city, nation, or people are all that matter. (Any)"
+	}
+	mutator "suggested_trait" "Bond" {
+		option "I would still lay down my life for the people I served with."
+		option "Someone saved my life on the battlefield. To this day, I will never leave a friend behind."
+		option "My honor is my life."
+		option "I'll never forget the crushing defeat my company suffered or the enemies who dealt it."
+		option "Those who fight beside me are those worth dying for."
+		option "I fight for those who cannot fight for themselves."
+	}
+	mutator "suggested_trait" "Flaw" {
+		option "The monstrous enemy we faced in battle still leaves me quivering with fear."
+		option "I have little respect for anyone who is not a proven warrior."
+		option "I made a terrible mistake in battle that cost many lives, and I would do anything to keep that mistake secret."
+		option "My hatred of my enemies is blind and unreasoning."
+		option "I obey the law, even if the law causes misery."
+		option "I'd rather eat my armor than admit when I'm wrong."
+	}
+	*/
+}

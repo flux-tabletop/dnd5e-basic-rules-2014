@@ -1,7 +1,9 @@
 background/acolyte.kdl
 background/criminal.kdl
 background/folkHero.kdl
-background.kdl
+background/noble.kdl
+background/sage.kdl
+background/soldier.kdl
 class/barbarian/beserker.kdl
 class/barbarian.kdl
 class/bard.kdl
