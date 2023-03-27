@@ -1,5 +1,7 @@
-Dancing Lights
-Evocation cantrip
+//!dancingLights
+spell name="Dancing Lights" {
+	tag "Evocation"
+	rank 0
 
 Casting Time: 1 action
 
@@ -12,9 +14,12 @@ Duration: Concentration, up to 1 minute
 You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius.
 
 As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell’s range.
+}
 
-Darkness
-2nd-level evocation
+//!darkness
+spell name="Darkness" {
+	tag "evocation"
+	rank 2
 
 Casting Time: 1 action
 
@@ -29,9 +34,12 @@ Magical darkness spreads from a point you choose within range to fill a 15-foot-
 If the point you choose is on an object you are holding or one that isn’t being worn or carried, the darkness emanates from the object and moves with it. Completely covering the source of the darkness with an opaque object, such as a bowl or a helm, blocks the darkness.
 
 If any of this spell’s area overlaps with an area of light created by a spell of 2nd level or lower, the spell that created the light is dispelled.
+}
 
-Darkvision
-2nd-level transmutation
+//!darkvision
+spell name="Darkvision" {
+	tag "transmutation"
+	rank 2
 
 Casting Time: 1 action
 
@@ -42,9 +50,12 @@ Components: V, S, M (either a pinch of dried carrot or an agate)
 Duration: 8 hours
 
 You touch a willing creature to grant it the ability to see in the dark. For the duration, that creature has darkvision out to a range of 60 feet.
+}
 
-Daylight
-3rd-level evocation
+//!daylight
+spell name="Daylight" {
+	tag "evocation"
+	rank 3
 
 Casting Time: 1 action
 
@@ -59,9 +70,12 @@ A 60-foot-radius sphere of light spreads out from a point you choose within rang
 If you chose a point on an object you are holding or one that isn’t being worn or carried, the light shines from the object and moves with it. Completely covering the affected object with an opaque object, such as a bowl or a helm, blocks the light.
 
 If any of this spell’s area overlaps with an area of darkness created by a spell of 3rd level or lower, the spell that created the darkness is dispelled.
+}
 
-Death Ward
-4th-level abjuration
+//!deathWard
+spell name="Death Ward" {
+	tag "abjuration"
+	rank 4
 
 Casting Time: 1 action
 
@@ -76,9 +90,12 @@ You touch a creature and grant it a measure of protection from death.
 The first time the target would drop to 0 hit points as a result of taking damage, the target instead drops to 1 hit point, and the spell ends.
 
 If the spell is still in effect when the target is subjected to an effect that would kill it instantaneously without dealing damage, that effect is instead negated against the target, and the spell ends.
+}
 
-Delayed Blast Fireball
-7th-level evocation
+//!delayedBlastFireball
+spell name="Delayed Blast Fireball" {
+	tag "evocation"
+	rank 7
 
 Casting Time: 1 action
 
@@ -98,8 +115,11 @@ The fire damages objects in the area and ignites flammable objects that aren’t
 
 At Higher Levels. When you cast this spell using a spell slot of 8th level or higher, the base damage increases by 1d6 for each slot level above 7th.
 
-Demiplane
-8th-level conjuration
+}
+
+spell name="Demiplane" {
+	tag "conjuration"
+	rank 8
 
 Casting Time: 1 action
 
@@ -113,8 +133,11 @@ You create a shadowy door on a flat solid surface that you can see within range.
 
 Each time you cast this spell, you can create a new demiplane, or have the shadowy door connect to a demiplane you created with a previous casting of this spell. Additionally, if you know the nature and contents of a demiplane created by a casting of this spell by another creature, you can have the shadowy door connect to its demiplane instead.
 
-Detect Evil and Good
-1st-level divination
+}
+
+spell name="Detect Evil and Good" {
+	tag "divination"
+	rank 1
 
 Casting Time: 1 action
 
@@ -128,8 +151,11 @@ For the duration, you know if there is an aberration, celestial, elemental, fey,
 
 The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.
 
-Detect Magic
-1st-level divination (ritual)
+}
+
+spell name="Detect Magic" {
+	tag "divination"
+	rank 1 ritual=true
 
 Casting Time: 1 action
 
@@ -143,8 +169,11 @@ For the duration, you sense the presence of magic within 30 feet of you. If you 
 
 The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.
 
-Detect Poison and Disease
-1st-level divination (ritual)
+}
+
+spell name="Detect Poison and Disease" {
+	tag "divination"
+	rank 1 ritual=true
 
 Casting Time: 1 action
 
@@ -158,8 +187,11 @@ For the duration, you can sense the presence and location of poisons, poisonous 
 
 The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.
 
-Detect Thoughts
-2nd-level divination
+}
+
+spell name="Detect Thoughts" {
+	tag "divination"
+	rank 2
 
 Casting Time: 1 action
 
@@ -179,10 +211,11 @@ You can also use this spell to detect the presence of thinking creatures you can
 
 Once you detect the presence of a creature in this way, you can read its thoughts for the rest of the duration as described above, even if you can’t see it, but it must still be within range.
 
-Dimension Door
+}
 
-
-4th-level conjuration
+spell name="Dimension Door" {
+	tag "conjuration"
+	rank 4
 
 Casting Time: 1 action
 
@@ -198,8 +231,11 @@ You can bring along objects as long as their weight doesn’t exceed what you ca
 
 If you would arrive in a place already occupied by an object or a creature, you and any creature traveling with you each take 4d6 force damage, and the spell fails to teleport you.
 
-Disguise Self
-1st-level illusion
+}
+
+spell name="Disguise Self" {
+	tag "illusion"
+	rank 1
 
 Casting Time: 1 action
 
@@ -215,8 +251,11 @@ The changes wrought by this spell fail to hold up to physical inspection. For ex
 
 To discern that you are disguised, a creature can use its action to inspect your appearance and must succeed on an Intelligence (Investigation) check against your spell save DC.
 
-Disintegrate
-6th-level transmutation
+}
+
+spell name="Disintegrate" {
+	tag "transmutation"
+	rank 6
 
 Casting Time: 1 action
 
@@ -236,8 +275,11 @@ This spell automatically disintegrates a Large or smaller nonmagical object or a
 
 At Higher Levels. When you cast this spell using a spell slot of 7th level or higher, the damage increases by 3d6 for each slot level above 6th.
 
-Dispel Evil and Good
-5th-level abjuration
+}
+
+spell name="Dispel Evil and Good" {
+	tag "abjuration"
+	rank 5
 
 Casting Time: 1 action
 
@@ -255,8 +297,11 @@ Break Enchantment. As your action, you touch a creature you can reach that is ch
 
 Dismissal. As your action, make a melee spell attack against a celestial, an elemental, a fey, a fiend, or an undead you can reach. On a hit, you attempt to drive the creature back to its home plane. The creature must succeed on a Charisma saving throw or be sent back to its home plane (if it isn’t there already). If they aren’t on their home plane, undead are sent to the Shadowfell, and fey are sent to the Feywild.
 
-Dispel Magic
-3rd-level abjuration
+}
+
+spell name="Dispel Magic" {
+	tag "abjuration"
+	rank 3
 
 Casting Time: 1 action
 
@@ -270,8 +315,11 @@ Choose one creature, object, or magical effect within range. Any spell of 3rd le
 
 At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, you automatically end the effects of a spell on the target if the spell’s level is equal to or less than the level of the spell slot you used.
 
-Divination
-4th-level divination (ritual)
+}
+
+spell name="Divination" {
+	tag "divination"
+	rank 4 ritual=true
 
 Casting Time: 1 action
 
@@ -287,8 +335,11 @@ The spell doesn’t take into account any possible circumstances that might chan
 
 If you cast the spell two or more times before finishing your next long rest, there is a cumulative 25 percent chance for each casting after the first that you get a random reading. The DM makes this roll in secret.
 
-Divine Favor
-1st-level evocation
+}
+
+spell name="Divine Favor" {
+	tag "evocation"
+	rank 1
 
 Casting Time: 1 bonus action
 
@@ -300,8 +351,11 @@ Duration: Concentration, up to 1 minute
 
 Your prayer empowers you with divine radiance. Until the spell ends, your weapon attacks deal an extra 1d4 radiant damage on a hit.
 
-Divine Word
-7th-level evocation
+}
+
+spell name="Divine Word" {
+	tag "evocation"
+	rank 7
 
 Casting Time: 1 bonus action
 
@@ -319,8 +373,11 @@ You utter a divine word, imbued with the power that shaped the world at the dawn
 20 hit points or fewer: killed instantly
 Regardless of its current hit points, a celestial, an elemental, a fey, or a fiend that fails its save is forced back to its plane of origin (if it isn’t there already) and can’t return to your current plane for 24 hours by any means short of a wish spell.
 
-Dominate Beast
-4th-level enchantment
+}
+
+spell name="Dominate Beast" {
+	tag "enchantment"
+	rank 4
 
 Casting Time: 1 action
 
@@ -340,8 +397,11 @@ Each time the target takes damage, it makes a new Wisdom saving throw against th
 
 At Higher Levels. When you cast this spell with a 5th-level spell slot, the duration is concentration, up to 10 minutes. When you use a 6th-level spell slot, the duration is concentration, up to 1 hour. When you use a spell slot of 7th level or higher, the duration is concentration, up to 8 hours.
 
-Dominate Monster
-8th-level enchantment
+}
+
+spell name="Dominate Monster" {
+	tag "enchantment"
+	rank 8
 
 Casting Time: 1 action
 
@@ -361,8 +421,11 @@ Each time the target takes damage, it makes a new Wisdom saving throw against th
 
 At Higher Levels. When you cast this spell with a 9th-level spell slot, the duration is concentration, up to 8 hours.
 
-Dominate Person
-5th-level enchantment
+}
+
+spell name="Dominate Person" {
+	tag "enchantment"
+	rank 5
 
 Casting Time: 1 action
 
@@ -382,8 +445,11 @@ Each time the target takes damage, it makes a new Wisdom saving throw against th
 
 At Higher Levels. When you cast this spell using a 6th-level spell slot, the duration is concentration, up to 10 minutes. When you use a 7th-level spell slot, the duration is concentration, up to 1 hour. When you use a spell slot of 8th level or higher, the duration is concentration, up to 8 hours.
 
-Dream
-5th-level illusion
+}
+
+spell name="Dream" {
+	tag "illusion"
+	rank 5
 
 Casting Time: 1 minute
 
@@ -401,8 +467,11 @@ You can make the messenger appear monstrous and terrifying to the target. If you
 
 If you have a body part, lock of hair, clipping from a nail, or similar portion of the target’s body, the target makes its saving throw with disadvantage.
 
-Druidcraft
-Transmutation cantrip
+}
+
+spell name="Druidcraft" {
+	tag "Transmutation"
+	rank 0
 
 Casting Time: 1 action
 
@@ -418,9 +487,11 @@ You create a tiny, harmless sensory effect that predicts what the weather will b
 You instantly make a flower blossom, a seed pod open, or a leaf bud bloom.
 You create an instantaneous, harmless sensory effect, such as falling leaves, a puff of wind, the sound of a small animal, or the faint odor of skunk. The effect must fit in a 5-foot cube.
 You instantly light or snuff out a candle, a torch, or a small campfire.
-E Spells
-Earthquake
-8th-level evocation
+}
+
+spell name="Earthquake" {
+	tag "evocation"
+	rank 8
 
 Casting Time: 1 action
 
@@ -444,8 +515,11 @@ A fissure that opens beneath a structure causes it to automatically collapse (se
 
 Structures. The tremor deals 50 bludgeoning damage to any structure in contact with the ground in the area when you cast the spell and at the start of each of your turns until the spell ends. If a structure drops to 0 hit points, it collapses and potentially damages nearby creatures. A creature within half the distance of a structure’s height must make a Dexterity saving throw. On a failed save, the creature takes 5d6 bludgeoning damage, is knocked prone, and is buried in the rubble, requiring a DC 20 Strength (Athletics) check as an action to escape. The DM can adjust the DC higher or lower, depending on the nature of the rubble. On a successful save, the creature takes half as much damage and doesn’t fall prone or become buried.
 
-Eldritch Blast
-Evocation cantrip
+}
+
+spell name="Eldritch Blast" {
+	tag "Evocation"
+	rank 0
 
 Casting Time: 1 action
 
@@ -459,8 +533,11 @@ A beam of crackling energy streaks toward a creature within range. Make a ranged
 
 The spell creates more than one beam when you reach higher levels: two beams at 5th level, three beams at 11th level, and four beams at 17th level. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.
 
-Enhance Ability
-2nd-level transmutation
+}
+
+spell name="Enhance Ability" {
+	tag "transmutation"
+	rank 2
 
 Casting Time: 1 action
 
@@ -486,8 +563,11 @@ Owl’s Wisdom. The target has advantage on Wisdom checks.
 
 At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.
 
-Enlarge/Reduce
-2nd-level transmutation
+}
+
+spell name="Enlarge/Reduce" {
+	tag "transmutation"
+	rank 2
 
 Casting Time: 1 action
 
@@ -505,8 +585,11 @@ Enlarge. The target’s size doubles in all dimensions, and its weight is multip
 
 Reduce. The target’s size is halved in all dimensions, and its weight is reduced to one-eighth of normal. This reduction decreases its size by one category—from Medium to Small, for example. Until the spell ends, the target also has disadvantage on Strength checks and Strength saving throws. The target’s weapons also shrink to match its new size. While these weapons are reduced, the target’s attacks with them deal 1d4 less damage (this can’t reduce the damage below 1).
 
-Entangle
-1st-level conjuration
+}
+
+spell name="Entangle" {
+	tag "conjuration"
+	rank 1
 
 Casting Time: 1 action
 
@@ -522,8 +605,11 @@ A creature in the area when you cast the spell must succeed on a Strength saving
 
 When the spell ends, the conjured plants wilt away.
 
-Enthrall
-2nd-level enchantment
+}
+
+spell name="Enthrall" {
+	tag "enchantment"
+	rank 2
 
 Casting Time: 1 action
 
@@ -535,8 +621,11 @@ Duration: 1 minute
 
 You weave a distracting string of words, causing creatures of your choice that you can see within range and that can hear you to make a Wisdom saving throw. Any creature that can’t be charmed succeeds on this saving throw automatically, and if you or your companions are fighting a creature, it has advantage on the save. On a failed save, the target has disadvantage on Wisdom (Perception) checks made to perceive any creature other than you until the spell ends or until the target can no longer hear you. The spell ends if you are incapacitated or can no longer speak.
 
-Etherealness
-7th-level transmutation
+}
+
+spell name="Etherealness" {
+	tag "transmutation"
+	rank 7
 
 Casting Time: 1 action
 
@@ -558,8 +647,11 @@ This spell has no effect if you cast it while you are on the Ethereal Plane or a
 
 At Higher Levels. When you cast this spell using a spell slot of 8th level or higher, you can target up to three willing creatures (including you) for each slot level above 7th. The creatures must be within 10 feet of you when you cast the spell.
 
-Expeditious Retreat
-1st-level transmutation
+}
+
+spell name="Expeditious Retreat" {
+	tag "transmutation"
+	rank 1
 
 Casting Time: 1 bonus action
 
@@ -571,8 +663,11 @@ Duration: Concentration, up to 10 minutes
 
 This spell allows you to move at an incredible pace. When you cast this spell, and then as a bonus action on each of your turns until the spell ends, you can take the Dash action.
 
-Eyebite
-6th-level necromancy
+}
+
+spell name="Eyebite" {
+	tag "necromancy"
+	rank 6
 
 Casting Time: 1 action
 
@@ -590,9 +685,11 @@ Panicked. The target is frightened of you. On each of its turns, the frightened 
 
 Sickened. The target has disadvantage on attack rolls and ability checks. At the end of each of its turns, it can make another Wisdom saving throw. If it succeeds, the effect ends.
 
-F Spells
-Fabricate
-4th-level transmutation
+}
+
+spell name="Fabricate" {
+	tag "transmutation"
+	rank 4
 
 Casting Time: 10 minutes
 
@@ -608,8 +705,11 @@ Choose raw materials that you can see within range. You can fabricate a Large or
 
 Creatures or magic items can’t be created or transmuted by this spell. You also can’t use it to create items that ordinarily require a high degree of craftsmanship, such as jewelry, weapons, glass, or armor, unless you have proficiency with the type of artisan’s tools used to craft such objects.
 
-Faerie Fire
-1st-level evocation
+}
+
+spell name="Faerie Fire" {
+	tag "evocation"
+	rank 1
 
 Casting Time: 1 action
 
@@ -623,8 +723,11 @@ Each object in a 20-foot cube within range is outlined in blue, green, or violet
 
 Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can’t benefit from being invisible.
 
-False Life
-1st-level necromancy
+}
+
+spell name="False Life" {
+	tag "necromancy"
+	rank 1
 
 Casting Time: 1 action
 
@@ -638,8 +741,11 @@ Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 tempo
 
 At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, you gain 5 additional temporary hit points for each slot level above 1st.
 
-Fear
-3rd-level illusion
+}
+
+spell name="Fear" {
+	tag "illusion"
+	rank 3
 
 Casting Time: 1 action
 
@@ -653,8 +759,11 @@ You project a phantasmal image of a creature’s worst fears. Each creature in a
 
 While frightened by this spell, a creature must take the Dash action and move away from you by the safest available route on each of its turns, unless there is nowhere to move. If the creature ends its turn in a location where it doesn’t have line of sight to you, the creature can make a Wisdom saving throw. On a successful save, the spell ends for that creature.
 
-Feather Fall
-1st-level transmutation
+}
+
+spell name="Feather Fall" {
+	tag "transmutation"
+	rank 1
 
 Casting Time: 1 reaction, which you take when you or a creature within 60 feet of you falls
 
@@ -666,8 +775,11 @@ Duration: 1 minute
 
 Choose up to five falling creatures within range. A falling creature’s rate of descent slows to 60 feet per round until the spell ends. If the creature lands before the spell ends, it takes no falling damage and can land on its feet, and the spell ends for that creature.
 
-Feeblemind
-8th-level enchantment
+}
+
+spell name="Feeblemind" {
+	tag "enchantment"
+	rank 8
 
 Casting Time: 1 action
 
@@ -685,8 +797,11 @@ At the end of every 30 days, the creature can repeat its saving throw against th
 
 The spell can also be ended by greater restoration, heal, or wish.
 
-Find Familiar
-1st-level conjuration (ritual)
+}
+
+spell name="Find Familiar" {
+	tag "conjuration"
+	rank 1 ritual=true
 
 Casting Time: 1 hour
 
@@ -708,8 +823,11 @@ You can’t have more than one familiar at a time. If you cast this spell while 
 
 Finally, when you cast a spell with a range of touch, your familiar can deliver the spell as if it had cast the spell. Your familiar must be within 100 feet of you, and it must use its reaction to deliver the spell when you cast it. If the spell requires an attack roll, you use your attack modifier for the roll.
 
-Find Steed
-2nd-level conjuration
+}
+
+spell name="Find Steed" {
+	tag "conjuration"
+	rank 2
 
 Casting Time: 10 minutes
 
@@ -729,8 +847,11 @@ While your steed is within 1 mile of you, you can communicate with each other te
 
 You can’t have more than one steed bonded by this spell at a time. As an action, you can release the steed from its bond at any time, causing it to disappear.
 
-Find the Path
-6th-level divination
+}
+
+spell name="Find the Path" {
+	tag "divination"
+	rank 6
 
 Casting Time: 1 minute
 
@@ -744,8 +865,11 @@ This spell allows you to find the shortest, most direct physical route to a spec
 
 For the duration, as long as you are on the same plane of existence as the destination, you know how far it is and in what direction it lies. While you are traveling there, whenever you are presented with a choice of paths along the way, you automatically determine which path is the shortest and most direct route (but not necessarily the safest route) to the destination.
 
-Find Traps
-2nd-level divination
+}
+
+spell name="Find Traps" {
+	tag "divination"
+	rank 2
 
 Casting Time: 1 action
 
@@ -759,8 +883,11 @@ You sense the presence of any trap within range that is within line of sight. A 
 
 This spell merely reveals that a trap is present. You don’t learn the location of each trap, but you do learn the general nature of the danger posed by a trap you sense.
 
-Finger of Death
-7th-level necromancy
+}
+
+spell name="Finger of Death" {
+	tag "necromancy"
+	rank 7
 
 Casting Time: 1 action
 
@@ -793,8 +920,11 @@ The fire spreads around corners. It ignites flammable objects in the area that a
 
 At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.
 
-Fire Bolt
-Evocation cantrip
+}
+
+spell name="Fire Bolt" {
+	tag "Evocation"
+	rank 0
 
 Casting Time: 1 action
 
@@ -808,8 +938,11 @@ You hurl a mote of fire at a creature or object within range. Make a ranged spel
 
 This spell’s damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).
 
-Fire Shield
-4th-level evocation
+}
+
+spell name="Fire Shield" {
+	tag "evocation"
+	rank 4
 
 Casting Time: 1 action
 
@@ -825,8 +958,11 @@ The flames provide you with a warm shield or a chill shield, as you choose. The 
 
 In addition, whenever a creature within 5 feet of you hits you with a melee attack, the shield erupts with flame. The attacker takes 2d8 fire damage from a warm shield, or 2d8 cold damage from a cold shield.
 
-Fire Storm
-7th-level evocation
+}
+
+spell name="Fire Storm" {
+	tag "evocation"
+	rank 7
 
 Casting Time: 1 action
 
@@ -840,8 +976,11 @@ A storm made up of sheets of roaring flame appears in a location you choose with
 
 The fire damages objects in the area and ignites flammable objects that aren’t being worn or carried. If you choose, plant life in the area is unaffected by this spell.
 
-Flame Blade
-2nd-level evocation
+}
+
+spell name="Flame Blade" {
+	tag "evocation"
+	rank 2
 
 Casting Time: 1 bonus action
 
@@ -859,8 +998,11 @@ The flaming blade sheds bright light in a 10-foot radius and dim light for an ad
 
 At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for every two slot levels above 2nd.
 
-Flame Strike
-5th-level evocation
+}
+
+spell name="Flame Strike" {
+	tag "evocation"
+	rank 5
 
 Casting Time: 1 action
 
@@ -874,8 +1016,11 @@ A vertical column of divine fire roars down from the heavens in a location you s
 
 At Higher Levels. When you cast this spell using a spell slot of 6th level or higher, the fire damage or the radiant damage (your choice) increases by 1d6 for each slot level above 5th.
 
-Flaming Sphere
-2nd-level conjuration
+}
+
+spell name="Flaming Sphere" {
+	tag "conjuration"
+	rank 2
 
 Casting Time: 1 action
 
@@ -893,8 +1038,11 @@ When you move the sphere, you can direct it over barriers up to 5 feet tall and 
 
 At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.
 
-Flesh to Stone
-6th-level transmutation
+}
+
+spell name="Flesh to Stone" {
+	tag "transmutation"
+	rank 6
 
 Casting Time: 1 action
 
@@ -912,8 +1060,11 @@ If the creature is physically broken while petrified, it suffers from similar de
 
 If you maintain your concentration on this spell for the entire possible duration, the creature is turned to stone until the effect is removed.
 
-Fly
-3rd-level transmutation
+}
+
+spell name="Fly" {
+	tag "transmutation"
+	rank 3
 
 Casting Time: 1 action
 
@@ -927,8 +1078,11 @@ You touch a willing creature. The target gains a flying speed of 60 feet for the
 
 At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd.
 
-Fog Cloud
-1st-level conjuration
+}
+
+spell name="Fog Cloud" {
+	tag "conjuration"
+	rank 1
 
 Casting Time: 1 action
 
@@ -942,8 +1096,11 @@ You create a 20-foot-radius sphere of fog centered on a point within range. The 
 
 At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the radius of the fog increases by 20 feet for each slot level above 1st.
 
-Forbiddance
-6th-level abjuration (ritual)
+}
+
+spell name="Forbiddance" {
+	tag "abjuration"
+	rank 6 ritual=true
 
 Casting Time: 10 minutes
 
@@ -961,8 +1118,11 @@ When you cast this spell, you can designate a password. A creature that speaks t
 
 The spell’s area can’t overlap with the area of another forbiddance spell. If you cast forbiddance every day for 30 days in the same location, the spell lasts until it is dispelled, and the material components are consumed on the last casting.
 
-Forcecage
-7th-level evocation
+}
+
+spell name="Forcecage" {
+	tag "evocation"
+	rank 7
 
 Casting Time: 1 action
 
@@ -984,8 +1144,11 @@ A creature inside the cage can’t leave it by nonmagical means. If the creature
 
 This spell can’t be dispelled by dispel magic.
 
-Foresight
-9th-level divination
+}
+
+spell name="Foresight" {
+	tag "divination"
+	rank 9
 
 Casting Time: 1 minute
 
@@ -999,8 +1162,11 @@ You touch a willing creature and bestow a limited ability to see into the immedi
 
 This spell immediately ends if you cast it again before its duration ends.
 
-Freedom of Movement
-4th-level abjuration
+}
+
+spell name="Freedom of Movement" {
+	tag "abjuration"
+	rank 4
 
 Casting Time: 1 action
 
@@ -1014,9 +1180,11 @@ You touch a willing creature. For the duration, the target’s movement is unaff
 
 The target can also spend 5 feet of movement to automatically escape from nonmagical restraints, such as manacles or a creature that has it grappled. Finally, being underwater imposes no penalties on the target’s movement or attacks.
 
-G Spells
-Gaseous Form
-3rd-level transmutation
+}
+
+spell name="Gaseous Form" {
+	tag "transmutation"
+	rank 3
 
 Casting Time: 1 action
 
@@ -1032,8 +1200,11 @@ While in this form, the target’s only method of movement is a flying speed of 
 
 While in the form of a misty cloud, the target can’t talk or manipulate objects, and any objects it was carrying or holding can’t be dropped, used, or otherwise interacted with. The target can’t attack or cast spells.
 
-Gate
-9th-level conjuration
+}
+
+spell name="Gate" {
+	tag "conjuration"
+	rank 9
 
 Casting Time: 1 action
 
@@ -1051,8 +1222,11 @@ Deities and other planar rulers can prevent portals created by this spell from o
 
 When you cast this spell, you can speak the name of a specific creature (a pseudonym, title, or nickname doesn’t work). If that creature is on a plane other than the one you are on, the portal opens in the named creature’s immediate vicinity and draws the creature through it to the nearest unoccupied space on your side of the portal. You gain no special power over the creature, and it is free to act as the DM deems appropriate. It might leave, attack you, or help you.
 
-Geas
-5th-level enchantment
+}
+
+spell name="Geas" {
+	tag "enchantment"
+	rank 5
 
 Casting Time: 1 minute
 
@@ -1070,8 +1244,11 @@ You can end the spell early by using an action to dismiss it. A remove curse, gr
 
 At Higher Levels. When you cast this spell using a spell slot of 7th or 8th level, the duration is 1 year. When you cast this spell using a spell slot of 9th level, the spell lasts until it is ended by one of the spells mentioned above.
 
-Gentle Repose
-2nd-level necromancy (ritual)
+}
+
+spell name="Gentle Repose" {
+	tag "necromancy"
+	rank 2 ritual=true
 
 Casting Time: 1 action
 
@@ -1085,8 +1262,11 @@ You touch a corpse or other remains. For the duration, the target is protected f
 
 The spell also effectively extends the time limit on raising the target from the dead, since days spent under the influence of this spell don’t count against the time limit of spells such as raise dead.
 
-Giant Insect
-4th-level transmutation
+}
+
+spell name="Giant Insect" {
+	tag "transmutation"
+	rank 4
 
 Casting Time: 1 action
 
@@ -1104,8 +1284,11 @@ A creature remains in its giant size for the duration, until it drops to 0 hit p
 
 The DM might allow you to choose different targets. For example, if you transform a bee, its giant version might have the same statistics as a giant wasp.
 
-Glibness
-8th-level transmutation
+}
+
+spell name="Glibness" {
+	tag "transmutation"
+	rank 8
 
 Casting Time: 1 action
 
@@ -1117,8 +1300,11 @@ Duration: 1 hour
 
 Until the spell ends, when you make a Charisma check, you can replace the number you roll with a 15. Additionally, no matter what you say, magic that would determine if you are telling the truth indicates that you are being truthful.
 
-Globe of Invulnerability
-6th-level abjuration
+}
+
+spell name="Globe of Invulnerability" {
+	tag "abjuration"
+	rank 6
 
 Casting Time: 1 action
 
@@ -1134,8 +1320,11 @@ Any spell of 5th level or lower cast from outside the barrier can’t affect cre
 
 At Higher Levels. When you cast this spell using a spell slot of 7th level or higher, the barrier blocks spells of one level higher for each slot level above 6th.
 
-Glyph of Warding
-3rd-level abjuration
+}
+
+spell name="Glyph of Warding" {
+	tag "abjuration"
+	rank 3
 
 Casting Time: 1 hour
 
@@ -1161,8 +1350,11 @@ Spell Glyph. You can store a prepared spell of 3rd level or lower in the glyph b
 
 At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the damage of an explosive runes glyph increases by 1d8 for each slot level above 3rd. If you create a spell glyph, you can store any spell of up to the same level as the slot you use for the glyph of warding.
 
-Goodberry
-1st-level transmutation
+}
+
+spell name="Goodberry" {
+	tag "transmutation"
+	rank 1
 
 Casting Time: 1 action
 
@@ -1176,8 +1368,11 @@ Up to ten berries appear in your hand and are infused with magic for the duratio
 
 The berries lose their potency if they have not been consumed within 24 hours of the casting of this spell.
 
-Grease
-1st-level conjuration
+}
+
+spell name="Grease" {
+	tag "conjuration"
+	rank 1
 
 Casting Time: 1 action
 
@@ -1191,8 +1386,11 @@ Slick grease covers the ground in a 10-foot square centered on a point within ra
 
 When the grease appears, each creature standing in its area must succeed on a Dexterity saving throw or fall prone. A creature that enters the area or ends its turn there must also succeed on a Dexterity saving throw or fall prone.
 
-Greater Invisibility
-4th-level illusion
+}
+
+spell name="Greater Invisibility" {
+	tag "illusion"
+	rank 4
 
 Casting Time: 1 action
 
@@ -1204,8 +1402,11 @@ Duration: Concentration, up to 1 minute
 
 You or a creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target’s person.
 
-Greater Restoration
-5th-level abjuration
+}
+
+spell name="Greater Restoration" {
+	tag "abjuration"
+	rank 5
 
 Casting Time: 1 action
 
@@ -1238,8 +1439,11 @@ A Large spectral guardian appears and hovers for the duration in an unoccupied s
 
 Any creature hostile to you that moves to a space within 10 feet of the guardian for the first time on a turn must succeed on a Dexterity saving throw. The creature takes 20 radiant damage on a failed save, or half as much damage on a successful one. The guardian vanishes when it has dealt a total of 60 damage.
 
-Guards and Wards
-6th-level abjuration
+}
+
+spell name="Guards and Wards" {
+	tag "abjuration"
+	rank 6
 
 Casting Time: 10 minutes
 
@@ -1272,8 +1476,11 @@ The whole warded area radiates magic. A dispel magic cast on a specific effect, 
 
 You can create a permanently guarded and warded structure by casting this spell there every day for one year.
 
-Guidance
-Divination cantrip
+}
+
+spell name="Guidance" {
+	tag "Divination"
+	rank 0
 
 Casting Time: 1 action
 
@@ -1285,8 +1492,11 @@ Duration: Concentration, up to 1 minute
 
 You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one ability check of its choice. It can roll the die before or after making the ability check. The spell then ends.
 
-Guiding Bolt
-1st-level evocation
+}
+
+spell name="Guiding Bolt" {
+	tag "evocation"
+	rank 1
 
 Casting Time: 1 action
 
@@ -1300,8 +1510,11 @@ A flash of light streaks toward a creature of your choice within range. Make a r
 
 At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.
 
-Gust of Wind
-2nd-level evocation
+}
+
+spell name="Gust of Wind" {
+	tag "evocation"
+	rank 2
 
 Casting Time: 1 action
 
@@ -1319,9 +1532,11 @@ The gust disperses gas or vapor, and it extinguishes candles, torches, and simil
 
 As a bonus action on each of your turns before the spell ends, you can change the direction in which the line blasts from you.
 
-H Spells
-Hallow
-5th-level evocation
+}
+
+spell name="Hallow" {
+	tag "evocation"
+	rank 5
 
 Casting Time: 24 hours
 
@@ -1357,8 +1572,11 @@ Silence. No sound can emanate from within the area, and no sound can reach into 
 
 Tongues. Affected creatures can communicate with any other creature in the area, even if they don’t share a common language.
 
-Hallucinatory Terrain
-4th-level illusion
+}
+
+spell name="Hallucinatory Terrain" {
+	tag "illusion"
+	rank 4
 
 Casting Time: 10 minutes
 
@@ -1372,8 +1590,11 @@ You make natural terrain in a 150-foot cube in range look, sound, and smell like
 
 The tactile characteristics of the terrain are unchanged, so creatures entering the area are likely to see through the illusion. If the difference isn’t obvious by touch, a creature carefully examining the illusion can attempt an Intelligence (Investigation) check against your spell save DC to disbelieve it. A creature who discerns the illusion for what it is, sees it as a vague image superimposed on the terrain.
 
-Harm
-6th-level necromancy
+}
+
+spell name="Harm" {
+	tag "necromancy"
+	rank 6
 
 Casting Time: 1 action
 
@@ -1385,8 +1606,11 @@ Duration: Instantaneous
 
 You unleash a virulent disease on a creature that you can see within range. The target must make a Constitution saving throw. On a failed save, it takes 14d6 necrotic damage, or half as much damage on a successful save. The damage can’t reduce the target’s hit points below 1. If the target fails the saving throw, its hit point maximum is reduced for 1 hour by an amount equal to the necrotic damage it took. Any effect that removes a disease allows a creature’s hit point maximum to return to normal before that time passes.
 
-Haste
-3rd-level transmutation
+}
+
+spell name="Haste" {
+	tag "transmutation"
+	rank 3
 
 Casting Time: 1 action
 
@@ -1400,8 +1624,11 @@ Choose a willing creature that you can see within range. Until the spell ends, t
 
 When the spell ends, the target can’t move or take actions until after its next turn, as a wave of lethargy sweeps over it.
 
-Heal
-6th-level evocation
+}
+
+spell name="Heal" {
+	tag "evocation"
+	rank 6
 
 Casting Time: 1 action
 
@@ -1415,8 +1642,11 @@ Choose a creature that you can see within range. A surge of positive energy wash
 
 At Higher Levels. When you cast this spell using a spell slot of 7th level or higher, the amount of healing increases by 10 for each slot level above 6th.
 
-Healing Word
-1st-level evocation
+}
+
+spell name="Healing Word" {
+	tag "evocation"
+	rank 1
 
 Casting Time: 1 bonus action
 
@@ -1430,8 +1660,11 @@ A creature of your choice that you can see within range regains hit points equal
 
 At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st.
 
-Heat Metal
-2nd-level transmutation
+}
+
+spell name="Heat Metal" {
+	tag "transmutation"
+	rank 2
 
 Casting Time: 1 action
 
@@ -1447,8 +1680,11 @@ If a creature is holding or wearing the object and takes the damage from it, the
 
 At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.
 
-Hellish Rebuke
-1st-level evocation
+}
+
+spell name="Hellish Rebuke" {
+	tag "evocation"
+	rank 1
 
 Casting Time: 1 reaction, which you take in response to being damaged by a creature within 60 feet of you that you can see
 
@@ -1462,8 +1698,11 @@ You point your finger, and the creature that damaged you is momentarily surround
 
 At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st.
 
-Heroes’ Feast
-6th-level conjuration
+}
+
+spell name="Heroes' Feast" {
+	tag "conjuration"
+	rank 6
 
 Casting Time: 10 minutes
 
@@ -1477,8 +1716,11 @@ You bring forth a great feast, including magnificent food and drink. The feast t
 
 A creature that partakes of the feast gains several benefits. The creature is cured of all diseases and poison, becomes immune to poison and being frightened, and makes all Wisdom saving throws with advantage. Its hit point maximum also increases by 2d10, and it gains the same number of hit points. These benefits last for 24 hours.
 
-Heroism
-1st-level enchantment
+}
+
+spell name="Heroism" {
+	tag "enchantment"
+	rank 1
 
 Casting Time: 1 action
 
@@ -1492,8 +1734,11 @@ A willing creature you touch is imbued with bravery. Until the spell ends, the c
 
 At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.
 
-Hold Monster
-5th-level enchantment
+}
+
+spell name="Hold Monster" {
+	tag "enchantment"
+	rank 5
 
 Casting Time: 1 action
 
@@ -1507,8 +1752,11 @@ Choose a creature that you can see within range. The target must succeed on a Wi
 
 At Higher Levels. When you cast this spell using a spell slot of 6th level or higher, you can target one additional creature for each slot level above 5th. The creatures must be within 30 feet of each other when you target them.
 
-Hold Person
-2nd-level enchantment
+}
+
+spell name="Hold Person" {
+	tag "enchantment"
+	rank 2
 
 Casting Time: 1 action
 
@@ -1522,8 +1770,11 @@ Choose a humanoid that you can see within range. The target must succeed on a Wi
 
 At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, you can target one additional humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them.
 
-Holy Aura
-8th-level abjuration
+}
+
+spell name="Holy Aura" {
+	tag "abjuration"
+	rank 8
 
 Casting Time: 1 action
 
@@ -1550,8 +1801,11 @@ You choose a creature you can see within range and mystically mark it as your qu
 
 At Higher Levels. When you cast this spell using a spell slot of 3rd or 4th level, you can maintain your concentration on the spell for up to 8 hours. When you use a spell slot of 5th level or higher, you can maintain your concentration on the spell for up to 24 hours.
 
-Hypnotic Pattern
-3rd-level illusion
+}
+
+spell name="Hypnotic Pattern" {
+	tag "illusion"
+	rank 3
 
 Casting Time: 1 action
 
@@ -1565,9 +1819,11 @@ You create a twisting pattern of colors that weaves through the air inside a 30-
 
 The spell ends for an affected creature if it takes any damage or if someone else uses an action to shake the creature out of its stupor.
 
-I Spells
-Ice Storm
-4th-level evocation
+}
+
+spell name="Ice Storm" {
+	tag "evocation"
+	rank 4
 
 Casting Time: 1 action
 
@@ -1583,8 +1839,11 @@ Hailstones turn the storm’s area of effect into difficult terrain until the en
 
 At Higher Levels. When you cast this spell using a spell slot of 5th level or higher, the bludgeoning damage increases by 1d8 for each slot level above 4th.
 
-Identify
-1st-level divination (ritual)
+}
+
+spell name="Identify" {
+	tag "divination"
+	rank 1 ritual=true
 
 Casting Time: 1 minute
 
@@ -1598,8 +1857,11 @@ You choose one object that you must touch throughout the casting of the spell. I
 
 If you instead touch a creature throughout the casting, you learn what spells, if any, are currently affecting it.
 
-Illusory Script
-1st-level illusion (ritual)
+}
+
+spell name="Illusory Script" {
+	tag "illusion"
+	rank 1 ritual=true
 
 Casting Time: 1 minute
 
@@ -1617,8 +1879,11 @@ Should the spell be dispelled, the original script and the illusion both disappe
 
 A creature with truesight can read the hidden message.
 
-Imprisonment
-9th-level abjuration
+}
+
+spell name="Imprisonment" {
+	tag "abjuration"
+	rank 9
 
 Casting Time: 1 minute
 
@@ -1656,8 +1921,11 @@ A dispel magic spell can end the spell only if it is cast as a 9th-level spell, 
 
 You can use a particular special component to create only one prison at a time. If you cast the spell again using the same component, the target of the first casting is immediately freed from its binding.
 
-Incendiary Cloud
-8th-level conjuration
+}
+
+spell name="Incendiary Cloud" {
+	tag "conjuration"
+	rank 8
 
 Casting Time: 1 action
 
@@ -1673,8 +1941,11 @@ When the cloud appears, each creature in it must make a Dexterity saving throw. 
 
 The cloud moves 10 feet directly away from you in a direction that you choose at the start of each of your turns.
 
-Inflict Wounds
-1st-level necromancy
+}
+
+spell name="Inflict Wounds" {
+	tag "necromancy"
+	rank 1
 
 Casting Time: 1 action
 
@@ -1707,8 +1978,11 @@ When the area appears, each creature in it must make a Constitution saving throw
 
 At Higher Levels. When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d10 for each slot level above 5th.
 
-Invisibility
-2nd-level illusion
+}
+
+spell name="Invisibility" {
+	tag "illusion"
+	rank 2
 
 Casting Time: 1 action
 
@@ -1722,9 +1996,11 @@ A creature you touch becomes invisible until the spell ends. Anything the target
 
 At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.
 
-J Spells
-Jump
-1st-level transmutation
+}
+
+spell name="Jump" {
+	tag "transmutation"
+	rank 1
 
 Casting Time: 1 action
 
@@ -1736,9 +2012,11 @@ Duration: 1 minute
 
 You touch a creature. The creature’s jump distance is tripled until the spell ends.
 
-K Spells
-Knock
-2nd-level transmutation
+}
+
+spell name="Knock" {
+	tag "transmutation"
+	rank 2
 
 Casting Time: 1 action
 
@@ -1756,9 +2034,11 @@ If you choose a target that is held shut with arcane lock, that spell is suppres
 
 When you cast the spell, a loud knock, audible from as far away as 300 feet, emanates from the target object.
 
-L Spells
-Legend Lore
-5th-level divination
+}
+
+spell name="Legend Lore" {
+	tag "divination"
+	rank 5
 
 Casting Time: 10 minutes
 
@@ -1772,8 +2052,11 @@ Name or describe a person, place, or object. The spell brings to your mind a bri
 
 The information you learn is accurate but might be couched in figurative language. For example, if you have a mysterious magic axe on hand, the spell might yield this information: “Woe to the evildoer whose hand touches the axe, for even the haft slices the hand of the evil ones. Only a true Child of Stone, lover and beloved of Moradin, may awaken the true powers of the axe, and only with the sacred word Rudnogg on the lips.”
 
-Lesser Restoration
-2nd-level abjuration
+}
+
+spell name="Lesser Restoration" {
+	tag "abjuration"
+	rank 2
 
 Casting Time: 1 action
 
@@ -1785,8 +2068,11 @@ Duration: Instantaneous
 
 You touch a creature and can end either one disease or one condition afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned.
 
-Levitate
-2nd-level transmutation
+}
+
+spell name="Levitate" {
+	tag "transmutation"
+	rank 2
 
 Casting Time: 1 action
 
@@ -1802,8 +2088,11 @@ The target can move only by pushing or pulling against a fixed object or surface
 
 When the spell ends, the target floats gently to the ground if it is still aloft.
 
-Light
-Evocation cantrip
+}
+
+spell name="Light" {
+	tag "Evocation"
+	rank 0
 
 Casting Time: 1 action
 
@@ -1817,8 +2106,11 @@ You touch one object that is no larger than 10 feet in any dimension. Until the 
 
 If you target an object held or worn by a hostile creature, that creature must succeed on a Dexterity saving throw to avoid the spell.
 
-Lightning Bolt
-3rd-level evocation
+}
+
+spell name="Lightning Bolt" {
+	tag "evocation"
+	rank 3
 
 Casting Time: 1 action
 
@@ -1834,8 +2126,11 @@ The lightning ignites flammable objects in the area that aren’t being worn or 
 
 At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.
 
-Locate Animals or Plants
-2nd-level divination (ritual)
+}
+
+spell name="Locate Animals or Plants" {
+	tag "divination"
+	rank 2 ritual=true
 
 Casting Time: 1 action
 
@@ -1847,8 +2142,11 @@ Duration: Instantaneous
 
 Describe or name a specific kind of beast or plant. Concentrating on the voice of nature in your surroundings, you learn the direction and distance to the closest creature or plant of that kind within 5 miles, if any are present.
 
-Locate Creature
-4th-level divination
+}
+
+spell name="Locate Creature" {
+	tag "divination"
+	rank 4
 
 Casting Time: 1 action
 
@@ -1864,8 +2162,11 @@ The spell can locate a specific creature known to you, or the nearest creature o
 
 This spell can’t locate a creature if running water at least 10 feet wide blocks a direct path between you and the creature.
 
-Locate Object
-2nd-level divination
+}
+
+spell name="Locate Object" {
+	tag "divination"
+	rank 2
 
 Casting Time: 1 action
 
@@ -1881,8 +2182,11 @@ The spell can locate a specific object known to you, as long as you have seen it
 
 This spell can’t locate an object if any thickness of lead, even a thin sheet, blocks a direct path between you and the object.
 
-Longstrider
-1st-level transmutation
+}
+
+spell name="Longstrider" {
+	tag "transmutation"
+	rank 1
 
 Casting Time: 1 action
 
@@ -1896,9 +2200,11 @@ You touch a creature. The target’s speed increases by 10 feet until the spell 
 
 At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.
 
-M Spells
-Mage Armor
-1st-level abjuration
+}
+
+spell name="Mage Armor" {
+	tag "abjuration"
+	rank 1
 
 Casting Time: 1 action
 
@@ -1910,8 +2216,11 @@ Duration: 8 hours
 
 You touch a willing creature who isn’t wearing armor, and a protective magical force surrounds it until the spell ends. The target’s base AC becomes 13 + its Dexterity modifier. The spell ends if the target dons armor or if you dismiss the spell as an action.
 
-Mage Hand
-Conjuration cantrip
+}
+
+spell name="Mage Hand" {
+	tag "Conjuration"
+	rank 0
 
 Casting Time: 1 action
 
@@ -1927,8 +2236,11 @@ You can use your action to control the hand. You can use the hand to manipulate 
 
 The hand can’t attack, activate magic items, or carry more than 10 pounds.
 
-Magic Circle
-3rd-level abjuration
+}
+
+spell name="Magic Circle" {
+	tag "abjuration"
+	rank 3
 
 Casting Time: 1 minute
 
@@ -1949,8 +2261,11 @@ When you cast this spell, you can elect to cause its magic to operate in the rev
 
 At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the duration increases by 1 hour for each slot level above 3rd.
 
-Magic Jar
-6th-level necromancy
+}
+
+spell name="Magic Jar" {
+	tag "necromancy"
+	rank 6
 
 Casting Time: 1 minute
 
@@ -1974,8 +2289,11 @@ If the container is destroyed or the spell ends, your soul immediately returns t
 
 When the spell ends, the container is destroyed.
 
-Magic Missile
-1st-level evocation
+}
+
+spell name="Magic Missile" {
+	tag "evocation"
+	rank 1
 
 Casting Time: 1 action
 
@@ -1989,8 +2307,11 @@ You create three glowing darts of magical force. Each dart hits a creature of yo
 
 At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot level above 1st.
 
-Magic Mouth
-2nd-level illusion (ritual)
+}
+
+spell name="Magic Mouth" {
+	tag "illusion"
+	rank 2 ritual=true
 
 Casting Time: 1 minute
 
@@ -2006,8 +2327,11 @@ When that circumstance occurs, a magical mouth appears on the object and recites
 
 The triggering circumstance can be as general or as detailed as you like, though it must be based on visual or audible conditions that occur within 30 feet of the object. For example, you could instruct the mouth to speak when any creature moves within 30 feet of the object or when a silver bell rings within 30 feet of it.
 
-Magic Weapon
-2nd-level transmutation
+}
+
+spell name="Magic Weapon" {
+	tag "transmutation"
+	rank 2
 
 Casting Time: 1 bonus action
 
@@ -2021,8 +2345,11 @@ You touch a nonmagical weapon. Until the spell ends, that weapon becomes a magic
 
 At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the bonus increases to +2. When you use a spell slot of 6th level or higher, the bonus increases to +3.
 
-Major Image
-3rd-level illusion
+}
+
+spell name="Major Image" {
+	tag "illusion"
+	rank 3
 
 Casting Time: 1 action
 
@@ -2040,8 +2367,11 @@ Physical interaction with the image reveals it to be an illusion, because things
 
 At Higher Levels. When you cast this spell using a spell slot of 6th level or higher, the spell lasts until dispelled, without requiring your concentration.
 
-Mass Cure Wounds
-5th-level evocation
+}
+
+spell name="Mass Cure Wounds" {
+	tag "evocation"
+	rank 5
 
 Casting Time: 1 action
 
@@ -2055,8 +2385,11 @@ A wave of healing energy washes out from a point of your choice within range. Ch
 
 At Higher Levels. When you cast this spell using a spell slot of 6th level or higher, the healing increases by 1d8 for each slot level above 5th.
 
-Mass Heal
-9th-level evocation
+}
+
+spell name="Mass Heal" {
+	tag "evocation"
+	rank 9
 
 Casting Time: 1 action
 
@@ -2068,8 +2401,11 @@ Duration: Instantaneous
 
 A flood of healing energy flows from you into injured creatures around you. You restore up to 700 hit points, divided as you choose among any number of creatures that you can see within range. Creatures healed by this spell are also cured of all diseases and any effect making them blinded or deafened. This spell has no effect on undead or constructs.
 
-Mass Healing Word
-3rd-level evocation
+}
+
+spell name="Mass Healing Word" {
+	tag "evocation"
+	rank 3
 
 Casting Time: 1 bonus action
 
@@ -2083,8 +2419,11 @@ As you call out words of restoration, up to six creatures of your choice that yo
 
 At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the healing increases by 1d4 for each slot level above 3rd.
 
-Mass Suggestion
-6th-level enchantment
+}
+
+spell name="Mass Suggestion" {
+	tag "enchantment"
+	rank 6
 
 Casting Time: 1 action
 
@@ -2104,8 +2443,11 @@ If you or any of your companions damage a creature affected by this spell, the s
 
 At Higher Levels. When you cast this spell using a 7th-level spell slot, the duration is 10 days. When you use an 8th-level spell slot, the duration is 30 days. When you use a 9th-level spell slot, the duration is a year and a day.
 
-Maze
-8th-level conjuration
+}
+
+spell name="Maze" {
+	tag "conjuration"
+	rank 8
 
 Casting Time: 1 action
 
@@ -2121,8 +2463,11 @@ The target can use its action to attempt to escape. When it does so, it makes a 
 
 When the spell ends, the target reappears in the space it left or, if that space is occupied, in the nearest unoccupied space.
 
-Meld into Stone
-3rd-level transmutation (ritual)
+}
+
+spell name="Meld into Stone" {
+	tag "transmutation"
+	rank 3 ritual=true
 
 Casting Time: 1 action
 
@@ -2138,8 +2483,11 @@ While merged with the stone, you can’t see what occurs outside it, and any Wis
 
 Minor physical damage to the stone doesn’t harm you, but its partial destruction or a change in its shape (to the extent that you no longer fit within it) expels you and deals 6d6 bludgeoning damage to you. The stone’s complete destruction (or transmutation into a different substance) expels you and deals 50 bludgeoning damage to you. If expelled, you fall prone in an unoccupied space closest to where you first entered.
 
-Mending
-Transmutation cantrip
+}
+
+spell name="Mending" {
+	tag "Transmutation"
+	rank 0
 
 Casting Time: 1 minute
 
@@ -2153,8 +2501,11 @@ This spell repairs a single break or tear in an object you touch, such as a brok
 
 This spell can physically repair a magic item or construct, but the spell can’t restore magic to such an object.
 
-Message
-Transmutation cantrip
+}
+
+spell name="Message" {
+	tag "Transmutation"
+	rank 0
 
 Casting Time: 1 action
 
@@ -2168,8 +2519,11 @@ You point your finger toward a creature within range and whisper a message. The 
 
 You can cast this spell through solid objects if you are familiar with the target and know it is beyond the barrier. Magical silence, 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood blocks the spell. The spell doesn’t have to follow a straight line and can travel freely around corners or through openings.
 
-Meteor Swarm
-9th-level evocation
+}
+
+spell name="Meteor Swarm" {
+	tag "evocation"
+	rank 9
 
 Casting Time: 1 action
 
@@ -2183,8 +2537,11 @@ Blazing orbs of fire plummet to the ground at four different points you can see 
 
 The spell damages objects in the area and ignites flammable objects that aren’t being worn or carried.
 
-Mind Blank
-8th-level abjuration
+}
+
+spell name="Mind Blank" {
+	tag "abjuration"
+	rank 8
 
 Casting Time: 1 action
 
@@ -2196,8 +2553,11 @@ Duration: 24 hours
 
 Until the spell ends, one willing creature you touch is immune to psychic damage, any effect that would sense its emotions or read its thoughts, divination spells, and the charmed condition. The spell even foils wish spells and spells or effects of similar power used to affect the target’s mind or to gain information about the target.
 
-Minor Illusion
-Illusion cantrip
+}
+
+spell name="Minor Illusion" {
+	tag "Illusion"
+	rank 0
 
 Casting Time: 1 action
 
@@ -2215,8 +2575,11 @@ If you create an image of an object—such as a chair, muddy footprints, or a sm
 
 If a creature uses its action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to the creature.
 
-Mirage Arcane
-7th-level illusion
+}
+
+spell name="Mirage Arcane" {
+	tag "illusion"
+	rank 7
 
 Casting Time: 10 minutes
 
@@ -2234,8 +2597,11 @@ The illusion includes audible, visual, tactile, and olfactory elements, so it ca
 
 Creatures with truesight can see through the illusion to the terrain’s true form; however, all other elements of the illusion remain, so while the creature is aware of the illusion’s presence, the creature can still physically interact with the illusion.
 
-Mirror Image
-2nd-level illusion
+}
+
+spell name="Mirror Image" {
+	tag "illusion"
+	rank 2
 
 Casting Time: 1 action
 
@@ -2255,8 +2621,11 @@ A duplicate’s AC equals 10 + your Dexterity modifier. If an attack hits a dupl
 
 A creature is unaffected by this spell if it can’t see, if it relies on senses other than sight, such as blindsight, or if it can perceive illusions as false, as with truesight.
 
-Mislead
-5th-level illusion
+}
+
+spell name="Mislead" {
+	tag "illusion"
+	rank 5
 
 Casting Time: 1 action
 
@@ -2272,8 +2641,11 @@ You can use your action to move your illusory double up to twice your speed and 
 
 You can see through its eyes and hear through its ears as if you were located where it is. On each of your turns as a bonus action, you can switch from using its senses to using your own, or back again. While you are using its senses, you are blinded and deafened in regard to your own surroundings.
 
-Misty Step
-2nd-level conjuration
+}
+
+spell name="Misty Step" {
+	tag "conjuration"
+	rank 2
 
 Casting Time: 1 bonus action
 
@@ -2285,8 +2657,11 @@ Duration: Instantaneous
 
 Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see.
 
-Modify Memory
-5th-level enchantment
+}
+
+spell name="Modify Memory" {
+	tag "enchantment"
+	rank 5
 
 Casting Time: 1 action
 
@@ -2308,8 +2683,11 @@ A remove curse or greater restoration spell cast on the target restores the crea
 
 At Higher Levels. If you cast this spell using a spell slot of 6th level or higher, you can alter the target’s memories of an event that took place up to 7 days ago (6th level), 30 days ago (7th level), 1 year ago (8th level), or any time in the creature’s past (9th level).
 
-Moonbeam
-2nd-level evocation
+}
+
+spell name="Moonbeam" {
+	tag "evocation"
+	rank 2
 
 Casting Time: 1 action
 
@@ -2346,8 +2724,11 @@ You create a sword-shaped plane of force that hovers within range. It lasts for 
 
 When the sword appears, you make a melee spell attack against a target of your choice within 5 feet of the sword. On a hit, the target takes 3d10 force damage. Until the spell ends, you can use a bonus action on each of your turns to move the sword up to 20 feet to a spot you can see and repeat this attack against the same target or a different one.
 
-Move Earth
-6th-level transmutation
+}
+
+spell name="Move Earth" {
+	tag "transmutation"
+	rank 6
 
 Casting Time: 1 action
 
@@ -2367,9 +2748,11 @@ This spell can’t manipulate natural stone or stone construction. Rocks and str
 
 Similarly, this spell doesn’t directly affect plant growth. The moved earth carries any plants along with it.
 
-N Spells
-Nondetection
-3rd-level abjuration
+}
+
+spell name="Nondetection" {
+	tag "abjuration"
+	rank 3
 
 Casting Time: 1 action
 
@@ -2381,7 +2764,6 @@ Duration: 8 hours
 
 For the duration, you hide a target that you touch from divination magic. The target can be a willing creature or a place or an object no larger than 10 feet in any dimension. The target can’t be targeted by any divination magic or perceived through magical scrying sensors.
 
-O Spells
 Otto’s Irresistible Dance
 6th-level enchantment
 
@@ -2397,9 +2779,11 @@ Choose one creature that you can see within range. The target begins a comic dan
 
 A dancing creature must use all its movement to dance without leaving its space and has disadvantage on Dexterity saving throws and attack rolls. While the target is affected by this spell, other creatures have advantage on attack rolls against it. As an action, a dancing creature makes a Wisdom saving throw to regain control of itself. On a successful save, the spell ends.
 
-P Spells
-Pass without Trace
-2nd-level abjuration
+}
+
+spell name="Pass without Trace" {
+	tag "abjuration"
+	rank 2
 
 Casting Time: 1 action
 
@@ -2411,8 +2795,11 @@ Duration: Concentration, up to 1 hour
 
 A veil of shadows and silence radiates from you, masking you and your companions from detection. For the duration, each creature you choose within 30 feet of you (including you) has a +10 bonus to Dexterity (Stealth) checks and can’t be tracked except by magical means. A creature that receives this bonus leaves behind no tracks or other traces of its passage.
 
-Passwall
-5th-level transmutation
+}
+
+spell name="Passwall" {
+	tag "transmutation"
+	rank 5
 
 Casting Time: 1 action
 
@@ -2426,8 +2813,11 @@ A passage appears at a point of your choice that you can see on a wooden, plaste
 
 When the opening disappears, any creatures or objects still in the passage created by the spell are safely ejected to an unoccupied space nearest to the surface on which you cast the spell.
 
-Phantasmal Killer
-4th-level illusion
+}
+
+spell name="Phantasmal Killer" {
+	tag "illusion"
+	rank 4
 
 Casting Time: 1 action
 
@@ -2441,8 +2831,11 @@ You tap into the nightmares of a creature you can see within range and create an
 
 At Higher Levels. When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d10 for each slot level above 4th.
 
-Phantom Steed
-3rd-level illusion (ritual)
+}
+
+spell name="Phantom Steed" {
+	tag "illusion"
+	rank 3 ritual=true
 
 Casting Time: 1 minute
 
@@ -2456,8 +2849,11 @@ A Large quasi-real, horselike creature appears on the ground in an unoccupied sp
 
 For the duration, you or a creature you choose can ride the steed. The creature uses the statistics for a riding horse, except it has a speed of 100 feet and can travel 10 miles in an hour, or 13 miles at a fast pace. When the spell ends, the steed gradually fades, giving the rider 1 minute to dismount. The spell ends if you use an action to dismiss it or if the steed takes any damage.
 
-Planar Ally
-6th-level conjuration
+}
+
+spell name="Planar Ally" {
+	tag "conjuration"
+	rank 6
 
 Casting Time: 10 minutes
 
@@ -2479,8 +2875,11 @@ After the creature completes the task, or when the agreed-upon duration of servi
 
 A creature enlisted to join your group counts as a member of it, receiving a full share of experience points awarded.
 
-Planar Binding
-5th-level abjuration
+}
+
+spell name="Planar Binding" {
+	tag "abjuration"
+	rank 5
 
 Casting Time: 1 hour
 
@@ -2496,8 +2895,11 @@ A bound creature must follow your instructions to the best of its ability. You m
 
 At Higher Levels. When you cast this spell using a spell slot of a higher level, the duration increases to 10 days with a 6th-level slot, to 30 days with a 7th-level slot, to 180 days with an 8th-level slot, and to a year and a day with a 9th-level spell slot.
 
-Plane Shift
-7th-level conjuration
+}
+
+spell name="Plane Shift" {
+	tag "conjuration"
+	rank 7
 
 Casting Time: 1 action
 
@@ -2513,8 +2915,11 @@ Alternatively, if you know the sigil sequence of a teleportation circle on anoth
 
 You can use this spell to banish an unwilling creature to another plane. Choose a creature within your reach and make a melee spell attack against it. On a hit, the creature must make a Charisma saving throw. If the creature fails this save, it is transported to a random location on the plane of existence you specify. A creature so transported must find its own way back to your current plane of existence.
 
-Plant Growth
-3rd-level transmutation
+}
+
+spell name="Plant Growth" {
+	tag "transmutation"
+	rank 3
 
 Casting Time: 1 action or 8 hours
 
@@ -2532,8 +2937,11 @@ You can exclude one or more areas of any size within the spell’s area from bei
 
 If you cast this spell over 8 hours, you enrich the land. All plants in a half-mile radius centered on a point within range become enriched for 1 year. The plants yield twice the normal amount of food when harvested.
 
-Poison Spray
-Conjuration cantrip
+}
+
+spell name="Poison Spray" {
+	tag "Conjuration"
+	rank 0
 
 Casting Time: 1 action
 
@@ -2547,8 +2955,11 @@ You extend your hand toward a creature you can see within range and project a pu
 
 This spell’s damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12).
 
-Polymorph
-4th-level transmutation
+}
+
+spell name="Polymorph" {
+	tag "transmutation"
+	rank 4
 
 Casting Time: 1 action
 
@@ -2568,8 +2979,11 @@ The creature is limited in the actions it can perform by the nature of its new f
 
 The target’s gear melds into the new form. The creature can’t activate, use, wield, or otherwise benefit from any of its equipment.
 
-Power Word Kill
-9th-level enchantment
+}
+
+spell name="Power Word Kill" {
+	tag "enchantment"
+	rank 9
 
 Casting Time: 1 action
 
@@ -2581,8 +2995,11 @@ Duration: Instantaneous
 
 You utter a word of power that can compel one creature you can see within range to die instantly. If the creature you choose has 100 hit points or fewer, it dies. Otherwise, the spell has no effect.
 
-Power Word Stun
-8th-level enchantment
+}
+
+spell name="Power Word Stun" {
+	tag "enchantment"
+	rank 8
 
 Casting Time: 1 action
 
@@ -2596,8 +3013,11 @@ You speak a word of power that can overwhelm the mind of one creature you can se
 
 The stunned target must make a Constitution saving throw at the end of each of its turns. On a successful save, this stunning effect ends.
 
-Prayer of Healing
-2nd-level evocation
+}
+
+spell name="Prayer of Healing" {
+	tag "evocation"
+	rank 2
 
 Casting Time: 10 minutes
 
@@ -2611,8 +3031,11 @@ Up to six creatures of your choice that you can see within range each regain hit
 
 At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the healing increases by 1d8 for each slot level above 2nd.
 
-Prestidigitation
-Transmutation cantrip
+}
+
+spell name="Prestidigitation" {
+	tag "Transmutation"
+	rank 0
 
 Casting Time: 1 action
 
@@ -2632,10 +3055,11 @@ You make a color, a small mark, or a symbol appear on an object or a surface for
 You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn.
 If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.
 
-Prismatic Spray
+}
 
-
-7th-level evocation
+spell name="Prismatic Spray" {
+	tag "evocation"
+	rank 7
 
 Casting Time: 1 action
 
@@ -2663,8 +3087,11 @@ Eight multicolored rays of light flash from your hand. Each ray is a different c
 
 8. Special. The target is struck by two rays. Roll twice more, rerolling any 8.
 
-Prismatic Wall
-9th-level abjuration
+}
+
+spell name="Prismatic Wall" {
+	tag "abjuration"
+	rank 9
 
 Casting Time: 1 action
 
@@ -2698,8 +3125,11 @@ While this layer is in place, spells can’t be cast through the wall. The layer
 
 7. Violet. On a failed save, the creature is blinded. It must then make a Wisdom saving throw at the start of your next turn. A successful save ends the blindness. If it fails that save, the creature is transported to another plane of the DM’s choosing and is no longer blinded. (Typically, a creature that is on a plane that isn’t its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes.) This layer is destroyed by a dispel magic spell or a similar spell of equal or higher level that can end spells and magical effects.
 
-Produce Flame
-Conjuration cantrip
+}
+
+spell name="Produce Flame" {
+	tag "Conjuration"
+	rank 0
 
 Casting Time: 1 action
 
@@ -2715,8 +3145,11 @@ You can also attack with the flame, although doing so ends the spell. When you c
 
 This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
 
-Programmed Illusion
-6th-level illusion
+}
+
+spell name="Programmed Illusion" {
+	tag "illusion"
+	rank 6
 
 Casting Time: 1 action
 
@@ -2734,8 +3167,11 @@ The triggering condition can be as general or as detailed as you like, though it
 
 Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and any noise it makes sounds hollow to the creature.
 
-Project Image
-7th-level illusion
+}
+
+spell name="Project Image" {
+	tag "illusion"
+	rank 7
 
 Casting Time: 1 action
 
@@ -2753,8 +3189,11 @@ You can see through its eyes and hear through its ears as if you were in its spa
 
 Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and any noise it makes sounds hollow to the creature.
 
-Protection from Energy
-3rd-level abjuration
+}
+
+spell name="Protection from Energy" {
+	tag "abjuration"
+	rank 3
 
 Casting Time: 1 action
 
@@ -2766,8 +3205,11 @@ Duration: Concentration, up to 1 hour
 
 For the duration, the willing creature you touch has resistance to one damage type of your choice: acid, cold, fire, lightning, or thunder.
 
-Protection from Evil and Good
-1st-level abjuration
+}
+
+spell name="Protection from Evil and Good" {
+	tag "abjuration"
+	rank 1
 
 Casting Time: 1 action
 
@@ -2781,8 +3223,11 @@ Until the spell ends, one willing creature you touch is protected against certai
 
 The protection grants several benefits. Creatures of those types have disadvantage on attack rolls against the target. The target also can’t be charmed, frightened, or possessed by them. If the target is already charmed, frightened, or possessed by such a creature, the target has advantage on any new saving throw against the relevant effect.
 
-Protection from Poison
-2nd-level abjuration
+}
+
+spell name="Protection from Poison" {
+	tag "abjuration"
+	rank 2
 
 Casting Time: 1 action
 
@@ -2796,8 +3241,11 @@ You touch a creature. If it is poisoned, you neutralize the poison. If more than
 
 For the duration, the target has advantage on saving throws against being poisoned, and it has resistance to poison damage.
 
-Purify Food and Drink
-1st-level transmutation (ritual)
+}
+
+spell name="Purify Food and Drink" {
+	tag "transmutation"
+	rank 1 ritual=true
 
 Casting Time: 1 action
 
@@ -2809,9 +3257,11 @@ Duration: Instantaneous
 
 All nonmagical food and drink within a 5-foot-radius sphere centered on a point of your choice within range is purified and rendered free of poison and disease.
 
-R Spells
-Raise Dead
-5th-level necromancy
+}
+
+spell name="Raise Dead" {
+	tag "necromancy"
+	rank 5
 
 Casting Time: 1 hour
 
@@ -2829,8 +3279,11 @@ This spell closes all mortal wounds, but it doesn’t restore missing body parts
 
 Coming back from the dead is an ordeal. The target takes a −4 penalty to all attack rolls, saving throws, and ability checks. Every time the target finishes a long rest, the penalty is reduced by 1 until it disappears.
 
-Ray of Enfeeblement
-2nd-level necromancy
+}
+
+spell name="Ray of Enfeeblement" {
+	tag "necromancy"
+	rank 2
 
 Casting Time: 1 action
 
@@ -2844,8 +3297,11 @@ A black beam of enervating energy springs from your finger toward a creature wit
 
 At the end of each of the target’s turns, it can make a Constitution saving throw against the spell. On a success, the spell ends.
 
-Ray of Frost
-Evocation cantrip
+}
+
+spell name="Ray of Frost" {
+	tag "Evocation"
+	rank 0
 
 Casting Time: 1 action
 
@@ -2859,8 +3315,11 @@ A frigid beam of blue-white light streaks toward a creature within range. Make a
 
 The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
 
-Regenerate
-7th-level transmutation
+}
+
+spell name="Regenerate" {
+	tag "transmutation"
+	rank 7
 
 Casting Time: 1 minute
 
@@ -2874,8 +3333,11 @@ You touch a creature and stimulate its natural healing ability. The target regai
 
 The target’s severed body members (fingers, legs, tails, and so on), if any, are restored after 2 minutes. If you have the severed part and hold it to the stump, the spell instantaneously causes the limb to knit to the stump.
 
-Reincarnate
-5th-level transmutation
+}
+
+spell name="Reincarnate" {
+	tag "transmutation"
+	rank 5
 
 Casting Time: 1 hour
 
@@ -2906,8 +3368,11 @@ d100	Race
 97–00	Tiefling
 The reincarnated creature recalls its former life and experiences. It retains the capabilities it had in its original form, except it exchanges its original race for the new one and changes its racial traits accordingly.
 
-Remove Curse
-3rd-level abjuration
+}
+
+spell name="Remove Curse" {
+	tag "abjuration"
+	rank 3
 
 Casting Time: 1 action
 
@@ -2919,8 +3384,11 @@ Duration: Instantaneous
 
 At your touch, all curses affecting one creature or object end. If the object is a cursed magic item, its curse remains, but the spell breaks its owner’s attunement to the object so it can be removed or discarded.
 
-Resistance
-Abjuration cantrip
+}
+
+spell name="Resistance" {
+	tag "Abjuration"
+	rank 0
 
 Casting Time: 1 action
 
@@ -2932,8 +3400,11 @@ Duration: Concentration, up to 1 minute
 
 You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one saving throw of its choice. It can roll the die before or after making the saving throw. The spell then ends.
 
-Resurrection
-7th-level necromancy
+}
+
+spell name="Resurrection" {
+	tag "necromancy"
+	rank 7
 
 Casting Time: 1 hour
 
@@ -2953,8 +3424,11 @@ Coming back from the dead is an ordeal. The target takes a −4 penalty to all a
 
 Casting this spell to restore life to a creature that has been dead for one year or longer taxes you greatly. Until you finish a long rest, you can’t cast spells again, and you have disadvantage on all attack rolls, ability checks, and saving throws.
 
-Reverse Gravity
-7th-level transmutation
+}
+
+spell name="Reverse Gravity" {
+	tag "transmutation"
+	rank 7
 
 Casting Time: 1 action
 
@@ -2970,8 +3444,11 @@ If some solid object (such as a ceiling) is encountered in this fall, falling ob
 
 At the end of the duration, affected objects and creatures fall back down.
 
-Revivify
-3rd-level necromancy
+}
+
+spell name="Revivify" {
+	tag "necromancy"
+	rank 3
 
 Casting Time: 1 action
 
@@ -2983,8 +3460,11 @@ Duration: Instantaneous
 
 You touch a creature that has died within the last minute. That creature returns to life with 1 hit point. This spell can’t return to life a creature that has died of old age, nor can it restore any missing body parts.
 
-Rope Trick
-2nd-level transmutation
+}
+
+spell name="Rope Trick" {
+	tag "transmutation"
+	rank 2
 
 Casting Time: 1 action
 
@@ -3002,9 +3482,11 @@ Attacks and spells can’t cross through the entrance into or out of the extradi
 
 Anything inside the extradimensional space drops out when the spell ends.
 
-S Spells
-Sacred Flame
-Evocation cantrip
+}
+
+spell name="Sacred Flame" {
+	tag "Evocation"
+	rank 0
 
 Casting Time: 1 action
 
@@ -3018,8 +3500,11 @@ Flame-like radiance descends on a creature that you can see within range. The ta
 
 The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
 
-Sanctuary
-1st-level abjuration
+}
+
+spell name="Sanctuary" {
+	tag "abjuration"
+	rank 1
 
 Casting Time: 1 bonus action
 
@@ -3033,10 +3518,11 @@ You ward a creature within range against attack. Until the spell ends, any creat
 
 If the warded creature makes an attack, casts a spell that affects an enemy, or deals damage to another creature, this spell ends.
 
-Scorching Ray
+}
 
-
-2nd-level evocation
+spell name="Scorching Ray" {
+	tag "evocation"
+	rank 2
 
 Casting Time: 1 action
 
@@ -3052,8 +3538,11 @@ Make a ranged spell attack for each ray. On a hit, the target takes 2d6 fire dam
 
 At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, you create one additional ray for each slot level above 2nd.
 
-Scrying
-5th-level divination
+}
+
+spell name="Scrying" {
+	tag "divination"
+	rank 5
 
 Casting Time: 10 minutes
 
@@ -3079,8 +3568,11 @@ On a failed save, the spell creates an invisible sensor within 10 feet of the ta
 
 Instead of targeting a creature, you can choose a location you have seen before as the target of this spell. When you do, the sensor appears at that location and doesn’t move.
 
-See Invisibility
-2nd-level divination
+}
+
+spell name="See Invisibility" {
+	tag "divination"
+	rank 2
 
 Casting Time: 1 action
 
@@ -3092,8 +3584,11 @@ Duration: 1 hour
 
 For the duration, you see invisible creatures and objects as if they were visible, and you can see into the Ethereal Plane. Ethereal creatures and objects appear ghostly and translucent.
 
-Seeming
-5th-level illusion
+}
+
+spell name="Seeming" {
+	tag "illusion"
+	rank 5
 
 Casting Time: 1 action
 
@@ -3111,8 +3606,11 @@ The changes wrought by this spell fail to hold up to physical inspection. For ex
 
 A creature can use its action to inspect a target and make an Intelligence (Investigation) check against your spell save DC. If it succeeds, it becomes aware that the target is disguised.
 
-Sending
-3rd-level evocation
+}
+
+spell name="Sending" {
+	tag "evocation"
+	rank 3
 
 Casting Time: 1 action
 
@@ -3126,8 +3624,11 @@ You send a short message of twenty-five words or less to a creature with which y
 
 You can send the message across any distance and even to other planes of existence, but if the target is on a different plane than you, there is a 5 percent chance that the message doesn’t arrive.
 
-Sequester
-7th-level transmutation
+}
+
+spell name="Sequester" {
+	tag "transmutation"
+	rank 7
 
 Casting Time: 1 action
 
@@ -3143,8 +3644,11 @@ If the target is a creature, it falls into a state of suspended animation. Time 
 
 You can set a condition for the spell to end early. The condition can be anything you choose, but it must occur or be visible within 1 mile of the target. Examples include “after 1,000 years” or “when the tarrasque awakens.” This spell also ends if the target takes any damage.
 
-Shapechange
-9th-level transmutation
+}
+
+spell name="Shapechange" {
+	tag "transmutation"
+	rank 9
 
 Casting Time: 1 action
 
@@ -3166,8 +3670,11 @@ When you transform, you choose whether your equipment falls to the ground, merge
 
 During this spell’s duration, you can use your action to assume a different form following the same restrictions and rules for the original form, with one exception: if your new form has more hit points than your current one, your hit points remain at their current value.
 
-Shatter
-2nd-level evocation
+}
+
+spell name="Shatter" {
+	tag "evocation"
+	rank 2
 
 Casting Time: 1 action
 
@@ -3183,8 +3690,11 @@ A nonmagical object that isn’t being worn or carried also takes the damage if 
 
 At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.
 
-Shield
-1st-level abjuration
+}
+
+spell name="Shield" {
+	tag "abjuration"
+	rank 1
 
 Casting Time: 1 reaction, which you take when you are hit by an attack or targeted by the magic missile spell
 
@@ -3196,8 +3706,11 @@ Duration: 1 round
 
 An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile.
 
-Shield of Faith
-1st-level abjuration
+}
+
+spell name="Shield of Faith" {
+	tag "abjuration"
+	rank 1
 
 Casting Time: 1 bonus action
 
@@ -3209,8 +3722,11 @@ Duration: Concentration, up to 10 minutes
 
 A shimmering field appears and surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration.
 
-Shillelagh
-Transmutation cantrip
+}
+
+spell name="Shillelagh" {
+	tag "Transmutation"
+	rank 0
 
 Casting Time: 1 bonus action
 
@@ -3222,8 +3738,11 @@ Duration: 1 minute
 
 The wood of a club or quarterstaff you are holding is imbued with nature’s power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon’s damage die becomes a d8. The weapon also becomes magical, if it isn’t already. The spell ends if you cast it again or if you let go of the weapon.
 
-Shocking Grasp
-Evocation cantrip
+}
+
+spell name="Shocking Grasp" {
+	tag "Evocation"
+	rank 0
 
 Casting Time: 1 action
 
@@ -3237,8 +3756,11 @@ Lightning springs from your hand to deliver a shock to a creature you try to tou
 
 The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
 
-Silence
-2nd-level illusion (ritual)
+}
+
+spell name="Silence" {
+	tag "illusion"
+	rank 2 ritual=true
 
 Casting Time: 1 action
 
@@ -3250,8 +3772,11 @@ Duration: Concentration, up to 10 minutes
 
 For the duration, no sound can be created within or pass through a 20-foot-radius sphere centered on a point you choose within range. Any creature or object entirely inside the sphere is immune to thunder damage, and creatures are deafened while entirely inside it. Casting a spell that includes a verbal component is impossible there.
 
-Silent Image
-1st-level illusion
+}
+
+spell name="Silent Image" {
+	tag "illusion"
+	rank 1
 
 Casting Time: 1 action
 
@@ -3267,8 +3792,11 @@ You can use your action to cause the image to move to any spot within range. As 
 
 Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image.
 
-Simulacrum
-7th-level illusion
+}
+
+spell name="Simulacrum" {
+	tag "illusion"
+	rank 7
 
 Casting Time: 12 hours
 
@@ -3286,8 +3814,11 @@ If the simulacrum is damaged, you can repair it in an alchemical laboratory, usi
 
 If you cast this spell again, any duplicate you created with this spell is instantly destroyed.
 
-Sleep
-1st-level enchantment
+}
+
+spell name="Sleep" {
+	tag "enchantment"
+	rank 1
 
 Casting Time: 1 action
 
@@ -3305,8 +3836,11 @@ Undead and creatures immune to being charmed aren’t affected by this spell.
 
 At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d8 for each slot level above 1st.
 
-Sleet Storm
-3rd-level conjuration
+}
+
+spell name="Sleet Storm" {
+	tag "conjuration"
+	rank 3
 
 Casting Time: 1 action
 
@@ -3322,8 +3856,11 @@ The ground in the area is covered with slick ice, making it difficult terrain. W
 
 If a creature starts its turn in the spell's area and is concentrating on a spell, the creature must make a successful Constitution saving throw against your spell save DC or lose concentration.
 
-Slow
-3rd-level transmutation
+}
+
+spell name="Slow" {
+	tag "transmutation"
+	rank 3
 
 Casting Time: 1 action
 
@@ -3341,8 +3878,11 @@ If the creature attempts to cast a spell with a casting time of 1 action, roll a
 
 A creature affected by this spell makes another Wisdom saving throw at the end of each of its turns. On a successful save, the effect ends for it.
 
-Spare the Dying
-Necromancy cantrip
+}
+
+spell name="Spare the Dying" {
+	tag "Necromancy"
+	rank 0
 
 Casting Time: 1 action
 
@@ -3354,8 +3894,11 @@ Duration: Instantaneous
 
 You touch a living creature that has 0 hit points. The creature becomes stable. This spell has no effect on undead or constructs.
 
-Speak with Animals
-1st-level divination (ritual)
+}
+
+spell name="Speak with Animals" {
+	tag "divination"
+	rank 1 ritual=true
 
 Casting Time: 1 action
 
@@ -3367,8 +3910,11 @@ Duration: 10 minutes
 
 You gain the ability to comprehend and verbally communicate with beasts for the duration. The knowledge and awareness of many beasts is limited by their intelligence, but at minimum, beasts can give you information about nearby locations and monsters, including whatever they can perceive or have perceived within the past day. You might be able to persuade a beast to perform a small favor for you, at the DM’s discretion.
 
-Speak with Dead
-3rd-level necromancy
+}
+
+spell name="Speak with Dead" {
+	tag "necromancy"
+	rank 3
 
 Casting Time: 1 action
 
@@ -3382,8 +3928,11 @@ You grant the semblance of life and intelligence to a corpse of your choice with
 
 Until the spell ends, you can ask the corpse up to five questions. The corpse knows only what it knew in life, including the languages it knew. Answers are usually brief, cryptic, or repetitive, and the corpse is under no compulsion to offer a truthful answer if you are hostile to it or it recognizes you as an enemy. This spell doesn’t return the creature’s soul to its body, only its animating spirit. Thus, the corpse can’t learn new information, doesn’t comprehend anything that has happened since it died, and can’t speculate about future events.
 
-Speak with Plants
-3rd-level transmutation
+}
+
+spell name="Speak with Plants" {
+	tag "transmutation"
+	rank 3
 
 Casting Time: 1 action
 
@@ -3403,8 +3952,11 @@ If a plant creature is in the area, you can communicate with it as if you shared
 
 This spell can cause the plants created by the entangle spell to release a restrained creature.
 
-Spider Climb
-2nd-level transmutation
+}
+
+spell name="Spider Climb" {
+	tag "transmutation"
+	rank 2
 
 Casting Time: 1 action
 
@@ -3416,8 +3968,11 @@ Duration: Concentration, up to 1 hour
 
 Until the spell ends, one willing creature you touch gains the ability to move up, down, and across vertical surfaces and upside down along ceilings, while leaving its hands free. The target also gains a climbing speed equal to its walking speed.
 
-Spike Growth
-2nd-level transmutation
+}
+
+spell name="Spike Growth" {
+	tag "transmutation"
+	rank 2
 
 Casting Time: 1 action
 
@@ -3431,8 +3986,11 @@ The ground in a 20-foot radius centered on a point within range twists and sprou
 
 The transformation of the ground is camouflaged to look natural. Any creature that can’t see the area at the time the spell is cast must make a Wisdom (Perception) check against your spell save DC to recognize the terrain as hazardous before entering it.
 
-Spirit Guardians
-3rd-level conjuration
+}
+
+spell name="Spirit Guardians" {
+	tag "conjuration"
+	rank 3
 
 Casting Time: 1 action
 
@@ -3448,8 +4006,11 @@ When you cast this spell, you can designate any number of creatures you can see 
 
 At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd.
 
-Spiritual Weapon
-2nd-level evocation
+}
+
+spell name="Spiritual Weapon" {
+	tag "evocation"
+	rank 2
 
 Casting Time: 1 bonus action
 
@@ -3467,8 +4028,11 @@ The weapon can take whatever form you choose. Clerics of deities who are associa
 
 At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for every two slot levels above 2nd.
 
-Stinking Cloud
-3rd-level conjuration
+}
+
+spell name="Stinking Cloud" {
+	tag "conjuration"
+	rank 3
 
 Casting Time: 1 action
 
@@ -3484,8 +4048,11 @@ Each creature that is completely within the cloud at the start of its turn must 
 
 A moderate wind (at least 10 miles per hour) disperses the cloud after 4 rounds. A strong wind (at least 20 miles per hour) disperses it after 1 round.
 
-Stone Shape
-4th-level transmutation
+}
+
+spell name="Stone Shape" {
+	tag "transmutation"
+	rank 4
 
 Casting Time: 1 action
 
@@ -3497,8 +4064,11 @@ Duration: Instantaneous
 
 You touch a stone object of Medium size or smaller or a section of stone no more than 5 feet in any dimension and form it into any shape that suits your purpose. So, for example, you could shape a large rock into a weapon, idol, or coffer, or make a small passage through a wall, as long as the wall is less than 5 feet thick. You could also shape a stone door or its frame to seal the door shut. The object you create can have up to two hinges and a latch, but finer mechanical detail isn’t possible.
 
-Stoneskin
-4th-level abjuration
+}
+
+spell name="Stoneskin" {
+	tag "abjuration"
+	rank 4
 
 Casting Time: 1 action
 
@@ -3510,8 +4080,11 @@ Duration: Concentration, up to 1 hour
 
 This spell turns the flesh of a willing creature you touch as hard as stone. Until the spell ends, the target has resistance to nonmagical bludgeoning, piercing, and slashing damage.
 
-Storm of Vengeance
-9th-level conjuration
+}
+
+spell name="Storm of Vengeance" {
+	tag "conjuration"
+	rank 9
 
 Casting Time: 1 action
 
@@ -3533,8 +4106,11 @@ Round 4. Hailstones rain down from the cloud. Each creature under the cloud take
 
 Round 5–10. Gusts and freezing rain assail the area under the cloud. The area becomes difficult terrain and is heavily obscured. Each creature there takes 1d6 cold damage. Ranged weapon attacks in the area are impossible. The wind and rain count as a severe distraction for the purposes of maintaining concentration on spells. Finally, gusts of strong wind (ranging from 20 to 50 miles per hour) automatically disperse fog, mists, and similar phenomena in the area, whether mundane or magical.
 
-Suggestion
-2nd-level enchantment
+}
+
+spell name="Suggestion" {
+	tag "enchantment"
+	rank 2
 
 Casting Time: 1 action
 
@@ -3552,8 +4128,11 @@ You can also specify conditions that will trigger a special activity during the 
 
 If you or any of your companions damage the target, the spell ends.
 
-Sunbeam
-6th-level evocation
+}
+
+spell name="Sunbeam" {
+	tag "evocation"
+	rank 6
 
 Casting Time: 1 action
 
@@ -3569,8 +4148,11 @@ You can create a new line of radiance as your action on any turn until the spell
 
 For the duration, a mote of brilliant radiance shines in your hand. It sheds bright light in a 30-foot radius and dim light for an additional 30 feet. This light is sunlight.
 
-Sunburst
-8th-level evocation
+}
+
+spell name="Sunburst" {
+	tag "evocation"
+	rank 8
 
 Casting Time: 1 action
 
@@ -3586,8 +4168,11 @@ A creature blinded by this spell makes another Constitution saving throw at the 
 
 This spell dispels any darkness in its area that was created by a spell.
 
-Symbol
-7th-level abjuration
+}
+
+spell name="Symbol" {
+	tag "abjuration"
+	rank 7
 
 Casting Time: 1 minute
 
@@ -3623,9 +4208,11 @@ Sleep. Each target must make a Wisdom saving throw and falls unconscious for 10 
 
 Stunning. Each target must make a Wisdom saving throw and becomes stunned for 1 minute on a failed save.
 
-T Spells
-Telekinesis
-5th-level transmutation
+}
+
+spell name="Telekinesis" {
+	tag "transmutation"
+	rank 5
 
 Casting Time: 1 action
 
@@ -3647,8 +4234,11 @@ If the object is worn or carried by a creature, you must make an ability check w
 
 You can exert fine control on objects with your telekinetic grip, such as manipulating a simple tool, opening a door or a container, stowing or retrieving an item from an open container, or pouring the contents from a vial.
 
-Teleport
-7th-level conjuration
+}
+
+spell name="Teleport" {
+	tag "conjuration"
+	rank 7
 
 Casting Time: 1 action
 
@@ -3684,8 +4274,11 @@ Similar Area. You and your group (or the target object) wind up in a different a
 
 Mishap. The spell’s unpredictable magic results in a difficult journey. Each teleporting creature (or the target object) takes 3d10 force damage, and the DM rerolls on the table to see where you wind up (multiple mishaps can occur, dealing damage each time).
 
-Teleportation Circle
-5th-level conjuration
+}
+
+spell name="Teleportation Circle" {
+	tag "conjuration"
+	rank 5
 
 Casting Time: 1 minute
 
@@ -3701,8 +4294,11 @@ Many major temples, guilds, and other important places have permanent teleportat
 
 You can create a permanent teleportation circle by casting this spell in the same location every day for one year. You need not use the circle to teleport when you cast the spell in this way.
 
-Thaumaturgy
-Transmutation cantrip
+}
+
+spell name="Thaumaturgy" {
+	tag "Transmutation"
+	rank 0
 
 Casting Time: 1 action
 
@@ -3722,8 +4318,11 @@ You instantaneously cause an unlocked door or window to fly open or slam shut.
 You alter the appearance of your eyes for 1 minute.
 If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action.
 
-Thunderwave
-1st-level evocation
+}
+
+spell name="Thunderwave" {
+	tag "evocation"
+	rank 1
 
 Casting Time: 1 action
 
@@ -3739,8 +4338,11 @@ In addition, unsecured objects that are completely within the area of effect are
 
 At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.
 
-Time Stop
-9th-level transmutation
+}
+
+spell name="Time Stop" {
+	tag "transmutation"
+	rank 9
 
 Casting Time: 1 action
 
@@ -3754,8 +4356,11 @@ You briefly stop the flow of time for everyone but yourself. No time passes for 
 
 This spell ends if one of the actions you use during this period, or any effects that you create during this period, affects a creature other than you or an object being worn or carried by someone other than you. In addition, the spell ends if you move to a place more than 1,000 feet from the location where you cast it.
 
-Tongues
-3rd-level divination
+}
+
+spell name="Tongues" {
+	tag "divination"
+	rank 3
 
 Casting Time: 1 action
 
@@ -3767,8 +4372,11 @@ Duration: 1 hour
 
 This spell grants the creature you touch the ability to understand any spoken language it hears. Moreover, when the target speaks, any creature that knows at least one language and can hear the target understands what it says.
 
-Transport via Plants
-6th-level conjuration
+}
+
+spell name="Transport via Plants" {
+	tag "conjuration"
+	rank 6
 
 Casting Time: 1 action
 
@@ -3780,8 +4388,11 @@ Duration: 1 round
 
 This spell creates a magical link between a Large or larger inanimate plant within range and another plant, at any distance, on the same plane of existence. You must have seen or touched the destination plant at least once before. For the duration, any creature can step into the target plant and exit from the destination plant by using 5 feet of movement.
 
-Tree Stride
-5th-level conjuration
+}
+
+spell name="Tree Stride" {
+	tag "conjuration"
+	rank 5
 
 Casting Time: 1 action
 
@@ -3795,8 +4406,11 @@ You gain the ability to enter a tree and move from inside it to inside another t
 
 You can use this transportation ability once per round for the duration. You must end each turn outside a tree.
 
-True Polymorph
-9th-level transmutation
+}
+
+spell name="True Polymorph" {
+	tag "transmutation"
+	rank 9
 
 Casting Time: 1 action
 
@@ -3824,8 +4438,11 @@ If the spell becomes permanent, you no longer control the creature. It might rem
 
 Creature into Object. If you turn a creature into an object, it transforms along with whatever it is wearing and carrying into that form, as long as the object's size is no larger than the creature's size. The creature’s statistics become those of the object, and the creature has no memory of time spent in this form, after the spell ends and it returns to its normal form.
 
-True Resurrection
-9th-level necromancy
+}
+
+spell name="True Resurrection" {
+	tag "necromancy"
+	rank 9
 
 Casting Time: 1 hour
 
@@ -3841,8 +4458,11 @@ This spell closes all wounds, neutralizes any poison, cures all diseases, and li
 
 The spell can even provide a new body if the original no longer exists, in which case you must speak the creature’s name. The creature then appears in an unoccupied space you choose within 10 feet of you.
 
-True Seeing
-6th-level divination
+}
+
+spell name="True Seeing" {
+	tag "divination"
+	rank 6
 
 Casting Time: 1 action
 
@@ -3854,8 +4474,11 @@ Duration: 1 hour
 
 This spell gives the willing creature you touch the ability to see things as they actually are. For the duration, the creature has truesight, notices secret doors hidden by magic, and can see into the Ethereal Plane, all out to a range of 120 feet.
 
-True Strike
-Divination cantrip
+}
+
+spell name="True Strike" {
+	tag "Divination"
+	rank 0
 
 Casting Time: 1 action
 
@@ -3867,9 +4490,11 @@ Duration: Concentration, up to 1 round
 
 You point a finger at a target in range. Your magic grants you a brief insight into the target’s defenses. On your next turn, you gain advantage on your first attack roll against the target, provided that this spell hasn’t ended.
 
-U Spells
-Unseen Servant
-1st-level conjuration (ritual)
+}
+
+spell name="Unseen Servant" {
+	tag "conjuration"
+	rank 1 ritual=true
 
 Casting Time: 1 action
 
@@ -3885,9 +4510,11 @@ Once on each of your turns as a bonus action, you can mentally command the serva
 
 If you command the servant to perform a task that would move it more than 60 feet away from you, the spell ends.
 
-V Spells
-Vampiric Touch
-3rd-level necromancy
+}
+
+spell name="Vampiric Touch" {
+	tag "necromancy"
+	rank 3
 
 Casting Time: 1 action
 
@@ -3901,8 +4528,11 @@ The touch of your shadow-wreathed hand can siphon life force from others to heal
 
 At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.
 
-Vicious Mockery
-Enchantment cantrip
+}
+
+spell name="Vicious Mockery" {
+	tag "Enchantment"
+	rank 0
 
 Casting Time: 1 action
 
@@ -3916,9 +4546,11 @@ You unleash a string of insults laced with subtle enchantments at a creature you
 
 This spell’s damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).
 
-W Spells
-Wall of Fire
-4th-level evocation
+}
+
+spell name="Wall of Fire" {
+	tag "evocation"
+	rank 4
 
 Casting Time: 1 action
 
@@ -3936,8 +4568,11 @@ One side of the wall, selected by you when you cast this spell, deals 5d8 fire d
 
 At Higher Levels. When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.
 
-Wall of Force
-5th-level evocation
+}
+
+spell name="Wall of Force" {
+	tag "evocation"
+	rank 5
 
 Casting Time: 1 action
 
@@ -3951,8 +4586,11 @@ An invisible wall of force springs into existence at a point you choose within r
 
 Nothing can physically pass through the wall. It is immune to all damage and can’t be dispelled by dispel magic. A disintegrate spell destroys the wall instantly, however. The wall also extends into the Ethereal Plane, blocking ethereal travel through the wall.
 
-Wall of Ice
-6th-level evocation
+}
+
+spell name="Wall of Ice" {
+	tag "evocation"
+	rank 6
 
 Casting Time: 1 action
 
@@ -3970,8 +4608,11 @@ The wall is an object that can be damaged and thus breached. It has AC 12 and 30
 
 At Higher Levels. When you cast this spell using a spell slot of 7th level or higher, the damage the wall deals when it appears increases by 2d6, and the damage from passing through the sheet of frigid air increases by 1d6, for each slot level above 6th.
 
-Wall of Stone
-5th-level evocation
+}
+
+spell name="Wall of Stone" {
+	tag "evocation"
+	rank 5
 
 Casting Time: 1 action
 
@@ -3993,8 +4634,11 @@ The wall is an object made of stone that can be damaged and thus breached. Each 
 
 If you maintain your concentration on this spell for its whole duration, the wall becomes permanent and can’t be dispelled. Otherwise, the wall disappears when the spell ends.
 
-Wall of Thorns
-6th-level conjuration
+}
+
+spell name="Wall of Thorns" {
+	tag "conjuration"
+	rank 6
 
 Casting Time: 1 action
 
@@ -4012,8 +4656,11 @@ A creature can move through the wall, albeit slowly and painfully. For every 1 f
 
 At Higher Levels. When you cast this spell using a spell slot of 7th level or higher, both types of damage increase by 1d8 for each slot level above 6th.
 
-Warding Bond
-2nd-level abjuration
+}
+
+spell name="Warding Bond" {
+	tag "abjuration"
+	rank 2
 
 Casting Time: 1 action
 
@@ -4027,8 +4674,11 @@ This spell wards a willing creature you touch and creates a mystic connection be
 
 The spell ends if you drop to 0 hit points or if you and the target become separated by more than 60 feet. It also ends if the spell is cast again on either of the connected creatures. You can also dismiss the spell as an action.
 
-Water Breathing
-3rd-level transmutation (ritual)
+}
+
+spell name="Water Breathing" {
+	tag "transmutation"
+	rank 3 ritual=true
 
 Casting Time: 1 action
 
@@ -4040,8 +4690,11 @@ Duration: 24 hours
 
 This spell grants up to ten willing creatures you can see within range the ability to breathe underwater until the spell ends. Affected creatures also retain their normal mode of respiration.
 
-Water Walk
-3rd-level transmutation (ritual)
+}
+
+spell name="Water Walk" {
+	tag "transmutation"
+	rank 3 ritual=true
 
 Casting Time: 1 action
 
@@ -4055,10 +4708,11 @@ This spell grants the ability to move across any liquid surface—such as water,
 
 If you target a creature submerged in a liquid, the spell carries the target to the surface of the liquid at a rate of 60 feet per round.
 
-Web
+}
 
-
-2nd-level conjuration
+spell name="Web" {
+	tag "conjuration"
+	rank 2
 
 Casting Time: 1 action
 
@@ -4078,8 +4732,11 @@ A creature restrained by the webs can use its action to make a Strength check ag
 
 The webs are flammable. Any 5-foot cube of webs exposed to fire burns away in 1 round, dealing 2d4 fire damage to any creature that starts its turn in the fire.
 
-Weird
-9th-level illusion
+}
+
+spell name="Weird" {
+	tag "illusion"
+	rank 9
 
 Casting Time: 1 action
 
@@ -4091,8 +4748,11 @@ Duration: Concentration, up to one minute
 
 Drawing on the deepest fears of a group of creatures, you create illusory creatures in their minds, visible only to them. Each creature in a 30-foot-radius sphere centered on a point of your choice within range must make a Wisdom saving throw. On a failed save, a creature becomes frightened for the duration. The illusion calls on the creature’s deepest fears, manifesting its worst nightmares as an implacable threat. At the end of each of the frightened creature’s turns, it must succeed on a Wisdom saving throw or take 4d10 psychic damage. On a successful save, the spell ends for that creature.
 
-Wind Walk
-6th-level transmutation
+}
+
+spell name="Wind Walk" {
+	tag "transmutation"
+	rank 6
 
 Casting Time: 1 minute
 
@@ -4106,8 +4766,11 @@ You and up to ten willing creatures you can see within range assume a gaseous fo
 
 If a creature is in cloud form and flying when the effect ends, the creature descends 60 feet per round for 1 minute until it lands, which it does safely. If it can’t land after 1 minute, the creature falls the remaining distance.
 
-Wind Wall
-3rd-level evocation
+}
+
+spell name="Wind Wall" {
+	tag "evocation"
+	rank 3
 
 Casting Time: 1 action
 
@@ -4123,8 +4786,11 @@ When the wall appears, each creature within its area must make a Strength saving
 
 The strong wind keeps fog, smoke, and other gases at bay. Small or smaller flying creatures or objects can’t pass through the wall. Loose, lightweight materials brought into the wall fly upward. Arrows, bolts, and other ordinary projectiles launched at targets behind the wall are deflected upward and automatically miss. (Boulders hurled by giants or siege engines, and similar projectiles, are unaffected.) Creatures in gaseous form can’t pass through it.
 
-Wish
-9th-level conjuration
+}
+
+spell name="Wish" {
+	tag "conjuration"
+	rank 9
 
 Casting Time: 1 action
 
@@ -4149,8 +4815,11 @@ You might be able to achieve something beyond the scope of the above examples. S
 
 The stress of casting this spell to produce any effect other than duplicating another spell weakens you. After enduring that stress, each time you cast a spell until you finish a long rest, you take 1d10 necrotic damage per level of that spell. This damage can’t be reduced or prevented in any way. In addition, your Strength drops to 3, if it isn’t 3 or lower already, for 2d4 days. For each of those days that you spend resting and doing nothing more than light activity, your remaining recovery time decreases by 2 days. Finally, there is a 33 percent chance that you are unable to cast wish ever again if you suffer this stress.
 
-Word of Recall
-6th-level conjuration
+}
+
+spell name="Word of Recall" {
+	tag "conjuration"
+	rank 6
 
 Casting Time: 1 action
 
@@ -4164,9 +4833,11 @@ You and up to five willing creatures within 5 feet of you instantly teleport to 
 
 You must designate a sanctuary by casting this spell within a location, such as a temple, dedicated to or strongly linked to your deity. If you attempt to cast the spell in this manner in an area that isn’t dedicated to your deity, the spell has no effect.
 
-Z Spells
-Zone of Truth
-2nd-level enchantment
+}
+
+spell name="Zone of Truth" {
+	tag "enchantment"
+	rank 2
 
 Casting Time: 1 action
 
