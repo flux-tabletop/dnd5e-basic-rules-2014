@@ -1,4 +1,4 @@
-//!bane
+//!banishment
 spell name="Banishment" {
 	tag "abjuration"
 	rank 4
