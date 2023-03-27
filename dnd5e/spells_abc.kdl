@@ -1,15 +1,4 @@
-spell name="Bane" {
-	tag "enchantment"
-	rank 1
-	casting-time "Action"
-	range 30
-	component "Verbal"
-	component "Somatic"
-	component "Material" "a drop of blood"
-	duration "Minutes" 1 concentration=true
-	description "Up to three creatures of your choice that you can see within range must make Charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a d4 and subtract the number rolled from the attack roll or saving throw."
-	description (Section)"At Higher Levels" "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
-}
+//!bane
 spell name="Banishment" {
 	tag "abjuration"
 	rank 4
@@ -24,6 +13,7 @@ spell name="Banishment" {
 	If the target is native to a different plane of existence than the one you're on, the target is banished with a faint popping noise, returning to its home plane. If the spell ends before 1 minute has passed, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied. Otherwise, the target doesn't return."
 	description (Section)"At Higher Levels" "When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th."
 }
+//!barkskin
 spell name="Barkskin" {
 	tag "transmutation"
 	rank 2
@@ -35,6 +25,7 @@ spell name="Barkskin" {
 	duration "Hours" 1 concentration=true
 	description "You touch a willing creature. Until the spell ends, the target's skin has a rough, bark-like appearance, and the target's AC can't be less than 16, regardless of what kind of armor it is wearing."
 }
+//!beaconOfHope
 spell name="Beacon of Hope" {
 	tag "abjuration"
 	rank 3
@@ -45,6 +36,7 @@ spell name="Beacon of Hope" {
 	duration "Minutes" 1 concentration=true
 	description "This spell bestows hope and vitality. Choose any number of creatures within range. For the duration, each target has advantage on Wisdom saving throws and death saving throws, and regains the maximum number of hit points possible from any healing."
 }
+//!bestowCurse
 spell name="Bestow Curse" {
 	tag "necromancy"
 	rank 3
@@ -61,6 +53,7 @@ spell name="Bestow Curse" {
 	A remove curse spell ends this effect. At the DM's option, you may choose an alternative curse effect, but it should be no more powerful than those described above. The DM has final say on such a curse's effect."
 	description (Section)"At Higher Levels" "If you cast this spell using a spell slot of 4th level or higher, the duration is concentration, up to 10 minutes. If you use a spell slot of 5th level or higher, the duration is 8 hours. If you use a spell slot of 7th level or higher, the duration is 24 hours. If you use a 9th level spell slot, the spell lasts until it is dispelled. Using a spell slot of 5th level or higher grants a duration that doesn't require concentration."
 }
+//!bladeBarrier
 spell name="Blade Barrier" {
 	tag "evocation"
 	rank 6
@@ -72,6 +65,7 @@ spell name="Blade Barrier" {
 	description "You create a vertical wall of whirling, razor-sharp blades made of magical energy. The wall appears within range and lasts for the duration. You can make a straight wall up to 100 feet long, 20 feet high, and 5 feet thick, or a ringed wall up to 60 feet in diameter, 20 feet high, and 5 feet thick. The wall provides three-quarters cover to creatures behind it, and its space is difficult terrain.
 	When a creature enters the wall's area for the first time on a turn or starts its turn there, the creature must make a Dexterity saving throw. On a failed save, the creature takes 6d10 slashing damage. On a successful save, the creature takes half as much damage."
 }
+//!bless
 spell name="Bless" {
 	tag "enchantment"
 	rank 1
@@ -96,6 +90,7 @@ spell name="Bless" {
 	If you target a nonmagical plant that isn't a creature, such as a tree or shrub, it doesn't make a saving throw; it simply withers and dies."
 	description (Section)"At Higher Levels" "When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th."
 }
+//!blindnessDeafness
 spell name="Blindness/Deafness" {
 	tag "necromancy"
 	rank 2
@@ -106,6 +101,7 @@ spell name="Blindness/Deafness" {
 	description "You can blind or deafen a foe. Choose one creature that you can see within range to make a Constitution saving throw. If it fails, the target is either blinded or deafened (your choice) for the duration. At the end of each of its turns, the target can make a Constitution saving throw. On a success, the spell ends."
 	description (Section)"At Higher Levels" "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
 }
+//!blink
 spell name="Blink" {
 	tag "transmutation"
 	rank 3
@@ -117,6 +113,7 @@ spell name="Blink" {
 	description "Roll a d20 at the end of each of your turns for the duration of the spell. On a roll of 11 or higher, you vanish from your current plane of existence and appear in the Ethereal Plane (the spell fails and the casting is wasted if you were already on that plane). At the start of your next turn, and when the spell ends if you are on the Ethereal Plane, you return to an unoccupied space of your choice that you can see within 10 feet of the space you vanished from. If no unoccupied space is available within that range, you appear in the nearest unoccupied space (chosen at random if more than one space is equally near). You can dismiss this spell as an action.
 	While on the Ethereal Plane, you can see and hear the plane you originated from, which is cast in shades of gray, and you can't see anything there more than 60 feet away. You can only affect and be affected by other creatures on the Ethereal Plane. Creatures that aren't there can't perceive you or interact with you, unless they have the ability to do so."
 }
+//!blur
 spell name="Blur" {
 	tag "illusion"
 	rank 2
@@ -126,6 +123,7 @@ spell name="Blur" {
 	duration "Minutes" 1 concentration=true
 	description "Your body becomes blurred, shifting and wavering to all who can see you. For the duration, any creature has disadvantage on attack rolls against you. An attacker is immune to this effect if it doesn't rely on sight, as with blindsight, or can see through illusions, as with trueight."
 }
+//!brandingSmite
 spell name="Branding Smite" {
 	tag "evocation"
 	rank 2
@@ -136,6 +134,7 @@ spell name="Branding Smite" {
 	description "The next time you hit a creature with a weapon attack before this spell ends, the weapon gleams with astral radiance as you strike. The attack deals an extra 2d6 radiant damage to the target, which becomes visible if it's invisible, and the target sheds dim light in a 5-foot radius and can't become invisible until the spell ends."
 	description (Section)"At Higher Levels" "When you cast this spell using a spell slot of 3rd level or higher, the extra damage increases by 1d6 for each slot level above 2nd."
 }
+//!burningHands
 spell name="Burning Hands" {
 	tag "evocation"
 	rank 1
@@ -148,6 +147,7 @@ spell name="Burning Hands" {
 	The fire ignites any flammable objects in the area that aren't being worn or carried."
 	description (Section)"At Higher Levels" "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st."
 }
+//!callLightning
 spell name="Call Lightning" {
 	tag "conjuration"
 	rank 3
@@ -161,6 +161,7 @@ spell name="Call Lightning" {
 	If you are outdoors in stormy conditions when you cast this spell, the spell gives you control over the existing storm instead of creating a new one. Under such conditions, the spell's damage increases by 1d10."
 	description (Section)"At Higher Levels" "When you cast this spell using a spell slot of 4th or higher level, the damage increases by 1d10 for each slot level above 3rd."
 }
+//!calmEmotions
 spell name="Calm Emotions" {
 	tag "enchantment"
 	rank 2
@@ -173,6 +174,7 @@ spell name="Calm Emotions" {
 	You can suppress any effect causing a target to be charmed or frightened. When this spell ends, any suppressed effect resumes, provided that its duration has not expired in the meantime.
 	Alternatively, you can make a target indifferent about creatures of your choice that it is hostile toward. This indifference ends if the target is attacked or harmed by a spell or if it witnesses any of its friends being harmed. When the spell ends, the creature becomes hostile again, unless the DM rules otherwise."
 }
+//!chainLightning
 spell name="Chain Lightning" {
 	tag "evocation"
 	rank 6
@@ -186,6 +188,7 @@ spell name="Chain Lightning" {
 	A target must make a Dexterity saving throw. The target takes 10d8 lightning damage on a failed save, or half as much damage on a successful one."
 	description (Section)"At Higher Levels" "When you cast this spell using a spell slot of 7th level or higher, one additional bolt leaps from the first target to another target for each slot level above 6th."
 }
+//!charmPerson
 spell name="Charm Person" {
 	tag "enchantment"
 	rank 1
@@ -197,6 +200,7 @@ spell name="Charm Person" {
 	description "You attempt to charm a humanoid you can see within range. It must make a Wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was charmed by you."
 	description (Section)"At Higher Levels" "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them."
 }
+//!chillTouch
 spell name="Chill Touch" {
 	tag "Necromancy"
 	rank 0
@@ -209,6 +213,7 @@ spell name="Chill Touch" {
 	If you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn.
 	This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
 }
+//!circleOfDeath
 spell name="Circle of Death" {
 	tag "necromancy"
 	rank 6
@@ -221,6 +226,7 @@ spell name="Circle of Death" {
 	description "A sphere of negative energy ripples out in a 60-foot-radius sphere from a point within range. Each creature in that area must make a Constitution saving throw. A target takes 8d6 necrotic damage on a failed save, or half as much damage on a successful one."
 	description (Section)"At Higher Levels" "When you cast this spell using a spell slot of 7th level or higher, the damage increases by 2d6 for each slot level above 6th."
 }
+//!clairvoyance
 spell name="Clairvoyance" {
 	tag "divination"
 	rank 3
@@ -234,6 +240,7 @@ spell name="Clairvoyance" {
 	When you cast the spell, you choose seeing or hearing. You can use the chosen sense through the sensor as if you were in its space. As your action, you can switch between seeing and hearing.
 	A creature that can see the sensor (such as a creature benefiting from see invisibility or trueight) sees a luminous, intangible orb about the size of your fist."
 }
+//!clone
 spell name="Clone" {
 	tag "necromancy"
 	rank 8
@@ -246,6 +253,7 @@ spell name="Clone" {
 	description "This spell grows an inert duplicate of a living creature as a safeguard against death. This clone forms inside the vessel used in the spell's casting and grows to full size and maturity after 120 days; you can also choose to have the clone be a younger version of the same creature. It remains inert and endures indefinitely, as long as its vessel remains undisturbed.
 	At any time after the clone matures, if the original creature dies, its soul transfers to the clone, provided that the soul is free and willing to return. The clone is physically identical to the original and has the same personality, memories, and abilities, but none of the original's equipment. The original creature's physical remains, if they still exist, become inert and can't thereafter be restored to life, since the creature's soul is elsewhere."
 }
+//!cloudkill
 spell name="Cloudkill" {
 	tag "conjuration"
 	rank 5
@@ -259,6 +267,7 @@ spell name="Cloudkill" {
 	The fog moves 10 feet away from you at the start of each of your turns, rolling along the surface of the ground. The vapors, being heavier than air, sink to the lowest level of the land, even pouring down openings."
 	description (Section)"At Higher Levels" "When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th."
 }
+//!colorSpray
 spell name="Color Spray" {
 	tag "illusion"
 	rank 1
@@ -272,6 +281,7 @@ spell name="Color Spray" {
 	Starting with the creature that has the lowest current hit points, each creature affected by this spell is blinded until the end of your next turn. Subtract each creature's hit points from the total before moving on to the creature with the next lowest hit points. A creature's hit points must be equal to or less than the remaining total for that creature to be affected."
 	description (Section)"At Higher Levels" "When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d10 for each slot level above 1st."
 }
+//!command
 spell name="Command" {
 	tag "enchantment"
 	rank 1
@@ -288,6 +298,7 @@ spell name="Command" {
 	Halt. The target doesn't move and takes no actions. A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air."
 	description (Section)"At Higher Levels" "When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them."
 }
+//!commune
 spell name="Commune" {
 	tag "divination"
 	rank 5 ritual=true
@@ -301,6 +312,7 @@ spell name="Commune" {
 	Divine beings aren't necessarily omniscient, so you might receive “unclear” as an answer if a question pertains to information that lies beyond the deity's knowledge. In a case where a one-word answer could be misleading or contrary to the deity's interests, the DM might offer a short phrase as an answer instead.
 	If you cast the spell two or more times before finishing your next long rest, there is a cumulative 25 percent chance for each casting after the first that you get no answer. The DM makes this roll in secret."
 }
+//!communeWithNature
 spell name="Commune with Nature" {
 	tag "divination"
 	rank 5 ritual=true
@@ -311,13 +323,14 @@ spell name="Commune with Nature" {
 	duration "Instantaneous"
 	description "You briefly become one with nature and gain knowledge of the surrounding territory. In the outdoors, the spell gives you knowledge of the land within 3 miles of you. In caves and other natural underground settings, the radius is limited to 300 feet. The spell doesn't function where nature has been replaced by construction, such as in dungeons and towns.
 	You instantly gain knowledge of up to three facts of your choice about any of the following subjects as they relate to the area:
-	terrain and bodies of water
-	prevalent plants, minerals, animals, or peoples
-	powerful celestials, fey, fiends, elementals, or undead
-	influence from other planes of existence
-	buildings
+	- terrain and bodies of water
+	- prevalent plants, minerals, animals, or peoples
+	- powerful celestials, fey, fiends, elementals, or undead
+	- influence from other planes of existence
+	- buildings
 	For example, you could determine the location of powerful undead in the area, the location of major sources of safe drinking water, and the location of any nearby towns."
 }
+//!comprehendLanguages
 spell name="Comprehend Languages" {
 	tag "divination"
 	rank 1 ritual=true
@@ -330,6 +343,7 @@ spell name="Comprehend Languages" {
 	description "For the duration, you understand the literal meaning of any spoken language that you hear. You also understand any written language that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text.
 	This spell doesn't decode secret messages in a text or a glyph, such as an arcane sigil, that isn't part of a written language."
 }
+//!compulsion
 spell name="Compulsion" {
 	tag "enchantment"
 	rank 4
@@ -341,6 +355,7 @@ spell name="Compulsion" {
 	description "Creatures of your choice that you can see within range and that can hear you must make a Wisdom saving throw. A target automatically succeeds on this saving throw if it can't be charmed. On a failed save, a target is affected by this spell. Until the spell ends, you can use a bonus action on each of your turns to designate a direction that is horizontal to you. Each affected target must use as much of its movement as possible to move in that direction on its next turn. It can take its action before it moves. After moving in this way, it can make another Wisdom saving throw to try to end the effect.
 	A target isn't compelled to move into an obviously deadly hazard, such as a fire or pit, but it will provoke opportunity attacks to move in the designated direction."
 }
+//!coneOfCold
 spell name="Cone of Cold" {
 	tag "evocation"
 	rank 5
@@ -354,6 +369,7 @@ spell name="Cone of Cold" {
 	A creature killed by this spell becomes a frozen statue until it thaws."
 	description (Section)"At Higher Levels" "When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th."
 }
+//!confusion
 spell name="Confusion" {
 	tag "enchantment"
 	rank 4
@@ -364,15 +380,19 @@ spell name="Confusion" {
 	component "Material" "three nut shells"
 	duration "Minutes" 1 concentration=true
 	description "This spell assaults and twists creatures' minds, spawning delusions and provoking uncontrolled action. Each creature in a 10-foot-radius sphere centered on a point you choose within range must succeed on a Wisdom saving throw when you cast this spell or be affected by it.
-	An affected target can't take reactions and must roll a d10 at the start of each of its turns to determine its behavior for that turn.
-	d10	Behavior
-	1	The creature uses all its movement to move in a random direction. To determine the direction, roll a d8 and assign a direction to each die face. The creature doesn't take an action this turn.
-	2–6	The creature doesn't move or take actions this turn.
-	7–8	The creature uses its action to make a melee attack against a randomly determined creature within its reach. If there is no creature within its reach, the creature does nothing this turn.
-	9–10	The creature can act and move normally.
-	At the end of each of its turns, an affected target can make a Wisdom saving throw. If it succeeds, this effect ends for that target."
+	An affected target can't take reactions and must roll a d10 at the start of each of its turns to determine its behavior for that turn." {
+		table {
+			headers "d10" "Behavior"
+			row "1" "The creature uses all its movement to move in a random direction. To determine the direction, roll a d8 and assign a direction to each die face. The creature doesn't take an action this turn."
+			row "2-6" "The creature doesn't move or take actions this turn."
+			row "7-8" "The creature uses its action to make a melee attack against a randomly determined creature within its reach. If there is no creature within its reach, the creature does nothing this turn."
+			row "9-10" "The creature can act and move normally."
+		}
+	}
+	description "At the end of each of its turns, an affected target can make a Wisdom saving throw. If it succeeds, this effect ends for that target."
 	description (Section)"At Higher Levels" "When you cast this spell using a spell slot of 5th level or higher, the radius of the sphere increases by 5 feet for each slot level above 4th."
 }
+//!conjureAnimals
 spell name="Conjure Animals" {
 	tag "conjuration"
 	rank 3
@@ -391,6 +411,7 @@ spell name="Conjure Animals" {
 	The DM has the creatures' statistics."
 	description (Section)"At Higher Levels" "When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 5th-level slot, three times as many with a 7th-level slot, and four times as many with a 9th-level slot."
 }
+//!conjureCelestial
 spell name="Conjure Celestial" {
 	tag "conjuration"
 	rank 7
@@ -404,6 +425,7 @@ spell name="Conjure Celestial" {
 	The DM has the celestial's statistics."
 	description (Section)"At Higher Levels" "When you cast this spell using a 9th-level spell slot, you summon a celestial of challenge rating 5 or lower."
 }
+//!conjureElemental
 spell name="Conjure Elemental" {
 	tag "conjuration"
 	rank 5
@@ -419,6 +441,7 @@ spell name="Conjure Elemental" {
 	The DM has the elemental's statistics."
 	description (Section)"At Higher Levels" "When you cast this spell using a spell slot of 6th level or higher, the challenge rating increases by 1 for each slot level above 5th."
 }
+//!conjureFey
 spell name="Conjure Fey" {
 	tag "conjuration"
 	rank 6
@@ -433,6 +456,7 @@ spell name="Conjure Fey" {
 	The DM has the fey creature's statistics."
 	description (Section)"At Higher Levels" "When you cast this spell using a spell slot of 7th level or higher, the challenge rating increases by 1 for each slot level above 6th."
 }
+//!conjureMinorElementals
 spell name="Conjure Minor Elementals" {
 	tag "conjuration"
 	rank 4
@@ -442,15 +466,16 @@ spell name="Conjure Minor Elementals" {
 	component "Somatic"
 	duration "Hours" 1 concentration=true
 	description "You summon elementals that appear in unoccupied spaces that you can see within range. You choose one the following options for what appears:
-	One elemental of challenge rating 2 or lower
-	Two elementals of challenge rating 1 or lower
-	Four elementals of challenge rating 1/2 or lower
-	Eight elementals of challenge rating 1/4 or lower.
+	- One elemental of challenge rating 2 or lower
+	- Two elementals of challenge rating 1 or lower
+	- Four elementals of challenge rating 1/2 or lower
+	- Eight elementals of challenge rating 1/4 or lower.
 	An elemental summoned by this spell disappears when it drops to 0 hit points or when the spell ends.
 	The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you don't issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.
 	The DM has the creatures' statistics."
 	description (Section)"At Higher Levels" "When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 6th level and three times as many with an 8th level."
 }
+//!conjureWoodlandBeings
 spell name="Conjure Woodland Beings" {
 	tag "conjuration"
 	rank 4
@@ -470,6 +495,7 @@ spell name="Conjure Woodland Beings" {
 	The DM has the creatures' statistics."
 	description (Section)"At Higher Levels" "When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 6th-level slot and three times as many with an 8th-level slot."
 }
+//!contactOtherPlane
 spell name="Contact Other Plane" {
 	tag "divination"
 	rank 5 ritual=true
@@ -480,6 +506,7 @@ spell name="Contact Other Plane" {
 	description "You mentally contact a demigod, the spirit of a long-dead sage, or some other mysterious entity from another plane. Contacting this extraplanar intelligence can strain or even break your mind. When you cast this spell, make a DC 15 Intelligence saving throw. On a failure, you take 6d6 psychic damage and are insane until you finish a long rest. While insane, you can't take actions, can't understand what other creatures say, can't read, and speak only in gibberish. A greater restoration spell cast on you ends this effect.
 	On a successful save, you can ask the entity up to five questions. You must ask your questions before the spell ends. The DM answers each question with one word, such as “yes,” “no,” “maybe,” “never,” “irrelevant,” or “unclear” (if the entity doesn't know the answer to the question). If a one-word answer would be misleading, the DM might instead offer a short phrase as an answer."
 }
+//!contagion
 spell name="Contagion" {
 	tag "necromancy"
 	rank 5
@@ -489,14 +516,15 @@ spell name="Contagion" {
 	duration "Days" 7
 	description "Your touch inflicts disease. Make a melee spell attack against a creature within your reach. On a hit, the target is poisoned.
 	At the end of each of the poisoned target's turns, the target must make a Constitution saving throw. If the target succeeds on three of these saves, it is no longer poisoned, and the spell ends. If the target fails three of these saves, the target is no longer poisoned, but choose one of the diseases below. The target is subjected to the chosen disease for the spell's duration.
-	Since this spell induces a natural disease in its target, any effect that removes a disease or otherwise ameliorates a disease's effects apply to it.
-	Blinding Sickness. Pain grips the creature's mind, and its eyes turn milky white. The creature has disadvantage on Wisdom checks and Wisdom saving throws and is blinded.
-	Filth Fever. A raging fever sweeps through the creature's body. The creature has disadvantage on Strength checks, Strength saving throws, and attack rolls that use Strength.
-	Flesh Rot. The creature's flesh decays. The creature has disadvantage on Charisma checks and vulnerability to all damage.
-	Mindfire. The creature's mind becomes feverish. The creature has disadvantage on Intelligence checks and Intelligence saving throws, and the creature behaves as if under the effects of the confusion spell during combat.
-	Seizure. The creature is overcome with shaking. The creature has disadvantage on Dexterity checks, Dexterity saving throws, and attack rolls that use Dexterity.
-	Slimy Doom. The creature begins to bleed uncontrollably. The creature has disadvantage on Constitution checks and Constitution saving throws. In addition, whenever the creature takes damage, it is stunned until the end of its next turn."
+	Since this spell induces a natural disease in its target, any effect that removes a disease or otherwise ameliorates a disease's effects apply to it."
+	description (Section)"Blinding Sickness" "Pain grips the creature's mind, and its eyes turn milky white. The creature has disadvantage on Wisdom checks and Wisdom saving throws and is blinded."
+	description (Section)"Filth Fever" "A raging fever sweeps through the creature's body. The creature has disadvantage on Strength checks, Strength saving throws, and attack rolls that use Strength."
+	description (Section)"Flesh Rot" "The creature's flesh decays. The creature has disadvantage on Charisma checks and vulnerability to all damage."
+	description (Section)"Mindfire" "The creature's mind becomes feverish. The creature has disadvantage on Intelligence checks and Intelligence saving throws, and the creature behaves as if under the effects of the confusion spell during combat."
+	description (Section)"Seizure" "The creature is overcome with shaking. The creature has disadvantage on Dexterity checks, Dexterity saving throws, and attack rolls that use Dexterity."
+	description (Section)"Slimy Doom" "The creature begins to bleed uncontrollably. The creature has disadvantage on Constitution checks and Constitution saving throws. In addition, whenever the creature takes damage, it is stunned until the end of its next turn."
 }
+//!contingency
 spell name="Contingency" {
 	tag "evocation"
 	rank 6
@@ -510,6 +538,7 @@ spell name="Contingency" {
 	The contingent spell takes effect immediately after the circumstance is met for the first time, whether or not you want it to, and then contingency ends.
 	The contingent spell takes effect only on you, even if it can normally target others. You can use only one contingency spell at a time. If you cast this spell again, the effect of another contingency spell on you ends. Also, contingency ends on you if its material component is ever not on your person."
 }
+//!continualFlame
 spell name="Continual Flame" {
 	tag "evocation"
 	rank 2
@@ -521,6 +550,7 @@ spell name="Continual Flame" {
 	duration "UntilDispelled"
 	description "A flame, equivalent in brightness to a torch, springs forth from an object that you touch. The effect looks like a regular flame, but it creates no heat and doesn't use oxygen. A continual flame can be covered or hidden but not smothered or quenched."
 }
+//!controlWater
 spell name="Control Water" {
 	tag "transmutation"
 	rank 4
@@ -533,13 +563,14 @@ spell name="Control Water" {
 	description "Until the spell ends, you control any freestanding water inside an area you choose that is a cube up to 100 feet on a side. You can choose from any of the following effects when you cast this spell. As an action on your turn, you can repeat the same effect or choose a different one.
 	Flood. You cause the water level of all standing water in the area to rise by as much as 20 feet. If the area includes a shore, the flooding water spills over onto dry land.
 	If you choose an area in a large body of water, you instead create a 20-foot tall wave that travels from one side of the area to the other and then crashes down. Any Huge or smaller vehicles in the wave's path are carried with it to the other side. Any Huge or smaller vehicles struck by the wave have a 25 percent chance of capsizing.
-	The water level remains elevated until the spell ends or you choose a different effect. If this effect produced a wave, the wave repeats on the start of your next turn while the flood effect lasts.
-	Part Water. You cause water in the area to move apart and create a trench. The trench extends across the spell's area, and the separated water forms a wall to either side. The trench remains until the spell ends or you choose a different effect. The water then slowly fills in the trench over the course of the next round until the normal water level is restored.
-	Redirect Flow. You cause flowing water in the area to move in a direction you choose, even if the water has to flow over obstacles, up walls, or in other unlikely directions. The water in the area moves as you direct it, but once it moves beyond the spell's area, it resumes its flow based on the terrain conditions. The water continues to move in the direction you chose until the spell ends or you choose a different effect.
-	Whirlpool. This effect requires a body of water at least 50 feet square and 25 feet deep. You cause a whirlpool to form in the center of the area. The whirlpool forms a vortex that is 5 feet wide at the base, up to 50 feet wide at the top, and 25 feet tall. Any creature or object in the water and within 25 feet of the vortex is pulled 10 feet toward it. A creature can swim away from the vortex by making a Strength (Athletics) check against your spell save DC.
+	The water level remains elevated until the spell ends or you choose a different effect. If this effect produced a wave, the wave repeats on the start of your next turn while the flood effect lasts."
+	description (Section)"Part Water" "You cause water in the area to move apart and create a trench. The trench extends across the spell's area, and the separated water forms a wall to either side. The trench remains until the spell ends or you choose a different effect. The water then slowly fills in the trench over the course of the next round until the normal water level is restored."
+	description (Section)"Redirect Flow" "You cause flowing water in the area to move in a direction you choose, even if the water has to flow over obstacles, up walls, or in other unlikely directions. The water in the area moves as you direct it, but once it moves beyond the spell's area, it resumes its flow based on the terrain conditions. The water continues to move in the direction you chose until the spell ends or you choose a different effect."
+	description (Section)"Whirlpool" "This effect requires a body of water at least 50 feet square and 25 feet deep. You cause a whirlpool to form in the center of the area. The whirlpool forms a vortex that is 5 feet wide at the base, up to 50 feet wide at the top, and 25 feet tall. Any creature or object in the water and within 25 feet of the vortex is pulled 10 feet toward it. A creature can swim away from the vortex by making a Strength (Athletics) check against your spell save DC.
 	When a creature enters the vortex for the first time on a turn or starts its turn there, it must make a Strength saving throw. On a failed save, the creature takes 2d8 bludgeoning damage and is caught in the vortex until the spell ends. On a successful save, the creature takes half damage, and isn't caught in the vortex. A creature caught in the vortex can use its action to try to swim away from the vortex as described above, but has disadvantage on the Strength (Athletics) check to do so.
 	The first time each turn that an object enters the vortex, the object takes 2d8 bludgeoning damage; this damage occurs each round it remains in the vortex."
 }
+//!controlWeather
 spell name="Control Weather" {
 	tag "transmutation"
 	rank 8
@@ -581,6 +612,7 @@ spell name="Control Weather" {
 		}
 	}
 }
+//!counterspell
 spell name="Counterspell" {
 	tag "abjuration"
 	rank 3
@@ -591,6 +623,7 @@ spell name="Counterspell" {
 	description "You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect."
 	description (Section)"At Higher Levels" "When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used."
 }
+//!createFoodAndWater
 spell name="Create Food and Water" {
 	tag "conjuration"
 	rank 3
@@ -601,6 +634,7 @@ spell name="Create Food and Water" {
 	duration "Instantaneous"
 	description "You create 45 pounds of food and 30 gallons of water on the ground or in containers within range, enough to sustain up to fifteen humanoids or five steeds for 24 hours. The food is bland but nourishing, and spoils if uneaten after 24 hours. The water is clean and doesn't go bad."
 }
+//!createOrDestroyWater
 spell name="Create or Destroy Water" {
 	tag "transmutation"
 	rank 1
@@ -610,11 +644,12 @@ spell name="Create or Destroy Water" {
 	component "Somatic"
 	component "Material" "a drop of water if creating water or a few grains of sand if destroying it"
 	duration "Instantaneous"
-	description "You either create or destroy water.
-	Create Water. You create up to 10 gallons of clean water within range in an open container. Alternatively, the water falls as rain in a 30-foot cube within range, extinguishing exposed flames in the area.
-	Destroy Water. You destroy up to 10 gallons of water in an open container within range. Alternatively, you destroy fog in a 30-foot cube within range."
+	description "You either create or destroy water."
+	description (Section)"Create Water" "You create up to 10 gallons of clean water within range in an open container. Alternatively, the water falls as rain in a 30-foot cube within range, extinguishing exposed flames in the area."
+	description (Section)"Destroy Water" "You destroy up to 10 gallons of water in an open container within range. Alternatively, you destroy fog in a 30-foot cube within range."
 	description (Section)"At Higher Levels" "When you cast this spell using a spell slot of 2nd level or higher, you create or destroy 10 additional gallons of water, or the size of the cube increases by 5 feet, for each slot level above 1st."
 }
+//!createUndead
 spell name="Create Undead" {
 	tag "necromancy"
 	rank 6
@@ -629,6 +664,7 @@ spell name="Create Undead" {
 	The creature is under your control for 24 hours, after which it stops obeying any command you have given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature before the current 24-hour period ends. This use of the spell reasserts your control over up to three creatures you have animated with this spell, rather than animating new ones."
 	description (Section)"At Higher Levels" "When you cast this spell using a 7th-level spell slot, you can animate or reassert control over four ghouls. When you cast this spell using an 8th-level spell slot, you can animate or reassert control over five ghouls or two ghasts or wights. When you cast this spell using a 9th-level spell slot, you can animate or reassert control over six ghouls, three ghasts or wights, or two mummies."
 }
+//!creation
 spell name="Creation" {
 	tag "illusion"
 	rank 5
@@ -639,18 +675,20 @@ spell name="Creation" {
 	component "Material" "a tiny piece of matter of the same type of the item you plan to create"
 	duration "Special"
 	description "You pull wisps of shadow material from the Shadowfell to create a nonliving object of vegetable matter within range: soft goods, rope, wood, or something similar. You can also use this spell to create mineral objects such as stone, crystal, or metal. The object created must be no larger than a 5-foot cube, and the object must be of a form and material that you have seen before.
-	The duration depends on the object's material. If the object is composed of multiple materials, use the shortest duration.
-	[table]
-	Material	Duration
-	Vegetable matter	1 day
-	Stone or crystal	12 hours
-	Precious metals	1 hour
-	Gems	10 minutes
-	Adamantine or mithral	1 minute
-	[/table]
-	Using any material created by this spell as another spell's material component causes that spell to fail."
+	The duration depends on the object's material. If the object is composed of multiple materials, use the shortest duration." {
+		table {
+			headers "Material" "Duration"
+			row "Vegetable matter" "1 day"
+			row "Stone or crystal" "12 hours"
+			row "Precious metals" "1 hour"
+			row "Gems" "10 minutes"
+			row "Adamantine or mithral" "1 minute"
+		}
+	}
+	description "Using any material created by this spell as another spell's material component causes that spell to fail."
 	description (Section)"At Higher Levels" "When you cast this spell using a spell slot of 6th level or higher, the cube increases by 5 feet for each slot level above 5th."
 }
+//!cureWounds
 spell name="Cure Wounds" {
 	tag "evocation"
 	rank 1
