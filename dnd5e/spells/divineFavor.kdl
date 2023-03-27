@@ -1,0 +1,10 @@
+spell name="Divine Favor" {
+	tag "evocation"
+	rank 1
+	casting-time "BonusAction"
+	range "Self"
+	component "Verbal"
+	component "Somatic"
+	duration "Minute" 1 concentration=true
+	description "Your prayer empowers you with divine radiance. Until the spell ends, your weapon attacks deal an extra 1d4 radiant damage on a hit."
+}

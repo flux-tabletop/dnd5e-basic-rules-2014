@@ -1,0 +1,11 @@
+spell name="Jump" {
+	tag "transmutation"
+	rank 1
+	casting-time "Action"
+	range "Touch"
+	component "Verbal"
+	component "Somatic"
+	component "Material" "a grasshopper's hind leg"
+	duration "Minute" 1
+	description "You touch a creature. The creature's jump distance is tripled until the spell ends."
+}

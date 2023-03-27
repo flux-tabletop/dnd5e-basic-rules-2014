@@ -1,0 +1,11 @@
+spell name="Darkvision" {
+	tag "transmutation"
+	rank 2
+	casting-time "Action"
+	range "Touch"
+	component "Verbal"
+	component "Somatic"
+	component "Material" "either a pinch of dried carrot or an agate"
+	duration "Hour" 8
+	description "You touch a willing creature to grant it the ability to see in the dark. For the duration, that creature has darkvision out to a range of 60 feet."
+}
