@@ -1,5 +1,7 @@
 spell name="Dominate Beast" {
 	tag "enchantment"
+	tag "Druid"
+	tag "Sorcerer"
 	rank 4
 	casting-time "Action"
 	range 60

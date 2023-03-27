@@ -1,5 +1,7 @@
 spell name="Mislead" {
 	tag "illusion"
+	tag "Bard"
+	tag "Wizard"
 	rank 5
 	casting-time "Action"
 	range "Self"

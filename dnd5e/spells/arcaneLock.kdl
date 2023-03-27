@@ -1,5 +1,6 @@
 spell name="Arcane Lock" {
 	tag "abjuration"
+	tag "Wizard"
 	rank 2
 	casting-time "Action"
 	range "Touch"

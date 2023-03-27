@@ -1,5 +1,7 @@
 spell name="Revivify" {
 	tag "necromancy"
+	tag "Cleric"
+	tag "Paladin"
 	rank 3
 	casting-time "Action"
 	range "Touch"

@@ -1,5 +1,6 @@
 spell name="Sequester" {
 	tag "transmutation"
+	tag "Wizard"
 	rank 7
 	casting-time "Action"
 	range "Touch"

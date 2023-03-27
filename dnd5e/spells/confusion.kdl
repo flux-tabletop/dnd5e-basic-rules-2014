@@ -1,5 +1,9 @@
 spell name="Confusion" {
 	tag "enchantment"
+	tag "Bard"
+	tag "Druid"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 4
 	casting-time "Action"
 	range 90

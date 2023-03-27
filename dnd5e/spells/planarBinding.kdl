@@ -1,5 +1,9 @@
 spell name="Planar Binding" {
 	tag "abjuration"
+	tag "Bard"
+	tag "Cleric"
+	tag "Druid"
+	tag "Wizard"
 	rank 5
 	casting-time "Hour" 1
 	range 60

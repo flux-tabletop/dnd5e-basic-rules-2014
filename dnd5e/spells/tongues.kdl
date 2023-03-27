@@ -1,5 +1,10 @@
 spell name="Tongues" {
 	tag "divination"
+	tag "Bard"
+	tag "Cleric"
+	tag "Sorcerer"
+	tag "Warlock"
+	tag "Wizard"
 	rank 3
 	casting-time "Action"
 	range "Touch"

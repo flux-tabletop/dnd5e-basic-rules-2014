@@ -1,5 +1,8 @@
 spell name="Insect Plague" {
 	tag "conjuration"
+	tag "Cleric"
+	tag "Druid"
+	tag "Sorcerer"
 	rank 5
 	casting-time "Action"
 	range 300

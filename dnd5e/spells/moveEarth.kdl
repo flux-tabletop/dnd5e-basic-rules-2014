@@ -1,5 +1,8 @@
 spell name="Move Earth" {
 	tag "transmutation"
+	tag "Druid"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 6
 	casting-time "Action"
 	range 120

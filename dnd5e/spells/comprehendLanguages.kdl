@@ -1,5 +1,9 @@
 spell name="Comprehend Languages" {
 	tag "divination"
+	tag "Bard"
+	tag "Sorcerer"
+	tag "Warlock"
+	tag "Wizard"
 	rank 1 ritual=true
 	casting-time "Action"
 	range "Self"

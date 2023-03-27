@@ -1,5 +1,6 @@
 spell name="Entangle" {
 	tag "conjuration"
+	tag "Druid"
 	rank 1
 	casting-time "Action"
 	range 90

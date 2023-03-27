@@ -1,5 +1,8 @@
 spell name="Reverse Gravity" {
 	tag "transmutation"
+	tag "Druid"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 7
 	casting-time "Action"
 	range 100

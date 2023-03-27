@@ -1,5 +1,6 @@
 spell name="Word of Recall" {
 	tag "conjuration"
+	tag "Cleric"
 	rank 6
 	casting-time "Action"
 	range 5

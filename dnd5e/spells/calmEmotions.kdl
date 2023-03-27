@@ -1,5 +1,7 @@
 spell name="Calm Emotions" {
 	tag "enchantment"
+	tag "Bard"
+	tag "Cleric"
 	rank 2
 	casting-time "Action"
 	range 60

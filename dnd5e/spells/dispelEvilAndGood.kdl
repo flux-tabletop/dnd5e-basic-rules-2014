@@ -1,5 +1,7 @@
 spell name="Dispel Evil and Good" {
 	tag "abjuration"
+	tag "Cleric"
+	tag "Paladin"
 	rank 5
 	casting-time "Action"
 	range "Self"

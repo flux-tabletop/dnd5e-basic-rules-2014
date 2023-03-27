@@ -1,5 +1,7 @@
 spell name="Mind Blank" {
 	tag "abjuration"
+	tag "Bard"
+	tag "Wizard"
 	rank 8
 	casting-time "Action"
 	range "Touch"

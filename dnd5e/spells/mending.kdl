@@ -1,5 +1,10 @@
 spell name="Mending" {
 	tag "Transmutation"
+	tag "Bard"
+	tag "Cleric"
+	tag "Druid"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 0
 	casting-time "Minute" 1
 	range "Touch"

@@ -1,5 +1,9 @@
 spell name="Longstrider" {
 	tag "transmutation"
+	tag "Bard"
+	tag "Druid"
+	tag "Ranger"
+	tag "Wizard"
 	rank 1
 	casting-time "Action"
 	range "Touch"

@@ -1,5 +1,8 @@
 spell name="Stinking Cloud" {
 	tag "conjuration"
+	tag "Bard"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 3
 	casting-time "Action"
 	range 90

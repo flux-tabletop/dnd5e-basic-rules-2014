@@ -1,5 +1,7 @@
 spell name="Heroism" {
 	tag "enchantment"
+	tag "Bard"
+	tag "Paladin"
 	rank 1
 	casting-time "Action"
 	range "Touch"

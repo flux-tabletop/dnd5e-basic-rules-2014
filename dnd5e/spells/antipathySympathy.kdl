@@ -1,5 +1,7 @@
 spell name="Antipathy/Sympathy" {
 	tag "enchantment"
+	tag "Druid"
+	tag "Wizard"
 	rank 8
 	casting-time 1 "Hour"
 	range 60

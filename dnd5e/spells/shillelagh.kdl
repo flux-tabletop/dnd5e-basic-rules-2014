@@ -1,5 +1,6 @@
 spell name="Shillelagh" {
 	tag "Transmutation"
+	tag "Druid"
 	rank 0
 	casting-time "BonusAction"
 	range "Touch"

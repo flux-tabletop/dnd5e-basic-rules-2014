@@ -1,5 +1,6 @@
 spell name="Weird" {
 	tag "illusion"
+	tag "Wizard"
 	rank 9
 	casting-time "Action"
 	range 120

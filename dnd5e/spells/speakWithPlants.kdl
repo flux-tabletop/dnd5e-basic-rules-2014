@@ -1,5 +1,8 @@
 spell name="Speak with Plants" {
 	tag "transmutation"
+	tag "Bard"
+	tag "Druid"
+	tag "Ranger"
 	rank 3
 	casting-time "Action"
 	range "Self" // TODO: (30-foot radius)

@@ -1,5 +1,9 @@
 spell name="Thunderwave" {
 	tag "evocation"
+	tag "Bard"
+	tag "Druid"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 1
 	casting-time "Action"
 	range "Self" // TODO: (15-foot cube)

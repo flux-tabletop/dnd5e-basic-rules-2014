@@ -1,5 +1,10 @@
 spell name="True Seeing" {
 	tag "divination"
+	tag "Bard"
+	tag "Cleric"
+	tag "Sorcerer"
+	tag "Warlock"
+	tag "Wizard"
 	rank 6
 	casting-time "Action"
 	range "Touch"

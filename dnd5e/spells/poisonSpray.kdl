@@ -1,5 +1,9 @@
 spell name="Poison Spray" {
 	tag "Conjuration"
+	tag "Druid"
+	tag "Sorcerer"
+	tag "Warlock"
+	tag "Wizard"
 	rank 0
 	casting-time "Action"
 	range 10

@@ -1,5 +1,12 @@
 spell name="Detect Magic" {
 	tag "divination"
+	tag "Bard"
+	tag "Cleric"
+	tag "Druid"
+	tag "Paladin"
+	tag "Ranger"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 1
 	casting-time "Action" ritual=true
 	range "Self"

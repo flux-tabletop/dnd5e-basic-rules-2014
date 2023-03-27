@@ -1,5 +1,7 @@
 spell name="Conjure Minor Elementals" {
 	tag "conjuration"
+	tag "Druid"
+	tag "Wizard"
 	rank 4
 	casting-time 1 "Minute"
 	range 90

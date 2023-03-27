@@ -1,5 +1,7 @@
 spell name="Tree Stride" {
 	tag "conjuration"
+	tag "Druid"
+	tag "Ranger"
 	rank 5
 	casting-time "Action"
 	range "Self"

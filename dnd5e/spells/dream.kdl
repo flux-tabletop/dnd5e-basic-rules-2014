@@ -1,5 +1,8 @@
 spell name="Dream" {
 	tag "illusion"
+	tag "Bard"
+	tag "Warlock"
+	tag "Wizard"
 	rank 5
 	casting-time "Minute" 1
 	range "Special"

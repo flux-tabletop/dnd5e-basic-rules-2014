@@ -1,5 +1,8 @@
 spell name="Find Traps" {
 	tag "divination"
+	tag "Cleric"
+	tag "Druid"
+	tag "Ranger"
 	rank 2
 	casting-time "Action"
 	range 120

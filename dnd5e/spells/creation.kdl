@@ -1,5 +1,7 @@
 spell name="Creation" {
 	tag "illusion"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 5
 	casting-time 1 "Minute"
 	range 30

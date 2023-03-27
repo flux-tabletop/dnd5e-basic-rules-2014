@@ -1,5 +1,7 @@
 spell name="Antimagic Field" {
 	tag "abjuration"
+	tag "Cleric"
+	tag "Wizard"
 	rank 8
 	casting-time "Action"
 	range "Self" // TODO: (10-foot-radius sphere)

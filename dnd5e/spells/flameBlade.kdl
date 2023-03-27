@@ -1,5 +1,6 @@
 spell name="Flame Blade" {
 	tag "evocation"
+	tag "Druid"
 	rank 2
 	casting-time "BonusAction"
 	range "Self"

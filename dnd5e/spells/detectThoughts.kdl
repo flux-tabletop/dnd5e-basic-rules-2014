@@ -1,5 +1,8 @@
 spell name="Detect Thoughts" {
 	tag "divination"
+	tag "Bard"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 2
 	casting-time "Action"
 	range "Self"

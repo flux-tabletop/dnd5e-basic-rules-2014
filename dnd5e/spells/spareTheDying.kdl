@@ -1,5 +1,6 @@
 spell name="Spare the Dying" {
 	tag "Necromancy"
+	tag "Cleric"
 	rank 0
 	casting-time "Action"
 	range "Touch"

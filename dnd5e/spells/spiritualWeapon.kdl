@@ -1,5 +1,6 @@
 spell name="Spiritual Weapon" {
 	tag "evocation"
+	tag "Cleric"
 	rank 2
 	casting-time "BonusAction"
 	range 60

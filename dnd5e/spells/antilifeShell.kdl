@@ -1,5 +1,6 @@
 spell name="Antilife Shell" {
 	tag "abjuration"
+	tag "Druid"
 	rank 5
 	casting-time "Action"
 	range "Self" // TODO: (10-foot radius)

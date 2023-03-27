@@ -1,5 +1,8 @@
 spell name="Counterspell" {
 	tag "abjuration"
+	tag "Sorcerer"
+	tag "Warlock"
+	tag "Wizard"
 	rank 3
 	casting-time 1 "Reaction" "when you see a creature within 60 feet of you casting a spell"
 	range 60

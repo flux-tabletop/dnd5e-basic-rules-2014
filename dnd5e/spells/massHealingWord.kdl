@@ -1,5 +1,6 @@
 spell name="Mass Healing Word" {
 	tag "evocation"
+	tag "Cleric"
 	rank 3
 	casting-time "BonusAction"
 	range 60

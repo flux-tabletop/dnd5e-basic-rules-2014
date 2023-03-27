@@ -1,5 +1,7 @@
 spell name="Magic Mouth" {
 	tag "illusion"
+	tag "Bard"
+	tag "Wizard"
 	rank 2
 	casting-time "Minute" 1 ritual=true
 	range 30

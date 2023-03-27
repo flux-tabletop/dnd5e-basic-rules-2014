@@ -1,5 +1,9 @@
 spell name="Major Image" {
 	tag "illusion"
+	tag "Bard"
+	tag "Sorcerer"
+	tag "Warlock"
+	tag "Wizard"
 	rank 3
 	casting-time "Action"
 	range 120

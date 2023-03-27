@@ -1,5 +1,7 @@
 spell name="Guards and Wards" {
 	tag "abjuration"
+	tag "Bard"
+	tag "Wizard"
 	rank 6
 	casting-time "Minute" 10
 	range "Touch"

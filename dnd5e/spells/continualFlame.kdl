@@ -1,5 +1,7 @@
 spell name="Continual Flame" {
 	tag "evocation"
+	tag "Cleric"
+	tag "Wizard"
 	rank 2
 	casting-time "Action"
 	range "Touch"

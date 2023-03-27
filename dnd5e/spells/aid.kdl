@@ -1,5 +1,7 @@
 spell name="Aid" {
 	tag "Abjuration"
+	tag "Cleric"
+	tag "Paladin"
 	rank 2
 	casting-time "Action"
 	range 30

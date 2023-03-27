@@ -1,5 +1,6 @@
 spell name="Find Familiar" {
 	tag "conjuration"
+	tag "Wizard"
 	rank 1
 	casting-time "Hour" 1 ritual=true
 	range 10

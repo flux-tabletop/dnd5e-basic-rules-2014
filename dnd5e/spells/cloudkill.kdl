@@ -1,5 +1,7 @@
 spell name="Cloudkill" {
 	tag "conjuration"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 5
 	casting-time "Action"
 	range 120

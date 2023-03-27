@@ -1,5 +1,6 @@
 spell name="Phantasmal Killer" {
 	tag "illusion"
+	tag "Wizard"
 	rank 4
 	casting-time "Action"
 	range 120

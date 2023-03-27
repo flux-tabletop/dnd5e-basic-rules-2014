@@ -1,5 +1,8 @@
 spell name="Silence" {
 	tag "illusion"
+	tag "Bard"
+	tag "Cleric"
+	tag "Ranger"
 	rank 2
 	casting-time "Action" ritual=true
 	range 120

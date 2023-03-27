@@ -1,5 +1,10 @@
 spell name="Banishment" {
 	tag "abjuration"
+	tag "Cleric"
+	tag "Paladin"
+	tag "Sorcerer"
+	tag "Warlock"
+	tag "Wizard"
 	rank 4
 	casting-time "Action"
 	range 60

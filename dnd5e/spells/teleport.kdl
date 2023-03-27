@@ -1,5 +1,8 @@
 spell name="Teleport" {
 	tag "conjuration"
+	tag "Bard"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 7
 	casting-time "Action"
 	range 10

@@ -1,5 +1,7 @@
 spell name="Wind Wall" {
 	tag "evocation"
+	tag "Druid"
+	tag "Ranger"
 	rank 3
 	casting-time "Action"
 	range 120

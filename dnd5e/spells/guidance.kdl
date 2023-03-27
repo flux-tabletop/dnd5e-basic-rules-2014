@@ -1,5 +1,7 @@
 spell name="Guidance" {
 	tag "Divination"
+	tag "Cleric"
+	tag "Druid"
 	rank 0
 	casting-time "Action"
 	range "Touch"

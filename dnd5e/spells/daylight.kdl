@@ -1,5 +1,10 @@
 spell name="Daylight" {
 	tag "evocation"
+	tag "Cleric"
+	tag "Druid"
+	tag "Paladin"
+	tag "Ranger"
+	tag "Sorcerer"
 	rank 3
 	casting-time "Action"
 	range 60

@@ -1,5 +1,6 @@
 spell name="Rope Trick" {
 	tag "transmutation"
+	tag "Wizard"
 	rank 2
 	casting-time "Action"
 	range "Touch"

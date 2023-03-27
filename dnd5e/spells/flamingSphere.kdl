@@ -1,5 +1,7 @@
 spell name="Flaming Sphere" {
 	tag "conjuration"
+	tag "Druid"
+	tag "Wizard"
 	rank 2
 	casting-time "Action"
 	range 60

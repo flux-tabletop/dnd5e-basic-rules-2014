@@ -1,5 +1,6 @@
 spell name="Reincarnate" {
 	tag "transmutation"
+	tag "Druid"
 	rank 5
 	casting-time "Hour" 1
 	range "Touch"

@@ -1,5 +1,6 @@
 spell name="Hunter's Mark" {
 	tag "divination"
+	tag "Ranger"
 	rank 1
 	casting-time "BonusAction"
 	range 90

@@ -1,5 +1,8 @@
 spell name="Fire Storm" {
 	tag "evocation"
+	tag "Cleric"
+	tag "Druid"
+	tag "Sorcerer"
 	rank 7
 	casting-time "Action"
 	range 150

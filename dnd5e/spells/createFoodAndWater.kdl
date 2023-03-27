@@ -1,5 +1,7 @@
 spell name="Create Food and Water" {
 	tag "conjuration"
+	tag "Cleric"
+	tag "Paladin"
 	rank 3
 	casting-time "Action"
 	range 30

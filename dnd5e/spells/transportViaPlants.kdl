@@ -1,5 +1,6 @@
 spell name="Transport via Plants" {
 	tag "conjuration"
+	tag "Druid"
 	rank 6
 	casting-time "Action"
 	range 10

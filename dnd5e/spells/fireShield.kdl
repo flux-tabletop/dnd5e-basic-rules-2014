@@ -1,5 +1,6 @@
 spell name="Fire Shield" {
 	tag "evocation"
+	tag "Wizard"
 	rank 4
 	casting-time "Action"
 	range "Self"

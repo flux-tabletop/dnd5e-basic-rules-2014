@@ -1,5 +1,9 @@
 spell name="Fear" {
 	tag "illusion"
+	tag "Bard"
+	tag "Sorcerer"
+	tag "Warlock"
+	tag "Wizard"
 	rank 3
 	casting-time "Action"
 	range "Self" // TODO: (30-foot cone)

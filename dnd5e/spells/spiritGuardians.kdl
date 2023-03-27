@@ -1,5 +1,6 @@
 spell name="Spirit Guardians" {
 	tag "conjuration"
+	tag "Cleric"
 	rank 3
 	casting-time "Action"
 	range "Self" // TODO: (15-foot radius)

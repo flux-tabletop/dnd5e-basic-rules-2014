@@ -1,5 +1,10 @@
 spell name="Cure Wounds" {
 	tag "evocation"
+	tag "Bard"
+	tag "Cleric"
+	tag "Druid"
+	tag "Paladin"
+	tag "Ranger"
 	rank 1
 	casting-time "Action"
 	range "Touch"

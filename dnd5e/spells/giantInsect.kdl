@@ -1,5 +1,6 @@
 spell name="Giant Insect" {
 	tag "transmutation"
+	tag "Druid"
 	rank 4
 	casting-time "Action"
 	range 30

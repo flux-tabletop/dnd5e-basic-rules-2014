@@ -1,5 +1,9 @@
 spell name="Jump" {
 	tag "transmutation"
+	tag "Druid"
+	tag "Ranger"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 1
 	casting-time "Action"
 	range "Touch"

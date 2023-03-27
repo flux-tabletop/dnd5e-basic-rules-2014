@@ -1,5 +1,7 @@
 spell name="Enthrall" {
 	tag "enchantment"
+	tag "Bard"
+	tag "Warlock"
 	rank 2
 	casting-time "Action"
 	range 60

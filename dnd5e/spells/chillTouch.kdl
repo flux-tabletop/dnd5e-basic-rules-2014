@@ -1,5 +1,8 @@
 spell name="Chill Touch" {
 	tag "Necromancy"
+	tag "Sorcerer"
+	tag "Warlock"
+	tag "Wizard"
 	rank 0
 	casting-time "Action"
 	range 120

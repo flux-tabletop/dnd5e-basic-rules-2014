@@ -1,5 +1,8 @@
 spell name="Purify Food and Drink" {
 	tag "transmutation"
+	tag "Cleric"
+	tag "Druid"
+	tag "Paladin"
 	rank 1
 	casting-time "Action" ritual=true
 	range 10

@@ -1,5 +1,11 @@
 spell name="Locate Creature" {
 	tag "divination"
+	tag "Bard"
+	tag "Cleric"
+	tag "Druid"
+	tag "Paladin"
+	tag "Ranger"
+	tag "Wizard"
 	rank 4
 	casting-time "Action"
 	range "Self"

@@ -1,5 +1,8 @@
 spell name="Astral Projection" {
 	tag "necromancy"
+	tag "Cleric"
+	tag "Warlock"
+	tag "Wizard"
 	rank 9
 	casting-time 1 "Hour"
 	range 10

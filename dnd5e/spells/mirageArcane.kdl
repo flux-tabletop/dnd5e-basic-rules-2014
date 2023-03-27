@@ -1,5 +1,8 @@
 spell name="Mirage Arcane" {
 	tag "illusion"
+	tag "Bard"
+	tag "Druid"
+	tag "Wizard"
 	rank 7
 	casting-time "Minute" 10
 	range "Sight"

@@ -1,5 +1,9 @@
 spell name="True Strike" {
 	tag "Divination"
+	tag "Bard"
+	tag "Sorcerer"
+	tag "Warlock"
+	tag "Wizard"
 	rank 0
 	casting-time "Action"
 	range 30

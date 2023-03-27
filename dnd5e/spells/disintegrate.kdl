@@ -1,5 +1,7 @@
 spell name="Disintegrate" {
 	tag "transmutation"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 6
 	casting-time "Action"
 	range 60

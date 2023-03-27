@@ -1,5 +1,9 @@
 spell name="Protection from Poison" {
 	tag "abjuration"
+	tag "Cleric"
+	tag "Druid"
+	tag "Paladin"
+	tag "Ranger"
 	rank 2
 	casting-time "Action"
 	range "Touch"

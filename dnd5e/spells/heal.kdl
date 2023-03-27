@@ -1,5 +1,7 @@
 spell name="Heal" {
 	tag "evocation"
+	tag "Cleric"
+	tag "Druid"
 	rank 6
 	casting-time "Action"
 	range 60

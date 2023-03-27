@@ -1,5 +1,6 @@
 spell name="Phantom Steed" {
 	tag "illusion"
+	tag "Wizard"
 	rank 3
 	casting-time "Minute" 1 ritual=true
 	range 30

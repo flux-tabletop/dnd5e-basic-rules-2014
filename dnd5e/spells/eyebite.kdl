@@ -1,5 +1,9 @@
 spell name="Eyebite" {
 	tag "necromancy"
+	tag "Bard"
+	tag "Sorcerer"
+	tag "Warlock"
+	tag "Wizard"
 	rank 6
 	casting-time "Action"
 	range "Self"

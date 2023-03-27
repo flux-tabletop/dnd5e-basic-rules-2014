@@ -1,5 +1,9 @@
 spell name="Fog Cloud" {
 	tag "conjuration"
+	tag "Druid"
+	tag "Ranger"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 1
 	casting-time "Action"
 	range 120

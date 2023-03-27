@@ -1,5 +1,7 @@
 spell name="Color Spray" {
 	tag "illusion"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 1
 	casting-time "Action"
 	range "Self" (15-foot cone)

@@ -1,5 +1,9 @@
 spell name="Foresight" {
 	tag "divination"
+	tag "Bard"
+	tag "Druid"
+	tag "Warlock"
+	tag "Wizard"
 	rank 9
 	casting-time "Minute" 1
 	range "Touch"

@@ -1,5 +1,9 @@
 spell name="Protection from Evil and Good" {
 	tag "abjuration"
+	tag "Cleric"
+	tag "Paladin"
+	tag "Warlock"
+	tag "Wizard"
 	rank 1
 	casting-time "Action"
 	range "Touch"

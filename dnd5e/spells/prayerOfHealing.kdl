@@ -1,5 +1,6 @@
 spell name="Prayer of Healing" {
 	tag "evocation"
+	tag "Cleric"
 	rank 2
 	casting-time "Minute" 10
 	range 30

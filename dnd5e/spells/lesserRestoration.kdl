@@ -1,5 +1,10 @@
 spell name="Lesser Restoration" {
 	tag "abjuration"
+	tag "Bard"
+	tag "Cleric"
+	tag "Druid"
+	tag "Paladin"
+	tag "Ranger"
 	rank 2
 	casting-time "Action"
 	range "Touch"

@@ -1,5 +1,8 @@
 spell name="Disguise Self" {
 	tag "illusion"
+	tag "Bard"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 1
 	casting-time "Action"
 	range "Self"

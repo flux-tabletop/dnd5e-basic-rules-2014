@@ -1,5 +1,7 @@
 spell name="Gentle Repose" {
 	tag "necromancy"
+	tag "Cleric"
+	tag "Wizard"
 	rank 2
 	casting-time "Action" ritual=true
 	range "Touch"

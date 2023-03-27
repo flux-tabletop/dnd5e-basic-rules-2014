@@ -1,5 +1,8 @@
 spell name="Glyph of Warding" {
 	tag "abjuration"
+	tag "Bard"
+	tag "Cleric"
+	tag "Wizard"
 	rank 3
 	casting-time "Hour" 1
 	range "Touch"

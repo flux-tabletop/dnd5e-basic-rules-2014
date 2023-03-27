@@ -1,5 +1,7 @@
 spell name="Cone of Cold" {
 	tag "evocation"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 5
 	casting-time "Action"
 	range "Self" (60-foot cone)

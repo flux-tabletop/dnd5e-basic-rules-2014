@@ -1,5 +1,7 @@
 spell name="Alarm" {
 	tag "Abjuration"
+	tag "Ranger"
+	tag "Wizard"
 	rank 1
 	casting-time "Action" ritual=true
 	range 30

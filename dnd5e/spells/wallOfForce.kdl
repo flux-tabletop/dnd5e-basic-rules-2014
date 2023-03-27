@@ -1,5 +1,6 @@
 spell name="Wall of Force" {
 	tag "evocation"
+	tag "Wizard"
 	rank 5
 	casting-time "Action"
 	range 120

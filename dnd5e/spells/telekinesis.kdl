@@ -1,5 +1,7 @@
 spell name="Telekinesis" {
 	tag "transmutation"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 5
 	casting-time "Action"
 	range 60

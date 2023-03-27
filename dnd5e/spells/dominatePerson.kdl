@@ -1,5 +1,8 @@
 spell name="Dominate Person" {
 	tag "enchantment"
+	tag "Bard"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 5
 	casting-time "Action"
 	range 60

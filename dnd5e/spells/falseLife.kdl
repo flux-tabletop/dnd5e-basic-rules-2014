@@ -1,5 +1,7 @@
 spell name="False Life" {
 	tag "necromancy"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 1
 	casting-time "Action"
 	range "Self"

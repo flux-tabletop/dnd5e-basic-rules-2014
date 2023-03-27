@@ -1,5 +1,8 @@
 spell name="Earthquake" {
 	tag "evocation"
+	tag "Cleric"
+	tag "Druid"
+	tag "Sorcerer"
 	rank 8
 	casting-time "Action"
 	range 500

@@ -1,5 +1,7 @@
 spell name="Create or Destroy Water" {
 	tag "transmutation"
+	tag "Cleric"
+	tag "Druid"
 	rank 1
 	casting-time "Action"
 	range 30

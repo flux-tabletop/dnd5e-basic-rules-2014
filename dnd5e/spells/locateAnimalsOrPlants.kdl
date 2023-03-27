@@ -1,5 +1,8 @@
 spell name="Locate Animals or Plants" {
 	tag "divination"
+	tag "Bard"
+	tag "Druid"
+	tag "Ranger"
 	rank 2
 	casting-time "Action" ritual=true
 	range "Self"

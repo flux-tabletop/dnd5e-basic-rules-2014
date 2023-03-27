@@ -1,5 +1,6 @@
 spell name="Holy Aura" {
 	tag "abjuration"
+	tag "Cleric"
 	rank 8
 	casting-time "Action"
 	range "Self"

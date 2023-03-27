@@ -1,5 +1,6 @@
 spell name="Vicious Mockery" {
 	tag "Enchantment"
+	tag "Bard"
 	rank 0
 	casting-time "Action"
 	range 60

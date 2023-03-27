@@ -1,5 +1,8 @@
 spell name="Ice Storm" {
 	tag "evocation"
+	tag "Druid"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 4
 	casting-time "Action"
 	range 300

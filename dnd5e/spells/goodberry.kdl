@@ -1,5 +1,7 @@
 spell name="Goodberry" {
 	tag "transmutation"
+	tag "Druid"
+	tag "Ranger"
 	rank 1
 	casting-time "Action"
 	range "Touch"

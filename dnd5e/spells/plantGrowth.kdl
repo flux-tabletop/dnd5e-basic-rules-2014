@@ -1,5 +1,8 @@
 spell name="Plant Growth" {
 	tag "transmutation"
+	tag "Bard"
+	tag "Druid"
+	tag "Ranger"
 	rank 3
 	casting-time "Action" or 8 hours
 	range 150

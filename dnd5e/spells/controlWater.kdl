@@ -1,5 +1,8 @@
 spell name="Control Water" {
 	tag "transmutation"
+	tag "Cleric"
+	tag "Druid"
+	tag "Wizard"
 	rank 4
 	casting-time "Action"
 	range 300

@@ -1,5 +1,7 @@
 spell name="Mage Armor" {
 	tag "abjuration"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 1
 	casting-time "Action"
 	range "Touch"

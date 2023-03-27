@@ -1,5 +1,7 @@
 spell name="Flesh to Stone" {
 	tag "transmutation"
+	tag "Warlock"
+	tag "Wizard"
 	rank 6
 	casting-time "Action"
 	range 60

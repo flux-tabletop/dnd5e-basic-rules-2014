@@ -1,5 +1,7 @@
 spell name="True Resurrection" {
 	tag "necromancy"
+	tag "Cleric"
+	tag "Druid"
 	rank 9
 	casting-time "Hour" 1
 	range "Touch"

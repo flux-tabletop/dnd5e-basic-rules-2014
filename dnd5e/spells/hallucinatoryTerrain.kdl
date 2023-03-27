@@ -1,5 +1,9 @@
 spell name="Hallucinatory Terrain" {
 	tag "illusion"
+	tag "Bard"
+	tag "Druid"
+	tag "Warlock"
+	tag "Wizard"
 	rank 4
 	casting-time "Minute" 10
 	range 300

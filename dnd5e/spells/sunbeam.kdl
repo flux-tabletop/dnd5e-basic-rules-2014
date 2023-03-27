@@ -1,5 +1,8 @@
 spell name="Sunbeam" {
 	tag "evocation"
+	tag "Druid"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 6
 	casting-time "Action"
 	range "Self" // TODO: (60-foot line)

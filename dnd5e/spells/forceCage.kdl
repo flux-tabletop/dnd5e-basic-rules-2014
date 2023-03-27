@@ -1,5 +1,8 @@
 spell name="Forcecage" {
 	tag "evocation"
+	tag "Bard"
+	tag "Warlock"
+	tag "Wizard"
 	rank 7
 	casting-time "Action"
 	range 100

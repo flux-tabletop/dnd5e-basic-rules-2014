@@ -1,5 +1,7 @@
 spell name="Resurrection" {
 	tag "necromancy"
+	tag "Bard"
+	tag "Cleric"
 	rank 7
 	casting-time "Hour" 1
 	range "Touch"

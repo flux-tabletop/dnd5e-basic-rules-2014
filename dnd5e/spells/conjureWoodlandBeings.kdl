@@ -1,5 +1,7 @@
 spell name="Conjure Woodland Beings" {
 	tag "conjuration"
+	tag "Druid"
+	tag "Ranger"
 	rank 4
 	casting-time "Action"
 	range 60

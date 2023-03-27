@@ -1,5 +1,6 @@
 spell name="Sacred Flame" {
 	tag "Evocation"
+	tag "Cleric"
 	rank 0
 	casting-time "Action"
 	range 60

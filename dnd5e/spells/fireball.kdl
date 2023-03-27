@@ -1,5 +1,7 @@
 spell name="Fireball" {
 	tag "evocation"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 3
 	casting-time "Action"
 	range 150

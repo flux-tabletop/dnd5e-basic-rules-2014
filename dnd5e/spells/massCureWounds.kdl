@@ -1,5 +1,8 @@
 spell name="Mass Cure Wounds" {
 	tag "evocation"
+	tag "Bard"
+	tag "Cleric"
+	tag "Druid"
 	rank 5
 	casting-time "Action"
 	range 60

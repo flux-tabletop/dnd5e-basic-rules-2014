@@ -1,5 +1,6 @@
 spell name="Divine Favor" {
 	tag "evocation"
+	tag "Paladin"
 	rank 1
 	casting-time "BonusAction"
 	range "Self"

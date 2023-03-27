@@ -1,5 +1,7 @@
 spell name="Project Image" {
 	tag "illusion"
+	tag "Bard"
+	tag "Wizard"
 	rank 7
 	casting-time "Action"
 	range "Mile" 500

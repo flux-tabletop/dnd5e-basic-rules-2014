@@ -1,5 +1,9 @@
 spell name="Darkvision" {
 	tag "transmutation"
+	tag "Druid"
+	tag "Ranger"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 2
 	casting-time "Action"
 	range "Touch"

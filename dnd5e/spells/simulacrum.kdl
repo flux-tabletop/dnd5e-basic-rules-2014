@@ -1,5 +1,6 @@
 spell name="Simulacrum" {
 	tag "illusion"
+	tag "Wizard"
 	rank 7
 	casting-time "Hour" 12
 	range "Touch"

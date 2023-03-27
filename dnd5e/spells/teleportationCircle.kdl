@@ -1,5 +1,8 @@
 spell name="Teleportation Circle" {
 	tag "conjuration"
+	tag "Bard"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 5
 	casting-time "Minute" 1
 	range 10

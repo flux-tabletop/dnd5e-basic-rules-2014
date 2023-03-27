@@ -1,5 +1,6 @@
 spell name="Blade Barrier" {
 	tag "evocation"
+	tag "Cleric"
 	rank 6
 	casting-time "Action"
 	range 90

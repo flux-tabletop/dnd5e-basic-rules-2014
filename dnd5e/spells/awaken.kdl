@@ -1,5 +1,7 @@
 spell name="Awaken" {
 	tag "transmutation"
+	tag "Bard"
+	tag "Druid"
 	rank 5
 	casting-time 8 "Hour"
 	range "Touch"

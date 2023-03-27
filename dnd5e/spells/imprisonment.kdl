@@ -1,5 +1,7 @@
 spell name="Imprisonment" {
 	tag "abjuration"
+	tag "Warlock"
+	tag "Wizard"
 	rank 9
 	casting-time "Minute" 1
 	range 30

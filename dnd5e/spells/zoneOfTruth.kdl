@@ -1,5 +1,8 @@
 spell name="Zone of Truth" {
 	tag "enchantment"
+	tag "Bard"
+	tag "Cleric"
+	tag "Paladin"
 	rank 2
 	casting-time "Action"
 	range 60

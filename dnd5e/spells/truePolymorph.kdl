@@ -1,5 +1,8 @@
 spell name="True Polymorph" {
 	tag "transmutation"
+	tag "Bard"
+	tag "Warlock"
+	tag "Wizard"
 	rank 9
 	casting-time "Action"
 	range 30

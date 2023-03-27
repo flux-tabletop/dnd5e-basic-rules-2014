@@ -1,5 +1,7 @@
 spell name="Identify" {
 	tag "divination"
+	tag "Bard"
+	tag "Wizard"
 	rank 1
 	casting-time "Minute" 1 ritual=true
 	range "Touch"

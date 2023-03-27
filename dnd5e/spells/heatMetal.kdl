@@ -1,5 +1,7 @@
 spell name="Heat Metal" {
 	tag "transmutation"
+	tag "Bard"
+	tag "Druid"
 	rank 2
 	casting-time "Action"
 	range 60

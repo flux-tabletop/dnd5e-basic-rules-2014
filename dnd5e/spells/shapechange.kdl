@@ -1,5 +1,7 @@
 spell name="Shapechange" {
 	tag "transmutation"
+	tag "Druid"
+	tag "Wizard"
 	rank 9
 	casting-time "Action"
 	range "Self"

@@ -1,5 +1,6 @@
 spell name="Thaumaturgy" {
 	tag "Transmutation"
+	tag "Cleric"
 	rank 0
 	casting-time "Action"
 	range 30

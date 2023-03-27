@@ -1,5 +1,6 @@
 spell name="Guardian of Faith" {
 	tag "conjuration"
+	tag "Cleric"
 	rank 4
 	casting-time "Action"
 	range 30

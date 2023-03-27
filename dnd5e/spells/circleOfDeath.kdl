@@ -1,5 +1,8 @@
 spell name="Circle of Death" {
 	tag "necromancy"
+	tag "Sorcerer"
+	tag "Warlock"
+	tag "Wizard"
 	rank 6
 	casting-time "Action"
 	range 150

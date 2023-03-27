@@ -1,5 +1,7 @@
 spell name="Lightning Bolt" {
 	tag "evocation"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 3
 	casting-time "Action"
 	range "Self" // TODO: (100-foot line)

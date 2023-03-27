@@ -1,5 +1,9 @@
 spell name="Magic Circle" {
 	tag "abjuration"
+	tag "Cleric"
+	tag "Paladin"
+	tag "Warlock"
+	tag "Wizard"
 	rank 3
 	casting-time "Minute" 1
 	range 10

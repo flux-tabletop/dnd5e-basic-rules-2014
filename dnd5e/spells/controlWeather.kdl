@@ -1,5 +1,8 @@
 spell name="Control Weather" {
 	tag "transmutation"
+	tag "Cleric"
+	tag "Druid"
+	tag "Wizard"
 	rank 8
 	casting-time 10 "Minute"
 	range "Self" (5-mile radius)

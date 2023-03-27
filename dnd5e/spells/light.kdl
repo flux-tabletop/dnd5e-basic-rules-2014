@@ -1,5 +1,9 @@
 spell name="Light" {
 	tag "Evocation"
+	tag "Bard"
+	tag "Cleric"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 0
 	casting-time "Action"
 	range "Touch"

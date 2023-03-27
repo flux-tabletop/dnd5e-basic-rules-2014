@@ -1,5 +1,8 @@
 spell name="Bestow Curse" {
 	tag "necromancy"
+	tag "Bard"
+	tag "Cleric"
+	tag "Wizard"
 	rank 3
 	casting-time "Action"
 	range "Touch"

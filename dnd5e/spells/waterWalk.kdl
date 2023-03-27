@@ -1,5 +1,9 @@
 spell name="Water Walk" {
 	tag "transmutation"
+	tag "Cleric"
+	tag "Druid"
+	tag "Ranger"
+	tag "Sorcerer"
 	rank 3
 	casting-time "Action" ritual=true
 	range 30

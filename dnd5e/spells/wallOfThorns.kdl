@@ -1,5 +1,6 @@
 spell name="Wall of Thorns" {
 	tag "conjuration"
+	tag "Druid"
 	rank 6
 	casting-time "Action"
 	range 120

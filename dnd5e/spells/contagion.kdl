@@ -1,5 +1,7 @@
 spell name="Contagion" {
 	tag "necromancy"
+	tag "Cleric"
+	tag "Druid"
 	rank 5
 	casting-time "Action"
 	range "Touch"

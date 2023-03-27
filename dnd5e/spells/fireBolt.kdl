@@ -1,5 +1,7 @@
 spell name="Fire Bolt" {
 	tag "Evocation"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 0
 	casting-time "Action"
 	range 120

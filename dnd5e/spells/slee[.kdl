@@ -1,5 +1,8 @@
 spell name="Sleep" {
 	tag "enchantment"
+	tag "Bard"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 1
 	casting-time "Action"
 	range 90

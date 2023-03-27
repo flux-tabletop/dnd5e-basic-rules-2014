@@ -1,5 +1,8 @@
 spell name="Animal Messenger" {
 	tag "Enchantment"
+	tag "Bard"
+	tag "Druid"
+	tag "Ranger"
 	rank 2
 	casting-time "Action" ritual=true
 	range 30

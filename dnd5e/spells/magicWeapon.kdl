@@ -1,5 +1,7 @@
 spell name="Magic Weapon" {
 	tag "transmutation"
+	tag "Paladin"
+	tag "Wizard"
 	rank 2
 	casting-time "BonusAction"
 	range "Touch"

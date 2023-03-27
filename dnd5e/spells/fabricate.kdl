@@ -1,5 +1,6 @@
 spell name="Fabricate" {
 	tag "transmutation"
+	tag "Wizard"
 	rank 4
 	casting-time "Minute" 10
 	range 120

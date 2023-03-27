@@ -1,5 +1,7 @@
 spell name="Ray of Frost" {
 	tag "Evocation"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 0
 	casting-time "Action"
 	range 60

@@ -1,5 +1,7 @@
 spell name="Ray of Enfeeblement" {
 	tag "necromancy"
+	tag "Warlock"
+	tag "Wizard"
 	rank 2
 	casting-time "Action"
 	range 60

@@ -1,5 +1,9 @@
 spell name="Enhance Ability" {
 	tag "transmutation"
+	tag "Bard"
+	tag "Cleric"
+	tag "Druid"
+	tag "Sorcerer"
 	rank 2
 	casting-time "Action"
 	range "Touch"

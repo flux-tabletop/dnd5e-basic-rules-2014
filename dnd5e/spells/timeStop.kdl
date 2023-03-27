@@ -1,5 +1,7 @@
 spell name="Time Stop" {
 	tag "transmutation"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 9
 	casting-time "Action"
 	range "Self"

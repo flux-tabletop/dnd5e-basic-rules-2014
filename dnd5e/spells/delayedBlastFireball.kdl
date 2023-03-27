@@ -1,5 +1,7 @@
 spell name="Delayed Blast Fireball" {
 	tag "evocation"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 7
 	casting-time "Action"
 	range 150

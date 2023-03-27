@@ -1,5 +1,9 @@
 spell name="Dimension Door" {
 	tag "conjuration"
+	tag "Bard"
+	tag "Sorcerer"
+	tag "Warlock"
+	tag "Wizard"
 	rank 4
 	casting-time "Action"
 	range 500

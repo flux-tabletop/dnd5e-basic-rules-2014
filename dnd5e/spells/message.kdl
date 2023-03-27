@@ -1,5 +1,8 @@
 spell name="Message" {
 	tag "Transmutation"
+	tag "Bard"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 0
 	casting-time "Action"
 	range 120

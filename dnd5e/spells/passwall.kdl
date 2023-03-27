@@ -1,5 +1,6 @@
 spell name="Passwall" {
 	tag "transmutation"
+	tag "Wizard"
 	rank 5
 	casting-time "Action"
 	range 30

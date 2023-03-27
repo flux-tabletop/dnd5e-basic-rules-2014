@@ -1,5 +1,7 @@
 spell name="Incendiary Cloud" {
 	tag "conjuration"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 8
 	casting-time "Action"
 	range 150

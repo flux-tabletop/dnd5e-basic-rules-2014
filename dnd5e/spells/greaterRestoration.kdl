@@ -1,5 +1,8 @@
 spell name="Greater Restoration" {
 	tag "abjuration"
+	tag "Bard"
+	tag "Cleric"
+	tag "Druid"
 	rank 5
 	casting-time "Action"
 	range "Touch"

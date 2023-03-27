@@ -1,5 +1,7 @@
 spell name="Death Ward" {
 	tag "abjuration"
+	tag "Cleric"
+	tag "Paladin"
 	rank 4
 	casting-time "Action"
 	range "Touch"

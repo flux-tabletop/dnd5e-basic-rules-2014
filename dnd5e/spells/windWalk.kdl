@@ -1,5 +1,6 @@
 spell name="Wind Walk" {
 	tag "transmutation"
+	tag "Druid"
 	rank 6
 	casting-time "Minute" 1
 	range 30

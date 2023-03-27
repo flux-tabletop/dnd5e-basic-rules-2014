@@ -1,5 +1,6 @@
 spell name="Harm" {
 	tag "necromancy"
+	tag "Cleric"
 	rank 6
 	casting-time "Action"
 	range 60

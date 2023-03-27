@@ -1,5 +1,8 @@
 spell name="Regenerate" {
 	tag "transmutation"
+	tag "Bard"
+	tag "Cleric"
+	tag "Druid"
 	rank 7
 	casting-time "Minute" 1
 	range "Touch"

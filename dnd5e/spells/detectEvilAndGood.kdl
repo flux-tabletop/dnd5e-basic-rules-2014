@@ -1,5 +1,7 @@
 spell name="Detect Evil and Good" {
 	tag "divination"
+	tag "Cleric"
+	tag "Paladin"
 	rank 1
 	casting-time "Action"
 	range "Self"

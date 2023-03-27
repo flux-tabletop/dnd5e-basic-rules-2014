@@ -1,5 +1,9 @@
 spell name="Clairvoyance" {
 	tag "divination"
+	tag "Bard"
+	tag "Cleric"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 3
 	casting-time 10 "Minute"
 	Range: 1 mile

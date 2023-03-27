@@ -1,5 +1,7 @@
 spell name="Conjure Elemental" {
 	tag "conjuration"
+	tag "Druid"
+	tag "Wizard"
 	rank 5
 	casting-time 1 "Minute"
 	range 90

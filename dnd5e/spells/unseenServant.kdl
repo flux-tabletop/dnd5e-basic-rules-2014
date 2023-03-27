@@ -1,5 +1,8 @@
 spell name="Unseen Servant" {
 	tag "conjuration"
+	tag "Bard"
+	tag "Warlock"
+	tag "Wizard"
 	rank 1
 	casting-time "Action" ritual=true
 	range 60

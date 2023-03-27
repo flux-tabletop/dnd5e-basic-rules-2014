@@ -1,5 +1,9 @@
 spell name="Polymorph" {
 	tag "transmutation"
+	tag "Bard"
+	tag "Druid"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 4
 	casting-time "Action"
 	range 60

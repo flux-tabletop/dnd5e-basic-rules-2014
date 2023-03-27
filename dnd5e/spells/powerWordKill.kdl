@@ -1,5 +1,9 @@
 spell name="Power Word Kill" {
 	tag "enchantment"
+	tag "Bard"
+	tag "Sorcerer"
+	tag "Warlock"
+	tag "Wizard"
 	rank 9
 	casting-time "Action"
 	range 60

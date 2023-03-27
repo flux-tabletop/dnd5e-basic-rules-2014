@@ -1,5 +1,7 @@
 spell name="Animate Dead" {
 	tag "Necromancy"
+	tag "Cleric"
+	tag "Wizard"
 	rank 3
 	casting-time 1 "Minute"
 	range 10

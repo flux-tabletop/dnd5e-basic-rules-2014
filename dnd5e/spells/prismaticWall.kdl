@@ -1,5 +1,6 @@
 spell name="Prismatic Wall" {
 	tag "abjuration"
+	tag "Wizard"
 	rank 9
 	casting-time "Action"
 	range 60

@@ -1,5 +1,6 @@
 spell name="Divination" {
 	tag "divination"
+	tag "Cleric"
 	rank 4
 	casting-time "Action" ritual=true
 	range "Self"

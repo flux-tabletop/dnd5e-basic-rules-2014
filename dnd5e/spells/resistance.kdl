@@ -1,5 +1,7 @@
 spell name="Resistance" {
 	tag "Abjuration"
+	tag "Cleric"
+	tag "Druid"
 	rank 0
 	casting-time "Action"
 	range "Touch"

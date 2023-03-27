@@ -1,5 +1,8 @@
 spell name="Raise Dead" {
 	tag "necromancy"
+	tag "Bard"
+	tag "Cleric"
+	tag "Paladin"
 	rank 5
 	casting-time "Hour" 1
 	range "Touch"

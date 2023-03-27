@@ -1,5 +1,6 @@
 spell name="Druidcraft" {
 	tag "Transmutation"
+	tag "Druid"
 	rank 0
 	casting-time "Action"
 	range 30

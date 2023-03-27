@@ -1,5 +1,8 @@
 spell name="Legend Lore" {
 	tag "divination"
+	tag "Bard"
+	tag "Cleric"
+	tag "Wizard"
 	rank 5
 	casting-time "Minute" 10
 	range "Self"

@@ -1,5 +1,8 @@
 spell name="Nondetection" {
 	tag "abjuration"
+	tag "Bard"
+	tag "Ranger"
+	tag "Wizard"
 	rank 3
 	casting-time "Action"
 	range "Touch"

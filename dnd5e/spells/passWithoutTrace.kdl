@@ -1,5 +1,7 @@
 spell name="Pass without Trace" {
 	tag "abjuration"
+	tag "Druid"
+	tag "Ranger"
 	rank 2
 	casting-time "Action"
 	range "Self"

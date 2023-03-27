@@ -1,5 +1,11 @@
 spell name="Hold Person" {
 	tag "enchantment"
+	tag "Bard"
+	tag "Cleric"
+	tag "Druid"
+	tag "Sorcerer"
+	tag "Warlock"
+	tag "Wizard"
 	rank 2
 	casting-time "Action"
 	range 60

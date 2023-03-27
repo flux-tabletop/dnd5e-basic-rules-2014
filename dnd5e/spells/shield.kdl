@@ -1,5 +1,7 @@
 spell name="Shield" {
 	tag "abjuration"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 1
 	casting-time "Reaction" "which you take when you are hit by an attack or targeted by the magic missile spell"
 	range "Self"

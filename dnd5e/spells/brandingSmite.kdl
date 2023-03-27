@@ -1,5 +1,6 @@
 spell name="Branding Smite" {
 	tag "evocation"
+	tag "Paladin"
 	rank 2
 	casting-time 1 "BonusAction"
 	range "Self"

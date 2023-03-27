@@ -1,5 +1,8 @@
 spell name="Feather Fall" {
 	tag "transmutation"
+	tag "Bard"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 1
 	casting-time "Reaction" "which you take when you or a creature within 60 feet of you falls"
 	range 60

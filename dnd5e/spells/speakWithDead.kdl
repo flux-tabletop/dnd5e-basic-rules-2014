@@ -1,5 +1,7 @@
 spell name="Speak with Dead" {
 	tag "necromancy"
+	tag "Bard"
+	tag "Cleric"
 	rank 3
 	casting-time "Action"
 	range 10

@@ -1,5 +1,8 @@
 spell name="Darkness" {
 	tag "evocation"
+	tag "Sorcerer"
+	tag "Warlock"
+	tag "Wizard"
 	rank 2
 	casting-time "Action"
 	range 60

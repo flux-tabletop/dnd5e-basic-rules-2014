@@ -1,5 +1,9 @@
 spell name="Freedom of Movement" {
 	tag "abjuration"
+	tag "Bard"
+	tag "Cleric"
+	tag "Druid"
+	tag "Ranger"
 	rank 4
 	casting-time "Action"
 	range "Touch"

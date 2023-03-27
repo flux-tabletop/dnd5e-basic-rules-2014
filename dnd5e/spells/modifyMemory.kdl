@@ -1,5 +1,7 @@
 spell name="Modify Memory" {
 	tag "enchantment"
+	tag "Bard"
+	tag "Wizard"
 	rank 5
 	casting-time "Action"
 	range 30

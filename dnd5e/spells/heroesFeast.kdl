@@ -1,5 +1,7 @@
 spell name="Heroes' Feast" {
 	tag "conjuration"
+	tag "Cleric"
+	tag "Druid"
 	rank 6
 	casting-time "Minute" 10
 	range 30

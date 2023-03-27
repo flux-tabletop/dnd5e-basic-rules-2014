@@ -1,5 +1,7 @@
 spell name="Enlarge/Reduce" {
 	tag "transmutation"
+	tag "Sorcerer"
+	tag "Wizard"
 	rank 2
 	casting-time "Action"
 	range 30

@@ -1,5 +1,6 @@
 spell name="Divine Word" {
 	tag "evocation"
+	tag "Cleric"
 	rank 7
 	casting-time "BonusAction"
 	range 30

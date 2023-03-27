@@ -1,5 +1,7 @@
 spell name="Conjure Animals" {
 	tag "conjuration"
+	tag "Druid"
+	tag "Ranger"
 	rank 3
 	casting-time "Action"
 	range 60

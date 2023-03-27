@@ -1,5 +1,6 @@
 spell name="Planar Ally" {
 	tag "conjuration"
+	tag "Cleric"
 	rank 6
 	casting-time "Minute" 10
 	range 60

@@ -1,5 +1,6 @@
 spell name="Call Lightning" {
 	tag "conjuration"
+	tag "Druid"
 	rank 3
 	casting-time "Action"
 	range 120
