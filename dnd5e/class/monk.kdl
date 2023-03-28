@@ -1,6 +1,9 @@
 class name="Monk" {
 	description "A master of martial arts, harnessing the power of the body in pursuit of physical and spiritual perfection"
 	hit-die "d8"
+	subclass-level 3
+	multiclass-req "Dexterity" 13
+	multiclass-req "Wisdom" 13
 
 	mutator "add_proficiency" (SavingThrow)"Strength"
 	mutator "add_proficiency" (SavingThrow)"Dexterity"
@@ -22,10 +25,37 @@ class name="Monk" {
 		option "Religion"
 		option "Stealth"
 	}
-	/* TODO: add_proficiency Tool select either:
-		- One type of Artisan's Tools
-		- One Musical Instrument
-	*/
+	// TODO: tool proficiency selector
+	mutator "add_proficiency" (Tool)"AnyOf" id="tool" {
+		option "Alchemist's supplies"
+		option "Brewer's supplies"
+		option "Calligrapher's supplies"
+		option "Carpenter's tools"
+		option "Cartographer's tools"
+		option "Cobbler's tools"
+		option "Cook's utensils"
+		option "Glassblower's tools"
+		option "Jeweler's tools"
+		option "Leatherworker's tools"
+		option "Mason's tools"
+		option "Painter's supplies"
+		option "Potter's tools"
+		option "Smith's tools"
+		option "Tinker's tools"
+		option "Weaver's tools"
+		option "Woodcarver's tools"
+		option "Bagpipes"
+		option "Drum"
+		option "Dulcimer"
+		option "Flute"
+		option "Lute"
+		option "Lyre"
+		option "Horn"
+		option "Pan flute"
+		option "Shawm"
+		option "Viol"
+	}
+
 	/* TODO: add_starting_equipment
 	mutator "add_starting_equipment" {
 		pick-one {

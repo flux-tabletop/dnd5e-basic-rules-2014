@@ -2,6 +2,7 @@ class name="Barbarian" {
 	description "A fierce warrior of primitive background who can enter a battle rage"
 	hit-die "d12"
 	subclass-level 3
+	multiclass-req "Strength" 13
 
 	// Mutators applied when this is a primary class
 	mutator "add_proficiency" (SavingThrow)"Strength"
