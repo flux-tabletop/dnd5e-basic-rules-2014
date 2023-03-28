@@ -10,14 +10,16 @@ background name="Noble" {
 	Does your family have a coat of arms? An insignia you might wear on a signet ring? Particular colors you wear all the time? An animal you regard as a symbol of your line or even a spiritual member of the family?
 
 	These details help establish your family and your title as features of the world of the campaign."
-	selection name="" {
-		description ""
-		option ""
-	}
 	mutator "add_proficiency" (Skill)"Specific" "History"
 	mutator "add_proficiency" (Skill)"Specific" "Persuasion"
-	// mutator "add_proficiency" (Tool)"Any" // TODO: any gaming set
-	mutator "add_proficiency" (Language)"Any"
+	// TODO: Selector for tool proficiency
+	mutator "add_proficiency" (Tool)"AnyOf" id="tool" {
+		option "Dice set"
+		option "Dragonchess set"
+		option "Playing card set"
+		option "Three-Dragon Ante set"
+	}
+	mutator "add_proficiency" (Language)"Any" id="lang"
 
 	/* TODO: add_starting_equipment
 	mutator "add_starting_equipment" {

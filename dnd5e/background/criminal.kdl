@@ -14,7 +14,13 @@ background name="Criminal" {
 	}
 	mutator "add_proficiency" (Skill)"Specific" "Deception"
 	mutator "add_proficiency" (Skill)"Specific" "Stealth"
-	// mutator "add_proficiency" (Tool)"Any" // TODO: any gaming set
+	// TODO: Selector for tool proficiency
+	mutator "add_proficiency" (Tool)"AnyOf" id="tool" {
+		option "Dice set"
+		option "Dragonchess set"
+		option "Playing card set"
+		option "Three-Dragon Ante set"
+	}
 	mutator "add_proficiency" (Tool)"Specific" "Thieves' Tools"
 	/* TODO: add_starting_equipment
 	mutator "add_starting_equipment" {

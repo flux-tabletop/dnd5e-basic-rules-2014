@@ -24,7 +24,7 @@ race name="Dwarf" {
 	feature name="Tool Proficiency" {
 		description "You gain proficiency with the artisan's tools of your choice: smith's tools, brewer's supplies, or mason's tools."
 		// TODO: Selector for tool proficiency
-		mutator "add_proficiency" (Tool)"AnyOf" {
+		mutator "add_proficiency" (Tool)"AnyOf" id="tool" {
 			option "Smith's Tools"
 			option "Brewer's Supplies"
 			option "Mason's Tools"

@@ -15,7 +15,25 @@ background name="Folk Hero" {
 	}
 	mutator "add_proficiency" (Skill)"Specific" "AnimalHandling"
 	mutator "add_proficiency" (Skill)"Specific" "Survival"
-	// mutator "add_proficiency" (Tool)"Any" // TODO: any artisan’s tools
+	mutator "add_proficiency" (Tool)"AnyOf" id="tool" {
+		option "Alchemist's supplies"
+		option "Brewer's supplies"
+		option "Calligrapher's supplies"
+		option "Carpenter's tools"
+		option "Cartographer's tools"
+		option "Cobbler's tools"
+		option "Cook's utensils"
+		option "Glassblower's tools"
+		option "Jeweler's tools"
+		option "Leatherworker's tools"
+		option "Mason's tools"
+		option "Painter's supplies"
+		option "Potter's tools"
+		option "Smith's tools"
+		option "Tinker's tools"
+		option "Weaver's tools"
+		option "Woodcarver's tools"
+	}
 	mutator "add_proficiency" (Tool)"Specific" "Vehicles (land)"
 	/* TODO: add_starting_equipment
 	mutator "add_starting_equipment" {
