@@ -1,0 +1,40 @@
+item name="Bagpipes" weight=6.0 {
+	worth 30 (Currency)"Gold"
+	tag "Musical Instrument"
+}
+item name="Drum" weight=3.0 {
+	worth 6 (Currency)"Gold"
+	tag "Musical Instrument"
+}
+item name="Dulcimer" weight=10.0 {
+	worth 25 (Currency)"Gold"
+	tag "Musical Instrument"
+}
+item name="Flute" weight=1.0 {
+	worth 2 (Currency)"Gold"
+	tag "Musical Instrument"
+}
+item name="Lute" weight=2.0 {
+	worth 35 (Currency)"Gold"
+	tag "Musical Instrument"
+}
+item name="Lyre" weight=2.0 {
+	worth 30 (Currency)"Gold"
+	tag "Musical Instrument"
+}
+item name="Horn" weight=2.0 {
+	worth 3 (Currency)"Gold"
+	tag "Musical Instrument"
+}
+item name="Pan flute" weight=2.0 {
+	worth 12 (Currency)"Gold"
+	tag "Musical Instrument"
+}
+item name="Shawm" weight=1.0 {
+	worth 2 (Currency)"Gold"
+	tag "Musical Instrument"
+}
+item name="Viol" weight=1.0 {
+	worth 30 (Currency)"Gold"
+	tag "Musical Instrument"
+}

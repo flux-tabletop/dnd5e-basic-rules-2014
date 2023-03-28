@@ -49,7 +49,10 @@ items/focus/wand.kdl
 items/focus/wooden_staff.kdl
 items/focus/yew_wand.kdl
 items/gear.kdl
-items/tools.kdl
+items/tools/artisan.kdl
+items/tools/gaming.kdl
+items/tools/kit.kdl
+items/tools/musical.kdl
 items/weapons/battleaxe.kdl
 items/weapons/blowgun.kdl
 items/weapons/club.kdl
