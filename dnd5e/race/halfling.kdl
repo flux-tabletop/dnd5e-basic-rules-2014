@@ -6,7 +6,7 @@ race name="Halfling" {
 	mutator "extend_life_expectancy" 250
 	mutator "add_max_height" 34
 	mutator "add_max_height" (Roll)"1d10"
-	mutator "speed" "Walking" (Minimum)25
+	mutator "speed" "Walking" (Base)25
 	mutator "add_proficiency" (Language)"Specific" "Common"
 	mutator "add_proficiency" (Language)"Specific" "Halfling"
 	feature name="Lucky" {

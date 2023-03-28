@@ -10,8 +10,8 @@ race name="Half-Orc" {
 	mutator "extend_life_expectancy" 75
 	mutator "add_max_height" 58
 	mutator "add_max_height" (Roll)"2d10"
-	mutator "speed" "Walking" (Minimum)30
-	mutator "sense" "Darkvision" (Minimum)60
+	mutator "speed" "Walking" (Base)30
+	mutator "sense" "Darkvision" (Base)60
 	mutator "add_proficiency" (Skill)"Specific" "Intimidation"
 	mutator "add_proficiency" (Language)"Specific" "Common"
 	mutator "add_proficiency" (Language)"Specific" "Orc"

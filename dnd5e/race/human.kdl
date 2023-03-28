@@ -3,7 +3,7 @@ race name="Human" {
 	mutator "extend_life_expectancy" 80
 	mutator "add_max_height" 58
 	mutator "add_max_height" (Roll)"2d10"
-	mutator "speed" "Walking" (Minimum)30
+	mutator "speed" "Walking" (Base)30
 	mutator "ability_score" {
 		ability "Specific" (Ability)"str"
 		bonus 1

@@ -7,8 +7,8 @@ race name="Gnome" {
 	// TODO: mutator "size" "Small"
 	mutator "add_max_height" 36
 	mutator "add_max_height" (Roll)"1d12"
-	mutator "speed" "Walking" (Minimum)25
-	mutator "sense" "Darkvision" (Minimum)60
+	mutator "speed" "Walking" (Base)25
+	mutator "sense" "Darkvision" (Base)60
 	feature name="Gnome Cunning" {
 		description "You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic."
 		mutator "add_modifier" "Advantage" (SavingThrow)"Specific" "Intelligence" context="magic"

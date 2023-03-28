@@ -10,7 +10,7 @@ race name="Dragonborn (Gold)" {
 	mutator "extend_life_expectancy" 80
 	mutator "add_max_height" 72
 	mutator "add_max_height" (Roll)"3d6"
-	mutator "speed" "Walking" (Minimum)30
+	mutator "speed" "Walking" (Base)30
 
 	mutator "add_proficiency" (Language)"Specific" "Common"
 	mutator "add_proficiency" (Language)"Specific" "Draconic"
