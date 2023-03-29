@@ -3,9 +3,9 @@ class name="Druid" {
 	hit-die "d8"
 	mutator "add_proficiency" (SavingThrow)"Intelligence"
 	mutator "add_proficiency" (SavingThrow)"Wisdom"
-	mutator "add_proficiency" (Armor)"Light" // TODO: nonmetal
-	mutator "add_proficiency" (Armor)"Medium" // TODO: nonmetal
-	mutator "add_proficiency" (Armor)"Shield" // TODO: nonmetal
+	mutator "add_proficiency" (Armor)"Light" "nonmetal"
+	mutator "add_proficiency" (Armor)"Medium" "nonmetal"
+	mutator "add_proficiency" (Armor)"Shield" "nonmetal"
 	mutator "add_proficiency" (Weapon)"Club"
 	mutator "add_proficiency" (Weapon)"Dagger"
 	mutator "add_proficiency" (Weapon)"Dart"
