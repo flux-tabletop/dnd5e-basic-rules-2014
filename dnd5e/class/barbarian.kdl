@@ -67,7 +67,7 @@ class name="Barbarian" {
 				reset_on "Long"
 			}
 			// TODO: Apply a condition when this action is used
-			condition "Raging" {
+			condition "Custom" name="Raging" {
 				description "While raging, you gain benefits listed below if you aren't wearing heavy armor.
 				If you are able to cast spells, you can't cast them or concentrate on them while raging."
 				criteria "has_armor_equipped" inverted=true {
