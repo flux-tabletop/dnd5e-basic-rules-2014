@@ -18,5 +18,5 @@ spell name="Enhance Ability" {
 	Eagle's Splendor. The target has advantage on Charisma checks.
 	Fox's Cunning. The target has advantage on Intelligence checks.
 	Owl's Wisdom. The target has advantage on Wisdom checks."
-	description (Section)"At Higher Levels" "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
+	description (Title)"At Higher Levels" "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
 }

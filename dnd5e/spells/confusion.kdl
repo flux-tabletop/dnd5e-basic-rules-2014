@@ -22,5 +22,5 @@ spell name="Confusion" {
 		}
 	}
 	description "At the end of each of its turns, an affected target can make a Wisdom saving throw. If it succeeds, this effect ends for that target."
-	description (Section)"At Higher Levels" "When you cast this spell using a spell slot of 5th level or higher, the radius of the sphere increases by 5 feet for each slot level above 4th."
+	description (Title)"At Higher Levels" "When you cast this spell using a spell slot of 5th level or higher, the radius of the sphere increases by 5 feet for each slot level above 4th."
 }
