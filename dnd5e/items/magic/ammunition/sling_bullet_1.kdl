@@ -1,0 +1,6 @@
+item name="Sling Bullet (+1)" weight=0.075 {
+	description "You have a +1 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical."
+	rarity "Uncommon"
+	worth 1 (Currency)"Copper"
+	kind "Simple" count=5
+}
