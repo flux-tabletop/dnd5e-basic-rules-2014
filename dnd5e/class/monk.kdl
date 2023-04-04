@@ -25,25 +25,24 @@ class name="Monk" {
 		option "Religion"
 		option "Stealth"
 	}
-	// TODO: tool proficiency selector
 	mutator "add_proficiency" (Tool)"AnyOf" id="tool" {
-		option "Alchemist's supplies"
-		option "Brewer's supplies"
-		option "Calligrapher's supplies"
-		option "Carpenter's tools"
-		option "Cartographer's tools"
-		option "Cobbler's tools"
-		option "Cook's utensils"
-		option "Glassblower's tools"
-		option "Jeweler's tools"
-		option "Leatherworker's tools"
-		option "Mason's tools"
-		option "Painter's supplies"
-		option "Potter's tools"
-		option "Smith's tools"
-		option "Tinker's tools"
-		option "Weaver's tools"
-		option "Woodcarver's tools"
+		option "Alchemist's Supplies"
+		option "Brewer's Supplies"
+		option "Calligrapher's Supplies"
+		option "Carpenter's Tools"
+		option "Cartographer's Tools"
+		option "Cobbler's Tools"
+		option "Cook's Utensils"
+		option "Glassblower's Tools"
+		option "Jeweler's Tools"
+		option "Leatherworker's Tools"
+		option "Mason's Tools"
+		option "Painter's Supplies"
+		option "Potter's Tools"
+		option "Smith's Tools"
+		option "Tinker's Tools"
+		option "Weaver's Tools"
+		option "Woodcarver's Tools"
 		option "Bagpipes"
 		option "Drum"
 		option "Dulcimer"
@@ -121,7 +120,6 @@ class name="Monk" {
 		mutator "add_action" name="Flurry of Blows" category="Ki" {
 			activation "Bonus"
 			description "Immediately after you take the Attack action on your turn, you can spend 1 ki point to make two unarmed strikes as a bonus action." {
-				// TODO: short descriptions for features
 				short "1 Ki Point - Bonus Action to make 2 unarmed strikes after attacking"
 			}
 		}
@@ -145,11 +143,20 @@ class name="Monk" {
 		}
 	}
 	level 3 {
-		/* Deflect Missiles
-			Starting at 3rd level, you can use your reaction to deflect or catch the missile when you are hit by a ranged weapon attack. When you do so, the damage you take from the attack is reduced by 1d10 + your Dexterity modifier + your monk level.
-
-			If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 ki point to make a ranged attack with the weapon or piece of ammunition you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a monk weapon for the attack, which has a normal range of 20 feet and a long range of 60 feet.
-		*/
+		mutator "add_action" name="Deflect Missiles" {
+			activation "Reaction"
+			description "Starting at 3rd level, you can use your reaction to deflect or catch the missile when you are hit by a ranged weapon attack. When you do so, the damage you take from the attack is reduced by 1d10 + your Dexterity modifier + your monk level.
+			
+			If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 ki point to make a ranged attack with the weapon or piece of ammunition you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a monk weapon for the attack, which has a normal range of 20 feet and a long range of 60 feet." {
+				short "Deflect or catch a missile when you are hit by a ranged weapon attack. The damage you take from the attack is reduced by 1d10 + {damage}. If you reduce damage to 0 and have a free hand, you can spend 1 ki point to make a ranged attack (as with a monk weapon) with a range of 20/60."
+				// TODO: format-arg with "sum" (eval i32) which takes any number of evals<output=i32>
+				format-arg "damage" (Evaluator)"sum" {
+					value (Evaluator)"get_ability_modifier" (Ability)"Dexterity"
+					// TODO: (Evaluator)"Level" => (Evaluator)"get_level"
+					value (Evaluator)"Level" class="Monk"
+				}
+			}
+		}
 	}
 	level 4 {
 		/* Ability Score Improvement
@@ -159,8 +166,10 @@ class name="Monk" {
 			// TODO: This is an action, not a feature
 			description "Beginning at 4th level, you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level ({damage})." {
 				short "Reaction - Reduce fall damage by {damage}"
-				// TODO: level scalad/evaluator with the sub-enum of multipling the level of monk by 5
-				format-arg "damage" (Evaluator)"Level" "Multiply" 5 class="Monk"
+				// TODO: "Level" evaluator with an ordered list (in children) of defined numerical operations
+				format-arg "damage" (Evaluator)"Level" class="Monk" {
+					multiply 5
+				}
 			}
 		}
 	}
@@ -172,10 +181,11 @@ class name="Monk" {
 		feature name="Stunning Strike" category="Ki" {
 			description "Starting at 5th level, you can interfere with the flow of ki in an opponent's body. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a {DC} Constitution saving throw or be stunned until the end of your next turn." {
 				short "1 Ki Point - On Attack - target make {DC} CON save or be stunned until my next turned"
-				// TODO: `format-arg` allows an evaluator (item=String) to compute a value and format the description with that output.
+				// TODO: `format-arg` allows an evaluator (item=i32) to compute a value and format the description with that output.
 				// this means replace `{DC}` with the computed value of `8 + prof.bonus + wisdom modifier`
-				format-arg "DC" (Evaluator)"ability-bonuses" base=8 proficient=true {
-					bonus "Wisdom"
+				// TODO: Convert "get_ability_modifier" to place the ability(ies) in children and take `base` and `proficient` properties.
+				format-arg "DC" (Evaluator)"get_ability_modifier" base=8 proficient=true {
+					ability "Wisdom"
 				}
 			}
 		}
@@ -191,12 +201,17 @@ class name="Monk" {
 		}
 	}
 	level 7 {
-		/* Evasion
-			At 7th level, your instinctive agility lets you dodge out of the way of certain area effects, such as a blue dragon’s lightning breath or a fireball spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.
-		*/
-		/* Stillness of Mind
-			Starting at 7th level, you can use your action to end one effect on yourself that is causing you to be charmed or frightened.
-		*/
+		feature name="Evasion" {
+			description "At 7th level, your instinctive agility lets you dodge out of the way of certain area effects, such as a blue dragon's lightning breath or a fireball spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail." {
+				short "On DEX saving throw to take half damage on success, take no damage on success or half damage on fail."
+			}
+		}
+		mutator "add_action" name="Stillness of Mind" {
+			activation "Action"
+			description "Starting at 7th level, you can use your action to end one effect on yourself that is causing you to be charmed or frightened." {
+				short "Remove a charmed or frightended condition."
+			}
+		}
 	}
 	level 9 {
 		feature name="Unarmored Movement" {
@@ -224,11 +239,16 @@ class name="Monk" {
 			criteria "has_armor_equipped" inverted=true
 			mutator "speed" "Walking" (Additive)5
 		}
-		/* Diamond Soul
-			Beginning at 14th level, your mastery of ki grants you proficiency in all saving throws.
-
-			Additionally, whenever you make a saving throw and fail, you can spend 1 ki point to reroll it and take the second result.
-		*/
+		feature name="Diamond Soul" category="Ki" {
+			description "Beginning at 14th level, your mastery of ki grants you proficiency in all saving throws.
+			Additionally, whenever you make a saving throw and fail, you can spend 1 ki point to reroll it and take the second result." {
+				short "1 Ki Point - On failed saving throw, reroll it and take the second result."
+			}
+			mutator "add_proficiency" (SavingThrow)"Constitution"
+			mutator "add_proficiency" (SavingThrow)"Intelligence"
+			mutator "add_proficiency" (SavingThrow)"Wisdom"
+			mutator "add_proficiency" (SavingThrow)"Charisma"
+		}
 	}
 	level 15 {
 		feature name="Timeless Body" {
@@ -241,37 +261,51 @@ class name="Monk" {
 			criteria "has_armor_equipped" inverted=true
 			mutator "speed" "Walking" (Additive)5
 		}
-		/* Empty Body
-			Beginning at 18th level, you can use your action to spend 4 ki points to become invisible for 1 minute. During that time, you also have resistance to all damage but force damage.
+		feature name="Empty Body" category="Ki" {
+			description "Beginning at 18th level, you can use your action to spend 4 ki points to become invisible for 1 minute. During that time, you also have resistance to all damage but force damage.
 
-			Additionally, you can spend 8 ki points to cast the astral projection spell, without needing material components. When you do so, you can’t take any other creatures with you.
-		*/
+			Additionally, you can spend 8 ki points to cast the astral projection spell, without needing material components. When you do so, you can-t take any other creatures with you." {
+				short "4 Ki Points - Action to become invisible and gain resistance to all damage but force damage for 1 minute.
+				8 Ki Points - Action to cast the astral projection spell (for yourself only), without needing material components."
+			}
+			mutator "add_action" name="Invisibility (Empty Body)" {
+				activation "Action"
+				description "4 Ki Points - Become invisible for 1 minute + resistance to all damage except force damage."
+				// TODO: Limited Uses can use the uses from another feature
+				/*
+				limited_uses {
+					cost 4
+					resource "Monk/Level02/Ki"
+				}
+				*/
+				condition "Custom" name="Invisibility (Empty Body)" {
+					description "Ki-based Invisibility and Damage Resistance"
+					// TODO: conditions can imply/cause other conditions
+					implies "condition/invisible.kdl"
+					mutator "add_defense" "Resistance" (DamageType)"Acid"
+					mutator "add_defense" "Resistance" (DamageType)"Bludgeoning"
+					mutator "add_defense" "Resistance" (DamageType)"Cold"
+					mutator "add_defense" "Resistance" (DamageType)"Fire"
+					mutator "add_defense" "Resistance" (DamageType)"Lightning"
+					mutator "add_defense" "Resistance" (DamageType)"Necrotic"
+					mutator "add_defense" "Resistance" (DamageType)"Piercing"
+					mutator "add_defense" "Resistance" (DamageType)"Poison"
+					mutator "add_defense" "Resistance" (DamageType)"Psychic"
+					mutator "add_defense" "Resistance" (DamageType)"Radiant"
+					mutator "add_defense" "Resistance" (DamageType)"Slashing"
+					mutator "add_defense" "Resistance" (DamageType)"Thunder"
+				}
+			}
+			mutator "add_action" name="Astral Projection" {
+				activation "Action"
+				description "8 Ki Points - Cast the Astral Projection spell (yourself only) without needing material components."
+				// TODO: spellcasting with Ki Points as cost
+			}
+		}
 	}
 	level 20 {
 		feature name="Perfect Self" {
 			description "At 20th level, when you roll for initiative and have no ki points remaining, you regain 4 ki points."
 		}
 	}
-}
-
-subclass class="Monk" name="Way of the Open Hand" {
-	description "Monks of the Way of the Open Hand are the ultimate masters of martial arts combat, whether armed or unarmed. They learn techniques to push and trip their opponents, manipulate ki to heal damage to their bodies, and practice advanced meditation that can protect them from harm."
-	/* Open Hand Technique
-		Starting when you choose this tradition at 3rd level, you can manipulate your enemy’s ki when you harness your own. Whenever you hit a creature with one of the attacks granted by your Flurry of Blows, you can impose one of the following effects on that target:
-
-		It must succeed on a Dexterity saving throw or be knocked prone.
-		It must make a Strength saving throw. If it fails, you can push it up to 15 feet away from you.
-		It can’t take reactions until the end of your next turn.
-	*/
-	/* Wholeness of Body
-		At 6th level, you gain the ability to heal yourself. As an action, you can regain hit points equal to three times your monk level. You must finish a long rest before you can use this feature again.
-	*/
-	/* Tranquility
-		Beginning at 11th level, you can enter a special meditation that surrounds you with an aura of peace. At the end of a long rest, you gain the effect of a sanctuary spell that lasts until the start of your next long rest (the spell can end early as normal). The saving throw DC for the spell equals 8 + your Wisdom modifier + your proficiency bonus.
-	*/
-	/* Quivering Palm
-		At 17th level, you gain the ability to set up lethal vibrations in someone’s body. When you hit a creature with an unarmed strike, you can spend 3 ki points to start these imperceptible vibrations, which last for a number of days equal to your monk level. The vibrations are harmless unless you use your action to end them. To do so, you and the target must be on the same plane of existence. When you use this action, the creature must make a Constitution saving throw. If it fails, it is reduced to 0 hit points. If it succeeds, it takes 10d10 necrotic damage.
-
-		You can have only one creature under the effect of this feature at a time. You can choose to end the vibrations harmlessly without using an action.
-	*/
 }

@@ -1,0 +1,61 @@
+subclass class="Monk" name="Way of the Open Hand" {
+	description "Monks of the Way of the Open Hand are the ultimate masters of martial arts combat, whether armed or unarmed. They learn techniques to push and trip their opponents, manipulate ki to heal damage to their bodies, and practice advanced meditation that can protect them from harm."
+	level 3 {
+		feature name="Open Hand Technique" {
+			description "Starting when you choose this tradition at 3rd level, you can manipulate your enemy's ki when you harness your own. Whenever you hit a creature with one of the attacks granted by your Flurry of Blows, you can impose one of the following effects on that target:
+			- It must succeed on a Dexterity saving throw (DC {DC}) or be knocked prone.
+			- It must make a Strength saving throw (DC {DC}). If it fails, you can push it up to 15 feet away from you.
+			- It can't take reactions until the end of your next turn." {
+				short "Whenever you hit with one of your Flurry of Blows attacks, you can impose one of the following effects on that target:
+				- fall prone if it fails a DEX saving throw (DC {DC})
+				- get pushed up to 15 ft. if it fails a STR saving throw (DC {DC})
+				- it can't take reaction until the end of your next turn"
+				format-arg "DC" (Evaluator)"get_ability_modifier" base=8 proficient=true {
+					ability "Wisdom"
+				}
+			}
+		}
+	}
+	level 6 {
+		mutator "add_action" name="Wholeness of Body" {
+			activation "Action"
+			description "At 6th level, you gain the ability to heal yourself. As an action, you can regain hit points equal to three times your monk level ({amount} hit points). You must finish a long rest before you can use this feature again." {
+				short "Regain {amount} hit points"
+				format-arg "amount" (Evaluator)"Level" class="Monk" {
+					multiply 3
+				}
+			}
+			limited_uses {
+				max_uses 1
+				reset_on "Long"
+			}
+		}
+	}
+	level 11 {
+		feature name="Tranquility" {
+			description "Beginning at 11th level, you can enter a special meditation that surrounds you with an aura of peace. At the end of a long rest, you gain the effect of a sanctuary spell that lasts until the start of your next long rest (the spell can end early as normal). The saving throw DC for the spell equals 8 + your Wisdom modifier + your proficiency bonus ({DC})." {
+				short "At the end of a long rest, you gain the effect of a sanctuary spell (DC {DC}) that lasts until the start of your next long rest (unless it ends as normal)."
+				format-arg "DC" (Evaluator)"get_ability_modifier" base=8 proficient=true {
+					ability "Wisdom"
+				}
+			}
+			// TODO: Some way to apply the sanctuary spell condition when this is used
+		}
+	}
+	level 17 {
+		feature name="Quivering Palm" category="Ki" {
+			description "At 17th level, you gain the ability to set up lethal vibrations in someone's body. When you hit a creature with an unarmed strike, you can spend 3 ki points to start these imperceptible vibrations, which last for a number of days equal to your monk level ({level}).
+			
+			The vibrations are harmless unless you use your action to end them. To do so, you and the target must be on the same plane of existence. When you use this action, the creature must make a Constitution saving throw (DC {DC}). If it fails, it is reduced to 0 hit points. If it succeeds, it takes 10d10 necrotic damage.
+
+			You can have only one creature under the effect of this feature at a time. You can choose to end the vibrations harmlessly without using an action." {
+				short "3 Ki Points - On hit with Unarmed Strike to start harmless vibrations in the target, which last for {level} days.
+				As an action you can end the vibrations and the creature must make a CON saving throw (DC {DC}). On success it takes 10d10 necrotic damage, otherwise it is reduced to 0 HP."
+				format-arg "level" (Evaluator)"Level" class="Monk"
+				format-arg "DC" (Evaluator)"get_ability_modifier" base=8 proficient=true {
+					ability "Wisdom"
+				}
+			}
+		}
+	}
+}

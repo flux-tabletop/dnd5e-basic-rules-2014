@@ -12,12 +12,11 @@ background name="Noble" {
 	These details help establish your family and your title as features of the world of the campaign."
 	mutator "add_proficiency" (Skill)"Specific" "History"
 	mutator "add_proficiency" (Skill)"Specific" "Persuasion"
-	// TODO: Selector for tool proficiency
 	mutator "add_proficiency" (Tool)"AnyOf" id="tool" {
-		option "Dice set"
-		option "Dragonchess set"
-		option "Playing card set"
-		option "Three-Dragon Ante set"
+		option "Dice Set"
+		option "Dragonchess Set"
+		option "Playing Card Set"
+		option "Three-Dragon Ante Set"
 	}
 	mutator "add_proficiency" (Language)"Any" id="lang"
 

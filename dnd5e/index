@@ -10,6 +10,7 @@ class/bard.kdl
 class/cleric.kdl
 class/druid.kdl
 class/fighter.kdl
+class/monk/openHand.kdl
 class/monk.kdl
 class/paladin.kdl
 class/ranger.kdl
