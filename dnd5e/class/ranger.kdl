@@ -379,7 +379,7 @@ subclass class="Ranger" name="Hunter" {
 	level 15 {
 		mutator-todo "pick_one" name="Superior Hunter's Defense" {
 			option "Feature" name="Evasion" {
-				description "When you are subjected to an effect, such as a red dragon's fiery breath or a lightning bolt spell, that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail." {
+				description "When you are subjected to an effect (such as a red dragon's fiery breath or a lightning bolt spell) that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail." {
 					short "On DEX saving throw to take half damage on success, take no damage on success or half damage on fail."
 				}
 			}
