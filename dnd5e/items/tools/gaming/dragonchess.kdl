@@ -1,0 +1,4 @@
+item name="Dragonchess set" weight=0.5 {
+	worth 1 (Currency)"Gold"
+	tag "Gaming Set"
+}

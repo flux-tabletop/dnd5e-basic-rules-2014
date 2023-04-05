@@ -1,0 +1,4 @@
+item name="Dulcimer" weight=10.0 {
+	worth 25 (Currency)"Gold"
+	tag "Musical Instrument"
+}

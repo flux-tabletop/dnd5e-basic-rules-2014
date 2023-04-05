@@ -1,0 +1,4 @@
+item name="Bagpipes" weight=6.0 {
+	worth 30 (Currency)"Gold"
+	tag "Musical Instrument"
+}

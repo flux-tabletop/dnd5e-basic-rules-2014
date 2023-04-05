@@ -1,0 +1,4 @@
+item name="Playing card set" {
+	worth 5 (Currency)"Silver"
+	tag "Gaming Set"
+}

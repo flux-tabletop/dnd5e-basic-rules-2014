@@ -1,0 +1,4 @@
+item name="Lyre" weight=2.0 {
+	worth 30 (Currency)"Gold"
+	tag "Musical Instrument"
+}

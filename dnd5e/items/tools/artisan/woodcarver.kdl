@@ -1,0 +1,4 @@
+item name="Woodcarver's tools" weight=5.0 {
+	worth 1 (Currency)"Gold"
+	tag "Artisan's Tools"
+}

@@ -1,0 +1,4 @@
+item name="Dice set" {
+	worth 1 (Currency)"Silver"
+	tag "Gaming Set"
+}

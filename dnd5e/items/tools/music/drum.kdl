@@ -1,0 +1,4 @@
+item name="Drum" weight=3.0 {
+	worth 6 (Currency)"Gold"
+	tag "Musical Instrument"
+}

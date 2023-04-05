@@ -1,0 +1,4 @@
+item name="Pan flute" weight=2.0 {
+	worth 12 (Currency)"Gold"
+	tag "Musical Instrument"
+}
