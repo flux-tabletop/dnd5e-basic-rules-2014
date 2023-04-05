@@ -14,8 +14,7 @@ background name="Sage" {
 	mutator "add_proficiency" (Skill)"Specific" "History"
 	mutator "add_proficiency" (Language)"Any"
 	mutator "add_proficiency" (Language)"Any"
-	/* TODO: add_starting_equipment
-	mutator "add_starting_equipment" {
+	mutator-todo "add_starting_equipment" {
 		item "Specific" "items/gear/ink.kdl"
 		item "Specific" "items/gear/clothesCommon.kdl"
 		item "Custom" name="Quill"
@@ -25,7 +24,6 @@ background name="Sage" {
 		}
 		currency 10 (Currency)"Gold"
 	}
-	*/
 	feature name="Researcher" {
 		description "When you attempt to learn or recall a piece of lore, if you do not know that information, you often know where and from whom you can obtain it. Usually, this information comes from a library, scriptorium, university, or a sage or other learned person or creature. Your DM might rule that the knowledge you seek is secreted away in an almost inaccessible place, or that it simply cannot be found. Unearthing the deepest secrets of the multiverse can require an adventure or even a whole campaign."
 	}

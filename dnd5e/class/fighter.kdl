@@ -34,8 +34,7 @@ class name="Fighter" {
 		option "Perception"
 		option "Survival"
 	}
-	/* TODO: add_starting_equipment
-	mutator "add_starting_equipment" {
+	mutator-todo "add_starting_equipment" {
 		pick-one {
 			item "Specific" "items/armor/chain_mail.kdl"
 			group {
@@ -64,7 +63,6 @@ class name="Fighter" {
 			item "Specific" "items/bundles/explorer.kdl"
 		}
 	}
-	*/
 
 	level 1 {
 		mutator "add_proficiency" (Armor)"Light"

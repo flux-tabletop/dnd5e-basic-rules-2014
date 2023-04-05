@@ -22,8 +22,7 @@ background name="Soldier" {
 		option "Three-Dragon Ante Set"
 	}
 	mutator "add_proficiency" (Tool)"Specific" "Vehicles (land)"
-	/* TODO: add_starting_equipment
-	mutator "add_starting_equipment" {
+	mutator-todo "add_starting_equipment" {
 		item "Specific" "items/gear/clothesCommon.kdl"
 		item "Custom" name="Insignia of Rank"
 		item "Custom" name="Trophy" {
@@ -34,7 +33,6 @@ background name="Soldier" {
 		}
 		currency 10 (Currency)"Gold"
 	}
-	*/
 	feature name="Military Rank" {
 		description "You have a military rank from your career as a soldier. Soldiers loyal to your former military organization still recognize your authority and influence, and they defer to you if they are of a lower rank. You can invoke your rank to exert influence over other soldiers and requisition simple equipment or horses for temporary use. You can also usually gain access to friendly military encampments and fortresses where your rank is recognized."
 	}

@@ -55,8 +55,7 @@ class name="Monk" {
 		option "Viol"
 	}
 
-	/* TODO: add_starting_equipment
-	mutator "add_starting_equipment" {
+	mutator-todo "add_starting_equipment" {
 		pick-one {
 			item "Specific" "items/weapons/shortsword.kdl"
 			item "Select" kind="Simple"
@@ -67,7 +66,6 @@ class name="Monk" {
 		}
 		item "Specific" "items/weapons/dart.kdl" count=10
 	}
-	*/
 
 	level 1 {
 		mutator "add_proficiency" (Weapon)"Simple"

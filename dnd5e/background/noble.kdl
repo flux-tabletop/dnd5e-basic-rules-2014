@@ -20,14 +20,12 @@ background name="Noble" {
 	}
 	mutator "add_proficiency" (Language)"Any" id="lang"
 
-	/* TODO: add_starting_equipment
-	mutator "add_starting_equipment" {
+	mutator-todo "add_starting_equipment" {
 		item "Specific" "items/gear/clothesFine.kdl"
 		item "Specific" "items/gear/signetRing.kdl"
 		item "Custom" name="Scroll of Pedigree"
 		currency 25 (Currency)"Gold"
 	}
-	*/
 	feature name="Position of Privilege" {
 		description "Thanks to your noble birth, people are inclined to think the best of you. You are welcome in high society, and people assume you have the right to be wherever you are. The common folk make every effort to accommodate you and avoid your displeasure, and other people of high birth treat you as a member of the same social sphere. You can secure an audience with a local noble if you need to."
 	}
