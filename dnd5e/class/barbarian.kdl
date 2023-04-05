@@ -133,9 +133,27 @@ class name="Barbarian" {
 			*/
 		}
 	}
-	level 4 { // TODO: add ASI at 8, 12, 16, & 19
-		// TODO: ability_score_increase, which innately grants +2/+1 to abilities the user selects OR allow them to choose a feat
-		//mutator "ability_score_increase"
+	level 4 {
+		mutator-todo "pick_one" name="Ability Score Improvement" {
+			option "Increase Abilities" {
+				mutator "ability_score"  {
+					ability "Any" id="abilityA" {
+						cannot-match "abilityB"
+					}
+					bonus 2
+				}
+				mutator "ability_score"  {
+					ability "Any" id="abilityB" {
+						cannot-match "abilityA"
+					}
+					bonus 1
+				}
+			}
+			option "Feat" {
+				// TODO: grant any named-group that has the "Feat" category
+				mutator "feature" category="Feat"
+			}
+		}
 	}
 	level 5 {
 		feature name="Extra Attack" unique=true {
@@ -157,6 +175,28 @@ class name="Barbarian" {
 			// TODO: add_modifier Advantage Initiative
 		}
 	}
+	level 8 {
+		mutator-todo "pick_one" name="Ability Score Improvement" {
+			option "Increase Abilities" {
+				mutator "ability_score"  {
+					ability "Any" id="abilityA" {
+						cannot-match "abilityB"
+					}
+					bonus 2
+				}
+				mutator "ability_score"  {
+					ability "Any" id="abilityB" {
+						cannot-match "abilityA"
+					}
+					bonus 1
+				}
+			}
+			option "Feat" {
+				// TODO: grant any named-group that has the "Feat" category
+				mutator "feature" category="Feat"
+			}
+		}
+	}
 	level 9 {
 		feature name="Brutal Critical" {
 			description "Beginning at 9th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack.
@@ -169,15 +209,81 @@ class name="Barbarian" {
 			Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10."
 		}	
 	}
+	level 12 {
+		mutator-todo "pick_one" name="Ability Score Improvement" {
+			option "Increase Abilities" {
+				mutator "ability_score"  {
+					ability "Any" id="abilityA" {
+						cannot-match "abilityB"
+					}
+					bonus 2
+				}
+				mutator "ability_score"  {
+					ability "Any" id="abilityB" {
+						cannot-match "abilityA"
+					}
+					bonus 1
+				}
+			}
+			option "Feat" {
+				// TODO: grant any named-group that has the "Feat" category
+				mutator "feature" category="Feat"
+			}
+		}
+	}
 	level 15 {
 		feature name="Persistent Rage" {
 			description "Beginning at 15th level, your rage is so fierce that it ends early only if you fall unconscious or if you choose to end it."
 		}	
 	}
+	level 16 {
+		mutator-todo "pick_one" name="Ability Score Improvement" {
+			option "Increase Abilities" {
+				mutator "ability_score"  {
+					ability "Any" id="abilityA" {
+						cannot-match "abilityB"
+					}
+					bonus 2
+				}
+				mutator "ability_score"  {
+					ability "Any" id="abilityB" {
+						cannot-match "abilityA"
+					}
+					bonus 1
+				}
+			}
+			option "Feat" {
+				// TODO: grant any named-group that has the "Feat" category
+				mutator "feature" category="Feat"
+			}
+		}
+	}
 	level 18 {
 		feature name="Indomitable Might" {
 			description "Beginning at 18th level, if your total for a Strength check is less than your Strength score, you can use that score in place of the total."
 		}	
+	}
+	level 19 {
+		mutator-todo "pick_one" name="Ability Score Improvement" {
+			option "Increase Abilities" {
+				mutator "ability_score"  {
+					ability "Any" id="abilityA" {
+						cannot-match "abilityB"
+					}
+					bonus 2
+				}
+				mutator "ability_score"  {
+					ability "Any" id="abilityB" {
+						cannot-match "abilityA"
+					}
+					bonus 1
+				}
+			}
+			option "Feat" {
+				// TODO: grant any named-group that has the "Feat" category
+				mutator "feature" category="Feat"
+			}
+		}
 	}
 	level 20 {
 		feature name="Primal Champion" {

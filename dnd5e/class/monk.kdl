@@ -149,8 +149,8 @@ class name="Monk" {
 			
 			If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 ki point to make a ranged attack with the weapon or piece of ammunition you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a monk weapon for the attack, which has a normal range of 20 feet and a long range of 60 feet." {
 				short "Deflect or catch a missile when you are hit by a ranged weapon attack. The damage you take from the attack is reduced by 1d10 + {damage}. If you reduce damage to 0 and have a free hand, you can spend 1 ki point to make a ranged attack (as with a monk weapon) with a range of 20/60."
-				// TODO: format-arg with "sum" (eval i32) which takes any number of evals<output=i32>
-				format-arg "damage" (Evaluator)"sum" {
+				// TODO: format-arg with "math" (eval i32) which takes any number of evals<output=i32>
+				format-arg "damage" (Evaluator)"math" "Add" {
 					value (Evaluator)"get_ability_modifier" (Ability)"Dexterity"
 					// TODO: (Evaluator)"Level" => (Evaluator)"get_level"
 					value (Evaluator)"Level" class="Monk"
@@ -159,9 +159,26 @@ class name="Monk" {
 		}
 	}
 	level 4 {
-		/* Ability Score Improvement
-			When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.
-		*/
+		mutator-todo "pick_one" name="Ability Score Improvement" {
+			option "Increase Abilities" {
+				mutator "ability_score"  {
+					ability "Any" id="abilityA" {
+						cannot-match "abilityB"
+					}
+					bonus 2
+				}
+				mutator "ability_score"  {
+					ability "Any" id="abilityB" {
+						cannot-match "abilityA"
+					}
+					bonus 1
+				}
+			}
+			option "Feat" {
+				// TODO: grant any named-group that has the "Feat" category
+				mutator "feature" category="Feat"
+			}
+		}
 		feature name="Slow Fall" {
 			// TODO: This is an action, not a feature
 			description "Beginning at 4th level, you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level ({damage})." {
@@ -213,6 +230,28 @@ class name="Monk" {
 			}
 		}
 	}
+	level 8 {
+		mutator-todo "pick_one" name="Ability Score Improvement" {
+			option "Increase Abilities" {
+				mutator "ability_score"  {
+					ability "Any" id="abilityA" {
+						cannot-match "abilityB"
+					}
+					bonus 2
+				}
+				mutator "ability_score"  {
+					ability "Any" id="abilityB" {
+						cannot-match "abilityA"
+					}
+					bonus 1
+				}
+			}
+			option "Feat" {
+				// TODO: grant any named-group that has the "Feat" category
+				mutator "feature" category="Feat"
+			}
+		}
+	}
 	level 9 {
 		feature name="Unarmored Movement" {
 			description "At 9th level, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move."
@@ -226,6 +265,28 @@ class name="Monk" {
 		}
 		feature name="Purity of Body" {
 			description "At 10th level, your mastery of the ki flowing through you makes you immune to disease and poison."
+		}
+	}
+	level 12 {
+		mutator-todo "pick_one" name="Ability Score Improvement" {
+			option "Increase Abilities" {
+				mutator "ability_score"  {
+					ability "Any" id="abilityA" {
+						cannot-match "abilityB"
+					}
+					bonus 2
+				}
+				mutator "ability_score"  {
+					ability "Any" id="abilityB" {
+						cannot-match "abilityA"
+					}
+					bonus 1
+				}
+			}
+			option "Feat" {
+				// TODO: grant any named-group that has the "Feat" category
+				mutator "feature" category="Feat"
+			}
 		}
 	}
 	level 13 {
@@ -253,6 +314,28 @@ class name="Monk" {
 	level 15 {
 		feature name="Timeless Body" {
 			description "At 15th level, your ki sustains you so that you suffer none of the frailty of old age, and you can't be aged magically. You can still die of old age, however. In addition, you no longer need food or water."
+		}
+	}
+	level 16 {
+		mutator-todo "pick_one" name="Ability Score Improvement" {
+			option "Increase Abilities" {
+				mutator "ability_score"  {
+					ability "Any" id="abilityA" {
+						cannot-match "abilityB"
+					}
+					bonus 2
+				}
+				mutator "ability_score"  {
+					ability "Any" id="abilityB" {
+						cannot-match "abilityA"
+					}
+					bonus 1
+				}
+			}
+			option "Feat" {
+				// TODO: grant any named-group that has the "Feat" category
+				mutator "feature" category="Feat"
+			}
 		}
 	}
 	level 18 {
@@ -300,6 +383,28 @@ class name="Monk" {
 				activation "Action"
 				description "8 Ki Points - Cast the Astral Projection spell (yourself only) without needing material components."
 				// TODO: spellcasting with Ki Points as cost
+			}
+		}
+	}
+	level 19 {
+		mutator-todo "pick_one" name="Ability Score Improvement" {
+			option "Increase Abilities" {
+				mutator "ability_score"  {
+					ability "Any" id="abilityA" {
+						cannot-match "abilityB"
+					}
+					bonus 2
+				}
+				mutator "ability_score"  {
+					ability "Any" id="abilityB" {
+						cannot-match "abilityA"
+					}
+					bonus 1
+				}
+			}
+			option "Feat" {
+				// TODO: grant any named-group that has the "Feat" category
+				mutator "feature" category="Feat"
 			}
 		}
 	}

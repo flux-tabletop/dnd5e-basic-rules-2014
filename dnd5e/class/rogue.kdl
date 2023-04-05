@@ -125,13 +125,27 @@ class name="Rogue" {
 			Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action.
 		*/
 	}
-	// TODO: add ASI at 8, 12, 16, & 19
-	/*
-		Ability Score Improvement
-		When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.
-	*/
 	level 4 {
-
+		mutator-todo "pick_one" name="Ability Score Improvement" {
+			option "Increase Abilities" {
+				mutator "ability_score"  {
+					ability "Any" id="abilityA" {
+						cannot-match "abilityB"
+					}
+					bonus 2
+				}
+				mutator "ability_score"  {
+					ability "Any" id="abilityB" {
+						cannot-match "abilityA"
+					}
+					bonus 1
+				}
+			}
+			option "Feat" {
+				// TODO: grant any named-group that has the "Feat" category
+				mutator "feature" category="Feat"
+			}
+		}
 	}
 	level 5 {
 		/*
@@ -146,7 +160,48 @@ class name="Rogue" {
 		*/
 	}
 	level 8 {
-
+		mutator-todo "pick_one" name="Ability Score Improvement" {
+			option "Increase Abilities" {
+				mutator "ability_score"  {
+					ability "Any" id="abilityA" {
+						cannot-match "abilityB"
+					}
+					bonus 2
+				}
+				mutator "ability_score"  {
+					ability "Any" id="abilityB" {
+						cannot-match "abilityA"
+					}
+					bonus 1
+				}
+			}
+			option "Feat" {
+				// TODO: grant any named-group that has the "Feat" category
+				mutator "feature" category="Feat"
+			}
+		}
+	}
+	level 10 {
+		mutator-todo "pick_one" name="Ability Score Improvement" {
+			option "Increase Abilities" {
+				mutator "ability_score"  {
+					ability "Any" id="abilityA" {
+						cannot-match "abilityB"
+					}
+					bonus 2
+				}
+				mutator "ability_score"  {
+					ability "Any" id="abilityB" {
+						cannot-match "abilityA"
+					}
+					bonus 1
+				}
+			}
+			option "Feat" {
+				// TODO: grant any named-group that has the "Feat" category
+				mutator "feature" category="Feat"
+			}
+		}
 	}
 	level 11 {
 		/*
@@ -155,7 +210,26 @@ class name="Rogue" {
 		*/
 	}
 	level 12 {
-
+		mutator-todo "pick_one" name="Ability Score Improvement" {
+			option "Increase Abilities" {
+				mutator "ability_score"  {
+					ability "Any" id="abilityA" {
+						cannot-match "abilityB"
+					}
+					bonus 2
+				}
+				mutator "ability_score"  {
+					ability "Any" id="abilityB" {
+						cannot-match "abilityA"
+					}
+					bonus 1
+				}
+			}
+			option "Feat" {
+				// TODO: grant any named-group that has the "Feat" category
+				mutator "feature" category="Feat"
+			}
+		}
 	}
 	level 14 {
 		/*
@@ -170,7 +244,26 @@ class name="Rogue" {
 		*/
 	}
 	level 16 {
-
+		mutator-todo "pick_one" name="Ability Score Improvement" {
+			option "Increase Abilities" {
+				mutator "ability_score"  {
+					ability "Any" id="abilityA" {
+						cannot-match "abilityB"
+					}
+					bonus 2
+				}
+				mutator "ability_score"  {
+					ability "Any" id="abilityB" {
+						cannot-match "abilityA"
+					}
+					bonus 1
+				}
+			}
+			option "Feat" {
+				// TODO: grant any named-group that has the "Feat" category
+				mutator "feature" category="Feat"
+			}
+		}
 	}
 	level 18 {
 		/*
@@ -179,7 +272,26 @@ class name="Rogue" {
 		*/
 	}
 	level 19 {
-
+		mutator-todo "pick_one" name="Ability Score Improvement" {
+			option "Increase Abilities" {
+				mutator "ability_score"  {
+					ability "Any" id="abilityA" {
+						cannot-match "abilityB"
+					}
+					bonus 2
+				}
+				mutator "ability_score"  {
+					ability "Any" id="abilityB" {
+						cannot-match "abilityA"
+					}
+					bonus 1
+				}
+			}
+			option "Feat" {
+				// TODO: grant any named-group that has the "Feat" category
+				mutator "feature" category="Feat"
+			}
+		}
 	}
 	level 20 {
 		/*
