@@ -33,6 +33,7 @@ condition/prone.kdl
 condition/restrained.kdl
 condition/stunned.kdl
 condition/unconscious.kdl
+defaults.kdl
 items/ammunition/arrow.kdl
 items/ammunition/blowgun_needle.kdl
 items/ammunition/crossbow_bolt.kdl
