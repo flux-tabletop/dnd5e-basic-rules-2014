@@ -1,7 +1,4 @@
 /*
-Backpack*	1 cubic foot/30 pounds of gear
-* You can also strap items, such as a bedroll or a coil of rope, to the outside of a backpack.
-
 Barrel	40 gallons liquid, 4 cubic feet solid
 Basket	2 cubic feet/40 pounds of gear
 Bottle	1 1/2 pints liquid
@@ -15,10 +12,7 @@ Sack	1 cubic foot/30 pounds of gear
 Vial	4 ounces liquid
 Waterskin	4 pints liquid
 */
-item name="Backpack" weight=5.0 {
-	worth 2 (Currency)"Gold"
-	kind "Simple"
-}
+
 item name="Pouch" weight=1.0 {
 	description "A cloth or leather pouch can hold up to 20 sling bullets or 50 blowgun needles, among other things. A compartmentalized pouch for holding spell components is called a component pouch (described earlier in this section)."
 	worth 5 (Currency)"Silver"
