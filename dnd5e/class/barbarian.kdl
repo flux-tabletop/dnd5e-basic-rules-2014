@@ -133,7 +133,7 @@ class name="Barbarian" {
 	}
 	level 4 {
 		mutator-todo "pick_one" name="Ability Score Improvement" {
-			option "Increase Abilities" {
+			option "Mutators" name="Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
 						cannot-match "abilityB"
@@ -147,7 +147,7 @@ class name="Barbarian" {
 					bonus 1
 				}
 			}
-			option "Feat" {
+			option "Mutators" name="Feat" {
 				// TODO: grant any named-group that has the "Feat" category
 				mutator "feature" category="Feat"
 			}
@@ -155,8 +155,10 @@ class name="Barbarian" {
 	}
 	level 5 {
 		feature name="Extra Attack" unique=true {
-			description "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
-			// TODO: mutator "add_extra_attack"
+			description "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn." {
+				short "You can make multiple attacks when you take the attack action on your turn."
+			}
+			mutator-todo "add_extra_attack"
 		}
 		feature name="Fast Movement" {
 			description "Starting at 5th level, your speed increases by 10 feet while you aren't wearing heavy armor."
@@ -175,7 +177,7 @@ class name="Barbarian" {
 	}
 	level 8 {
 		mutator-todo "pick_one" name="Ability Score Improvement" {
-			option "Increase Abilities" {
+			option "Mutators" name="Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
 						cannot-match "abilityB"
@@ -189,7 +191,7 @@ class name="Barbarian" {
 					bonus 1
 				}
 			}
-			option "Feat" {
+			option "Mutators" name="Feat" {
 				// TODO: grant any named-group that has the "Feat" category
 				mutator "feature" category="Feat"
 			}
@@ -209,7 +211,7 @@ class name="Barbarian" {
 	}
 	level 12 {
 		mutator-todo "pick_one" name="Ability Score Improvement" {
-			option "Increase Abilities" {
+			option "Mutators" name="Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
 						cannot-match "abilityB"
@@ -223,7 +225,7 @@ class name="Barbarian" {
 					bonus 1
 				}
 			}
-			option "Feat" {
+			option "Mutators" name="Feat" {
 				// TODO: grant any named-group that has the "Feat" category
 				mutator "feature" category="Feat"
 			}
@@ -236,7 +238,7 @@ class name="Barbarian" {
 	}
 	level 16 {
 		mutator-todo "pick_one" name="Ability Score Improvement" {
-			option "Increase Abilities" {
+			option "Mutators" name="Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
 						cannot-match "abilityB"
@@ -250,7 +252,7 @@ class name="Barbarian" {
 					bonus 1
 				}
 			}
-			option "Feat" {
+			option "Mutators" name="Feat" {
 				// TODO: grant any named-group that has the "Feat" category
 				mutator "feature" category="Feat"
 			}
@@ -263,7 +265,7 @@ class name="Barbarian" {
 	}
 	level 19 {
 		mutator-todo "pick_one" name="Ability Score Improvement" {
-			option "Increase Abilities" {
+			option "Mutators" name="Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
 						cannot-match "abilityB"
@@ -277,7 +279,7 @@ class name="Barbarian" {
 					bonus 1
 				}
 			}
-			option "Feat" {
+			option "Mutators" name="Feat" {
 				// TODO: grant any named-group that has the "Feat" category
 				mutator "feature" category="Feat"
 			}

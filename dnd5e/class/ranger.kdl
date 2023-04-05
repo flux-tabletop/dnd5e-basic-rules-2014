@@ -99,22 +99,51 @@ class name="Ranger" {
 		*/
 	}
 	level 2 {
-		/* Fighting Style
-			At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options.
-			You can’t take a Fighting Style option more than once, even if you later get to choose again.
-
-			Archery
-			You gain a +2 bonus to attack rolls you make with ranged weapons.
-
-			Defense
-			While you are wearing armor, you gain a +1 bonus to AC.
-
-			Dueling
-			When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.
-
-			Two-Weapon Fighting
-			When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.
-		*/
+		feature name="Fighting Style" {
+			description "You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again." {
+				short "You adopt a particular style of fighting as your specialty."
+			}
+			// TODO: mutator-todo "pick_one" which prompts the user to pick a key from a list of options. That key determines which mutator+feature group to apply when the "pick_one" mutator is applied.
+			mutator-todo "pick_one" name="Fighting Style" {
+				option "Feature" "Archery" {
+					// You gain a +2 bonus to attack rolls you make with ranged weapons.
+					mutator "attack_roll_bonus" {
+						bonus 2
+						restriction ranged=true {
+							tag "Weapon"
+						}
+					}
+				}
+				option "Feature" "Defense" {
+					// While you are wearing armor, you gain a +1 bonus to AC.
+					criteria "has_armor_equipped"
+					mutator "armor_class" {
+						bonus 1
+					}
+				}
+				option "Feature" "Dueling" {
+					// When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.'
+					criteria "has_weapon_equipped" max=1 {
+						attack "Melee"
+						tag "Weapon"
+						property "TwoHanded" false
+					}
+					mutator "bonus_damage" {
+						bonus 2
+						restriction {
+							attack "Melee"
+							tag "Weapon"
+							property "TwoHanded" false
+						}
+					}
+				}
+				option "Feature" "Two-Weapon Fighting" {
+					feature name="Two-Weapon Fighting" {
+						description "When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack."
+					}
+				}
+			}
+		}
 		/* Spellcasting
 			By the time you reach 2nd level, you have learned to use the magical essence of nature to cast spells, much as a druid does. See chapter 10 for the general rules of spellcasting and chapter 11 for the ranger spell list.
 
@@ -145,7 +174,7 @@ class name="Ranger" {
 	}
 	level 4 {
 		mutator-todo "pick_one" name="Ability Score Improvement" {
-			option "Increase Abilities" {
+			option "Mutators" name="Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
 						cannot-match "abilityB"
@@ -159,20 +188,23 @@ class name="Ranger" {
 					bonus 1
 				}
 			}
-			option "Feat" {
+			option "Mutators" name="Feat" {
 				// TODO: grant any named-group that has the "Feat" category
 				mutator "feature" category="Feat"
 			}
 		}
 	}
 	level 5 {
-		/* Extra Attack
-			Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
-		*/
+		feature name="Extra Attack" unique=true {
+			description "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn." {
+				short "You can make multiple attacks when you take the attack action on your turn."
+			}
+			mutator-todo "add_extra_attack"
+		}
 	}
 	level 8 {
 		mutator-todo "pick_one" name="Ability Score Improvement" {
-			option "Increase Abilities" {
+			option "Mutators" name="Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
 						cannot-match "abilityB"
@@ -186,27 +218,28 @@ class name="Ranger" {
 					bonus 1
 				}
 			}
-			option "Feat" {
+			option "Mutators" name="Feat" {
 				// TODO: grant any named-group that has the "Feat" category
 				mutator "feature" category="Feat"
 			}
 		}
-		/* Land’s Stride
-			Starting at 8th level, moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.
+		feature name="Land's Stride" {
+			description "Starting at 8th level, moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.
 
-			In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the entangle spell.
-		*/
+			In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the entangle spell."
+			mutator "add_modifier" "Advantage" (SavingThrow)"All" context="plants which impede movement"
+		}
 	}
 	level 10 {
-		/* Hide in Plain Sight
-			Starting at 10th level, you can spend 1 minute creating camouflage for yourself. You must have access to fresh mud, dirt, plants, soot, and other naturally occurring materials with which to create your camouflage.
+		feature name="Hide in Plain Sight" {
+			description "Starting at 10th level, you can spend 1 minute creating camouflage for yourself. You must have access to fresh mud, dirt, plants, soot, and other naturally occurring materials with which to create your camouflage.
 
-			Once you are camouflaged in this way, you can try to hide by pressing yourself up against a solid surface, such as a tree or wall, that is at least as tall and wide as you are. You gain a +10 bonus to Dexterity (Stealth) checks as long as you remain there without moving or taking actions. Once you move or take an action or a reaction, you must camouflage yourself again to gain this benefit.
-		*/
+			Once you are camouflaged in this way, you can try to hide by pressing yourself up against a solid surface, such as a tree or wall, that is at least as tall and wide as you are. You gain a +10 bonus to Dexterity (Stealth) checks as long as you remain there without moving or taking actions. Once you move or take an action or a reaction, you must camouflage yourself again to gain this benefit."
+		}
 	}
 	level 12 {
 		mutator-todo "pick_one" name="Ability Score Improvement" {
-			option "Increase Abilities" {
+			option "Mutators" name="Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
 						cannot-match "abilityB"
@@ -220,20 +253,25 @@ class name="Ranger" {
 					bonus 1
 				}
 			}
-			option "Feat" {
+			option "Mutators" name="Feat" {
 				// TODO: grant any named-group that has the "Feat" category
 				mutator "feature" category="Feat"
 			}
 		}
 	}
 	level 14 {
-		/* Vanish
-			Starting at 14th level, you can use the Hide action as a bonus action on your turn. Also, you can’t be tracked by nonmagical means, unless you choose to leave a trail.
-		*/
+		feature name="Vanish" {
+			description "Starting at 14th level, you can use the Hide action as a bonus action on your turn. Also, you can't be tracked by nonmagical means, unless you choose to leave a trail."
+			mutator "add_action" name="Hide" {
+				description "Make a Dexterity (Stealth) check in an attempt to hide, following the rules for hiding.
+				When a creature can't see you, you have advantage on attack rolls against it. If you are hidden--both unseen and unheard--when you make an attack, you give away your location when the attack hits or misses."
+				activation "Bonus"
+			}
+		}
 	}
 	level 16 {
 		mutator-todo "pick_one" name="Ability Score Improvement" {
-			option "Increase Abilities" {
+			option "Mutators" name="Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
 						cannot-match "abilityB"
@@ -247,22 +285,22 @@ class name="Ranger" {
 					bonus 1
 				}
 			}
-			option "Feat" {
+			option "Mutators" name="Feat" {
 				// TODO: grant any named-group that has the "Feat" category
 				mutator "feature" category="Feat"
 			}
 		}
 	}
 	level 18 {
-		/* Feral Senses
-			At 18th level, you gain preternatural senses that help you fight creatures you can’t see. When you attack a creature you can’t see, your inability to see it doesn’t impose disadvantage on your attack rolls against it.
+		feature name="Feral Senses" {
+			description "At 18th level, you gain preternatural senses that help you fight creatures you can't see. When you attack a creature you can't see, your inability to see it doesn't impose disadvantage on your attack rolls against it.
 
-			You are also aware of the location of any invisible creature within 30 feet of you, provided that the creature isn’t hidden from you and you aren’t blinded or deafened.
-		*/
+			You are also aware of the location of any invisible creature within 30 feet of you, provided that the creature isn't hidden from you and you aren't blinded or deafened."
+		}
 	}
 	level 19 {
 		mutator-todo "pick_one" name="Ability Score Improvement" {
-			option "Increase Abilities" {
+			option "Mutators" name="Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
 						cannot-match "abilityB"
@@ -276,60 +314,87 @@ class name="Ranger" {
 					bonus 1
 				}
 			}
-			option "Feat" {
+			option "Mutators" name="Feat" {
 				// TODO: grant any named-group that has the "Feat" category
 				mutator "feature" category="Feat"
 			}
 		}
 	}
 	level 20 {
-		/* Foe Slayer
-			At 20th level, you become an unparalleled hunter of your enemies. Once on each of your turns, you can add your Wisdom modifier to the attack roll or the damage roll of an attack you make against one of your favored enemies. You can choose to use this feature before or after the roll, but before any effects of the roll are applied.
-		*/
+		feature name="Foe Slayer" {
+			description "At 20th level, you become an unparalleled hunter of your enemies. Once on each of your turns, you can add your Wisdom modifier (+{modifier}) to the attack roll or the damage roll of an attack you make against one of your favored enemies. You can choose to use this feature before or after the roll, but before any effects of the roll are applied." {
+				short "Once per turn, add Wisdom modifier (+{modifier}) to attack or damage roll against a favored enemy."
+				format-arg "modifier" (Evaluator)"get_ability_modifier" (Ability)"Wisdom"
+			}
+		}
 	}
 }
 subclass class="Ranger" name="Hunter" {
 	description "Emulating the Hunter archetype means accepting your place as a bulwark between civilization and the terrors of the wilderness. As you walk the Hunter's path, you learn specialized techniques for fighting the threats you face, from rampaging ogres and hordes of orcs to towering giants and terrifying dragons."
 	level 3 {
-		/* Hunter’s Prey
-			At 3rd level, you gain one of the following features of your choice.
-
-			Colossus Slayer. Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it’s below its hit point maximum. You can deal this extra damage only once per turn.
-
-			Giant Killer. When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature.
-
-			Horde Breaker. Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon.
-		*/
+		mutator-todo "pick_one" name="Hunter's Prey" {
+			option "Feature" name="Colossus Slayer" {
+				description "Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it's below its hit point maximum. You can deal this extra damage only once per turn." {
+					short "Bonus 1d8 damage on a weapon attack, once per turn, when the target is below its hit point maximum."
+				}
+			}
+			option "Action" name="Giant Killer" {
+				description "When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature."
+				activation "Reaction"
+			}
+			option "Feature" name="Horde Breaker" {
+				description "Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon."
+			}
+		}
 	}
 	level 7 {
-		/* Defensive Tactics
-			At 7th level, you gain one of the following features of your choice.
-
-			Escape the Horde. Opportunity attacks against you are made with disadvantage.
-
-			Multiattack Defense. When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn.
-			
-			Steel Will. You have advantage on saving throws against being frightened.
-		*/
+		mutator-todo "pick_one" name="Defensive Tactics" {
+			option "Feature" name="Escape the Horde" {
+				description "Opportunity attacks against you are made with disadvantage."
+			}
+			option "Feature" name="Multiattack Defense" {
+				description "When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn."
+			}
+			option "Mutators" name="Steel Will" {
+				mutator "add_modifier" "Advantage" (SavingThrow)"All" context="bring frightened"
+			}
+		}
 	}
 	level 11 {
-		/* Multiattack
-			At 11th level, you gain one of the following features of your choice.
-
-			Volley. You can use your action to make a ranged attack against any number of creatures within 10 feet of a point you can see within your weapon’s range. You must have ammunition for each target, as normal, and you make a separate attack roll for each target.
-
-			Whirlwind Attack. You can use your action to make a melee attack against any number of creatures within 5 feet of you, with a separate attack roll for each target.
-		*/
+		mutator-todo "pick_one" name="Multiattack" {
+			option "Action" name="Volley" {
+				description "You can use your action to make a ranged attack against any number of creatures within 10 feet of a point you can see within your weapon's range. You must have ammunition for each target, as normal, and you make a separate attack roll for each target." {
+					short "Make a ranged attack against creatures within 10 feet of a point you can see within range. Make separate attack roles and ammunition for each target."
+				}
+				activation "Action"
+			}
+			option "Action" name="Whirlwind Attack" {
+				description "You can use your action to make a melee attack against any number of creatures within 5 feet of you, with a separate attack roll for each target." {
+					short "Make a melee attack against creatures within 5 feet you. Make separate attack roles for each target."
+				}
+				activation "Action"
+			}
+		}
 	}
 	level 15 {
-		/* Superior Hunter’s Defense
-			At 15th level, you gain one of the following features of your choice.
-
-			Evasion. When you are subjected to an effect, such as a red dragon’s fiery breath or a lightning bolt spell, that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.
-
-			Stand Against the Tide. When a hostile creature misses you with a melee attack, you can use your reaction to force that creature to repeat the same attack against another creature (other than itself) of your choice.
-
-			Uncanny Dodge. When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack’s damage against you.
-		*/
+		mutator-todo "pick_one" name="Superior Hunter's Defense" {
+			option "Feature" name="Evasion" {
+				description "When you are subjected to an effect, such as a red dragon's fiery breath or a lightning bolt spell, that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail." {
+					short "On DEX saving throw to take half damage on success, take no damage on success or half damage on fail."
+				}
+			}
+			option "Action" name="Stand Against the Tide" {
+				description "When a hostile creature misses you with a melee attack, you can use your reaction to force that creature to repeat the same attack against another creature (other than itself) of your choice." {
+					short "Redirect a failed melee attack against you onto another creature within range."
+				}
+				activation "Reaction"
+			}
+			option "Action" name="Uncanny Dodge" {
+				description "When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you." {
+					short "Halve the damage you take from an attack that you can see."
+				}
+				activation "Reaction"
+			}
+		}
 	}
 }

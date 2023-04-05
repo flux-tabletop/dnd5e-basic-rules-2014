@@ -75,8 +75,8 @@ class name="Fighter" {
 				short "You adopt a particular style of fighting as your specialty."
 			}
 			// TODO: mutator-todo "pick_one" which prompts the user to pick a key from a list of options. That key determines which mutator+feature group to apply when the "pick_one" mutator is applied.
-			mutator-todo "pick_one" {
-				option "Archery" {
+			mutator-todo "pick_one" name="Fighting Style" {
+				option "Feature" name="Archery" {
 					// You gain a +2 bonus to attack rolls you make with ranged weapons.
 					mutator "attack_roll_bonus" {
 						bonus 2
@@ -85,14 +85,14 @@ class name="Fighter" {
 						}
 					}
 				}
-				option "Defense" {
+				option "Feature" name="Defense" {
 					// While you are wearing armor, you gain a +1 bonus to AC.
 					criteria "has_armor_equipped"
 					mutator "armor_class" {
 						bonus 1
 					}
 				}
-				option "Dueling" {
+				option "Feature" name="Dueling" {
 					// When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.'
 					criteria "has_weapon_equipped" max=1 {
 						attack "Melee"
@@ -108,14 +108,12 @@ class name="Fighter" {
 						}
 					}
 				}
-				option "Great Weapon Fighting" {
-					feature name="Great Weapon Fighting" {
-						description "When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit." {
-							short "Reroll 1 or 2 on damage rolls for two-handed or versatile weapons (when weilding with two hands)."
-						}
+				option "Feature" name="Great Weapon Fighting" {
+					description "When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit." {
+						short "Reroll 1 or 2 on damage rolls for two-handed or versatile weapons (when weilding with two hands)."
 					}
 				}
-				option "Protection" {
+				option "Feature" name="Protection" {
 					// When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.
 					criteria "has_armor_equipped" {
 						kind "Shield"
@@ -127,10 +125,8 @@ class name="Fighter" {
 						activation "Reaction"
 					}
 				}
-				option "Two-Weapon Fighting" {
-					feature name="Two-Weapon Fighting" {
-						description "When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack."
-					}
+				option "Feature" name="Two-Weapon Fighting" {
+					description "When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack."
 				}
 			}
 		}
@@ -165,7 +161,7 @@ class name="Fighter" {
 	}
 	level 4 {
 		mutator-todo "pick_one" name="Ability Score Improvement" {
-			option "Increase Abilities" {
+			option "Mutators" name="Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
 						cannot-match "abilityB"
@@ -179,7 +175,7 @@ class name="Fighter" {
 					bonus 1
 				}
 			}
-			option "Feat" {
+			option "Mutators" name="Feat" {
 				// TODO: grant any named-group that has the "Feat" category
 				mutator "feature" category="Feat"
 			}
@@ -191,21 +187,18 @@ class name="Fighter" {
 			The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class." {
 				short "You can make multiple attacks when you take the attack action on your turn."
 			}
-			// TODO: mutator "add_extra_attack"
-			/*
-			mutator "add_extra_attack" {
+			mutator-todo "add_extra_attack" {
 				amount (Scaled)"Level" class="Fighter" {
 					level 5 1
 					level 11 2
 					level 20 3
 				}
 			}
-			*/
 		}
 	}
 	level 6 {
 		mutator-todo "pick_one" name="Ability Score Improvement" {
-			option "Increase Abilities" {
+			option "Mutators" name="Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
 						cannot-match "abilityB"
@@ -219,7 +212,7 @@ class name="Fighter" {
 					bonus 1
 				}
 			}
-			option "Feat" {
+			option "Mutators" name="Feat" {
 				// TODO: grant any named-group that has the "Feat" category
 				mutator "feature" category="Feat"
 			}
@@ -227,7 +220,7 @@ class name="Fighter" {
 	}
 	level 8 {
 		mutator-todo "pick_one" name="Ability Score Improvement" {
-			option "Increase Abilities" {
+			option "Mutators" name="Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
 						cannot-match "abilityB"
@@ -241,7 +234,7 @@ class name="Fighter" {
 					bonus 1
 				}
 			}
-			option "Feat" {
+			option "Mutators" name="Feat" {
 				// TODO: grant any named-group that has the "Feat" category
 				mutator "feature" category="Feat"
 			}
@@ -266,7 +259,7 @@ class name="Fighter" {
 	}
 	level 12 {
 		mutator-todo "pick_one" name="Ability Score Improvement" {
-			option "Increase Abilities" {
+			option "Mutators" name="Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
 						cannot-match "abilityB"
@@ -280,7 +273,7 @@ class name="Fighter" {
 					bonus 1
 				}
 			}
-			option "Feat" {
+			option "Mutators" name="Feat" {
 				// TODO: grant any named-group that has the "Feat" category
 				mutator "feature" category="Feat"
 			}
@@ -288,7 +281,7 @@ class name="Fighter" {
 	}
 	level 14 {
 		mutator-todo "pick_one" name="Ability Score Improvement" {
-			option "Increase Abilities" {
+			option "Mutators" name="Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
 						cannot-match "abilityB"
@@ -302,7 +295,7 @@ class name="Fighter" {
 					bonus 1
 				}
 			}
-			option "Feat" {
+			option "Mutators" name="Feat" {
 				// TODO: grant any named-group that has the "Feat" category
 				mutator "feature" category="Feat"
 			}
@@ -310,7 +303,7 @@ class name="Fighter" {
 	}
 	level 16 {
 		mutator-todo "pick_one" name="Ability Score Improvement" {
-			option "Increase Abilities" {
+			option "Mutators" name="Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
 						cannot-match "abilityB"
@@ -324,7 +317,7 @@ class name="Fighter" {
 					bonus 1
 				}
 			}
-			option "Feat" {
+			option "Mutators" name="Feat" {
 				// TODO: grant any named-group that has the "Feat" category
 				mutator "feature" category="Feat"
 			}
@@ -332,7 +325,7 @@ class name="Fighter" {
 	}
 	level 19 {
 		mutator-todo "pick_one" name="Ability Score Improvement" {
-			option "Increase Abilities" {
+			option "Mutators" name="Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
 						cannot-match "abilityB"
@@ -346,7 +339,7 @@ class name="Fighter" {
 					bonus 1
 				}
 			}
-			option "Feat" {
+			option "Mutators" name="Feat" {
 				// TODO: grant any named-group that has the "Feat" category
 				mutator "feature" category="Feat"
 			}
@@ -382,9 +375,9 @@ subclass class="Fighter" name="Champion" {
 				short "You adopt an additional style of fighting as your specialty."
 			}
 			// TODO: mutator-todo "pick_one" which prompts the user to pick a key from a list of options. That key determines which mutator+feature group to apply when the "pick_one" mutator is applied.
-			mutator-todo "pick_one" {
+			mutator-todo "pick_one" name="Fighting Style" {
 				cannot-match "Fighter/level01/Fighting Style"
-				option "Archery" {
+				option "Feature" name="Archery" {
 					// You gain a +2 bonus to attack rolls you make with ranged weapons.
 					mutator "attack_roll_bonus" {
 						bonus 2
@@ -393,14 +386,14 @@ subclass class="Fighter" name="Champion" {
 						}
 					}
 				}
-				option "Defense" {
+				option "Feature" name="Defense" {
 					// While you are wearing armor, you gain a +1 bonus to AC.
 					criteria "has_armor_equipped"
 					mutator "armor_class" {
 						bonus 1
 					}
 				}
-				option "Dueling" {
+				option "Feature" name="Dueling" {
 					// When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.'
 					criteria "has_weapon_equipped" max=1 {
 						attack "Melee"
@@ -416,14 +409,12 @@ subclass class="Fighter" name="Champion" {
 						}
 					}
 				}
-				option "Great Weapon Fighting" {
-					feature name="Great Weapon Fighting" {
-						description "When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit." {
-							short "Reroll 1 or 2 on damage rolls for two-handed or versatile weapons (when weilding with two hands)."
-						}
+				option "Feature" name="Great Weapon Fighting" {
+					description "When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit." {
+						short "Reroll 1 or 2 on damage rolls for two-handed or versatile weapons (when weilding with two hands)."
 					}
 				}
-				option "Protection" {
+				option "Feature" name="Protection" {
 					// When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.
 					criteria "has_armor_equipped" {
 						kind "Shield"
@@ -435,10 +426,8 @@ subclass class="Fighter" name="Champion" {
 						activation "Reaction"
 					}
 				}
-				option "Two-Weapon Fighting" {
-					feature name="Two-Weapon Fighting" {
-						description "When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack."
-					}
+				option "Feature" name="Two-Weapon Fighting" {
+					description "When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack."
 				}
 			}
 		}

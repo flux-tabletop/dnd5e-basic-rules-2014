@@ -125,7 +125,7 @@ class name="Rogue" {
 	}
 	level 4 {
 		mutator-todo "pick_one" name="Ability Score Improvement" {
-			option "Increase Abilities" {
+			option "Mutators" name="Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
 						cannot-match "abilityB"
@@ -139,7 +139,7 @@ class name="Rogue" {
 					bonus 1
 				}
 			}
-			option "Feat" {
+			option "Mutators" name="Feat" {
 				// TODO: grant any named-group that has the "Feat" category
 				mutator "feature" category="Feat"
 			}
@@ -159,7 +159,7 @@ class name="Rogue" {
 	}
 	level 8 {
 		mutator-todo "pick_one" name="Ability Score Improvement" {
-			option "Increase Abilities" {
+			option "Mutators" name="Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
 						cannot-match "abilityB"
@@ -173,7 +173,7 @@ class name="Rogue" {
 					bonus 1
 				}
 			}
-			option "Feat" {
+			option "Mutators" name="Feat" {
 				// TODO: grant any named-group that has the "Feat" category
 				mutator "feature" category="Feat"
 			}
@@ -181,7 +181,7 @@ class name="Rogue" {
 	}
 	level 10 {
 		mutator-todo "pick_one" name="Ability Score Improvement" {
-			option "Increase Abilities" {
+			option "Mutators" name="Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
 						cannot-match "abilityB"
@@ -195,7 +195,7 @@ class name="Rogue" {
 					bonus 1
 				}
 			}
-			option "Feat" {
+			option "Mutators" name="Feat" {
 				// TODO: grant any named-group that has the "Feat" category
 				mutator "feature" category="Feat"
 			}
@@ -209,7 +209,7 @@ class name="Rogue" {
 	}
 	level 12 {
 		mutator-todo "pick_one" name="Ability Score Improvement" {
-			option "Increase Abilities" {
+			option "Mutators" name="Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
 						cannot-match "abilityB"
@@ -223,7 +223,7 @@ class name="Rogue" {
 					bonus 1
 				}
 			}
-			option "Feat" {
+			option "Mutators" name="Feat" {
 				// TODO: grant any named-group that has the "Feat" category
 				mutator "feature" category="Feat"
 			}
@@ -243,7 +243,7 @@ class name="Rogue" {
 	}
 	level 16 {
 		mutator-todo "pick_one" name="Ability Score Improvement" {
-			option "Increase Abilities" {
+			option "Mutators" name="Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
 						cannot-match "abilityB"
@@ -257,7 +257,7 @@ class name="Rogue" {
 					bonus 1
 				}
 			}
-			option "Feat" {
+			option "Mutators" name="Feat" {
 				// TODO: grant any named-group that has the "Feat" category
 				mutator "feature" category="Feat"
 			}
@@ -271,7 +271,7 @@ class name="Rogue" {
 	}
 	level 19 {
 		mutator-todo "pick_one" name="Ability Score Improvement" {
-			option "Increase Abilities" {
+			option "Mutators" name="Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
 						cannot-match "abilityB"
@@ -285,7 +285,7 @@ class name="Rogue" {
 					bonus 1
 				}
 			}
-			option "Feat" {
+			option "Mutators" name="Feat" {
 				// TODO: grant any named-group that has the "Feat" category
 				mutator "feature" category="Feat"
 			}
