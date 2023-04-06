@@ -1,5 +1,25 @@
-// TODO: Apply "defaults" to all characters first when compiling derived data
 defaults {
+	// TODO: Remove Persistent::apply_mutators hard-coded mutator when this is working
+	mutator-todo "add_max_hit_points" (Evaluator)"math" "Multiply" id="Constitution x Levels" {
+		value (Evaluator)"get_ability_modifier" (Ability)"Constitution"
+		value (Evaluator)"Level"
+	}
+
+	mutator "add_action" name="Unarmed Strike" {
+		description "Instead of using a weapon to make a melee weapon attack, you can use an unarmed strike: a punch, kick, head-butt, or similar forceful blow (none of which count as weapons). On a hit, an unarmed strike deals {damage} bludgeoning damage (1 + your Strength modifier). You are proficient with your unarmed strikes." {
+			short "You can punch, kick, head-butt, or use a similar forceful blow and deal {damage} bludgeoning damage."
+			format-arg "damage" (Evaluator)"get_ability_modifier" "Strength" base=1
+		}
+		activation "Action"
+		attack {
+			kind "Melee"
+			check "AttackRoll" (Ability)"Strength" proficient=true
+			damage base=1 {
+				damage_type (DamageType)"Bludgeoning"
+			}
+		}
+	}
+
 	mutator "add_action" name="Attack" {
 		description "The most common action to take in combat is the Attack action, whether you are swinging a sword, firing an arrow from a bow, or brawling with your fists.
 		With this action, you make one melee or ranged attack.
@@ -41,6 +61,7 @@ defaults {
 			section (Title)"Escaping a Grapple" "A grappled creature can use its action to escape. To do so, it must succeed on a Strength (Athletics) or Dexterity (Acrobatics) check contested by your Strength (Athletics) check."
 			section (Title)"Moving a Grappled Creature" "When you move, you can drag or carry the grappled creature with you, but your speed is halved, unless the creature is two or more sizes smaller than you."
 		}
+		activation "Action"
 	}
 	mutator "add_action" name="Help" {
 		description "You can lend your aid to another creature in the completion of a task. The creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes the check before the start of your next turn.
