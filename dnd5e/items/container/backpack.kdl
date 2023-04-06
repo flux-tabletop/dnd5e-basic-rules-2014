@@ -1,7 +1,9 @@
 item name="Backpack" weight=5.0 {
 	worth 2 (Currency)"Gold"
 	kind "Simple"
-	container max_weight=30.0 {
-		// 1 cubic foot
+	containers {
+		items max_weight=30.0 {
+			// 1 cubic foot
+		}
 	}
 }

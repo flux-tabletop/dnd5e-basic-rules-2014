@@ -11,21 +11,25 @@ Scholar's Pack (40 gp) Includes a backpack, a book of lore, a bottle of ink, an 
 // When an item is parsed, if it has a string at the first value which is a source id, that item is cloned and the deserialized bits in this entry are overlaid on top of it. That means that the contents of the container, the name, and the worth are all overrides on top of the backpack itself.
 item "items/container/backpack.kdl" name="Burglar's Pack" {
 	worth 16 (Currency)"Gold"
-	container {
-		item "items/gear/ballBearings.kdl" count=1000
-		item name="String (ft.)" {
-			kind "Simple" count=10
+	containers {
+		items {
+			contents {
+				item "items/gear/ballBearings.kdl" count=1000
+				item name="String (ft.)" {
+					kind "Simple" count=10
+				}
+				item "items/gear/bell.kdl"
+				item "items/gear/candle.kdl" count=5
+				item "items/gear/crowbar.kdl"
+				item "items/gear/hammer.kdl"
+				item "items/gear/piton.kdl" count=10
+				item "items/gear/lanternHooded.kdl"
+				item "items/gear/oilFlask.kdl" count=2
+				item "items/gear/ration.kdl" count=5
+				item "items/gear/tinderbox.kdl"
+				item "items/gear/waterskin.kdl"
+				item "items/gear/ropeHempen.kdl" count=50
+			}
 		}
-		item "items/gear/bell.kdl"
-		item "items/gear/candle.kdl" count=5
-		item "items/gear/crowbar.kdl"
-		item "items/gear/hammer.kdl"
-		item "items/gear/piton.kdl" count=10
-		item "items/gear/lanternHooded.kdl"
-		item "items/gear/oilFlask.kdl" count=2
-		item "items/gear/ration.kdl" count=5
-		item "items/gear/tinderbox.kdl"
-		item "items/gear/waterskin.kdl"
-		item "items/gear/ropeHempen.kdl" count=50
 	}
 }

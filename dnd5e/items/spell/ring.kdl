@@ -1,0 +1,28 @@
+item name="Ring of Spell Storing" {
+	description "This ring stores spells cast into it, holding them until the attuned wearer uses them. The ring can store up to 5 levels worth of spells at a time. When found, it contains 1d6 - 1 levels of stored spells chosen by the DM.
+
+	Any creature can cast a spell of 1st through 5th level into the ring by touching the ring as the spell is cast. The spell has no effect, other than to be stored in the ring. If the ring can't hold the spell, the spell is expended without effect. The level of the slot used to cast the spell determines how much space it uses.
+
+	While wearing this ring, you can cast any spell stored in it. The spell uses the slot level, spell save DC, spell attack bonus, and spellcasting ability of the original caster, but is otherwise treated as if you cast the spell. The spell cast from the ring is no longer stored in it, freeing up space."
+	tag "Ring"
+	rarity "Rare"
+	kind "Equipment" {
+		attunement required=true
+		containers {
+			spells {
+				rank-per min=1 max=5
+				total-rank 5
+				/*
+				contents {
+					// since there is no `casting` node, the user can input the rank/save-dc/atk-bonus when spell is stored
+					spell "path/to/spell.kdl" {
+						rank 2
+						save-dc 15
+						atk-bonus 2
+					}
+				}
+				*/
+			}
+		}
+	}
+}
