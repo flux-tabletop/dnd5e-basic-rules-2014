@@ -177,8 +177,7 @@ class name="Monk" {
 				mutator "feature" category="Feat"
 			}
 		}
-		feature name="Slow Fall" {
-			// TODO: This is an action, not a feature
+		mutator "add_action" name="Slow Fall" {
 			description "Beginning at 4th level, you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level ({damage})." {
 				short "Reaction - Reduce fall damage by {damage}"
 				// TODO: "Level" evaluator with an ordered list (in children) of defined numerical operations
@@ -186,6 +185,7 @@ class name="Monk" {
 					multiply 5
 				}
 			}
+			activation "Reaction"
 		}
 	}
 	level 5 {

@@ -444,10 +444,7 @@ subclass class="Fighter" name="Champion" {
 			description "At 18th level, you attain the pinnacle of resilience in battle. At the start of each of your turns, you regain hit points equal to 5 + your Constitution modifier (+{hit_points}) if you have no more than half ({half_max_hp}) of your hit points left. You don't gain this benefit if you have 0 hit points." {
 				short "At the start of your turn, regain {hit_points} if you have more than 0 and less than {half_max_hp} hit points."
 				// TODO: format-arg with "math" (eval i32) which takes any number of evals<output=i32>
-				format-arg "hit_points" (Evaluator)"math" "Add" {
-					value 5
-					value (Evaluator)"get_ability_modifier" (Ability)"Constitution"
-				}
+				format-arg "hit_points" (Evaluator)"get_ability_modifier" (Ability)"Constitution" base=5
 				format-arg "half_max_hp" (Evaluator)"math" "Divide" {
 					value (Evaluator)"get_hit_points" "Max"
 					value 2
