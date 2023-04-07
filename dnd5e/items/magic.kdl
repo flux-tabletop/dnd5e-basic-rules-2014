@@ -104,7 +104,7 @@ item name="Armor of Invulnerability" weight=65.0 {
 			min-strength 15
 		}
 		mutator "add_modifier" "Disadvantage" (Skill)"Specific" "Stealth"
-		mutator "add_defense" "Resistance" context="nonmagical"
+		mutator "add_defense" "Resistance" context="nonmagical attacks"
 		mutator "add_action" name="Damage Immunity" {
 			description "You are immune to nonmagical damage for 10 minutes."
 			activation "Action"
