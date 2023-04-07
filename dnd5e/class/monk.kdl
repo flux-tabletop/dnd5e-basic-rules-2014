@@ -147,11 +147,9 @@ class name="Monk" {
 			
 			If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 ki point to make a ranged attack with the weapon or piece of ammunition you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a monk weapon for the attack, which has a normal range of 20 feet and a long range of 60 feet." {
 				short "Deflect or catch a missile when you are hit by a ranged weapon attack. The damage you take from the attack is reduced by 1d10 + {damage}. If you reduce damage to 0 and have a free hand, you can spend 1 ki point to make a ranged attack (as with a monk weapon) with a range of 20/60."
-				// TODO: format-arg with "math" (eval i32) which takes any number of evals<output=i32>
 				format-arg "damage" (Evaluator)"math" "Add" {
 					value (Evaluator)"get_ability_modifier" (Ability)"Dexterity"
-					// TODO: (Evaluator)"Level" => (Evaluator)"get_level"
-					value (Evaluator)"Level" class="Monk"
+					value (Evaluator)"get_level" class="Monk"
 				}
 			}
 		}

@@ -1,8 +1,8 @@
 defaults {
 	// TODO: Remove Persistent::apply_mutators hard-coded mutator when this is working
-	mutator-todo "add_max_hit_points" (Evaluator)"math" "Multiply" id="Constitution x Levels" {
+	mutator "add_max_hit_points" (Evaluator)"math" "Multiply" id="Constitution x Levels" {
 		value (Evaluator)"get_ability_modifier" (Ability)"Constitution"
-		value (Evaluator)"Level"
+		value (Evaluator)"get_level"
 	}
 
 	mutator "add_action" name="Unarmed Strike" {
