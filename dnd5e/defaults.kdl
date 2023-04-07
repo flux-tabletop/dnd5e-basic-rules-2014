@@ -1,5 +1,4 @@
 defaults {
-	// TODO: Remove Persistent::apply_mutators hard-coded mutator when this is working
 	mutator "add_max_hit_points" (Evaluator)"math" "Multiply" id="Constitution x Levels" {
 		value (Evaluator)"get_ability_modifier" (Ability)"Constitution"
 		value (Evaluator)"get_level"
