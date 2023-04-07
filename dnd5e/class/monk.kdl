@@ -191,7 +191,7 @@ class name="Monk" {
 			description "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn." {
 				short "You can make multiple attacks when you take the attack action on your turn."
 			}
-			mutator-todo "add_extra_attack"
+			mutator "add_to_action_budget" "Attack" 1
 		}
 		feature name="Stunning Strike" category="Ki" {
 			description "Starting at 5th level, you can interfere with the flow of ki in an opponent's body. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a {DC} Constitution saving throw or be stunned until the end of your next turn." {

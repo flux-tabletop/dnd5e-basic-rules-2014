@@ -187,12 +187,10 @@ class name="Fighter" {
 			The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class." {
 				short "You can make multiple attacks when you take the attack action on your turn."
 			}
-			mutator-todo "add_extra_attack" {
-				amount (Scaled)"Level" class="Fighter" {
-					level 5 1
-					level 11 2
-					level 20 3
-				}
+			mutator "add_to_action_budget" "Attack" (Scaled)"Level" class="Fighter" {
+				level 5 1
+				level 11 2
+				level 20 3
 			}
 		}
 	}

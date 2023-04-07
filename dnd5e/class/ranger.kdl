@@ -199,7 +199,7 @@ class name="Ranger" {
 			description "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn." {
 				short "You can make multiple attacks when you take the attack action on your turn."
 			}
-			mutator-todo "add_extra_attack"
+			mutator "add_to_action_budget" "Attack" 1
 		}
 	}
 	level 8 {
