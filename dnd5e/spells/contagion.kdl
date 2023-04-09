@@ -5,7 +5,8 @@ spell name="Contagion" {
 	rank 5
 	casting-time "Action"
 	range "Touch"
-	Component: V, S
+	component "Verbal"
+	component "Somatic"
 	duration "Days" 7
 	description "Your touch inflicts disease. Make a melee spell attack against a creature within your reach. On a hit, the target is poisoned.
 	At the end of each of the poisoned target's turns, the target must make a Constitution saving throw. If the target succeeds on three of these saves, it is no longer poisoned, and the spell ends. If the target fails three of these saves, the target is no longer poisoned, but choose one of the diseases below. The target is subjected to the chosen disease for the spell's duration.

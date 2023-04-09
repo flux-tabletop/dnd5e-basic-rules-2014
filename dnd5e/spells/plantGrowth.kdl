@@ -4,7 +4,7 @@ spell name="Plant Growth" {
 	tag "Druid"
 	tag "Ranger"
 	rank 3
-	casting-time "Action" or 8 hours
+	casting-time "Action" // TODO: or 8 hours
 	range 150
 	component "Verbal"
 	component "Somatic"

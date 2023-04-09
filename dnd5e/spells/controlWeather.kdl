@@ -5,7 +5,7 @@ spell name="Control Weather" {
 	tag "Wizard"
 	rank 8
 	casting-time 10 "Minute"
-	range "Self" (5-mile radius)
+	range "Self" // TODO: (5-mile radius)
 	component "Verbal"
 	component "Somatic"
 	component "Material" "burning incense and bits of earth and wood mixed in water"
