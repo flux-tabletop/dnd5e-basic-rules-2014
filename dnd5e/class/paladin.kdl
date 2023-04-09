@@ -82,6 +82,7 @@ class name="Paladin" {
 				- Restore any number of hit points that you can spend from your pool
 				- Spend 5 points in the pool per disease to cure or poison to neutralize"
 			}
+			activation "Action"
 			limited_uses-todo {
 				// TODO: Scaled uses should just globally use the math evaluator
 				max_uses (Scaled)"math" "Multiply" {
