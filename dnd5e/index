@@ -9,11 +9,15 @@ class/barbarian.kdl
 class/bard.kdl
 class/cleric.kdl
 class/druid.kdl
+class/fighter/champion.kdl
 class/fighter.kdl
 class/monk/openHand.kdl
 class/monk.kdl
+class/paladin/devotion.kdl
 class/paladin.kdl
+class/ranger/hunter.kdl
 class/ranger.kdl
+class/rogue/thief.kdl
 class/rogue.kdl
 class/sorcerer.kdl
 class/warlock.kdl
