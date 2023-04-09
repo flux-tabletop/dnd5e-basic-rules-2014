@@ -1,0 +1,12 @@
+spell name="Misty Step" {
+	tag "Conjuration"
+	tag "Sorcerer"
+	tag "Warlock"
+	tag "Wizard"
+	rank 2
+	casting-time "BonusAction"
+	range "Self"
+	component "Verbal"
+	duration "Instantaneous"
+	description "Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see."
+}

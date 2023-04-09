@@ -1,0 +1,11 @@
+spell name="Blur" {
+	tag "Illusion"
+	tag "Sorcerer"
+	tag "Wizard"
+	rank 2
+	casting-time "Action"
+	range "Self"
+	component "Verbal"
+	duration "Minutes" 1 concentration=true
+	description "Your body becomes blurred, shifting and wavering to all who can see you. For the duration, any creature has disadvantage on attack rolls against you. An attacker is immune to this effect if it doesn't rely on sight, as with blindsight, or can see through illusions, as with trueight."
+}

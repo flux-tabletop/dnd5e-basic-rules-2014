@@ -1,0 +1,14 @@
+spell name="Nondetection" {
+	tag "Abjuration"
+	tag "Bard"
+	tag "Ranger"
+	tag "Wizard"
+	rank 3
+	casting-time "Action"
+	range "Touch"
+	component "Verbal"
+	component "Somatic"
+	component "Material" "a pinch of diamond dust worth 25 gp sprinkled over the target" consumes=true
+	duration "Hour" 8
+	description "For the duration, you hide a target that you touch from divination magic. The target can be a willing creature or a place or an object no larger than 10 feet in any dimension. The target can't be targeted by any divination magic or perceived through magical scrying sensors."
+}

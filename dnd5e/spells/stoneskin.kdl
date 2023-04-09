@@ -1,0 +1,15 @@
+spell name="Stoneskin" {
+	tag "Abjuration"
+	tag "Druid"
+	tag "Ranger"
+	tag "Sorcerer"
+	tag "Wizard"
+	rank 4
+	casting-time "Action"
+	range "Touch"
+	component "Verbal"
+	component "Somatic"
+	component "Material" "diamond dust worth 100 gp" consumes=true
+	duration "Hour" 1 concentration=true
+	description "This spell turns the flesh of a willing creature you touch as hard as stone. Until the spell ends, the target has resistance to nonmagical bludgeoning, piercing, and slashing damage."
+}

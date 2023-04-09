@@ -1,0 +1,13 @@
+spell name="Expeditious Retreat" {
+	tag "Transmutation"
+	tag "Sorcerer"
+	tag "Warlock"
+	tag "Wizard"
+	rank 1
+	casting-time "BonusAction"
+	range "Self"
+	component "Verbal"
+	component "Somatic"
+	duration "Minute" 10 concentration=true
+	description "This spell allows you to move at an incredible pace. When you cast this spell, and then as a bonus action on each of your turns until the spell ends, you can take the Dash action."
+}

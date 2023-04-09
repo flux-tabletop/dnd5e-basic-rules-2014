@@ -1,0 +1,15 @@
+spell name="Tongues" {
+	tag "Divination"
+	tag "Bard"
+	tag "Cleric"
+	tag "Sorcerer"
+	tag "Warlock"
+	tag "Wizard"
+	rank 3
+	casting-time "Action"
+	range "Touch"
+	component "Verbal"
+	component "Material" "a small clay model of a ziggurat"
+	duration "Hour" 1
+	description "This spell grants the creature you touch the ability to understand any spoken language it hears. Moreover, when the target speaks, any creature that knows at least one language and can hear the target understands what it says."
+}

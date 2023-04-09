@@ -1,0 +1,14 @@
+spell name="Remove Curse" {
+	tag "Abjuration"
+	tag "Cleric"
+	tag "Paladin"
+	tag "Warlock"
+	tag "Wizard"
+	rank 3
+	casting-time "Action"
+	range "Touch"
+	component "Verbal"
+	component "Somatic"
+	duration "Instantaneous"
+	description "At your touch, all curses affecting one creature or object end. If the object is a cursed magic item, its curse remains, but the spell breaks its owner's attunement to the object so it can be removed or discarded."
+}
