@@ -353,12 +353,10 @@ class name="Monk" {
 				activation "Action"
 				description "4 Ki Points - Become invisible for 1 minute + resistance to all damage except force damage."
 				// TODO: Limited Uses can use the uses from another feature
-				/*
-				limited_uses {
+				limited_uses-todo {
 					cost 4
 					resource "Monk/Level02/Ki"
 				}
-				*/
 				condition "Custom" name="Invisibility (Empty Body)" {
 					description "Ki-based Invisibility and Damage Resistance"
 					// TODO: conditions can imply/cause other conditions
