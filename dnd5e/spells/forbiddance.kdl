@@ -1,5 +1,5 @@
 spell name="Forbiddance" {
-	tag "abjuration"
+	tag "Abjuration"
 	tag "Cleric"
 	rank 6
 	casting-time "Minute" 10 ritual=true

@@ -1,5 +1,5 @@
 spell name="Identify" {
-	tag "divination"
+	tag "Divination"
 	tag "Bard"
 	tag "Wizard"
 	rank 1

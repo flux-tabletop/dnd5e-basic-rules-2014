@@ -1,5 +1,5 @@
 spell name="Command" {
-	tag "enchantment"
+	tag "Enchantment"
 	tag "Cleric"
 	tag "Paladin"
 	rank 1

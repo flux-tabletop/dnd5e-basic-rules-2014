@@ -1,5 +1,5 @@
 spell name="Conjure Elemental" {
-	tag "conjuration"
+	tag "Conjuration"
 	tag "Druid"
 	tag "Wizard"
 	rank 5

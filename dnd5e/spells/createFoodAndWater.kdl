@@ -1,5 +1,5 @@
 spell name="Create Food and Water" {
-	tag "conjuration"
+	tag "Conjuration"
 	tag "Cleric"
 	tag "Paladin"
 	rank 3

@@ -1,5 +1,5 @@
 spell name="Find Steed" {
-	tag "conjuration"
+	tag "Conjuration"
 	tag "Paladin"
 	rank 2
 	casting-time "Minute" 10

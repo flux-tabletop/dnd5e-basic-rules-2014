@@ -1,5 +1,5 @@
 spell name="Augury" {
-	tag "divination"
+	tag "Divination"
 	tag "Cleric"
 	rank 2 ritual=true
 	casting-time 1 "Minute"

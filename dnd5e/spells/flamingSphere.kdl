@@ -1,5 +1,5 @@
 spell name="Flaming Sphere" {
-	tag "conjuration"
+	tag "Conjuration"
 	tag "Druid"
 	tag "Wizard"
 	rank 2

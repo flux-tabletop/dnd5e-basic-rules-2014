@@ -1,5 +1,5 @@
 spell name="Warding Bond" {
-	tag "abjuration"
+	tag "Abjuration"
 	tag "Cleric"
 	rank 2
 	casting-time "Action"

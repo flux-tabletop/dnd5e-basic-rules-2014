@@ -1,5 +1,5 @@
 spell name="Inflict Wounds" {
-	tag "necromancy"
+	tag "Necromancy"
 	tag "Cleric"
 	rank 1
 	casting-time "Action"

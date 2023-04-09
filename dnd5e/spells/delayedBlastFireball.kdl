@@ -1,5 +1,5 @@
 spell name="Delayed Blast Fireball" {
-	tag "evocation"
+	tag "Evocation"
 	tag "Sorcerer"
 	tag "Wizard"
 	rank 7

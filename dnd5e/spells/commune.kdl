@@ -1,5 +1,5 @@
 spell name="Commune" {
-	tag "divination"
+	tag "Divination"
 	tag "Cleric"
 	rank 5 ritual=true
 	casting-time 1 "Minute"

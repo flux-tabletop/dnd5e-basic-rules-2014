@@ -1,5 +1,5 @@
 spell name="Antimagic Field" {
-	tag "abjuration"
+	tag "Abjuration"
 	tag "Cleric"
 	tag "Wizard"
 	rank 8

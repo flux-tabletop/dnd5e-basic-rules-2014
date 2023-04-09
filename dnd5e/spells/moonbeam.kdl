@@ -1,5 +1,5 @@
 spell name="Moonbeam" {
-	tag "evocation"
+	tag "Evocation"
 	tag "Druid"
 	rank 2
 	casting-time "Action"

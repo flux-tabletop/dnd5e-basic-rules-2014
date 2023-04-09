@@ -1,5 +1,5 @@
 spell name="Heal" {
-	tag "evocation"
+	tag "Evocation"
 	tag "Cleric"
 	tag "Druid"
 	rank 6

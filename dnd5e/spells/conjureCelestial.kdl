@@ -1,5 +1,5 @@
 spell name="Conjure Celestial" {
-	tag "conjuration"
+	tag "Conjuration"
 	tag "Cleric"
 	rank 7
 	casting-time 1 "Minute"

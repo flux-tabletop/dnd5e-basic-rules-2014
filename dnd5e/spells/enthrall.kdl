@@ -1,5 +1,5 @@
 spell name="Enthrall" {
-	tag "enchantment"
+	tag "Enchantment"
 	tag "Bard"
 	tag "Warlock"
 	rank 2

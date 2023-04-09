@@ -1,5 +1,5 @@
 spell name="Protection from Energy" {
-	tag "abjuration"
+	tag "Abjuration"
 	tag "Cleric"
 	tag "Druid"
 	tag "Ranger"

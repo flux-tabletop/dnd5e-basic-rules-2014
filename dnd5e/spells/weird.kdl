@@ -1,5 +1,5 @@
 spell name="Weird" {
-	tag "illusion"
+	tag "Illusion"
 	tag "Wizard"
 	rank 9
 	casting-time "Action"

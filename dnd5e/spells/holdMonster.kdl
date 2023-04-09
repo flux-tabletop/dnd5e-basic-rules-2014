@@ -1,5 +1,5 @@
 spell name="Hold Monster" {
-	tag "enchantment"
+	tag "Enchantment"
 	tag "Bard"
 	tag "Sorcerer"
 	tag "Warlock"

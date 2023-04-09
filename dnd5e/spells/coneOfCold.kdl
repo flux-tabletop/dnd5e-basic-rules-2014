@@ -1,5 +1,5 @@
 spell name="Cone of Cold" {
-	tag "evocation"
+	tag "Evocation"
 	tag "Sorcerer"
 	tag "Wizard"
 	rank 5

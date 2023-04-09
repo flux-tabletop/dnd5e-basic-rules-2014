@@ -1,5 +1,5 @@
 spell name="Wall of Ice" {
-	tag "evocation"
+	tag "Evocation"
 	tag "Wizard"
 	rank 6
 	casting-time "Action"

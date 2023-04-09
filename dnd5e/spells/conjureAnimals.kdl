@@ -1,5 +1,5 @@
 spell name="Conjure Animals" {
-	tag "conjuration"
+	tag "Conjuration"
 	tag "Druid"
 	tag "Ranger"
 	rank 3

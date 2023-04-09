@@ -1,5 +1,5 @@
 spell name="Hellish Rebuke" {
-	tag "evocation"
+	tag "Evocation"
 	tag "Warlock"
 	rank 1
 	casting-time "Reaction" "which you take in response to being damaged by a creature within 60 feet of you that you can see"

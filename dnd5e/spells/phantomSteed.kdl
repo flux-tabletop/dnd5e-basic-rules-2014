@@ -1,5 +1,5 @@
 spell name="Phantom Steed" {
-	tag "illusion"
+	tag "Illusion"
 	tag "Wizard"
 	rank 3
 	casting-time "Minute" 1 ritual=true

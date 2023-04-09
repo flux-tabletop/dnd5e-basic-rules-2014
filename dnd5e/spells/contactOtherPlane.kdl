@@ -1,5 +1,5 @@
 spell name="Contact Other Plane" {
-	tag "divination"
+	tag "Divination"
 	tag "Warlock"
 	tag "Wizard"
 	rank 5 ritual=true

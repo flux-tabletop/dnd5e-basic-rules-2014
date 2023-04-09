@@ -1,5 +1,5 @@
 spell name="Dominate Beast" {
-	tag "enchantment"
+	tag "Enchantment"
 	tag "Druid"
 	tag "Sorcerer"
 	rank 4

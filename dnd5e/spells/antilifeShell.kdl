@@ -1,5 +1,5 @@
 spell name="Antilife Shell" {
-	tag "abjuration"
+	tag "Abjuration"
 	tag "Druid"
 	rank 5
 	casting-time "Action"

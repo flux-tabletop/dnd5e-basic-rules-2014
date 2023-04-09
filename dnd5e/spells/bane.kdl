@@ -1,5 +1,5 @@
 spell name="Bane" {
-	tag "enchantment"
+	tag "Enchantment"
 	tag "Bard"
 	tag "Cleric"
 	rank 1

@@ -1,5 +1,5 @@
 spell name="Feeblemind" {
-	tag "enchantment"
+	tag "Enchantment"
 	tag "Bard"
 	tag "Druid"
 	tag "Warlock"

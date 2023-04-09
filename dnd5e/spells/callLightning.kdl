@@ -1,5 +1,5 @@
 spell name="Call Lightning" {
-	tag "conjuration"
+	tag "Conjuration"
 	tag "Druid"
 	rank 3
 	casting-time "Action"

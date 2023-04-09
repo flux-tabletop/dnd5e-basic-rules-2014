@@ -1,5 +1,5 @@
 spell name="Flame Strike" {
-	tag "evocation"
+	tag "Evocation"
 	tag "Cleric"
 	rank 5
 	casting-time "Action"

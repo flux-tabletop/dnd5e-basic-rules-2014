@@ -1,5 +1,5 @@
 spell name="Death Ward" {
-	tag "abjuration"
+	tag "Abjuration"
 	tag "Cleric"
 	tag "Paladin"
 	rank 4

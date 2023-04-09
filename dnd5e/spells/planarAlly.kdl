@@ -1,5 +1,5 @@
 spell name="Planar Ally" {
-	tag "conjuration"
+	tag "Conjuration"
 	tag "Cleric"
 	rank 6
 	casting-time "Minute" 10

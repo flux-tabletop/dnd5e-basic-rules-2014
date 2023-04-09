@@ -1,5 +1,5 @@
 spell name="Clone" {
-	tag "necromancy"
+	tag "Necromancy"
 	tag "Wizard"
 	rank 8
 	casting-time 1 "Hour"

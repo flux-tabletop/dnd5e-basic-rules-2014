@@ -1,5 +1,5 @@
 spell name="Arcane Eye" {
-	tag "divination"
+	tag "Divination"
 	tag "Wizard"
 	rank 4
 	casting-time "Action"

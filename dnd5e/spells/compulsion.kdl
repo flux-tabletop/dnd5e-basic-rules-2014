@@ -1,5 +1,5 @@
 spell name="Compulsion" {
-	tag "enchantment"
+	tag "Enchantment"
 	tag "Bard"
 	rank 4
 	casting-time "Action"

@@ -1,5 +1,5 @@
 spell name="Magic Jar" {
-	tag "necromancy"
+	tag "Necromancy"
 	tag "Wizard"
 	rank 6
 	casting-time "Minute" 1

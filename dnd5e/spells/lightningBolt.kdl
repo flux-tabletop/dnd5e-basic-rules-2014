@@ -1,5 +1,5 @@
 spell name="Lightning Bolt" {
-	tag "evocation"
+	tag "Evocation"
 	tag "Sorcerer"
 	tag "Wizard"
 	rank 3
