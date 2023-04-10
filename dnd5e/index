@@ -10,6 +10,7 @@ class/bard/lore.kdl
 class/bard.kdl
 class/cleric/life.kdl
 class/cleric.kdl
+class/druid/land.kdl
 class/druid.kdl
 class/fighter/champion.kdl
 class/fighter.kdl
