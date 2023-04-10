@@ -103,6 +103,7 @@ class name="Wizard" {
 
 			The Book's Appearance. Your spellbook is a unique compilation of spells, with its own decorative flourishes and margin notes. It might be a plain, functional leather volume that you received as a gift from your master, a finely bound gilt-edged tome you found in an ancient library, or even a loose collection of notes scrounged together after you lost your previous spellbook in a mishap.
 		*/
+		// TODO: I'd be really cool to be able to have a "Transcribe" button on spell containers which allow spells to be "copied" from, so moving a spell from a scroll to spellbook (consuming some cost) would be just a button click (assuming the inks and gold were present in inventory).
 		/* TODO: Arcane Recovery
 			You have learned to regain some of your magical energy by studying your spellbook. Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your wizard level (rounded up), and none of the slots can be 6th level or higher.
 

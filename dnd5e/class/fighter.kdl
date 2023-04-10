@@ -143,13 +143,13 @@ class name="Fighter" {
 		}
 	}
 	level 2 {
-		feature name="Action Surge" {
+		mutator "add_action" name="Action Surge" {
 			description "Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.
 
 			Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn." {
 				short "You take one additional Action this turn. You can only use this feature once per turn."
 			}
-			// TODO: Features with limited uses are back again 😈
+			activation "Special"
 			limited_uses {
 				max_uses (Scaled)"Level" class="Fighter" {
 					level 2 1
@@ -239,12 +239,12 @@ class name="Fighter" {
 		}
 	}
 	level 9 {
-		feature name="Indomitable" {
+		mutator "add_action" name="Indomitable" {
 			description "Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can't use this feature again until you finish a long rest.
 			You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level." {
 				short "Reroll a failed saving throw. You must use the new roll."
 			}
-			// TODO: Features with limited uses are back again 😈
+			activation "Special"
 			limited_uses {
 				max_uses (Scaled)"Level" class="Fighter" {
 					level 9 1
