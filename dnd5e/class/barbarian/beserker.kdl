@@ -16,11 +16,13 @@ subclass class="Barbarian" name="Path of the Beserker" {
 			mutator "supress_conditions" {
 				condition "Charmed"
 				condition "Frightened"
-				criteria "has_condition" {
-					condition "Raging"
-				}
 			}
 			*/
+			criteria "has_condition" {
+				filter name="Raging" {
+					name "Raging"
+				}
+			}
 		}
 	}
 	level 10 {
