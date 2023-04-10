@@ -52,7 +52,8 @@ subclass class="Paladin" name="Oath of Devotion" {
 				- cannot willingly end its turn within 30 feet of you
 				- cannot take reactions
 				- can only use the Dash action or try to escape effects that prevent it from moving
-				- can use the Dodge action if there is nowhere to move"
+				- can use the Dodge action if there is nowhere to move
+				This lasts for 1 minute or until the creature takes damage."
 				foramt-arg "DC" (Evaluator)"get_ability_modifier" (Ability)"Charisma" base=8 proficient=true
 			}
 			activation "Action"

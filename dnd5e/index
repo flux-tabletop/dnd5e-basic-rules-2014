@@ -6,7 +6,9 @@ background/sage.kdl
 background/soldier.kdl
 class/barbarian/beserker.kdl
 class/barbarian.kdl
+class/bard/lore.kdl
 class/bard.kdl
+class/cleric/life.kdl
 class/cleric.kdl
 class/druid.kdl
 class/fighter/champion.kdl
