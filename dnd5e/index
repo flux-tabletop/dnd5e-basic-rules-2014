@@ -26,6 +26,7 @@ class/sorcerer/draconic.kdl
 class/sorcerer.kdl
 class/warlock/fiend.kdl
 class/warlock.kdl
+class/wizard/evocation.kdl
 class/wizard.kdl
 condition/blinded.kdl
 condition/charmed.kdl
