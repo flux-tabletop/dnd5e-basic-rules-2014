@@ -16,9 +16,9 @@ subclass class="Fighter" name="Champion" {
 				foramt-arg "jump-dist" (Evaluator)"get_ability_modifier" (Ability)"Strength"
 			}
 			// TODO: "add_proficiency" for Abilities, which grant proficiency to all skills which use that ability
-			mutator-todo "add_proficiency" (Ability)"Specific" "Str" "Half"
-			mutator-todo "add_proficiency" (Ability)"Specific" "Dex" "Half"
-			mutator-todo "add_proficiency" (Ability)"Specific" "Con" "Half"
+			mutator-todo "add_proficiency" (Ability)"Specific" "Str" "Half" "Up"
+			mutator-todo "add_proficiency" (Ability)"Specific" "Dex" "Half" "Up"
+			mutator-todo "add_proficiency" (Ability)"Specific" "Con" "Half" "Up"
 		}
 	}
 	level 10 {
