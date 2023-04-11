@@ -11,5 +11,6 @@ spell name="Protection from Energy" {
 	component "Verbal"
 	component "Somatic"
 	duration "Hour" 1 concentration=true
+	// TODO: Protection from Energy condition?
 	description "For the duration, the willing creature you touch has resistance to one damage type of your choice: acid, cold, fire, lightning, or thunder."
 }

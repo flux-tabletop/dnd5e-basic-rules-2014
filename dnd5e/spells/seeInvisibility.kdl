@@ -10,5 +10,6 @@ spell name="See Invisibility" {
 	component "Somatic"
 	component "Material" "a pinch of talc and a small sprinkling of powdered silver"
 	duration "Hour" 1
+	// TODO: See Invisibility condition?
 	description "For the duration, you see invisible creatures and objects as if they were visible, and you can see into the Ethereal Plane. Ethereal creatures and objects appear ghostly and translucent."
 }
