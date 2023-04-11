@@ -11,6 +11,7 @@ spell name="Longstrider" {
 	component "Somatic"
 	component "Material" "a pinch of dirt"
 	duration "Hour" 1
+	// TODO: Longstrider condition?
 	description "You touch a creature. The target's speed increases by 10 feet until the spell ends."
 	description (Title)"At Higher Levels" "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
 }

@@ -11,5 +11,6 @@ spell name="Jump" {
 	component "Somatic"
 	component "Material" "a grasshopper's hind leg"
 	duration "Minute" 1
+	// TODO: Jump condition?
 	description "You touch a creature. The creature's jump distance is tripled until the spell ends."
 }
