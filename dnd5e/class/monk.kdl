@@ -263,6 +263,8 @@ class name="Monk" {
 		}
 		feature name="Purity of Body" {
 			description "At 10th level, your mastery of the ki flowing through you makes you immune to disease and poison."
+			mutator-todo "add_defense" "Immunity" "Disease"
+			mutator-todo "add_defense" "Immunity" "Poison"
 		}
 	}
 	level 12 {
