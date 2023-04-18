@@ -17,17 +17,18 @@ subclass class="Monk" name="Way of the Open Hand" {
 		}
 	}
 	level 6 {
-		mutator "add_action" name="Wholeness of Body" {
-			activation "Action"
+		feature name="Wholeness of Body" {
 			description "At 6th level, you gain the ability to heal yourself. As an action, you can regain hit points equal to three times your monk level ({amount} hit points). You must finish a long rest before you can use this feature again." {
 				short "Regain {amount} hit points"
 				format-arg "amount" (Evaluator)"Level" class="Monk" {
 					multiply 3
 				}
 			}
-			limited_uses {
-				max_uses 1
-				reset_on "Long"
+			action "Action" {
+				limited_uses {
+					max_uses 1
+					reset_on "Long"
+				}
 			}
 		}
 	}

@@ -24,7 +24,7 @@ subclass class="Paladin" name="Oath of Devotion" {
 			13th						freedom of movement, guardian of faith
 			17th						commune, flame strike
 		*/
-		mutator "add_action" name="Sacred Weapon" category="Channel Divinity" {
+		feature name="Sacred Weapon" category="Channel Divinity" {
 			description "As an action, you can imbue one weapon that you are holding with positive energy, using your Channel Divinity. For 1 minute, you add your Charisma modifier to attack rolls made with that weapon (with a minimum bonus of +1). The weapon also emits bright light in a 20-foot radius and dim light 20 feet beyond that. If the weapon is not already magical, it becomes magical for the duration.
 
 			You can end this effect on your turn as part of any other action. If you are no longer holding or carrying this weapon, or if you fall unconscious, this effect ends." {
@@ -36,14 +36,15 @@ subclass class="Paladin" name="Oath of Devotion" {
 					value (Evaluator)"get_ability_modifier" (Ability)"Charisma"
 				}
 			}
-			activation "Action"
-			// TODO: Limited Uses can use the uses from another feature
-			limited_uses-todo {
-				cost 1
-				resource "Paladin/Level03/Channel Divinity"
+			action "Action" {
+				// TODO: Limited Uses can use the uses from another feature
+				limited_uses-todo {
+					cost 1
+					resource "Paladin/Level03/Channel Divinity"
+				}
 			}
 		}
-		mutator "add_action" name="Turn the Unholy" category="Channel Divinity" {
+		feature name="Turn the Unholy" category="Channel Divinity" {
 			description "As an action, you present your holy symbol and speak a prayer censuring fiends and undead, using your Channel Divinity. Each fiend or undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.
 
 			A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action." {
@@ -56,11 +57,12 @@ subclass class="Paladin" name="Oath of Devotion" {
 				This lasts for 1 minute or until the creature takes damage."
 				foramt-arg "DC" (Evaluator)"get_ability_modifier" (Ability)"Charisma" base=8 proficient=true
 			}
-			activation "Action"
-			// TODO: Limited Uses can use the uses from another feature
-			limited_uses-todo {
-				cost 1
-				resource "Paladin/Level03/Channel Divinity"
+			action "Action" {
+				// TODO: Limited Uses can use the uses from another feature
+				limited_uses-todo {
+					cost 1
+					resource "Paladin/Level03/Channel Divinity"
+				}
 			}
 		}
 	}
@@ -85,7 +87,7 @@ subclass class="Paladin" name="Oath of Devotion" {
 		}
 	}
 	level 20 {
-		mutator "add_action" name="Holy Nimbus" {
+		feature name="Holy Nimbus" {
 			description "At 20th level, as an action, you can emanate an aura of sunlight. For 1 minute, bright light shines from you in a 30-foot radius, and dim light shines 30 feet beyond that.
 
 			Whenever an enemy creature starts its turn in the bright light, the creature takes 10 radiant damage.
@@ -93,17 +95,18 @@ subclass class="Paladin" name="Oath of Devotion" {
 			In addition, for the duration, you have advantage on saving throws against spells cast by fiends or undead.
 
 			Once you use this feature, you can't use it again until you finish a long rest."
-			activation "Action"
-			limited_uses {
-				max_uses 1
-				reset_on "Long"
-			}
-			condition "Custom" name="Holy Nimbus" {
-				description "For 1 minute after using the Holy Nimbus action:
-				- bright light shines from you in a 30-foot radius, and dim light shines for 30 feet beyond that
-				- at the start of their turn, any enemy creatures who are in the bright light take 10 radius damage
-				- you have advantage on saving throws against spells cast by fiends or undead"
-				mutator "add_modifier" "Advantage" (SavingThrow)"All" context="spells cast by fiends or undead"
+			action "Action" {
+				limited_uses {
+					max_uses 1
+					reset_on "Long"
+				}
+				condition "Custom" name="Holy Nimbus" {
+					description "For 1 minute after using the Holy Nimbus action:
+					- bright light shines from you in a 30-foot radius, and dim light shines for 30 feet beyond that
+					- at the start of their turn, any enemy creatures who are in the bright light take 10 radius damage
+					- you have advantage on saving throws against spells cast by fiends or undead"
+					mutator "add_modifier" "Advantage" (SavingThrow)"All" context="spells cast by fiends or undead"
+				}
 			}
 		}
 	}

@@ -15,12 +15,13 @@ race name="Half-Orc" {
 	mutator "add_proficiency" (Skill)"Specific" "Intimidation"
 	mutator "add_proficiency" (Language)"Specific" "Common"
 	mutator "add_proficiency" (Language)"Specific" "Orc"
-	mutator "add_action" name="Relentless Endurance" {
+	feature name="Relentless Endurance" {
 		description "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest."
-		activation "Action" // "Special" // TODO: Special activation on actions
-		limited_uses {
-			max_uses 1
-			reset_on "Short"
+		action "Special" {
+			limited_uses {
+				max_uses 1
+				reset_on "Short"
+			}
 		}
 	}
 	feature name="Savage Attacks" {

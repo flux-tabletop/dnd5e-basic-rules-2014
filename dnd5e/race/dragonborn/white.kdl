@@ -16,39 +16,40 @@ race name="Dragonborn (White)" {
 	mutator "add_proficiency" (Language)"Specific" "Draconic"
 
 	mutator "add_defense" "Resistance" (DamageType)"Cold"
-	mutator "add_action" name="Breath Weapon" {
+	feature name="Breath Weapon" {
 		description "You can use your action to exhale destructive energy. With your White dragon ancestry, you emit Cold damage in a 15 ft. cone.
 		
 		When you use your breath weapon, each creature in the area of the exhalation must make a Constitution saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level.
 
 		After you use your breath weapon, you can't use it again until you complete a short or long rest."
-		activation "Action"
-		limited_use {
-			max_uses 1
-			reset_on "Short"
-		}
-		/* TODO: attack > kind must be made optional
-		attack {
-			check "SavingThrow" {
-				difficulty_class 8 {
-					ability_bonus "Constitution"
-					proficiency_bonus true
+		action "Action" {
+			/* TODO: attack > kind must be made optional
+			attack {
+				check "SavingThrow" {
+					difficulty_class 8 {
+						ability_bonus "Constitution"
+						proficiency_bonus true
+					}
+					save_ability (Ability)"Constitution"
 				}
-				save_ability (Ability)"Constitution"
-			}
-			area_of_effect "Cone" length=15
-			damage {
-				// TODO: Need scaling damage
-				roll (Evaluator)"by_character_level" {
-					option 1 (Roll)"2d6"
-					option 3 (Roll)"3d6"
-					option 11 (Roll)"4d6"
-					option 16 (Roll)"5d6"
+				area_of_effect "Cone" length=15
+				damage {
+					// TODO: Need scaling damage
+					roll (Evaluator)"by_character_level" {
+						option 1 (Roll)"2d6"
+						option 3 (Roll)"3d6"
+						option 11 (Roll)"4d6"
+						option 16 (Roll)"5d6"
+					}
+					damage_type (DamageType)"Cold"
 				}
-				damage_type (DamageType)"Cold"
+			}
+			*/
+			limited_use {
+				max_uses 1
+				reset_on "Short"
 			}
 		}
-		*/
 	}
 }
 /*

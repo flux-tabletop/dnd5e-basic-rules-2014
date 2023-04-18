@@ -23,7 +23,7 @@ subclass class="Cleric" name="Life Domain" {
 		}
 	}
 	level 2 {
-		mutator "add_action" name="Preserve Life" category="Channel Divinity" {
+		feature name="Preserve Life" category="Channel Divinity" {
 			description "Starting at 2nd level, you can use your Channel Divinity to heal the badly injured.
 
 			As an action, you present your holy symbol and evoke healing energy that can restore a number of hit points equal to five times your cleric level. Choose any creatures within 30 feet of you, and divide those hit points among them. This feature can restore a creature to no more than half of its hit point maximum. You can't use this feature on an undead or a construct." {
@@ -33,7 +33,7 @@ subclass class="Cleric" name="Life Domain" {
 					value (Evaluator)"get_level" class="Cleric"
 				}
 			}
-			activation "Action"
+			action "Action"
 		}
 	}
 	level 6 {

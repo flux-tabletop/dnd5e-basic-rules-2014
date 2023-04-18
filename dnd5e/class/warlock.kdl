@@ -399,16 +399,17 @@ class name="Warlock" {
 		}
 	}
 	level 20 {
-		mutator "add_action" name="Eldritch Master" {
+		feature name="Eldritch Master" {
 			description "At 20th level, you can draw on your inner reserve of mystical power while entreating your patron to regain expended spell slots. You can spend 1 minute entreating your patron for aid to regain all your expended spell slots from your Pact Magic feature. Once you regain spell slots with this feature, you must finish a long rest before you can do so again." {
 				short "Spend 1 minute to regain all expended Pact Magic spell slots."
 			}
-			activation "Special"
-			// TODO: Spellcasting - when used, apply mutator to reset all spell slots from the Pact Magic feature.
-			// This might involve converting the `conditions_to_apply` list into `mutators_to_apply` and having a mutator which applies a condition.
-			limited_uses {
-				max_uses 1
-				reset_on "Long"
+			action "Special" {
+				// TODO: Spellcasting - when used, apply mutator to reset all spell slots from the Pact Magic feature.
+				// This might involve converting the `conditions_to_apply` list into `mutators_to_apply` and having a mutator which applies a condition.
+				limited_uses {
+					max_uses 1
+					reset_on "Long"
+				}
 			}
 		}
 	}

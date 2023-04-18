@@ -71,11 +71,11 @@ subclass class="Fighter" name="Champion" {
 					criteria "has_armor_equipped" {
 						kind "Shield"
 					}
-					mutator "add_action" name="Protection" {
+					feature name="Protection" {
 						description "When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll." {
 							short "Impose disadvantage on an attack rolls against a target that isn't you, when the target is within 5 feet of you."
 						}
-						activation "Reaction"
+						action "Reaction"
 					}
 				}
 				option "Feature" name="Two-Weapon Fighting" {

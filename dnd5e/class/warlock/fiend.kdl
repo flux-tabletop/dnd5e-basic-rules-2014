@@ -23,32 +23,34 @@ subclass class="Warlock" name="The Fiend" {
 		}
 	}
 	level 6 {
-		mutator "add_action" name="Dark One's Own Luck" {
+		feature name="Dark One's Own Luck" {
 			description "Starting at 6th level, you can call on your patron to alter fate in your favor. When you make an ability check or a saving throw, you can use this feature to add a d10 to your roll. You can do so after seeing the initial roll but before any of the roll's effects occur.
 
 			Once you use this feature, you can't use it again until you finish a short or long rest." {
 				short "When you make an ability check or a saving throw, add a d10 to your roll. You can do so after seeing the initial roll but before any of the roll's effects occur."
 			}
-			activation "Special"
-			limited_uses {
-				max_uses 1
-				reset_on "Short"
+			action "Special" {
+				limited_uses {
+					max_uses 1
+					reset_on "Short"
+				}
 			}
 		}
 	}
 	level 10 {
-		mutator "add_action" name="Fiendish Resilience" {
+		feature name="Fiendish Resilience" {
 			description "Starting at 10th level, you can choose one damage type when you finish a short or long rest. You gain resistance to that damage type until you choose a different one with this feature. Damage from magical weapons or silver weapons ignores this resistance."
-			activation "Special"
-			condition "Custom" name="Fiendish Resilience" {
-				description "You are resistant to a damage type of your choosing, unless the source is a magical or silver weapon."
-				// TODO: selector for add_defense damage type
-				mutator-todo "add_defense" "Resistance" (DamageType)"Any"
+			action "Special" {
+				condition "Custom" name="Fiendish Resilience" {
+					description "You are resistant to a damage type of your choosing, unless the source is a magical or silver weapon."
+					// TODO: selector for add_defense damage type
+					mutator-todo "add_defense" "Resistance" (DamageType)"Any"
+				}
 			}
 		}
 	}
 	level 14 {
-		mutator "add_action" name="Hurl Through Hell" {
+		feature name="Hurl Through Hell" {
 			description "Starting at 14th level, when you hit a creature with an attack, you can use this feature to instantly transport the target through the lower planes. The creature disappears and hurtles through a nightmare landscape.
 
 			At the end of your next turn, the target returns to the space it previously occupied, or the nearest unoccupied space. If the target is not a fiend, it takes 10d10 psychic damage as it reels from its horrific experience.
@@ -56,10 +58,11 @@ subclass class="Warlock" name="The Fiend" {
 			Once you use this feature, you can't use it again until you finish a long rest." {
 				short "When you hit a creature with an attack, the target is teleported to the lower planes. At the end of your next turn, they return to the space it previously occuppied (or the nearest unoccupied space). If it is not a fiend, it takes 10d10 psychic damage when it returns."
 			}
-			activation "Special"
-			limited_uses {
-				max_uses 1
-				reset_on "Short"
+			action "Special" {
+				limited_uses {
+					max_uses 1
+					reset_on "Short"
+				}
 			}
 		}
 	}

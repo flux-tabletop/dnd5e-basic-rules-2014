@@ -118,11 +118,11 @@ class name="Fighter" {
 					criteria "has_armor_equipped" {
 						kind "Shield"
 					}
-					mutator "add_action" name="Protection" {
+					feature name="Protection" {
 						description "When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll." {
 							short "Impose disadvantage on an attack rolls against a target that isn't you, when the target is within 5 feet of you."
 						}
-						activation "Reaction"
+						action "Reaction"
 					}
 				}
 				option "Feature" name="Two-Weapon Fighting" {
@@ -130,32 +130,34 @@ class name="Fighter" {
 				}
 			}
 		}
-		mutator "add_action" name="Second Wind" {
+		feature name="Second Wind" {
 			description "You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level (+{level}). Once you use this feature, you must finish a short or long rest before you can use it again." {
 				short "Regain 1d10 + {level} hit points"
 				format-arg "level" (Evaluator)"Level" class="Fighter"
 			}
-			activation "Bonus"
-			limited_uses {
-				max_uses 1
-				reset_on "Short"
+			action "Bonus" {
+				limited_uses {
+					max_uses 1
+					reset_on "Short"
+				}
 			}
 		}
 	}
 	level 2 {
-		mutator "add_action" name="Action Surge" {
+		feature name="Action Surge" {
 			description "Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.
 
 			Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn." {
 				short "You take one additional Action this turn. You can only use this feature once per turn."
 			}
-			activation "Special"
-			limited_uses {
-				max_uses (Scaled)"Level" class="Fighter" {
-					level 2 1
-					level 17 2
+			action "Special" {
+				limited_uses {
+					max_uses (Scaled)"Level" class="Fighter" {
+						level 2 1
+						level 17 2
+					}
+					reset_on "Short"
 				}
-				reset_on "Short"
 			}
 		}
 	}
@@ -239,19 +241,20 @@ class name="Fighter" {
 		}
 	}
 	level 9 {
-		mutator "add_action" name="Indomitable" {
+		feature name="Indomitable" {
 			description "Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can't use this feature again until you finish a long rest.
 			You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level." {
 				short "Reroll a failed saving throw. You must use the new roll."
 			}
-			activation "Special"
-			limited_uses {
-				max_uses (Scaled)"Level" class="Fighter" {
-					level 9 1
-					level 13 2
-					level 17 3
+			action "Special" {
+				limited_uses {
+					max_uses (Scaled)"Level" class="Fighter" {
+						level 9 1
+						level 13 2
+						level 17 3
+					}
+					reset_on "Long"
 				}
-				reset_on "Long"
 			}
 		}
 	}

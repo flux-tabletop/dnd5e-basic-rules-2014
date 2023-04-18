@@ -46,8 +46,7 @@ class name="Barbarian" {
 		mutator "add_proficiency" (Armor)"Shield"
 		mutator "add_proficiency" (Weapon)"Simple"
 		mutator "add_proficiency" (Weapon)"Martial"
-		mutator "add_action" name="Rage" {
-			activation "Bonus"
+		feature name="Rage" {
 			description "In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action.
 			
 			While raging, you gain the following benefits if you aren't wearing heavy armor:
@@ -62,39 +61,41 @@ class name="Barbarian" {
 				You gain advantage on STR checks and saving throws (not attacks), {bonus_damage} melee damage with STR weapons, resistance to bludgeoning, piercing, slashing damage. You can't cast or concentrate on spells while raging.
 				Your rage ends early if you are knocked unconscious or if your turn ends and you haven't attacked a hostile creature since your last turn or taken damage since then. You can also end your rage as a bonus action."
 			}
-			limited_uses {
-				max_uses (Scaled)"Level" class="Barbarian" {
-					level 1 2
-					level 3 3
-					level 6 4
-					level 12 5
-					level 17 6
-					level 20 // unlimited
-				}
-				reset_on "Long"
-			}
-			condition "Custom" name="Raging" {
-				description "While raging, you gain benefits listed below if you aren't wearing heavy armor.
-				If you are able to cast spells, you can't cast them or concentrate on them while raging."
-				criteria "has_armor_equipped" inverted=true {
-					kind "Heavy"
-				}
-				mutator "add_modifier" "Advantage" (Ability)"Specific" "Strength"
-				mutator "add_modifier" "Advantage" (SavingThrow)"Specific" "Strength"
-				mutator "add_defense" "Resistance" (DamageType)"Bludgeoning"
-				mutator "add_defense" "Resistance" (DamageType)"Piercing"
-				mutator "add_defense" "Resistance" (DamageType)"Slashing"
-				mutator-todo "bonus_damage" {
-					// When you make a melee weapon attack using Strength, you gain a bonus to the damage roll (+2 at level 1, +3 at level 9, and +4 at level 16).
-					amount "ClassLevel" class="Barbarian" {
+			action "Bonus" {
+				limited_uses {
+					max_uses (Scaled)"Level" class="Barbarian" {
 						level 1 2
-						level 9 3
-						level 16 4
+						level 3 3
+						level 6 4
+						level 12 5
+						level 17 6
+						level 20 // unlimited
 					}
-					restriction {
-						attack "Melee"
-						tag "Weapon" // TODO: Weapon's which generate an attack should add the Weapon tag to the attack
-						ability "Strength"
+					reset_on "Long"
+				}
+				condition "Custom" name="Raging" {
+					description "While raging, you gain benefits listed below if you aren't wearing heavy armor.
+					If you are able to cast spells, you can't cast them or concentrate on them while raging."
+					criteria "has_armor_equipped" inverted=true {
+						kind "Heavy"
+					}
+					mutator "add_modifier" "Advantage" (Ability)"Specific" "Strength"
+					mutator "add_modifier" "Advantage" (SavingThrow)"Specific" "Strength"
+					mutator "add_defense" "Resistance" (DamageType)"Bludgeoning"
+					mutator "add_defense" "Resistance" (DamageType)"Piercing"
+					mutator "add_defense" "Resistance" (DamageType)"Slashing"
+					mutator-todo "bonus_damage" {
+						// When you make a melee weapon attack using Strength, you gain a bonus to the damage roll (+2 at level 1, +3 at level 9, and +4 at level 16).
+						amount "ClassLevel" class="Barbarian" {
+							level 1 2
+							level 9 3
+							level 16 4
+						}
+						restriction {
+							attack "Melee"
+							tag "Weapon" // TODO: Weapon's which generate an attack should add the Weapon tag to the attack
+							ability "Strength"
+						}
 					}
 				}
 			}

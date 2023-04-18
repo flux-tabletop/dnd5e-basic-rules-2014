@@ -60,24 +60,25 @@ class name="Paladin" {
 		mutator "add_proficiency" (Armor)"Shield"
 		mutator "add_proficiency" (Weapon)"Simple"
 		mutator "add_proficiency" (Weapon)"Martial"
-		mutator "add_action" name="Divine Sense" {
+		feature name="Divine Sense" {
 			description "The presence of strong evil registers on your senses like a noxious odor, and powerful good rings like heavenly music in your ears. As an action, you can open your awareness to detect such forces. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you that is not behind total cover. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity (the vampire Count Strahd von Zarovich, for instance). Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the hallow spell.
 
 			You can use this feature a number of times equal to 1 + your Charisma modifier. When you finish a long rest, you regain all expended uses." {
 				short "Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you that is not behind total cover. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity (the vampire Count Strahd von Zarovich, for instance). Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the hallow spell."
 			}
-			activation "Action"
-			/*
-			limited_uses {
-				// TODO: Max uses based on ability modifier
-				max_uses (Scaled)"Ability" base=1 {
-					ability "Charisma"
+			action "Action" {
+				/*
+				limited_uses {
+					// TODO: Max uses based on ability modifier
+					max_uses (Scaled)"Ability" base=1 {
+						ability "Charisma"
+					}
+					reset_on "Long"
 				}
-				reset_on "Long"
+				*/
 			}
-			*/
 		}
-		mutator "add_action" name="Lay on Hands" {
+		feature name="Lay on Hands" {
 			description "Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you take a long rest. With that pool, you can restore a total number of hit points equal to your paladin level x 5.
 
 			As an action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool.
@@ -89,14 +90,15 @@ class name="Paladin" {
 				- Restore any number of hit points that you can spend from your pool
 				- Spend 5 points in the pool per disease to cure or poison to neutralize"
 			}
-			activation "Action"
-			limited_uses-todo {
-				// TODO: Scaled uses should just globally use the math evaluator
-				max_uses (Scaled)"math" "Multiply" {
-					value (Evaluator)"get_level" class="Paladin"
-					value 5
+			action "Action" {
+				limited_uses-todo {
+					// TODO: Scaled uses should just globally use the math evaluator
+					max_uses (Scaled)"math" "Multiply" {
+						value (Evaluator)"get_level" class="Paladin"
+						value 5
+					}
+					reset_on "Long"
 				}
-				reset_on "Long"
 			}
 		}
 	}
@@ -140,11 +142,11 @@ class name="Paladin" {
 					criteria "has_armor_equipped" {
 						kind "Shield"
 					}
-					mutator "add_action" name="Protection" {
+					feature name="Protection" {
 						description "When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll." {
 							short "Impose disadvantage on an attack rolls against a target that isn't you, when the target is within 5 feet of you."
 						}
-						activation "Reaction"
+						action "Reaction"
 					}
 				}
 			}
@@ -318,18 +320,20 @@ class name="Paladin" {
 		}
 	}
 	level 14 {
-		muator "add_action" name="Cleansing Touch" {
+		feature name="Cleansing Touch" {
 			description "Beginning at 14th level, you can use your action to end one spell on yourself or on one willing creature that you touch.
 
 			You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain expended uses when you finish a long rest." {
 				short "End one spell on yourself or a willing creature you can touch."
 			}
-			limited_uses-todo {
-				// TODO: Can scaled uses just use an evaluator which returns an i32?
-				max_uses (Scaled)"math" "Add" min=1 {
-					value (Evaluator)"get_ability_modifier" "Charisma"
+			activation "Action" {
+				limited_uses-todo {
+					// TODO: Can scaled uses just use an evaluator which returns an i32?
+					max_uses (Scaled)"math" "Add" min=1 {
+						value (Evaluator)"get_ability_modifier" "Charisma"
+					}
+					reset_on "Long"
 				}
-				reset_on "Long"
 			}
 		}
 	}
