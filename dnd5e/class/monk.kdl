@@ -116,19 +116,19 @@ class name="Monk" {
 			}
 		}
 		// TODO: Collapse features with the same category name into a single section in the display
-		feature name="Flurry of Blows" category="Ki" {
+		feature name="Flurry of Blows" parent="Monk/level02/Ki" {
 			description "Immediately after you take the Attack action on your turn, you can spend 1 ki point to make two unarmed strikes as a bonus action." {
 				short "1 Ki Point - Bonus Action to make 2 unarmed strikes after attacking"
 			}
 			action "Bonus"
 		}
-		feature name="Patient Defense" category="Ki" {
+		feature name="Patient Defense" parent="Monk/level02/Ki" {
 			description "You can spend 1 ki point to take the Dodge action as a bonus action on your turn." {
 				short "1 Ki Point - Bonus Action to Dodge"
 			}
 			action "Bonus"
 		}
-		feature name="Step of the Wind" category="Ki" {
+		feature name="Step of the Wind" parent="Monk/level02/Ki" {
 			description "You can spend 1 ki point to take the Disengage or Dash action as a bonus action on your turn, and your jump distance is doubled for the turn." {
 				short "1 Ki Point - Bonus Action to Disengage or Dash + jump distance doubled"
 			}
@@ -194,7 +194,7 @@ class name="Monk" {
 			}
 			mutator "add_to_action_budget" "Attack" 1
 		}
-		feature name="Stunning Strike" category="Ki" {
+		feature name="Stunning Strike" parent="Monk/level02/Ki" {
 			description "Starting at 5th level, you can interfere with the flow of ki in an opponent's body. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a {DC} Constitution saving throw or be stunned until the end of your next turn." {
 				short "1 Ki Point - On Attack - target make {DC} CON save or be stunned until my next turned"
 				// TODO: `format-arg` allows an evaluator (item=i32) to compute a value and format the description with that output.
@@ -301,7 +301,7 @@ class name="Monk" {
 			criteria "has_armor_equipped" inverted=true
 			mutator "speed" "Walking" (Additive)5
 		}
-		feature name="Diamond Soul" category="Ki" {
+		feature name="Diamond Soul" parent="Monk/level02/Ki" {
 			description "Beginning at 14th level, your mastery of ki grants you proficiency in all saving throws.
 			Additionally, whenever you make a saving throw and fail, you can spend 1 ki point to reroll it and take the second result." {
 				short "1 Ki Point - On failed saving throw, reroll it and take the second result."
@@ -345,7 +345,7 @@ class name="Monk" {
 			criteria "has_armor_equipped" inverted=true
 			mutator "speed" "Walking" (Additive)5
 		}
-		feature name="Empty Body" category="Ki" {
+		feature name="Empty Body" parent="Monk/level02/Ki" {
 			description "Beginning at 18th level, you can use your action to spend 4 ki points to become invisible for 1 minute. During that time, you also have resistance to all damage but force damage.
 
 			Additionally, you can spend 8 ki points to cast the astral projection spell, without needing material components. When you do so, you can-t take any other creatures with you." {
@@ -358,7 +358,7 @@ class name="Monk" {
 					// TODO: Limited Uses can use the uses from another feature
 					limited_uses-todo {
 						cost 4
-						resource "Monk/Level02/Ki"
+						resource "Monk/level02/Ki"
 					}
 					condition "Custom" name="Invisibility (Empty Body)" {
 						description "Ki-based Invisibility and Damage Resistance"

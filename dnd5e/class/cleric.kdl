@@ -117,7 +117,7 @@ class name="Cleric" {
 				}
 			}
 		}
-		feature name="Turn Undead" category="Channel Divinity" {
+		feature name="Turn Undead" parent="Cleric/level02/Channel Divinity" {
 			description "As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.
 
 			A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action." {
@@ -134,7 +134,7 @@ class name="Cleric" {
 				// TODO: Limited Uses can use the uses from another feature
 				limited_uses-todo {
 					cost 1
-					resource "Cleric/Level02/Channel Divinity"
+					resource "Cleric/level02/Channel Divinity"
 				}
 			}
 		}
@@ -162,7 +162,7 @@ class name="Cleric" {
 		}
 	}
 	level 5 {
-		feature name="Destroy Undead" category="Channel Divinity" {
+		feature name="Destroy Undead" parent="Cleric/level02/Channel Divinity" {
 			description "Starting at 5th level, when an undead fails its saving throw, the creature is instantly destroyed if its challenge rating is at or below a certain threashold (5th level = CR 1/2, 8th level = CR 1, 11th level = CR 2, 14th level = CR 3, 17th level = CR 4)." {
 				short "Turn Undead instantly destroys any undead creature with a challenge rating less than or equal to {min-cr}."
 				format-arg "min-cr" (Evaluator)"get_level" class="Cleric" {
