@@ -262,7 +262,7 @@ class name="Ranger" {
 	level 14 {
 		feature name="Vanish" {
 			description "Starting at 14th level, you can use the Hide action as a bonus action on your turn. Also, you can't be tracked by nonmagical means, unless you choose to leave a trail."
-			feature name="Hide" {
+			feature name="Hide" collapsed=true {
 				description "Make a Dexterity (Stealth) check in an attempt to hide, following the rules for hiding.
 				When a creature can't see you, you have advantage on attack rolls against it. If you are hidden--both unseen and unheard--when you make an attack, you give away your location when the attack hits or misses."
 				action "Bonus"

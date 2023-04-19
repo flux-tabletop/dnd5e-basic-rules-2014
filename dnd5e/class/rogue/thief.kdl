@@ -8,15 +8,15 @@ subclass class="Rogue" name="Thief" {
 				- disarm a trap or open a lock with theives' tools
 				- take the Use an Object action"
 			}
-			feature name="Fast Sleight of Hand" {
+			feature name="Fast Sleight of Hand" collapsed=true {
 				description "Make a Dexterity (Sleight of Hand) check"
 				action "Bonus"
 			}
-			feature name="Disarm or Open" {
+			feature name="Disarm or Open" collapsed=true {
 				description "Make a thieves' tools check to disarm a trap or open a lock"
 				action "Bonus"
 			}
-			feature name="Use an Object" {
+			feature name="Use an Object" collapsed=true {
 				description "You normally interact with an object while doing something else, such as when you draw a sword as part of an attack. When an object requires your action for its use, you take the Use an Object action. This action is also useful when you want to interact with more than one object on your turn."
 				action "Bonus"
 			}
