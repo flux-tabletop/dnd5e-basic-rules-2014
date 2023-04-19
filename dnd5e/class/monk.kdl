@@ -134,7 +134,6 @@ class name="Monk" {
 			}
 			action "Bonus"
 		}
-		// TODO: when not in hierarchial display, collapse all features with the same name into one section (groups annotated with level)
 		feature name="Unarmored Movement" {
 			description "Starting at 2nd level, your speed increases by 10 feet while you are not wearing armor or wielding a shield."
 			criteria "has_armor_equipped" inverted=true
@@ -207,7 +206,7 @@ class name="Monk" {
 		}
 	}
 	level 6 {
-		feature name="Unarmored Movement" {
+		feature name="Unarmored Movement" parent="Monk/level02/Unarmored Movement" {
 			description "At 6th level, your speed increases by 5 more feet (+15ft total) while you are not wearing armor or wielding a shield."
 			criteria "has_armor_equipped" inverted=true
 			mutator "speed" "Walking" (Additive)5
@@ -252,12 +251,12 @@ class name="Monk" {
 		}
 	}
 	level 9 {
-		feature name="Unarmored Movement" {
+		feature name="Unarmored Movement" parent="Monk/level02/Unarmored Movement" {
 			description "At 9th level, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move."
 		}
 	}
 	level 10 {
-		feature name="Unarmored Movement" {
+		feature name="Unarmored Movement" parent="Monk/level02/Unarmored Movement" {
 			description "At 10th level, your speed increases by 5 more feet (+20ft total) while you are not wearing armor or wielding a shield."
 			criteria "has_armor_equipped" inverted=true
 			mutator "speed" "Walking" (Additive)5
@@ -296,7 +295,7 @@ class name="Monk" {
 		}
 	}
 	level 14 {
-		feature name="Unarmored Movement" {
+		feature name="Unarmored Movement" parent="Monk/level02/Unarmored Movement" {
 			description "At 14th level, your speed increases by 5 more feet (+25ft total) while you are not wearing armor or wielding a shield."
 			criteria "has_armor_equipped" inverted=true
 			mutator "speed" "Walking" (Additive)5
@@ -340,7 +339,7 @@ class name="Monk" {
 		}
 	}
 	level 18 {
-		feature name="Unarmored Movement" {
+		feature name="Unarmored Movement" parent="Monk/level02/Unarmored Movement" {
 			description "At 18th level, your speed increases by 5 more feet (+30ft total) while you are not wearing armor or wielding a shield."
 			criteria "has_armor_equipped" inverted=true
 			mutator "speed" "Walking" (Additive)5
