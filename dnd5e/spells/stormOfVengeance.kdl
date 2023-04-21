@@ -4,6 +4,7 @@ spell name="Storm of Vengeance" {
 	rank 9
 	casting-time "Action"
 	range "Sight"
+	area_of_effect "Sphere" radius=360
 	component "Verbal"
 	component "Somatic"
 	duration "Minute" 1 concentration=true

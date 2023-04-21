@@ -2,7 +2,7 @@ spell name="Hunter's Mark" {
 	tag "Divination"
 	tag "Ranger"
 	rank 1
-	casting-time "BonusAction"
+	casting-time "Bonus"
 	range 90
 	component "Verbal"
 	duration "Hour" 1 concentration=true

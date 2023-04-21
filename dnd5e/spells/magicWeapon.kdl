@@ -3,7 +3,7 @@ spell name="Magic Weapon" {
 	tag "Paladin"
 	tag "Wizard"
 	rank 2
-	casting-time "BonusAction"
+	casting-time "Bonus"
 	range "Touch"
 	component "Verbal"
 	component "Somatic"

@@ -3,7 +3,7 @@ spell name="Commune with Nature" {
 	tag "Druid"
 	tag "Ranger"
 	rank 5 ritual=true
-	casting-time 1 "Minute"
+	casting-time "Minute" 1
 	range "Self"
 	component "Verbal"
 	component "Somatic"

@@ -5,7 +5,8 @@ spell name="Speak with Plants" {
 	tag "Ranger"
 	rank 3
 	casting-time "Action"
-	range "Self" // TODO: (30-foot radius)
+	range "Self"
+	area_of_effect "Sphere" radius=30
 	component "Verbal"
 	component "Somatic"
 	duration "Minute" 10

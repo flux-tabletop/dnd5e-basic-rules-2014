@@ -4,7 +4,8 @@ spell name="Lightning Bolt" {
 	tag "Wizard"
 	rank 3
 	casting-time "Action"
-	range "Self" // TODO: (100-foot line)
+	range "Self"
+	area_of_effect "Line" width=5 length=100
 	component "Verbal"
 	component "Somatic"
 	component "Material" "a bit of fur and a rod of amber, crystal, or glass"

@@ -5,7 +5,7 @@ spell name="Dream" {
 	tag "Wizard"
 	rank 5
 	casting-time "Minute" 1
-	range "Special"
+	range "Unlimited"
 	component "Verbal"
 	component "Somatic"
 	component "Material" "a handful of sand, a dab of ink, and a writing quill plucked from a sleeping bird"

@@ -4,7 +4,8 @@ spell name="Cone of Cold" {
 	tag "Wizard"
 	rank 5
 	casting-time "Action"
-	range "Self" // TODO: (60-foot cone)
+	range "Self"
+	area_of_effect "Cone" length=60
 	component "Verbal"
 	component "Somatic"
 	component "Material" "a small crystal or glass cone"

@@ -3,7 +3,7 @@ spell name="Antipathy/Sympathy" {
 	tag "Druid"
 	tag "Wizard"
 	rank 8
-	casting-time 1 "Hour"
+	casting-time "Hour" 1
 	range 60
 	component "Verbal"
 	component "Somatic"

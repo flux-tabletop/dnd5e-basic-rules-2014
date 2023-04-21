@@ -2,7 +2,7 @@ spell name="Conjure Celestial" {
 	tag "Conjuration"
 	tag "Cleric"
 	rank 7
-	casting-time 1 "Minute"
+	casting-time "Minute" 1
 	range 90
 	component "Verbal"
 	component "Somatic"

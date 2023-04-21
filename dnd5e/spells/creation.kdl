@@ -3,7 +3,7 @@ spell name="Creation" {
 	tag "Sorcerer"
 	tag "Wizard"
 	rank 5
-	casting-time 1 "Minute"
+	casting-time "Minute" 1
 	range 30
 	component "Verbal"
 	component "Somatic"

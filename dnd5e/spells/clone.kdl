@@ -2,7 +2,7 @@ spell name="Clone" {
 	tag "Necromancy"
 	tag "Wizard"
 	rank 8
-	casting-time 1 "Hour"
+	casting-time "Hour" 1
 	range "Touch"
 	component "Verbal"
 	component "Somatic"

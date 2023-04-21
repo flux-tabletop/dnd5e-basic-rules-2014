@@ -4,7 +4,8 @@ spell name="Antimagic Field" {
 	tag "Wizard"
 	rank 8
 	casting-time "Action"
-	range "Self" // TODO: (10-foot-radius sphere)
+	range "Self"
+	area_of_effect "Sphere" radius=10
 	component "Verbal"
 	component "Somatic"
 	component "Material" "a pinch of powdered iron or iron filings"

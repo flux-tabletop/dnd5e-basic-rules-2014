@@ -4,7 +4,7 @@ spell name="Project Image" {
 	tag "Wizard"
 	rank 7
 	casting-time "Action"
-	range "Mile" 500
+	range 500 "Mile"
 	component "Verbal"
 	component "Somatic"
 	component "Material" "a small replica of you made from materials worth at least 5 gp"

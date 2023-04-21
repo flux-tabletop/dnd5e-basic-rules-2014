@@ -6,7 +6,7 @@ spell name="Acid Splash" {
 	casting-time "Action"
 	range 60
 	component "Verbal"
-	component "Semantic"
+	component "Somatic"
 	duration "Instantaneous"
 	check "SavingThrow" (Ability)"Dexterity"
 	damage {

@@ -4,7 +4,7 @@ spell name="Healing Word" {
 	tag "Cleric"
 	tag "Druid"
 	rank 1
-	casting-time "BonusAction"
+	casting-time "Bonus"
 	range 60
 	component "Verbal"
 	duration "Instantaneous"

@@ -3,7 +3,7 @@ spell name="Awaken" {
 	tag "Bard"
 	tag "Druid"
 	rank 5
-	casting-time 8 "Hour"
+	casting-time "Hour" 8
 	range "Touch"
 	component "Verbal"
 	component "Somatic"

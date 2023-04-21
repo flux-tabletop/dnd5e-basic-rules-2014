@@ -3,7 +3,8 @@ spell name="Antilife Shell" {
 	tag "Druid"
 	rank 5
 	casting-time "Action"
-	range "Self" // TODO: (10-foot radius)
+	range "Self"
+	area_of_effect "Sphere" radius=10
 	component "Verbal"
 	component "Somatic"
 	duration "Hours" 1 concentration=true

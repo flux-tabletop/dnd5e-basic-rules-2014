@@ -4,7 +4,8 @@ spell name="Meteor Swarm" {
 	tag "Wizard"
 	rank 9
 	casting-time "Action"
-	range "Mile" 1 // 40-foot-radius sphere
+	range 1 "Mile"
+	area_of_effect "Sphere" radius=40
 	component "Verbal"
 	component "Somatic"
 	duration "Instantaneous"

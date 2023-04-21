@@ -2,7 +2,7 @@ spell name="Branding Smite" {
 	tag "Evocation"
 	tag "Paladin"
 	rank 2
-	casting-time 1 "BonusAction"
+	casting-time "Bonus"
 	range "Self"
 	component "Verbal"
 	duration "Minutes" 1 concentration=true

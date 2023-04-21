@@ -3,7 +3,7 @@ spell name="Conjure Elemental" {
 	tag "Druid"
 	tag "Wizard"
 	rank 5
-	casting-time 1 "Minute"
+	casting-time "Minute" 1
 	range 90
 	component "Verbal"
 	component "Somatic"

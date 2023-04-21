@@ -4,7 +4,7 @@ spell name="Create Undead" {
 	tag "Warlock"
 	tag "Wizard"
 	rank 6
-	casting-time 1 "Minute"
+	casting-time "Minute" 1
 	range 10
 	component "Verbal"
 	component "Somatic"

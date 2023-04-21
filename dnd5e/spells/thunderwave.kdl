@@ -6,7 +6,8 @@ spell name="Thunderwave" {
 	tag "Wizard"
 	rank 1
 	casting-time "Action"
-	range "Self" // TODO: (15-foot cube)
+	range "Self"
+	area_of_effect "Cube" size=15
 	component "Verbal"
 	component "Somatic"
 	duration "Instantaneous"

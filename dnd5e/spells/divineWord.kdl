@@ -2,7 +2,7 @@ spell name="Divine Word" {
 	tag "Evocation"
 	tag "Cleric"
 	rank 7
-	casting-time "BonusAction"
+	casting-time "Bonus"
 	range 30
 	component "Verbal"
 	duration "Instantaneous"

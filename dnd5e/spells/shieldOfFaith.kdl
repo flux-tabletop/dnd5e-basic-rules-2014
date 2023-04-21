@@ -3,7 +3,7 @@ spell name="Shield of Faith" {
 	tag "Cleric"
 	tag "Paladin"
 	rank 1
-	casting-time "BonusAction"
+	casting-time "Bonus"
 	range 60
 	component "Verbal"
 	component "Somatic"

@@ -2,7 +2,7 @@ spell name="Contingency" {
 	tag "Evocation"
 	tag "Wizard"
 	rank 6
-	casting-time 10 "Minute"
+	casting-time "Minute" 10
 	range "Self"
 	component "Verbal"
 	component "Somatic"

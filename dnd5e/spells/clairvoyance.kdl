@@ -5,8 +5,8 @@ spell name="Clairvoyance" {
 	tag "Sorcerer"
 	tag "Wizard"
 	rank 3
-	casting-time 10 "Minute"
-	// TODO: Range: 1 mile
+	range 1 "Mile"
+	casting-time "Minute" 10
 	component "Verbal"
 	component "Somatic"
 	component "Material" "a focus worth at least 100 gp, either a jeweled horn for hearing or a glass eye for seeing"

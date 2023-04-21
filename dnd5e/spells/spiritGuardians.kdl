@@ -3,7 +3,8 @@ spell name="Spirit Guardians" {
 	tag "Cleric"
 	rank 3
 	casting-time "Action"
-	range "Self" // TODO: (15-foot radius)
+	range "Self"
+	area_of_effect "Sphere" radius=15
 	component "Verbal"
 	component "Somatic"
 	component "Material" "a holy symbol"

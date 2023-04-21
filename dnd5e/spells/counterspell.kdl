@@ -4,7 +4,7 @@ spell name="Counterspell" {
 	tag "Warlock"
 	tag "Wizard"
 	rank 3
-	casting-time 1 "Reaction" "when you see a creature within 60 feet of you casting a spell"
+	casting-time "Reaction" "when you see a creature within 60 feet of you casting a spell"
 	range 60
 	component "Somatic"
 	duration "Instantaneous"

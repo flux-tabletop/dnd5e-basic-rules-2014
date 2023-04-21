@@ -5,7 +5,8 @@ spell name="Sunbeam" {
 	tag "Wizard"
 	rank 6
 	casting-time "Action"
-	range "Self" // TODO: (60-foot line)
+	range "Self"
+	area_of_effect "Line" width=5 length=60
 	component "Verbal"
 	component "Somatic"
 	component "Material" "a magnifying glass"

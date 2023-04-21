@@ -4,7 +4,7 @@ spell name="Astral Projection" {
 	tag "Warlock"
 	tag "Wizard"
 	rank 9
-	casting-time 1 "Hour"
+	casting-time "Hour" 1
 	range 10
 	component "Verbal"
 	component "Somatic"

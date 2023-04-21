@@ -4,7 +4,7 @@ spell name="Misty Step" {
 	tag "Warlock"
 	tag "Wizard"
 	rank 2
-	casting-time "BonusAction"
+	casting-time "Bonus"
 	range "Self"
 	component "Verbal"
 	duration "Instantaneous"

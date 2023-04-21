@@ -2,7 +2,7 @@ spell name="Flame Blade" {
 	tag "Evocation"
 	tag "Druid"
 	rank 2
-	casting-time "BonusAction"
+	casting-time "Bonus"
 	range "Self"
 	component "Verbal"
 	component "Somatic"

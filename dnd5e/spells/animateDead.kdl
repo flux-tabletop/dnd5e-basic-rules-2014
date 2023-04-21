@@ -3,7 +3,7 @@ spell name="Animate Dead" {
 	tag "Cleric"
 	tag "Wizard"
 	rank 3
-	casting-time 1 "Minute"
+	casting-time "Minute" 1
 	range 10
 	component "Verbal"
 	component "Somatic"

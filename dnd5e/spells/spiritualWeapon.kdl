@@ -2,7 +2,7 @@ spell name="Spiritual Weapon" {
 	tag "Evocation"
 	tag "Cleric"
 	rank 2
-	casting-time "BonusAction"
+	casting-time "Bonus"
 	range 60
 	component "Verbal"
 	component "Somatic"
