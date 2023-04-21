@@ -8,14 +8,11 @@ spell name="Sacred Flame" {
 	component "Somatic"
 	duration "Instantaneous"
 	check "SavingThrow" (Ability)"Dexterity"
-	damage {
-		amount (Scaled)"Level" {
-			level 1 (Roll)"1d8"
-			level 5 (Roll)"2d8"
-			level 11 (Roll)"3d8"
-			level 17 (Roll)"4d8"
-		}
-		type (DamageType)"Radiant"
+	damage (Scaled)"Level" (DamageType)"Radiant" {
+		level 1 (Roll)"1d8"
+		level 5 (Roll)"2d8"
+		level 11 (Roll)"3d8"
+		level 17 (Roll)"4d8"
 	}
 	description "Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from cover for this saving throw.
 	The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
