@@ -419,7 +419,7 @@ item name="Tent" weight=20.0 {
 	worth 2 (Currency)"Gold"
 	kind "Simple"
 }
-//!tinderbow
+//!tinderbox
 item name="Tinderbox" weight=1.0 {
 	description "This small container holds flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a torch--or anything else with abundant, exposed fuel--takes an action. Lighting any other fire takes 1 minute."
 	worth 5 (Currency)"Silver"
