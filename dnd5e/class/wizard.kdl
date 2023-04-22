@@ -104,6 +104,95 @@ class name="Wizard" {
 			The Book's Appearance. Your spellbook is a unique compilation of spells, with its own decorative flourishes and margin notes. It might be a plain, functional leather volume that you received as a gift from your master, a finely bound gilt-edged tome you found in an ancient library, or even a loose collection of notes scrounged together after you lost your previous spellbook in a mishap.
 		*/
 		// TODO: I'd be really cool to be able to have a "Transcribe" button on spell containers which allow spells to be "copied" from, so moving a spell from a scroll to spellbook (consuming some cost) would be just a button click (assuming the inks and gold were present in inventory).
+		feature name="Spellcasting" {
+			mutator-todo "spellcasting" ability="Intelligence" {
+				// can cast ritual spells with any "ritual" spell which is in the spell source
+				ritual
+				focus {
+					tag "Arcane Focus"
+				}
+				cantrips {
+					level 1 3
+					level 4 4
+					level 10 5
+				}
+				/* Prepared caster
+					- spells must have the Wizard tag
+					- prepared when finishing long rest, spending 1 minute per spell level per spell
+					- capacity: Intelligence (spellcasting ability) + class level (minimum 1 spell)
+					
+					- instead of preparing from wizard spell list, you prepare from a spellbook
+					- learn 2 wizard spells on level up (of any rank you have a slot for)
+				*/
+				kind "Prepared" {
+					// prepared from any item which is a spell container with `prepared_from` flag,
+					// and adding spells to a container requires that they have the Wizard tag
+					source container=true
+					container {
+						transcribe {
+							restriction {
+								tag "Wizard"
+							}
+							// cost is applied per spell rank for each spell
+							cost {
+								duration "Hours" 2
+								wallet 50 (Currency)"Gold"
+							}
+						}
+						copy {
+							// cost is applied per spell rank for each spell
+							cost {
+								duration "Hours" 1
+								wallet 10 (Currency)"Gold"
+							}
+						}
+					}
+					capacity (Evaluator)"math" "Add" min=1 {
+						value (Evaluator)"get_ability_modifier" (Ability)"Intelligence"
+						value (Evaluator)"get_level" class="Wizard"
+					}
+				}
+				slots reset_on="Long" {
+					rank 1 {
+						level 1 2
+						level 2 3
+						level 3 4
+					}
+					rank 2 {
+						level 3 2
+						level 4 3
+					}
+					rank 3 {
+						level 5 2
+						level 6 3
+					}
+					rank 4 {
+						level 7 1
+						level 8 2
+						level 9 3
+					}
+					rank 5 {
+						level 9 1
+						level 10 2
+						level 18 3
+					}
+					rank 6 {
+						level 11 1
+						level 19 2
+					}
+					rank 7 {
+						level 13 1
+						level 20 2
+					}
+					rank 8 {
+						level 15 1
+					}
+					rank 9 {
+						level 17 1
+					}
+				}
+			}
+		}
 		/* TODO: Arcane Recovery
 			You have learned to regain some of your magical energy by studying your spellbook. Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your wizard level (rounded up), and none of the slots can be 6th level or higher.
 

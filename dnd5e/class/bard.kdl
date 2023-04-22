@@ -68,37 +68,114 @@ class name="Bard" {
 			option "Shawm"
 			option "Viol"
 		}
-		/* Spellcasting
-			You have learned to untangle and reshape the fabric of reality in harmony with your wishes and music. Your spells are part of your vast repertoire, magic that you can tune to different situations. See chapter 10 for the general rules of spellcasting and chapter 11 for the bard spell list.
+		feature name="Spellcasting" {
+			description "You have learned to untangle and reshape the fabric of reality in harmony with your wishes and music. Your spells are part of your vast repertoire, magic that you can tune to different situations." {
+				short "You can cast known bard spells using Charisma as your spellcasting modifier (Spell DC {DC}, Spell Attack +{atk}). You can use a musical instrument as a spellcasting focus."
+				format-arg "DC" (Evaluator)"math" "Add" {
+					value 8
+					value (Evaluator)"get_proficiency_bonus"
+					value (Evaluator)"get_ability_modifier" (Ability)"Charisma"
+				}
+				format-arg "atk" (Evaluator)"math" "Add" {
+					value (Evaluator)"get_proficiency_bonus"
+					value (Evaluator)"get_ability_modifier" (Ability)"Charisma"
+				}
+				section (Title)"Cantrips" "You know two cantrips of your choice from the bard spell list. You learn additional bard cantrips of your choice at higher levels."
+				section (Title)"Spell Slots" "The Bard table shows how many spell slots you have to cast your bard spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.
 
-			Cantrips
-			You know two cantrips of your choice from the bard spell list. You learn additional bard cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Bard table.
+				For example, if you know the 1st-level spell cure wounds and have a 1st-level and a 2nd-level spell slot available, you can cast cure wounds using either slot."
+				section (Title)"Spells Known of 1st Level and Higher" "You know four 1st-level spells of your choice from the bard spell list.
 
-			Spell Slots
-			The Bard table shows how many spell slots you have to cast your bard spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.
+				The Spells Known column of the Bard table shows when you learn more bard spells of your choice. Each of these spells must be of a level for which you have spell slots, as shown on the table. For instance, when you reach 3rd level in this class, you can learn one new spell of 1st or 2nd level.
 
-			For example, if you know the 1st-level spell cure wounds and have a 1st-level and a 2nd-level spell slot available, you can cast cure wounds using either slot.
+				Additionally, when you gain a level in this class, you can choose one of the bard spells you know and replace it with another spell from the bard spell list, which also must be of a level for which you have spell slots."
+				section (Title)"Spellcasting Ability" "Charisma is your spellcasting ability for your bard spells. Your magic comes from the heart and soul you pour into the performance of your music or oration. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a bard spell you cast and when making an attack roll with one.
 
-			Spells Known of 1st Level and Higher
-			You know four 1st-level spells of your choice from the bard spell list.
+				Spell save DC = 8 + your proficiency bonus + your Charisma modifier
 
-			The Spells Known column of the Bard table shows when you learn more bard spells of your choice. Each of these spells must be of a level for which you have spell slots, as shown on the table. For instance, when you reach 3rd level in this class, you can learn one new spell of 1st or 2nd level.
-
-			Additionally, when you gain a level in this class, you can choose one of the bard spells you know and replace it with another spell from the bard spell list, which also must be of a level for which you have spell slots.
-
-			Spellcasting Ability
-			Charisma is your spellcasting ability for your bard spells. Your magic comes from the heart and soul you pour into the performance of your music or oration. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a bard spell you cast and when making an attack roll with one.
-
-			Spell save DC = 8 + your proficiency bonus + your Charisma modifier
-
-			Spell attack modifier = your proficiency bonus + your Charisma modifier
-
-			Ritual Casting
-			You can cast any bard spell you know as a ritual if that spell has the ritual tag.
-
-			Spellcasting Focus
-			You can use a musical instrument (see chapter 5, “Equip­ment”) as a spellcasting focus for your bard spells.
-		*/
+				Spell attack modifier = your proficiency bonus + your Charisma modifier"
+				section (Title)"Ritual Casting" "You can cast any bard spell you know as a ritual if that spell has the ritual tag."
+				section (Title)"Spellcasting Focus" "You can use a musical instrument as a spellcasting focus for your bard spells."
+			}
+			mutator-todo "spellcasting" ability="Charisma" {
+				// castable_with_slot means that only spells with the ritual tag that can be cast using a spell slot can be cast using a ritual. This eliminates any spells not known/prepared and any added by items/other features.
+				ritual castable_with_slot=true
+				focus {
+					tag "Musical Instrument"
+				}
+				cantrips {
+					level 1 2
+					level 4 3
+					level 10 4
+				}
+				/* Known caster (spells are added to the character at level up, when cantrips or spells-known increases)
+					- must be spells with the Bard tag
+					- on any level up: can remove 1 spell from current known and replace it with any other bard spell
+				*/
+				kind "Known" {
+					source {
+						tag "Bard"
+					}
+					capacity {
+						level 1 4
+						level 2 5
+						level 3 6
+						level 4 7
+						level 5 8
+						level 6 9
+						level 7 10
+						level 8 11
+						level 9 12
+						level 10 14
+						level 11 15
+						level 13 16
+						level 14 18
+						level 15 19
+						level 17 20
+						level 18 22
+					}
+				}
+				slots reset_on="Long" {
+					rank 1 {
+						level 1 2
+						level 2 3
+						level 3 4
+					}
+					rank 2 {
+						level 3 2
+						level 4 3
+					}
+					rank 3 {
+						level 5 2
+						level 6 3
+					}
+					rank 4 {
+						level 7 1
+						level 8 2
+						level 9 3
+					}
+					rank 5 {
+						level 9 1
+						level 10 2
+						level 18 3
+					}
+					rank 6 {
+						level 11 1
+						level 19 2
+					}
+					rank 7 {
+						level 15 1
+						level 20 2
+					}
+					rank 8 {
+						level 15 1
+					}
+					rank 9 {
+						level 17 1
+					}
+				}
+			}
+		}
 		feature name="Bardic Inspiration" {
 			description "You can inspire others through stirring words or music. To do so, you use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a d6.
 

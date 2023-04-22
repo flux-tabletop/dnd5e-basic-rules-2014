@@ -173,6 +173,54 @@ class name="Paladin" {
 			Spellcasting Focus
 			You can use a holy symbol (see chapter 5, “Equipment”) as a spellcasting focus for your paladin spells.
 		*/
+		feature name="Spellcasting" {
+			mutator-todo "spellcasting" ability="Charisma" {
+				focus {
+					tag "Holy Symbol"
+				}
+				/* Prepared caster
+					- spells must have the Paladin tag
+					- prepared when finishing long rest, spending 1 minute per spell level per spell
+					- capacity: Charisma (spellcasting ability) + 1/2 class level (rounded down, minimum 1 spell)
+				*/
+				kind "Prepared" {
+					source {
+						tag "Paladin"
+					}
+					capacity (Evaluator)"math" "Add" min=1 {
+						value (Evaluator)"get_ability_modifier" (Ability)"Charisma"
+						value (Evaluator)"math" "Divide" round="floor" {
+							value (Evaluator)"get_level" class="Paladin"
+							value 2
+						}
+					}
+				}
+				slots reset_on="Long" {
+					rank 1 {
+						level 2 2
+						level 3 3
+						level 5 4
+					}
+					rank 2 {
+						level 5 2
+						level 7 3
+					}
+					rank 3 {
+						level 9 2
+						level 11 3
+					}
+					rank 4 {
+						level 13 1
+						level 15 2
+						level 17 3
+					}
+					rank 5 {
+						level 17 1
+						level 19 2
+					}
+				}
+			}
+		}
 		/* Divine Smite
 			Starting at 2nd level, when you hit a creature with a melee weapon attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an undead or a fiend, to a maximum of 6d8.
 

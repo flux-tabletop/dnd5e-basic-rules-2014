@@ -1,17 +1,30 @@
 subclass class="Warlock" name="The Fiend" {
 	description "You have made a pact with a fiend from the lower planes of existence, a being whose aims are evil, even if you strive against those aims. Such beings desire the corruption or destruction of all things, ultimately including you. Fiends powerful enough to forge a pact include demon lords such as Demogorgon, Orcus, Fraz'Urb-luu, and Baphomet; archdevils such as Asmodeus, Dispater, Mephistopheles, and Belial; pit fiends and balors that are especially mighty; and ultroloths and other lords of the yugoloths."
 	level 1 {
-		/* TODO: Spellcasting Expanded Spell List
-			The Fiend lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.
-
-			Fiend Expanded Spells
-			Spell Level	Spells
-			1st					burning hands, command
-			2nd					blindness/deafness, scorching ray
-			3rd					fireball, stinking cloud
-			4th					fire shield, wall of fire
-			5th					flame strike, hallow
-		*/
+		feature name="Expanded Spell List" {
+			description "The Fiend lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you." {
+				table {
+					headers "Spell Level" "Spells"
+					row "1st" "burning hands, command"
+					row "2nd" "blindness/deafness, scorching ray"
+					row "3rd" "fireball, stinking cloud"
+					row "4th" "fire shield, wall of fire"
+					row "5th" "flame strike, hallow"
+				}
+			}
+			mutator-todo "spellcasting" "add_source" {
+				spell "spells/burningHands.kdl"
+				spell "spells/command.kdl"
+				spell "spells/blindnessDeafness.kdl"
+				spell "spells/scorchingRay.kdl"
+				spell "spells/fireball.kdl"
+				spell "spells/stinkingCloud.kdl"
+				spell "spells/fireShield.kdl"
+				spell "spells/wallOfFire.kdl"
+				spell "spells/flameStrike.kdl"
+				spell "spells/hallow.kdl"
+			}
+		}
 		feature name="Dark One's Blessing" {
 			description "Starting at 1st level, when you reduce a hostile creature to 0 hit points, you gain temporary hit points equal to your Charisma modifier + your warlock level (minimum of 1)." {
 				short "When you reduce a hostile creature to 0 hit points, you gain {hit-points} temporary hit points."
