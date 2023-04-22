@@ -205,6 +205,7 @@ race/half-orc.kdl
 race/halfling.kdl
 race/human.kdl
 race/tiefling.kdl
+spells/acidArrow.kdl
 spells/acidSplash.kdl
 spells/aid.kdl
 spells/alarm.kdl
