@@ -9,21 +9,52 @@ subclass class="Paladin" name="Oath of Devotion" {
 	Honor. Treat others with fairness, and let your honorable deeds be an example to them. Do as much good as possible while causing the least amount of harm.
 	Duty. Be responsible for your actions and their consequences, protect those entrusted to your care, and obey those who have just authority over you."
 	level 3 {
-		/* TODO: Spellcasting Oath Spells
-			Each oath has a list of associated spells. You gain access to these spells at the levels specified in the oath description. Once you gain access to an oath spell, you always have it prepared. Oath spells don't count against the number of spells you can prepare each day.
+		feature "Oath Spells" {
+			description "Each oath has a list of associated spells. You gain access to these spells at the levels specified in the oath description. Once you gain access to an oath spell, you always have it prepared. Oath spells don't count against the number of spells you can prepare each day.
 
-			If you gain an oath spell that doesn't appear on the paladin spell list, the spell is nonetheless a paladin spell for you.
-			
-			You gain oath spells at the paladin levels listed.
-
-			Oath of Devotion Spells
-			Paladin Level		Spells
-			3rd							protection from evil and good, sanctuary
-			5th							lesser restoration, zone of truth
-			9th							beacon of hope, dispel magic
-			13th						freedom of movement, guardian of faith
-			17th						commune, flame strike
-		*/
+			If you gain an oath spell that doesn't appear on the paladin spell list, the spell is nonetheless a paladin spell for you." {
+				table {
+					headers "Paladin Level" "Spells"
+					row "3rd" "protection from evil and good, sanctuary"
+					row "5th" "lesser restoration, zone of truth"
+					row "9th" "beacon of hope, dispel magic"
+					row "13th" "freedom of movement, guardian of faith"
+					row "17th" "commune, flame strike"
+				}
+			}
+			mutator-todo "by_level" class="Paladin" {
+				level 3 {
+					mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
+						spell "spells/protectionFromEvilAndGood.kdl"
+						spell "spells/sanctuary.kdl"
+					}
+				}
+				level 5 {
+					mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
+						spell "spells/lesserRestoration.kdl"
+						spell "spells/zoneOfTruth.kdl"
+					}
+				}
+				level 9 {
+					mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
+						spell "spells/beaconOfHope.kdl"
+						spell "spells/dispelMagic.kdl"
+					}
+				}
+				level 13 {
+					mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
+						spell "spells/freedomOfMovement.kdl"
+						spell "spells/guardianOfFaith.kdl"
+					}
+				}
+				level 17 {
+					mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
+						spell "spells/commune.kdl"
+						spell "spells/flameStrike.kdl"
+					}
+				}
+			}
+		}
 		feature name="Sacred Weapon" parent="Paladin/level03/Channel Divinity" {
 			description "As an action, you can imbue one weapon that you are holding with positive energy, using your Channel Divinity. For 1 minute, you add your Charisma modifier to attack rolls made with that weapon (with a minimum bonus of +1). The weapon also emits bright light in a 20-foot radius and dim light 20 feet beyond that. If the weapon is not already magical, it becomes magical for the duration.
 

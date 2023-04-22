@@ -301,8 +301,29 @@ class name="Bard" {
 
 			The chosen spells count as bard spells for you and are included in the number in the Spells Known column of the Bard table.
 
-			You learn two additional spells from any classes at 14th level and again at 18th level."
-			// TODO: Spellcasting
+			You learn two additional spells from any classes at 14th level and again at 18th level." {
+				short "You learn two additional spells from any class that you can cast using a spell slot."
+			}
+			mutator-todo "by_level" class="Bard" {
+				level 10 {
+					mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
+						spell "Any" requires_slot=true
+						spell "Any" requires_slot=true
+					}
+				}
+				level 14 {
+					mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
+						spell "Any" requires_slot=true
+						spell "Any" requires_slot=true
+					}
+				}
+				level 18 {
+					mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
+						spell "Any" requires_slot=true
+						spell "Any" requires_slot=true
+					}
+				}
+			}
 		}
 	}
 	level 12 {
@@ -327,9 +348,6 @@ class name="Bard" {
 			}
 		}
 	}
-	level 14 {
-
-	}
 	level 16 {
 		mutator-todo "pick_one" name="Ability Score Improvement" {
 			option "Mutators" name="Ability Score Increase" {
@@ -351,9 +369,6 @@ class name="Bard" {
 				mutator "feature" category="Feat"
 			}
 		}
-	}
-	level 18 {
-
 	}
 	level 19 {
 		mutator-todo "pick_one" name="Ability Score Improvement" {

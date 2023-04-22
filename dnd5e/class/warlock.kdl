@@ -62,35 +62,34 @@ class name="Warlock" {
 	level 1 {
 		mutator "add_proficiency" (Armor)"Light"
 		mutator "add_proficiency" (Weapon)"Simple"
-		/* TODO: Spellcasting aka Pact Magic
-			Your arcane research and the magic bestowed on you by your patron have given you facility with spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the warlock spell list.
-
-			Cantrips
-			You know two cantrips of your choice from the warlock spell list. You learn additional warlock cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Warlock table.
-
-			Spell Slots
-			The Warlock table shows how many spell slots you have to cast your warlock spells of 1st through 5th level. The table also shows what the level of those slots is; all of your spell slots are the same level. To cast one of your warlock spells of 1st level or higher, you must expend a spell slot. You regain all expended Pact Magic spell slots when you finish a short or long rest.
-
-			For example, when you are 5th level, you have two 3rd-level spell slots. To cast the 1st-level spell witch bolt, you must spend one of those slots, and you cast it as a 3rd-level spell.
-
-			Spells Known of 1st Level and Higher
-			At 1st level, you know two 1st-level spells of your choice from the warlock spell list.
-
-			The Spells Known column of the Warlock table shows when you learn more warlock spells of your choice of 1st level and higher. A spell you choose must be of a level no higher than what's shown in the table's Slot Level column for your level. When you reach 6th level, for example, you learn a new warlock spell, which can be 1st, 2nd, or 3rd level.
-
-			Additionally, when you gain a level in this class, you can choose one of the warlock spells you know and replace it with another spell from the warlock spell list, which also must be of a level for which you have spell slots.
-
-			Spellcasting Ability
-			Charisma is your spellcasting ability for your warlock spells, so you use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a warlock spell you cast and when making an attack roll with one.
-
-			Spell save DC = 8 + your proficiency bonus + your Charisma modifier
-
-			Spell attack modifier = your proficiency bonus + your Charisma modifier
-
-			Spellcasting Focus
-			You can use an arcane focus (see chapter 5, “Equip­ment”) as a spellcasting focus for your warlock spells.
-		*/
 		feature name="Pact Magic" {
+			description "Your arcane research and the magic bestowed on you by your patron have given you facility with spells." {
+				short "You can cast known warlock spells using Charisma as your spellcasting modifier (Spell DC {DC}, Spell Attack +{atk}). You can use an arcane focus as a spellcasting focus."
+				format-arg "DC" (Evaluator)"math" "Add" {
+					value 8
+					value (Evaluator)"get_proficiency_bonus"
+					value (Evaluator)"get_ability_modifier" (Ability)"Charisma"
+				}
+				format-arg "atk" (Evaluator)"math" "Add" {
+					value (Evaluator)"get_proficiency_bonus"
+					value (Evaluator)"get_ability_modifier" (Ability)"Charisma"
+				}
+				section (Title)"Cantrips" "You know two cantrips of your choice from the warlock spell list. You learn additional warlock cantrips of your choice at higher levels."
+				section (Title)"Spell Slots" "The Warlock table shows how many spell slots you have to cast your warlock spells of 1st through 5th level. The table also shows what the level of those slots is; all of your spell slots are the same level. To cast one of your warlock spells of 1st level or higher, you must expend a spell slot. You regain all expended Pact Magic spell slots when you finish a short or long rest.
+
+				For example, when you are 5th level, you have two 3rd-level spell slots. To cast the 1st-level spell witch bolt, you must spend one of those slots, and you cast it as a 3rd-level spell."
+				section (Title)"Spells Known of 1st Level and Higher" "At 1st level, you know two 1st-level spells of your choice from the warlock spell list.
+
+				The Spells Known column of the Warlock table shows when you learn more warlock spells of your choice of 1st level and higher. A spell you choose must be of a level no higher than what's shown in the table's Slot Level column for your level. When you reach 6th level, for example, you learn a new warlock spell, which can be 1st, 2nd, or 3rd level.
+
+				Additionally, when you gain a level in this class, you can choose one of the warlock spells you know and replace it with another spell from the warlock spell list, which also must be of a level for which you have spell slots."
+				section (Title)"Spellcasting Ability" "Charisma is your spellcasting ability for your warlock spells, so you use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a warlock spell you cast and when making an attack roll with one.
+
+				Spell save DC = 8 + your proficiency bonus + your Charisma modifier
+
+				Spell attack modifier = your proficiency bonus + your Charisma modifier"
+				section (Title)"Spellcasting Focus" "You can use an arcane focus as a spellcasting focus for your warlock spells."
+			}
 			mutator-todo "spellcasting" ability="Charisma" {
 				focus {
 					tag "Arcane Focus"
@@ -379,14 +378,54 @@ class name="Warlock" {
 			At higher levels, you gain more warlock spells of your choice that can be cast in this way: one 7th-level spell at 13th level, one 8th-level spell at 15th level, and one 9th-level spell at 17th level. You regain all uses of your Mystic Arcanum when you finish a long rest." {
 				short "Cast one selected 6th level Warlock spell without expending a spell slot, once per long rest."
 			}
-			mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
-				spell "Any" {
-					rank 6
-					tag "Warlock"
+			mutator-todo "by_level" class="Warlock" {
+				level 11 {
+					mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
+						spell "Any" {
+							rank 6
+							tag "Warlock"
+						}
+						limited_use {
+							max_uses 1
+							reset_on "Long"
+						}
+					}
 				}
-				limited_use {
-					max_uses 1
-					reset_on "Long"
+				level 13 {
+					mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
+						spell "Any" {
+							rank 7
+							tag "Warlock"
+						}
+						limited_use {
+							max_uses 1
+							reset_on "Long"
+						}
+					}
+				}
+				level 15 {
+					mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
+						spell "Any" {
+							rank 8
+							tag "Warlock"
+						}
+						limited_use {
+							max_uses 1
+							reset_on "Long"
+						}
+					}
+				}
+				level 17 {
+					mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
+						spell "Any" {
+							rank 9
+							tag "Warlock"
+						}
+						limited_use {
+							max_uses 1
+							reset_on "Long"
+						}
+					}
 				}
 			}
 		}
@@ -413,36 +452,6 @@ class name="Warlock" {
 			}
 		}
 	}
-	level 13 {
-		feature name="Mystic Arcanum" {
-			description "Cast one selected 7th level Warlock spell without expending a spell slot, once per long rest."
-			mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
-				spell "Any" {
-					rank 7
-					tag "Warlock"
-				}
-				limited_use {
-					max_uses 1
-					reset_on "Long"
-				}
-			}
-		}
-	}
-	level 15 {
-		feature name="Mystic Arcanum" {
-			description "Cast one selected 8th level Warlock spell without expending a spell slot, once per long rest."
-			mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
-				spell "Any" {
-					rank 8
-					tag "Warlock"
-				}
-				limited_use {
-					max_uses 1
-					reset_on "Long"
-				}
-			}
-		}
-	}
 	level 16 {
 		mutator-todo "pick_one" name="Ability Score Improvement" {
 			option "Mutators" name="Ability Score Increase" {
@@ -462,21 +471,6 @@ class name="Warlock" {
 			option "Mutators" name="Feat" {
 				// TODO: grant any named-group that has the "Feat" category
 				mutator "feature" category="Feat"
-			}
-		}
-	}
-	level 17 {
-		feature name="Mystic Arcanum" {
-			description "Cast one selected 9th level Warlock spell without expending a spell slot, once per long rest."
-			mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
-				spell "Any" {
-					rank 9
-					tag "Warlock"
-				}
-				limited_use {
-					max_uses 1
-					reset_on "Long"
-				}
 			}
 		}
 	}

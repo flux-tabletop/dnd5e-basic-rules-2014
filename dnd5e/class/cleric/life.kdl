@@ -14,9 +14,37 @@ subclass class="Cleric" name="Life Domain" {
 					row "9th" "mass cure wounds, raise dead"
 				}
 			}
-			mutator-todo "spellcasting" "add_prepared" ability="Wisdom" {
-				spell "spells/bless.kdl"
-				spell "spells/cureWounds.kdl"
+			mutator-todo "by_level" class="Cleric" {
+				level 1 {
+					mutator-todo "spellcasting" "add_prepared" ability="Wisdom" {
+						spell "spells/bless.kdl"
+						spell "spells/cureWounds.kdl"
+					}
+				}
+				level 3 {
+					mutator-todo "spellcasting" "add_prepared" ability="Wisdom" {
+						spell "spells/lesserRestoration.kdl"
+						spell "spells/spiritualWeapon.kdl"
+					}
+				}
+				level 5 {
+					mutator-todo "spellcasting" "add_prepared" ability="Wisdom" {
+						spell "spells/beaconOfHope.kdl"
+						spell "spells/revivify.kdl"
+					}
+				}
+				level 7 {
+					mutator-todo "spellcasting" "add_prepared" ability="Wisdom" {
+						spell "spells/deathWard.kdl"
+						spell "spells/guardianOfFaith.kdl"
+					}
+				}
+				level 9 {
+					mutator-todo "spellcasting" "add_prepared" ability="Wisdom" {
+						spell "spells/massCureWounds.kdl"
+						spell "spells/raiseDead.kdl"
+					}
+				}
 			}
 		}
 		feature name="Bonus Proficiency" {
@@ -41,46 +69,14 @@ subclass class="Cleric" name="Life Domain" {
 			action "Action"
 		}
 	}
-	level 3 {
-		feature "Domain Spells" {
-			mutator-todo "spellcasting" "add_prepared" ability="Wisdom" {
-				spell "spells/lesserRestoration.kdl"
-				spell "spells/spiritualWeapon.kdl"
-			}
-		}
-	}
-	level 5 {
-		feature "Domain Spells" {
-			mutator-todo "spellcasting" "add_prepared" ability="Wisdom" {
-				spell "spells/beaconOfHope.kdl"
-				spell "spells/revivify.kdl"
-			}
-		}
-	}
 	level 6 {
 		feature name="Blessed Healer" {
 			description "Beginning at 6th level, the healing spells you cast on others heal you as well. When you cast a spell of 1st level or higher that restores hit points to a creature other than you, you regain hit points equal to 2 + the spell's level."
 		}
 	}
-	level 7 {
-		feature "Domain Spells" {
-			mutator-todo "spellcasting" "add_prepared" ability="Wisdom" {
-				spell "spells/deathWard.kdl"
-				spell "spells/guardianOfFaith.kdl"
-			}
-		}
-	}
 	level 8 {
 		feature name="Divine Strike" {
 			description "At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 radiant damage to the target. When you reach 14th level, the extra damage increases to 2d8."
-		}
-	}
-	level 9 {
-		feature "Domain Spells" {
-			mutator-todo "spellcasting" "add_prepared" ability="Wisdom" {
-				spell "spells/massCureWounds.kdl"
-				spell "spells/raiseDead.kdl"
-			}
 		}
 	}
 	level 17 {
