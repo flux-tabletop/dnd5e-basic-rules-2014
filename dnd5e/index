@@ -99,6 +99,7 @@ items/magic/ammunition/sling_bullet_1.kdl
 items/magic/ammunition/sling_bullet_2.kdl
 items/magic/ammunition/sling_bullet_3.kdl
 items/magic/amuletOfHealth.kdl
+items/magic/staffOfFire.kdl
 items/magic.kdl
 items/spell/book.kdl
 items/spell/ring.kdl
@@ -199,6 +200,8 @@ race/dragonborn/silver.kdl
 race/dragonborn/white.kdl
 race/dwarf.kdl
 race/elf.kdl
+race/gnome/forest.kdl
+race/gnome/rock.kdl
 race/gnome.kdl
 race/half-elf.kdl
 race/half-orc.kdl
