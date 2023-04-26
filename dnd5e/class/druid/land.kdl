@@ -37,7 +37,7 @@ subclass class="Druid" name="Circle of the Land" {
 						row "9th" "commune with nature, cone of cold"
 					}
 				}
-				mutator-todo "by_level" class="Druid" {
+				mutator "by_level" class="Druid" {
 					level 3 {
 						mutator-todo "spellcasting" "add_prepared" ability="Wisdom" {
 							spell "spells/holdPerson.kdl"
@@ -74,7 +74,7 @@ subclass class="Druid" name="Circle of the Land" {
 						row "9th" "conjure elemental, scrying"
 					}
 				}
-				mutator-todo "by_level" class="Druid" {
+				mutator "by_level" class="Druid" {
 					level 3 {
 						mutator-todo "spellcasting" "add_prepared" ability="Wisdom" {
 							spell "spells/mirrorImage.kdl"
@@ -111,7 +111,7 @@ subclass class="Druid" name="Circle of the Land" {
 						row "9th" "insect plague, wall of stone"
 					}
 				}
-				mutator-todo "by_level" class="Druid" {
+				mutator "by_level" class="Druid" {
 					level 3 {
 						mutator-todo "spellcasting" "add_prepared" ability="Wisdom" {
 							spell "spells/blur.kdl"
@@ -148,7 +148,7 @@ subclass class="Druid" name="Circle of the Land" {
 						row "9th" "commune with nature, tree stride"
 					}
 				}
-				mutator-todo "by_level" class="Druid" {
+				mutator "by_level" class="Druid" {
 					level 3 {
 						mutator-todo "spellcasting" "add_prepared" ability="Wisdom" {
 							spell "spells/barkskin.kdl"
@@ -185,7 +185,7 @@ subclass class="Druid" name="Circle of the Land" {
 						row "9th" "dream, insect plague"
 					}
 				}
-				mutator-todo "by_level" class="Druid" {
+				mutator "by_level" class="Druid" {
 					level 3 {
 						mutator-todo "spellcasting" "add_prepared" ability="Wisdom" {
 							spell "spells/invisibility.kdl"
@@ -222,7 +222,7 @@ subclass class="Druid" name="Circle of the Land" {
 						row "9th" "passwall, wall of stone"
 					}
 				}
-				mutator-todo "by_level" class="Druid" {
+				mutator "by_level" class="Druid" {
 					level 3 {
 						mutator-todo "spellcasting" "add_prepared" ability="Wisdom" {
 							spell "spells/spiderClimb.kdl"
@@ -259,7 +259,7 @@ subclass class="Druid" name="Circle of the Land" {
 						row "9th" "insect plague, scrying"
 					}
 				}
-				mutator-todo "by_level" class="Druid" {
+				mutator "by_level" class="Druid" {
 					level 3 {
 						mutator-todo "spellcasting" "add_prepared" ability="Wisdom" {
 							spell "spells/darkness.kdl"
@@ -296,7 +296,7 @@ subclass class="Druid" name="Circle of the Land" {
 						row "9th" "cloudkill, insect plague"
 					}
 				}
-				mutator-todo "by_level" class="Druid" {
+				mutator "by_level" class="Druid" {
 					level 3 {
 						mutator-todo "spellcasting" "add_prepared" ability="Wisdom" {
 							spell "spells/spiderClimb.kdl"

@@ -304,7 +304,7 @@ class name="Bard" {
 			You learn two additional spells from any classes at 14th level and again at 18th level." {
 				short "You learn two additional spells from any class that you can cast using a spell slot."
 			}
-			mutator-todo "by_level" class="Bard" {
+			mutator "by_level" class="Bard" {
 				level 10 {
 					mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
 						spell "Any" requires_slot=true

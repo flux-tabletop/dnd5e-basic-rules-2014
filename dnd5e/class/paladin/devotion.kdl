@@ -22,7 +22,7 @@ subclass class="Paladin" name="Oath of Devotion" {
 					row "17th" "commune, flame strike"
 				}
 			}
-			mutator-todo "by_level" class="Paladin" {
+			mutator "by_level" class="Paladin" {
 				level 3 {
 					mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
 						spell "spells/protectionFromEvilAndGood.kdl"

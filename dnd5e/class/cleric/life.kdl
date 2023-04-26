@@ -14,7 +14,7 @@ subclass class="Cleric" name="Life Domain" {
 					row "9th" "mass cure wounds, raise dead"
 				}
 			}
-			mutator-todo "by_level" class="Cleric" {
+			mutator "by_level" class="Cleric" {
 				level 1 {
 					mutator-todo "spellcasting" "add_prepared" ability="Wisdom" {
 						spell "spells/bless.kdl"

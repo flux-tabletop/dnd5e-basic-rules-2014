@@ -378,7 +378,7 @@ class name="Warlock" {
 			At higher levels, you gain more warlock spells of your choice that can be cast in this way: one 7th-level spell at 13th level, one 8th-level spell at 15th level, and one 9th-level spell at 17th level. You regain all uses of your Mystic Arcanum when you finish a long rest." {
 				short "Cast one selected 6th level Warlock spell without expending a spell slot, once per long rest."
 			}
-			mutator-todo "by_level" class="Warlock" {
+			mutator "by_level" class="Warlock" {
 				level 11 {
 					mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
 						spell "Any" {
