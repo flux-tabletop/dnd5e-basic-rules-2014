@@ -114,50 +114,50 @@ class name="Cleric" {
 						value (Evaluator)"get_ability_modifier" (Ability)"Wisdom"
 						value (Evaluator)"get_level" class="Cleric"
 					}
-					// slots dictates what ranks of spells can be prepared
-					/*
-						For any caster, the slots determine both how many spellslots you have, and what level spells you can prepare/know.
-						When multiclassing, the total levels in each class are added together (adding only half level for half-casters), and compared against a multi-class spellslot table (which only dictates how many slots you have, not what level of spells you can know).
-						So really slots ARE relevant to the caster-kind, and there are additional layer of ops to do when determining total slot count.
-					*/
-					slots reset_on="Long" {
-						rank 1 {
-							level 1 2
-							level 2 3
-							level 3 4
-						}
-						rank 2 {
-							level 3 2
-							level 4 3
-						}
-						rank 3 {
-							level 5 2
-							level 6 3
-						}
-						rank 4 {
-							level 7 1
-							level 8 2
-							level 9 3
-						}
-						rank 5 {
-							level 9 1
-							level 10 2
-							level 18 3
-						}
-						rank 6 {
-							level 11 1
-							level 19 2
-						}
-						rank 7 {
-							level 13 1
-							level 20 2
-						}
-						rank 8 {
-							level 15 1
-						}
-						rank 9 {
-							level 17 1
-						}
+				}
+				// slots dictates what ranks of spells can be prepared
+				/*
+					For any caster, the slots determine both how many spellslots you have, and what level spells you can prepare/know.
+					When multiclassing, the total levels in each class are added together (adding only half level for half-casters), and compared against a multi-class spellslot table (which only dictates how many slots you have, not what level of spells you can know).
+					So really slots ARE relevant to the caster-kind, and there are additional layer of ops to do when determining total slot count.
+				*/
+				slots reset_on="Long" {
+					rank 1 {
+						level 1 2
+						level 2 3
+						level 3 4
+					}
+					rank 2 {
+						level 3 2
+						level 4 3
+					}
+					rank 3 {
+						level 5 2
+						level 6 3
+					}
+					rank 4 {
+						level 7 1
+						level 8 2
+						level 9 3
+					}
+					rank 5 {
+						level 9 1
+						level 10 2
+						level 18 3
+					}
+					rank 6 {
+						level 11 1
+						level 19 2
+					}
+					rank 7 {
+						level 13 1
+						level 20 2
+					}
+					rank 8 {
+						level 15 1
+					}
+					rank 9 {
+						level 17 1
 					}
 				}
 			}
