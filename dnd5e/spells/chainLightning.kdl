@@ -7,7 +7,14 @@ spell name="Chain Lightning" {
 	range 150
 	component "Verbal"
 	component "Somatic"
-	component "Material" "a bit of fur; a piece of amber, glass, or a crystal rod; and three silver pins"
+	component "Material" {
+		item "OneOf" {
+			item "Bit of Fur"
+			item "Piece of Amber"
+			item "Crystal Rod"
+		}
+		item "Silver Pins" amount=3
+	}
 	duration "Instantaneous"
 	check "SavingThrow" (Ability)"Dexterity"
 	damage "10d8" (DamageType)"Lightning"

@@ -7,7 +7,10 @@ spell name="Antipathy/Sympathy" {
 	range 60
 	component "Verbal"
 	component "Somatic"
-	component "Material" "either a lump of alum soaked in vinegar for the antipathy effect or a drop of honey for the sympathy effect"
+	component "Material" {
+		item "Lump of Alum soaked in Vinegar (Antipathy)"
+		item "Drop of Honey (Sympathy)"
+	}
 	duration "Days" 10
 	check "SavingThrow" (Ability)"Wisdom"
 	description {

@@ -8,7 +8,11 @@ spell name="Circle of Death" {
 	range 150
 	component "Verbal"
 	component "Somatic"
-	component "Material" "the powder of a crushed black pearl worth at least 500 gp"
+	component "Material" {
+		item "Powder of a Crushed Black Pearl" {
+			worth 500 (Currency)"Gold"
+		}
+	}
 	duration "Instantaneous"
 	check "SavingThrow" (Ability)"Constitution"
 	damage "8d6" (DamageType)"Necrotic" upcast="2d6"

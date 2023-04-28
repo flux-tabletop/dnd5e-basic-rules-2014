@@ -8,7 +8,9 @@ spell name="Animal Friendship" {
 	range 30
 	component "Verbal"
 	component "Somatic"
-	component "Material" "a morsel of food"
+	component "Material" {
+		item "Morsel of food"
+	}
 	duration "Hours" 24
 	check "SavingThrow" (Ability)"Wisdom"
 	description {

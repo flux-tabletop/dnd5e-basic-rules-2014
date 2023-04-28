@@ -6,7 +6,9 @@ spell name="Arcane Eye" {
 	range 30
 	component "Verbal"
 	component "Somatic"
-	component "Material" "a bit of bat fur"
+	component "Material" {
+		item "Bit of Bat Fur"
+	}
 	duration "Hours" 1 concentration=true
 	description "You create an invisible, magical eye within range that hovers in the air for the duration.
 	You mentally receive visual information from the eye, which has normal vision and darkvision out to 30 feet. The eye can look in every direction.

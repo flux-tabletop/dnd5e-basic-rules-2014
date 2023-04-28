@@ -6,8 +6,15 @@ spell name="Clone" {
 	range "Touch"
 	component "Verbal"
 	component "Somatic"
-	component "Material" "a diamond worth at least 1,000 gp and at least 1 cubic inch of flesh of the creature that is to be cloned" consumes=true
-	component "Material" "a vessel worth at least 2,000 gp that has a sealable lid and is large enough to hold the creature being cloned, such as a huge urn, coffin, mud-filled cyst in the ground, or crystal container filled with salt water"
+	component "Material" {
+		item "Diamond" {
+			worth 1000 (Currency)"Gold" consume=true
+		}
+		item "1 cubic inch of Flesh of the creature to be cloned" consume=true
+		item "vessel worth at least 2,000 gp that has a sealable lid and is large enough to hold the creature being cloned, such as a huge urn, coffin, mud-filled cyst in the ground, or crystal container filled with salt water" {
+			worth 2000 (Currency)"Gold"
+		}
+	}
 	duration "Instantaneous"
 	description "This spell grows an inert duplicate of a living creature as a safeguard against death. This clone forms inside the vessel used in the spell's casting and grows to full size and maturity after 120 days; you can also choose to have the clone be a younger version of the same creature. It remains inert and endures indefinitely, as long as its vessel remains undisturbed.
 	At any time after the clone matures, if the original creature dies, its soul transfers to the clone, provided that the soul is free and willing to return. The clone is physically identical to the original and has the same personality, memories, and abilities, but none of the original's equipment. The original creature's physical remains, if they still exist, become inert and can't thereafter be restored to life, since the creature's soul is elsewhere."

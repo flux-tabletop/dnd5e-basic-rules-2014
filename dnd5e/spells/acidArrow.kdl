@@ -6,7 +6,10 @@ spell name="Acid Arrow" {
 	range 90
 	component "Verbal"
 	component "Somatic"
-	component "Material" "powdered rhubarb leaf and an adder's stomach"
+	component "Material" {
+		item "Powdered Rhubarb Leaf"
+		item "Adder's Stomach"
+	}
 	duration "Instantaneous"
 	check "AttackRoll" "Ranged"
 	damage "4d4" (DamageType)"Acid" upcast="1d4"

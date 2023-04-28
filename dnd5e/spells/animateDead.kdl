@@ -7,7 +7,11 @@ spell name="Animate Dead" {
 	range 10
 	component "Verbal"
 	component "Somatic"
-	component "Material" "a drop of blood, a piece of flesh, and a pinch of bone dust"
+	component "Material" {
+		item "Drop of Blood"
+		item "Piece of Flesh"
+		item "Pinch of Bone Dust"
+	}
 	duration "Instantaneous"
 	description {
 		section "This spell creates an undead servant. Choose a pile of bones or a corpse of a Medium or Small humanoid within range. Your spell imbues the target with a foul mimicry of life, raising it as an undead creature. The target becomes a skeleton if you chose bones or a zombie if you chose a corpse (the DM has the creature's game statistics).

@@ -10,7 +10,9 @@ spell name="Banishment" {
 	range 60
 	component "Verbal"
 	component "Somatic"
-	component "Material" "an item distasteful to the target"
+	component "Material" {
+		item "Something distasteful to the target"
+	}
 	duration "Minutes" 1 concentration=true
 	check "SavingThrow" (Ability)"Charisma"
 	description {

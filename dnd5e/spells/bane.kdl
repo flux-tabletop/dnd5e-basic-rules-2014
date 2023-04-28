@@ -7,7 +7,9 @@ spell name="Bane" {
 	range 30
 	component "Verbal"
 	component "Somatic"
-	component "Material" "a drop of blood"
+	component "Material" {
+		item "Drop of Blood"
+	}
 	duration "Minutes" 1 concentration=true
 	check "SavingThrow" (Ability)"Charisma"
 	description {
