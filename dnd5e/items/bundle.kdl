@@ -1,7 +1,7 @@
 // TODO: Items have a special way to apply customizations/overrides, especially for packs/bundles.
 // When an item is parsed, if it has a string at the first value which is a source id, that item is cloned and the deserialized bits in this entry are overlaid on top of it. That means that the contents of the container, the name, and the worth are all overrides on top of the backpack itself.
 //!burglarPack
-item "items/container/backpack.kdl" name="Burglar's Pack" {
+item "items/gear/backpack.kdl" name="Burglar's Pack" {
 	worth 16 (Currency)"Gold"
 	containers {
 		items {
@@ -45,7 +45,7 @@ item "items/container/chest.kdl" name="Diplomat's Pack" {
 	}
 }
 //!dungeoneerPack
-item "items/container/backpack.kdl" name="Dungeoneer's Pack" {
+item "items/gear/backpack.kdl" name="Dungeoneer's Pack" {
 	worth 12 (Currency)"Gold"
 	containers {
 		items {
@@ -63,7 +63,7 @@ item "items/container/backpack.kdl" name="Dungeoneer's Pack" {
 	}
 }
 //!entertainerPack
-item "items/container/backpack.kdl" name="Entertainer's Pack" {
+item "items/gear/backpack.kdl" name="Entertainer's Pack" {
 	worth 40 (Currency)"Gold"
 	containers {
 		items {
@@ -79,7 +79,7 @@ item "items/container/backpack.kdl" name="Entertainer's Pack" {
 	}
 }
 //!explorerPack
-item "items/container/backpack.kdl" name="Explorer's Pack" {
+item "items/gear/backpack.kdl" name="Explorer's Pack" {
 	worth 40 (Currency)"Gold"
 	containers {
 		items {
@@ -96,7 +96,7 @@ item "items/container/backpack.kdl" name="Explorer's Pack" {
 	}
 }
 //!priestPack
-item "items/container/backpack.kdl" name="Priest's Pack" {
+item "items/gear/backpack.kdl" name="Priest's Pack" {
 	worth 19 (Currency)"Gold"
 	containers {
 		items {
@@ -117,7 +117,7 @@ item "items/container/backpack.kdl" name="Priest's Pack" {
 	}
 }
 //!scholarPack
-item "items/container/backpack.kdl" name="Scholar's Pack" {
+item "items/gear/backpack.kdl" name="Scholar's Pack" {
 	worth 40 (Currency)"Gold"
 	containers {
 		items {

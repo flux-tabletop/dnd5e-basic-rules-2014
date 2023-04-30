@@ -37,13 +37,22 @@ item name="Ball bearings" weight=2.0 {
 }
 //!barrel
 item name="Barrel" weight=70.0 {
+	description "Capacity: 40 gallons liquid, 4 cubic feet solid"
 	worth 2 (Currency)"Gold"
 	kind "Simple"
+	items {
+		// 4 cubic feet
+		capacity volume=4.0
+	}
 }
 //!basket
 item name="Basket" weight=2.0 {
 	worth 4 (Currency)"Silver"
 	kind "Simple"
+	items {
+		// 2 cubic feet/40 pounds of gear
+		capacity weight=40.0 volume=2.0
+	}
 }
 //!bedroll
 item name="Bedroll" weight=7.0 {
@@ -74,13 +83,18 @@ item name="Book" weight=5.0 {
 }
 //!glassBottle
 item name="Glass Bottle" weight=2.0 {
+	description "Capacity: 1.5 pints liquid"
 	worth 2 (Currency)"Gold"
 	kind "Simple"
 }
 //!bucket
 item name="Bucket" weight=2.0 {
+	description "Capacity: 3 gallons liquid, 1/2 cubic foot solid"
 	worth 5 (Currency)"Copper"
 	kind "Simple"
+	items {
+		capacity volume=0.5
+	}
 }
 //!caltrops
 item name="Caltrops" weight=0.1 {
@@ -122,6 +136,10 @@ item name="Chalk (1 piece)" {
 item name="Chest" weight=25.0 {
 	worth 5 (Currency)"Gold"
 	kind "Simple"
+	items {
+		// 12 cubic feet/300 pounds gear
+		capacity weight=300.0 volume=12.0
+	}
 }
 //!climberKit
 item name="Climber's kit" weight=12.0 {
@@ -169,11 +187,13 @@ item name="Fishing tackle" weight=4.0 {
 }
 //!flask
 item name="Flask" weight=1.0 {
+	description "Capacity: 1 pint liquid"
 	worth 2 (Currency)"Copper"
 	kind "Simple"
 }
 //!tankard
 item name="Tankard" weight=1.0 {
+	description "Capacity: 1 pint liquid"
 	worth 2 (Currency)"Copper"
 	kind "Simple"
 }
@@ -232,6 +252,7 @@ item name="Ink pen" {
 }
 //!jug
 item name="Jug or pitcher" weight=4.0 {
+	description "Capacity: 1 gallon liquid"
 	worth 2 (Currency)"Copper"
 	kind "Simple"
 }
@@ -309,6 +330,14 @@ item name="Perfume (vial)" {
 	worth 5 (Currency)"Gold"
 	kind "Simple"
 }
+item name="Pouch" weight=1.0 {
+	description "A cloth or leather pouch can hold up to 20 sling bullets or 50 blowgun needles, among other things. A compartmentalized pouch for holding spell components is called a component pouch."
+	worth 5 (Currency)"Silver"
+	kind "Simple"
+	items {
+		capacity weight=6.0 volume=0.2
+	}
+}
 //!minerPick
 item name="Miner's Pick" weight=10.0 {
 	worth 2 (Currency)"Gold"
@@ -332,6 +361,7 @@ item name="Pole (10-foot)" weight=7.0 {
 }
 //!ironPot
 item name="Iron Pot" weight=10.0 {
+	description "Capacity: 1 gallon liquid"
 	worth 2 (Currency)"Gold"
 	kind "Simple"
 }
@@ -340,6 +370,17 @@ item name="Portable Ram" weight=35.0 {
 	description "You can use a portable ram to break down doors. When doing so, you gain a +4 bonus on the Strength check. One other character can help you use the ram, giving you advantage on this check."
 	worth 4 (Currency)"Gold"
 	kind "Simple"
+}
+item name="Quiver" weight=1.0 {
+	description "A quiver can hold up to 20 arrows."
+	worth 1 (Currency)"Gold"
+	kind "Simple"
+	items {
+		capacity amount=20
+		restriction {
+			tag "Arrow"
+		}
+	}
 }
 //!rations
 item name="Rations (1 day)" weight=2.0 {
@@ -370,6 +411,10 @@ item name="Rope (Silk)" weight=5.0 {
 item name="Sack" weight=1.0 {
 	worth 1 (Currency)"Copper"
 	kind "Simple"
+	items {
+		// 1 cubic foot/30 pounds of gear
+		capacity weight=30.0 volume=1.0
+	}
 }
 //!merchantScale
 item name="Merchant's Scale" weight=3.0 {
@@ -433,11 +478,13 @@ item name="Torch" weight=1.0 {
 }
 //!vial
 item name="Vial" {
+	description "4 ounces liquid"
 	worth 1 (Currency)"Gold"
 	kind "Simple"
 }
 //!waterskin
 item name="Waterskin" weight=5.0 {
+	description "4 pints liquid"
 	worth 2 (Currency)"Silver"
 	kind "Simple"
 }

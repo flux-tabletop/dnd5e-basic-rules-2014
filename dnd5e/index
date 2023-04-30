@@ -63,8 +63,6 @@ items/armor/scale_mail.kdl
 items/armor/shield.kdl
 items/armor/splint.kdl
 items/bundle.kdl
-items/container/backpack.kdl
-items/containers.kdl
 items/focus/amulet.kdl
 items/focus/crystal.kdl
 items/focus/emblem.kdl
@@ -77,6 +75,7 @@ items/focus/totem.kdl
 items/focus/wand.kdl
 items/focus/wooden_staff.kdl
 items/focus/yew_wand.kdl
+items/gear/backpack.kdl
 items/gear.kdl
 items/magic/adamantine/breastplate.kdl
 items/magic/adamantine/chain_mail.kdl
