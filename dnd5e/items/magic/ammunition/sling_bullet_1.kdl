@@ -3,4 +3,5 @@ item name="Sling Bullet (+1)" weight=0.075 {
 	rarity "Uncommon"
 	worth 1 (Currency)"Copper"
 	kind "Simple" count=5
+	tag "SlingBullet"
 }

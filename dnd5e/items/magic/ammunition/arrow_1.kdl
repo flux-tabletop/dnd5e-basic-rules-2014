@@ -3,4 +3,5 @@ item name="Arrow (+1)" weight=0.05 {
 	rarity "Uncommon"
 	worth 5 (Currency)"Copper"
 	kind "Simple" count=1
+	tag "Arrow"
 }

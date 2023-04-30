@@ -3,4 +3,5 @@ item name="Crossbow Bolt (+1)" weight=0.075 {
 	rarity "Uncommon"
 	worth 5 (Currency)"Copper"
 	kind "Simple" count=1
+	tag "Bolt"
 }

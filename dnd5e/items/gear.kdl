@@ -114,6 +114,12 @@ item name="Crossbow Bolt Case" weight=1.0 {
 	description "This wooden case can hold up to twenty crossbow bolts."
 	worth 1 (Currency)"Gold"
 	kind "Simple"
+	items {
+		capacity count=20
+		restriction {
+			tag "Bolt"
+		}
+	}
 }
 //!mapOrScrollCase
 item name="Map or Scroll Case" weight=1.0 {
