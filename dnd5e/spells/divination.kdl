@@ -1,5 +1,5 @@
 spell name="Divination" {
-	tag "Divination"
+	school "Divination"
 	tag "Cleric"
 	rank 4
 	casting-time "Action" ritual=true

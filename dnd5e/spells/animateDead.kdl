@@ -1,5 +1,5 @@
 spell name="Animate Dead" {
-	tag "Necromancy"
+	school "Necromancy"
 	tag "Cleric"
 	tag "Wizard"
 	rank 3

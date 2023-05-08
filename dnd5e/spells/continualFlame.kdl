@@ -1,5 +1,5 @@
 spell name="Continual Flame" {
-	tag "Evocation"
+	school "Evocation"
 	tag "Cleric"
 	tag "Wizard"
 	rank 2

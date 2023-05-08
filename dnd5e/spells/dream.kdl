@@ -1,5 +1,5 @@
 spell name="Dream" {
-	tag "Illusion"
+	school "Illusion"
 	tag "Bard"
 	tag "Warlock"
 	tag "Wizard"

@@ -1,5 +1,5 @@
 spell name="Foresight" {
-	tag "Divination"
+	school "Divination"
 	tag "Bard"
 	tag "Druid"
 	tag "Warlock"

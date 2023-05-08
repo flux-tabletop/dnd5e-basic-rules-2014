@@ -1,5 +1,5 @@
 spell name="Hunter's Mark" {
-	tag "Divination"
+	school "Divination"
 	tag "Ranger"
 	rank 1
 	casting-time "Bonus"

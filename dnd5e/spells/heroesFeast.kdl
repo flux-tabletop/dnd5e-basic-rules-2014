@@ -1,5 +1,5 @@
 spell name="Heroes' Feast" {
-	tag "Conjuration"
+	school "Conjuration"
 	tag "Cleric"
 	tag "Druid"
 	rank 6

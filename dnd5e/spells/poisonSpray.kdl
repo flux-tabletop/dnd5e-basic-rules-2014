@@ -1,5 +1,5 @@
 spell name="Poison Spray" {
-	tag "Conjuration"
+	school "Conjuration"
 	tag "Druid"
 	tag "Sorcerer"
 	tag "Warlock"

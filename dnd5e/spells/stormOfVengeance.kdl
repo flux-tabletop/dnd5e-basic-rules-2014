@@ -1,5 +1,5 @@
 spell name="Storm of Vengeance" {
-	tag "Conjuration"
+	school "Conjuration"
 	tag "Druid"
 	rank 9
 	casting-time "Action"

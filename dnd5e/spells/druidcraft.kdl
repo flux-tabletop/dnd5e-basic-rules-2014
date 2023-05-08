@@ -1,5 +1,5 @@
 spell name="Druidcraft" {
-	tag "Transmutation"
+	school "Transmutation"
 	tag "Druid"
 	rank 0
 	casting-time "Action"

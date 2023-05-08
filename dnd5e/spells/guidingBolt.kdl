@@ -1,5 +1,5 @@
 spell name="Guiding Bolt" {
-	tag "Evocation"
+	school "Evocation"
 	tag "Cleric"
 	rank 1
 	casting-time "Action"

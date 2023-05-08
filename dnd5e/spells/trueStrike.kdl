@@ -1,5 +1,5 @@
 spell name="True Strike" {
-	tag "Divination"
+	school "Divination"
 	tag "Bard"
 	tag "Sorcerer"
 	tag "Warlock"

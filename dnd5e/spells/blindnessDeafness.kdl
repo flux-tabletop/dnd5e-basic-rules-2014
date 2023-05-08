@@ -1,5 +1,5 @@
 spell name="Blindness/Deafness" {
-	tag "Necromancy"
+	school "Necromancy"
 	tag "Bard"
 	tag "Cleric"
 	tag "Sorcerer"

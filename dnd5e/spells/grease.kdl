@@ -1,5 +1,5 @@
 spell name="Grease" {
-	tag "Conjuration"
+	school "Conjuration"
 	tag "Wizard"
 	rank 1
 	casting-time "Action"

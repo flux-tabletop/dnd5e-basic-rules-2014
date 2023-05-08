@@ -1,5 +1,5 @@
 spell name="True Resurrection" {
-	tag "Necromancy"
+	school "Necromancy"
 	tag "Cleric"
 	tag "Druid"
 	rank 9

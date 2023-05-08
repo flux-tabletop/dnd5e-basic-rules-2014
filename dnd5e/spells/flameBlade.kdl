@@ -1,5 +1,5 @@
 spell name="Flame Blade" {
-	tag "Evocation"
+	school "Evocation"
 	tag "Druid"
 	rank 2
 	casting-time "Bonus"

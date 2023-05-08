@@ -1,5 +1,5 @@
 spell name="Bless" {
-	tag "Enchantment"
+	school "Enchantment"
 	tag "Cleric"
 	tag "Paladin"
 	rank 1

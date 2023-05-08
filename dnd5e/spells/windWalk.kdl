@@ -1,5 +1,5 @@
 spell name="Wind Walk" {
-	tag "Transmutation"
+	school "Transmutation"
 	tag "Druid"
 	rank 6
 	casting-time "Minute" 1

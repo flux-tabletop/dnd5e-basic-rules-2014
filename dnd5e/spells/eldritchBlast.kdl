@@ -1,5 +1,5 @@
 spell name="Eldritch Blast" {
-	tag "Evocation"
+	school "Evocation"
 	tag "Warlock"
 	rank 0
 	casting-time "Action"

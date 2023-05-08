@@ -1,5 +1,5 @@
 spell name="Awaken" {
-	tag "Transmutation"
+	school "Transmutation"
 	tag "Bard"
 	tag "Druid"
 	rank 5

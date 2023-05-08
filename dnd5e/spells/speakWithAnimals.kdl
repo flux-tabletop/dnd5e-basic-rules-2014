@@ -1,5 +1,5 @@
 spell name="Speak with Animals" {
-	tag "Divination"
+	school "Divination"
 	tag "Bard"
 	tag "Druid"
 	tag "Ranger"

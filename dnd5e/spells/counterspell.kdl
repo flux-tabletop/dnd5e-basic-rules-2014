@@ -1,5 +1,5 @@
 spell name="Counterspell" {
-	tag "Abjuration"
+	school "Abjuration"
 	tag "Sorcerer"
 	tag "Warlock"
 	tag "Wizard"

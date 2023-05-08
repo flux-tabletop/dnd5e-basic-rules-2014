@@ -1,5 +1,5 @@
 spell name="Sanctuary" {
-	tag "Abjuration"
+	school "Abjuration"
 	tag "Cleric"
 	rank 1
 	casting-time "Bonus"

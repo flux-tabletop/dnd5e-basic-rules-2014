@@ -1,5 +1,5 @@
 spell name="Fabricate" {
-	tag "Transmutation"
+	school "Transmutation"
 	tag "Wizard"
 	rank 4
 	casting-time "Minute" 10

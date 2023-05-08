@@ -1,5 +1,5 @@
 spell name="Prestidigitation" {
-	tag "Transmutation"
+	school "Transmutation"
 	tag "Bard"
 	tag "Sorcerer"
 	tag "Warlock"

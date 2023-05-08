@@ -1,5 +1,5 @@
 spell name="Scrying" {
-	tag "Divination"
+	school "Divination"
 	tag "Bard"
 	tag "Cleric"
 	tag "Druid"

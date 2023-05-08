@@ -1,5 +1,5 @@
 spell name="Flesh to Stone" {
-	tag "Transmutation"
+	school "Transmutation"
 	tag "Warlock"
 	tag "Wizard"
 	rank 6

@@ -1,5 +1,5 @@
 spell name="Shield" {
-	tag "Abjuration"
+	school "Abjuration"
 	tag "Sorcerer"
 	tag "Wizard"
 	rank 1

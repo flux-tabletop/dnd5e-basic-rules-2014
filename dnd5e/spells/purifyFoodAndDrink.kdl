@@ -1,5 +1,5 @@
 spell name="Purify Food and Drink" {
-	tag "Transmutation"
+	school "Transmutation"
 	tag "Cleric"
 	tag "Druid"
 	tag "Paladin"

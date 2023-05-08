@@ -1,5 +1,5 @@
 spell name="Wall of Force" {
-	tag "Evocation"
+	school "Evocation"
 	tag "Wizard"
 	rank 5
 	casting-time "Action"

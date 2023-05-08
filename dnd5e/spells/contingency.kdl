@@ -1,5 +1,5 @@
 spell name="Contingency" {
-	tag "Evocation"
+	school "Evocation"
 	tag "Wizard"
 	rank 6
 	casting-time "Minute" 10

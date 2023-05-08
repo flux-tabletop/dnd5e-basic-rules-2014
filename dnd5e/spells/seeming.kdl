@@ -1,5 +1,5 @@
 spell name="Seeming" {
-	tag "Illusion"
+	school "Illusion"
 	tag "Bard"
 	tag "Sorcerer"
 	tag "Wizard"

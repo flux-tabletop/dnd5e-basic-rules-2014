@@ -1,5 +1,5 @@
 spell name="Thaumaturgy" {
-	tag "Transmutation"
+	school "Transmutation"
 	tag "Cleric"
 	rank 0
 	casting-time "Action"

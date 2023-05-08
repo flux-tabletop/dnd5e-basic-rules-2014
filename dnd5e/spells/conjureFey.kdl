@@ -1,5 +1,5 @@
 spell name="Conjure Fey" {
-	tag "Conjuration"
+	school "Conjuration"
 	tag "Druid"
 	tag "Warlock"
 	rank 6

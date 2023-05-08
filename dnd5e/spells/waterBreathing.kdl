@@ -1,5 +1,5 @@
 spell name="Water Breathing" {
-	tag "Transmutation"
+	school "Transmutation"
 	tag "Druid"
 	tag "Ranger"
 	tag "Sorcerer"

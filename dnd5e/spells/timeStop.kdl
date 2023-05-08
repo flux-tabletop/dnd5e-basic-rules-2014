@@ -1,5 +1,5 @@
 spell name="Time Stop" {
-	tag "Transmutation"
+	school "Transmutation"
 	tag "Sorcerer"
 	tag "Wizard"
 	rank 9

@@ -1,5 +1,5 @@
 spell name="Spirit Guardians" {
-	tag "Conjuration"
+	school "Conjuration"
 	tag "Cleric"
 	rank 3
 	casting-time "Action"

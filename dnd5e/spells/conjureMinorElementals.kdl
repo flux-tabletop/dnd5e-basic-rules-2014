@@ -1,5 +1,5 @@
 spell name="Conjure Minor Elementals" {
-	tag "Conjuration"
+	school "Conjuration"
 	tag "Druid"
 	tag "Wizard"
 	rank 4

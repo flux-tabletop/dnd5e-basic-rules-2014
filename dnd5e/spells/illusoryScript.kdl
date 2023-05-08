@@ -1,5 +1,5 @@
 spell name="Illusory Script" {
-	tag "Illusion"
+	school "Illusion"
 	tag "Bard"
 	tag "Warlock"
 	tag "Wizard"

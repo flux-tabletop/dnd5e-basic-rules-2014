@@ -1,5 +1,5 @@
 spell name="Cloudkill" {
-	tag "Conjuration"
+	school "Conjuration"
 	tag "Sorcerer"
 	tag "Wizard"
 	rank 5

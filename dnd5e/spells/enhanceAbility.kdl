@@ -1,5 +1,5 @@
 spell name="Enhance Ability" {
-	tag "Transmutation"
+	school "Transmutation"
 	tag "Bard"
 	tag "Cleric"
 	tag "Druid"

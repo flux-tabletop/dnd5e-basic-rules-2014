@@ -1,5 +1,5 @@
 spell name="Otto's Irresistible Dance" {
-	tag "Enchantment"
+	school "Enchantment"
 	tag "Bard"
 	tag "Wizard"
 	rank 6

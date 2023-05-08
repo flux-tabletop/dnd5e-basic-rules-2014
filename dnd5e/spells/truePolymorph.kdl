@@ -1,5 +1,5 @@
 spell name="True Polymorph" {
-	tag "Transmutation"
+	school "Transmutation"
 	tag "Bard"
 	tag "Warlock"
 	tag "Wizard"

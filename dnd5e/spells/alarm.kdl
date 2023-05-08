@@ -1,5 +1,5 @@
 spell name="Alarm" {
-	tag "Abjuration"
+	school "Abjuration"
 	tag "Ranger"
 	tag "Wizard"
 	rank 1

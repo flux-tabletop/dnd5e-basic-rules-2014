@@ -1,5 +1,5 @@
 spell name="Conjure Woodland Beings" {
-	tag "Conjuration"
+	school "Conjuration"
 	tag "Druid"
 	tag "Ranger"
 	rank 4

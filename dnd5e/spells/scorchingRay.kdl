@@ -1,5 +1,5 @@
 spell name="Scorching Ray" {
-	tag "Evocation"
+	school "Evocation"
 	tag "Sorcerer"
 	tag "Wizard"
 	rank 2

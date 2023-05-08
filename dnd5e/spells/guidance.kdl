@@ -1,5 +1,5 @@
 spell name="Guidance" {
-	tag "Divination"
+	school "Divination"
 	tag "Cleric"
 	tag "Druid"
 	rank 0

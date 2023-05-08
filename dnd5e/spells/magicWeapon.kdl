@@ -1,5 +1,5 @@
 spell name="Magic Weapon" {
-	tag "Transmutation"
+	school "Transmutation"
 	tag "Paladin"
 	tag "Wizard"
 	rank 2

@@ -1,5 +1,5 @@
 spell name="Charm Person" {
-	tag "Enchantment"
+	school "Enchantment"
 	tag "Bard"
 	tag "Druid"
 	tag "Sorcerer"

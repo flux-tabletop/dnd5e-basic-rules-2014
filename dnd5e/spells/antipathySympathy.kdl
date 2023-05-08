@@ -1,5 +1,5 @@
 spell name="Antipathy/Sympathy" {
-	tag "Enchantment"
+	school "Enchantment"
 	tag "Druid"
 	tag "Wizard"
 	rank 8

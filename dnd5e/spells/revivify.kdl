@@ -1,5 +1,5 @@
 spell name="Revivify" {
-	tag "Necromancy"
+	school "Necromancy"
 	tag "Cleric"
 	tag "Paladin"
 	rank 3

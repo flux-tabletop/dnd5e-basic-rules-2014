@@ -1,5 +1,5 @@
 spell name="Phantasmal Killer" {
-	tag "Illusion"
+	school "Illusion"
 	tag "Wizard"
 	rank 4
 	casting-time "Action"

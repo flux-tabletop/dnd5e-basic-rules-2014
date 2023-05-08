@@ -1,5 +1,5 @@
 spell name="Hypnotic Pattern" {
-	tag "Illusion"
+	school "Illusion"
 	tag "Bard"
 	tag "Sorcerer"
 	tag "Warlock"

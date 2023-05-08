@@ -1,5 +1,5 @@
 spell name="Mass Heal" {
-	tag "Evocation"
+	school "Evocation"
 	tag "Cleric"
 	rank 9
 	casting-time "Action"

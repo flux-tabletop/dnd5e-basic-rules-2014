@@ -1,5 +1,5 @@
 spell name="Spiritual Weapon" {
-	tag "Evocation"
+	school "Evocation"
 	tag "Cleric"
 	rank 2
 	casting-time "Bonus"

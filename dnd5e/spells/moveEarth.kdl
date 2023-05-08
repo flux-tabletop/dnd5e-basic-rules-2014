@@ -1,5 +1,5 @@
 spell name="Move Earth" {
-	tag "Transmutation"
+	school "Transmutation"
 	tag "Druid"
 	tag "Sorcerer"
 	tag "Wizard"

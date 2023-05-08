@@ -1,5 +1,5 @@
 spell name="Prismatic Spray" {
-	tag "Evocation"
+	school "Evocation"
 	tag "Sorcerer"
 	tag "Wizard"
 	rank 7

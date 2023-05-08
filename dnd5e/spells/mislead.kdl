@@ -1,5 +1,5 @@
 spell name="Mislead" {
-	tag "Illusion"
+	school "Illusion"
 	tag "Bard"
 	tag "Wizard"
 	rank 5

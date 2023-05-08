@@ -1,5 +1,5 @@
 spell name="Vampiric Touch" {
-	tag "Necromancy"
+	school "Necromancy"
 	tag "Warlock"
 	tag "Wizard"
 	rank 3

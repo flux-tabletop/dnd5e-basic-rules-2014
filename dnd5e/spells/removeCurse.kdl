@@ -1,5 +1,5 @@
 spell name="Remove Curse" {
-	tag "Abjuration"
+	school "Abjuration"
 	tag "Cleric"
 	tag "Paladin"
 	tag "Warlock"

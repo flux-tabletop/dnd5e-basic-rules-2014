@@ -1,5 +1,5 @@
 spell name="Chill Touch" {
-	tag "Necromancy"
+	school "Necromancy"
 	tag "Sorcerer"
 	tag "Warlock"
 	tag "Wizard"

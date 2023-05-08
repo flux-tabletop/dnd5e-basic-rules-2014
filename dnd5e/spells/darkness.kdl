@@ -1,5 +1,5 @@
 spell name="Darkness" {
-	tag "Evocation"
+	school "Evocation"
 	tag "Sorcerer"
 	tag "Warlock"
 	tag "Wizard"

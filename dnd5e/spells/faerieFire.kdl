@@ -1,5 +1,5 @@
 spell name="Faerie Fire" {
-	tag "Evocation"
+	school "Evocation"
 	tag "Bard"
 	tag "Druid"
 	rank 1

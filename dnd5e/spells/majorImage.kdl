@@ -1,5 +1,5 @@
 spell name="Major Image" {
-	tag "Illusion"
+	school "Illusion"
 	tag "Bard"
 	tag "Sorcerer"
 	tag "Warlock"

@@ -1,5 +1,5 @@
 spell name="Magic Missile" {
-	tag "Evocation"
+	school "Evocation"
 	tag "Sorcerer"
 	tag "Wizard"
 	rank 1

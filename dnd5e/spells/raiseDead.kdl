@@ -1,5 +1,5 @@
 spell name="Raise Dead" {
-	tag "Necromancy"
+	school "Necromancy"
 	tag "Bard"
 	tag "Cleric"
 	tag "Paladin"

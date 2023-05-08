@@ -1,5 +1,5 @@
 spell name="Arcane Lock" {
-	tag "Abjuration"
+	school "Abjuration"
 	tag "Wizard"
 	rank 2
 	casting-time "Action"

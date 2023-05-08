@@ -1,5 +1,5 @@
 spell name="Harm" {
-	tag "Necromancy"
+	school "Necromancy"
 	tag "Cleric"
 	rank 6
 	casting-time "Action"

@@ -1,5 +1,5 @@
 spell name="Create Undead" {
-	tag "Necromancy"
+	school "Necromancy"
 	tag "Cleric"
 	tag "Warlock"
 	tag "Wizard"

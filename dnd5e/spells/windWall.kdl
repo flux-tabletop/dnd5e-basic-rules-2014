@@ -1,5 +1,5 @@
 spell name="Wind Wall" {
-	tag "Evocation"
+	school "Evocation"
 	tag "Druid"
 	tag "Ranger"
 	rank 3

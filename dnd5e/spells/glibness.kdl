@@ -1,5 +1,5 @@
 spell name="Glibness" {
-	tag "Transmutation"
+	school "Transmutation"
 	tag "Bard"
 	tag "Warlock"
 	rank 8

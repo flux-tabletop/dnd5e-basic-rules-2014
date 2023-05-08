@@ -1,5 +1,5 @@
 spell name="Ray of Enfeeblement" {
-	tag "Necromancy"
+	school "Necromancy"
 	tag "Warlock"
 	tag "Wizard"
 	rank 2

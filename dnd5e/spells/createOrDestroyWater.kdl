@@ -1,5 +1,5 @@
 spell name="Create or Destroy Water" {
-	tag "Transmutation"
+	school "Transmutation"
 	tag "Cleric"
 	tag "Druid"
 	rank 1

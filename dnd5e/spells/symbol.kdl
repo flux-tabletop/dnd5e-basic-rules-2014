@@ -1,5 +1,5 @@
 spell name="Symbol" {
-	tag "Abjuration"
+	school "Abjuration"
 	tag "Bard"
 	tag "Cleric"
 	tag "Wizard"

@@ -1,5 +1,5 @@
 spell name="Reincarnate" {
-	tag "Transmutation"
+	school "Transmutation"
 	tag "Druid"
 	rank 5
 	casting-time "Hour" 1

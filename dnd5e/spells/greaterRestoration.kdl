@@ -1,5 +1,5 @@
 spell name="Greater Restoration" {
-	tag "Abjuration"
+	school "Abjuration"
 	tag "Bard"
 	tag "Cleric"
 	tag "Druid"

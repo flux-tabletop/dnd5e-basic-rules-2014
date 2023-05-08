@@ -1,5 +1,5 @@
 spell name="Banishment" {
-	tag "Abjuration"
+	school "Abjuration"
 	tag "Cleric"
 	tag "Paladin"
 	tag "Sorcerer"

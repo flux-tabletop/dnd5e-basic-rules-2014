@@ -1,5 +1,5 @@
 spell name="Blade Barrier" {
-	tag "Evocation"
+	school "Evocation"
 	tag "Cleric"
 	rank 6
 	casting-time "Action"

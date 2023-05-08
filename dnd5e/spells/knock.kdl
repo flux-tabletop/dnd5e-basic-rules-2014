@@ -1,5 +1,5 @@
 spell name="Knock" {
-	tag "Transmutation"
+	school "Transmutation"
 	tag "Bard"
 	tag "Sorcerer"
 	tag "Wizard"

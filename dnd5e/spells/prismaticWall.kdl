@@ -1,5 +1,5 @@
 spell name="Prismatic Wall" {
-	tag "Abjuration"
+	school "Abjuration"
 	tag "Wizard"
 	rank 9
 	casting-time "Action"

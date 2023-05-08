@@ -1,5 +1,5 @@
 spell name="Teleportation Circle" {
-	tag "Conjuration"
+	school "Conjuration"
 	tag "Bard"
 	tag "Sorcerer"
 	tag "Wizard"

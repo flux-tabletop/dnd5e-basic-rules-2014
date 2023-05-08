@@ -1,5 +1,5 @@
 spell name="Animate Objects" {
-	tag "Transmutation"
+	school "Transmutation"
 	tag "Bard"
 	tag "Sorcerer"
 	tag "Wizard"

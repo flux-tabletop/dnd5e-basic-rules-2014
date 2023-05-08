@@ -1,5 +1,5 @@
 spell name="Fire Shield" {
-	tag "Evocation"
+	school "Evocation"
 	tag "Wizard"
 	rank 4
 	casting-time "Action"

@@ -1,5 +1,5 @@
 spell name="Divine Word" {
-	tag "Evocation"
+	school "Evocation"
 	tag "Cleric"
 	rank 7
 	casting-time "Bonus"

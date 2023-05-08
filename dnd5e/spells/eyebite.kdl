@@ -1,5 +1,5 @@
 spell name="Eyebite" {
-	tag "Necromancy"
+	school "Necromancy"
 	tag "Bard"
 	tag "Sorcerer"
 	tag "Warlock"

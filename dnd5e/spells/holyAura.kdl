@@ -1,5 +1,5 @@
 spell name="Holy Aura" {
-	tag "Abjuration"
+	school "Abjuration"
 	tag "Cleric"
 	rank 8
 	casting-time "Action"

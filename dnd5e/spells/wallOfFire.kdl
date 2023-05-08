@@ -1,5 +1,5 @@
 spell name="Wall of Fire" {
-	tag "Evocation"
+	school "Evocation"
 	tag "Druid"
 	tag "Sorcerer"
 	tag "Wizard"

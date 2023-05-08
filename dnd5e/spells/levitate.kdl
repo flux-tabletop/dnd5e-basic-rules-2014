@@ -1,5 +1,5 @@
 spell name="Levitate" {
-	tag "Transmutation"
+	school "Transmutation"
 	tag "Sorcerer"
 	tag "Wizard"
 	rank 2

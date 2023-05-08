@@ -1,5 +1,5 @@
 spell name="Hallow" {
-	tag "Evocation"
+	school "Evocation"
 	tag "Cleric"
 	rank 5
 	casting-time "Hour" 24

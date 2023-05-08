@@ -1,5 +1,5 @@
 spell name="Fog Cloud" {
-	tag "Conjuration"
+	school "Conjuration"
 	tag "Druid"
 	tag "Ranger"
 	tag "Sorcerer"

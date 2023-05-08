@@ -1,5 +1,5 @@
 spell name="Chain Lightning" {
-	tag "Evocation"
+	school "Evocation"
 	tag "Sorcerer"
 	tag "Wizard"
 	rank 6

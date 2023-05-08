@@ -1,5 +1,5 @@
 spell name="Branding Smite" {
-	tag "Evocation"
+	school "Evocation"
 	tag "Paladin"
 	rank 2
 	casting-time "Bonus"

@@ -1,5 +1,5 @@
 spell name="Beacon of Hope" {
-	tag "Abjuration"
+	school "Abjuration"
 	tag "Cleric"
 	rank 3
 	casting-time "Action"

@@ -1,5 +1,5 @@
 spell name="Tree Stride" {
-	tag "Conjuration"
+	school "Conjuration"
 	tag "Druid"
 	tag "Ranger"
 	rank 5

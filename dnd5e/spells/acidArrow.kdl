@@ -1,5 +1,5 @@
 spell name="Acid Arrow" {
-	tag "Evocation"
+	school "Evocation"
 	tag "Wizard"
 	rank 2
 	casting-time "Action"

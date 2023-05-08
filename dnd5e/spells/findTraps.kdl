@@ -1,5 +1,5 @@
 spell name="Find Traps" {
-	tag "Divination"
+	school "Divination"
 	tag "Cleric"
 	tag "Druid"
 	tag "Ranger"

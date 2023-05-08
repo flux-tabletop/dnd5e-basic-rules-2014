@@ -1,5 +1,5 @@
 spell name="Color Spray" {
-	tag "Illusion"
+	school "Illusion"
 	tag "Sorcerer"
 	tag "Wizard"
 	rank 1

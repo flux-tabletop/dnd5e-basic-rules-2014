@@ -1,5 +1,5 @@
 spell name="Produce Flame" {
-	tag "Conjuration"
+	school "Conjuration"
 	tag "Druid"
 	rank 0
 	casting-time "Action"

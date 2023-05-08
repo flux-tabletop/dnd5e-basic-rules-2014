@@ -1,5 +1,5 @@
 spell name="Modify Memory" {
-	tag "Enchantment"
+	school "Enchantment"
 	tag "Bard"
 	tag "Wizard"
 	rank 5

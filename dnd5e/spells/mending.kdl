@@ -1,5 +1,5 @@
 spell name="Mending" {
-	tag "Transmutation"
+	school "Transmutation"
 	tag "Bard"
 	tag "Cleric"
 	tag "Druid"

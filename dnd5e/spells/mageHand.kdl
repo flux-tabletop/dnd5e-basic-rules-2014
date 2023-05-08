@@ -1,5 +1,5 @@
 spell name="Mage Hand" {
-	tag "Conjuration"
+	school "Conjuration"
 	tag "Bard"
 	tag "Sorcerer"
 	tag "Warlock"

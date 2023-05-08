@@ -1,5 +1,5 @@
 spell name="Geas" {
-	tag "Enchantment"
+	school "Enchantment"
 	tag "Bard"
 	tag "Cleric"
 	tag "Druid"

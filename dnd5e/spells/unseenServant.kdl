@@ -1,5 +1,5 @@
 spell name="Unseen Servant" {
-	tag "Conjuration"
+	school "Conjuration"
 	tag "Bard"
 	tag "Warlock"
 	tag "Wizard"

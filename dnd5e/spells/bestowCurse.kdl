@@ -1,5 +1,5 @@
 spell name="Bestow Curse" {
-	tag "Necromancy"
+	school "Necromancy"
 	tag "Bard"
 	tag "Cleric"
 	tag "Wizard"

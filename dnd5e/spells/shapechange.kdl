@@ -1,5 +1,5 @@
 spell name="Shapechange" {
-	tag "Transmutation"
+	school "Transmutation"
 	tag "Druid"
 	tag "Wizard"
 	rank 9

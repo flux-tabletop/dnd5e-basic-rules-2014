@@ -1,5 +1,5 @@
 spell name="Sunburst" {
-	tag "Evocation"
+	school "Evocation"
 	tag "Druid"
 	tag "Sorcerer"
 	tag "Wizard"

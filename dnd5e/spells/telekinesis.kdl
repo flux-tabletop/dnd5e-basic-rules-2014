@@ -1,5 +1,5 @@
 spell name="Telekinesis" {
-	tag "Transmutation"
+	school "Transmutation"
 	tag "Sorcerer"
 	tag "Wizard"
 	rank 5

@@ -1,5 +1,5 @@
 spell name="Maze" {
-	tag "Conjuration"
+	school "Conjuration"
 	tag "Wizard"
 	rank 8
 	casting-time "Action"

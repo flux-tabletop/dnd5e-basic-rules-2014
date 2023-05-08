@@ -1,5 +1,5 @@
 spell name="Antimagic Field" {
-	tag "Abjuration"
+	school "Abjuration"
 	tag "Cleric"
 	tag "Wizard"
 	rank 8

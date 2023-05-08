@@ -1,5 +1,5 @@
 spell name="Clairvoyance" {
-	tag "Divination"
+	school "Divination"
 	tag "Bard"
 	tag "Cleric"
 	tag "Sorcerer"

@@ -1,5 +1,5 @@
 spell name="True Seeing" {
-	tag "Divination"
+	school "Divination"
 	tag "Bard"
 	tag "Cleric"
 	tag "Sorcerer"

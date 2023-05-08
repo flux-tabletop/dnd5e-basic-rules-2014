@@ -1,5 +1,5 @@
 spell name="Find the Path" {
-	tag "Divination"
+	school "Divination"
 	tag "Bard"
 	tag "Cleric"
 	tag "Druid"

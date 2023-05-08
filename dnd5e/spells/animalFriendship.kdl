@@ -1,5 +1,5 @@
 spell name="Animal Friendship" {
-	tag "Enchantment"
+	school "Enchantment"
 	tag "Bard"
 	tag "Druid"
 	tag "Ranger"

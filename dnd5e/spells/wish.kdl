@@ -1,5 +1,5 @@
 spell name="Wish" {
-	tag "Conjuration"
+	school "Conjuration"
 	tag "Sorcerer"
 	tag "Wizard"
 	rank 9

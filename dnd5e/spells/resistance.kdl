@@ -1,5 +1,5 @@
 spell name="Resistance" {
-	tag "Abjuration"
+	school "Abjuration"
 	tag "Cleric"
 	tag "Druid"
 	rank 0

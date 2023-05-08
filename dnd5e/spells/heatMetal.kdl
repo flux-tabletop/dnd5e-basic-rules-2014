@@ -1,5 +1,5 @@
 spell name="Heat Metal" {
-	tag "Transmutation"
+	school "Transmutation"
 	tag "Bard"
 	tag "Druid"
 	rank 2
