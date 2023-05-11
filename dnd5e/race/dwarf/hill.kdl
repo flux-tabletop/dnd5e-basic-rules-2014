@@ -1,0 +1,12 @@
+subrace name="Hill Dwarf" {
+	requirement "Race" "Dwarf"
+	description "As a hill dwarf, you have keen senses, deep intuition, and remarkable resilience. The gold dwarves of Faerûn in their mighty southern kingdom are hill dwarves, as are the exiled Neidar and the debased Klar of Krynn in the Dragonlance setting."
+	mutator "ability_score" {
+		ability "Specific" (Ability)"Wisdom"
+		bonus 1
+	}
+	feature name="Dwarven Toughness" {
+		description "Your hit point maximum increases by 1, and it increases by 1 every time you gain a level."
+		mutator "add_max_hit_points" (Evaluator)"get_level"
+	}
+}

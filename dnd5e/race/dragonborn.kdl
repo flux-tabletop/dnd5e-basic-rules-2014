@@ -1,0 +1,33 @@
+race name="Dragonborn" {
+	mutator "ability_score" {
+		ability "Specific" "Strength"
+		bonus 2
+	}
+	mutator "ability_score" {
+		ability "Specific" "Charisma"
+		bonus 1
+	}
+	mutator "extend_life_expectancy" 80
+	mutator-todo "add_size" {
+		// height: 56"+[4,32]" = [60,88] = [6', 7'4"]
+		height base=58 bonus=(Roll)"4d8"
+		// weight: 115lb+([4,32]*[2,8]) = [123, 371]lb
+		weight base=115 multiplier=(Roll)"2d4"
+	}
+	mutator "speed" "Walking" (Base)30
+
+	mutator "add_proficiency" (Language)"Specific" "Common"
+	mutator "add_proficiency" (Language)"Specific" "Draconic"
+}
+/*
+	Dragonborn Names
+	Dragonborn have personal names given at birth, but they put their clan names first as a mark of honor. A childhood name or nickname is often used among clutchmates as a descriptive term or a term of endearment. The name might recall an event or center on a habit.
+
+	Male Names: Arjhan, Balasar, Bharash, Donaar, Ghesh, Heskan, Kriv, Medrash, Mehen, Nadarr, Pandjed, Patrin, Rhogar, Shamash, Shedinn, Tarhun, Torinn
+
+	Female Names: Akra, Biri, Daar, Farideh, Harann, Havilar, Jheri, Kava, Korinn, Mishann, Nala, Perra, Raiann, Sora, Surina, Thava, Uadjit
+
+	Childhood Names: Climber, Earbender, Leaper, Pious, Shieldbiter, Zealous
+
+	Clan Names: Clethtinthiallor, Daardendrian, Delmirev, Drachedandion, Fenkenkabradon, Kepeshkmolik, Kerrhylon, Kimbatuul, Linxakasendalor, Myastan, Nemmonis, Norixius, Ophinshtalajiir, Prexijandilin, Shestendeliath, Turnuroth, Verthisathurgiesh, Yarjerit
+*/

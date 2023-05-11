@@ -4,8 +4,10 @@ race name="Halfling" {
 		bonus 2
 	}
 	mutator "extend_life_expectancy" 250
-	mutator "add_max_height" 34
-	mutator "add_max_height" (Roll)"1d10"
+	mutator-todo "add_size" {
+		height base=31 bonus=(Roll)"2d4"
+		weight base=35 multiplier=1
+	}
 	mutator "speed" "Walking" (Base)25
 	mutator "add_proficiency" (Language)"Specific" "Common"
 	mutator "add_proficiency" (Language)"Specific" "Halfling"
@@ -29,28 +31,3 @@ race name="Halfling" {
 
 	Family Names: Brushgather, Goodbarrel, Greenbottle, High-hill, Hilltopple, Leagallow, Tealeaf, Thorngage, Tosscobble, Underbough
 */
-subrace name="Lightfoot" {
-	requirement "Race" "Halfling"
-	description "As a lightfoot halfling, you can easily hide from notice, even using other people as cover. You're inclined to be affable and get along well with others. In the Forgotten Realms, lightfoot halflings have spread the farthest and thus are the most common variety.
-	Lightfoots are more prone to wanderlust than other halflings, and often dwell alongside other races or take up a nomadic life. In the world of Greyhawk, these halflings are called hairfeet or tallfellows."
-	mutator "ability_score" {
-		ability "Specific" "Charisma"
-		bonus 1
-	}
-	feature name="Naturally Stealthy" {
-		description "You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you."
-	}
-}
-subrace name="Stout" {
-	requirement "Race" "Halfling"
-	description "As a stout halfling, you're hardier than average and have some resistance to poison. Some say that stouts have dwarven blood. In the Forgotten Realms, these halflings are called stronghearts, and they're most common in the south."
-	mutator "ability_score" {
-		ability "Specific" "Constitution"
-		bonus 1
-	}
-	feature name="Stout Resilience" {
-		description "You have advantage on saving throws against poison, and you have resistance against poison damage."
-		mutator "add_modifier" "Advantage" (SavingThrow)"All" context="poison"
-		mutator "add_defense" "Resistance" (DamageType)"Poison" 
-	}
-}

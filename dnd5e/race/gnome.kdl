@@ -4,9 +4,12 @@ race name="Gnome" {
 		bonus 2
 	}
 	mutator "extend_life_expectancy" 500
-	// TODO: mutator "size" "Small"
-	mutator "add_max_height" 36
-	mutator "add_max_height" (Roll)"1d12"
+	mutator-todo "add_size" {
+		// height: 32"+[2,12]" = [34,44] = [2'10", 3'6"]
+		height base=32 bonus=(Roll)"2d6"
+		// weight: 30lb+([2,12]*[1,4]) = [32,78]lb
+		weight base=30 multiplier=(Roll)"1d4"
+	}
 	mutator "speed" "Walking" (Base)25
 	mutator "sense" "Darkvision" (Base)60
 	feature name="Gnome Cunning" {

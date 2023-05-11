@@ -1,8 +1,15 @@
 race name="Human" {
 	description "It's hard to make generalizations about humans."
 	mutator "extend_life_expectancy" 80
-	mutator "add_max_height" 58
-	mutator "add_max_height" (Roll)"2d10"
+	mutator-todo "add_size" {
+		// height = base + roll
+		// weight = base + height roll * weight roll
+		// size = height < 45" ? small : medium
+		// height: 56"+[2,20]" = [58,76] = [4'10", 6'4"]
+		height base=56 bonus=(Roll)"2d10"
+		// weight: 110lb+([2,20]*[2,8]) = [114, 270]lb
+		weight base=110 multiplier=(Roll)"2d4"
+	}
 	mutator "speed" "Walking" (Base)30
 	mutator "ability_score" {
 		ability "Specific" (Ability)"str"

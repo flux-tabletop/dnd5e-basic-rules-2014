@@ -1,0 +1,27 @@
+subrace name="Wood Elf" {
+	requirement "Race" "Elf"
+	description "As a wood elf, you have keen senses and intuition, and your fleet feet carry you quickly and stealthily through your native forests. Wood elves (also called wild elves, green elves, or forest elves) are reclusive and distrusting of non-elves.
+	Wood elves' skin tends to be copperish in hue, sometimes with traces of green. Their hair tends toward browns and blacks, but it is occasionally blond or copper-colored. Their eyes are green, brown, or hazel."
+	// adjusts the existing size forumla so the base is increased by 10
+	mutator-todo "add_size" {
+		weight base=10
+	}
+	mutator "ability_score" {
+		ability "Specific" (Ability)"Wisdom"
+		bonus 1
+	}
+	feature name="Elf Weapon Training" {
+		description "You have proficiency with the longsword, shortsword, shortbow, and longbow."
+		mutator "add_proficiency" (Weapon)"Longsword"
+		mutator "add_proficiency" (Weapon)"Shortsword"
+		mutator "add_proficiency" (Weapon)"Shortbow"
+		mutator "add_proficiency" (Weapon)"Longbow"
+	}
+	feature name="Fleet of Foot" {
+		description "Your base walking speed is at least 35 feet."
+		mutator "speed" "Walking" (Base)35
+	}
+	feature name="Mask of the Wild" {
+		description "You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+	}
+}

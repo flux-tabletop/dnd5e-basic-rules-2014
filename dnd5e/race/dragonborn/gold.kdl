@@ -1,20 +1,5 @@
-race name="Dragonborn (Gold)" {
-	mutator "ability_score" {
-		ability "Specific" "Strength"
-		bonus 2
-	}
-	mutator "ability_score" {
-		ability "Specific" "Charisma"
-		bonus 1
-	}
-	mutator "extend_life_expectancy" 80
-	mutator "add_max_height" 72
-	mutator "add_max_height" (Roll)"3d6"
-	mutator "speed" "Walking" (Base)30
-
-	mutator "add_proficiency" (Language)"Specific" "Common"
-	mutator "add_proficiency" (Language)"Specific" "Draconic"
-
+subrace name="Dragonborn: Gold Dragon Ancestry" {
+	requirement "Race" "Dragonborn"
 	mutator "add_defense" "Resistance" (DamageType)"Fire"
 	feature name="Breath Weapon" {
 		description "You can use your action to exhale destructive energy. With your Gold dragon ancestry, you emit Fire damage in a 15 ft. cone.
@@ -52,15 +37,3 @@ race name="Dragonborn (Gold)" {
 		}
 	}
 }
-/*
-	Dragonborn Names
-	Dragonborn have personal names given at birth, but they put their clan names first as a mark of honor. A childhood name or nickname is often used among clutchmates as a descriptive term or a term of endearment. The name might recall an event or center on a habit.
-
-	Male Names: Arjhan, Balasar, Bharash, Donaar, Ghesh, Heskan, Kriv, Medrash, Mehen, Nadarr, Pandjed, Patrin, Rhogar, Shamash, Shedinn, Tarhun, Torinn
-
-	Female Names: Akra, Biri, Daar, Farideh, Harann, Havilar, Jheri, Kava, Korinn, Mishann, Nala, Perra, Raiann, Sora, Surina, Thava, Uadjit
-
-	Childhood Names: Climber, Earbender, Leaper, Pious, Shieldbiter, Zealous
-
-	Clan Names: Clethtinthiallor, Daardendrian, Delmirev, Drachedandion, Fenkenkabradon, Kepeshkmolik, Kerrhylon, Kimbatuul, Linxakasendalor, Myastan, Nemmonis, Norixius, Ophinshtalajiir, Prexijandilin, Shestendeliath, Turnuroth, Verthisathurgiesh, Yarjerit
-*/

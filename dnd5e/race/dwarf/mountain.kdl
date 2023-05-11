@@ -1,0 +1,21 @@
+subrace name="Mountain Dwarf" {
+	requirement "Race" "Dwarf"
+	description "As a mountain dwarf, you're strong and hardy, accustomed to a difficult life in rugged terrain. You're probably on the tall side (for a dwarf), and tend toward lighter coloration. The shield dwarves of northern Faerûn, as well as the ruling Hylar clan and the noble Daewar clan of Dragonlance, are mountain dwarves."
+	mutator-todo "add_size" {
+		height base=4
+		weight base=15
+	}
+	mutator "ability_score" {
+		ability "Specific" (Ability)"Strength"
+		bonus 2
+	}
+	feature name="Dwarven Toughness" {
+		description "Your hit point maximum increases by 1, and it increases by 1 every time you gain a level."
+		mutator "add_max_hit_points" (Evaluator)"get_level"
+	}
+	feature name="Dwarven Armor Training" {
+		description "You have proficiency with light and medium armor."
+		mutator "add_proficiency" (Armor)"Light"
+		mutator "add_proficiency" (Armor)"Medium"
+	}
+}
