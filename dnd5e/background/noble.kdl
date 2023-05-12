@@ -29,8 +29,7 @@ background name="Noble" {
 	feature name="Position of Privilege" {
 		description "Thanks to your noble birth, people are inclined to think the best of you. You are welcome in high society, and people assume you have the right to be wherever you are. The common folk make every effort to accommodate you and avoid your displeasure, and other people of high birth treat you as a member of the same social sphere. You can secure an audience with a local noble if you need to."
 	}
-	/*
-	mutator "suggested_trait" "Personality" {
+	mutator "suggested_personality" "Trait" {
 		option "My eloquent flattery makes everyone I talk to feel like the most wonderful and important person in the world."
 		option "The common folk love me for my kindness and generosity."
 		option "No one could doubt by looking at my regal bearing that I am a cut above the unwashed masses."
@@ -40,7 +39,7 @@ background name="Noble" {
 		option "My favor, once lost, is lost forever."
 		option "If you do me an injury, I will crush you, ruin your name, and salt your fields."
 	}
-	mutator "suggested_trait" "Ideal" {
+	mutator "suggested_personality" "Ideal" {
 		option "Respect. Respect is due to me because of my position, but all people regardless of station deserve to be treated with dignity. (Good)"
 		option "Responsibility. It is my duty to respect the authority of those above me, just as those below me must respect mine. (Lawful)"
 		option "Independence. I must prove that I can handle myself without the coddling of my family. (Chaotic)"
@@ -48,7 +47,7 @@ background name="Noble" {
 		option "Family. Blood runs thicker than water. (Any)"
 		option "Noble Obligation. It is my duty to protect and care for the people beneath me. (Good)"
 	}
-	mutator "suggested_trait" "Bond" {
+	mutator "suggested_personality" "Bond" {
 		option "I will face any challenge to win the approval of my family."
 		option "My house's alliance with another noble family must be sustained at all costs."
 		option "Nothing is more important than the other members of my family."
@@ -56,7 +55,7 @@ background name="Noble" {
 		option "My loyalty to my sovereign is unwavering."
 		option "The common folk must see me as a hero of the people."
 	}
-	mutator "suggested_trait" "Flaw" {
+	mutator "suggested_personality" "Flaw" {
 		option "I secretly believe that everyone is beneath me."
 		option "I hide a truly scandalous secret that could ruin my family forever."
 		option "I too often hear veiled insults and threats in every word addressed to me, and I'm quick to anger."
@@ -64,5 +63,4 @@ background name="Noble" {
 		option "In fact, the world does revolve around me."
 		option "By my words and actions, I often bring shame to my family."
 	}
-	*/
 }

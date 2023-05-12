@@ -24,8 +24,7 @@ background name="Acolyte" {
 		
 		Acolytes are shaped by their experience in temples or other religious communities. Their study of the history and tenets of their faith and their relationships to temples, shrines, or hierarchies affect their mannerisms and ideals. Their flaws might be some hidden hypocrisy or heretical idea, or an ideal or bond taken to an extreme."
 	}
-	/* TODO: sugested_trait
-	mutator "suggested_trait" "Personality" {
+	mutator "suggested_personality" "Trait" {
 		option "I idolize a particular hero of my faith, and constantly refer to that person's deeds and example."
 		option "I can find common ground between the fiercest enemies, empathizing with them and always working toward peace."
 		option "I see omens in every event and action. The gods try to speak to us, we just need to listen."
@@ -35,7 +34,7 @@ background name="Acolyte" {
 		option "I've enjoyed fine food, drink, and high society among my temple's elite. Rough living grates on me."
 		option "I've spent so long in the temple that I have little practical experience dealing with people in the outside world."
 	}
-	mutator "suggested_trait" "Ideal" {
+	mutator "suggested_personality" "Ideal" {
 		option "Tradition. The ancient traditions of worship and sacrifice must be preserved and upheld. (Lawful)"
 		option "Charity. I always try to help those in need, no matter what the personal cost. (Good)"
 		option "Change. We must help bring about the changes the gods are constantly working in the world. (Chaotic)"
@@ -43,7 +42,7 @@ background name="Acolyte" {
 		option "Faith. I trust that my deity will guide my actions. I have faith that if I work hard, things will go well. (Lawful)"
 		option "Aspiration. I seek to prove myself worthy of my god’s favor by matching my actions against his or her teachings. (Any)"
 	}
-	mutator "suggested_trait" "Bond" {
+	mutator "suggested_personality" "Bond" {
 		option "I would die to recover an ancient relic of my faith that was lost long ago."
 		option "I will someday get revenge on the corrupt temple hierarchy who branded me a heretic."
 		option "I owe my life to the priest who took me in when my parents died."
@@ -51,7 +50,7 @@ background name="Acolyte" {
 		option "I will do anything to protect the temple where I served."
 		option "I seek to preserve a sacred text that my enemies consider heretical and seek to destroy."
 	}
-	mutator "suggested_trait" "Flaw" {
+	mutator "suggested_personality" "Flaw" {
 		option "I judge others harshly, and myself even more severely."
 		option "I put too much trust in those who wield power within my temple’s hierarchy."
 		option "My piety sometimes leads me to blindly trust those that profess faith in my god."
@@ -59,5 +58,4 @@ background name="Acolyte" {
 		option "I am suspicious of strangers and expect the worst of them."
 		option "Once I pick a goal, I become obsessed with it to the detriment of everything else in my life."
 	}
-	*/
 }

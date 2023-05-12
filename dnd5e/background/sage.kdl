@@ -27,8 +27,7 @@ background name="Sage" {
 	feature name="Researcher" {
 		description "When you attempt to learn or recall a piece of lore, if you do not know that information, you often know where and from whom you can obtain it. Usually, this information comes from a library, scriptorium, university, or a sage or other learned person or creature. Your DM might rule that the knowledge you seek is secreted away in an almost inaccessible place, or that it simply cannot be found. Unearthing the deepest secrets of the multiverse can require an adventure or even a whole campaign."
 	}
-	/*
-	mutator "suggested_trait" "Personality" {
+	mutator "suggested_personality" "Trait" {
 		option "I use polysyllabic words that convey the impression of great erudition."
 		option "I've read every book in the world's greatest libraries — or I like to boast that I have."
 		option "I'm used to helping out those who aren't as smart as I am, and I patiently explain anything and everything to others."
@@ -38,7 +37,7 @@ background name="Sage" {
 		option "I am horribly, horribly awkward in social situations."
 		option "I'm convinced that people are always trying to steal my secrets."
 	}
-	mutator "suggested_trait" "Ideal" {
+	mutator "suggested_personality" "Ideal" {
 		option "Knowledge. The path to power and self-improvement is through knowledge. (Neutral)"
 		option "Beauty. What is beautiful points us beyond itself toward what is true. (Good)"
 		option "Logic. Emotions must not cloud our logical thinking. (Lawful)"
@@ -46,7 +45,7 @@ background name="Sage" {
 		option "Power. Knowledge is the path to power and domination. (Evil)"
 		option "Self-Improvement. The goal of a life of study is the betterment of oneself. (Any)"
 	}
-	mutator "suggested_trait" "Bond" {
+	mutator "suggested_personality" "Bond" {
 		option "It is my duty to protect my students."
 		option "I have an ancient text that holds terrible secrets that must not fall into the wrong hands."
 		option "I work to preserve a library, university, scriptorium, or monastery."
@@ -54,7 +53,7 @@ background name="Sage" {
 		option "I've been searching my whole life for the answer to a certain question."
 		option "I sold my soul for knowledge. I hope to do great deeds and win it back."
 	}
-	mutator "suggested_trait" "Flaw" {
+	mutator "suggested_personality" "Flaw" {
 		option "I am easily distracted by the promise of information."
 		option "Most people scream and run when they see a demon. I stop and take notes on its anatomy."
 		option "Unlocking an ancient mystery is worth the price of a civilization."
@@ -62,5 +61,4 @@ background name="Sage" {
 		option "I speak without really thinking through my words, invariably insulting others."
 		option "I can't keep a secret to save my life, or anyone else's."
 	}
-	*/
 }
