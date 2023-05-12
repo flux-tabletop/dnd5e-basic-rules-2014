@@ -4,7 +4,7 @@ race name="Dwarf" {
 		bonus 2
 	}
 	mutator "extend_life_expectancy" 350
-	mutator-todo "add_size" {
+	mutator "add_size" {
 		height base=44 bonus=(Roll)"2d4"
 		weight base=115 multiplier=(Roll)"2d6"
 	}

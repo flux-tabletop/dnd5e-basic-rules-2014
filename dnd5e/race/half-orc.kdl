@@ -8,7 +8,7 @@ race name="Half-Orc" {
 		bonus 1
 	}
 	mutator "extend_life_expectancy" 75
-	mutator-todo "add_size" {
+	mutator "add_size" {
 		// height: 58"+[2,24]" = [60,82] = [5', 6'10"]
 		height base=58 bonus=(Roll)"2d12"
 		// weight: 120lb+([2,24]*[2,8]) = [124, 312]lb

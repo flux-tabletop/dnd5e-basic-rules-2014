@@ -1,7 +1,7 @@
 race name="Human" {
 	description "It's hard to make generalizations about humans."
 	mutator "extend_life_expectancy" 80
-	mutator-todo "add_size" {
+	mutator "add_size" {
 		// height = base + roll
 		// weight = base + height roll * weight roll
 		// size = height < 45" ? small : medium

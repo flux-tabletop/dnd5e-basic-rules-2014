@@ -8,7 +8,7 @@ race name="Dragonborn" {
 		bonus 1
 	}
 	mutator "extend_life_expectancy" 80
-	mutator-todo "add_size" {
+	mutator "add_size" {
 		// height: 56"+[4,32]" = [60,88] = [6', 7'4"]
 		height base=58 bonus=(Roll)"4d8"
 		// weight: 115lb+([4,32]*[2,8]) = [123, 371]lb

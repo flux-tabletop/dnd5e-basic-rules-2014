@@ -4,7 +4,7 @@ race name="Halfling" {
 		bonus 2
 	}
 	mutator "extend_life_expectancy" 250
-	mutator-todo "add_size" {
+	mutator "add_size" {
 		height base=31 bonus=(Roll)"2d4"
 		weight base=35 multiplier=1
 	}
