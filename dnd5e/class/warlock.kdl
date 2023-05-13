@@ -381,10 +381,12 @@ class name="Warlock" {
 			}
 			mutator "by_level" class="Warlock" {
 				level 11 {
-					mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
+					mutator "spellcasting" "add_prepared" ability="Charisma" {
 						spell "Any" {
-							rank 6
-							tag "Warlock"
+							filter {
+								rank 6
+								tag "Warlock"
+							}
 						}
 						limited_use {
 							max_uses 1
@@ -393,10 +395,12 @@ class name="Warlock" {
 					}
 				}
 				level 13 {
-					mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
+					mutator "spellcasting" "add_prepared" ability="Charisma" {
 						spell "Any" {
-							rank 7
-							tag "Warlock"
+							filter {
+								rank 7
+								tag "Warlock"
+							}
 						}
 						limited_use {
 							max_uses 1
@@ -405,10 +409,12 @@ class name="Warlock" {
 					}
 				}
 				level 15 {
-					mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
+					mutator "spellcasting" "add_prepared" ability="Charisma" {
 						spell "Any" {
-							rank 8
-							tag "Warlock"
+							filter {
+								rank 8
+								tag "Warlock"
+							}
 						}
 						limited_use {
 							max_uses 1
@@ -417,10 +423,12 @@ class name="Warlock" {
 					}
 				}
 				level 17 {
-					mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
+					mutator "spellcasting" "add_prepared" ability="Charisma" {
 						spell "Any" {
-							rank 9
-							tag "Warlock"
+							filter {
+								rank 9
+								tag "Warlock"
+							}
 						}
 						limited_use {
 							max_uses 1

@@ -306,21 +306,33 @@ class name="Bard" {
 			}
 			mutator "by_level" class="Bard" {
 				level 10 {
-					mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
-						spell "Any" requires_slot=true
-						spell "Any" requires_slot=true
+					mutator "spellcasting" "add_prepared" ability="Charisma" {
+						spell "Any" use_slot=true {
+							filter can_cast="Bard"
+						}
+						spell "Any" use_slot=true {
+							filter can_cast="Bard"
+						}
 					}
 				}
 				level 14 {
-					mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
-						spell "Any" requires_slot=true
-						spell "Any" requires_slot=true
+					mutator "spellcasting" "add_prepared" ability="Charisma" {
+						spell "Any" use_slot=true {
+							filter can_cast="Bard"
+						}
+						spell "Any" use_slot=true {
+							filter can_cast="Bard"
+						}
 					}
 				}
 				level 18 {
-					mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
-						spell "Any" requires_slot=true
-						spell "Any" requires_slot=true
+					mutator "spellcasting" "add_prepared" ability="Charisma" {
+						spell "Any" use_slot=true {
+							filter can_cast="Bard"
+						}
+						spell "Any" use_slot=true {
+							filter can_cast="Bard"
+						}
 					}
 				}
 			}

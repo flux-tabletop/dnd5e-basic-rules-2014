@@ -469,9 +469,9 @@ item name="Boots of Levitation" {
 	rarity "Rare"
 	tag "Wonderous"
 	kind "Equipment" requires_attunement=true {
-		mutator-todo "spellcasting" "add_prepared" ability="Dexterity" {
+		mutator "spellcasting" "add_prepared" ability="Dexterity" {
 			spell "local://basic-rules@dnd5e/spells/levitate.kdl" {
-				target-todo "Self"
+				range "Self"
 			}
 		}
 	}

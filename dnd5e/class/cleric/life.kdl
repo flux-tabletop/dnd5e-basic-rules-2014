@@ -16,31 +16,31 @@ subclass class="Cleric" name="Life Domain" {
 			}
 			mutator "by_level" class="Cleric" {
 				level 1 {
-					mutator-todo "spellcasting" "add_prepared" ability="Wisdom" {
+					mutator "spellcasting" "add_prepared" ability="Wisdom" {
 						spell "spells/bless.kdl"
 						spell "spells/cureWounds.kdl"
 					}
 				}
 				level 3 {
-					mutator-todo "spellcasting" "add_prepared" ability="Wisdom" {
+					mutator "spellcasting" "add_prepared" ability="Wisdom" {
 						spell "spells/lesserRestoration.kdl"
 						spell "spells/spiritualWeapon.kdl"
 					}
 				}
 				level 5 {
-					mutator-todo "spellcasting" "add_prepared" ability="Wisdom" {
+					mutator "spellcasting" "add_prepared" ability="Wisdom" {
 						spell "spells/beaconOfHope.kdl"
 						spell "spells/revivify.kdl"
 					}
 				}
 				level 7 {
-					mutator-todo "spellcasting" "add_prepared" ability="Wisdom" {
+					mutator "spellcasting" "add_prepared" ability="Wisdom" {
 						spell "spells/deathWard.kdl"
 						spell "spells/guardianOfFaith.kdl"
 					}
 				}
 				level 9 {
-					mutator-todo "spellcasting" "add_prepared" ability="Wisdom" {
+					mutator "spellcasting" "add_prepared" ability="Wisdom" {
 						spell "spells/massCureWounds.kdl"
 						spell "spells/raiseDead.kdl"
 					}
