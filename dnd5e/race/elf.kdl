@@ -40,7 +40,12 @@ subrace name="High Elf" {
 	}
 	feature name="Cantrip" {
 		description "You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it."
-		// TODO: spellcasting
+		mutator-todo "spellcasting" "add_prepared" ability="Intelligence" {
+			spell "Any" {
+				rank 0
+				tag "Wizard"
+			}
+		}
 	}
 	feature name="Extra Language" {
 		description "You can speak, read, and write one extra language of your choice."
