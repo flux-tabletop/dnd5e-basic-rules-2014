@@ -382,7 +382,7 @@ class name="Warlock" {
 			mutator "by_level" class="Warlock" {
 				level 11 {
 					mutator "spellcasting" "add_prepared" ability="Charisma" {
-						spell "Any" {
+						options 1 {
 							filter {
 								rank 6
 								tag "Warlock"
@@ -396,7 +396,7 @@ class name="Warlock" {
 				}
 				level 13 {
 					mutator "spellcasting" "add_prepared" ability="Charisma" {
-						spell "Any" {
+						options 1 {
 							filter {
 								rank 7
 								tag "Warlock"
@@ -410,7 +410,7 @@ class name="Warlock" {
 				}
 				level 15 {
 					mutator "spellcasting" "add_prepared" ability="Charisma" {
-						spell "Any" {
+						options 1 {
 							filter {
 								rank 8
 								tag "Warlock"
@@ -424,7 +424,7 @@ class name="Warlock" {
 				}
 				level 17 {
 					mutator "spellcasting" "add_prepared" ability="Charisma" {
-						spell "Any" {
+						options 1 {
 							filter {
 								rank 9
 								tag "Warlock"

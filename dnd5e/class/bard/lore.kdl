@@ -28,11 +28,8 @@ subclass class="Bard" name="College of Lore" {
 		feature name="Additional Magical Secrets" {
 			description "At 6th level, you learn two spells of your choice from any class. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip. The chosen spells count as bard spells for you but don't count against the number of bard spells you know."
 			mutator "spellcasting" "add_prepared" ability="Charisma" {
-				spell "Any" use_slot=true {
-					filter can_cast="Bard"
-				}
-				spell "Any" use_slot=true {
-					filter can_cast="Bard"
+				options 2 use_slot=true {
+					filter can_cast_rank_with="Bard"
 				}
 			}
 		}
