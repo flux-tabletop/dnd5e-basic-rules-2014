@@ -24,31 +24,31 @@ subclass class="Paladin" name="Oath of Devotion" {
 			}
 			mutator "by_level" class="Paladin" {
 				level 3 {
-					mutator "spellcasting" "add_prepared" ability="Charisma" {
+					mutator "spellcasting" "add_prepared" ability="Charisma" classified_as="Paladin" {
 						spell "spells/protectionFromEvilAndGood.kdl"
 						spell "spells/sanctuary.kdl"
 					}
 				}
 				level 5 {
-					mutator "spellcasting" "add_prepared" ability="Charisma" {
+					mutator "spellcasting" "add_prepared" ability="Charisma" classified_as="Paladin" {
 						spell "spells/lesserRestoration.kdl"
 						spell "spells/zoneOfTruth.kdl"
 					}
 				}
 				level 9 {
-					mutator "spellcasting" "add_prepared" ability="Charisma" {
+					mutator "spellcasting" "add_prepared" ability="Charisma" classified_as="Paladin" {
 						spell "spells/beaconOfHope.kdl"
 						spell "spells/dispelMagic.kdl"
 					}
 				}
 				level 13 {
-					mutator "spellcasting" "add_prepared" ability="Charisma" {
+					mutator "spellcasting" "add_prepared" ability="Charisma" classified_as="Paladin" {
 						spell "spells/freedomOfMovement.kdl"
 						spell "spells/guardianOfFaith.kdl"
 					}
 				}
 				level 17 {
-					mutator "spellcasting" "add_prepared" ability="Charisma" {
+					mutator "spellcasting" "add_prepared" ability="Charisma" classified_as="Paladin" {
 						spell "spells/commune.kdl"
 						spell "spells/flameStrike.kdl"
 					}
