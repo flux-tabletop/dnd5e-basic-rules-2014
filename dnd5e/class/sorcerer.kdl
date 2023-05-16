@@ -226,8 +226,8 @@ class name="Sorcerer" {
 		*/
 	}
 	level 4 {
-		mutator-todo "pick_one" name="Ability Score Improvement" {
-			option "Mutators" name="Ability Score Increase" {
+		mutator "pick" 1 name="Ability Score Improvement" {
+			option "Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
 						cannot-match "abilityB"
@@ -241,15 +241,15 @@ class name="Sorcerer" {
 					bonus 1
 				}
 			}
-			option "Mutators" name="Feat" {
+			option "Feat" {
 				// TODO: grant any named-group that has the "Feat" category
-				mutator "feature" category="Feat"
+				mutator-todo "feature" category="Feat"
 			}
 		}
 	}
 	level 8 {
-		mutator-todo "pick_one" name="Ability Score Improvement" {
-			option "Mutators" name="Ability Score Increase" {
+		mutator "pick" 1 name="Ability Score Improvement" {
+			option "Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
 						cannot-match "abilityB"
@@ -263,15 +263,15 @@ class name="Sorcerer" {
 					bonus 1
 				}
 			}
-			option "Mutators" name="Feat" {
+			option "Feat" {
 				// TODO: grant any named-group that has the "Feat" category
-				mutator "feature" category="Feat"
+				mutator-todo "feature" category="Feat"
 			}
 		}
 	}
 	level 12 {
-		mutator-todo "pick_one" name="Ability Score Improvement" {
-			option "Mutators" name="Ability Score Increase" {
+		mutator "pick" 1 name="Ability Score Improvement" {
+			option "Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
 						cannot-match "abilityB"
@@ -285,15 +285,15 @@ class name="Sorcerer" {
 					bonus 1
 				}
 			}
-			option "Mutators" name="Feat" {
+			option "Feat" {
 				// TODO: grant any named-group that has the "Feat" category
-				mutator "feature" category="Feat"
+				mutator-todo "feature" category="Feat"
 			}
 		}
 	}
 	level 16 {
-		mutator-todo "pick_one" name="Ability Score Improvement" {
-			option "Mutators" name="Ability Score Increase" {
+		mutator "pick" 1 name="Ability Score Improvement" {
+			option "Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
 						cannot-match "abilityB"
@@ -307,15 +307,15 @@ class name="Sorcerer" {
 					bonus 1
 				}
 			}
-			option "Mutators" name="Feat" {
+			option "Feat" {
 				// TODO: grant any named-group that has the "Feat" category
-				mutator "feature" category="Feat"
+				mutator-todo "feature" category="Feat"
 			}
 		}
 	}
 	level 19 {
-		mutator-todo "pick_one" name="Ability Score Improvement" {
-			option "Mutators" name="Ability Score Increase" {
+		mutator "pick" 1 name="Ability Score Improvement" {
+			option "Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
 						cannot-match "abilityB"
@@ -329,9 +329,9 @@ class name="Sorcerer" {
 					bonus 1
 				}
 			}
-			option "Mutators" name="Feat" {
+			option "Feat" {
 				// TODO: grant any named-group that has the "Feat" category
-				mutator "feature" category="Feat"
+				mutator-todo "feature" category="Feat"
 			}
 		}
 	}

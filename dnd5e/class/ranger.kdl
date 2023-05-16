@@ -103,41 +103,46 @@ class name="Ranger" {
 			description "You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again." {
 				short "You adopt a particular style of fighting as your specialty."
 			}
-			// TODO: mutator-todo "pick_one" which prompts the user to pick a key from a list of options. That key determines which mutator+feature group to apply when the "pick_one" mutator is applied.
-			mutator-todo "pick_one" name="Fighting Style" {
-				option "Feature" "Archery" {
-					// You gain a +2 bonus to attack rolls you make with ranged weapons.
-					mutator "attack_roll_bonus" {
-						bonus 2
-						restriction ranged=true {
-							tag "Weapon"
+			mutator "pick" 1 name="Fighting Style" {
+				option "Archery" {
+					feature name="Archery" {
+						// You gain a +2 bonus to attack rolls you make with ranged weapons.
+						mutator-todo "attack_roll_bonus" {
+							bonus 2
+							restriction ranged=true {
+								tag "Weapon"
+							}
 						}
 					}
 				}
-				option "Feature" "Defense" {
-					// While you are wearing armor, you gain a +1 bonus to AC.
-					criteria "has_armor_equipped"
-					mutator "armor_class" {
-						bonus 1
+				option "Defense" {
+					feature name="Defense" {
+						// While you are wearing armor, you gain a +1 bonus to AC.
+						criteria "has_armor_equipped"
+						mutator-todo "armor_class" {
+							bonus 1
+						}
 					}
 				}
-				option "Feature" "Dueling" {
-					// When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.'
-					criteria "has_weapon_equipped" max=1 {
-						attack "Melee"
-						tag "Weapon"
-						property "TwoHanded" false
-					}
-					mutator "bonus_damage" {
-						bonus 2
-						restriction {
+				option "Dueling" {
+					feature name="Dueling" {
+						// When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.'
+						criteria-todo "has_weapon_equipped" max=1 {
 							attack "Melee"
 							tag "Weapon"
 							property "TwoHanded" false
 						}
+						mutator-todo "bonus_damage" {
+							bonus 2
+							restriction {
+								attack "Melee"
+								tag "Weapon"
+								property "TwoHanded" false
+							}
+						}
 					}
 				}
-				option "Feature" "Two-Weapon Fighting" {
+				option "Two-Weapon Fighting" {
 					feature name="Two-Weapon Fighting" {
 						description "When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack."
 					}
@@ -225,8 +230,8 @@ class name="Ranger" {
 		*/
 	}
 	level 4 {
-		mutator-todo "pick_one" name="Ability Score Improvement" {
-			option "Mutators" name="Ability Score Increase" {
+		mutator "pick" 1 name="Ability Score Improvement" {
+			option "Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
 						cannot-match "abilityB"
@@ -240,9 +245,9 @@ class name="Ranger" {
 					bonus 1
 				}
 			}
-			option "Mutators" name="Feat" {
+			option "Feat" {
 				// TODO: grant any named-group that has the "Feat" category
-				mutator "feature" category="Feat"
+				mutator-todo "feature" category="Feat"
 			}
 		}
 	}
@@ -255,8 +260,8 @@ class name="Ranger" {
 		}
 	}
 	level 8 {
-		mutator-todo "pick_one" name="Ability Score Improvement" {
-			option "Mutators" name="Ability Score Increase" {
+		mutator "pick" 1 name="Ability Score Improvement" {
+			option "Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
 						cannot-match "abilityB"
@@ -270,9 +275,9 @@ class name="Ranger" {
 					bonus 1
 				}
 			}
-			option "Mutators" name="Feat" {
+			option "Feat" {
 				// TODO: grant any named-group that has the "Feat" category
-				mutator "feature" category="Feat"
+				mutator-todo "feature" category="Feat"
 			}
 		}
 		feature name="Land's Stride" {
@@ -290,8 +295,8 @@ class name="Ranger" {
 		}
 	}
 	level 12 {
-		mutator-todo "pick_one" name="Ability Score Improvement" {
-			option "Mutators" name="Ability Score Increase" {
+		mutator "pick" 1 name="Ability Score Improvement" {
+			option "Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
 						cannot-match "abilityB"
@@ -305,9 +310,9 @@ class name="Ranger" {
 					bonus 1
 				}
 			}
-			option "Mutators" name="Feat" {
+			option "Feat" {
 				// TODO: grant any named-group that has the "Feat" category
-				mutator "feature" category="Feat"
+				mutator-todo "feature" category="Feat"
 			}
 		}
 	}
@@ -322,8 +327,8 @@ class name="Ranger" {
 		}
 	}
 	level 16 {
-		mutator-todo "pick_one" name="Ability Score Improvement" {
-			option "Mutators" name="Ability Score Increase" {
+		mutator "pick" 1 name="Ability Score Improvement" {
+			option "Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
 						cannot-match "abilityB"
@@ -337,9 +342,9 @@ class name="Ranger" {
 					bonus 1
 				}
 			}
-			option "Mutators" name="Feat" {
+			option "Feat" {
 				// TODO: grant any named-group that has the "Feat" category
-				mutator "feature" category="Feat"
+				mutator-todo "feature" category="Feat"
 			}
 		}
 	}
@@ -351,8 +356,8 @@ class name="Ranger" {
 		}
 	}
 	level 19 {
-		mutator-todo "pick_one" name="Ability Score Improvement" {
-			option "Mutators" name="Ability Score Increase" {
+		mutator "pick" 1 name="Ability Score Improvement" {
+			option "Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
 						cannot-match "abilityB"
@@ -366,9 +371,9 @@ class name="Ranger" {
 					bonus 1
 				}
 			}
-			option "Mutators" name="Feat" {
+			option "Feat" {
 				// TODO: grant any named-group that has the "Feat" category
-				mutator "feature" category="Feat"
+				mutator-todo "feature" category="Feat"
 			}
 		}
 	}
