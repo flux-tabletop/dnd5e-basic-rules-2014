@@ -5,10 +5,11 @@ subclass class="Druid" name="Circle of the Land" {
 			When you choose this circle at 2nd level, you learn one additional druid cantrip of your choice. This cantrip doesn't count against the number of druid cantrips you know.
 		*/
 		feature name="Natural Recovery" {
-			description "Starting at 2nd level, you can regain some of your magical energy by sitting in meditation and communing with nature. During a short rest, you choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your druid level (rounded up), and none of the slots can be 6th level or higher. You can't use this feature again until you finish a long rest.
-
-			For example, when you are a 4th-level druid, you can recover up to two levels worth of spell slots. You can recover either a 2nd-level slot or two 1st-level slots." {
+			description {
 				short "During a short rest, recover spell slots whose combined level is less than or equal to {level_budget}. No individual slot can be 6th level or higher."
+				section "Starting at 2nd level, you can regain some of your magical energy by sitting in meditation and communing with nature. During a short rest, you choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your druid level (rounded up), and none of the slots can be 6th level or higher. You can't use this feature again until you finish a long rest.
+
+				For example, when you are a 4th-level druid, you can recover up to two levels worth of spell slots. You can recover either a 2nd-level slot or two 1st-level slots."
 				format-arg "level_budget" (Evaluator)"math" "Divide" round="ceil" {
 					value (Evaluator)"get_level" class="Druid"
 					value 2
@@ -28,14 +29,12 @@ subclass class="Druid" name="Circle of the Land" {
 		Once you gain access to a circle spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you."
 		mutator "pick" 1 name="Environment" {
 			option "Arctic" {
-				description "Arctic environment spells" {
-					table {
-						headers "Druid Level" "Spells"
-						row "3rd" "hold person, spike growth"
-						row "5th" "sleet storm, slow"
-						row "7th" "freedom of movement, ice storm"
-						row "9th" "commune with nature, cone of cold"
-					}
+				description (Title)"Arctic environment spells" table=true {
+					headers "Druid Level" "Spells"
+					row "3rd" "hold person, spike growth"
+					row "5th" "sleet storm, slow"
+					row "7th" "freedom of movement, ice storm"
+					row "9th" "commune with nature, cone of cold"
 				}
 				mutator "by_level" class="Druid" {
 					level 3 {
@@ -65,14 +64,12 @@ subclass class="Druid" name="Circle of the Land" {
 				}
 			}
 			option "Coast" {
-				description "Coast environment spells" {
-					table {
-						headers "Druid Level" "Spells"
-						row "3rd" "mirror image, misty step"
-						row "5th" "water breathing, water walk"
-						row "7th" "control water, freedom of movement"
-						row "9th" "conjure elemental, scrying"
-					}
+				description (Title)"Coast environment spells" table=true {
+					headers "Druid Level" "Spells"
+					row "3rd" "mirror image, misty step"
+					row "5th" "water breathing, water walk"
+					row "7th" "control water, freedom of movement"
+					row "9th" "conjure elemental, scrying"
 				}
 				mutator "by_level" class="Druid" {
 					level 3 {
@@ -102,14 +99,12 @@ subclass class="Druid" name="Circle of the Land" {
 				}
 			}
 			option "Desert" {
-				description "Desert environment spells" {
-					table {
-						headers "Druid Level" "Spells"
-						row "3rd" "blur, silence"
-						row "5th" "create food and water, protection from energy"
-						row "7th" "blight, hallucinatory terrain"
-						row "9th" "insect plague, wall of stone"
-					}
+				description (Title)"Desert environment spells" table=true {
+					headers "Druid Level" "Spells"
+					row "3rd" "blur, silence"
+					row "5th" "create food and water, protection from energy"
+					row "7th" "blight, hallucinatory terrain"
+					row "9th" "insect plague, wall of stone"
 				}
 				mutator "by_level" class="Druid" {
 					level 3 {
@@ -139,14 +134,12 @@ subclass class="Druid" name="Circle of the Land" {
 				}
 			}
 			option "Forest" {
-				description "Forest environment spells" {
-					table {
-						headers "Druid Level" "Spells"
-						row "3rd" "barkskin, spider climb"
-						row "5th" "call lightning, plant growth"
-						row "7th" "divination, freedom of movement"
-						row "9th" "commune with nature, tree stride"
-					}
+				description (Title)"Forest environment spells" table=true {
+					headers "Druid Level" "Spells"
+					row "3rd" "barkskin, spider climb"
+					row "5th" "call lightning, plant growth"
+					row "7th" "divination, freedom of movement"
+					row "9th" "commune with nature, tree stride"
 				}
 				mutator "by_level" class="Druid" {
 					level 3 {
@@ -176,14 +169,12 @@ subclass class="Druid" name="Circle of the Land" {
 				}
 			}
 			option "Grassland" {
-				description "Grassland environment spells" {
-					table {
-						headers "Druid Level" "Spells"
-						row "3rd" "invisibility, pass without trace"
-						row "5th" "daylight, haste"
-						row "7th" "divination, freedom of movement"
-						row "9th" "dream, insect plague"
-					}
+				description (Title)"Grassland environment spells" table=true {
+					headers "Druid Level" "Spells"
+					row "3rd" "invisibility, pass without trace"
+					row "5th" "daylight, haste"
+					row "7th" "divination, freedom of movement"
+					row "9th" "dream, insect plague"
 				}
 				mutator "by_level" class="Druid" {
 					level 3 {
@@ -213,14 +204,12 @@ subclass class="Druid" name="Circle of the Land" {
 				}
 			}
 			option "Mountain" {
-				description "Mountain environment spells" {
-					table {
-						headers "Druid Level" "Spells"
-						row "3rd" "spider climb, spike growth"
-						row "5th" "lightning bolt, meld into stone"
-						row "7th" "stone shape, stoneskin"
-						row "9th" "passwall, wall of stone"
-					}
+				description (Title)"Mountain environment spells" table=true {
+					headers "Druid Level" "Spells"
+					row "3rd" "spider climb, spike growth"
+					row "5th" "lightning bolt, meld into stone"
+					row "7th" "stone shape, stoneskin"
+					row "9th" "passwall, wall of stone"
 				}
 				mutator "by_level" class="Druid" {
 					level 3 {
@@ -250,14 +239,12 @@ subclass class="Druid" name="Circle of the Land" {
 				}
 			}
 			option "Swamp" {
-				description "Swamp environment spells" {
-					table {
-						headers "Druid Level" "Spells"
-						row "3rd" "darkness, Melf's acid arrow"
-						row "5th" "water walk, stinking cloud"
-						row "7th" "freedom of movement, locate creature"
-						row "9th" "insect plague, scrying"
-					}
+				description (Title)"Swamp environment spells" table=true {
+					headers "Druid Level" "Spells"
+					row "3rd" "darkness, Melf's acid arrow"
+					row "5th" "water walk, stinking cloud"
+					row "7th" "freedom of movement, locate creature"
+					row "9th" "insect plague, scrying"
 				}
 				mutator "by_level" class="Druid" {
 					level 3 {
@@ -287,14 +274,12 @@ subclass class="Druid" name="Circle of the Land" {
 				}
 			}
 			option "Underdark" {
-				description "Underdark environment spells" {
-					table {
-						headers "Druid Level" "Spells"
-						row "3rd" "spider climb, web"
-						row "5th" "gaseous form, stinking cloud"
-						row "7th" "greater invisibility, stone shape"
-						row "9th" "cloudkill, insect plague"
-					}
+				description (Title)"Underdark environment spells" table=true {
+					headers "Druid Level" "Spells"
+					row "3rd" "spider climb, web"
+					row "5th" "gaseous form, stinking cloud"
+					row "7th" "greater invisibility, stone shape"
+					row "9th" "cloudkill, insect plague"
 				}
 				mutator "by_level" class="Druid" {
 					level 3 {
@@ -327,10 +312,11 @@ subclass class="Druid" name="Circle of the Land" {
 	}
 	level 6 {
 		feature name="Land's Stride" {
-			description "Starting at 6th level, moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.
-
-			In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the entangle spell." {
+			description {
 				short "Moving throw nonmagical difficult terrain costs no extra movement. You can pass through nonmagical plants without being slowed and without taking damage from them."
+				section "Starting at 6th level, moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.
+
+				In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the entangle spell."
 			}
 			mutator "add_modifier" "Advantage" (SavingThrow)"All" context="plants that are magically created or manipulated to impede movement (e.g. Entangle)"
 		}
@@ -343,10 +329,15 @@ subclass class="Druid" name="Circle of the Land" {
 	}
 	level 14 {
 		feature name="Nature's Sanctuary" {
-			description "When you reach 14th level, creatures of the natural world sense your connection to nature and become hesitant to attack you. When a beast or plant creature attacks you, that creature must make a Wisdom saving throw against your druid spell save DC (DC {DC}). On a failed save, the creature must choose a different target, or the attack automatically misses. On a successful save, the creature is immune to this effect for 24 hours.
+			description {
+				section "When you reach 14th level, creatures of the natural world sense your connection to nature and become hesitant to attack you. When a beast or plant creature attacks you, that creature must make a Wisdom saving throw against your druid spell save DC (DC {DC}). On a failed save, the creature must choose a different target, or the attack automatically misses. On a successful save, the creature is immune to this effect for 24 hours.
 
-			The creature is aware of this effect before it makes its attack against you." {
-				format-arg "DC" (Evaluator)"get_ability_modifier" (Ability)"Wisdom" base=8 proficient=true
+				The creature is aware of this effect before it makes its attack against you."
+				format-arg "DC" (Evaluator)"math" "Add" {
+					value 8
+					value (Evaluator)"get_ability_modifier" (Ability)"Wisdom"
+					value (Evaluator)"get_proficiency_bonus"
+				}
 			}
 		}
 	}

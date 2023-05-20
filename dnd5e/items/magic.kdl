@@ -42,9 +42,10 @@ item name="Amulet of the Planes" {
 	kind "Equipment" requires_attunement=true {
 		// TODO: Spellcasting
 		feature name="Plane Shift" {
-			description "Make a DC 15 Intelligence check and name a location that you are familiar with on another plane of existance. On a successful check, you cast the plane shift spell.
-			On a failure, you and each creature and object within 15 feet of you travel to a random destination. To determine the destination, roll a d100. On a 1-60, you travel to a random location on the plane you named. On a 61-100, you travel to a randomly determined plane of existence." {
+			description {
 				short "DC 15 INT check to cast Plane Shift. On failure, roll a d100; 1-60 random location on the plane, 61-100 random plane of existance."
+				section "Make a DC 15 Intelligence check and name a location that you are familiar with on another plane of existance. On a successful check, you cast the plane shift spell.
+				On a failure, you and each creature and object within 15 feet of you travel to a random destination. To determine the destination, roll a d100. On a 1-60, you travel to a random location on the plane you named. On a 61-100, you travel to a randomly determined plane of existence."
 			}
 			action "Action"
 		}
@@ -56,27 +57,29 @@ item name="Animated Shield" {
 	kind "Equipment" requires_attunement=true {
 		shield bonus=2
 		feature name="Animate Shield" {
-			description "Speak a command word to cause the animated shield to animate. The shield leaps into the air and hovers in your space to protect you as if you were wielding it, leaving your hands free. The shield remains animated for 1 minute, until you use a bonus action to end this effect, or until you are incapacitated or die, at which point the shield falls to the ground or into your hand if you have one free." {
+			description {
 				short "Speak command word to animate shield. Your hands are free and the shield protects you as if you were wielding it for 1 minute. Can end using a bonus action, otherwise ends when you are incapacitated or die."
+				section "Speak a command word to cause the animated shield to animate. The shield leaps into the air and hovers in your space to protect you as if you were wielding it, leaving your hands free. The shield remains animated for 1 minute, until you use a bonus action to end this effect, or until you are incapacitated or die, at which point the shield falls to the ground or into your hand if you have one free."
 			}
 			action "Bonus"
 		}
 	}
 }
 item name="Apparatus of the Crab" weight=500.0 {
-	description "This item first appears to be a Large sealed iron barrel weighing 500 pounds. The barrel has a hidden catch, which can be found with a successful DC 20 Intelligence (Investigation) check. Releasing the catch unlocks a hatch at one end of the barrel, allowing two Medium or smaller creatures to crawl inside. Ten levers are set in a row at the far end, each in a neutral position, able to move either up or down. When certain levers are used, the apparatus transforms to resemble a giant lobster.
+	description {
+		section "This item first appears to be a Large sealed iron barrel weighing 500 pounds. The barrel has a hidden catch, which can be found with a successful DC 20 Intelligence (Investigation) check. Releasing the catch unlocks a hatch at one end of the barrel, allowing two Medium or smaller creatures to crawl inside. Ten levers are set in a row at the far end, each in a neutral position, able to move either up or down. When certain levers are used, the apparatus transforms to resemble a giant lobster.
 	
-	The apparatus of the Crab is a Large object with the following statistics:
-	Armor Class: 20
-	Hit Points: 200
-	Speed: 30 ft., swim 30 ft. (or 0 ft. for both if the legs and tail aren't extended)
-	Damage Immunities: poison, psychic
-	
-	To be used as a vehicle, the apparatus requires one pilot. While the apparatus's hatch is closed, the compartment is airtight and watertight. The compartment holds enough air for 10 hours of breathing, divided by the number of breathing creatures inside.
-	The apparatus floats on water. It can also go underwater to a depth of 900 feet. Below that, the vehicle takes 2d6 bludgeoning damage per minute from pressure.
-	
-	A creature in the compartment can use an action to move as many as two of the apparatus's levers up or down. After each use, a lever goes back to its neutral position. Each lever, from left to right, functions as shown in the Levers table." {
-		table {
+		The apparatus of the Crab is a Large object with the following statistics:
+		Armor Class: 20
+		Hit Points: 200
+		Speed: 30 ft., swim 30 ft. (or 0 ft. for both if the legs and tail aren't extended)
+		Damage Immunities: poison, psychic
+		
+		To be used as a vehicle, the apparatus requires one pilot. While the apparatus's hatch is closed, the compartment is airtight and watertight. The compartment holds enough air for 10 hours of breathing, divided by the number of breathing creatures inside.
+		The apparatus floats on water. It can also go underwater to a depth of 900 feet. Below that, the vehicle takes 2d6 bludgeoning damage per minute from pressure.
+		
+		A creature in the compartment can use an action to move as many as two of the apparatus's levers up or down. After each use, a lever goes back to its neutral position. Each lever, from left to right, functions as shown in the Levers table."
+		section table=true {
 			headers "Lever" "Up" "Down"
 			row "1" "Legs and tail extend, allowing the apparatus to walk and swim." "Legs and tail retract, reducing the apparatus's speed to 0 and making it unable to benefit from bonuses to speed."
 			row "2" "Forward window shutter opens." "Forward window shutter closes."
@@ -95,8 +98,10 @@ item name="Apparatus of the Crab" weight=500.0 {
 	kind "Equipment"
 }
 item name="Armor of Invulnerability" weight=65.0 {
-	description "Plate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body."
-	description "You have resistance to nonmagical damage while you wear this armor. Additionally, you can use an action to make yourself immune to nonmagical damage for 10 minutes or until you are no longer wearing the armor. Once this special action is used, it can't be used again until the next dawn."
+	description {
+		section "Plate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body."
+		section "You have resistance to nonmagical damage while you wear this armor. Additionally, you can use an action to make yourself immune to nonmagical damage for 10 minutes or until you are no longer wearing the armor. Once this special action is used, it can't be used again until the next dawn."
+	}
 	rarity "Legendary"
 	kind "Equipment" requires_attunement=true {
 		armor "Heavy" {
@@ -118,9 +123,11 @@ item name="Armor of Invulnerability" weight=65.0 {
 	}
 }
 item name="Armor of Vulnerability (Bludgeoning)" weight=65.0 {
-	description "Plate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body."
-	description "While wearing this armor, you have resistance to Bludgeoning damage. The DM chooses the type or determines it randomly."
-	description (Title)"Curse" "This armor is cursed, a fact that is revealed only when an identify spell is cast on the armor or you attune to it. Attuning to the armor curses you until you are targeted by the remove curse spell or similar magic; removing the armor fails to end the curse. While cursed, you have vulnerability to Piercing and Slashing damage."
+	description {
+		section "Plate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body."
+		section "While wearing this armor, you have resistance to Bludgeoning damage. The DM chooses the type or determines it randomly."
+		section (Title)"Curse" "This armor is cursed, a fact that is revealed only when an identify spell is cast on the armor or you attune to it. Attuning to the armor curses you until you are targeted by the remove curse spell or similar magic; removing the armor fails to end the curse. While cursed, you have vulnerability to Piercing and Slashing damage."
+	}
 	rarity "Rare"
 	kind "Equipment" requires_attunement=true {
 		armor "Heavy" {
@@ -134,9 +141,11 @@ item name="Armor of Vulnerability (Bludgeoning)" weight=65.0 {
 	}
 }
 item name="Armor of Vulnerability (Piercing)" weight=65.0 {
-	description "Plate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body."
-	description "While wearing this armor, you have resistance to Piercing damage. The DM chooses the type or determines it randomly."
-	description (Title)"Curse" "This armor is cursed, a fact that is revealed only when an identify spell is cast on the armor or you attune to it. Attuning to the armor curses you until you are targeted by the remove curse spell or similar magic; removing the armor fails to end the curse. While cursed, you have vulnerability to Bludgeoning and Slashing damage."
+	description {
+		section "Plate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body."
+		section "While wearing this armor, you have resistance to Piercing damage. The DM chooses the type or determines it randomly."
+		section (Title)"Curse" "This armor is cursed, a fact that is revealed only when an identify spell is cast on the armor or you attune to it. Attuning to the armor curses you until you are targeted by the remove curse spell or similar magic; removing the armor fails to end the curse. While cursed, you have vulnerability to Bludgeoning and Slashing damage."
+	}
 	rarity "Rare"
 	kind "Equipment" requires_attunement=true {
 		armor "Heavy" {
@@ -150,9 +159,11 @@ item name="Armor of Vulnerability (Piercing)" weight=65.0 {
 	}
 }
 item name="Armor of Vulnerability (Slashing)" weight=65.0 {
-	description "Plate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body."
-	description "While wearing this armor, you have resistance to Slashing damage. The DM chooses the type or determines it randomly."
-	description (Title)"Curse" "This armor is cursed, a fact that is revealed only when an identify spell is cast on the armor or you attune to it. Attuning to the armor curses you until you are targeted by the remove curse spell or similar magic; removing the armor fails to end the curse. While cursed, you have vulnerability to Bludgeoning and Piercing damage."
+	description {
+		section "Plate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body."
+		section "While wearing this armor, you have resistance to Slashing damage. The DM chooses the type or determines it randomly."
+		section (Title)"Curse" "This armor is cursed, a fact that is revealed only when an identify spell is cast on the armor or you attune to it. Attuning to the armor curses you until you are targeted by the remove curse spell or similar magic; removing the armor fails to end the curse. While cursed, you have vulnerability to Bludgeoning and Piercing damage."
+	}
 	rarity "Rare"
 	kind "Equipment" requires_attunement=true {
 		armor "Heavy" {
@@ -173,8 +184,9 @@ item name="Arrow-Catching Shield" {
 		// TODO: mutator for adding additional AC under specific contexts
 		//mutator "add_armor_class" 2 context="ranged attacks"
 		feature name="Intercept Ranged Attack" {
-			description "Whenever an attacker makes a ranged attack against a target within 5 feet of you, you can use your reaction to become the target of the attack instead." {
+			description {
 				short "On ranged attack against a target within 5 feet, you can become the target of the attack instead."
+				section "Whenever an attacker makes a ranged attack against a target within 5 feet of you, you can use your reaction to become the target of the attack instead."
 			}
 			action "Reaction"
 		}
@@ -191,12 +203,13 @@ item name="Arrow-Catching Shield" {
 	Other types of magic ammunition of this kind exist, such as bolts of slaying meant for a crossbow, though arrows are most common.
 */
 item name="Bag of Beans" {
-	description "Inside this heavy cloth bag are 3d4 dry beans. The bag weighs 1/2 pound plus 1/4 pound for each bean it contains.
+	description {
+		section "Inside this heavy cloth bag are 3d4 dry beans. The bag weighs 1/2 pound plus 1/4 pound for each bean it contains.
 	
-	If you dump the bag's contents out on the ground, they explode in a 10-foot radius, extending from the beans. Each creature in the area, including you, must make a DC 15 Dexterity saving throw, taking 5d4 fire damage on a failed save, or half as much damage on a successful one. The fire ignites flammable objects in the area that aren't being worn or carried.
-	
-	If you remove a bean from the bag, plant it in dirt or sand, and then water it, the bean produces an effect 1 minute later from the ground where it was planted. The DM can choose an effect from the following table, determine it randomly, or create an effect." {
-		table {
+		If you dump the bag's contents out on the ground, they explode in a 10-foot radius, extending from the beans. Each creature in the area, including you, must make a DC 15 Dexterity saving throw, taking 5d4 fire damage on a failed save, or half as much damage on a successful one. The fire ignites flammable objects in the area that aren't being worn or carried.
+		
+		If you remove a bean from the bag, plant it in dirt or sand, and then water it, the bean produces an effect 1 minute later from the ground where it was planted. The DM can choose an effect from the following table, determine it randomly, or create an effect."
+		section table=true {
 			headers "d100" "Effect"			
 			row "01" "5d4 toadstools sprout. If a creature eats a toadstool, roll any die. On an odd roll, the eater must succeed on a DC 15 Constitution saving throw or take 5d6 poison damage and become poisoned for 1 hour. On an even roll, the eater gains 5d6 temporary hit points for 1 hour."
 			row "02-10" "A geyser erupts and spouts water, beer, berry juice, tea, vinegar, wine, or oil (DM's choice) 30 feet into the air for 1d12 rounds."
@@ -239,14 +252,15 @@ item name="Bag of Holding" {
 	kind "Simple"
 }
 item name="Bag of Tricks (Gray)" {
-	description "This ordinary bag appears empty. Reaching inside the bag, however, reveals the presence of a small, fuzzy object. The bag weighs 1/2 pound.
+	description {
+		section "This ordinary bag appears empty. Reaching inside the bag, however, reveals the presence of a small, fuzzy object. The bag weighs 1/2 pound.
 
-	You can use an action to pull the fuzzy object from the bag and throw it up to 20 feet. When the object lands, it transforms into a creature you determine by rolling a d8 and consulting the table that corresponds to the bag's color. See the Monster Manual for the creature's statistics. The creature vanishes at the next dawn or when it is reduced to 0 hit points.
+		You can use an action to pull the fuzzy object from the bag and throw it up to 20 feet. When the object lands, it transforms into a creature you determine by rolling a d8 and consulting the table that corresponds to the bag's color. See the Monster Manual for the creature's statistics. The creature vanishes at the next dawn or when it is reduced to 0 hit points.
 
-	The creature is friendly to you and your companions, and it acts on your turn. You can use a bonus action to command how the creature moves and what action it takes on its next turn, or to give it general orders, such as to attack your enemies. In the absence of such orders, the creature acts in a fashion appropriate to its nature.
+		The creature is friendly to you and your companions, and it acts on your turn. You can use a bonus action to command how the creature moves and what action it takes on its next turn, or to give it general orders, such as to attack your enemies. In the absence of such orders, the creature acts in a fashion appropriate to its nature.
 
-	Once three fuzzy objects have been pulled from the bag, the bag can't be used again until the next dawn." {
-		table {
+		Once three fuzzy objects have been pulled from the bag, the bag can't be used again until the next dawn."
+		section table=true {
 			headers "d8" "Creature"
 			row "1" "Weasel"
 			row "2" "Giant rat"
@@ -263,14 +277,15 @@ item name="Bag of Tricks (Gray)" {
 	kind "Simple"
 }
 item name="Bag of Tricks (Rust)" {
-	description "This ordinary bag appears empty. Reaching inside the bag, however, reveals the presence of a small, fuzzy object. The bag weighs 1/2 pound.
+	description {
+		section "This ordinary bag appears empty. Reaching inside the bag, however, reveals the presence of a small, fuzzy object. The bag weighs 1/2 pound.
 
-	You can use an action to pull the fuzzy object from the bag and throw it up to 20 feet. When the object lands, it transforms into a creature you determine by rolling a d8 and consulting the table that corresponds to the bag's color. See the Monster Manual for the creature's statistics. The creature vanishes at the next dawn or when it is reduced to 0 hit points.
+		You can use an action to pull the fuzzy object from the bag and throw it up to 20 feet. When the object lands, it transforms into a creature you determine by rolling a d8 and consulting the table that corresponds to the bag's color. See the Monster Manual for the creature's statistics. The creature vanishes at the next dawn or when it is reduced to 0 hit points.
 
-	The creature is friendly to you and your companions, and it acts on your turn. You can use a bonus action to command how the creature moves and what action it takes on its next turn, or to give it general orders, such as to attack your enemies. In the absence of such orders, the creature acts in a fashion appropriate to its nature.
+		The creature is friendly to you and your companions, and it acts on your turn. You can use a bonus action to command how the creature moves and what action it takes on its next turn, or to give it general orders, such as to attack your enemies. In the absence of such orders, the creature acts in a fashion appropriate to its nature.
 
-	Once three fuzzy objects have been pulled from the bag, the bag can't be used again until the next dawn." {
-		table {
+		Once three fuzzy objects have been pulled from the bag, the bag can't be used again until the next dawn."
+		section table=true {
 			headers "d8" "Creature"
 			row "1" "Rat"
 			row "2" "Owl"
@@ -287,14 +302,15 @@ item name="Bag of Tricks (Rust)" {
 	kind "Simple"
 }
 item name="Bag of Tricks (Tan)" {
-	description "This ordinary bag appears empty. Reaching inside the bag, however, reveals the presence of a small, fuzzy object. The bag weighs 1/2 pound.
+	description {
+		section "This ordinary bag appears empty. Reaching inside the bag, however, reveals the presence of a small, fuzzy object. The bag weighs 1/2 pound.
 
-	You can use an action to pull the fuzzy object from the bag and throw it up to 20 feet. When the object lands, it transforms into a creature you determine by rolling a d8 and consulting the table that corresponds to the bag's color. See the Monster Manual for the creature's statistics. The creature vanishes at the next dawn or when it is reduced to 0 hit points.
+		You can use an action to pull the fuzzy object from the bag and throw it up to 20 feet. When the object lands, it transforms into a creature you determine by rolling a d8 and consulting the table that corresponds to the bag's color. See the Monster Manual for the creature's statistics. The creature vanishes at the next dawn or when it is reduced to 0 hit points.
 
-	The creature is friendly to you and your companions, and it acts on your turn. You can use a bonus action to command how the creature moves and what action it takes on its next turn, or to give it general orders, such as to attack your enemies. In the absence of such orders, the creature acts in a fashion appropriate to its nature.
+		The creature is friendly to you and your companions, and it acts on your turn. You can use a bonus action to command how the creature moves and what action it takes on its next turn, or to give it general orders, such as to attack your enemies. In the absence of such orders, the creature acts in a fashion appropriate to its nature.
 
-	Once three fuzzy objects have been pulled from the bag, the bag can't be used again until the next dawn." {
-		table {
+		Once three fuzzy objects have been pulled from the bag, the bag can't be used again until the next dawn."
+		section table=true {
 			headers "d8" "Creature"
 			row "1" "Jackal"
 			row "2" "Ape"
@@ -484,8 +500,9 @@ item name="Boots of Speed" {
 	tag "Wonderous"
 	kind "Equipment" requires_attunement=true {
 		feature name="Double Speed" {
-			description "Your walking speed is doubled and opportunity attacks against you have disadvantage on the attack roll for up to 10 minutes or until you end the effect. When this has been used for a cumulative 10 minutes, you cannot use this feature again until you finish a long rest." {
+			description {
 				short "Walking speed doubled & opportunity attacks have disadvantage against you. Can use for 10 minutes cumulatively per long rest."
+				section "Your walking speed is doubled and opportunity attacks against you have disadvantage on the attack roll for up to 10 minutes or until you end the effect. When this has been used for a cumulative 10 minutes, you cannot use this feature again until you finish a long rest."
 			}
 			// TODO: Condition for Double Speed
 			action "Bonus"

@@ -70,7 +70,7 @@ class name="Druid" {
 			mutator "add_proficiency" (Language)"Specific" "Druidic"
 		}
 		feature name="Spellcasting" {
-			description "Drawing on the divine essence of nature itself, you can cast spells to shape that essence to your will." {
+			description {
 				short "You can cast prepared druid spells using Wisdom as your spellcasting modifier (Spell DC {DC}, Spell Attack +{atk}) and prepared druid spells as rituals if they have the ritual tag. You can use a druidic focus as a spellcasting focus."
 				format-arg "DC" (Evaluator)"math" "Add" {
 					value 8
@@ -81,6 +81,7 @@ class name="Druid" {
 					value (Evaluator)"get_proficiency_bonus"
 					value (Evaluator)"get_ability_modifier" (Ability)"Wisdom"
 				}
+				section "Drawing on the divine essence of nature itself, you can cast spells to shape that essence to your will."
 				section (Title)"Cantrips" "At 1st level, you know two cantrips of your choice from the druid spell list. You learn additional druid cantrips of your choice at higher levels."
 				section (Title)"Preparing and Casting Spells" "The Druid table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these druid spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.
 

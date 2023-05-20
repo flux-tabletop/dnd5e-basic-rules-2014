@@ -27,12 +27,14 @@ subclass class="Barbarian" name="Path of the Beserker" {
 	}
 	level 10 {
 		feature name="Intimidating Presence" {
-			// TODO: this is an action
-			description "Beginning at 10th level, you can use your action to frighten someone with your menacing presence. When you do so, choose one creature that you can see within 30 feet of you. If the creature can see or hear you, it must succeed on a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Charisma modifier) or be frightened of you until the end of your next turn. On subsequent turns, you can use your action to extend the duration of this effect on the frightened creature until the end of your next turn. This effect ends if the creature ends its turn out of line of sight or more than 60 feet away from you.
-			If the creature succeeds on its saving throw, you can't use this feature on that creature again for 24 hours." {
+			description {
 				short "Frighten a creture within 30 feet of you until the end of your next turn, on a failed Wisdom saving throw (DC {DC}). If a creature is already frightened by you, you can extend the duration to the end of your next turn. If the target succeeds on the saving throw, it cannot be frightened in this way for 24 hours."
-				format-arg "DC" (Evaluator)"get_ability_modifier" base=8 proficient=true {
-					ability "Charisma"
+				section "Beginning at 10th level, you can use your action to frighten someone with your menacing presence. When you do so, choose one creature that you can see within 30 feet of you. If the creature can see or hear you, it must succeed on a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Charisma modifier) or be frightened of you until the end of your next turn. On subsequent turns, you can use your action to extend the duration of this effect on the frightened creature until the end of your next turn. This effect ends if the creature ends its turn out of line of sight or more than 60 feet away from you.
+				If the creature succeeds on its saving throw, you can't use this feature on that creature again for 24 hours."
+				format-arg "DC" (Evaluator)"math" "Add" {
+					value 8
+					value (Evaluator)"get_ability_modifier" (Ability)"Charisma"
+					value (Evaluator)"get_proficiency_bonus"
 				}
 			}
 			action "Action"

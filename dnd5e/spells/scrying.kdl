@@ -13,14 +13,15 @@ spell name="Scrying" {
 	component "Material" "a focus worth at least 1,000 gp, such as a crystal ball, a silver mirror, or a font filled with holy water"
 	duration "Minute" 10 concentration=true
 	check "SavingThrow" (Ability)"Wisdom"
-	description "You can see and hear a particular creature you choose that is on the same plane of existence as you. The target must make a Wisdom saving throw, which is modified by how well you know the target and the sort of physical connection you have to it. If a target knows you're casting this spell, it can fail the saving throw voluntarily if it wants to be observed." {
-		table {
+	description {
+		section "You can see and hear a particular creature you choose that is on the same plane of existence as you. The target must make a Wisdom saving throw, which is modified by how well you know the target and the sort of physical connection you have to it. If a target knows you're casting this spell, it can fail the saving throw voluntarily if it wants to be observed."
+		section table=true {
 			headers "Knowledge" "Save Modifier"
 			row "Secondhand (you have heard of the target)" "+5"
 			row "Firsthand (you have met the target)" "+0"
 			row "Familiar (you know the target well)" "-5"
 		}
-		table {
+		section table=true {
 			headers "Connection" "Save Modifier"
 			row "Likeness or picture" "-2"
 			row "Possession or garment" "-4"

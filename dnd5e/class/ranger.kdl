@@ -100,8 +100,9 @@ class name="Ranger" {
 	}
 	level 2 {
 		feature name="Fighting Style" {
-			description "You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again." {
+			description {
 				short "You adopt a particular style of fighting as your specialty."
+				section "You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again."
 			}
 			mutator "pick" 1 name="Fighting Style" {
 				option "Archery" {
@@ -150,7 +151,7 @@ class name="Ranger" {
 			}
 		}
 		feature name="Spellcasting" {
-			description "By the time you reach 2nd level, you have learned to use the magical essence of nature to cast spells, much as a druid does." {
+			description {
 				short "You can cast known ranger spells using Wisdom as your spellcasting modifier (Spell DC {DC}, Spell Attack +{atk})."
 				format-arg "DC" (Evaluator)"math" "Add" {
 					value 8
@@ -161,6 +162,7 @@ class name="Ranger" {
 					value (Evaluator)"get_proficiency_bonus"
 					value (Evaluator)"get_ability_modifier" (Ability)"Wisdom"
 				}
+				section "By the time you reach 2nd level, you have learned to use the magical essence of nature to cast spells, much as a druid does."
 				section (Title)"Spell Slots" "The Ranger table shows how many spell slots you have to cast your ranger spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.
 
 				For example, if you know the 1st-level spell animal friendship and have a 1st-level and a 2nd-level spell slot available, you can cast animal friendship using either slot."
@@ -253,8 +255,9 @@ class name="Ranger" {
 	}
 	level 5 {
 		feature name="Extra Attack" unique=true {
-			description "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn." {
+			description {
 				short "You can make multiple attacks when you take the attack action on your turn."
+				section "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
 			}
 			mutator "add_to_action_budget" "Attack" 1
 		}
@@ -379,8 +382,9 @@ class name="Ranger" {
 	}
 	level 20 {
 		feature name="Foe Slayer" {
-			description "At 20th level, you become an unparalleled hunter of your enemies. Once on each of your turns, you can add your Wisdom modifier (+{modifier}) to the attack roll or the damage roll of an attack you make against one of your favored enemies. You can choose to use this feature before or after the roll, but before any effects of the roll are applied." {
+			description {
 				short "Once per turn, add Wisdom modifier (+{modifier}) to attack or damage roll against a favored enemy."
+				section "At 20th level, you become an unparalleled hunter of your enemies. Once on each of your turns, you can add your Wisdom modifier (+{modifier}) to the attack roll or the damage roll of an attack you make against one of your favored enemies. You can choose to use this feature before or after the roll, but before any effects of the roll are applied."
 				format-arg "modifier" (Evaluator)"get_ability_modifier" (Ability)"Wisdom"
 			}
 		}

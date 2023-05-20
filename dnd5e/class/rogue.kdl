@@ -97,19 +97,21 @@ class name="Rogue" {
 			option "Stealth"
 		}
 		feature name="Expertise" {
-			description "At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves' tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies." {
+			description {
 				short "Your proficiency bonus is doubled for either 2 skill proficiencies or a skill proficiency and thieves' tools."
+				section "At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves' tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies."
 			}
 			// TODO: add_proficiency "Double" for 1 skill and either a skill or thieves' tools as long as the character is already proficient with those options. This will require some way to query what skills/items the character is already proficient with to be displayed a selection.
 		}
 		feature name="Sneak Attack" {
-			description "Beginning at 1st level, you know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.
-			
-			You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll." {
+			description {
 				short "Additional {roll-amt}d6 damage when attacking finesse or ranged weapon if either:
 				- you have advantage on attack roll
 				- you don't have disadvantage on the roll and the target has an enemy within 5 feet which isn't incapacitated"
-				format-arg "roll-amt" (Evaluator)"Level" class="Rogue" {
+				section "Beginning at 1st level, you know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.
+			
+				You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll."
+				format-arg "roll-amt" (Evaluator)"get_level" class="Rogue" {
 					level 1 1
 					level 3 2
 					level 5 3
@@ -131,15 +133,17 @@ class name="Rogue" {
 	}
 	level 2 {
 		feature name="Cunning Action" {
-			description "Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action." {
+			description {
 				short "You can Dash, Disengage, or Hide as a bonus action"
+				section "Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action."
 			}
 		}
 		feature name="Dash" collapsed=true {
-			description "You gain extra movement for the current turn equal to your speed, after applying any modifiers. With a speed of 30 feet, for example, you can move up to 60 feet on your turn if you dash.
-
-			Any increase or decrease to your speed changes this additional movement by the same amount. If your speed of 30 feet is reduced to 15 feet, for instance, you can move up to 30 feet this turn if you dash." {
+			description {
 				short "You double your movement speed for the current turn."
+				section "You gain extra movement for the current turn equal to your speed, after applying any modifiers. With a speed of 30 feet, for example, you can move up to 60 feet on your turn if you dash.
+
+				Any increase or decrease to your speed changes this additional movement by the same amount. If your speed of 30 feet is reduced to 15 feet, for instance, you can move up to 30 feet this turn if you dash."
 			}
 			action "Bonus"
 		}
@@ -177,24 +181,27 @@ class name="Rogue" {
 	}
 	level 5 {
 		feature name="Uncanny Dodge" {
-			description "When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you." {
+			description {
 				short "Halve the damage you take from an attack that you can see."
+				section "When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you."
 			}
 			action "Reaction"
 		}
 	}
 	level 6 {
 		feature name="Expertise" {
-			description "At 6th level, you can choose two more of your proficiencies (in skills or with thieves' tools) to gain this benefit." {
+			description {
 				short "Your proficiency bonus is doubled for either 2 skill proficiencies or a skill proficiency and thieves' tools."
+				section "At 6th level, you can choose two more of your proficiencies (in skills or with thieves' tools) to gain this benefit."
 			}
 			// TODO: add_proficiency "Double" for 1 skill and either a skill or thieves' tools as long as the character is already proficient with those options. This will require some way to query what skills/items the character is already proficient with to be displayed a selection.
 		}
 	}
 	level 7 {
 		feature name="Evasion" {
-			description "When you are subjected to an effect (such as a red dragon's fiery breath or a lightning bolt spell) that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail." {
+			description {
 				short "On DEX saving throw to take half damage on success, take no damage on success or half damage on fail."
+				section "When you are subjected to an effect (such as a red dragon's fiery breath or a lightning bolt spell) that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
 			}
 		}
 	}
@@ -244,8 +251,9 @@ class name="Rogue" {
 	}
 	level 11 {
 		feature name="Reliable Talent" {
-			description "By 11th level, you have refined your chosen skills until they approach perfection. Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10." {
+			description {
 				short "When you roll a 9 or lower on a d20 ability check that you are proficient in, you can treat the roll as a 10."
+				section "By 11th level, you have refined your chosen skills until they approach perfection. Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10."
 			}
 		}
 	}
@@ -307,8 +315,9 @@ class name="Rogue" {
 	}
 	level 18 {
 		feature name="Elusive" {
-			description "Beginning at 18th level, you are so evasive that attackers rarely gain the upper hand against you. No attack roll has advantage against you while you aren't incapacitated." {
+			description {
 				short "If you aren't incapacitated, attack rolls against you are not made with advantage."
+				section "Beginning at 18th level, you are so evasive that attackers rarely gain the upper hand against you. No attack roll has advantage against you while you aren't incapacitated."
 			}
 		}
 	}
@@ -336,10 +345,11 @@ class name="Rogue" {
 	}
 	level 20 {
 		feature name="Stroke of Luck" {
-			description "At 20th level, you have an uncanny knack for succeeding when you need to. If your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20." {
+			description {
 				short "You can either:
 				- When you miss an attack, treat the attack as a hit
 				- When you fail an ability check, treat the d20 roll as a 20"
+				section "At 20th level, you have an uncanny knack for succeeding when you need to. If your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20."
 			}
 			limited_uses {
 				max_uses 1

@@ -55,7 +55,7 @@ class name="Wizard" {
 	level 1 {
 		// TODO: I'd be really cool to be able to have a "Transcribe" button on spell containers which allow spells to be "copied" from, so moving a spell from a scroll to spellbook (consuming some cost) would be just a button click (assuming the inks and gold were present in inventory).
 		feature name="Spellcasting" {
-			description "As a student of arcane magic, you have a spellbook containing spells that show the first glimmerings of your true power." {
+			description {
 				short "You can cast prepared wizard spells using Intelligence as your spellcasting modifier (Spell DC {DC}, Spell Attack +{atk}) and  wizard spells as rituals if they have the ritual tag and are in your spellbook. You can use an arcane focus as a spellcasting focus."
 				format-arg "DC" (Evaluator)"math" "Add" {
 					value 8
@@ -66,6 +66,7 @@ class name="Wizard" {
 					value (Evaluator)"get_proficiency_bonus"
 					value (Evaluator)"get_ability_modifier" (Ability)"Intelligence"
 				}
+				section "As a student of arcane magic, you have a spellbook containing spells that show the first glimmerings of your true power."
 				section (Title)"Cantrips" "At 1st level, you know three cantrips of your choice from the wizard spell list. You learn additional wizard cantrips of your choice at higher levels."
 				section (Title)"Preparing and Casting Spells" "The Wizard table shows how many spell slots you have to cast your wizard spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.
 

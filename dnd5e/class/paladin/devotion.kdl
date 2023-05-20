@@ -13,7 +13,7 @@ subclass class="Paladin" name="Oath of Devotion" {
 			description "Each oath has a list of associated spells. You gain access to these spells at the levels specified in the oath description. Once you gain access to an oath spell, you always have it prepared. Oath spells don't count against the number of spells you can prepare each day.
 
 			If you gain an oath spell that doesn't appear on the paladin spell list, the spell is nonetheless a paladin spell for you." {
-				table {
+				section table=true {
 					headers "Paladin Level" "Spells"
 					row "3rd" "protection from evil and good, sanctuary"
 					row "5th" "lesser restoration, zone of truth"
@@ -56,14 +56,15 @@ subclass class="Paladin" name="Oath of Devotion" {
 			}
 		}
 		feature name="Sacred Weapon" parent="Paladin/level03/Channel Divinity" {
-			description "As an action, you can imbue one weapon that you are holding with positive energy, using your Channel Divinity. For 1 minute, you add your Charisma modifier to attack rolls made with that weapon (with a minimum bonus of +1). The weapon also emits bright light in a 20-foot radius and dim light 20 feet beyond that. If the weapon is not already magical, it becomes magical for the duration.
-
-			You can end this effect on your turn as part of any other action. If you are no longer holding or carrying this weapon, or if you fall unconscious, this effect ends." {
+			description {
 				short "For 1 minute, a weapon you are holding of your choosing gets the following benefits:
 				- Attacks get a +{bonus} to attack rolls and the damage counts as magical
 				- Emits bright light in a 20-foot radius and dim light 20 feet beyond that"
+				section "As an action, you can imbue one weapon that you are holding with positive energy, using your Channel Divinity. For 1 minute, you add your Charisma modifier to attack rolls made with that weapon (with a minimum bonus of +1). The weapon also emits bright light in a 20-foot radius and dim light 20 feet beyond that. If the weapon is not already magical, it becomes magical for the duration.
+
+				You can end this effect on your turn as part of any other action. If you are no longer holding or carrying this weapon, or if you fall unconscious, this effect ends."
 				// TODO: math eval without operation only applies min/max bounds and only accepts one value/evaluator
-				format-arg "bonus" (Evaluator)"math" min=1 {
+				format-arg "bonus" (Evaluator)"math" "Add" min=1 {
 					value (Evaluator)"get_ability_modifier" (Ability)"Charisma"
 				}
 			}
@@ -76,9 +77,7 @@ subclass class="Paladin" name="Oath of Devotion" {
 			}
 		}
 		feature name="Turn the Unholy" parent="Paladin/level03/Channel Divinity" {
-			description "As an action, you present your holy symbol and speak a prayer censuring fiends and undead, using your Channel Divinity. Each fiend or undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.
-
-			A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action." {
+			description {
 				short "All fiends and undead within 30 feet of you make a Wisdom saving throw (DC {DC}). On a failed save, a creature:
 				- must spend its turns trying to move as far away from you as possible
 				- cannot willingly end its turn within 30 feet of you
@@ -86,7 +85,14 @@ subclass class="Paladin" name="Oath of Devotion" {
 				- can only use the Dash action or try to escape effects that prevent it from moving
 				- can use the Dodge action if there is nowhere to move
 				This lasts for 1 minute or until the creature takes damage."
-				foramt-arg "DC" (Evaluator)"get_ability_modifier" (Ability)"Charisma" base=8 proficient=true
+				section "As an action, you present your holy symbol and speak a prayer censuring fiends and undead, using your Channel Divinity. Each fiend or undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.
+
+				A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action."
+				format-arg "DC" (Evaluator)"math" "Add" {
+					value 8
+					value (Evaluator)"get_ability_modifier" (Ability)"Charisma"
+					value (Evaluator)"get_proficiency_bonus"
+				}
 			}
 			action "Action" {
 				// TODO: Limited Uses can use the uses from another feature
@@ -99,10 +105,11 @@ subclass class="Paladin" name="Oath of Devotion" {
 	}
 	level 7 {
 		feature name="Aura of Devotion" {
-			description "Starting at 7th level, you and friendly creatures within 10 feet of you can't be charmed while you are conscious.
-
-			At 18th level, the range of this aura increases to 30 feet." {
+			description {
 				short "Friendly creatures within {range} feet of you can't be charmed while you are conscious."
+				"Starting at 7th level, you and friendly creatures within 10 feet of you can't be charmed while you are conscious.
+
+				At 18th level, the range of this aura increases to 30 feet."
 				// TODO: get_level can map levels to an Option<i32> (moving the value from Scaled::Basis::Level to the evaluator so the scaling can be replaced by the "math" evaluator)
 				format-arg "range" (Evaluator)"get_level" class="Paladin" {
 					level 6 10

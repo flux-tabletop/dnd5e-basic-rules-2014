@@ -4,8 +4,9 @@ subclass class="Ranger" name="Hunter" {
 		mutator "pick" 1 name="Hunter's Prey" {
 			option "Colossus Slayer" {
 				feature name="Colossus Slayer" {
-					description "Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it's below its hit point maximum. You can deal this extra damage only once per turn." {
+					description {
 						short "Bonus 1d8 damage on a weapon attack, once per turn, when the target is below its hit point maximum."
+						section "Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it's below its hit point maximum. You can deal this extra damage only once per turn."
 					}
 				}
 			}
@@ -43,16 +44,18 @@ subclass class="Ranger" name="Hunter" {
 		mutator "pick" 1 name="Multiattack" {
 			option "Volley" {
 				feature name="Volley" {
-					description "You can use your action to make a ranged attack against any number of creatures within 10 feet of a point you can see within your weapon's range. You must have ammunition for each target, as normal, and you make a separate attack roll for each target." {
+					description {
 						short "Make a ranged attack against creatures within 10 feet of a point you can see within range. Make separate attack roles and ammunition for each target."
+						section "You can use your action to make a ranged attack against any number of creatures within 10 feet of a point you can see within your weapon's range. You must have ammunition for each target, as normal, and you make a separate attack roll for each target."
 					}
 					activation "Action"
 				}
 			}
 			option "Whirlwind Attack" {
 				feature name="Whirlwind Attack" {
-					description "You can use your action to make a melee attack against any number of creatures within 5 feet of you, with a separate attack roll for each target." {
+					description {
 						short "Make a melee attack against creatures within 5 feet you. Make separate attack roles for each target."
+						section "You can use your action to make a melee attack against any number of creatures within 5 feet of you, with a separate attack roll for each target."
 					}
 					activation "Action"
 				}
@@ -63,23 +66,26 @@ subclass class="Ranger" name="Hunter" {
 		mutator "pick" 1 name="Superior Hunter's Defense" {
 			option "Evasion" {
 				feature name="Evasion" {
-					description "When you are subjected to an effect (such as a red dragon's fiery breath or a lightning bolt spell) that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail." {
+					description {
 						short "On DEX saving throw to take half damage on success, take no damage on success or half damage on fail."
+						section "When you are subjected to an effect (such as a red dragon's fiery breath or a lightning bolt spell) that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
 					}
 				}
 			}
 			option "Stand Against the Tide" {
 				feature name="Stand Against the Tide" {
-					description "When a hostile creature misses you with a melee attack, you can use your reaction to force that creature to repeat the same attack against another creature (other than itself) of your choice." {
+					description {
 						short "Redirect a failed melee attack against you onto another creature within range."
+						section "When a hostile creature misses you with a melee attack, you can use your reaction to force that creature to repeat the same attack against another creature (other than itself) of your choice."
 					}
 					activation "Reaction"
 				}
 			}
 			option "Uncanny Dodge" {
 				feature name="Uncanny Dodge" {
-					description "When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you." {
+					description {
 						short "Halve the damage you take from an attack that you can see."
+						section "When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you."
 					}
 					activation "Reaction"
 				}

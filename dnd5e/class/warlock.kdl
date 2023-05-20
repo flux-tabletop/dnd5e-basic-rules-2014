@@ -63,7 +63,7 @@ class name="Warlock" {
 		mutator "add_proficiency" (Armor)"Light"
 		mutator "add_proficiency" (Weapon)"Simple"
 		feature name="Pact Magic" {
-			description "Your arcane research and the magic bestowed on you by your patron have given you facility with spells." {
+			description {
 				short "You can cast known warlock spells using Charisma as your spellcasting modifier (Spell DC {DC}, Spell Attack +{atk}). You can use an arcane focus as a spellcasting focus."
 				format-arg "DC" (Evaluator)"math" "Add" {
 					value 8
@@ -74,6 +74,7 @@ class name="Warlock" {
 					value (Evaluator)"get_proficiency_bonus"
 					value (Evaluator)"get_ability_modifier" (Ability)"Charisma"
 				}
+				section "Your arcane research and the magic bestowed on you by your patron have given you facility with spells."
 				section (Title)"Cantrips" "You know two cantrips of your choice from the warlock spell list. You learn additional warlock cantrips of your choice at higher levels."
 				section (Title)"Spell Slots" "The Warlock table shows how many spell slots you have to cast your warlock spells of 1st through 5th level. The table also shows what the level of those slots is; all of your spell slots are the same level. To cast one of your warlock spells of 1st level or higher, you must expend a spell slot. You regain all expended Pact Magic spell slots when you finish a short or long rest.
 
@@ -372,12 +373,13 @@ class name="Warlock" {
 	}
 	level 11 {
 		feature name="Mystic Arcanum" {
-			description "At 11th level, your patron bestows upon you a magical secret called an arcanum. Choose one 6th-level spell from the warlock spell list as this arcanum.
-
-			You can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again.
-
-			At higher levels, you gain more warlock spells of your choice that can be cast in this way: one 7th-level spell at 13th level, one 8th-level spell at 15th level, and one 9th-level spell at 17th level. You regain all uses of your Mystic Arcanum when you finish a long rest." {
+			description {
 				short "Cast one selected 6th level Warlock spell without expending a spell slot, once per long rest."
+				section "At 11th level, your patron bestows upon you a magical secret called an arcanum. Choose one 6th-level spell from the warlock spell list as this arcanum.
+
+				You can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again.
+
+				At higher levels, you gain more warlock spells of your choice that can be cast in this way: one 7th-level spell at 13th level, one 8th-level spell at 15th level, and one 9th-level spell at 17th level. You regain all uses of your Mystic Arcanum when you finish a long rest."
 			}
 			mutator "by_level" class="Warlock" {
 				level 11 {
@@ -507,8 +509,9 @@ class name="Warlock" {
 	}
 	level 20 {
 		feature name="Eldritch Master" {
-			description "At 20th level, you can draw on your inner reserve of mystical power while entreating your patron to regain expended spell slots. You can spend 1 minute entreating your patron for aid to regain all your expended spell slots from your Pact Magic feature. Once you regain spell slots with this feature, you must finish a long rest before you can do so again." {
+			description {
 				short "Spend 1 minute to regain all expended Pact Magic spell slots."
+				section "At 20th level, you can draw on your inner reserve of mystical power while entreating your patron to regain expended spell slots. You can spend 1 minute entreating your patron for aid to regain all your expended spell slots from your Pact Magic feature. Once you regain spell slots with this feature, you must finish a long rest before you can do so again."
 			}
 			action "Special" {
 				// TODO: Spellcasting - when used, apply mutator to reset all spell slots from the Pact Magic feature.

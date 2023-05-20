@@ -71,8 +71,9 @@ class name="Fighter" {
 		mutator "add_proficiency" (Weapon)"Simple"
 		mutator "add_proficiency" (Weapon)"Martial"
 		feature name="Fighting Style" {
-			description "You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again." {
+			description {
 				short "You adopt a particular style of fighting as your specialty."
+				section "You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again."
 			}
 			mutator "pick" 1 name="Fighting Style" {
 				option "Archery" {
@@ -115,15 +116,17 @@ class name="Fighter" {
 				}
 				option "Great Weapon Fighting" {
 					feature name="Great Weapon Fighting" {
-						description "When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit." {
+						description {
 							short "Reroll 1 or 2 on damage rolls for two-handed or versatile weapons (when weilding with two hands)."
+							section "When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit."
 						}
 					}
 				}
 				option "Protection" {
 					feature name="Protection" {
-						description "When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll." {
+						description {
 							short "Impose disadvantage on an attack rolls against a target that isn't you, when the target is within 5 feet of you."
+							section "When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll."
 						}
 						// When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.
 						criteria "has_armor_equipped" {
@@ -140,9 +143,10 @@ class name="Fighter" {
 			}
 		}
 		feature name="Second Wind" {
-			description "You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level (+{level}). Once you use this feature, you must finish a short or long rest before you can use it again." {
+			description {
 				short "Regain 1d10 + {level} hit points"
-				format-arg "level" (Evaluator)"Level" class="Fighter"
+				section "You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level (+{level}). Once you use this feature, you must finish a short or long rest before you can use it again."
+				format-arg "level" (Evaluator)"get_level" class="Fighter"
 			}
 			action "Bonus" {
 				limited_uses {
@@ -154,10 +158,11 @@ class name="Fighter" {
 	}
 	level 2 {
 		feature name="Action Surge" {
-			description "Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.
-
-			Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn." {
+			description {
 				short "You take one additional Action this turn. You can only use this feature once per turn."
+				"Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.
+
+				Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn."
 			}
 			action "Special" {
 				limited_uses {
@@ -194,9 +199,10 @@ class name="Fighter" {
 	}
 	level 5 {
 		feature name="Extra Attack" unique=true {
-			description "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
-			The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class." {
+			description {
 				short "You can make multiple attacks when you take the attack action on your turn."
+				section "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
+				The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class."
 			}
 			mutator "add_to_action_budget" "Attack" (Scaled)"Level" class="Fighter" {
 				level 5 1
@@ -251,9 +257,10 @@ class name="Fighter" {
 	}
 	level 9 {
 		feature name="Indomitable" {
-			description "Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can't use this feature again until you finish a long rest.
-			You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level." {
+			description {
 				short "Reroll a failed saving throw. You must use the new roll."
+				section "Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can't use this feature again until you finish a long rest.
+				You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level."
 			}
 			action "Special" {
 				limited_uses {

@@ -99,14 +99,15 @@ class name="Monk" {
 	}
 	level 2 {
 		feature name="Ki" {
-			description "Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table.
-
-			You can spend these points to fuel various ki features. You start knowing three such features: Flurry of Blows, Patient Defense, and Step of the Wind. You learn more ki features as you gain levels in this class.
-			When you spend a ki point, it is unavailable until you finish a short or long rest, at the end of which you draw all of your expended ki back into yourself. You must spend at least 30 minutes of the rest meditating to regain your ki points.
-
-			Some of your ki features require your target to make a saving throw to resist the feature's effects. The saving throw DC is calculated as follows:
-			Ki save DC = 8 + your proficiency bonus + your Wisdom modifier" { // TODO: figure out how to display this saving throw in the UI as a computed value
+			description { // TODO: figure out how to display this saving throw in the UI as a computed value
 				short "Spend Ki points to use extra features. They reset on a short or long rest."
+				section "Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table.
+
+				You can spend these points to fuel various ki features. You start knowing three such features: Flurry of Blows, Patient Defense, and Step of the Wind. You learn more ki features as you gain levels in this class.
+				When you spend a ki point, it is unavailable until you finish a short or long rest, at the end of which you draw all of your expended ki back into yourself. You must spend at least 30 minutes of the rest meditating to regain your ki points.
+
+				Some of your ki features require your target to make a saving throw to resist the feature's effects. The saving throw DC is calculated as follows:
+				Ki save DC = 8 + your proficiency bonus + your Wisdom modifier"
 			}
 			action "Special" {
 				limited_uses {
@@ -115,22 +116,24 @@ class name="Monk" {
 				}
 			}
 		}
-		// TODO: Collapse features with the same category name into a single section in the display
 		feature name="Flurry of Blows" parent="Monk/level02/Ki" {
-			description "Immediately after you take the Attack action on your turn, you can spend 1 ki point to make two unarmed strikes as a bonus action." {
+			description {
 				short "1 Ki Point - Bonus Action to make 2 unarmed strikes after attacking"
+				section "Immediately after you take the Attack action on your turn, you can spend 1 ki point to make two unarmed strikes as a bonus action."
 			}
 			action "Bonus"
 		}
 		feature name="Patient Defense" parent="Monk/level02/Ki" {
-			description "You can spend 1 ki point to take the Dodge action as a bonus action on your turn." {
+			description {
 				short "1 Ki Point - Bonus Action to Dodge"
+				section "You can spend 1 ki point to take the Dodge action as a bonus action on your turn."
 			}
 			action "Bonus"
 		}
 		feature name="Step of the Wind" parent="Monk/level02/Ki" {
-			description "You can spend 1 ki point to take the Disengage or Dash action as a bonus action on your turn, and your jump distance is doubled for the turn." {
+			description {
 				short "1 Ki Point - Bonus Action to Disengage or Dash + jump distance doubled"
+				section "You can spend 1 ki point to take the Disengage or Dash action as a bonus action on your turn, and your jump distance is doubled for the turn."
 			}
 			action "Bonus"
 		}
@@ -142,10 +145,11 @@ class name="Monk" {
 	}
 	level 3 {
 		feature name="Deflect Missiles" {
-			description "Starting at 3rd level, you can use your reaction to deflect or catch the missile when you are hit by a ranged weapon attack. When you do so, the damage you take from the attack is reduced by 1d10 + your Dexterity modifier + your monk level.
-			
-			If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 ki point to make a ranged attack with the weapon or piece of ammunition you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a monk weapon for the attack, which has a normal range of 20 feet and a long range of 60 feet." {
+			description {
 				short "Deflect or catch a missile when you are hit by a ranged weapon attack. The damage you take from the attack is reduced by 1d10 + {damage}. If you reduce damage to 0 and have a free hand, you can spend 1 ki point to make a ranged attack (as with a monk weapon) with a range of 20/60."
+				section "Starting at 3rd level, you can use your reaction to deflect or catch the missile when you are hit by a ranged weapon attack. When you do so, the damage you take from the attack is reduced by 1d10 + your Dexterity modifier + your monk level.
+			
+				If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 ki point to make a ranged attack with the weapon or piece of ammunition you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a monk weapon for the attack, which has a normal range of 20 feet and a long range of 60 feet."
 				format-arg "damage" (Evaluator)"math" "Add" {
 					value (Evaluator)"get_ability_modifier" (Ability)"Dexterity"
 					value (Evaluator)"get_level" class="Monk"
@@ -176,11 +180,12 @@ class name="Monk" {
 			}
 		}
 		feature name="Slow Fall" {
-			description "Beginning at 4th level, you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level ({damage})." {
+			description {
 				short "Reaction - Reduce fall damage by {damage}"
-				// TODO: "Level" evaluator with an ordered list (in children) of defined numerical operations
-				format-arg "damage" (Evaluator)"Level" class="Monk" {
-					multiply 5
+				section "Beginning at 4th level, you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level ({damage})."
+				format-arg "damage" (Evaluator)"math" "Multiply" {
+					value 5
+					value (Evaluator)"get_level" class="Monk"
 				}
 			}
 			action "Reaction"
@@ -188,19 +193,20 @@ class name="Monk" {
 	}
 	level 5 {
 		feature name="Extra Attack" unique=true {
-			description "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn." {
+			description {
 				short "You can make multiple attacks when you take the attack action on your turn."
+				section "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
 			}
 			mutator "add_to_action_budget" "Attack" 1
 		}
 		feature name="Stunning Strike" parent="Monk/level02/Ki" {
-			description "Starting at 5th level, you can interfere with the flow of ki in an opponent's body. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a {DC} Constitution saving throw or be stunned until the end of your next turn." {
+			description {
 				short "1 Ki Point - On Attack - target make {DC} CON save or be stunned until my next turned"
-				// TODO: `format-arg` allows an evaluator (item=i32) to compute a value and format the description with that output.
-				// this means replace `{DC}` with the computed value of `8 + prof.bonus + wisdom modifier`
-				// TODO: Convert "get_ability_modifier" to place the ability(ies) in children and take `base` and `proficient` properties.
-				format-arg "DC" (Evaluator)"get_ability_modifier" base=8 proficient=true {
-					ability "Wisdom"
+				section "Starting at 5th level, you can interfere with the flow of ki in an opponent's body. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a {DC} Constitution saving throw or be stunned until the end of your next turn."
+				format-arg "DC" (Evaluator)"math" "Add" {
+					value 8
+					value (Evaluator)"get_ability_modifier" (Ability)"Wisdom"
+					value (Evaluator)"get_proficiency_bonus"
 				}
 			}
 		}
@@ -217,13 +223,15 @@ class name="Monk" {
 	}
 	level 7 {
 		feature name="Evasion" {
-			description "When you are subjected to an effect (such as a red dragon's fiery breath or a lightning bolt spell) that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail." {
+			description {
 				short "On DEX saving throw to take half damage on success, take no damage on success or half damage on fail."
+				section "When you are subjected to an effect (such as a red dragon's fiery breath or a lightning bolt spell) that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
 			}
 		}
 		feature name="Stillness of Mind" {
-			description "Starting at 7th level, you can use your action to end one effect on yourself that is causing you to be charmed or frightened." {
+			description {
 				short "Remove a charmed or frightended condition."
+				section "Starting at 7th level, you can use your action to end one effect on yourself that is causing you to be charmed or frightened."
 			}
 			action "Action"
 		}
@@ -345,11 +353,12 @@ class name="Monk" {
 			mutator "speed" "Walking" (Additive)5
 		}
 		feature name="Empty Body" parent="Monk/level02/Ki" {
-			description "Beginning at 18th level, you can use your action to spend 4 ki points to become invisible for 1 minute. During that time, you also have resistance to all damage but force damage.
-
-			Additionally, you can spend 8 ki points to cast the astral projection spell, without needing material components. When you do so, you can-t take any other creatures with you." {
+			description {
 				short "4 Ki Points - Action to become invisible and gain resistance to all damage but force damage for 1 minute.
 				8 Ki Points - Action to cast the astral projection spell (for yourself only), without needing material components."
+				section "Beginning at 18th level, you can use your action to spend 4 ki points to become invisible for 1 minute. During that time, you also have resistance to all damage but force damage.
+
+				Additionally, you can spend 8 ki points to cast the astral projection spell, without needing material components. When you do so, you can-t take any other creatures with you."
 			}
 			feature name="Invisibility (Empty Body)" {
 				description "4 Ki Points - Become invisible for 1 minute + resistance to all damage except force damage."

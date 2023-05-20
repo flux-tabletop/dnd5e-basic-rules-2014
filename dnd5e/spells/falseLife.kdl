@@ -9,6 +9,8 @@ spell name="False Life" {
 	component "Somatic"
 	component "Material" "a small amount of alcohol or distilled spirits"
 	duration "Hour" 1
-	description "Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 temporary hit points for the duration."
-	description (Title)"At Higher Levels" "When you cast this spell using a spell slot of 2nd level or higher, you gain 5 additional temporary hit points for each slot level above 1st."
+	description {
+		section "Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 temporary hit points for the duration."
+		section (Title)"At Higher Levels" "When you cast this spell using a spell slot of 2nd level or higher, you gain 5 additional temporary hit points for each slot level above 1st."
+	}
 }

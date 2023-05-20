@@ -67,7 +67,7 @@ class name="Cleric" {
 		mutator "add_proficiency" (Armor)"Medium"
 		mutator "add_proficiency" (Armor)"Shield"
 		feature name="Spellcasting" {
-			description "As a conduit for divine power, you can cast cleric spells." {
+			description {
 				short "You can cast prepared cleric spells using Wisdom as your spellcasting modifier (Spell DC {DC}, Spell Attack +{atk}) and prepared cleric spells as rituals if they have the ritual tag. You can use a holy symbol as a spellcasting focus."
 				format-arg "DC" (Evaluator)"math" "Add" {
 					value 8
@@ -78,6 +78,7 @@ class name="Cleric" {
 					value (Evaluator)"get_proficiency_bonus"
 					value (Evaluator)"get_ability_modifier" (Ability)"Wisdom"
 				}
+				section "As a conduit for divine power, you can cast cleric spells."
 				section (Title)"Cantrips" "At 1st level, you know three cantrips of your choice from the cleric spell list. You learn additional cleric cantrips of your choice at higher levels."
 				section (Title)"Preparing and Casting Spells" "The Cleric table shows how many spell slots you have to cast your cleric spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.
 
@@ -165,14 +166,15 @@ class name="Cleric" {
 	}
 	level 2 {
 		feature name="Channel Divinity" {
-			description "At 2nd level, you gain the ability to channel divine energy directly from your deity, using that energy to fuel magical effects. You start with two such effects: Turn Undead and an effect determined by your domain. Some domains grant you additional effects as you advance in levels, as noted in the domain description.
-
-			When you use your Channel Divinity, you choose which effect to create. You must then finish a short or long rest to use your Channel Divinity again.
-
-			Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your cleric spell save DC.
-
-			Beginning at 6th level, you can use your Channel Divinity twice between rests, and beginning at 18th level, you can use it three times between rests. When you finish a short or long rest, you regain your expended uses." {
+			description {
 				short "Fuel a magical effect from energy directly from your deity."
+				section "At 2nd level, you gain the ability to channel divine energy directly from your deity, using that energy to fuel magical effects. You start with two such effects: Turn Undead and an effect determined by your domain. Some domains grant you additional effects as you advance in levels, as noted in the domain description.
+
+				When you use your Channel Divinity, you choose which effect to create. You must then finish a short or long rest to use your Channel Divinity again.
+
+				Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your cleric spell save DC.
+
+				Beginning at 6th level, you can use your Channel Divinity twice between rests, and beginning at 18th level, you can use it three times between rests. When you finish a short or long rest, you regain your expended uses."
 			}
 			action "Special" {
 				limited_uses-todo {
@@ -186,9 +188,7 @@ class name="Cleric" {
 			}
 		}
 		feature name="Turn Undead" parent="Cleric/level02/Channel Divinity" {
-			description "As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.
-
-			A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action." {
+			description {
 				short "All undead within 30 feet of you make a Wisdom saving throw (DC {DC}). On a failed save, a creature:
 				- must spend its turns trying to move as far away from you as possible
 				- cannot willingly end its turn within 30 feet of you
@@ -196,7 +196,14 @@ class name="Cleric" {
 				- can only use the Dash action or try to escape effects that prevent it from moving
 				- can use the Dodge action if there is nowhere to move
 				This lasts for 1 minute or until the creature takes damage."
-				foramt-arg "DC" (Evaluator)"get_ability_modifier" (Ability)"Wisdom" base=8 proficient=true
+				section "As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.
+
+				A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action."
+				format-arg "DC" (Evaluator)"math" "Add" {
+					value 8
+					value (Evaluator)"get_ability_modifier" (Ability)"Wisdom"
+					value (Evaluator)"get_proficiency_bonus"
+				}
 			}
 			action "Action" {
 				// TODO: Limited Uses can use the uses from another feature
@@ -231,9 +238,10 @@ class name="Cleric" {
 	}
 	level 5 {
 		feature name="Destroy Undead" parent="Cleric/level02/Channel Divinity" {
-			description "Starting at 5th level, when an undead fails its saving throw, the creature is instantly destroyed if its challenge rating is at or below a certain threashold (5th level = CR 1/2, 8th level = CR 1, 11th level = CR 2, 14th level = CR 3, 17th level = CR 4)." {
+			description {
 				short "Turn Undead instantly destroys any undead creature with a challenge rating less than or equal to {min-cr}."
-				format-arg "min-cr" (Evaluator)"get_level" class="Cleric" {
+				section "Starting at 5th level, when an undead fails its saving throw, the creature is instantly destroyed if its challenge rating is at or below a certain threashold (5th level = CR 1/2, 8th level = CR 1, 11th level = CR 2, 14th level = CR 3, 17th level = CR 4)."
+				format-arg-todo "min-cr" (Evaluator)"get_level" class="Cleric" {
 					level 5 "1/2"
 					level 8 "1"
 					level 11 "2"
@@ -268,14 +276,15 @@ class name="Cleric" {
 	}
 	level 10 {
 		feature name="Divine Intervention" {
-			description "Beginning at 10th level, you can call on your deity to intervene on your behalf when your need is great.
-
-			Imploring your deity's aid requires you to use your action. Describe the assistance you seek, and roll percentile dice. If you roll a number equal to or lower than your cleric level, your deity intervenes. The DM chooses the nature of the intervention; the effect of any cleric spell or cleric domain spell would be appropriate.
-
-			If your deity intervenes, you can't use this feature again for 7 days. Otherwise, you can use it again after you finish a long rest.
-
-			At 20th level, your call for intervention succeeds automatically, no roll required." {
+			description {
 				short "Describe the assistance you seek and roll a percentile die (d100). If the roll is less than or equal to {DC}, your deity intervenes. If this is succesful, you can't use this feature for 7 days."
+				section "Beginning at 10th level, you can call on your deity to intervene on your behalf when your need is great.
+
+				Imploring your deity's aid requires you to use your action. Describe the assistance you seek, and roll percentile dice. If you roll a number equal to or lower than your cleric level, your deity intervenes. The DM chooses the nature of the intervention; the effect of any cleric spell or cleric domain spell would be appropriate.
+
+				If your deity intervenes, you can't use this feature again for 7 days. Otherwise, you can use it again after you finish a long rest.
+
+				At 20th level, your call for intervention succeeds automatically, no roll required."
 				format-arg "DC" (Evaluator)"get_level" class="Cleric"
 			}
 			action "Action" {

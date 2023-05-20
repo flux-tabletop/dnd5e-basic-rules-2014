@@ -2,17 +2,19 @@ subclass class="Fighter" name="Champion" {
 	description "The archetypal Champion focuses on the development of raw physical power honed to deadly perfection. Those who model themselves on this archetype combine rigorous training with physical excellence to deal devastating blows."
 	level 3 {
 		feature name="Improved Critical" {
-			description "Beginning when you choose this archetype at 3rd level, your weapon attacks score a critical hit on a roll of 19 or 20." {
+			description {
 				short "Critical hit on weapon attacks with a roll of 19 or 20."
+				section "Beginning when you choose this archetype at 3rd level, your weapon attacks score a critical hit on a roll of 19 or 20."
 			}
 		}
 	}
 	level 7 {
 		feature name="Remarkable Athlete" {
-			description "Starting at 7th level, you can add half your proficiency bonus (round up) to any Strength, Dexterity, or Constitution check you make that doesn't already use your proficiency bonus.
-
-			In addition, when you make a running long jump, the distance you can cover increases by a number of feet equal to your Strength modifier." {
+			description {
 				short "You are at least half proficient (rounded up) in all Strength, Dexterity, or Constitution checks. Running long jumps are increased by {jump_dist} feet."
+				section "Starting at 7th level, you can add half your proficiency bonus (round up) to any Strength, Dexterity, or Constitution check you make that doesn't already use your proficiency bonus.
+
+				In addition, when you make a running long jump, the distance you can cover increases by a number of feet equal to your Strength modifier."
 				foramt-arg "jump-dist" (Evaluator)"get_ability_modifier" (Ability)"Strength"
 			}
 			// TODO: "add_proficiency" for Abilities, which grant proficiency to all skills which use that ability
@@ -23,8 +25,9 @@ subclass class="Fighter" name="Champion" {
 	}
 	level 10 {
 		feature name="Additional Fighting Style" {
-			description "At 10th level, you can choose a second option from the Fighting Style class feature." {
+			description {
 				short "You adopt an additional style of fighting as your specialty."
+				section "At 10th level, you can choose a second option from the Fighting Style class feature."
 			}
 			mutator "pick" 1 name="Fighting Style" {
 				cannot-match "Fighter/level01/Fighting Style"
@@ -68,15 +71,17 @@ subclass class="Fighter" name="Champion" {
 				}
 				option "Great Weapon Fighting" {
 					feature name="Great Weapon Fighting" {
-						description "When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit." {
+						description {
 							short "Reroll 1 or 2 on damage rolls for two-handed or versatile weapons (when weilding with two hands)."
+							section "When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit."
 						}
 					}
 				}
 				option "Protection" {
 					feature name="Protection" {
-						description "When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll." {
+						description {
 							short "Impose disadvantage on an attack rolls against a target that isn't you, when the target is within 5 feet of you."
+							section "When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll."
 						}
 						// When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.
 						criteria "has_armor_equipped" {
@@ -95,16 +100,21 @@ subclass class="Fighter" name="Champion" {
 	}
 	level 15 {
 		feature name="Superior Critical" {
-			description "Starting at 15th level, your weapon attacks score a critical hit on a roll of 18-20." {
+			description {
 				short "Critical hit on weapon attacks with a roll of 18-20."
+				section "Starting at 15th level, your weapon attacks score a critical hit on a roll of 18-20."
 			}
 		}
 	}
 	level 18 {
 		feature name="Survivor" {
-			description "At 18th level, you attain the pinnacle of resilience in battle. At the start of each of your turns, you regain hit points equal to 5 + your Constitution modifier (+{hit_points}) if you have no more than half ({half_max_hp}) of your hit points left. You don't gain this benefit if you have 0 hit points." {
+			description {
 				short "At the start of your turn, regain {hit_points} if you have more than 0 and less than {half_max_hp} hit points."
-				format-arg "hit_points" (Evaluator)"get_ability_modifier" (Ability)"Constitution" base=5
+				section "At 18th level, you attain the pinnacle of resilience in battle. At the start of each of your turns, you regain hit points equal to 5 + your Constitution modifier (+{hit_points}) if you have no more than half ({half_max_hp}) of your hit points left. You don't gain this benefit if you have 0 hit points."
+				format-arg "hit_points" (Evaluator)"math" "Add" {
+					value 5
+					value (Evaluator)"get_ability_modifier" (Ability)"Constitution"
+				}
 				format-arg "half_max_hp" (Evaluator)"math" "Divide" round="floor" {
 					value (Evaluator)"get_hit_points" "Max"
 					value 2

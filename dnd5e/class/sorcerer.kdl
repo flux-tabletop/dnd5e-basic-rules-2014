@@ -60,7 +60,7 @@ class name="Sorcerer" {
 
 	level 1 {
 		feature name="Spellcasting" {
-			description "An event in your past, or in the life of a parent or ancestor, left an indelible mark on you, infusing you with arcane magic. This font of magic, whatever its origin, fuels your spells." {
+			description {
 				short "You can cast known sorcerer spells using Charisma as your spellcasting modifier (Spell DC {DC}, Spell Attack +{atk}). You can use an arcane focus as a spellcasting focus."
 				format-arg "DC" (Evaluator)"math" "Add" {
 					value 8
@@ -71,6 +71,7 @@ class name="Sorcerer" {
 					value (Evaluator)"get_proficiency_bonus"
 					value (Evaluator)"get_ability_modifier" (Ability)"Charisma"
 				}
+				section "An event in your past, or in the life of a parent or ancestor, left an indelible mark on you, infusing you with arcane magic. This font of magic, whatever its origin, fuels your spells."
 				section (Title)"Cantrips" "At 1st level, you know four cantrips of your choice from the sorcerer spell list. You learn additional sorcerer cantrips of your choice at higher levels."
 				section (Title)"Spell Slots" "The Sorcerer table shows how many spell slots you have to cast your sorcerer spells of 1st level and higher. To cast one of these sorcerer spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.
 

@@ -3,7 +3,7 @@ subclass class="Warlock" name="The Fiend" {
 	level 1 {
 		feature name="Expanded Spell List" {
 			description "The Fiend lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you." {
-				table {
+				section table=true {
 					headers "Spell Level" "Spells"
 					row "1st" "burning hands, command"
 					row "2nd" "blindness/deafness, scorching ray"
@@ -26,8 +26,9 @@ subclass class="Warlock" name="The Fiend" {
 			}
 		}
 		feature name="Dark One's Blessing" {
-			description "Starting at 1st level, when you reduce a hostile creature to 0 hit points, you gain temporary hit points equal to your Charisma modifier + your warlock level (minimum of 1)." {
+			description {
 				short "When you reduce a hostile creature to 0 hit points, you gain {hit-points} temporary hit points."
+				section "Starting at 1st level, when you reduce a hostile creature to 0 hit points, you gain temporary hit points equal to your Charisma modifier + your warlock level (minimum of 1)."
 				format-arg "hit-points" (Evaluator)"math" "Add" min=1 {
 					value (Evaluator)"get_ability_modifier" (Ability)"Charisma"
 					value (Evaluator)"get_level" class="Warlock"
@@ -37,10 +38,11 @@ subclass class="Warlock" name="The Fiend" {
 	}
 	level 6 {
 		feature name="Dark One's Own Luck" {
-			description "Starting at 6th level, you can call on your patron to alter fate in your favor. When you make an ability check or a saving throw, you can use this feature to add a d10 to your roll. You can do so after seeing the initial roll but before any of the roll's effects occur.
-
-			Once you use this feature, you can't use it again until you finish a short or long rest." {
+			description {
 				short "When you make an ability check or a saving throw, add a d10 to your roll. You can do so after seeing the initial roll but before any of the roll's effects occur."
+				section "Starting at 6th level, you can call on your patron to alter fate in your favor. When you make an ability check or a saving throw, you can use this feature to add a d10 to your roll. You can do so after seeing the initial roll but before any of the roll's effects occur.
+
+				Once you use this feature, you can't use it again until you finish a short or long rest."
 			}
 			action "Special" {
 				limited_uses {
@@ -64,12 +66,13 @@ subclass class="Warlock" name="The Fiend" {
 	}
 	level 14 {
 		feature name="Hurl Through Hell" {
-			description "Starting at 14th level, when you hit a creature with an attack, you can use this feature to instantly transport the target through the lower planes. The creature disappears and hurtles through a nightmare landscape.
-
-			At the end of your next turn, the target returns to the space it previously occupied, or the nearest unoccupied space. If the target is not a fiend, it takes 10d10 psychic damage as it reels from its horrific experience.
-
-			Once you use this feature, you can't use it again until you finish a long rest." {
+			description {
 				short "When you hit a creature with an attack, the target is teleported to the lower planes. At the end of your next turn, they return to the space it previously occuppied (or the nearest unoccupied space). If it is not a fiend, it takes 10d10 psychic damage when it returns."
+				section "Starting at 14th level, when you hit a creature with an attack, you can use this feature to instantly transport the target through the lower planes. The creature disappears and hurtles through a nightmare landscape.
+
+				At the end of your next turn, the target returns to the space it previously occupied, or the nearest unoccupied space. If the target is not a fiend, it takes 10d10 psychic damage as it reels from its horrific experience.
+
+				Once you use this feature, you can't use it again until you finish a long rest."
 			}
 			action "Special" {
 				limited_uses {

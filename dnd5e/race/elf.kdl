@@ -23,37 +23,6 @@ race name="Elf" {
 		description "You don't need to sleep. Instead, you meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") After resting in this way, you gain the same benefit that a human does from 8 hours of sleep."
 	}
 }
-subrace name="High Elf" {
-	requirement "Race" "Elf"
-	description "As a high elf, you have a keen mind and a mastery of at least the basics of magic. In many of the worlds of D&D, there are two kinds of high elves. One type is haughty and reclusive, believing themselves to be superior to non-elves and even other elves. The other type are more common and more friendly, and often encountered among humans and other races.
-	The sun elves (also called gold elves or sunrise elves) have bronze skin and hair of copper, black, or golden blond. Their eyes are golden, silver, or black. Moon elves (also called silver elves or gray elves) are much paler, with alabaster skin sometimes tinged with blue. They often have hair of silver-white, black, or blue, but various shades of blond, brown, and red are not uncommon. Their eyes are blue or green and flecked with gold."
-	mutator "ability_score" {
-		ability "Specific" (Ability)"Intelligence"
-		bonus 1
-	}
-	feature name="Elf Weapon Training" {
-		description "You have proficiency with the longsword, shortsword, shortbow, and longbow."
-		mutator "add_proficiency" (Weapon)"Longsword"
-		mutator "add_proficiency" (Weapon)"Shortsword"
-		mutator "add_proficiency" (Weapon)"Shortbow"
-		mutator "add_proficiency" (Weapon)"Longbow"
-	}
-	feature name="Cantrip" {
-		description "You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it."
-		mutator "spellcasting" "add_prepared" ability="Intelligence" {
-			options 1 {
-				filter {
-					rank 0
-					tag "Wizard"
-				}
-			}
-		}
-	}
-	feature name="Extra Language" {
-		description "You can speak, read, and write one extra language of your choice."
-		mutator "add_proficiency" (Language)"Any"
-	}
-}
 /*
 	Elves are considered children until they declare themselves adults, some time after the hundredth birthday, and before this period they are called by child names.
 
