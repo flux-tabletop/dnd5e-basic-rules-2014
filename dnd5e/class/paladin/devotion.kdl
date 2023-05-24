@@ -69,9 +69,7 @@ subclass class="Paladin" name="Oath of Devotion" {
 				}
 			}
 			action "Action" {
-				// TODO: Limited Uses can use the uses from another feature
-				limited_uses-todo {
-					cost 1
+				limited_uses {
 					resource "Paladin/level03/Channel Divinity"
 				}
 			}
@@ -95,9 +93,7 @@ subclass class="Paladin" name="Oath of Devotion" {
 				}
 			}
 			action "Action" {
-				// TODO: Limited Uses can use the uses from another feature
-				limited_uses-todo {
-					cost 1
+				limited_uses {
 					resource "Paladin/level03/Channel Divinity"
 				}
 			}

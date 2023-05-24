@@ -363,8 +363,7 @@ class name="Monk" {
 			feature name="Invisibility (Empty Body)" {
 				description "4 Ki Points - Become invisible for 1 minute + resistance to all damage except force damage."
 				action "Action" {
-					// TODO: Limited Uses can use the uses from another feature
-					limited_uses-todo {
+					limited_uses {
 						cost 4
 						resource "Monk/level02/Ki"
 					}
@@ -392,8 +391,7 @@ class name="Monk" {
 				action "Action"
 				mutator-todo "spellcasting" "add_prepared" ability="Wisdom" {
 					spell "spells/astralProjection.kdl"
-					// TODO: Limited Uses can use the uses from another feature
-					limited_uses-todo {
+					limited_uses {
 						cost 8
 						resource "Monk/level02/Ki"
 					}

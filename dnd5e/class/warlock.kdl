@@ -390,7 +390,7 @@ class name="Warlock" {
 								tag "Warlock"
 							}
 						}
-						limited_use {
+						limited_uses {
 							max_uses 1
 							reset_on "Long"
 						}
@@ -404,7 +404,7 @@ class name="Warlock" {
 								tag "Warlock"
 							}
 						}
-						limited_use {
+						limited_uses {
 							max_uses 1
 							reset_on "Long"
 						}
@@ -418,7 +418,7 @@ class name="Warlock" {
 								tag "Warlock"
 							}
 						}
-						limited_use {
+						limited_uses {
 							max_uses 1
 							reset_on "Long"
 						}
@@ -432,7 +432,7 @@ class name="Warlock" {
 								tag "Warlock"
 							}
 						}
-						limited_use {
+						limited_uses {
 							max_uses 1
 							reset_on "Long"
 						}
