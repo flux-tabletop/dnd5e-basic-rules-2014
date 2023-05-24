@@ -98,11 +98,8 @@ class name="Wizard" {
 				section (Title)"The Book's Appearance" "Your spellbook is a unique compilation of spells, with its own decorative flourishes and margin notes. It might be a plain, functional leather volume that you received as a gift from your master, a finely bound gilt-edged tome you found in an ancient library, or even a loose collection of notes scrounged together after you lost your previous spellbook in a mishap."
 			}
 			mutator "spellcasting" ability="Intelligence" class="Wizard" {
-				// can cast ritual spells with any "ritual" spell which is in the spell source
-				ritual-todo {
-					// include spells in spellbook
+				ritual {
 					available-spells
-					// include spells prepared
 					selected-spells
 				}
 				focus-todo {

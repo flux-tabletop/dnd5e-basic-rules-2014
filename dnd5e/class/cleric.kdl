@@ -96,8 +96,9 @@ class name="Cleric" {
 				section (Title)"Spellcasting Focus" "You can use a holy symbol as a spellcasting focus for your cleric spells."
 			}
 			mutator "spellcasting" ability="Wisdom" class="Cleric" {
-				// only cleric spells (or spells which count as cleric spells) which are prepared
-				ritual-todo castable_with_slot=true
+				ritual {
+					selected-spells
+				}
 				focus-todo {
 					tag "Holy symbol"
 				}

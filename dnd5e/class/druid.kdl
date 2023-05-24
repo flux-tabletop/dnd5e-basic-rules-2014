@@ -99,9 +99,7 @@ class name="Druid" {
 				section (Title)"Spellcasting Focus" "You can use a druidic focus as a spellcasting focus for your druid spells."
 			}
 			mutator "spellcasting" ability="Wisdom" class="Druid" {
-				// only druid spells (or spells which count as druid spells) which are prepared
-				ritual-todo {
-					// only ritual cast spells prepared by this class
+				ritual {
 					selected-spells
 				}
 				focus-todo {

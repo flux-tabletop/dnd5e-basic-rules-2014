@@ -99,8 +99,9 @@ class name="Bard" {
 				section (Title)"Spellcasting Focus" "You can use a musical instrument as a spellcasting focus for your bard spells."
 			}
 			mutator "spellcasting" ability="Charisma" class="Bard" {
-				// castable_with_slot means that only spells with the ritual tag that can be cast using a spell slot can be cast using a ritual. This eliminates any spells not known/prepared and any added by items/other features.
-				ritual-todo castable_with_slot=true
+				ritual {
+					selected-spells
+				}
 				focus-todo {
 					tag "Musical Instrument"
 				}
