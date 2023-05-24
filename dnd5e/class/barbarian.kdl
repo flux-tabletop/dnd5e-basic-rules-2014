@@ -64,13 +64,13 @@ class name="Barbarian" {
 			}
 			action "Bonus" {
 				limited_uses {
-					max_uses (Scaled)"Level" class="Barbarian" {
+					max_uses (Evaluator)"get_level" class="Barbarian" {
 						level 1 2
 						level 3 3
 						level 6 4
 						level 12 5
 						level 17 6
-						level 20 // unlimited
+						level 20 -1 // unlimited
 					}
 					reset_on "Long"
 				}

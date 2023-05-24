@@ -166,7 +166,7 @@ class name="Fighter" {
 			}
 			action "Special" {
 				limited_uses {
-					max_uses (Scaled)"Level" class="Fighter" {
+					max_uses (Evaluator)"get_level" class="Fighter" {
 						level 2 1
 						level 17 2
 					}
@@ -204,7 +204,7 @@ class name="Fighter" {
 				section "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
 				The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class."
 			}
-			mutator "add_to_action_budget" "Attack" (Scaled)"Level" class="Fighter" {
+			mutator "add_to_action_budget" "Attack" (Evaluator)"get_level" class="Fighter" {
 				level 5 1
 				level 11 2
 				level 20 3
@@ -264,7 +264,7 @@ class name="Fighter" {
 			}
 			action "Special" {
 				limited_uses {
-					max_uses (Scaled)"Level" class="Fighter" {
+					max_uses (Evaluator)"get_level" class="Fighter" {
 						level 9 1
 						level 13 2
 						level 17 3

@@ -111,7 +111,7 @@ class name="Monk" {
 			}
 			action "Special" {
 				limited_uses {
-					max_uses (Scaled)"Level" class="Monk"
+					max_uses (Evaluator)"get_level" class="Monk"
 					reset_on (Rest)"Short"
 				}
 			}

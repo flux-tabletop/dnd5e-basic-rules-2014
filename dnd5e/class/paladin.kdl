@@ -68,15 +68,13 @@ class name="Paladin" {
 				You can use this feature a number of times equal to 1 + your Charisma modifier. When you finish a long rest, you regain all expended uses."
 			}
 			action "Action" {
-				/*
 				limited_uses {
-					// TODO: Max uses based on ability modifier
-					max_uses (Scaled)"Ability" base=1 {
-						ability "Charisma"
+					max_uses (Evaluator)"math" "Add" {
+						value 1
+						value (Evaluator)"get_ability_modifier" (Ability)"Charisma"
 					}
 					reset_on "Long"
 				}
-				*/
 			}
 		}
 		feature name="Lay on Hands" {
@@ -93,9 +91,8 @@ class name="Paladin" {
 				This feature has no effect on undead and constructs."
 			}
 			action "Action" {
-				limited_uses-todo {
-					// TODO: Scaled uses should just globally use the math evaluator
-					max_uses (Scaled)"math" "Multiply" {
+				limited_uses {
+					max_uses (Evaluator)"math" "Multiply" {
 						value (Evaluator)"get_level" class="Paladin"
 						value 5
 					}
@@ -397,9 +394,8 @@ class name="Paladin" {
 				You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain expended uses when you finish a long rest."
 			}
 			activation "Action" {
-				limited_uses-todo {
-					// TODO: Can scaled uses just use an evaluator which returns an i32?
-					max_uses (Scaled)"math" "Add" min=1 {
+				limited_uses {
+					max_uses (Evaluator)"math" "Add" min=1 {
 						value (Evaluator)"get_ability_modifier" (Ability)"Charisma"
 					}
 					reset_on "Long"
