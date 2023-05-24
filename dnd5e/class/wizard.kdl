@@ -99,7 +99,12 @@ class name="Wizard" {
 			}
 			mutator "spellcasting" ability="Intelligence" class="Wizard" {
 				// can cast ritual spells with any "ritual" spell which is in the spell source
-				ritual-todo
+				ritual-todo {
+					// include spells in spellbook
+					available-spells
+					// include spells prepared
+					selected-spells
+				}
 				focus-todo {
 					tag "Arcane Focus"
 				}

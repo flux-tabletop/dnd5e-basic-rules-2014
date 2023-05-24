@@ -100,7 +100,10 @@ class name="Druid" {
 			}
 			mutator "spellcasting" ability="Wisdom" class="Druid" {
 				// only druid spells (or spells which count as druid spells) which are prepared
-				ritual-todo castable_with_slot=true
+				ritual-todo {
+					// only ritual cast spells prepared by this class
+					selected-spells
+				}
 				focus-todo {
 					tag "Druidic Focus"
 				}
