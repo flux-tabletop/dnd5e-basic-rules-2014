@@ -2,13 +2,26 @@ subrace name="Dragonborn: White Dragon Ancestry" {
 	requirement "Race" "Dragonborn"
 	mutator "add_defense" "Resistance" (DamageType)"Cold"
 	feature name="Breath Weapon" {
-		description "You can use your action to exhale destructive energy. With your White dragon ancestry, you emit Cold damage in a 15 ft. cone.
-		
-		When you use your breath weapon, each creature in the area of the exhalation must make a Constitution saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level.
+		description {
+			short "You emit destructive energy in a 15 ft. cone. All creatures in the area must make a Constitution saving throw (DC {DC}), taking {amt}d6 Acid damage on a failed save and half as much on a successful one."
+			section "You can use your action to exhale destructive energy. With your White dragon ancestry, you emit Cold damage in a 15 ft. cone.
+			
+			When you use your breath weapon, each creature in the area of the exhalation must make a Constitution saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level.
 
-		After you use your breath weapon, you can't use it again until you complete a short or long rest."
+			After you use your breath weapon, you can't use it again until you complete a short or long rest."
+			format-arg "DC" (Evaluator)"math" "Add" {
+				value 8
+				value (Evaluator)"get_ability_modifier" (Ability)"Constitution"
+				value (Evaluator)"get_proficiency_bonus"
+			}
+			format-arg "amt" (Evaluator)"get_level" {
+				level 1 2
+				level 6 3
+				level 11 4
+				level 16 5
+			}
+		}
 		action "Action" {
-			/* TODO: attack > kind must be made optional
 			attack {
 				check "SavingThrow" {
 					difficulty_class 8 {
@@ -18,7 +31,7 @@ subrace name="Dragonborn: White Dragon Ancestry" {
 					save_ability (Ability)"Constitution"
 				}
 				area_of_effect "Cone" length=15
-				damage {
+				damage-todo {
 					// TODO: Need scaling damage
 					roll (Evaluator)"by_character_level" {
 						option 1 (Roll)"2d6"
@@ -29,7 +42,6 @@ subrace name="Dragonborn: White Dragon Ancestry" {
 					damage_type (DamageType)"Cold"
 				}
 			}
-			*/
 			limited_uses {
 				max_uses 1
 				reset_on "Short"
