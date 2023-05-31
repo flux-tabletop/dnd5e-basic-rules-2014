@@ -1,4 +1,4 @@
-race name="Halfling" {
+bundle category="Race" name="Halfling" {
 	mutator "ability_score" {
 		ability "Specific" "Dexterity"
 		bonus 2

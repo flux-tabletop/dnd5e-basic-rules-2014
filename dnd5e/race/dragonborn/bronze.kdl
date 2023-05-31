@@ -1,5 +1,5 @@
-subrace name="Dragonborn: Bronze Dragon Ancestry" {
-	requirement "Race" "Dragonborn"
+bundle category="RaceVariant" name="Dragonborn: Bronze Dragon Ancestry" {
+	requirement "Bundle" "Race" "Dragonborn"
 	mutator "add_defense" "Resistance" (DamageType)"Lightning"
 	feature name="Breath Weapon" {
 		description {

@@ -1,4 +1,4 @@
-race name="Dragonborn" {
+bundle category="Race" name="Dragonborn" {
 	mutator "ability_score" {
 		ability "Specific" "Strength"
 		bonus 2

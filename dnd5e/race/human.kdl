@@ -1,4 +1,4 @@
-race name="Human" {
+bundle category="Race" name="Human" {
 	description "It's hard to make generalizations about humans."
 	mutator "extend_life_expectancy" 80
 	mutator "add_size" {

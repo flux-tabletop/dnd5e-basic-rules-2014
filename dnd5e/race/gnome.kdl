@@ -1,4 +1,4 @@
-race name="Gnome" {
+bundle category="Race" name="Gnome" {
 	mutator "ability_score" {
 		ability "Specific" (Ability)"Intelligence"
 		bonus 2
