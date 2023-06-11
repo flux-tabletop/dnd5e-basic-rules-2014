@@ -17,10 +17,9 @@ subclass class="Fighter" name="Champion" {
 				In addition, when you make a running long jump, the distance you can cover increases by a number of feet equal to your Strength modifier."
 				foramt-arg "jump-dist" (Evaluator)"get_ability_modifier" (Ability)"Strength"
 			}
-			// TODO: "add_proficiency" for Abilities, which grant proficiency to all skills which use that ability
-			mutator-todo "add_proficiency" (Ability)"Specific" "Str" "Half" "Up"
-			mutator-todo "add_proficiency" (Ability)"Specific" "Dex" "Half" "Up"
-			mutator-todo "add_proficiency" (Ability)"Specific" "Con" "Half" "Up"
+			mutator "add_proficiency" (Ability)"Specific" "Str" "HalfUp"
+			mutator "add_proficiency" (Ability)"Specific" "Dex" "HalfUp"
+			mutator "add_proficiency" (Ability)"Specific" "Con" "HalfUp"
 		}
 	}
 	level 10 {
