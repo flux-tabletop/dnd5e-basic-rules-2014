@@ -217,12 +217,12 @@ class name="Bard" {
 				short "Half proficiency in all ability checks you aren't proficient in."
 				section "Starting at 2nd level, you can add half your proficiency bonus, rounded down, to any ability check you make that doesn't already include your proficiency bonus."
 			}
-			mutator "add_proficiency" (Ability)"Specific" "Str" "HalfDown"
-			mutator "add_proficiency" (Ability)"Specific" "Dex" "HalfDown"
-			mutator "add_proficiency" (Ability)"Specific" "Con" "HalfDown"
-			mutator "add_proficiency" (Ability)"Specific" "Int" "HalfDown"
-			mutator "add_proficiency" (Ability)"Specific" "Wis" "HalfDown"
-			mutator "add_proficiency" (Ability)"Specific" "Cha" "HalfDown"
+			mutator "add_proficiency" (Ability)"Specific" "Str" level="HalfDown"
+			mutator "add_proficiency" (Ability)"Specific" "Dex" level="HalfDown"
+			mutator "add_proficiency" (Ability)"Specific" "Con" level="HalfDown"
+			mutator "add_proficiency" (Ability)"Specific" "Int" level="HalfDown"
+			mutator "add_proficiency" (Ability)"Specific" "Wis" level="HalfDown"
+			mutator "add_proficiency" (Ability)"Specific" "Cha" level="HalfDown"
 		}
 		feature name="Song of Rest" {
 			description {
