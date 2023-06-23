@@ -34,16 +34,20 @@ class name="Paladin" {
 		option "Persuasion"
 		option "Religion"
 	}
-	mutator-todo "add_starting_equipment" {
-		item "Select" kind="Martial"
+	mutator "add_starting_equipment" {
+		item "Select" {
+			weapon kind="Martial"
+		}
 		pick-one {
-			item "Select" kind="Martial"
+			item "Select" {
+				weapon kind="Martial"
+			}
 			item "Specific" "items/armor/shield.kdl"
 		}
 		pick-one {
 			item "Specific" "items/weapons/javelin.kdl" count=5
-			item "Select" kind="Simple" {
-				attack "Melee"
+			item "Select" {
+				weapon kind="Simple" has_melee=true
 			}
 		}
 		pick-one {
@@ -51,7 +55,9 @@ class name="Paladin" {
 			item "Specific" "items/bundles/explorer.kdl"
 		}
 		item "Specific" "items/armor/chain_mail.kdl"
-		item "Select" tag="Holy Symbol"
+		item "Select" {
+			tag "Holy Symbol"
+		}
 	}
 
 	level 1 {

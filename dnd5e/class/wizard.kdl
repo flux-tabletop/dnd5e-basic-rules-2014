@@ -36,14 +36,16 @@ class name="Wizard" {
 		option "Medicine"
 		option "Religion"
 	}
-	mutator-todo "add_starting_equipment" {
+	mutator "add_starting_equipment" {
 		pick-one {
 			item "Specific" "items/weapon/quarterstaff.kdl"
 			item "Specific" "items/weapon/dagger.kdl"
 		}
 		pick-one {
 			item "Specific" "items/gear/componentPouch.kdl"
-			item "Select" tag="Arcane Focus"
+			item "Select" {
+				tag "Arcane Focus"
+			}
 		}
 		pick-one {
 			item "Specific" "items/bundles/scholar.kdl"

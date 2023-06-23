@@ -57,7 +57,7 @@ class name="Rogue" {
 		option "SleightOfHand"
 		option "Stealth"
 	}
-	mutator-todo "add_starting_equipment" {
+	mutator "add_starting_equipment" {
 		pick-one {
 			item "Specific" "items/weapons/rapier.kdl"
 			item "Specific" "items/weapons/shortsword.kdl"

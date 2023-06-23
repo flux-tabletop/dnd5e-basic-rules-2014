@@ -30,7 +30,7 @@ class name="Ranger" {
 		option "Stealth"
 		option "Survival"
 	}
-	mutator-todo "add_starting_equipment" {
+	mutator "add_starting_equipment" {
 		pick-one {
 			item "Specific" "items/armor/scale_mail.kdl"
 			item "Specific" "items/armor/leather.kdl"
@@ -41,11 +41,11 @@ class name="Ranger" {
 				item "Specific" "items/weapons/shortsword.kdl"
 			}
 			group {
-				item "Select" kind="Simple" {
-					attack "Melee"
+				item "Select" {
+					weapon kind="Simple" has_melee=true
 				}
-				item "Select" kind="Simple" {
-					attack "Melee"
+				item "Select" {
+					weapon kind="Simple" has_melee=true
 				}
 			}
 		}

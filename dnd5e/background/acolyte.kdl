@@ -7,8 +7,10 @@ bundle category="Background" name="Acolyte" {
 	mutator "add_proficiency" (Skill)"Specific" "Religion"
 	mutator "add_proficiency" (Language)"Any" id="langA"
 	mutator "add_proficiency" (Language)"Any" id="langB"
-	mutator-todo "add_starting_equipment" {
-		item "Select" tag="Holy Symbol"
+	mutator "add_starting_equipment" {
+		item "Select" {
+			tag "Holy Symbol"
+		}
 		item "Custom" name="A prayer book or prayer wheel"
 		item "Custom" name="Stick of Incense" {
 			kind "Simple" count=5

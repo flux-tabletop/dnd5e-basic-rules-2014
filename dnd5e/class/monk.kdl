@@ -55,10 +55,12 @@ class name="Monk" {
 		option "Viol"
 	}
 
-	mutator-todo "add_starting_equipment" {
+	mutator "add_starting_equipment" {
 		pick-one {
 			item "Specific" "items/weapons/shortsword.kdl"
-			item "Select" kind="Simple"
+			item "Select" {
+				weapon kind="Simple"
+			}
 		}
 		pick-one {
 			item "Specific" "items/bundles/dungeoneer.kdl"

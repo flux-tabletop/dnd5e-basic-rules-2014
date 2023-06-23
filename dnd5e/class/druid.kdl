@@ -45,20 +45,24 @@ class name="Druid" {
 		option "Religion"
 		option "Survival"
 	}
-	mutator-todo "add_starting_equipment" {
+	mutator "add_starting_equipment" {
 		pick-one {
 			item "Specific" "items/armor/shield.kdl"
-			item "Select" kind="Simple"
+			item "Select" {
+				weapon kind="Simple"
+			}
 		}
 		pick-one {
 			item "Specific" "items/weapon/scimitar.kdl"
-			item "Select" kind="Simple" {
-				attack "Melee"
+			item "Select" {
+				weapon kind="Simple" has_melee=true
 			}
 		}
 		item "Specific" "items/armor/leather.kdl"
 		item "Specific" "items/bundles/explorer.kdl"
-		item "Select" tag="Druidic Focus"
+		item "Select" {
+			tag "Druidic Focus"
+		}
 	}
 
 	level 1 {

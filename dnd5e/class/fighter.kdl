@@ -34,7 +34,7 @@ class name="Fighter" {
 		option "Perception"
 		option "Survival"
 	}
-	mutator-todo "add_starting_equipment" {
+	mutator "add_starting_equipment" {
 		pick-one {
 			item "Specific" "items/armor/chain_mail.kdl"
 			group {
@@ -43,10 +43,14 @@ class name="Fighter" {
 				item "Specific" "items/ammunition/arrow.kdl" count=20
 			}
 		}
-		item "Select" kind="Martial"
+		item "Select" {
+			weapon kind="Martial"
+		}
 		pick-one {
 			item "Specific" "items/armor/shield.kdl"
-			item "Select" kind="Martial"
+			item "Select" {
+				weapon kind="Martial"
+			}
 		}
 		pick-one {
 			group {

@@ -33,7 +33,7 @@ class name="Cleric" {
 		option "Persuasion"
 		option "Religion"
 	}
-	mutator-todo "add_starting_equipment" {
+	mutator "add_starting_equipment" {
 		pick-one {
 			item "Specific" "items/weapon/mace.kdl"
 			item "Specific" "items/weapon/mace.kdl" {
@@ -52,14 +52,18 @@ class name="Cleric" {
 				item "Specific" "items/weapons/crossbow_light.kdl"
 				item "Specific" "items/ammunition/crossbow_bolt.kdl" count=20
 			}
-			item "Select" kind="Simple"
+			item "Select" {
+				weapon kind="Simple"
+			}
 		}
 		pick-one {
 			item "Specific" "items/bundles/priest.kdl"
 			item "Specific" "items/bundles/explorer.kdl"
 		}
 		item "Specific" "items/armor/shield.kdl"
-		item "Select" tag="Holy Symbol"
+		item "Select" {
+			tag "Holy Symbol"
+		}
 	}
 
 	level 1 {

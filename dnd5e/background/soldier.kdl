@@ -22,7 +22,7 @@ bundle category="Background" name="Soldier" {
 		option "Three-Dragon Ante Set"
 	}
 	mutator "add_proficiency" (Tool)"Specific" "Vehicles (land)"
-	mutator-todo "add_starting_equipment" {
+	mutator "add_starting_equipment" {
 		item "Specific" "items/gear/clothesCommon.kdl"
 		item "Custom" name="Insignia of Rank"
 		item "Custom" name="Trophy" {

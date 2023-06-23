@@ -20,7 +20,7 @@ bundle category="Background" name="Noble" {
 	}
 	mutator "add_proficiency" (Language)"Any" id="lang"
 
-	mutator-todo "add_starting_equipment" {
+	mutator "add_starting_equipment" {
 		item "Specific" "items/gear/clothesFine.kdl"
 		item "Specific" "items/gear/signetRing.kdl"
 		item "Custom" name="Scroll of Pedigree"

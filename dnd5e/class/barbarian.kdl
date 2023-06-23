@@ -27,14 +27,18 @@ class name="Barbarian" {
 		option "Perception"
 		option "Survival"
 	}
-	mutator-todo "add_starting_equipment" {
+	mutator "add_starting_equipment" {
 		pick-one {
 			item "Specific" "items/weapons/greataxe.kdl"
-			item "Select" kind="Martial" has_range=false
+			item "Select" {
+				weapon kind="Martial" has_melee=true
+			}
 		}
 		pick-one {
 			item "Specific" "items/weapons/handaxe.kdl" count=2
-			item "Select" kind="Simple"
+			item "Select" {
+				weapon kind="Simple"
+			}
 		}
 		item "Specific" "items/bundles/explorer.kdl"
 		item "Specific" "items/weapons/javelin.kdl" count=4

@@ -33,7 +33,7 @@ class name="Warlock" {
 		option "Nature"
 		option "Religion"
 	}
-	mutator-todo "add_starting_equipment" {
+	mutator "add_starting_equipment" {
 		pick-one {
 			group {
 				item "Specific" "items/weapons/crossbow_light.kdl"
@@ -45,7 +45,9 @@ class name="Warlock" {
 		}
 		pick-one {
 			item "Specific" "items/gear/componentPouch.kdl"
-			item "Select" tag="Arcane Focus"
+			item "Select" {
+				tag "Arcane Focus"
+			}
 		}
 		pick-one {
 			item "Specific" "items/bundles/scholar.kdl"

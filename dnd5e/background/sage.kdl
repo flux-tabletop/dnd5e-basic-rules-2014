@@ -14,7 +14,7 @@ bundle category="Background" name="Sage" {
 	mutator "add_proficiency" (Skill)"Specific" "History"
 	mutator "add_proficiency" (Language)"Any"
 	mutator "add_proficiency" (Language)"Any"
-	mutator-todo "add_starting_equipment" {
+	mutator "add_starting_equipment" {
 		item "Specific" "items/gear/ink.kdl"
 		item "Specific" "items/gear/clothesCommon.kdl"
 		item "Custom" name="Quill"

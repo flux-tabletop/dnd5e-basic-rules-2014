@@ -40,11 +40,13 @@ class name="Bard" {
 		option "Shawm"
 		option "Viol"
 	}
-	mutator-todo "add_starting_equipment" {
+	mutator "add_starting_equipment" {
 		pick-one {
 			item "Specific" "items/weapon/rapier.kdl"
 			item "Specific" "items/weapon/longsword.kdl"
-			item "Select" kind="Simple"
+			item "Select" {
+				weapon kind="Simple"
+			}
 		}
 		item "Select" {
 			tag "Musical Instrument"

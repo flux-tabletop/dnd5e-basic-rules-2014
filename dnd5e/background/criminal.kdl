@@ -21,7 +21,7 @@ bundle category="Background" name="Criminal" {
 		option "Three-Dragon Ante Set"
 	}
 	mutator "add_proficiency" (Tool)"Specific" "Thieves' Tools"
-	mutator-todo "add_starting_equipment" {
+	mutator "add_starting_equipment" {
 		item "Specific" "items/gear/crowbar.kdl"
 		item "Custom" name="Common Clothes" {
 			notes "Dark, includes a hood"
