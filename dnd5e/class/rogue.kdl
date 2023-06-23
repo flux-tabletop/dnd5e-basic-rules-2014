@@ -58,18 +58,18 @@ class name="Rogue" {
 		option "Stealth"
 	}
 	mutator "add_starting_equipment" {
-		pick-one {
+		group pick=1 {
 			item "Specific" "items/weapons/rapier.kdl"
 			item "Specific" "items/weapons/shortsword.kdl"
 		}
-		pick-one {
+		group pick=1 {
 			group {
 				item "Specific" "items/weapons/shortbow.kdl"
 				item "Specific" "items/ammunition/arrow.kdl" count=20
 			}
 			item "Specific" "items/weapons/shortsword.kdl"
 		}
-		pick-one {
+		group pick=1 {
 			item "Specific" "items/bundles/burglar.kdl"
 			item "Specific" "items/bundles/dungeoneer.kdl"
 			item "Specific" "items/bundles/explorer.kdl"

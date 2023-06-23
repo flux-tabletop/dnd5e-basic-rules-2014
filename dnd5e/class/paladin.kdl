@@ -38,19 +38,19 @@ class name="Paladin" {
 		item "Select" {
 			weapon kind="Martial"
 		}
-		pick-one {
+		group pick=1 {
 			item "Select" {
 				weapon kind="Martial"
 			}
 			item "Specific" "items/armor/shield.kdl"
 		}
-		pick-one {
+		group pick=1 {
 			item "Specific" "items/weapons/javelin.kdl" count=5
 			item "Select" {
 				weapon kind="Simple" has_melee=true
 			}
 		}
-		pick-one {
+		group pick=1 {
 			item "Specific" "items/bundles/priest.kdl"
 			item "Specific" "items/bundles/explorer.kdl"
 		}

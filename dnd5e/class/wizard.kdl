@@ -37,17 +37,17 @@ class name="Wizard" {
 		option "Religion"
 	}
 	mutator "add_starting_equipment" {
-		pick-one {
+		group pick=1 {
 			item "Specific" "items/weapon/quarterstaff.kdl"
 			item "Specific" "items/weapon/dagger.kdl"
 		}
-		pick-one {
+		group pick=1 {
 			item "Specific" "items/gear/componentPouch.kdl"
 			item "Select" {
 				tag "Arcane Focus"
 			}
 		}
-		pick-one {
+		group pick=1 {
 			item "Specific" "items/bundles/scholar.kdl"
 			item "Specific" "items/bundles/explorer.kdl"
 		}

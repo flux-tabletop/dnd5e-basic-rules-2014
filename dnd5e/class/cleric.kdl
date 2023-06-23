@@ -34,20 +34,20 @@ class name="Cleric" {
 		option "Religion"
 	}
 	mutator "add_starting_equipment" {
-		pick-one {
+		group pick=1 {
 			item "Specific" "items/weapon/mace.kdl"
 			item "Specific" "items/weapon/mace.kdl" {
 				criteria (Evaluator)"is_proficient_with" (Weapon)"Warhammer"
 			}
 		}
-		pick-one {
+		group pick=1 {
 			item "Specific" "items/armor/scale_mail.kdl"
 			item "Specific" "items/armor/leather.kdl"
 			item "Specific" "items/armor/chain_mail.kdl" {
 				criteria (Evaluator)"is_proficient_with" (Weapon)"Chain Mail"
 			}
 		}
-		pick-one {
+		group pick=1 {
 			group {
 				item "Specific" "items/weapons/crossbow_light.kdl"
 				item "Specific" "items/ammunition/crossbow_bolt.kdl" count=20
@@ -56,7 +56,7 @@ class name="Cleric" {
 				weapon kind="Simple"
 			}
 		}
-		pick-one {
+		group pick=1 {
 			item "Specific" "items/bundles/priest.kdl"
 			item "Specific" "items/bundles/explorer.kdl"
 		}

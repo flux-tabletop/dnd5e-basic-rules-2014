@@ -28,13 +28,13 @@ class name="Barbarian" {
 		option "Survival"
 	}
 	mutator "add_starting_equipment" {
-		pick-one {
+		group pick=1 {
 			item "Specific" "items/weapons/greataxe.kdl"
 			item "Select" {
 				weapon kind="Martial" has_melee=true
 			}
 		}
-		pick-one {
+		group pick=1 {
 			item "Specific" "items/weapons/handaxe.kdl" count=2
 			item "Select" {
 				weapon kind="Simple"

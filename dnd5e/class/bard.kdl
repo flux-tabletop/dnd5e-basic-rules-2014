@@ -41,7 +41,7 @@ class name="Bard" {
 		option "Viol"
 	}
 	mutator "add_starting_equipment" {
-		pick-one {
+		group pick=1 {
 			item "Specific" "items/weapon/rapier.kdl"
 			item "Specific" "items/weapon/longsword.kdl"
 			item "Select" {

@@ -35,7 +35,7 @@ class name="Fighter" {
 		option "Survival"
 	}
 	mutator "add_starting_equipment" {
-		pick-one {
+		group pick=1 {
 			item "Specific" "items/armor/chain_mail.kdl"
 			group {
 				item "Specific" "items/armor/leather.kdl"
@@ -46,13 +46,13 @@ class name="Fighter" {
 		item "Select" {
 			weapon kind="Martial"
 		}
-		pick-one {
+		group pick=1 {
 			item "Specific" "items/armor/shield.kdl"
 			item "Select" {
 				weapon kind="Martial"
 			}
 		}
-		pick-one {
+		group pick=1 {
 			group {
 				item "Specific" "items/weapons/crossbow_light.kdl"
 				item "Specific" "items/ammunition/crossbow_bolt.kdl" count=20
@@ -62,7 +62,7 @@ class name="Fighter" {
 				item "Specific" "items/weapon/handaxe.kdl"
 			}
 		}
-		pick-one {
+		group pick=1 {
 			item "Specific" "items/bundles/dungeoneer.kdl"
 			item "Specific" "items/bundles/explorer.kdl"
 		}

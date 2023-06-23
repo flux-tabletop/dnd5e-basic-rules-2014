@@ -31,11 +31,11 @@ class name="Ranger" {
 		option "Survival"
 	}
 	mutator "add_starting_equipment" {
-		pick-one {
+		group pick=1 {
 			item "Specific" "items/armor/scale_mail.kdl"
 			item "Specific" "items/armor/leather.kdl"
 		}
-		pick-one {
+		group pick=1 {
 			group {
 				item "Specific" "items/weapons/shortsword.kdl"
 				item "Specific" "items/weapons/shortsword.kdl"
@@ -49,7 +49,7 @@ class name="Ranger" {
 				}
 			}
 		}
-		pick-one {
+		group pick=1 {
 			item "Specific" "items/bundles/dungeoneer.kdl"
 			item "Specific" "items/bundles/explorer.kdl"
 		}

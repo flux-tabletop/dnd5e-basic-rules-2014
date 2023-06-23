@@ -56,13 +56,13 @@ class name="Monk" {
 	}
 
 	mutator "add_starting_equipment" {
-		pick-one {
+		group pick=1 {
 			item "Specific" "items/weapons/shortsword.kdl"
 			item "Select" {
 				weapon kind="Simple"
 			}
 		}
-		pick-one {
+		group pick=1 {
 			item "Specific" "items/bundles/dungeoneer.kdl"
 			item "Specific" "items/bundles/explorer.kdl"
 		}
