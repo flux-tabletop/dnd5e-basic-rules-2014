@@ -1,9 +1,20 @@
 subclass class="Druid" name="Circle of the Land" {
 	description "The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites through a vast oral tradition. These druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle's wisest members preside as the chief priests of communities that hold to the Old Faith and serve as advisors to the rulers of those folk. As a member of this circle, your magic is influenced by the land where you were initiated into the circle's mysterious rites."
 	level 2 {
-		/* TODO: Bonus Cantrip
-			When you choose this circle at 2nd level, you learn one additional druid cantrip of your choice. This cantrip doesn't count against the number of druid cantrips you know.
-		*/
+		feature name="Bonus Cantrip" {
+			description {
+				short "You gain one additional druid cantrip of your choice."
+				section "When you choose this circle at 2nd level, you learn one additional druid cantrip of your choice. This cantrip doesn't count against the number of druid cantrips you know."
+			}
+			mutator "spellcasting" "add_prepared" ability="Wisdom" {
+				options 1 {
+					filter {
+						rank 0
+						tag "Druid"
+					}
+				}
+			}
+		}
 		feature name="Natural Recovery" {
 			description {
 				short "During a short rest, recover spell slots whose combined level is less than or equal to {level_budget}. No individual slot can be 6th level or higher."
@@ -323,8 +334,11 @@ subclass class="Druid" name="Circle of the Land" {
 	}
 	level 10 {
 		feature name="Nature's Ward" {
-			description "When you reach 10th level, you can't be charmed or frightened by elementals or fey, and you are immune to poison and disease."
-			// TODO: Immunity to conditions like charmed and frightened under a context
+			description {
+				short "You are immune to Poison and Disease. You cannot be charmed by elementals or fey."
+				section "When you reach 10th level, you can't be charmed or frightened by elementals or fey, and you are immune to poison and disease."
+			}
+			mutator "add_defense" "Immunity" "Poison"
 		}
 	}
 	level 14 {
