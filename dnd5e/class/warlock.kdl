@@ -346,8 +346,7 @@ class name="Warlock" {
 				}
 			}
 			option "Feat" {
-				// TODO: grant any named-group that has the "Feat" category
-				mutator-todo "feature" category="Feat"
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -368,8 +367,7 @@ class name="Warlock" {
 				}
 			}
 			option "Feat" {
-				// TODO: grant any named-group that has the "Feat" category
-				mutator-todo "feature" category="Feat"
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -460,8 +458,7 @@ class name="Warlock" {
 				}
 			}
 			option "Feat" {
-				// TODO: grant any named-group that has the "Feat" category
-				mutator-todo "feature" category="Feat"
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -482,8 +479,7 @@ class name="Warlock" {
 				}
 			}
 			option "Feat" {
-				// TODO: grant any named-group that has the "Feat" category
-				mutator-todo "feature" category="Feat"
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -504,8 +500,7 @@ class name="Warlock" {
 				}
 			}
 			option "Feat" {
-				// TODO: grant any named-group that has the "Feat" category
-				mutator-todo "feature" category="Feat"
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
