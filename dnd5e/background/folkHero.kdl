@@ -1,18 +1,16 @@
 bundle category="Background" name="Folk Hero" {
-	description "You come from a humble social rank, but you are destined for so much more. Already the people of your home village regard you as their champion, and your destiny calls you to stand against the tyrants and monsters that threaten the common folk everywhere."
-	selection-todo name="Defining Event" {
-		description "You previously pursued a simple profession among the peasantry, perhaps as a farmer, miner, servant, shepherd, woodcutter, or gravedigger. But something happened that set you on a different path and marked you for greater things. Choose or randomly determine a defining event that marked you as a hero of the people."
-		option "I stood up to a tyrant's agents."
-		option "I saved people during a natural disaster."
-		option "I stood alone against a terrible monster."
-		option "I stole from a corrupt merchant to help the poor."
-		option "I led a militia to fight off an invading army."
-		option "I broke into a tyrant's castle and stole weapons to arm the people."
-		option "I trained the peasantry to use farm implements as weapons against a tyrant's soldiers."
-		option "A lord rescinded an unpopular decree after I led a symbolic act of protest against it."
-		option "A celestial, fey, or similar creature gave me a blessing or revealed my secret origin."
-		option "Recruited into a lord's army, I rose to leadership and was commended for my heroism."
-	}
+	description "You come from a humble social rank, but you are destined for so much more. Already the people of your home village regard you as their champion, and your destiny calls you to stand against the tyrants and monsters that threaten the common folk everywhere.
+	You previously pursued a simple profession among the peasantry, perhaps as a farmer, miner, servant, shepherd, woodcutter, or gravedigger. But something happened that set you on a different path and marked you for greater things. Choose or randomly determine a defining event that marked you as a hero of the people.
+	- I stood up to a tyrant's agents.
+	- I saved people during a natural disaster.
+	- I stood alone against a terrible monster.
+	- I stole from a corrupt merchant to help the poor.
+	- I led a militia to fight off an invading army.
+	- I broke into a tyrant's castle and stole weapons to arm the people.
+	- I trained the peasantry to use farm implements as weapons against a tyrant's soldiers.
+	- A lord rescinded an unpopular decree after I led a symbolic act of protest against it.
+	- A celestial, fey, or similar creature gave me a blessing or revealed my secret origin.
+	- Recruited into a lord's army, I rose to leadership and was commended for my heroism."
 	mutator "add_proficiency" (Skill)"Specific" "AnimalHandling"
 	mutator "add_proficiency" (Skill)"Specific" "Survival"
 	mutator "add_proficiency" (Tool)"AnyOf" id="tool" {

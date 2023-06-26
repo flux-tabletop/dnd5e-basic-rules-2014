@@ -1,17 +1,6 @@
 bundle category="Background" name="Criminal" {
-	description "You are an experienced criminal with a history of breaking the law. You have spent a lot of time among other criminals and still have contacts within the criminal underworld. You're far closer than most people to the world of murder, theft, and violence that pervades the underbelly of civilization, and you have survived up to this point by flouting the rules and regulations of society."
-	selection-todo name="Role" {
-		description "There are many kinds of criminals, and within a thieves' guild or similar criminal organization, individual members have particular specialties. Even criminals who operate outside of such organizations have strong preferences for certain kinds of crimes over others. Choose or roll the role you played in your criminal life."
-		option "Blackmailer"
-		option "Burglar"
-		option "Enforcer"
-		option "Fence"
-		option "Highway robber"
-		option "Hired killer"
-		option "Pickpocket"
-		option "Smuggler"
-		option "Spy"
-	}
+	description "You are an experienced criminal with a history of breaking the law. You have spent a lot of time among other criminals and still have contacts within the criminal underworld. You're far closer than most people to the world of murder, theft, and violence that pervades the underbelly of civilization, and you have survived up to this point by flouting the rules and regulations of society.
+	There are many kinds of criminals, and within a thieves' guild or similar criminal organization, individual members have particular specialties. Even criminals who operate outside of such organizations have strong preferences for certain kinds of crimes over others. Choose or roll the role you played in your criminal life. Some examples are: Blackmailer, Burglar, Enforcer, Fence, Highway robber, Hired killer, Pickpocket, Smuggler, & Spy."
 	mutator "add_proficiency" (Skill)"Specific" "Deception"
 	mutator "add_proficiency" (Skill)"Specific" "Stealth"
 	mutator "add_proficiency" (Tool)"AnyOf" id="tool" {
