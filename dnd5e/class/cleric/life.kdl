@@ -1,7 +1,7 @@
 subclass class="Cleric" name="Life Domain" {
 	description "The Life domain focuses on the vibrant positive energy — one of the fundamental forces of the universe — that sustains all life. The gods of life promote vitality and health through healing the sick and wounded, caring for those in need, and driving away the forces of death and undeath. Almost any non-evil deity can claim influence over this domain, particularly agricultural deities (such as Chauntea, Arawai, and Demeter), sun gods (such as Lathander, Pelor, and Re-Horakhty), gods of healing or endurance (such as Ilmater, Mishakal, Apollo, and Diancecht), and gods of home and community (such as Hestia, Hathor, and Boldrei)."
 	level 1 {
-		feature name="Domain Spells" {
+		mutator "feature" name="Domain Spells" {
 			description {
 				section "Each domain has a list of spells — its domain spells — that you gain at the cleric levels noted in the domain description. Once you gain a domain spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day.
 
@@ -48,16 +48,16 @@ subclass class="Cleric" name="Life Domain" {
 				}
 			}
 		}
-		feature name="Bonus Proficiency" {
+		mutator "feature" name="Bonus Proficiency" {
 			mutator "add_proficiency" (Armor)"Heavy"
 		}
-		feature name="Disciple of Life" {
+		mutator "feature" name="Disciple of Life" {
 			description "Also starting at 1st level, your healing spells are more effective. Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains additional hit points equal to 2 + the spell's level."
 			// TODO: Find a way to increase the roll/value of healing spells
 		}
 	}
 	level 2 {
-		feature name="Preserve Life" parent="Cleric/level02/Channel Divinity" {
+		mutator "feature" name="Preserve Life" parent="Cleric/level02/Channel Divinity" {
 			description {
 				short "Restore up to {hit-points} hit points, divided among any creatures within 30 feet of you which aren't an undead or a construct (a creature cannot regain hit points above their hit point maximum)."
 				section "Starting at 2nd level, you can use your Channel Divinity to heal the badly injured.
@@ -72,17 +72,17 @@ subclass class="Cleric" name="Life Domain" {
 		}
 	}
 	level 6 {
-		feature name="Blessed Healer" {
+		mutator "feature" name="Blessed Healer" {
 			description "Beginning at 6th level, the healing spells you cast on others heal you as well. When you cast a spell of 1st level or higher that restores hit points to a creature other than you, you regain hit points equal to 2 + the spell's level."
 		}
 	}
 	level 8 {
-		feature name="Divine Strike" {
+		mutator "feature" name="Divine Strike" {
 			description "At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 radiant damage to the target. When you reach 14th level, the extra damage increases to 2d8."
 		}
 	}
 	level 17 {
-		feature name="Supreme Healing" {
+		mutator "feature" name="Supreme Healing" {
 			description "Starting at 17th level, when you would normally roll one or more dice to restore hit points with a spell, you instead use the highest number possible for each die. For example, instead of restoring 2d6 hit points to a creature, you restore 12."
 		}
 	}

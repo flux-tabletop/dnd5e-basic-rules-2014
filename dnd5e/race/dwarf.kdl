@@ -11,19 +11,19 @@ bundle category="Race" name="Dwarf" {
 	mutator "speed" "Walking" (Base)25
 	mutator "sense" "Darkvision" (Base)60
 	mutator "flag" "ArmorStrengthRequirement" false
-	feature name="Dwarven Resilience" {
+	mutator "feature" name="Dwarven Resilience" {
 		description "You have advantage on saving throws against poison, and you have resistance against poison damage."
 		mutator "add_modifier" "Advantage" (SavingThrow)"All" context="Poison"
 		mutator "add_defense" "Resistance" (DamageType)"Poison"
 	}
-	feature name="Dwarven Combat Training" {
+	mutator "feature" name="Dwarven Combat Training" {
 		description "You have proficiency with the battleaxe, handaxe, light hammer, and warhammer."
 		mutator "add_proficiency" (Weapon)"Battleaxe"
 		mutator "add_proficiency" (Weapon)"Handaxe"
 		mutator "add_proficiency" (Weapon)"LightHammer"
 		mutator "add_proficiency" (Weapon)"WarHammer"
 	}
-	feature name="Tool Proficiency" {
+	mutator "feature" name="Tool Proficiency" {
 		description "You gain proficiency with the artisan's tools of your choice: smith's tools, brewer's supplies, or mason's tools."
 		mutator "add_proficiency" (Tool)"AnyOf" id="tool" {
 			option "Smith's Tools"
@@ -31,10 +31,10 @@ bundle category="Race" name="Dwarf" {
 			option "Mason's Tools"
 		}
 	}
-	feature name="Stonecunning" {
+	mutator "feature" name="Stonecunning" {
 		description "Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
 	}
-	feature name="Languages" {
+	mutator "feature" name="Languages" {
 		description "You can speak, read, and write Common and Dwarvish. Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak."
 		mutator "add_proficiency" (Language)"Specific" "Common"
 		mutator "add_proficiency" (Language)"Specific" "Dwarvish"

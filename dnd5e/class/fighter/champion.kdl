@@ -1,7 +1,7 @@
 subclass class="Fighter" name="Champion" {
 	description "The archetypal Champion focuses on the development of raw physical power honed to deadly perfection. Those who model themselves on this archetype combine rigorous training with physical excellence to deal devastating blows."
 	level 3 {
-		feature name="Improved Critical" {
+		mutator "feature" name="Improved Critical" {
 			description {
 				short "Critical hit on weapon attacks with a roll of 19 or 20."
 				section "Beginning when you choose this archetype at 3rd level, your weapon attacks score a critical hit on a roll of 19 or 20."
@@ -9,7 +9,7 @@ subclass class="Fighter" name="Champion" {
 		}
 	}
 	level 7 {
-		feature name="Remarkable Athlete" {
+		mutator "feature" name="Remarkable Athlete" {
 			description {
 				short "You are at least half proficient (rounded up) in all Strength, Dexterity, or Constitution checks. Running long jumps are increased by {jump_dist} feet."
 				section "Starting at 7th level, you can add half your proficiency bonus (round up) to any Strength, Dexterity, or Constitution check you make that doesn't already use your proficiency bonus.
@@ -23,7 +23,7 @@ subclass class="Fighter" name="Champion" {
 		}
 	}
 	level 10 {
-		feature name="Additional Fighting Style" {
+		mutator "feature" name="Additional Fighting Style" {
 			description {
 				short "You adopt an additional style of fighting as your specialty."
 				section "At 10th level, you can choose a second option from the Fighting Style class feature."
@@ -31,7 +31,7 @@ subclass class="Fighter" name="Champion" {
 			mutator "pick" 1 name="Fighting Style" {
 				cannot-match "Fighter/level01/Fighting Style"
 				option "Archery" {
-					feature name="Archery" {
+					mutator "feature" name="Archery" {
 						// You gain a +2 bonus to attack rolls you make with ranged weapons.
 						mutator "bonus" "WeaponAttackRoll" {
 							bonus 2
@@ -43,14 +43,14 @@ subclass class="Fighter" name="Champion" {
 					}
 				}
 				option "Defense" {
-					feature name="Defense" {
+					mutator "feature" name="Defense" {
 						// While you are wearing armor, you gain a +1 bonus to AC.
 						criteria "has_armor_equipped"
 						mutator "bonus" "ArmorClass" 1
 					}
 				}
 				option "Dueling" {
-					feature name="Dueling" {
+					mutator "feature" name="Dueling" {
 						// When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.'
 						criteria-todo "has_weapon_equipped" max=1 {
 							attack "Melee"
@@ -68,7 +68,7 @@ subclass class="Fighter" name="Champion" {
 					}
 				}
 				option "Great Weapon Fighting" {
-					feature name="Great Weapon Fighting" {
+					mutator "feature" name="Great Weapon Fighting" {
 						description {
 							short "Reroll 1 or 2 on damage rolls for two-handed or versatile weapons (when weilding with two hands)."
 							section "When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit."
@@ -76,7 +76,7 @@ subclass class="Fighter" name="Champion" {
 					}
 				}
 				option "Protection" {
-					feature name="Protection" {
+					mutator "feature" name="Protection" {
 						description {
 							short "Impose disadvantage on an attack rolls against a target that isn't you, when the target is within 5 feet of you."
 							section "When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll."
@@ -89,7 +89,7 @@ subclass class="Fighter" name="Champion" {
 					}
 				}
 				option "Two-Weapon Fighting" {
-					feature name="Two-Weapon Fighting" {
+					mutator "feature" name="Two-Weapon Fighting" {
 						description "When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack."
 					}
 				}
@@ -97,7 +97,7 @@ subclass class="Fighter" name="Champion" {
 		}
 	}
 	level 15 {
-		feature name="Superior Critical" {
+		mutator "feature" name="Superior Critical" {
 			description {
 				short "Critical hit on weapon attacks with a roll of 18-20."
 				section "Starting at 15th level, your weapon attacks score a critical hit on a roll of 18-20."
@@ -105,7 +105,7 @@ subclass class="Fighter" name="Champion" {
 		}
 	}
 	level 18 {
-		feature name="Survivor" {
+		mutator "feature" name="Survivor" {
 			description {
 				short "At the start of your turn, regain {hit_points} if you have more than 0 and less than {half_max_hp} hit points."
 				section "At 18th level, you attain the pinnacle of resilience in battle. At the start of each of your turns, you regain hit points equal to 5 + your Constitution modifier (+{hit_points}) if you have no more than half ({half_max_hp}) of your hit points left. You don't gain this benefit if you have 0 hit points."

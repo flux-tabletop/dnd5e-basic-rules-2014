@@ -50,7 +50,7 @@ class name="Barbarian" {
 		mutator "add_proficiency" (Armor)"Shield"
 		mutator "add_proficiency" (Weapon)"Simple"
 		mutator "add_proficiency" (Weapon)"Martial"
-		feature name="Rage" {
+		mutator "feature" name="Rage" {
 			description {
 				short "As a bonus action enter a rage for up to 1 minute (10 rounds).
 				You gain advantage on STR checks and saving throws (not attacks), {bonus_damage} melee damage with STR weapons, resistance to bludgeoning, piercing, slashing damage. You can't cast or concentrate on spells while raging.
@@ -111,7 +111,7 @@ class name="Barbarian" {
 				}
 			}
 		}
-		feature name="Unarmored Defense" unique=true {
+		mutator "feature" name="Unarmored Defense" unique=true {
 			description "While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit."
 			criteria "has_armor_equipped" inverted=true {
 				kind "Light"
@@ -125,10 +125,10 @@ class name="Barbarian" {
 		}
 	}
 	level 2 {
-		feature name="Reckless Attack" {
+		mutator "feature" name="Reckless Attack" {
 			description "Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn."
 		}
-		feature name="Danger Sense" {
+		mutator "feature" name="Danger Sense" {
 			description "At 2nd level, you gain an uncanny sense of when things nearby aren't as they should be, giving you an edge when you dodge away from danger.
 			You have advantage on Dexterity saving throws against effects that you can see, such as traps and spells. To gain this benefit, you can't be blinded, deafened, or incapacitated."
 			mutator "add_modifier" "Advantage" (SavingThrow)"Specific" "Dexterity" context="effects you can see"
@@ -167,14 +167,14 @@ class name="Barbarian" {
 		}
 	}
 	level 5 {
-		feature name="Extra Attack" unique=true {
+		mutator "feature" name="Extra Attack" unique=true {
 			description {
 				short "You can make multiple attacks when you take the attack action on your turn."
 				section "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
 			}
 			mutator "add_to_action_budget" "Attack" 1
 		}
-		feature name="Fast Movement" {
+		mutator "feature" name="Fast Movement" {
 			description "Starting at 5th level, your speed increases by 10 feet while you aren't wearing heavy armor."
 			mutator "speed" "Walking" (Additive)10
 			criteria "has_armor_equipped" inverted=true {
@@ -183,7 +183,7 @@ class name="Barbarian" {
 		}
 	}
 	level 7 {
-		feature name="Feral Instinct" {
+		mutator "feature" name="Feral Instinct" {
 			description "By 7th level, your instincts are so honed that you have advantage on initiative rolls.
 			Additionally, if you are surprised at the beginning of combat and aren't incapacitated, you can act normally on your first turn, but only if you enter your rage before doing anything else on that turn."
 			mutator "add_modifier" "Advantage" (Initiative)""
@@ -211,13 +211,13 @@ class name="Barbarian" {
 		}
 	}
 	level 9 {
-		feature name="Brutal Critical" {
+		mutator "feature" name="Brutal Critical" {
 			description "Beginning at 9th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack.
 			This increases to two additional dice at 13th level and three additional dice at 17th level."
 		}
 	}
 	level 11 {
-		feature name="Relentless Rage" {
+		mutator "feature" name="Relentless Rage" {
 			description "Starting at 11th level, your rage can keep you fighting despite grievous wounds. If you drop to 0 hit points while you're raging and don't die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point instead.
 			Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10."
 		}	
@@ -244,7 +244,7 @@ class name="Barbarian" {
 		}
 	}
 	level 15 {
-		feature name="Persistent Rage" {
+		mutator "feature" name="Persistent Rage" {
 			description "Beginning at 15th level, your rage is so fierce that it ends early only if you fall unconscious or if you choose to end it."
 		}	
 	}
@@ -270,7 +270,7 @@ class name="Barbarian" {
 		}
 	}
 	level 18 {
-		feature name="Indomitable Might" {
+		mutator "feature" name="Indomitable Might" {
 			description "Beginning at 18th level, if your total for a Strength check is less than your Strength score, you can use that score in place of the total."
 		}	
 	}
@@ -296,7 +296,7 @@ class name="Barbarian" {
 		}
 	}
 	level 20 {
-		feature name="Primal Champion" {
+		mutator "feature" name="Primal Champion" {
 			description "At 20th level, you embody the power of the wilds. Your Strength and Constitution scores increase by 4. Your maximum for those scores is now 24."
 			mutator "ability_score" {
 				ability "Specific" "Strength"

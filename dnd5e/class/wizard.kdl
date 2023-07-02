@@ -56,7 +56,7 @@ class name="Wizard" {
 
 	level 1 {
 		// TODO: I'd be really cool to be able to have a "Transcribe" button on spell containers which allow spells to be "copied" from, so moving a spell from a scroll to spellbook (consuming some cost) would be just a button click (assuming the inks and gold were present in inventory).
-		feature name="Spellcasting" {
+		mutator "feature" name="Spellcasting" {
 			description {
 				short "You can cast prepared wizard spells using Intelligence as your spellcasting modifier (Spell DC {DC}, Spell Attack +{atk}) and  wizard spells as rituals if they have the ritual tag and are in your spellbook. You can use an arcane focus as a spellcasting focus."
 				format-arg "DC" "int" (Evaluator)"math" "Add" {

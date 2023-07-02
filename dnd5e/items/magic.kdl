@@ -41,7 +41,7 @@ item name="Amulet of the Planes" {
 	tag "Wonderous"
 	kind "Equipment" requires_attunement=true {
 		// TODO: Spellcasting
-		feature name="Plane Shift" {
+		mutator "feature" name="Plane Shift" {
 			description {
 				short "DC 15 INT check to cast Plane Shift. On failure, roll a d100; 1-60 random location on the plane, 61-100 random plane of existance."
 				section "Make a DC 15 Intelligence check and name a location that you are familiar with on another plane of existance. On a successful check, you cast the plane shift spell.
@@ -56,7 +56,7 @@ item name="Animated Shield" {
 	rarity "VeryRare"
 	kind "Equipment" requires_attunement=true {
 		shield bonus=2
-		feature name="Animate Shield" {
+		mutator "feature" name="Animate Shield" {
 			description {
 				short "Speak command word to animate shield. Your hands are free and the shield protects you as if you were wielding it for 1 minute. Can end using a bonus action, otherwise ends when you are incapacitated or die."
 				section "Speak a command word to cause the animated shield to animate. The shield leaps into the air and hovers in your space to protect you as if you were wielding it, leaving your hands free. The shield remains animated for 1 minute, until you use a bonus action to end this effect, or until you are incapacitated or die, at which point the shield falls to the ground or into your hand if you have one free."
@@ -110,7 +110,7 @@ item name="Armor of Invulnerability" weight=65.0 {
 		}
 		mutator "add_modifier" "Disadvantage" (Skill)"Specific" "Stealth"
 		mutator "add_defense" "Resistance" context="nonmagical attacks"
-		feature name="Damage Immunity" {
+		mutator "feature" name="Damage Immunity" {
 			description "You are immune to nonmagical damage for 10 minutes."
 			// TODO: Condition for damage immunity
 			action "Action" {
@@ -182,7 +182,7 @@ item name="Arrow-Catching Shield" {
 	kind "Equipment" requires_attunement=true {
 		shield bonus=2
 		mutator "bonus" "ArmorClass" 2 context="ranged attacks"
-		feature name="Intercept Ranged Attack" {
+		mutator "feature" name="Intercept Ranged Attack" {
 			description {
 				short "On ranged attack against a target within 5 feet, you can become the target of the attack instead."
 				section "Whenever an attacker makes a ranged attack against a target within 5 feet of you, you can use your reaction to become the target of the attack instead."
@@ -498,7 +498,7 @@ item name="Boots of Speed" {
 	rarity "Rare"
 	tag "Wonderous"
 	kind "Equipment" requires_attunement=true {
-		feature name="Double Speed" {
+		mutator "feature" name="Double Speed" {
 			description {
 				short "Walking speed doubled & opportunity attacks have disadvantage against you. Can use for 10 minutes cumulatively per long rest."
 				section "Your walking speed is doubled and opportunity attacks against you have disadvantage on the attack roll for up to 10 minutes or until you end the effect. When this has been used for a cumulative 10 minutes, you cannot use this feature again until you finish a long rest."
@@ -535,7 +535,7 @@ item name="Bowl of Commanding Water Elementals" {
 	rarity "Rare"
 	tag "Wonderous"
 	kind "Equipment" {
-		feature name="Summon Water Elemental" {
+		mutator "feature" name="Summon Water Elemental" {
 			action "Action" {
 				// TODO: Spellcasting (Conjure Elemental Spirit for Water)
 				limited_uses {

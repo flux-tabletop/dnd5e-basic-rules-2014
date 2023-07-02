@@ -70,7 +70,7 @@ class name="Cleric" {
 		mutator "add_proficiency" (Armor)"Light"
 		mutator "add_proficiency" (Armor)"Medium"
 		mutator "add_proficiency" (Armor)"Shield"
-		feature name="Spellcasting" {
+		mutator "feature" name="Spellcasting" {
 			description {
 				short "You can cast prepared cleric spells using Wisdom as your spellcasting modifier (Spell DC {DC}, Spell Attack +{atk}) and prepared cleric spells as rituals if they have the ritual tag. You can use a holy symbol as a spellcasting focus."
 				format-arg "DC" "int" (Evaluator)"math" "Add" {
@@ -170,7 +170,7 @@ class name="Cleric" {
 		}
 	}
 	level 2 {
-		feature name="Channel Divinity" {
+		mutator "feature" name="Channel Divinity" {
 			description {
 				short "Fuel a magical effect from energy directly from your deity."
 				section "At 2nd level, you gain the ability to channel divine energy directly from your deity, using that energy to fuel magical effects. You start with two such effects: Turn Undead and an effect determined by your domain. Some domains grant you additional effects as you advance in levels, as noted in the domain description.
@@ -192,7 +192,7 @@ class name="Cleric" {
 				}
 			}
 		}
-		feature name="Turn Undead" parent="Cleric/level02/Channel Divinity" {
+		mutator "feature" name="Turn Undead" parent="Cleric/level02/Channel Divinity" {
 			description {
 				short "All undead within 30 feet of you make a Wisdom saving throw (DC {DC}). On a failed save, a creature:
 				- must spend its turns trying to move as far away from you as possible
@@ -239,7 +239,7 @@ class name="Cleric" {
 		}
 	}
 	level 5 {
-		feature name="Destroy Undead" parent="Cleric/level02/Channel Divinity" {
+		mutator "feature" name="Destroy Undead" parent="Cleric/level02/Channel Divinity" {
 			description {
 				short "Turn Undead instantly destroys any undead creature with a challenge rating less than or equal to CR {min-cr}."
 				section "Starting at 5th level, when an undead fails its saving throw, the creature is instantly destroyed if its challenge rating is at or below a certain threashold (5th level = CR 1/2, 8th level = CR 1, 11th level = CR 2, 14th level = CR 3, 17th level = CR 4)."
@@ -276,7 +276,7 @@ class name="Cleric" {
 		}
 	}
 	level 10 {
-		feature name="Divine Intervention" {
+		mutator "feature" name="Divine Intervention" {
 			description {
 				short "Describe the assistance you seek and roll a percentile die (d100). If the roll is less than or equal to {DC}, your deity intervenes. If this is succesful, you can't use this feature for 7 days."
 				section "Beginning at 10th level, you can call on your deity to intervene on your behalf when your need is great.

@@ -72,7 +72,7 @@ class name="Monk" {
 	level 1 {
 		mutator "add_proficiency" (Weapon)"Simple"
 		mutator "add_proficiency" (Weapon)"Shortsword"
-		feature name="Unarmored Defense" unique=true {
+		mutator "feature" name="Unarmored Defense" unique=true {
 			description "Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier."
 			criteria "has_armor_equipped" inverted=true
 			mutator "add_armor_class_formula" base=10 {
@@ -80,7 +80,7 @@ class name="Monk" {
 				bonus "Wisdom"
 			}
 		}
-		feature name="Martial Arts" {
+		mutator "feature" name="Martial Arts" {
 			description "At 1st level, your practice of martial arts gives you mastery of combat styles that use unarmed strikes and monk weapons, which are shortswords and any simple melee weapons that don't have the two-handed or heavy property.
 			
 			You gain the following benefits while you are unarmed or wielding only monk weapons and you aren't wearing armor or wielding a shield:"
@@ -100,7 +100,7 @@ class name="Monk" {
 		}
 	}
 	level 2 {
-		feature name="Ki" {
+		mutator "feature" name="Ki" {
 			description {
 				short "Spend Ki points to use extra features. They reset on a short or long rest."
 				section "Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table.
@@ -118,35 +118,35 @@ class name="Monk" {
 				}
 			}
 		}
-		feature name="Flurry of Blows" parent="Monk/level02/Ki" {
+		mutator "feature" name="Flurry of Blows" parent="Monk/level02/Ki" {
 			description {
 				short "1 Ki Point - Bonus Action to make 2 unarmed strikes after attacking"
 				section "Immediately after you take the Attack action on your turn, you can spend 1 ki point to make two unarmed strikes as a bonus action."
 			}
 			action "Bonus"
 		}
-		feature name="Patient Defense" parent="Monk/level02/Ki" {
+		mutator "feature" name="Patient Defense" parent="Monk/level02/Ki" {
 			description {
 				short "1 Ki Point - Bonus Action to Dodge"
 				section "You can spend 1 ki point to take the Dodge action as a bonus action on your turn."
 			}
 			action "Bonus"
 		}
-		feature name="Step of the Wind" parent="Monk/level02/Ki" {
+		mutator "feature" name="Step of the Wind" parent="Monk/level02/Ki" {
 			description {
 				short "1 Ki Point - Bonus Action to Disengage or Dash + jump distance doubled"
 				section "You can spend 1 ki point to take the Disengage or Dash action as a bonus action on your turn, and your jump distance is doubled for the turn."
 			}
 			action "Bonus"
 		}
-		feature name="Unarmored Movement" {
+		mutator "feature" name="Unarmored Movement" {
 			description "Starting at 2nd level, your speed increases by 10 feet while you are not wearing armor or wielding a shield."
 			criteria "has_armor_equipped" inverted=true
 			mutator "speed" "Walking" (Additive)10
 		}
 	}
 	level 3 {
-		feature name="Deflect Missiles" {
+		mutator "feature" name="Deflect Missiles" {
 			description {
 				short "Deflect or catch a missile when you are hit by a ranged weapon attack. The damage you take from the attack is reduced by 1d10 + {damage}. If you reduce damage to 0 and have a free hand, you can spend 1 ki point to make a ranged attack (as with a monk weapon) with a range of 20/60."
 				section "Starting at 3rd level, you can use your reaction to deflect or catch the missile when you are hit by a ranged weapon attack. When you do so, the damage you take from the attack is reduced by 1d10 + your Dexterity modifier + your monk level.
@@ -180,7 +180,7 @@ class name="Monk" {
 				mutator "add_bundle" category="Feat"
 			}
 		}
-		feature name="Slow Fall" {
+		mutator "feature" name="Slow Fall" {
 			description {
 				short "Reaction - Reduce fall damage by {damage}"
 				section "Beginning at 4th level, you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level ({damage})."
@@ -193,14 +193,14 @@ class name="Monk" {
 		}
 	}
 	level 5 {
-		feature name="Extra Attack" unique=true {
+		mutator "feature" name="Extra Attack" unique=true {
 			description {
 				short "You can make multiple attacks when you take the attack action on your turn."
 				section "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
 			}
 			mutator "add_to_action_budget" "Attack" 1
 		}
-		feature name="Stunning Strike" parent="Monk/level02/Ki" {
+		mutator "feature" name="Stunning Strike" parent="Monk/level02/Ki" {
 			description {
 				short "1 Ki Point - On Attack - target make {DC} CON save or be stunned until my next turned"
 				section "Starting at 5th level, you can interfere with the flow of ki in an opponent's body. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a {DC} Constitution saving throw or be stunned until the end of your next turn."
@@ -213,23 +213,23 @@ class name="Monk" {
 		}
 	}
 	level 6 {
-		feature name="Unarmored Movement" parent="Monk/level02/Unarmored Movement" {
+		mutator "feature" name="Unarmored Movement" parent="Monk/level02/Unarmored Movement" {
 			description "At 6th level, your speed increases by 5 more feet (+15ft total) while you are not wearing armor or wielding a shield."
 			criteria "has_armor_equipped" inverted=true
 			mutator "speed" "Walking" (Additive)5
 		}
-		feature name="Ki-Empowered Strikes" {
+		mutator "feature" name="Ki-Empowered Strikes" {
 			description "Starting at 6th level, your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
 		}
 	}
 	level 7 {
-		feature name="Evasion" {
+		mutator "feature" name="Evasion" {
 			description {
 				short "On DEX saving throw to take half damage on success, take no damage on success or half damage on fail."
 				section "When you are subjected to an effect (such as a red dragon's fiery breath or a lightning bolt spell) that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
 			}
 		}
-		feature name="Stillness of Mind" {
+		mutator "feature" name="Stillness of Mind" {
 			description {
 				short "Remove a charmed or frightended condition."
 				section "Starting at 7th level, you can use your action to end one effect on yourself that is causing you to be charmed or frightened."
@@ -259,17 +259,17 @@ class name="Monk" {
 		}
 	}
 	level 9 {
-		feature name="Unarmored Movement" parent="Monk/level02/Unarmored Movement" {
+		mutator "feature" name="Unarmored Movement" parent="Monk/level02/Unarmored Movement" {
 			description "At 9th level, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move."
 		}
 	}
 	level 10 {
-		feature name="Unarmored Movement" parent="Monk/level02/Unarmored Movement" {
+		mutator "feature" name="Unarmored Movement" parent="Monk/level02/Unarmored Movement" {
 			description "At 10th level, your speed increases by 5 more feet (+20ft total) while you are not wearing armor or wielding a shield."
 			criteria "has_armor_equipped" inverted=true
 			mutator "speed" "Walking" (Additive)5
 		}
-		feature name="Purity of Body" {
+		mutator "feature" name="Purity of Body" {
 			description "At 10th level, your mastery of the ki flowing through you makes you immune to disease and poison."
 			mutator "add_defense" "Immunity" "Poison"
 		}
@@ -296,17 +296,17 @@ class name="Monk" {
 		}
 	}
 	level 13 {
-		feature name="Tongue of the Sun and Moon" {
+		mutator "feature" name="Tongue of the Sun and Moon" {
 			description "Starting at 13th level, you learn to touch the ki of other minds so that you understand all spoken languages. Moreover, any creature that can understand a language can understand what you say."
 		}
 	}
 	level 14 {
-		feature name="Unarmored Movement" parent="Monk/level02/Unarmored Movement" {
+		mutator "feature" name="Unarmored Movement" parent="Monk/level02/Unarmored Movement" {
 			description "At 14th level, your speed increases by 5 more feet (+25ft total) while you are not wearing armor or wielding a shield."
 			criteria "has_armor_equipped" inverted=true
 			mutator "speed" "Walking" (Additive)5
 		}
-		feature name="Diamond Soul" parent="Monk/level02/Ki" {
+		mutator "feature" name="Diamond Soul" parent="Monk/level02/Ki" {
 			description "Beginning at 14th level, your mastery of ki grants you proficiency in all saving throws.
 			Additionally, whenever you make a saving throw and fail, you can spend 1 ki point to reroll it and take the second result." {
 				short "1 Ki Point - On failed saving throw, reroll it and take the second result."
@@ -318,7 +318,7 @@ class name="Monk" {
 		}
 	}
 	level 15 {
-		feature name="Timeless Body" {
+		mutator "feature" name="Timeless Body" {
 			description "At 15th level, your ki sustains you so that you suffer none of the frailty of old age, and you can't be aged magically. You can still die of old age, however. In addition, you no longer need food or water."
 		}
 	}
@@ -344,12 +344,12 @@ class name="Monk" {
 		}
 	}
 	level 18 {
-		feature name="Unarmored Movement" parent="Monk/level02/Unarmored Movement" {
+		mutator "feature" name="Unarmored Movement" parent="Monk/level02/Unarmored Movement" {
 			description "At 18th level, your speed increases by 5 more feet (+30ft total) while you are not wearing armor or wielding a shield."
 			criteria "has_armor_equipped" inverted=true
 			mutator "speed" "Walking" (Additive)5
 		}
-		feature name="Empty Body" parent="Monk/level02/Ki" {
+		mutator "feature" name="Empty Body" parent="Monk/level02/Ki" {
 			description {
 				short "4 Ki Points - Action to become invisible and gain resistance to all damage but force damage for 1 minute.
 				8 Ki Points - Action to cast the astral projection spell (for yourself only), without needing material components."
@@ -423,7 +423,7 @@ class name="Monk" {
 		}
 	}
 	level 20 {
-		feature name="Perfect Self" {
+		mutator "feature" name="Perfect Self" {
 			description "At 20th level, when you roll for initiative and have no ki points remaining, you regain 4 ki points."
 		}
 	}

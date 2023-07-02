@@ -66,7 +66,7 @@ class name="Paladin" {
 		mutator "add_proficiency" (Armor)"Shield"
 		mutator "add_proficiency" (Weapon)"Simple"
 		mutator "add_proficiency" (Weapon)"Martial"
-		feature name="Divine Sense" {
+		mutator "feature" name="Divine Sense" {
 			description {
 				short "Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you that is not behind total cover. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity (the vampire Count Strahd von Zarovich, for instance). Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the hallow spell."
 				section "The presence of strong evil registers on your senses like a noxious odor, and powerful good rings like heavenly music in your ears. As an action, you can open your awareness to detect such forces. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you that is not behind total cover. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity (the vampire Count Strahd von Zarovich, for instance). Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the hallow spell.
@@ -83,7 +83,7 @@ class name="Paladin" {
 				}
 			}
 		}
-		feature name="Lay on Hands" {
+		mutator "feature" name="Lay on Hands" {
 			description {
 				short "Touch a creature (that isn't an undead or construct) to restore hit points, cure diseases, or neutralize poisons using a pool of power. You can:
 				- Restore any number of hit points that you can spend from your pool
@@ -108,21 +108,21 @@ class name="Paladin" {
 		}
 	}
 	level 2 {
-		feature name="Fighting Style" {
+		mutator "feature" name="Fighting Style" {
 			description {
 				short "You adopt a particular style of fighting as your specialty."
 				section "You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again."
 			}
 			mutator "pick" 1 name="Fighting Style" {
 				option "Defense" {
-					feature name="Defense" {
+					mutator "feature" name="Defense" {
 						// While you are wearing armor, you gain a +1 bonus to AC.
 						criteria "has_armor_equipped"
 						mutator "bonus" "ArmorClass" 1
 					}
 				}
 				option "Dueling" {
-					feature name="Dueling" {
+					mutator "feature" name="Dueling" {
 						// When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.'
 						criteria-todo "has_weapon_equipped" max=1 {
 							attack "Melee"
@@ -140,7 +140,7 @@ class name="Paladin" {
 					}
 				}
 				option "Great Weapon Fighting" {
-					feature name="Great Weapon Fighting" {
+					mutator "feature" name="Great Weapon Fighting" {
 						description {
 							short "Reroll 1 or 2 on damage rolls for two-handed or versatile weapons (when weilding with two hands)."
 							section "When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit."
@@ -148,7 +148,7 @@ class name="Paladin" {
 					}
 				}
 				option "Protection" {
-					feature name="Protection" {
+					mutator "feature" name="Protection" {
 						description {
 							short "Impose disadvantage on an attack rolls against a target that isn't you, when the target is within 5 feet of you."
 							section "When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll."
@@ -162,7 +162,7 @@ class name="Paladin" {
 				}
 			}
 		}
-		feature name="Spellcasting" {
+		mutator "feature" name="Spellcasting" {
 			description {
 				short "You can cast prepared paladin spells using Charisma as your spellcasting modifier (Spell DC {DC}, Spell Attack +{atk}). You can use a holy symbol as a spellcasting focus."
 				format-arg "DC" "int" (Evaluator)"math" "Add" {
@@ -244,13 +244,13 @@ class name="Paladin" {
 		*/
 	}
 	level 3 {
-		feature name="Divine Health" {
+		mutator "feature" name="Divine Health" {
 			description {
 				short "You are immune to disease."
 				section "By 3rd level, the divine magic flowing through you makes you immune to disease."
 			}
 		}
-		feature name="Channel Divinity" {
+		mutator "feature" name="Channel Divinity" {
 			description {
 				short "You can use one of the following abilities."
 				section "Your oath allows you to channel divine energy to fuel magical effects. Each Channel Divinity option provided by your oath explains how to use it.
@@ -285,7 +285,7 @@ class name="Paladin" {
 		}
 	}
 	level 5 {
-		feature name="Extra Attack" unique=true {
+		mutator "feature" name="Extra Attack" unique=true {
 			description {
 				short "You can make multiple attacks when you take the attack action on your turn."
 				section "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
@@ -294,7 +294,7 @@ class name="Paladin" {
 		}
 	}
 	level 6 {
-		feature name="Aura of Protection" {
+		mutator "feature" name="Aura of Protection" {
 			description {
 				short "Friendly creatures within {range} feet of you have a +{bonus} to all saving throws, while you are conscious."
 				section "Starting at 6th level, whenever you or a friendly creature within 10 feet of you must make a saving throw, the creature gains a bonus to the saving throw equal to your Charisma modifier (with a minimum bonus of +1). You must be conscious to grant this bonus.
@@ -333,7 +333,7 @@ class name="Paladin" {
 		}
 	}
 	level 10 {
-		feature name="Aura of Courage" {
+		mutator "feature" name="Aura of Courage" {
 			descriptio {
 				short "Friendly creatures within {range} feet of you can't be frightened while you are conscious."
 				section "Starting at 10th level, you and friendly creatures within 10 feet of you can't be frightened while you are conscious.
@@ -348,7 +348,7 @@ class name="Paladin" {
 		}
 	}
 	level 11 {
-		feature name="Improved Divine Smite" {
+		mutator "feature" name="Improved Divine Smite" {
 			description {
 				short "All melee weapon attacks deal an additional 1d8 radiant damage."
 				section "By 11th level, you are so suffused with righteous might that all your melee weapon strikes carry divine power with them. Whenever you hit a creature with a melee weapon, the creature takes an extra 1d8 radiant damage."
@@ -385,7 +385,7 @@ class name="Paladin" {
 		}
 	}
 	level 14 {
-		feature name="Cleansing Touch" {
+		mutator "feature" name="Cleansing Touch" {
 			description {
 				short "End one spell on yourself or a willing creature you can touch."
 				section "Beginning at 14th level, you can use your action to end one spell on yourself or on one willing creature that you touch.

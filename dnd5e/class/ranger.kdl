@@ -99,14 +99,14 @@ class name="Ranger" {
 		*/
 	}
 	level 2 {
-		feature name="Fighting Style" {
+		mutator "feature" name="Fighting Style" {
 			description {
 				short "You adopt a particular style of fighting as your specialty."
 				section "You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again."
 			}
 			mutator "pick" 1 name="Fighting Style" {
 				option "Archery" {
-					feature name="Archery" {
+					mutator "feature" name="Archery" {
 						// You gain a +2 bonus to attack rolls you make with ranged weapons.
 						mutator "bonus" "WeaponAttackRoll" {
 							bonus 2
@@ -118,14 +118,14 @@ class name="Ranger" {
 					}
 				}
 				option "Defense" {
-					feature name="Defense" {
+					mutator "feature" name="Defense" {
 						// While you are wearing armor, you gain a +1 bonus to AC.
 						criteria "has_armor_equipped"
 						mutator "bonus" "ArmorClass" 1
 					}
 				}
 				option "Dueling" {
-					feature name="Dueling" {
+					mutator "feature" name="Dueling" {
 						// When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.'
 						criteria-todo "has_weapon_equipped" max=1 {
 							attack "Melee"
@@ -143,13 +143,13 @@ class name="Ranger" {
 					}
 				}
 				option "Two-Weapon Fighting" {
-					feature name="Two-Weapon Fighting" {
+					mutator "feature" name="Two-Weapon Fighting" {
 						description "When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack."
 					}
 				}
 			}
 		}
-		feature name="Spellcasting" {
+		mutator "feature" name="Spellcasting" {
 			description {
 				short "You can cast known ranger spells using Wisdom as your spellcasting modifier (Spell DC {DC}, Spell Attack +{atk})."
 				format-arg "DC" "int" (Evaluator)"math" "Add" {
@@ -226,7 +226,7 @@ class name="Ranger" {
 		}
 	}
 	level 3 {
-		feature name="Primeval Awareness" {
+		mutator "feature" name="Primeval Awareness" {
 			description "Beginning at 3rd level, you can use your action and expend one ranger spell slot to focus your awareness on the region around you. For 1 minute per level of the spell slot you expend, you can sense whether the following types of creatures are present within 1 mile of you (or within up to 6 miles if you are in your favored terrain): aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature doesn't reveal the creatures' location or number."
 		}
 	}
@@ -252,7 +252,7 @@ class name="Ranger" {
 		}
 	}
 	level 5 {
-		feature name="Extra Attack" unique=true {
+		mutator "feature" name="Extra Attack" unique=true {
 			description {
 				short "You can make multiple attacks when you take the attack action on your turn."
 				section "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
@@ -280,7 +280,7 @@ class name="Ranger" {
 				mutator "add_bundle" category="Feat"
 			}
 		}
-		feature name="Land's Stride" {
+		mutator "feature" name="Land's Stride" {
 			description "Starting at 8th level, moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.
 
 			In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the entangle spell."
@@ -288,7 +288,7 @@ class name="Ranger" {
 		}
 	}
 	level 10 {
-		feature name="Hide in Plain Sight" {
+		mutator "feature" name="Hide in Plain Sight" {
 			description "Starting at 10th level, you can spend 1 minute creating camouflage for yourself. You must have access to fresh mud, dirt, plants, soot, and other naturally occurring materials with which to create your camouflage.
 
 			Once you are camouflaged in this way, you can try to hide by pressing yourself up against a solid surface, such as a tree or wall, that is at least as tall and wide as you are. You gain a +10 bonus to Dexterity (Stealth) checks as long as you remain there without moving or taking actions. Once you move or take an action or a reaction, you must camouflage yourself again to gain this benefit."
@@ -316,9 +316,9 @@ class name="Ranger" {
 		}
 	}
 	level 14 {
-		feature name="Vanish" {
+		mutator "feature" name="Vanish" {
 			description "Starting at 14th level, you can use the Hide action as a bonus action on your turn. Also, you can't be tracked by nonmagical means, unless you choose to leave a trail."
-			feature name="Hide" collapsed=true {
+			mutator "feature" name="Hide" collapsed=true {
 				description "Make a Dexterity (Stealth) check in an attempt to hide, following the rules for hiding.
 				When a creature can't see you, you have advantage on attack rolls against it. If you are hidden--both unseen and unheard--when you make an attack, you give away your location when the attack hits or misses."
 				action "Bonus"
@@ -347,7 +347,7 @@ class name="Ranger" {
 		}
 	}
 	level 18 {
-		feature name="Feral Senses" {
+		mutator "feature" name="Feral Senses" {
 			description "At 18th level, you gain preternatural senses that help you fight creatures you can't see. When you attack a creature you can't see, your inability to see it doesn't impose disadvantage on your attack rolls against it.
 
 			You are also aware of the location of any invisible creature within 30 feet of you, provided that the creature isn't hidden from you and you aren't blinded or deafened."
@@ -375,7 +375,7 @@ class name="Ranger" {
 		}
 	}
 	level 20 {
-		feature name="Foe Slayer" {
+		mutator "feature" name="Foe Slayer" {
 			description {
 				short "Once per turn, add Wisdom modifier (+{modifier}) to attack or damage roll against a favored enemy."
 				section "At 20th level, you become an unparalleled hunter of your enemies. Once on each of your turns, you can add your Wisdom modifier (+{modifier}) to the attack roll or the damage roll of an attack you make against one of your favored enemies. You can choose to use this feature before or after the roll, but before any effects of the roll are applied."

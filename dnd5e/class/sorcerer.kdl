@@ -61,7 +61,7 @@ class name="Sorcerer" {
 	}
 
 	level 1 {
-		feature name="Spellcasting" {
+		mutator "feature" name="Spellcasting" {
 			description {
 				short "You can cast known sorcerer spells using Charisma as your spellcasting modifier (Spell DC {DC}, Spell Attack +{atk}). You can use an arcane focus as a spellcasting focus."
 				format-arg "DC" "int" (Evaluator)"math" "Add" {
@@ -167,7 +167,7 @@ class name="Sorcerer" {
 		}
 	}
 	level 2 {
-		feature name="Font of Magic" {
+		mutator "feature" name="Font of Magic" {
 			description {
 				section "At 2nd level, you tap into a deep wellspring of magic within yourself. This wellspring is represented by sorcery points, which allow you to create a variety of magical effects."
 				section (Title)"Sorcery Points" "You have a number of sorcery points equal to your level in this class. You can never have more sorcery points than shown on the table for your level. You regain all spent sorcery points when you finish a long rest."
@@ -180,7 +180,7 @@ class name="Sorcerer" {
 				}
 			}
 		}
-		feature name="Creating Spell Slots" parent="Sorcerer/level02/Font of Magic" {
+		mutator "feature" name="Creating Spell Slots" parent="Sorcerer/level02/Font of Magic" {
 			description {
 				short "Expend sorcery points to gain one spell slot of up to 5th level.
 				Cost: 2 points = 1st level, 3 points = 2nd level, 5 points = 3rd level, 6 points = 4th level, and 7 points = 5th level."
@@ -197,7 +197,7 @@ class name="Sorcerer" {
 			}
 			action "Bonus"
 		}
-		feature name="Converting a Spell Slot to Sorcery Points" parent="Sorcerer/level02/Font of Magic" {
+		mutator "feature" name="Converting a Spell Slot to Sorcery Points" parent="Sorcerer/level02/Font of Magic" {
 			description {
 				short "Expend any spell slot to gain sorcery points equal to the level of the slot, without going over your max sorcery points (3rd level slot = 3 sorcery points gained)."
 				section "As a bonus action on your turn, you can expend one spell slot and gain a number of sorcery points equal to the slot's level."

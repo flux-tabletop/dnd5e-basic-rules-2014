@@ -6,14 +6,14 @@ bundle category="RaceVariant" name="High Elf" {
 		ability "Specific" (Ability)"Intelligence"
 		bonus 1
 	}
-	feature name="Elf Weapon Training" {
+	mutator "feature" name="Elf Weapon Training" {
 		description "You have proficiency with the longsword, shortsword, shortbow, and longbow."
 		mutator "add_proficiency" (Weapon)"Longsword"
 		mutator "add_proficiency" (Weapon)"Shortsword"
 		mutator "add_proficiency" (Weapon)"Shortbow"
 		mutator "add_proficiency" (Weapon)"Longbow"
 	}
-	feature name="Cantrip" {
+	mutator "feature" name="Cantrip" {
 		description "You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it."
 		mutator "spellcasting" "add_prepared" ability="Intelligence" {
 			options 1 {
@@ -24,7 +24,7 @@ bundle category="RaceVariant" name="High Elf" {
 			}
 		}
 	}
-	feature name="Extra Language" {
+	mutator "feature" name="Extra Language" {
 		description "You can speak, read, and write one extra language of your choice."
 		mutator "add_proficiency" (Language)"Any"
 	}

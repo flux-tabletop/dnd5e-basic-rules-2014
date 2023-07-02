@@ -4,7 +4,7 @@ defaults {
 		value (Evaluator)"get_level"
 	}
 
-	feature name="Unarmed Strike" {
+	mutator "feature" name="Unarmed Strike" {
 		description {
 			short "You can punch, kick, head-butt, or use a similar forceful blow and deal {damage} bludgeoning damage."
 			section "Instead of using a weapon to make a melee weapon attack, you can use an unarmed strike: a punch, kick, head-butt, or similar forceful blow (none of which count as weapons). On a hit, an unarmed strike deals {damage} bludgeoning damage (1 + your Strength modifier). You are proficient with your unarmed strikes."
@@ -24,7 +24,7 @@ defaults {
 		}
 	}
 
-	feature name="Attack" collapsed=true {
+	mutator "feature" name="Attack" collapsed=true {
 		description {
 			section "The most common action to take in combat is the Attack action, whether you are swinging a sword, firing an arrow from a bow, or brawling with your fists.
 			With this action, you make one melee or ranged attack.
@@ -32,13 +32,13 @@ defaults {
 		}
 		action "Action"
 	}
-	feature name="Cast a Spell" collapsed=true {
+	mutator "feature" name="Cast a Spell" collapsed=true {
 		description {
 			section "Spellcasters such as wizards and clerics, as well as many monsters, have access to spells and can use them to great effect in combat. Each spell has a casting time, which specifies whether the caster must use an action, a reaction, minutes, or even hours to cast the spell. Casting a spell is, therefore, not necessarily an action. Most spells do have a casting time of 1 action, so a spellcaster often uses his or her action in combat to cast such a spell."
 		}
 		action "Special"
 	}
-	feature name="Dash" collapsed=true {
+	mutator "feature" name="Dash" collapsed=true {
 		description {
 			short "You double your movement speed for the current turn."
 			section "You gain extra movement for the current turn equal to your speed, after applying any modifiers. With a speed of 30 feet, for example, you can move up to 60 feet on your turn if you dash.
@@ -47,13 +47,13 @@ defaults {
 		}
 		action "Action"
 	}
-	feature name="Disengage" collapsed=true {
+	mutator "feature" name="Disengage" collapsed=true {
 		description {
 			section "Your movement doesn't provoke opportunity attacks for the rest of the turn."
 		}
 		action "Action"
 	}
-	feature name="Dodge" collapsed=true {
+	mutator "feature" name="Dodge" collapsed=true {
 		description {
 			short "Attack rolls against you have disadvantage and Dexterity saving throws have advantage until the start of your next turn, or you become incapacitated, or your speed drops to 0."
 			section "When you take the Dodge action, you focus entirely on avoiding attacks. Until the start of your next turn, any attack roll made against you has disadvantage if you can see the attacker, and you make Dexterity saving throws with advantage. You lose this benefit if you are incapacitated or if your speed drops to 0."
@@ -62,7 +62,7 @@ defaults {
 			// TODO: Apply dodge condition
 		}
 	}
-	feature name="Grapple" collapsed=true {
+	mutator "feature" name="Grapple" collapsed=true {
 		description {
 			short "Use an attack to make a Strength (Athletics) check contested by the target's Strength (Athletics) or Dexterity (Acrobatics) check. If you succeed, the target is subjected to the grappled condition."
 			section "When you want to grab a creature or wrestle with it, you can use the Attack action to make a special melee attack, a grapple. If you're able to make multiple attacks with the Attack action, this attack replaces one of them.
@@ -73,7 +73,7 @@ defaults {
 		}
 		action "Action"
 	}
-	feature name="Help" collapsed=true {
+	mutator "feature" name="Help" collapsed=true {
 		description {
 			section "You can lend your aid to another creature in the completion of a task. The creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes the check before the start of your next turn.
 
@@ -81,7 +81,7 @@ defaults {
 		}
 		action "Action"
 	}
-	feature name="Hide" collapsed=true {
+	mutator "feature" name="Hide" collapsed=true {
 		description {
 			short "Make a Dexterity (Stealth) check in an attempt to hide, granting you advantage on an attack rolls against creatures which cannot see you."
 			section "Make a Dexterity (Stealth) check in an attempt to hide, following the rules for hiding.
@@ -89,7 +89,7 @@ defaults {
 		}
 		action "Action"
 	}
-	feature name="Improvise" collapsed=true {
+	mutator "feature" name="Improvise" collapsed=true {
 		description {
 			section "Your character can do things not covered by predefined actions, such as breaking down doors, intimidating enemies, sensing weaknesses in magical defenses, or calling for a parley with a foe. The only limits to the actions you can attempt are your imagination and your character's ability scores.
 
@@ -97,7 +97,7 @@ defaults {
 		}
 		action "Action"
 	}
-	feature name="Ready" collapsed=true {
+	mutator "feature" name="Ready" collapsed=true {
 		description {
 			short "Use your reaction later when a trigger criteria is met to perform an action your declared when you use this feature."
 			section "Sometimes you want to get the jump on a foe or wait for a particular circumstance before you act. To do so, you can take the Ready action on your turn, which lets you act using your reaction before the start of your next turn.
@@ -110,14 +110,14 @@ defaults {
 		}
 		action "Action"
 	}
-	feature name="Search" collapsed=true {
+	mutator "feature" name="Search" collapsed=true {
 		description {
 			short "Make a Wisdom (Perception) check or an Intelligence (Investigation) check to find something."
 			section "You devote your attention to finding something. Depending on the nature of your search, the DM might have you make a Wisdom (Perception) check or an Intelligence (Investigation) check."
 		}
 		action "Action"
 	}
-	feature name="Shove" collapsed=true {
+	mutator "feature" name="Shove" collapsed=true {
 		description {
 			short "Use an attack to knock a creature prone or push it away 5 feet - if the creature is incapacitated OR you succeed in a Strength (Athletics) check contested by the target's Strength (Athletics) or Dexterity (Acrobatics) check."
 			section "Using the Attack action, you can make a special melee attack to shove a creature, either to knock it prone or push it away from you. If you're able to make multiple attacks with the Attack action, this attack replaces one of them.
@@ -126,7 +126,7 @@ defaults {
 		}
 		action "Action"
 	}
-	feature name="Use an Object" collapsed=true {
+	mutator "feature" name="Use an Object" collapsed=true {
 		description {
 			section "You normally interact with an object while doing something else, such as when you draw a sword as part of an attack. When an object requires your action for its use, you take the Use an Object action. This action is also useful when you want to interact with more than one object on your turn."
 		}

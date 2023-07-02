@@ -5,13 +5,13 @@ bundle category="RaceVariant" name="Forest Gnome" {
 		ability "Specific" (Ability)"Dexterity"
 		bonus 1
 	}
-	feature name="Natural Illusionist" {
+	mutator "feature" name="Natural Illusionist" {
 		description "You know the minor illusion cantrip. Intelligence is your spellcasting ability for it."
 		mutator "spellcasting" "add_prepared" ability="Intelligence" {
 			spell "spells/minorIllusion.kdl"
 		}
 	}
-	feature name="Speak with Small Beasts" {
+	mutator "feature" name="Speak with Small Beasts" {
 		description "Through sounds and gestures, you can communicate simple ideas with Small or smaller beasts. Forest gnomes love animals and often keep squirrels, badgers, rabbits, moles, woodpeckers, and other creatures as beloved pets."
 	}
 }

@@ -26,7 +26,7 @@ bundle category="Background" name="Noble" {
 		item "Custom" name="Scroll of Pedigree"
 		currency 25 (Currency)"Gold"
 	}
-	feature name="Position of Privilege" {
+	mutator "feature" name="Position of Privilege" {
 		description "Thanks to your noble birth, people are inclined to think the best of you. You are welcome in high society, and people assume you have the right to be wherever you are. The common folk make every effort to accommodate you and avoid your displeasure, and other people of high birth treat you as a member of the same social sphere. You can secure an audience with a local noble if you need to."
 	}
 	mutator "suggested_personality" "Trait" {

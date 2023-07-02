@@ -9,7 +9,7 @@ subclass class="Paladin" name="Oath of Devotion" {
 	Honor. Treat others with fairness, and let your honorable deeds be an example to them. Do as much good as possible while causing the least amount of harm.
 	Duty. Be responsible for your actions and their consequences, protect those entrusted to your care, and obey those who have just authority over you."
 	level 3 {
-		feature name="Oath Spells" {
+		mutator "feature" name="Oath Spells" {
 			description "Each oath has a list of associated spells. You gain access to these spells at the levels specified in the oath description. Once you gain access to an oath spell, you always have it prepared. Oath spells don't count against the number of spells you can prepare each day.
 
 			If you gain an oath spell that doesn't appear on the paladin spell list, the spell is nonetheless a paladin spell for you." {
@@ -55,7 +55,7 @@ subclass class="Paladin" name="Oath of Devotion" {
 				}
 			}
 		}
-		feature name="Sacred Weapon" parent="Paladin/level03/Channel Divinity" {
+		mutator "feature" name="Sacred Weapon" parent="Paladin/level03/Channel Divinity" {
 			description {
 				short "For 1 minute, a weapon you are holding of your choosing gets the following benefits:
 				- Attacks get a +{bonus} to attack rolls and the damage counts as magical
@@ -74,7 +74,7 @@ subclass class="Paladin" name="Oath of Devotion" {
 				}
 			}
 		}
-		feature name="Turn the Unholy" parent="Paladin/level03/Channel Divinity" {
+		mutator "feature" name="Turn the Unholy" parent="Paladin/level03/Channel Divinity" {
 			description {
 				short "All fiends and undead within 30 feet of you make a Wisdom saving throw (DC {DC}). On a failed save, a creature:
 				- must spend its turns trying to move as far away from you as possible
@@ -100,7 +100,7 @@ subclass class="Paladin" name="Oath of Devotion" {
 		}
 	}
 	level 7 {
-		feature name="Aura of Devotion" {
+		mutator "feature" name="Aura of Devotion" {
 			description {
 				short "Friendly creatures within {range} feet of you can't be charmed while you are conscious."
 				"Starting at 7th level, you and friendly creatures within 10 feet of you can't be charmed while you are conscious.
@@ -115,13 +115,13 @@ subclass class="Paladin" name="Oath of Devotion" {
 		}
 	}
 	level 15 {
-		feature name="Purity of Spirit" {
+		mutator "feature" name="Purity of Spirit" {
 			description "Beginning at 15th level, you are always under the effects of a protection from evil and good spell."
 			// TODO: Permanent condition?
 		}
 	}
 	level 20 {
-		feature name="Holy Nimbus" {
+		mutator "feature" name="Holy Nimbus" {
 			description "At 20th level, as an action, you can emanate an aura of sunlight. For 1 minute, bright light shines from you in a 30-foot radius, and dim light shines 30 feet beyond that.
 
 			Whenever an enemy creature starts its turn in the bright light, the creature takes 10 radiant damage.

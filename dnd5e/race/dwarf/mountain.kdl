@@ -9,11 +9,11 @@ bundle category="RaceVariant" name="Mountain Dwarf" {
 		ability "Specific" (Ability)"Strength"
 		bonus 2
 	}
-	feature name="Dwarven Toughness" {
+	mutator "feature" name="Dwarven Toughness" {
 		description "Your hit point maximum increases by 1, and it increases by 1 every time you gain a level."
 		mutator "add_max_hit_points" (Evaluator)"get_level"
 	}
-	feature name="Dwarven Armor Training" {
+	mutator "feature" name="Dwarven Armor Training" {
 		description "You have proficiency with light and medium armor."
 		mutator "add_proficiency" (Armor)"Light"
 		mutator "add_proficiency" (Armor)"Medium"

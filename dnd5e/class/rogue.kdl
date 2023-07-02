@@ -96,14 +96,14 @@ class name="Rogue" {
 			option "SleightOfHand"
 			option "Stealth"
 		}
-		feature name="Expertise" {
+		mutator "feature" name="Expertise" {
 			description {
 				short "Your proficiency bonus is doubled for either 2 skill proficiencies or a skill proficiency and thieves' tools."
 				section "At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves' tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies."
 			}
 			// TODO: add_proficiency "Double" for 1 skill and either a skill or thieves' tools as long as the character is already proficient with those options. This will require some way to query what skills/items the character is already proficient with to be displayed a selection.
 		}
-		feature name="Sneak Attack" {
+		mutator "feature" name="Sneak Attack" {
 			description {
 				short "Additional {roll-amt}d6 damage when attacking finesse or ranged weapon if either:
 				- you have advantage on attack roll
@@ -125,20 +125,20 @@ class name="Rogue" {
 				}
 			}
 		}
-		feature name="Thieves' Cant" {
+		mutator "feature" name="Thieves' Cant" {
 			description "During your rogue training you learned thieves' cant, a secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation. Only another creature that knows thieves' cant understands such messages. It takes four times longer to convey such a message than it does to speak the same idea plainly.
 
 			In addition, you understand a set of secret signs and symbols used to convey short, simple messages, such as whether an area is dangerous or the territory of a thieves' guild, whether loot is nearby, or whether the people in an area are easy marks or will provide a safe house for thieves on the run."
 		}
 	}
 	level 2 {
-		feature name="Cunning Action" {
+		mutator "feature" name="Cunning Action" {
 			description {
 				short "You can Dash, Disengage, or Hide as a bonus action"
 				section "Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action."
 			}
 		}
-		feature name="Dash" collapsed=true {
+		mutator "feature" name="Dash" collapsed=true {
 			description {
 				short "You double your movement speed for the current turn."
 				section "You gain extra movement for the current turn equal to your speed, after applying any modifiers. With a speed of 30 feet, for example, you can move up to 60 feet on your turn if you dash.
@@ -147,11 +147,11 @@ class name="Rogue" {
 			}
 			action "Bonus"
 		}
-		feature name="Disengage" collapsed=true {
+		mutator "feature" name="Disengage" collapsed=true {
 			description "Your movement doesn't provoke opportunity attacks for the rest of the turn."
 			action "Bonus"
 		}
-		feature name="Hide" collapsed=true {
+		mutator "feature" name="Hide" collapsed=true {
 			description "Make a Dexterity (Stealth) check in an attempt to hide, following the rules for hiding.
 			When a creature can't see you, you have advantage on attack rolls against it. If you are hidden--both unseen and unheard--when you make an attack, you give away your location when the attack hits or misses."
 			action "Bonus"
@@ -179,7 +179,7 @@ class name="Rogue" {
 		}
 	}
 	level 5 {
-		feature name="Uncanny Dodge" {
+		mutator "feature" name="Uncanny Dodge" {
 			description {
 				short "Halve the damage you take from an attack that you can see."
 				section "When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you."
@@ -188,7 +188,7 @@ class name="Rogue" {
 		}
 	}
 	level 6 {
-		feature name="Expertise" {
+		mutator "feature" name="Expertise" {
 			description {
 				short "Your proficiency bonus is doubled for either 2 skill proficiencies or a skill proficiency and thieves' tools."
 				section "At 6th level, you can choose two more of your proficiencies (in skills or with thieves' tools) to gain this benefit."
@@ -197,7 +197,7 @@ class name="Rogue" {
 		}
 	}
 	level 7 {
-		feature name="Evasion" {
+		mutator "feature" name="Evasion" {
 			description {
 				short "On DEX saving throw to take half damage on success, take no damage on success or half damage on fail."
 				section "When you are subjected to an effect (such as a red dragon's fiery breath or a lightning bolt spell) that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
@@ -247,7 +247,7 @@ class name="Rogue" {
 		}
 	}
 	level 11 {
-		feature name="Reliable Talent" {
+		mutator "feature" name="Reliable Talent" {
 			description {
 				short "When you roll a 9 or lower on a d20 ability check that you are proficient in, you can treat the roll as a 10."
 				section "By 11th level, you have refined your chosen skills until they approach perfection. Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10."
@@ -276,13 +276,13 @@ class name="Rogue" {
 		}
 	}
 	level 14 {
-		feature name="Blindsense" {
+		mutator "feature" name="Blindsense" {
 			description "Starting at 14th level, if you are able to hear, you are aware of the location of any hidden or invisible creature within 10 feet of you."
 			mutator "sense" "Blindsense" (Base)10 context="if you can hear"
 		}
 	}
 	level 15 {
-		feature name="Slippery Mind" {
+		mutator "feature" name="Slippery Mind" {
 			description "By 15th level, you have acquired greater mental strength. You gain proficiency in Wisdom saving throws."
 			mutator "add_proficiency" (SavingThrow)"Wisdom"
 		}
@@ -309,7 +309,7 @@ class name="Rogue" {
 		}
 	}
 	level 18 {
-		feature name="Elusive" {
+		mutator "feature" name="Elusive" {
 			description {
 				short "If you aren't incapacitated, attack rolls against you are not made with advantage."
 				section "Beginning at 18th level, you are so evasive that attackers rarely gain the upper hand against you. No attack roll has advantage against you while you aren't incapacitated."
@@ -338,7 +338,7 @@ class name="Rogue" {
 		}
 	}
 	level 20 {
-		feature name="Stroke of Luck" {
+		mutator "feature" name="Stroke of Luck" {
 			description {
 				short "You can either:
 				- When you miss an attack, treat the attack as a hit

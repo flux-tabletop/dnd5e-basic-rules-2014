@@ -10,18 +10,18 @@ bundle category="RaceVariant" name="Wood Elf" {
 		ability "Specific" (Ability)"Wisdom"
 		bonus 1
 	}
-	feature name="Elf Weapon Training" {
+	mutator "feature" name="Elf Weapon Training" {
 		description "You have proficiency with the longsword, shortsword, shortbow, and longbow."
 		mutator "add_proficiency" (Weapon)"Longsword"
 		mutator "add_proficiency" (Weapon)"Shortsword"
 		mutator "add_proficiency" (Weapon)"Shortbow"
 		mutator "add_proficiency" (Weapon)"Longbow"
 	}
-	feature name="Fleet of Foot" {
+	mutator "feature" name="Fleet of Foot" {
 		description "Your base walking speed is at least 35 feet."
 		mutator "speed" "Walking" (Base)35
 	}
-	feature name="Mask of the Wild" {
+	mutator "feature" name="Mask of the Wild" {
 		description "You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
 	}
 }

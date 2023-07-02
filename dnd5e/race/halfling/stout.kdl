@@ -5,7 +5,7 @@ bundle category="RaceVariant" name="Stout" {
 		ability "Specific" "Constitution"
 		bonus 1
 	}
-	feature name="Stout Resilience" {
+	mutator "feature" name="Stout Resilience" {
 		description "You have advantage on saving throws against poison, and you have resistance against poison damage."
 		mutator "add_modifier" "Advantage" (SavingThrow)"All" context="poison"
 		mutator "add_defense" "Resistance" (DamageType)"Poison" 

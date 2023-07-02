@@ -19,7 +19,7 @@ bundle category="Race" name="Half-Orc" {
 	mutator "add_proficiency" (Skill)"Specific" "Intimidation"
 	mutator "add_proficiency" (Language)"Specific" "Common"
 	mutator "add_proficiency" (Language)"Specific" "Orc"
-	feature name="Relentless Endurance" {
+	mutator "feature" name="Relentless Endurance" {
 		description "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest."
 		action "Special" {
 			limited_uses {
@@ -28,7 +28,7 @@ bundle category="Race" name="Half-Orc" {
 			}
 		}
 	}
-	feature name="Savage Attacks" {
+	mutator "feature" name="Savage Attacks" {
 		description "When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit."
 	}
 }

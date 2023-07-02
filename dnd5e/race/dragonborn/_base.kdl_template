@@ -1,7 +1,7 @@
 bundle category="RaceVariant" name="Dragonborn: {color} Dragon Ancestry" {
 	requirement "Bundle" "Race" "Dragonborn"
 	mutator "add_defense" "Resistance" (DamageType)"{damage_type}"
-	feature name="Breath Weapon" {
+	mutator "feature" name="Breath Weapon" {
 		description {
 			short "You emit destructive energy in a {aoe_desc}. All creatures in the area must make a {save} saving throw (DC {DC}), taking {amt}d6 Acid damage on a failed save and half as much on a successful one."
 			section "You can use your action to exhale destructive energy. With your {color} dragon ancestry, you emit {damage_type} damage in a {aoe_desc}.

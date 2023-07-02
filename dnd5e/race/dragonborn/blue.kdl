@@ -1,7 +1,7 @@
 bundle category="RaceVariant" name="Dragonborn: Blue Dragon Ancestry" {
 	requirement "Bundle" "Race" "Dragonborn"
 	mutator "add_defense" "Resistance" (DamageType)"Lightning"
-	feature name="Breath Weapon" {
+	mutator "feature" name="Breath Weapon" {
 		description {
 			short "You emit destructive energy in a 5 by 30 ft. line. All creatures in the area must make a Dexterity saving throw (DC {DC}), taking {amt}d6 Acid damage on a failed save and half as much on a successful one."
 			section "You can use your action to exhale destructive energy. With your Blue dragon ancestry, you emit Lightning damage in a 5 by 30 ft. line.

@@ -74,14 +74,14 @@ class name="Fighter" {
 		mutator "add_proficiency" (Armor)"Shield"
 		mutator "add_proficiency" (Weapon)"Simple"
 		mutator "add_proficiency" (Weapon)"Martial"
-		feature name="Fighting Style" {
+		mutator "feature" name="Fighting Style" {
 			description {
 				short "You adopt a particular style of fighting as your specialty."
 				section "You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again."
 			}
 			mutator "pick" 1 name="Fighting Style" {
 				option "Archery" {
-					feature name="Archery" {
+					mutator "feature" name="Archery" {
 						// You gain a +2 bonus to attack rolls you make with ranged weapons.
 						mutator "bonus" "WeaponAttackRoll" {
 							bonus 2
@@ -93,14 +93,14 @@ class name="Fighter" {
 					}
 				}
 				option "Defense" {
-					feature name="Defense" {
+					mutator "feature" name="Defense" {
 						// While you are wearing armor, you gain a +1 bonus to AC.
 						criteria "has_armor_equipped"
 						mutator "bonus" "ArmorClass" 1
 					}
 				}
 				option "Dueling" {
-					feature name="Dueling" {
+					mutator "feature" name="Dueling" {
 						// When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.'
 						criteria-todo "has_weapon_equipped" max=1 {
 							attack "Melee"
@@ -118,7 +118,7 @@ class name="Fighter" {
 					}
 				}
 				option "Great Weapon Fighting" {
-					feature name="Great Weapon Fighting" {
+					mutator "feature" name="Great Weapon Fighting" {
 						description {
 							short "Reroll 1 or 2 on damage rolls for two-handed or versatile weapons (when weilding with two hands)."
 							section "When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit."
@@ -126,7 +126,7 @@ class name="Fighter" {
 					}
 				}
 				option "Protection" {
-					feature name="Protection" {
+					mutator "feature" name="Protection" {
 						description {
 							short "Impose disadvantage on an attack rolls against a target that isn't you, when the target is within 5 feet of you."
 							section "When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll."
@@ -139,13 +139,13 @@ class name="Fighter" {
 					}
 				}
 				option "Two-Weapon Fighting" {
-					feature name="Two-Weapon Fighting" {
+					mutator "feature" name="Two-Weapon Fighting" {
 						description "When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack."
 					}
 				}
 			}
 		}
-		feature name="Second Wind" {
+		mutator "feature" name="Second Wind" {
 			description {
 				short "Regain 1d10 + {level} hit points"
 				section "You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level (+{level}). Once you use this feature, you must finish a short or long rest before you can use it again."
@@ -160,7 +160,7 @@ class name="Fighter" {
 		}
 	}
 	level 2 {
-		feature name="Action Surge" {
+		mutator "feature" name="Action Surge" {
 			description {
 				short "You take one additional Action this turn. You can only use this feature once per turn."
 				"Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.
@@ -200,7 +200,7 @@ class name="Fighter" {
 		}
 	}
 	level 5 {
-		feature name="Extra Attack" unique=true {
+		mutator "feature" name="Extra Attack" unique=true {
 			description {
 				short "You can make multiple attacks when you take the attack action on your turn."
 				section "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
@@ -256,7 +256,7 @@ class name="Fighter" {
 		}
 	}
 	level 9 {
-		feature name="Indomitable" {
+		mutator "feature" name="Indomitable" {
 			description {
 				short "Reroll a failed saving throw. You must use the new roll."
 				section "Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can't use this feature again until you finish a long rest.
