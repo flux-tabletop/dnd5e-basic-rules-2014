@@ -8,7 +8,7 @@ defaults {
 		description {
 			short "You can punch, kick, head-butt, or use a similar forceful blow and deal {damage} bludgeoning damage."
 			section "Instead of using a weapon to make a melee weapon attack, you can use an unarmed strike: a punch, kick, head-butt, or similar forceful blow (none of which count as weapons). On a hit, an unarmed strike deals {damage} bludgeoning damage (1 + your Strength modifier). You are proficient with your unarmed strikes."
-			format-arg "damage" (Evaluator)"math" "Add" {
+			format-arg "damage" "int" (Evaluator)"math" "Add" {
 				value 1
 				value (Evaluator)"get_ability_modifier" (Ability)"Strength"
 			}

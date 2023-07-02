@@ -29,7 +29,7 @@ subclass class="Warlock" name="The Fiend" {
 			description {
 				short "When you reduce a hostile creature to 0 hit points, you gain {hit-points} temporary hit points."
 				section "Starting at 1st level, when you reduce a hostile creature to 0 hit points, you gain temporary hit points equal to your Charisma modifier + your warlock level (minimum of 1)."
-				format-arg "hit-points" (Evaluator)"math" "Add" min=1 {
+				format-arg "hit-points" "int" (Evaluator)"math" "Add" min=1 {
 					value (Evaluator)"get_ability_modifier" (Ability)"Charisma"
 					value (Evaluator)"get_level" class="Warlock"
 				}

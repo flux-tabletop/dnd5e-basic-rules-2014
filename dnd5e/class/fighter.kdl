@@ -150,7 +150,7 @@ class name="Fighter" {
 			description {
 				short "Regain 1d10 + {level} hit points"
 				section "You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level (+{level}). Once you use this feature, you must finish a short or long rest before you can use it again."
-				format-arg "level" (Evaluator)"get_level" class="Fighter"
+				format-arg "level" "int" (Evaluator)"get_level" class="Fighter"
 			}
 			action "Bonus" {
 				limited_uses {

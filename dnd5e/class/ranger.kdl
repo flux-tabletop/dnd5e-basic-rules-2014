@@ -153,12 +153,12 @@ class name="Ranger" {
 		feature name="Spellcasting" {
 			description {
 				short "You can cast known ranger spells using Wisdom as your spellcasting modifier (Spell DC {DC}, Spell Attack +{atk})."
-				format-arg "DC" (Evaluator)"math" "Add" {
+				format-arg "DC" "int" (Evaluator)"math" "Add" {
 					value 8
 					value (Evaluator)"get_proficiency_bonus"
 					value (Evaluator)"get_ability_modifier" (Ability)"Wisdom"
 				}
-				format-arg "atk" (Evaluator)"math" "Add" {
+				format-arg "atk" "int" (Evaluator)"math" "Add" {
 					value (Evaluator)"get_proficiency_bonus"
 					value (Evaluator)"get_ability_modifier" (Ability)"Wisdom"
 				}
@@ -380,7 +380,7 @@ class name="Ranger" {
 			description {
 				short "Once per turn, add Wisdom modifier (+{modifier}) to attack or damage roll against a favored enemy."
 				section "At 20th level, you become an unparalleled hunter of your enemies. Once on each of your turns, you can add your Wisdom modifier (+{modifier}) to the attack roll or the damage roll of an attack you make against one of your favored enemies. You can choose to use this feature before or after the roll, but before any effects of the roll are applied."
-				format-arg "modifier" (Evaluator)"get_ability_modifier" (Ability)"Wisdom"
+				format-arg "modifier" "int" (Evaluator)"get_ability_modifier" (Ability)"Wisdom"
 			}
 		}
 	}

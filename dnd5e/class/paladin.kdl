@@ -167,12 +167,12 @@ class name="Paladin" {
 		feature name="Spellcasting" {
 			description {
 				short "You can cast prepared paladin spells using Charisma as your spellcasting modifier (Spell DC {DC}, Spell Attack +{atk}). You can use a holy symbol as a spellcasting focus."
-				format-arg "DC" (Evaluator)"math" "Add" {
+				format-arg "DC" "int" (Evaluator)"math" "Add" {
 					value 8
 					value (Evaluator)"get_proficiency_bonus"
 					value (Evaluator)"get_ability_modifier" (Ability)"Charisma"
 				}
-				format-arg "atk" (Evaluator)"math" "Add" {
+				format-arg "atk" "int" (Evaluator)"math" "Add" {
 					value (Evaluator)"get_proficiency_bonus"
 					value (Evaluator)"get_ability_modifier" (Ability)"Charisma"
 				}
@@ -303,7 +303,7 @@ class name="Paladin" {
 
 				At 18th level, the range of this aura increases to 30 feet."
 				// TODO: get_level can map levels to an Option<i32> (moving the value from Scaled::Basis::Level to the evaluator so the scaling can be replaced by the "math" evaluator)
-				format-arg "range" (Evaluator)"get_level" class="Paladin" {
+				format-arg "range" "int" (Evaluator)"get_level" class="Paladin" {
 					level 6 10
 					level 18 30
 				}
@@ -342,7 +342,7 @@ class name="Paladin" {
 
 				At 18th level, the range of this aura increases to 30 feet."
 				// TODO: get_level can map levels to an Option<i32> (moving the value from Scaled::Basis::Level to the evaluator so the scaling can be replaced by the "math" evaluator)
-				format-arg "range" (Evaluator)"get_level" class="Paladin" {
+				format-arg "range" "int" (Evaluator)"get_level" class="Paladin" {
 					level 10 10
 					level 18 30
 				}
