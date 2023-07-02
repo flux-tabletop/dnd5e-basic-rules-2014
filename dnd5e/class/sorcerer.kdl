@@ -167,29 +167,43 @@ class name="Sorcerer" {
 		}
 	}
 	level 2 {
-		/* TODO: Font of Magic
-			At 2nd level, you tap into a deep wellspring of magic within yourself. This wellspring is represented by sorcery points, which allow you to create a variety of magical effects.
-
-			Sorcery Points
-			You have 2 sorcery points, and you gain more as you reach higher levels, as shown in the Sorcery Points column of the Sorcerer table. You can never have more sorcery points than shown on the table for your level. You regain all spent sorcery points when you finish a long rest.
-			NOTE: Sorcerer points = sorcerer level
-
-			Flexible Casting
-			You can use your sorcery points to gain additional spell slots, or sacrifice spell slots to gain additional sorcery points. You learn other ways to use your sorcery points as you reach higher levels.
-
-			Creating Spell Slots. You can transform unexpended sorcery points into one spell slot as a bonus action on your turn. The Creating Spell Slots table shows the cost of creating a spell slot of a given level. You can create spell slots no higher in level than 5th.
-
-			Any spell slot you create with this feature vanishes when you finish a long rest.
-
-			Creating Spell Slots
-			Spell Slot Level	Sorcery Point Cost
-			1st	2
-			2nd	3
-			3rd	5
-			4th	6
-			5th	7
-			Converting a Spell Slot to Sorcery Points. As a bonus action on your turn, you can expend one spell slot and gain a number of sorcery points equal to the slot's level.
-		*/
+		feature name="Font of Magic" {
+			description {
+				section "At 2nd level, you tap into a deep wellspring of magic within yourself. This wellspring is represented by sorcery points, which allow you to create a variety of magical effects."
+				section (Title)"Sorcery Points" "You have a number of sorcery points equal to your level in this class. You can never have more sorcery points than shown on the table for your level. You regain all spent sorcery points when you finish a long rest."
+				section (Title)"Flexible Casting" "You can use your sorcery points to gain additional spell slots, or sacrifice spell slots to gain additional sorcery points. You learn other ways to use your sorcery points as you reach higher levels."
+			}
+			action "Special" {
+				limited_uses {
+					max_uses (Evaluator)"get_level" class="Sorcerer"
+					reset_on (Rest)"Long"
+				}
+			}
+		}
+		feature name="Creating Spell Slots" parent="Sorcerer/level02/Font of Magic" {
+			description {
+				short "Expend sorcery points to gain one spell slot of up to 5th level.
+				Cost: 2 points = 1st level, 3 points = 2nd level, 5 points = 3rd level, 6 points = 4th level, and 7 points = 5th level."
+				section "You can transform unexpended sorcery points into one spell slot as a bonus action on your turn. The Creating Spell Slots table shows the cost of creating a spell slot of a given level. You can create spell slots no higher in level than 5th.
+				Any spell slot you create with this feature vanishes when you finish a long rest."
+				section (Title)"Creating Spell Slots" table=true {
+					headers "Spell Slot Level" "Sorcery Point Cost"
+					row "1st" "2"
+					row "2nd" "3"
+					row "3rd" "5"
+					row "4th" "6"
+					row "5th" "7"
+				}
+			}
+			action "Bonus"
+		}
+		feature name="Converting a Spell Slot to Sorcery Points" parent="Sorcerer/level02/Font of Magic" {
+			description {
+				short "Expend any spell slot to gain sorcery points equal to the level of the slot, without going over your max sorcery points (3rd level slot = 3 sorcery points gained)."
+				section "As a bonus action on your turn, you can expend one spell slot and gain a number of sorcery points equal to the slot's level."
+			}
+			action "Bonus"
+		}
 	}
 	level 3 {
 		/* TODO: Metamagic

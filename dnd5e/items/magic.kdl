@@ -181,8 +181,7 @@ item name="Arrow-Catching Shield" {
 	rarity "Rare"
 	kind "Equipment" requires_attunement=true {
 		shield bonus=2
-		// TODO: mutator for adding additional AC under specific contexts
-		//mutator "add_armor_class" 2 context="ranged attacks"
+		mutator "bonus" "ArmorClass" 2 context="ranged attacks"
 		feature name="Intercept Ranged Attack" {
 			description {
 				short "On ranged attack against a target within 5 feet, you can become the target of the attack instead."

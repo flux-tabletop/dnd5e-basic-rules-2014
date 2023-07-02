@@ -108,10 +108,11 @@ class name="Ranger" {
 				option "Archery" {
 					feature name="Archery" {
 						// You gain a +2 bonus to attack rolls you make with ranged weapons.
-						mutator-todo "attack_roll_bonus" {
+						mutator "bonus" "WeaponAttackRoll" {
 							bonus 2
-							restriction ranged=true {
-								tag "Weapon"
+							restriction {
+								weapon "Simple" "Martial"
+								attack "Ranged"
 							}
 						}
 					}
@@ -120,9 +121,7 @@ class name="Ranger" {
 					feature name="Defense" {
 						// While you are wearing armor, you gain a +1 bonus to AC.
 						criteria "has_armor_equipped"
-						mutator-todo "armor_class" {
-							bonus 1
-						}
+						mutator "bonus" "ArmorClass" 1
 					}
 				}
 				option "Dueling" {
@@ -133,11 +132,11 @@ class name="Ranger" {
 							tag "Weapon"
 							property "TwoHanded" false
 						}
-						mutator-todo "bonus_damage" {
-							bonus 2
+						mutator "bonus" "WeaponDamage" {
+							damage 2
 							restriction {
+								weapon "Simple" "Martial"
 								attack "Melee"
-								tag "Weapon"
 								property "TwoHanded" false
 							}
 						}
@@ -227,9 +226,9 @@ class name="Ranger" {
 		}
 	}
 	level 3 {
-		/* TODO: Primeval Awareness
-			Beginning at 3rd level, you can use your action and expend one ranger spell slot to focus your awareness on the region around you. For 1 minute per level of the spell slot you expend, you can sense whether the following types of creatures are present within 1 mile of you (or within up to 6 miles if you are in your favored terrain): aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature doesn’t reveal the creatures’ location or number.
-		*/
+		feature name="Primeval Awareness" {
+			description "Beginning at 3rd level, you can use your action and expend one ranger spell slot to focus your awareness on the region around you. For 1 minute per level of the spell slot you expend, you can sense whether the following types of creatures are present within 1 mile of you (or within up to 6 miles if you are in your favored terrain): aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature doesn't reveal the creatures' location or number."
+		}
 	}
 	level 4 {
 		mutator "pick" 1 name="Ability Score Improvement" {

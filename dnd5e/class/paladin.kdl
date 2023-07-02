@@ -118,9 +118,7 @@ class name="Paladin" {
 					feature name="Defense" {
 						// While you are wearing armor, you gain a +1 bonus to AC.
 						criteria "has_armor_equipped"
-						mutator-todo "armor_class" {
-							bonus 1
-						}
+						mutator "bonus" "ArmorClass" 1
 					}
 				}
 				option "Dueling" {
@@ -131,11 +129,11 @@ class name="Paladin" {
 							tag "Weapon"
 							property "TwoHanded" false
 						}
-						mutator-todo "bonus_damage" {
-							bonus 2
+						mutator "bonus" "WeaponDamage" {
+							damage 2
 							restriction {
+								weapon "Simple" "Martial"
 								attack "Melee"
-								tag "Weapon"
 								property "TwoHanded" false
 							}
 						}
@@ -355,14 +353,12 @@ class name="Paladin" {
 				short "All melee weapon attacks deal an additional 1d8 radiant damage."
 				section "By 11th level, you are so suffused with righteous might that all your melee weapon strikes carry divine power with them. Whenever you hit a creature with a melee weapon, the creature takes an extra 1d8 radiant damage."
 			}
-			mutator-todo "bonus_damage" {
-				damage {
-					roll "1d8"
-					damage_type "Radiant"
-				}
+			mutator "bonus" "WeaponDamage" {
+				damage (Roll)"1d8"
+				damage_type "Radiant"
 				restriction {
+					weapon "Simple" "Martial"
 					attack "Melee"
-					tag "Weapon" // TODO: Weapon's which generate an attack should add the Weapon tag to the attack
 				}
 			}
 		}

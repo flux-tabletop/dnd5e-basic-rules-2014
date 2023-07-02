@@ -33,10 +33,11 @@ subclass class="Fighter" name="Champion" {
 				option "Archery" {
 					feature name="Archery" {
 						// You gain a +2 bonus to attack rolls you make with ranged weapons.
-						mutator-todo "attack_roll_bonus" {
+						mutator "bonus" "WeaponAttackRoll" {
 							bonus 2
-							restriction ranged=true {
-								tag "Weapon"
+							restriction {
+								weapon "Simple" "Martial"
+								attack "Ranged"
 							}
 						}
 					}
@@ -45,9 +46,7 @@ subclass class="Fighter" name="Champion" {
 					feature name="Defense" {
 						// While you are wearing armor, you gain a +1 bonus to AC.
 						criteria "has_armor_equipped"
-						mutator-todo "armor_class" {
-							bonus 1
-						}
+						mutator "bonus" "ArmorClass" 1
 					}
 				}
 				option "Dueling" {
@@ -58,11 +57,11 @@ subclass class="Fighter" name="Champion" {
 							tag "Weapon"
 							property "TwoHanded" false
 						}
-						mutator-todo "bonus_damage" {
-							bonus 2
+						mutator "bonus" "WeaponDamage" {
+							damage 2
 							restriction {
+								weapon "Simple" "Martial"
 								attack "Melee"
-								tag "Weapon"
 								property "TwoHanded" false
 							}
 						}
