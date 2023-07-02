@@ -127,9 +127,9 @@ class name="Ranger" {
 				option "Dueling" {
 					mutator "feature" name="Dueling" {
 						// When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.'
-						criteria-todo "has_weapon_equipped" max=1 {
+						criteria "has_weapon_equipped" max=1 {
+							weapon "Simple" "Martial"
 							attack "Melee"
-							tag "Weapon"
 							property "TwoHanded" false
 						}
 						mutator "bonus" "WeaponDamage" {
