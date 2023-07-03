@@ -120,24 +120,28 @@ class name="Ranger" {
 				option "Defense" {
 					mutator "feature" name="Defense" {
 						// While you are wearing armor, you gain a +1 bonus to AC.
-						criteria "has_armor_equipped"
-						mutator "bonus" "ArmorClass" 1
+						mutator "apply_if" {
+							criteria (Evaluator)"has_armor_equipped"
+							mutator "bonus" "ArmorClass" 1
+						}
 					}
 				}
 				option "Dueling" {
 					mutator "feature" name="Dueling" {
 						// When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.'
-						criteria "has_weapon_equipped" max=1 {
-							weapon "Simple" "Martial"
-							attack "Melee"
-							property "TwoHanded" false
-						}
-						mutator "bonus" "WeaponDamage" {
-							damage 2
-							restriction {
+						mutator "apply_if" {
+							criteria (Evaluator)"has_weapon_equipped" max=1 {
 								weapon "Simple" "Martial"
 								attack "Melee"
 								property "TwoHanded" false
+							}
+							mutator "bonus" "WeaponDamage" {
+								damage 2
+								restriction {
+									weapon "Simple" "Martial"
+									attack "Melee"
+									property "TwoHanded" false
+								}
 							}
 						}
 					}

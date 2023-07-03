@@ -117,24 +117,28 @@ class name="Paladin" {
 				option "Defense" {
 					mutator "feature" name="Defense" {
 						// While you are wearing armor, you gain a +1 bonus to AC.
-						criteria "has_armor_equipped"
-						mutator "bonus" "ArmorClass" 1
+						mutator "apply_if" {
+							criteria (Evaluator)"has_armor_equipped"
+							mutator "bonus" "ArmorClass" 1
+						}
 					}
 				}
 				option "Dueling" {
 					mutator "feature" name="Dueling" {
 						// When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.'
-						criteria "has_weapon_equipped" max=1 {
-							weapon "Simple" "Martial"
-							attack "Melee"
-							property "TwoHanded" false
-						}
-						mutator "bonus" "WeaponDamage" {
-							damage 2
-							restriction {
+						mutator "apply_if" {
+							criteria (Evaluator)"has_weapon_equipped" max=1 {
 								weapon "Simple" "Martial"
 								attack "Melee"
 								property "TwoHanded" false
+							}
+							mutator "bonus" "WeaponDamage" {
+								damage 2
+								restriction {
+									weapon "Simple" "Martial"
+									attack "Melee"
+									property "TwoHanded" false
+								}
 							}
 						}
 					}
@@ -148,16 +152,17 @@ class name="Paladin" {
 					}
 				}
 				option "Protection" {
-					mutator "feature" name="Protection" {
-						description {
-							short "Impose disadvantage on an attack rolls against a target that isn't you, when the target is within 5 feet of you."
-							section "When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll."
-						}
-						// When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.
-						criteria "has_armor_equipped" {
+					mutator "apply_if" {
+						criteria (Evaluator)"has_armor_equipped" {
 							kind "Shield"
 						}
-						action "Reaction"
+						mutator "feature" name="Protection" {
+							description {
+								short "Impose disadvantage on an attack rolls against a target that isn't you, when the target is within 5 feet of you & you are using a shield."
+								section "While using a shield; when a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll."
+							}
+							action "Reaction"
+						}
 					}
 				}
 			}

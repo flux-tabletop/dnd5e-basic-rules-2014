@@ -3,26 +3,33 @@ subclass class="Barbarian" name="Path of the Beserker" {
 	level 3 {
 		mutator "feature" name="Frenzy" {
 			description "Starting when you choose this path at 3rd level, you can go into a frenzy when you rage. If you do so, for the duration of your rage you can make a single melee weapon attack as a bonus action on each of your turns after this one. When your rage ends, you suffer one level of exhaustion."
-			// TODO: add melee weapon attack as a bonus action when the rage condition is active
-			// criteria "has_condition" "Raging"
+			mutator "apply_if" {
+				criteria (Evaluator)"has_condition" {
+					filter name="Raging" {
+						name "Raging"
+					}
+				}
+				// TODO: add melee weapon attack as a bonus action when the rage condition is active
+			}
 		}
 	}
 	level 6 {
 		mutator "feature" name="Mindless Rage" {
 			description "Beginning at 6th level, you can't be charmed or frightened while raging. If you are charmed or frightened when you enter your rage, the effect is suspended for the duration of the rage."
-			// NOTE: the below only covers the second half of this feature. The first is just something you need to know when using this feature.
-			/* TODO: Condition Supressing
-			mutator which allows one or more conditions to be disabled/supressed (if they are present on the character)
-			as long as a condition is met (like having another condition)
-			mutator "supress_conditions" {
-				condition "Charmed"
-				condition "Frightened"
-			}
-			*/
-			criteria "has_condition" {
-				filter name="Raging" {
-					name "Raging"
+			mutator "apply_if" {
+				criteria (Evaluator)"has_condition" {
+					filter name="Raging" {
+						name "Raging"
+					}
 				}
+				/* TODO: Condition Supressing
+				mutator which allows one or more conditions to be disabled/supressed (if they are present on the character)
+				as long as a condition is met (like having another condition)
+				mutator "supress_conditions" {
+					condition "Charmed"
+					condition "Frightened"
+				}
+				*/
 			}
 		}
 	}

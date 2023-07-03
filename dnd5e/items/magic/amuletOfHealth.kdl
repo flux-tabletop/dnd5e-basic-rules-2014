@@ -3,16 +3,18 @@ item name="Amulet of Health" {
 	rarity "Rare"
 	tag "Wonderous"
 	kind "Equipment" requires_attunement=true {
-		// TODO: Dont apply mutators if criteria is not met or item is not attuned
-		// TODO: Ability score cannot be 19 or larger
-		/*
-		criteria (Evaluator)"check_ability_score" {
-			max 19
-		}
-		*/
-		mutator "ability_score" {
-			ability "Specific" "Constitution"
-			fixed 19 // TODO: fixed ability score
+		// TODO: Dont apply mutators if item is not attuned
+		mutator "apply_if" {
+			// TODO: Ability score cannot be 19 or larger
+			/*
+			criteria (Evaluator)"check_ability_score" {
+				max 19
+			}
+			*/
+			mutator "ability_score" {
+				ability "Specific" "Constitution"
+				fixed 19 // TODO: fixed ability score
+			}
 		}
 	}
 }

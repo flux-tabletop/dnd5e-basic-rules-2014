@@ -86,26 +86,28 @@ class name="Barbarian" {
 				condition "Custom" name="Raging" {
 					description "While raging, you gain benefits listed below if you aren't wearing heavy armor.
 					If you are able to cast spells, you can't cast them or concentrate on them while raging."
-					criteria "has_armor_equipped" inverted=true {
-						kind "Heavy"
-					}
-					mutator "add_modifier" "Advantage" (Ability)"Specific" "Strength"
-					mutator "add_modifier" "Advantage" (SavingThrow)"Specific" "Strength"
-					mutator "add_defense" "Resistance" (DamageType)"Bludgeoning"
-					mutator "add_defense" "Resistance" (DamageType)"Piercing"
-					mutator "add_defense" "Resistance" (DamageType)"Slashing"
-					mutator "bonus" "WeaponDamage" {
-						damage {
-							amount (Evaluator)"get_level" class="Barbarian" {
-								level 1 2
-								level 9 3
-								level 16 4
-							}
+					mutator "apply_if" {
+						criteria (Evaluator)"has_armor_equipped" inverted=true {
+							kind "Heavy"
 						}
-						restriction {
-							weapon "Simple" "Martial"
-							attack "Melee"
-							ability "Strength"
+						mutator "add_modifier" "Advantage" (Ability)"Specific" "Strength"
+						mutator "add_modifier" "Advantage" (SavingThrow)"Specific" "Strength"
+						mutator "add_defense" "Resistance" (DamageType)"Bludgeoning"
+						mutator "add_defense" "Resistance" (DamageType)"Piercing"
+						mutator "add_defense" "Resistance" (DamageType)"Slashing"
+						mutator "bonus" "WeaponDamage" {
+							damage {
+								amount (Evaluator)"get_level" class="Barbarian" {
+									level 1 2
+									level 9 3
+									level 16 4
+								}
+							}
+							restriction {
+								weapon "Simple" "Martial"
+								attack "Melee"
+								ability "Strength"
+							}
 						}
 					}
 				}
@@ -113,14 +115,16 @@ class name="Barbarian" {
 		}
 		mutator "feature" name="Unarmored Defense" unique=true {
 			description "While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit."
-			criteria "has_armor_equipped" inverted=true {
-				kind "Light"
-				kind "Medium"
-				kind "Heavy"
-			}
-			mutator "add_armor_class_formula" base=10 {
-				bonus "Dexterity"
-				bonus "Constitution"
+			mutator "apply_if" {
+				criteria (Evaluator)"has_armor_equipped" inverted=true {
+					kind "Light"
+					kind "Medium"
+					kind "Heavy"
+				}
+				mutator "add_armor_class_formula" base=10 {
+					bonus "Dexterity"
+					bonus "Constitution"
+				}
 			}
 		}
 	}
@@ -131,17 +135,19 @@ class name="Barbarian" {
 		mutator "feature" name="Danger Sense" {
 			description "At 2nd level, you gain an uncanny sense of when things nearby aren't as they should be, giving you an edge when you dodge away from danger.
 			You have advantage on Dexterity saving throws against effects that you can see, such as traps and spells. To gain this benefit, you can't be blinded, deafened, or incapacitated."
-			mutator "add_modifier" "Advantage" (SavingThrow)"Specific" "Dexterity" context="effects you can see"
-			criteria "has_condition" inverted=true {
-				filter name="Blinded" {
-					id "condition/blinded.kdl"
+			mutator "apply_if" {
+				criteria (Evaluator)"has_condition" inverted=true {
+					filter name="Blinded" {
+						id "condition/blinded.kdl"
+					}
+					filter name="Deafened" {
+						id "condition/deafened.kdl"
+					}
+					filter name="Incapacitated" {
+						id "condition/incapacitated.kdl"
+					}
 				}
-				filter name="Deafened" {
-					id "condition/deafened.kdl"
-				}
-				filter name="Incapacitated" {
-					id "condition/incapacitated.kdl"
-				}
+				mutator "add_modifier" "Advantage" (SavingThrow)"Specific" "Dexterity" context="effects you can see"
 			}
 		}
 	}
@@ -176,9 +182,11 @@ class name="Barbarian" {
 		}
 		mutator "feature" name="Fast Movement" {
 			description "Starting at 5th level, your speed increases by 10 feet while you aren't wearing heavy armor."
-			mutator "speed" "Walking" (Additive)10
-			criteria "has_armor_equipped" inverted=true {
-				kind "Heavy"
+			mutator "apply_if" {
+				criteria (Evaluator)"has_armor_equipped" inverted=true {
+					kind "Heavy"
+				}
+				mutator "speed" "Walking" (Additive)10
 			}
 		}
 	}

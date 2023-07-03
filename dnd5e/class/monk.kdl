@@ -74,10 +74,12 @@ class name="Monk" {
 		mutator "add_proficiency" (Weapon)"Shortsword"
 		mutator "feature" name="Unarmored Defense" unique=true {
 			description "Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier."
-			criteria "has_armor_equipped" inverted=true
-			mutator "add_armor_class_formula" base=10 {
-				bonus "Dexterity"
-				bonus "Wisdom"
+			mutator "apply_if" {
+				criteria (Evaluator)"has_armor_equipped" inverted=true
+				mutator "add_armor_class_formula" base=10 {
+					bonus "Dexterity"
+					bonus "Wisdom"
+				}
 			}
 		}
 		mutator "feature" name="Martial Arts" {
@@ -141,8 +143,10 @@ class name="Monk" {
 		}
 		mutator "feature" name="Unarmored Movement" {
 			description "Starting at 2nd level, your speed increases by 10 feet while you are not wearing armor or wielding a shield."
-			criteria "has_armor_equipped" inverted=true
-			mutator "speed" "Walking" (Additive)10
+			mutator "apply_if" {
+				criteria (Evaluator)"has_armor_equipped" inverted=true
+				mutator "speed" "Walking" (Additive)10
+			}
 		}
 	}
 	level 3 {
@@ -215,8 +219,10 @@ class name="Monk" {
 	level 6 {
 		mutator "feature" name="Unarmored Movement" parent="Monk/level02/Unarmored Movement" {
 			description "At 6th level, your speed increases by 5 more feet (+15ft total) while you are not wearing armor or wielding a shield."
-			criteria "has_armor_equipped" inverted=true
-			mutator "speed" "Walking" (Additive)5
+			mutator "apply_if" {
+				criteria (Evaluator)"has_armor_equipped" inverted=true
+				mutator "speed" "Walking" (Additive)5
+			}
 		}
 		mutator "feature" name="Ki-Empowered Strikes" {
 			description "Starting at 6th level, your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
@@ -266,8 +272,10 @@ class name="Monk" {
 	level 10 {
 		mutator "feature" name="Unarmored Movement" parent="Monk/level02/Unarmored Movement" {
 			description "At 10th level, your speed increases by 5 more feet (+20ft total) while you are not wearing armor or wielding a shield."
-			criteria "has_armor_equipped" inverted=true
-			mutator "speed" "Walking" (Additive)5
+			mutator "apply_if" {
+				criteria (Evaluator)"has_armor_equipped" inverted=true
+				mutator "speed" "Walking" (Additive)5
+			}
 		}
 		mutator "feature" name="Purity of Body" {
 			description "At 10th level, your mastery of the ki flowing through you makes you immune to disease and poison."
@@ -303,8 +311,10 @@ class name="Monk" {
 	level 14 {
 		mutator "feature" name="Unarmored Movement" parent="Monk/level02/Unarmored Movement" {
 			description "At 14th level, your speed increases by 5 more feet (+25ft total) while you are not wearing armor or wielding a shield."
-			criteria "has_armor_equipped" inverted=true
-			mutator "speed" "Walking" (Additive)5
+			mutator "apply_if" {
+				criteria (Evaluator)"has_armor_equipped" inverted=true
+				mutator "speed" "Walking" (Additive)5
+			}
 		}
 		mutator "feature" name="Diamond Soul" parent="Monk/level02/Ki" {
 			description "Beginning at 14th level, your mastery of ki grants you proficiency in all saving throws.
@@ -346,8 +356,10 @@ class name="Monk" {
 	level 18 {
 		mutator "feature" name="Unarmored Movement" parent="Monk/level02/Unarmored Movement" {
 			description "At 18th level, your speed increases by 5 more feet (+30ft total) while you are not wearing armor or wielding a shield."
-			criteria "has_armor_equipped" inverted=true
-			mutator "speed" "Walking" (Additive)5
+			mutator "apply_if" {
+				criteria (Evaluator)"has_armor_equipped" inverted=true
+				mutator "speed" "Walking" (Additive)5
+			}
 		}
 		mutator "feature" name="Empty Body" parent="Monk/level02/Ki" {
 			description {

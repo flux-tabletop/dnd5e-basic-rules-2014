@@ -11,9 +11,11 @@ subclass class="Sorcerer" name="Draconic Bloodline" {
 		}
 		mutator "feature" name="Draconic Scales" {
 			description "Parts of your skin are covered by a thin sheen of dragon-like scales. When you aren't wearing armor, your AC equals 13 + your Dexterity modifier."
-			criteria "has_armor_equipped" inverted=true
-			mutator "add_armor_class_formula" base=13 {
-				bonus "Dexterity"
+			mutator "apply_if" {
+				criteria (Evaluator)"has_armor_equipped" inverted=true
+				mutator "add_armor_class_formula" base=13 {
+					bonus "Dexterity"
+				}
 			}
 		}
 	}
