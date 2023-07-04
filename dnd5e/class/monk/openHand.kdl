@@ -61,12 +61,12 @@ subclass class="Monk" name="Way of the Open Hand" {
 				The vibrations are harmless unless you use your action to end them. To do so, you and the target must be on the same plane of existence. When you use this action, the creature must make a Constitution saving throw (DC {DC}). If it fails, it is reduced to 0 hit points. If it succeeds, it takes 10d10 necrotic damage.
 
 				You can have only one creature under the effect of this feature at a time. You can choose to end the vibrations harmlessly without using an action."
-				format-arg "level" "int" (Evaluator)"get_level" class="Monk"
 				format-arg "DC" "int" (Evaluator)"math" "Add" {
 					value 8
 					value (Evaluator)"get_ability_modifier" (Ability)"Wisdom"
 					value (Evaluator)"get_proficiency_bonus"
 				}
+				format-arg "level" "int" (Evaluator)"get_level" class="Monk"
 			}
 		}
 	}

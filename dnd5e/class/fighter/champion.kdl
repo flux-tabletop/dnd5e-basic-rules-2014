@@ -17,9 +17,9 @@ subclass class="Fighter" name="Champion" {
 				In addition, when you make a running long jump, the distance you can cover increases by a number of feet equal to your Strength modifier."
 				foramt-arg "jump-dist" (Evaluator)"get_ability_modifier" (Ability)"Strength"
 			}
-			mutator "add_proficiency" (Ability)"Specific" "Str" level="HalfUp"
-			mutator "add_proficiency" (Ability)"Specific" "Dex" level="HalfUp"
-			mutator "add_proficiency" (Ability)"Specific" "Con" level="HalfUp"
+			mutator "add_proficiency" (Ability)"Specific" "Strength" level="HalfUp"
+			mutator "add_proficiency" (Ability)"Specific" "Dexterity" level="HalfUp"
+			mutator "add_proficiency" (Ability)"Specific" "Constitution" level="HalfUp"
 		}
 	}
 	level 10 {
@@ -114,13 +114,13 @@ subclass class="Fighter" name="Champion" {
 			description {
 				short "At the start of your turn, regain {hit_points} if you have more than 0 and less than {half_max_hp} hit points."
 				section "At 18th level, you attain the pinnacle of resilience in battle. At the start of each of your turns, you regain hit points equal to 5 + your Constitution modifier (+{hit_points}) if you have no more than half ({half_max_hp}) of your hit points left. You don't gain this benefit if you have 0 hit points."
-				format-arg "hit_points" "int" (Evaluator)"math" "Add" {
-					value 5
-					value (Evaluator)"get_ability_modifier" (Ability)"Constitution"
-				}
 				format-arg "half_max_hp" "int" (Evaluator)"math" "Divide" round="floor" {
 					value (Evaluator)"get_hit_points" "Max"
 					value 2
+				}
+				format-arg "hit_points" "int" (Evaluator)"math" "Add" {
+					value 5
+					value (Evaluator)"get_ability_modifier" (Ability)"Constitution"
 				}
 			}
 		}

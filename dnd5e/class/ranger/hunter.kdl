@@ -13,7 +13,6 @@ subclass class="Ranger" name="Hunter" {
 			option "Giant Killer" {
 				mutator "feature" name="Giant Killer" {
 					description "When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature."
-					activation "Reaction"
 				}
 			}
 			option "Horde Breaker" {
