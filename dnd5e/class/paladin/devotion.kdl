@@ -63,7 +63,6 @@ subclass class="Paladin" name="Oath of Devotion" {
 				section "As an action, you can imbue one weapon that you are holding with positive energy, using your Channel Divinity. For 1 minute, you add your Charisma modifier to attack rolls made with that weapon (with a minimum bonus of +1). The weapon also emits bright light in a 20-foot radius and dim light 20 feet beyond that. If the weapon is not already magical, it becomes magical for the duration.
 
 				You can end this effect on your turn as part of any other action. If you are no longer holding or carrying this weapon, or if you fall unconscious, this effect ends."
-				// TODO: math eval without operation only applies min/max bounds and only accepts one value/evaluator
 				format-arg "bonus" "int" (Evaluator)"math" "Add" min=1 {
 					value (Evaluator)"get_ability_modifier" (Ability)"Charisma"
 				}
@@ -106,7 +105,6 @@ subclass class="Paladin" name="Oath of Devotion" {
 				"Starting at 7th level, you and friendly creatures within 10 feet of you can't be charmed while you are conscious.
 
 				At 18th level, the range of this aura increases to 30 feet."
-				// TODO: get_level can map levels to an Option<i32> (moving the value from Scaled::Basis::Level to the evaluator so the scaling can be replaced by the "math" evaluator)
 				format-arg "range" "int" (Evaluator)"get_level" class="Paladin" {
 					level 6 10
 					level 18 30
@@ -117,7 +115,7 @@ subclass class="Paladin" name="Oath of Devotion" {
 	level 15 {
 		mutator "feature" name="Purity of Spirit" {
 			description "Beginning at 15th level, you are always under the effects of a protection from evil and good spell."
-			// TODO: Permanent condition?
+			// TODO-QoL: Permanent condition?
 		}
 	}
 	level 20 {

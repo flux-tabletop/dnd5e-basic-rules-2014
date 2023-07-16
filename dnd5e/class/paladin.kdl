@@ -305,7 +305,6 @@ class name="Paladin" {
 				section "Starting at 6th level, whenever you or a friendly creature within 10 feet of you must make a saving throw, the creature gains a bonus to the saving throw equal to your Charisma modifier (with a minimum bonus of +1). You must be conscious to grant this bonus.
 
 				At 18th level, the range of this aura increases to 30 feet."
-				// TODO: get_level can map levels to an Option<i32> (moving the value from Scaled::Basis::Level to the evaluator so the scaling can be replaced by the "math" evaluator)
 				format-arg "range" "int" (Evaluator)"get_level" class="Paladin" {
 					level 6 10
 					level 18 30
@@ -344,7 +343,6 @@ class name="Paladin" {
 				section "Starting at 10th level, you and friendly creatures within 10 feet of you can't be frightened while you are conscious.
 
 				At 18th level, the range of this aura increases to 30 feet."
-				// TODO: get_level can map levels to an Option<i32> (moving the value from Scaled::Basis::Level to the evaluator so the scaling can be replaced by the "math" evaluator)
 				format-arg "range" "int" (Evaluator)"get_level" class="Paladin" {
 					level 10 10
 					level 18 30

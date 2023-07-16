@@ -48,7 +48,7 @@ subclass class="Monk" name="Way of the Open Hand" {
 					value (Evaluator)"get_proficiency_bonus"
 				}
 			}
-			// TODO: Some way to apply the sanctuary spell condition when this is used
+			// TODO-QoL: Some way to apply the sanctuary spell condition when this is used
 		}
 	}
 	level 17 {
