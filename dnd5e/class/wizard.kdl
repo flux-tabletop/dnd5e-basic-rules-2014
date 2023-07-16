@@ -151,7 +151,7 @@ class name="Wizard" {
 						value (Evaluator)"get_level" class="Wizard"
 					}
 				}
-				slots reset_on="Long" {
+				slots "Standard" {
 					rank 1 {
 						level 1 2
 						level 2 3

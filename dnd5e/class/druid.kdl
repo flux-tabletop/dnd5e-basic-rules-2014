@@ -128,7 +128,7 @@ class name="Druid" {
 						value (Evaluator)"get_level" class="Druid"
 					}
 				}
-				slots reset_on="Long" {
+				slots "Standard" {
 					rank 1 {
 						level 1 2
 						level 2 3

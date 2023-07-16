@@ -127,7 +127,7 @@ class name="Cleric" {
 					When multiclassing, the total levels in each class are added together (adding only half level for half-casters), and compared against a multi-class spellslot table (which only dictates how many slots you have, not what level of spells you can know).
 					So really slots ARE relevant to the caster-kind, and there are additional layer of ops to do when determining total slot count.
 				*/
-				slots reset_on="Long" {
+				slots "Standard" {
 					rank 1 {
 						level 1 2
 						level 2 3

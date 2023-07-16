@@ -124,7 +124,7 @@ class name="Sorcerer" {
 						level 17 15
 					}
 				}
-				slots reset_on="Long" {
+				slots "Standard" {
 					rank 1 {
 						level 1 2
 						level 2 3

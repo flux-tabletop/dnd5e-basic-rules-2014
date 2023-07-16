@@ -216,7 +216,7 @@ class name="Paladin" {
 						}
 					}
 				}
-				slots multiclass="Half" reset_on="Long" {
+				slots "Standard" multiclass="Half" {
 					rank 1 {
 						level 2 2
 						level 3 3

@@ -139,7 +139,7 @@ class name="Bard" {
 						level 18 22
 					}
 				}
-				slots reset_on="Long" {
+				slots "Standard" {
 					rank 1 {
 						level 1 2
 						level 2 3

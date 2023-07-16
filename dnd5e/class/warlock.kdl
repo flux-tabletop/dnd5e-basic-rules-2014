@@ -127,17 +127,31 @@ class name="Warlock" {
 						level 19 15
 					}
 				}
-				slots reset_on="Short"
-				slots-todo reset_on="Short" {
-					// warlock is unique in that their slots aren't incremental, they get replaced
-					level 1 amount=1 rank=1
-					level 2 amount=2
-					level 3 rank=2
-					level 5 rank=3
-					level 7 rank=4
-					level 9 rank=5
-					level 11 amount=3
-					level 17 amount=4
+				slots "Bonus" reset_on="Short" {
+					level 1 {
+						rank 1 1
+					}
+					level 2 {
+						rank 1 2
+					}
+					level 3 {
+						rank 2 2
+					}
+					level 5 {
+						rank 3 2
+					}
+					level 7 {
+						rank 4 2
+					}
+					level 9 {
+						rank 5 2
+					}
+					level 11 {
+						rank 5 3
+					}
+					level 17 {
+						rank 5 4
+					}
 				}
 			}
 		}
