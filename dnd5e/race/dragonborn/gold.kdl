@@ -1,6 +1,6 @@
 bundle category="RaceVariant" name="Dragonborn: Gold Dragon Ancestry" {
 	requirement "Bundle" "Race" "Dragonborn"
-	mutator "add_defense" "Resistance" (DamageType)"Fire"
+	mutator "add_defense" "Resistance" (DamageType)"Specific" "Fire"
 	mutator "feature" name="Breath Weapon" {
 		description {
 			short "You emit destructive energy in a 15 ft. cone. All creatures in the area must make a Dexterity saving throw (DC {DC}), taking {amt}d6 Acid damage on a failed save and half as much on a successful one."

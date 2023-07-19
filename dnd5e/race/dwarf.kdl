@@ -14,7 +14,7 @@ bundle category="Race" name="Dwarf" {
 	mutator "feature" name="Dwarven Resilience" {
 		description "You have advantage on saving throws against poison, and you have resistance against poison damage."
 		mutator "add_modifier" "Advantage" (SavingThrow)"All" context="Poison"
-		mutator "add_defense" "Resistance" (DamageType)"Poison"
+		mutator "add_defense" "Resistance" (DamageType)"Specific" "Poison"
 	}
 	mutator "feature" name="Dwarven Combat Training" {
 		description "You have proficiency with the battleaxe, handaxe, light hammer, and warhammer."

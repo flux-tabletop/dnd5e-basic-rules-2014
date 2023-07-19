@@ -135,9 +135,9 @@ item name="Armor of Vulnerability (Bludgeoning)" weight=65.0 {
 			min-strength 15
 		}
 		mutator "add_modifier" "Disadvantage" (Skill)"Specific" "Stealth"
-		mutator "add_defense" "Resistance" (DamageType)"Bludgeoning"
-		mutator "add_defense" "Vulnerability" (DamageType)"Piercing"
-		mutator "add_defense" "Vulnerability" (DamageType)"Slashing"
+		mutator "add_defense" "Resistance" (DamageType)"Specific" "Bludgeoning"
+		mutator "add_defense" "Vulnerability" (DamageType)"Specific" "Piercing"
+		mutator "add_defense" "Vulnerability" (DamageType)"Specific" "Slashing"
 	}
 }
 item name="Armor of Vulnerability (Piercing)" weight=65.0 {
@@ -153,9 +153,9 @@ item name="Armor of Vulnerability (Piercing)" weight=65.0 {
 			min-strength 15
 		}
 		mutator "add_modifier" "Disadvantage" (Skill)"Specific" "Stealth"
-		mutator "add_defense" "Vulnerability" (DamageType)"Bludgeoning"
-		mutator "add_defense" "Resistance" (DamageType)"Piercing"
-		mutator "add_defense" "Vulnerability" (DamageType)"Slashing"
+		mutator "add_defense" "Vulnerability" (DamageType)"Specific" "Bludgeoning"
+		mutator "add_defense" "Resistance" (DamageType)"Specific" "Piercing"
+		mutator "add_defense" "Vulnerability" (DamageType)"Specific" "Slashing"
 	}
 }
 item name="Armor of Vulnerability (Slashing)" weight=65.0 {
@@ -171,9 +171,9 @@ item name="Armor of Vulnerability (Slashing)" weight=65.0 {
 			min-strength 15
 		}
 		mutator "add_modifier" "Disadvantage" (Skill)"Specific" "Stealth"
-		mutator "add_defense" "Vulnerability" (DamageType)"Bludgeoning"
-		mutator "add_defense" "Vulnerability" (DamageType)"Piercing"
-		mutator "add_defense" "Resistance" (DamageType)"Slashing"
+		mutator "add_defense" "Vulnerability" (DamageType)"Specific" "Bludgeoning"
+		mutator "add_defense" "Vulnerability" (DamageType)"Specific" "Piercing"
+		mutator "add_defense" "Resistance" (DamageType)"Specific" "Slashing"
 	}
 }
 item name="Arrow-Catching Shield" {
@@ -354,7 +354,7 @@ item name="Belt of Dwarvenkind" {
 		}
 		mutator "add_modifier" "Advantage" (Skill)"Specific" "Persuasion" context="when interacting with dwarves"
 		mutator "add_modifier" "Advantage" (SavingThrow)"All" context="Poison"
-		mutator "add_defense" "Resistance" (DamageType)"Poison"
+		mutator "add_defense" "Resistance" (DamageType)"Specific" "Poison"
 		mutator "sense" "Darkvision" (Minimum)60
 		mutator "add_proficiency" (Language)"Specific" "Dwarvish"
 	}
@@ -525,7 +525,7 @@ item name="Boots of the Winterlands" {
 	rarity "Uncommon"
 	tag "Wonderous"
 	kind "Equipment" requires_attunement=true {
-		mutator "add_defense" "Resistance" (DamageType)"Cold"
+		mutator "add_defense" "Resistance" (DamageType)"Specific" "Cold"
 	}
 }
 item name="Bowl of Commanding Water Elementals" {

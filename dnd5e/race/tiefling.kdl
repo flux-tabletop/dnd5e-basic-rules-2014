@@ -16,7 +16,7 @@ bundle category="Race" name="Tiefling" {
 	}
 	mutator "speed" "Walking" (Base)30
 	mutator "sense" "Darkvision" (Base)60
-	mutator "add_defense" "Resistance" (DamageType)"Fire"
+	mutator "add_defense" "Resistance" (DamageType)"Specific" "Fire"
 	mutator "add_proficiency" (Language)"Specific" "Common"
 	mutator "add_proficiency" (Language)"Specific" "Infernal"
 	mutator "feature" name="Infernal Legacy" {

@@ -92,9 +92,9 @@ class name="Barbarian" {
 						}
 						mutator "add_modifier" "Advantage" (Ability)"Specific" "Strength"
 						mutator "add_modifier" "Advantage" (SavingThrow)"Specific" "Strength"
-						mutator "add_defense" "Resistance" (DamageType)"Bludgeoning"
-						mutator "add_defense" "Resistance" (DamageType)"Piercing"
-						mutator "add_defense" "Resistance" (DamageType)"Slashing"
+						mutator "add_defense" "Resistance" (DamageType)"Specific" "Bludgeoning"
+						mutator "add_defense" "Resistance" (DamageType)"Specific" "Piercing"
+						mutator "add_defense" "Resistance" (DamageType)"Specific" "Slashing"
 						mutator "bonus" "WeaponDamage" {
 							damage {
 								amount (Evaluator)"get_level" class="Barbarian" {

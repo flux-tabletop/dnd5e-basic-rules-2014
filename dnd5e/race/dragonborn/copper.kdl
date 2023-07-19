@@ -1,6 +1,6 @@
 bundle category="RaceVariant" name="Dragonborn: Copper Dragon Ancestry" {
 	requirement "Bundle" "Race" "Dragonborn"
-	mutator "add_defense" "Resistance" (DamageType)"Acid"
+	mutator "add_defense" "Resistance" (DamageType)"Specific" "Acid"
 	mutator "feature" name="Breath Weapon" {
 		description {
 			short "You emit destructive energy in a 5 by 30 ft. line. All creatures in the area must make a Dexterity saving throw (DC {DC}), taking {amt}d6 Acid damage on a failed save and half as much on a successful one."

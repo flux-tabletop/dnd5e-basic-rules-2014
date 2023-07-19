@@ -58,8 +58,7 @@ subclass class="Warlock" name="The Fiend" {
 			action "Special" {
 				condition "Custom" name="Fiendish Resilience" {
 					description "You are resistant to a damage type of your choosing, unless the source is a magical or silver weapon."
-					// TODO: selector for add_defense damage type
-					mutator-todo "add_defense" "Resistance" (DamageType)"Any"
+					mutator "add_defense" "Resistance" (DamageType)"Any"
 				}
 			}
 		}

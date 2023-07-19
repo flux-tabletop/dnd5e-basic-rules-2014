@@ -338,7 +338,7 @@ subclass class="Druid" name="Circle of the Land" {
 				short "You are immune to Poison and Disease. You cannot be charmed by elementals or fey."
 				section "When you reach 10th level, you can't be charmed or frightened by elementals or fey, and you are immune to poison and disease."
 			}
-			mutator "add_defense" "Immunity" "Poison"
+			mutator "add_defense" "Immunity" (DamageType)"Specific" "Poison"
 		}
 	}
 	level 14 {

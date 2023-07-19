@@ -279,7 +279,7 @@ class name="Monk" {
 		}
 		mutator "feature" name="Purity of Body" {
 			description "At 10th level, your mastery of the ki flowing through you makes you immune to disease and poison."
-			mutator "add_defense" "Immunity" "Poison"
+			mutator "add_defense" "Immunity" (DamageType)"Specific" "Poison"
 		}
 	}
 	level 12 {
@@ -380,18 +380,18 @@ class name="Monk" {
 						description "Ki-based Invisibility and Damage Resistance"
 						// TODO: conditions can imply/cause other conditions
 						implies "condition/invisible.kdl"
-						mutator "add_defense" "Resistance" (DamageType)"Acid"
-						mutator "add_defense" "Resistance" (DamageType)"Bludgeoning"
-						mutator "add_defense" "Resistance" (DamageType)"Cold"
-						mutator "add_defense" "Resistance" (DamageType)"Fire"
-						mutator "add_defense" "Resistance" (DamageType)"Lightning"
-						mutator "add_defense" "Resistance" (DamageType)"Necrotic"
-						mutator "add_defense" "Resistance" (DamageType)"Piercing"
-						mutator "add_defense" "Resistance" (DamageType)"Poison"
-						mutator "add_defense" "Resistance" (DamageType)"Psychic"
-						mutator "add_defense" "Resistance" (DamageType)"Radiant"
-						mutator "add_defense" "Resistance" (DamageType)"Slashing"
-						mutator "add_defense" "Resistance" (DamageType)"Thunder"
+						mutator "add_defense" "Resistance" (DamageType)"Specific" "Acid"
+						mutator "add_defense" "Resistance" (DamageType)"Specific" "Bludgeoning"
+						mutator "add_defense" "Resistance" (DamageType)"Specific" "Cold"
+						mutator "add_defense" "Resistance" (DamageType)"Specific" "Fire"
+						mutator "add_defense" "Resistance" (DamageType)"Specific" "Lightning"
+						mutator "add_defense" "Resistance" (DamageType)"Specific" "Necrotic"
+						mutator "add_defense" "Resistance" (DamageType)"Specific" "Piercing"
+						mutator "add_defense" "Resistance" (DamageType)"Specific" "Poison"
+						mutator "add_defense" "Resistance" (DamageType)"Specific" "Psychic"
+						mutator "add_defense" "Resistance" (DamageType)"Specific" "Radiant"
+						mutator "add_defense" "Resistance" (DamageType)"Specific" "Slashing"
+						mutator "add_defense" "Resistance" (DamageType)"Specific" "Thunder"
 					}
 				}
 			}

@@ -1,6 +1,6 @@
 bundle category="RaceVariant" name="Dragonborn: Silver Dragon Ancestry" {
 	requirement "Bundle" "Race" "Dragonborn"
-	mutator "add_defense" "Resistance" (DamageType)"Cold"
+	mutator "add_defense" "Resistance" (DamageType)"Specific" "Cold"
 	mutator "feature" name="Breath Weapon" {
 		description {
 			short "You emit destructive energy in a 15 ft. cone. All creatures in the area must make a Constitution saving throw (DC {DC}), taking {amt}d6 Acid damage on a failed save and half as much on a successful one."
