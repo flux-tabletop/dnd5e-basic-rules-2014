@@ -203,9 +203,7 @@ class name="Bard" {
 					max_uses (Evaluator)"math" "Add" min=1 {
 						value (Evaluator)"get_ability_modifier" (Ability)"Charisma"
 					}
-					// TODO: if bard level >= 5, reset_on is Short rest
-					reset_on "Long"
-					reset_on-todo (Scaled)"Level" class="Bard" {
+					reset_on (Evaluator)"get_level_str" class="Bard" {
 						level 1 "Long"
 						level 5 "Short"
 					}
