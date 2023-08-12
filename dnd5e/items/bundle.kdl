@@ -3,132 +3,118 @@
 //!burglarPack
 item "items/gear/backpack.kdl" name="Burglar's Pack" {
 	worth 16 (Currency)"Gold"
-	containers {
-		items {
-			contents {
-				item "items/gear/ballBearings.kdl" count=1000
-				item name="String (ft.)" {
-					kind "Simple" count=10
-				}
-				item "items/gear/bell.kdl"
-				item "items/gear/candle.kdl" count=5
-				item "items/gear/crowbar.kdl"
-				item "items/gear/hammer.kdl"
-				item "items/gear/piton.kdl" count=10
-				item "items/gear/lanternHooded.kdl"
-				item "items/gear/oilFlask.kdl" count=2
-				item "items/gear/ration.kdl" count=5
-				item "items/gear/tinderbox.kdl"
-				item "items/gear/waterskin.kdl"
-				item "items/gear/ropeHempen.kdl" count=50
+	items {
+		templates {
+			item "Specific" "items/gear/ballBearings.kdl" count=1000
+			item "Custom" name="String (ft.)" {
+				kind "Simple" count=10
 			}
+			item "Specific" "items/gear/bell.kdl"
+			item "Specific" "items/gear/candle.kdl" count=5
+			item "Specific" "items/gear/crowbar.kdl"
+			item "Specific" "items/gear/hammer.kdl"
+			item "Specific" "items/gear/piton.kdl" count=10
+			item "Specific" "items/gear/lanternHooded.kdl"
+			item "Specific" "items/gear/oilFlask.kdl" count=2
+			item "Specific" "items/gear/ration.kdl" count=5
+			item "Specific" "items/gear/tinderbox.kdl"
+			item "Specific" "items/gear/waterskin.kdl"
+			item "Specific" "items/gear/ropeHempen.kdl" count=50
 		}
 	}
 }
 //!diplomatPack
 item "items/container/chest.kdl" name="Diplomat's Pack" {
 	worth 39 (Currency)"Gold"
-	containers {
-		items {
-			contents {
-				item "items/gear/mapOrScrollCase.kdl" count=2
-				item "items/gear/clothesFine.kdl"
-				item "items/gear/ink.kdl"
-				item "items/gear/inkPen.kdl"
-				item "items/gear/lamp.kdl"
-				item "items/gear/oilFlask.kdl" count=2
-				item "items/gear/paper.kdl" count=5
-				item "items/gear/perfume.kdl"
-				item "items/gear/soap.kdl"
-			}
+	items {
+		templates {
+			item "Specific" "items/gear/mapOrScrollCase.kdl" count=2
+			item "Specific" "items/gear/clothesFine.kdl"
+			item "Specific" "items/gear/ink.kdl"
+			item "Specific" "items/gear/inkPen.kdl"
+			item "Specific" "items/gear/lamp.kdl"
+			item "Specific" "items/gear/oilFlask.kdl" count=2
+			item "Specific" "items/gear/paper.kdl" count=5
+			item "Specific" "items/gear/perfume.kdl"
+			item "Specific" "items/gear/soap.kdl"
 		}
 	}
 }
 //!dungeoneerPack
 item "items/gear/backpack.kdl" name="Dungeoneer's Pack" {
 	worth 12 (Currency)"Gold"
-	containers {
-		items {
-			contents {
-				item "items/gear/crowbar.kdl"
-				item "items/gear/hammer.kdl"
-				item "items/gear/piton.kdl" count=10
-				item "items/gear/torch.kdl" count=10
-				item "items/gear/tinderbox.kdl"
-				item "items/gear/ration.kdl" count=10
-				item "items/gear/waterskin.kdl"
-				item "items/gear/ropeHempen.kdl" count=50
-			}
+	items {
+		templates {
+			item "Specific" "items/gear/crowbar.kdl"
+			item "Specific" "items/gear/hammer.kdl"
+			item "Specific" "items/gear/piton.kdl" count=10
+			item "Specific" "items/gear/torch.kdl" count=10
+			item "Specific" "items/gear/tinderbox.kdl"
+			item "Specific" "items/gear/ration.kdl" count=10
+			item "Specific" "items/gear/waterskin.kdl"
+			item "Specific" "items/gear/ropeHempen.kdl" count=50
 		}
 	}
 }
 //!entertainerPack
 item "items/gear/backpack.kdl" name="Entertainer's Pack" {
 	worth 40 (Currency)"Gold"
-	containers {
-		items {
-			contents {
-				item "items/gear/bedroll.kdl"
-				item "items/gear/clothesCostume.kdl" count=2
-				item "items/gear/candle.kdl" count=5
-				item "items/gear/ration.kdl" count=5
-				item "items/gear/waterskin.kdl"
-				item "items/tools/disguise.kdl"
-			}
+	items {
+		templates {
+			item "Specific" "items/gear/bedroll.kdl"
+			item "Specific" "items/gear/clothesCostume.kdl" count=2
+			item "Specific" "items/gear/candle.kdl" count=5
+			item "Specific" "items/gear/ration.kdl" count=5
+			item "Specific" "items/gear/waterskin.kdl"
+			item "Specific" "items/tools/disguise.kdl"
 		}
 	}
 }
 //!explorerPack
 item "items/gear/backpack.kdl" name="Explorer's Pack" {
 	worth 40 (Currency)"Gold"
-	containers {
-		items {
-			contents {
-				item "items/gear/bedroll.kdl"
-				item "items/gear/messKit.kdl"
-				item "items/gear/tinderbox.kdl"
-				item "items/gear/torch.kdl" count=10
-				item "items/gear/ration.kdl" count=10
-				item "items/gear/waterskin.kdl"
-				item "items/gear/ropeHempen.kdl" count=50
-			}
+	items {
+		templates {
+			item "Specific" "items/gear/bedroll.kdl"
+			item "Specific" "items/gear/messKit.kdl"
+			item "Specific" "items/gear/tinderbox.kdl"
+			item "Specific" "items/gear/torch.kdl" count=10
+			item "Specific" "items/gear/ration.kdl" count=10
+			item "Specific" "items/gear/waterskin.kdl"
+			item "Specific" "items/gear/ropeHempen.kdl" count=50
 		}
 	}
 }
 //!priestPack
 item "items/gear/backpack.kdl" name="Priest's Pack" {
 	worth 19 (Currency)"Gold"
-	containers {
-		items {
-			contents {
-				item "items/gear/blanket.kdl"
-				item "items/gear/candle.kdl" count=10
-				item "items/gear/tinderbox.kdl"
-				// an alms box
-				item "Custom" name="Block of Incense" {
-					kind "Simple" count=2
-				}
-				// a censer
-				item "Custom" name="Vestments"
-				item "items/gear/ration.kdl" count=2
-				item "items/gear/waterskin.kdl"
+	items {
+		templates {
+			item "Specific" "items/gear/blanket.kdl"
+			item "Specific" "items/gear/candle.kdl" count=10
+			item "Specific" "items/gear/tinderbox.kdl"
+			// an alms box
+			item "Custom" name="Block of Incense" {
+				kind "Simple" count=2
 			}
+			// a censer
+			item "Custom" name="Vestments"
+			item "Specific" "items/gear/ration.kdl" count=2
+			item "Specific" "items/gear/waterskin.kdl"
 		}
 	}
 }
 //!scholarPack
 item "items/gear/backpack.kdl" name="Scholar's Pack" {
 	worth 40 (Currency)"Gold"
-	containers {
-		items {
-			contents {
-				item "items/gear/book.kdl" name="Book of Lore"
-				item "items/gear/ink.kdl"
-				item "items/gear/inkPen.kdl"
-				item "items/gear/parchment.kdl" count=10
-				item "Custom" name="Little Bag of Sand"
-				item "Custom" name="Small Knife"
-			}
+	items {
+		templates {
+			item "Specific" "items/gear/book.kdl" name="Book of Lore"
+			item "Specific" "items/gear/ink.kdl"
+			item "Specific" "items/gear/inkPen.kdl"
+			item "Specific" "items/gear/parchment.kdl" count=10
+			item "Custom" name="Little Bag of Sand"
+			item "Custom" name="Small Knife"
 		}
 	}
 }
