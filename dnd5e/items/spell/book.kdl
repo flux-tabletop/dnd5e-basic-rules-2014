@@ -1,13 +1,6 @@
 item name="Spellbook" weight=3.0 {
 	description "Essential for wizards, a spellbook is a leather-bound tome with 100 blank vellum pages suitable for recording spells."
 	worth 50 (Currency)"Gold"
-	kind "Equipment" {
-		containers {
-			spells prepare-from=true {
-				contents {
-					
-				}
-			}
-		}
-	}
+	kind "Equipment"
+	spells prepare-from=true
 }

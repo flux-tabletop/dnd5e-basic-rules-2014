@@ -10,16 +10,14 @@ item name="Spell Scroll (9th Level)" {
 	A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed."
 	tag "Scroll"
 	rarity "Legendary"
-	kind "Equipment" {
-		containers {
-			spells {
-				max-count 1
-				rank-per min=9 max=9
-				casting consume_item=true {
-					save-dc 19
-					atk-bonus 11
-				}
-			}
+	kind "Equipment"
+	spells {
+		capacity 1 {
+			rank min=9 max=9
+		}
+		casting consume_item=true {
+			save_dc 19
+			atk_bonus 11
 		}
 	}
 }

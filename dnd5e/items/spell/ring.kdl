@@ -8,21 +8,10 @@ item name="Ring of Spell Storing" {
 	rarity "Rare"
 	kind "Equipment" {
 		attunement required=true
-		containers {
-			spells {
-				rank-per min=1 max=5
-				total-rank 5
-				/*
-				contents {
-					// since there is no `casting` node, the user can input the rank/save-dc/atk-bonus when spell is stored
-					spell "path/to/spell.kdl" {
-						rank 2
-						save-dc 15
-						atk-bonus 2
-					}
-				}
-				*/
-			}
+	}
+	spells {
+		capacity {
+			rank min=1 max=5 total=5
 		}
 	}
 }
