@@ -1,9 +1,11 @@
+/*
 item_ name="" {
 	description ""
 	rarity ""
 	tag "Wonderous"
 	kind "Equipment" requires_attunement=true
 }
+*/
 
 /*
 	Armor, +1, +2, or +3
