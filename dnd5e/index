@@ -23,8 +23,10 @@ class/ranger.kdl
 class/rogue/thief.kdl
 class/rogue.kdl
 class/sorcerer/draconic.kdl
+class/sorcerer/metamagic/allMetamagic.kdl
 class/sorcerer.kdl
 class/warlock/fiend.kdl
+class/warlock/invocations/allInvocations.kdl
 class/warlock.kdl
 class/wizard/evocation.kdl
 class/wizard.kdl
