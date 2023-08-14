@@ -15,7 +15,9 @@ item name="Spell Scroll (7th Level)" {
 		capacity 1 {
 			rank min=7 max=7
 		}
-		casting consume_item=true {
+		casting {
+			consume_item true
+			consume_spell true
 			save_dc 18
 			atk_bonus 10
 		}

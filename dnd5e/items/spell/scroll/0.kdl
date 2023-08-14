@@ -15,7 +15,9 @@ item name="Spell Scroll (Cantrip)" {
 		capacity 1 {
 			rank min=0 max=0
 		}
-		casting consume_item=true {
+		casting {
+			consume_item true
+			consume_spell true
 			save_dc 13
 			atk_bonus 5
 		}
