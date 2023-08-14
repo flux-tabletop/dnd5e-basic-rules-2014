@@ -1,5 +1,5 @@
 //!careful
-bundle category="Eldritch Invocation" name="Careful Spell" {
+bundle category="Metamagic" name="Careful Spell" {
 	description {
 		short "Spell with Saving Throw - 1 Sorcery Point - {amount} of affected creatures automatically succeed their saving throw"
 		section "When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell's full force. To do so, you spend 1 sorcery point and choose a number of those creatures up to your Charisma modifier ({amount}) (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell."
