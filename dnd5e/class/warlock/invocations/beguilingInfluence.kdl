@@ -1,0 +1,5 @@
+bundle category="Eldritch Invocation" name="Beguiling Influence" {
+	description "You gain proficiency in the Deception and Persuasion skills."
+	mutator "add_proficiency" (Skill)"Specific" "Deception"
+	mutator "add_proficiency" (Skill)"Specific" "Persuasion"
+}

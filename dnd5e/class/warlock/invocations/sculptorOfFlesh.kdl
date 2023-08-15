@@ -1,0 +1,13 @@
+bundle category="Eldritch Invocation" name="Sculptor of Flesh" {
+	requirement-todo (Evaluator)"level" class="Warlock" min=7
+	description "You can cast polymorph once using a warlock spell slot. You can't do so again until you finish a long rest."
+	mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
+		// TODO: cast using a slot, but only a fixed number of times
+		spell "spells/polymorph.kdl" use_slot=true {
+			limited_use {
+				max_uses 1
+				reset_on (Rest)"Long"
+			}
+		}
+	}
+}

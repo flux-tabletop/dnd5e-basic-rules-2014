@@ -1,0 +1,6 @@
+bundle category="Eldritch Invocation" name="Mask of Many Faces" {
+	description "You can cast disguise self at will, without expending a spell slot."
+	mutator "spellcasting" "add_prepared" ability="Charisma" {
+		spell "spells/disguiseSelf.kdl"
+	}
+}

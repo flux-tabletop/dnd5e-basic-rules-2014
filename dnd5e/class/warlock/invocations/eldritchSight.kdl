@@ -1,0 +1,6 @@
+bundle category="Eldritch Invocation" name="Eldritch Sight" {
+	description "You can cast detect magic at will, without expending a spell slot."
+	mutator "spellcasting" "add_prepared" ability="Charisma" {
+		spell "spells/detectMagic.kdl"
+	}
+}

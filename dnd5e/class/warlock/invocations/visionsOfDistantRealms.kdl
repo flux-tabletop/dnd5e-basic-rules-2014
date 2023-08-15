@@ -1,0 +1,7 @@
+bundle category="Eldritch Invocation" name="Visions of Distant Realms" {
+	requirement-todo (Evaluator)"level" class="Warlock" min=15
+	description "You can cast arcane eye at will, without expending a spell slot."
+	mutator "spellcasting" "add_prepared" ability="Charisma" {
+		spell "spells/arcaneEye.kdl"
+	}
+}
