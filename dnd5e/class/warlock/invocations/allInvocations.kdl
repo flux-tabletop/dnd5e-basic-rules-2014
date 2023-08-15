@@ -1,4 +1,3 @@
-// If an eldritch invocation has prerequisites, you must meet them to learn it. You can learn the invocation at the same time that you meet its prerequisites. A level prerequisite refers to your level in this class.
 //!agonizingBlast
 bundle category="Eldritch Invocation" name="Agonizing Blast" {
 	requirement-todo (Evaluator)"has_cantrip" "spells/eldritchBlast.kdl"
@@ -17,165 +16,277 @@ bundle category="Eldritch Invocation" name="Armor of Shadows" {
 		spell "spells/mageArmor.kdl"
 	}
 }
-/*
-Ascendant Step
-Prerequisite: 9th level
-
-You can cast levitate on yourself at will, without expending a spell slot or material components.
-*/
-/*
-Beast Speech
-You can cast speak with animals at will, without expending a spell slot.
-*/
-/*
-Beguiling Influence
-You gain proficiency in the Deception and Persuasion skills.
-*/
-/*
-Bewitching Whispers
-Prerequisite: 7th level
-
-You can cast compulsion once using a warlock spell slot. You can't do so again until you finish a long rest.
-*/
-/*
-Book of Ancient Secrets
-Prerequisite: Pact of the Tome feature
-
-You can now inscribe magical rituals in your Book of Shadows. Choose two 1st-level spells that have the ritual tag from any class's spell list (the two needn't be from the same list). The spells appear in the book and don't count against the number of spells you know. With your Book of Shadows in hand, you can cast the chosen spells as rituals. You can't cast the spells except as rituals, unless you've learned them by some other means. You can also cast a warlock spell you know as a ritual if it has the ritual tag.
-
-On your adventures, you can add other ritual spells to your Book of Shadows. When you find such a spell, you can add it to the book if the spell's level is equal to or less than half your warlock level (rounded up) and if you can spare the time to transcribe the spell. For each level of the spell, the transcription process takes 2 hours and costs 50 gp for the rare inks needed to inscribe it.
-*/
-/*
-Chains of Carceri
-Prerequisite: 15th level, Pact of the Chain feature
-
-You can cast hold monster at will — targeting a celestial, fiend, or elemental — without expending a spell slot or material components. You must finish a long rest before you can use this invocation on the same creature again.
-*/
-/*
-Devil's Sight
-You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet.
-*/
-/*
-Dreadful Word
-Prerequisite: 7th level
-
-You can cast confusion once using a warlock spell slot. You can't do so again until you finish a long rest.
-*/
-/*
-Eldritch Sight
-You can cast detect magic at will, without expending a spell slot.
-*/
-/*
-Eldritch Spear
-Prerequisite: eldritch blast cantrip
-
-When you cast eldritch blast, its range is 300 feet.
-*/
-/*
-Eyes of the Rune Keeper
-You can read all writing.
-*/
-/*
-Fiendish Vigor
-You can cast false life on yourself at will as a 1st-level spell, without expending a spell slot or material components.
-*/
-/*
-Gaze of Two Minds
-You can use your action to touch a willing humanoid and perceive through its senses until the end of your next turn. As long as the creature is on the same plane of existence as you, you can use your action on subsequent turns to maintain this connection, extending the duration until the end of your next turn. While perceiving through the other creature's senses, you benefit from any special senses possessed by that creature, and you are blinded and deafened to your own surroundings.
-*/
-/*
-Lifedrinker
-Prerequisite: 12th level, Pact of the Blade feature
-
-When you hit a creature with your pact weapon, the creature takes extra necrotic damage equal to your Charisma modifier (minimum 1).
-*/
-/*
-Mask of Many Faces
-You can cast disguise self at will, without expending a spell slot.
-*/
-/*
-Master of Myriad Forms
-Prerequisite: 15th level
-
-You can cast alter self at will, without expending a spell slot.
-*/
-/*
-Minions of Chaos
-Prerequisite: 9th level
-
-You can cast conjure elemental once using a warlock spell slot. You can't do so again until you finish a long rest.
-*/
-/*
-Mire the Mind
-Prerequisite: 5th level
-
-You can cast slow once using a warlock spell slot. You can't do so again until you finish a long rest.
-*/
-/*
-Misty Visions
-You can cast silent image at will, without expending a spell slot or material components.
-*/
-/*
-One with Shadows
-Prerequisite: 5th level
-
-When you are in an area of dim light or darkness, you can use your action to become invisible until you move or take an action or a reaction.
-*/
-/*
-Otherworldly Leap
-Prerequisite: 9th level
-
-You can cast jump on yourself at will, without expending a spell slot or material components.
-*/
-/*
-Repelling Blast
-Prerequisite: eldritch blast cantrip
-
-When you hit a creature with eldritch blast, you can push the creature up to 10 feet away from you in a straight line.
-*/
-/*
-Sculptor of Flesh
-Prerequisite: 7th level
-
-You can cast polymorph once using a warlock spell slot. You can't do so again until you finish a long rest.
-*/
-/*
-Sign of Ill Omen
-Prerequisite: 5th level
-
-You can cast bestow curse once using a warlock spell slot. You can't do so again until you finish a long rest.
-*/
-/*
-Thief of Five Fates
-You can cast bane once using a warlock spell slot. You can't do so again until you finish a long rest.
-*/
-/*
-Thirsting Blade
-Prerequisite: 5th level, Pact of the Blade feature
-
-You can attack with your pact weapon twice, instead of once, whenever you take the Attack action on your turn.
-*/
-/*
-Visions of Distant Realms
-Prerequisite: 15th level
-
-You can cast arcane eye at will, without expending a spell slot.
-*/
-/*
-Voice of the Chain Master
-Prerequisite: Pact of the Chain feature
-
-You can communicate telepathically with your familiar and perceive through your familiar's senses as long as you are on the same plane of existence. Additionally, while perceiving through your familiar's senses, you can also speak through your familiar in your own voice, even if your familiar is normally incapable of speech.
-*/
-/*
-Whispers of the Grave
-Prerequisite: 9th level
-
-You can cast speak with dead at will, without expending a spell slot.
-*/
-/*
-Witch Sight
-Prerequisite: 15th level
-
-You can see the true form of any shapechanger or creature concealed by illusion or transmutation magic while the creature is within 30 feet of you and within line of sight.
-*/
+//!ascendantStep
+bundle category="Eldritch Invocation" name="Ascendant Step" {
+	requirement-todo (Evaluator)"level" class="Warlock" min=9
+	description "You can cast levitate on yourself at will, without expending a spell slot or material components."
+	mutator "spellcasting" "add_prepared" ability="Charisma" {
+		spell "spells/levitate.kdl"
+	}
+}
+//!beastSpeach
+bundle category="Eldritch Invocation" name="Beast Speech" {
+	description "You can cast speak with animals at will, without expending a spell slot."
+	mutator "spellcasting" "add_prepared" ability="Charisma" {
+		spell "spells/speakWithAnimals.kdl"
+	}
+}
+//!beguilingInfluence
+bundle category="Eldritch Invocation" name="Beguiling Influence" {
+	description "You gain proficiency in the Deception and Persuasion skills."
+	mutator "add_proficiency" (Skill)"Specific" "Deception"
+	mutator "add_proficiency" (Skill)"Specific" "Persuasion"
+}
+//!bewitchingWhispers
+bundle category="Eldritch Invocation" name="Bewitching Whispers" {
+	requirement-todo (Evaluator)"level" class="Warlock" min=7
+	description "You can cast compulsion once using a warlock spell slot. You can't do so again until you finish a long rest."
+	mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
+		// TODO: cast using a slot, but only a fixed number of times
+		spell "spells/compulsion.kdl" use_slot=true {
+			limited_use {
+				max_uses 1
+				reset_on (Rest)"Long"
+			}
+		}
+	}
+}
+//!bookOfAncientSecrets
+bundle category="Eldritch Invocation" name="Book of Ancient Secrets" {
+	requirement-todo (Evaluator)"selected_option" "Warlock/level03/Pact Boon" "Pact of the Tome"
+	description {
+		section "You can now inscribe magical rituals in your Book of Shadows. Choose two 1st-level spells that have the ritual tag from any class's spell list (the two needn't be from the same list). The spells appear in the book and don't count against the number of spells you know. With your Book of Shadows in hand, you can cast the chosen spells as rituals. You can't cast the spells except as rituals, unless you've learned them by some other means. You can also cast a warlock spell you know as a ritual if it has the ritual tag."
+		section "On your adventures, you can add other ritual spells to your Book of Shadows. When you find such a spell, you can add it to the book if the spell's level is equal to or less than half your warlock level (rounded up) and if you can spare the time to transcribe the spell. For each level of the spell, the transcription process takes 2 hours and costs 50 gp for the rare inks needed to inscribe it."
+	}
+	// TODO: figure out the caster/spellcasting data for the Book of Ancient Secrets
+}
+//!chainsOfCarceri
+bundle category="Eldritch Invocation" name="Chains of Carceri" {
+	requirement-todo (Evaluator)"level" class="Warlock" min=15
+	requirement-todo (Evaluator)"selected" {
+		option "Warlock/level03/Pact Boon" "Pact of the Chain"
+	}
+	description "You can cast hold monster at will — targeting a celestial, fiend, or elemental — without expending a spell slot or material components. You must finish a long rest before you can use this invocation on the same creature again."
+	// TODO: Spellcasting for Chains of Carceri
+}
+//!devilsSight
+bundle category="Eldritch Invocation" name="Devil's Sight" {
+	description "You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet."
+	mutator "sense" "Darkvision" (Minimum)120 context="magical and nonmagical"
+}
+//!dreadfulWord
+bundle category="Eldritch Invocation" name="Dreadful Word" {
+	requirement-todo (Evaluator)"level" class="Warlock" min=7
+	description "You can cast confusion once using a warlock spell slot. You can't do so again until you finish a long rest."
+	mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
+		// TODO: cast using a slot, but only a fixed number of times
+		spell "spells/confusion.kdl" use_slot=true {
+			limited_use {
+				max_uses 1
+				reset_on (Rest)"Long"
+			}
+		}
+	}
+}
+//!eldritchSight
+bundle category="Eldritch Invocation" name="Eldritch Sight" {
+	description "You can cast detect magic at will, without expending a spell slot."
+	mutator "spellcasting" "add_prepared" ability="Charisma" {
+		spell "spells/detectMagic.kdl"
+	}
+}
+//!eldritchSpear
+bundle category="Eldritch Invocation" name="Eldritch Spear" {
+	requirement-todo (Evaluator)"selected" {
+		spell "spells/eldritchBlast.kdl"
+	}
+	description "When you cast eldritch blast, its range is 300 feet."
+	mutator-todo "bonus" (Spell)"Range" min=300 {
+		spell "spells/eldritchBlast.kdl"
+	}
+}
+//!eyesOfTheRuneKeeper
+bundle category="Eldritch Invocation" name="Eyes of the Rune Keeper" {
+	description "You can read all writing."
+}
+//!fiendishVigor
+bundle category="Eldritch Invocation" name="Fiendish Vigor" {
+	description "You can cast false life on yourself at will as a 1st-level spell, without expending a spell slot or material components."
+	mutator "spellcasting" "add_prepared" ability="Charisma" {
+		spell "spells/falseLife.kdl" rank=1
+	}
+}
+//!gazeOfTwoMinds
+bundle category="Eldritch Invocation" name="Gaze of Two Minds" {
+	mutator "feature" name="Gaze of Two Minds" {
+		description "You can use your action to touch a willing humanoid and perceive through its senses until the end of your next turn. As long as the creature is on the same plane of existence as you, you can use your action on subsequent turns to maintain this connection, extending the duration until the end of your next turn. While perceiving through the other creature's senses, you benefit from any special senses possessed by that creature, and you are blinded and deafened to your own surroundings."
+		action "Action"
+	}
+}
+//!lifedrinker
+bundle category="Eldritch Invocation" name="Lifedrinker" {
+	requirement-todo (Evaluator)"level" class="Warlock" min=12
+	requirement-todo (Evaluator)"selected" {
+		option "Warlock/level03/Pact Boon" "Pact of the Blade"
+	}
+	description "When you hit a creature with your pact weapon, the creature takes extra necrotic damage equal to your Charisma modifier (minimum 1)."
+	mutator-todo "bonus" (Weapon)"Damage" {
+		restriction {
+			tag "Pact Weapon" // TODO: there is no way to identify the pact weapon right now
+		}
+		damage {
+			amount (Evaluator)"math" "Add" min=1 {
+				value (Evaluator)"get_ability_modifier" (Ability)"Charisma"
+			}
+		}
+		damage_type "Necrotic"
+	}
+}
+//!maskOfManyFaces
+bundle category="Eldritch Invocation" name="Mask of Many Faces" {
+	description "You can cast disguise self at will, without expending a spell slot."
+	mutator "spellcasting" "add_prepared" ability="Charisma" {
+		spell "spells/disguiseSelf.kdl"
+	}
+}
+//!masterOfMyriadForms
+bundle category="Eldritch Invocation" name="Master of Myriad Forms" {
+	requirement-todo (Evaluator)"level" class="Warlock" min=15
+	description "You can cast alter self at will, without expending a spell slot."
+	mutator "spellcasting" "add_prepared" ability="Charisma" {
+		spell "spells/alterSelf.kdl"
+	}
+}
+//!minionsOfChaos
+bundle category="Eldritch Invocation" name="Minions of Chaos" {
+	requirement-todo (Evaluator)"level" class="Warlock" min=9
+	description "You can cast conjure elemental once using a warlock spell slot. You can't do so again until you finish a long rest."
+	mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
+		// TODO: cast using a slot, but only a fixed number of times
+		spell "spells/conjureElemental.kdl" use_slot=true {
+			limited_use {
+				max_uses 1
+				reset_on (Rest)"Long"
+			}
+		}
+	}
+}
+//!mireTheMind
+bundle category="Eldritch Invocation" name="Mire the Mind" {
+	requirement-todo (Evaluator)"level" class="Warlock" min=5
+	description "You can cast slow once using a warlock spell slot. You can't do so again until you finish a long rest."
+	mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
+		// TODO: cast using a slot, but only a fixed number of times
+		spell "spells/slow.kdl" use_slot=true {
+			limited_use {
+				max_uses 1
+				reset_on (Rest)"Long"
+			}
+		}
+	}
+}
+//!mistyVisions
+bundle category="Eldritch Invocation" name="Misty Visions" {
+	description "You can cast silent image at will, without expending a spell slot or material components."
+	mutator "spellcasting" "add_prepared" ability="Charisma" {
+		spell "spells/silentImage.kdl"
+	}
+}
+//!oneWithShadows
+bundle category="Eldritch Invocation" name="One with Shadows" {
+	requirement-todo (Evaluator)"level" class="Warlock" min=5
+	description "When you are in an area of dim light or darkness, you can use your action to become invisible until you move or take an action or a reaction."
+	// TODO: Feature Action for One with Shadows
+}
+//!otherworldlyLeap
+bundle category="Eldritch Invocation" name="Otherworldly Leap" {
+	requirement-todo (Evaluator)"level" class="Warlock" min=9
+	description "You can cast jump on yourself at will, without expending a spell slot or material components."
+	mutator "spellcasting" "add_prepared" ability="Charisma" {
+		spell "spells/jump.kdl"
+	}
+}
+//!repellingBlast
+bundle category="Eldritch Invocation" name="Repelling Blast" {
+	requirement-todo (Evaluator)"has_cantrip" "spells/eldritchBlast.kdl"
+	description "When you hit a creature with eldritch blast, you can push the creature up to 10 feet away from you in a straight line."
+	// TODO: How to add this context to the spell?
+}
+//!sculptorOfFlesh
+bundle category="Eldritch Invocation" name="Sculptor of Flesh" {
+	requirement-todo (Evaluator)"level" class="Warlock" min=7
+	description "You can cast polymorph once using a warlock spell slot. You can't do so again until you finish a long rest."
+	mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
+		// TODO: cast using a slot, but only a fixed number of times
+		spell "spells/polymorph.kdl" use_slot=true {
+			limited_use {
+				max_uses 1
+				reset_on (Rest)"Long"
+			}
+		}
+	}
+}
+//!signOfIllOmen
+bundle category="Eldritch Invocation" name="Sign of Ill Omen" {
+	requirement-todo (Evaluator)"level" class="Warlock" min=5
+	description "You can cast bestow curse once using a warlock spell slot. You can't do so again until you finish a long rest."
+	mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
+		// TODO: cast using a slot, but only a fixed number of times
+		spell "spells/bestowCurse.kdl" use_slot=true {
+			limited_use {
+				max_uses 1
+				reset_on (Rest)"Long"
+			}
+		}
+	}
+}
+//!thiefOfFiveFates
+bundle category="Eldritch Invocation" name="Thief of Five Fates" {
+	description "You can cast bane once using a warlock spell slot. You can't do so again until you finish a long rest."
+	mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
+		// TODO: cast using a slot, but only a fixed number of times
+		spell "spells/bane.kdl" use_slot=true {
+			limited_use {
+				max_uses 1
+				reset_on (Rest)"Long"
+			}
+		}
+	}
+}
+//!thirstingBlade
+bundle category="Eldritch Invocation" name="Thirsting Blade" {
+	requirement-todo (Evaluator)"level" class="Warlock" min=5
+	requirement-todo (Evaluator)"selected" {
+		option "Warlock/level03/Pact Boon" "Pact of the Blade"
+	}
+	description "You can attack with your pact weapon twice, instead of once, whenever you take the Attack action on your turn."
+}
+//!visionsOfDistantRealms
+bundle category="Eldritch Invocation" name="Visions of Distant Realms" {
+	requirement-todo (Evaluator)"level" class="Warlock" min=15
+	description "You can cast arcane eye at will, without expending a spell slot."
+	mutator "spellcasting" "add_prepared" ability="Charisma" {
+		spell "spells/arcaneEye.kdl"
+	}
+}
+//!voiceOfTheChainMaster
+bundle category="Eldritch Invocation" name="Voice of the Chain Master" {
+	requirement-todo (Evaluator)"selected" {
+		option "Warlock/level03/Pact Boon" "Pact of the Chain"
+	}
+	description "You can communicate telepathically with your familiar and perceive through your familiar's senses as long as you are on the same plane of existence. Additionally, while perceiving through your familiar's senses, you can also speak through your familiar in your own voice, even if your familiar is normally incapable of speech."
+	// TODO: Show all selected eldritch invocations under the feature which added them
+}
+//!whispersOfTheGrave
+bundle category="Eldritch Invocation" name="Whispers of the Grave" {
+	requirement-todo (Evaluator)"level" class="Warlock" min=9
+	description "You can cast speak with dead at will, without expending a spell slot."
+	mutator "spellcasting" "add_prepared" ability="Charisma" {
+		spell "spells/speakWithDead.kdl"
+	}
+}
+//!witchSight
+bundle category="Eldritch Invocation" name="Witch Sight" {
+	requirement-todo (Evaluator)"level" class="Warlock" min=15
+	description "You can see the true form of any shapechanger or creature concealed by illusion or transmutation magic while the creature is within 30 feet of you and within line of sight."
+}
