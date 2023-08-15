@@ -1,18 +1,40 @@
 //!careful
 bundle category="Metamagic" name="Careful Spell" {
-	description {
-		short "Spell with Saving Throw - 1 Sorcery Point - {amount} of affected creatures automatically succeed their saving throw"
-		section "When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell's full force. To do so, you spend 1 sorcery point and choose a number of those creatures up to your Charisma modifier ({amount}) (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell."
-		format-arg "amount" "int" (Evaluator)"math" "Add" min=1 {
-			value (Evaluator)"get_ability_modifier" (Ability)"Charisma"
+	feature name="Careful Spell" parent="Monk/level03/Metamagic" {
+		description {
+			short "1 Sorcery Point - Spell with Saving Throw - {amount} of affected creatures automatically succeed their saving throw"
+			section "When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell's full force. To do so, you spend 1 sorcery point and choose a number of those creatures up to your Charisma modifier ({amount}) (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell."
+			format-arg "amount" "int" (Evaluator)"math" "Add" min=1 {
+				value (Evaluator)"get_ability_modifier" (Ability)"Charisma"
+			}
+		}
+		action "Special" {
+			limited_uses {
+				cost 1
+				resource "Sorcerer/level02/Font of Magic"
+			}
+		}
+	}
+}
+//!distant
+bundle category="Metamagic" name="Distant Spell" {
+	feature name="Distant Spell" parent="Monk/level03/Metamagic" {
+		description {
+			short "1 Sorcery Point - Touch spell has 30 ft range or double the range of any spell with a range of 5+ feet"
+			section "When you cast a spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell."
+			section "When you cast a spell that has a range of touch, you can spend 1 sorcery point to make the range of the spell 30 feet."
+		}
+		action "Special" {
+			limited_uses {
+				cost 1
+				resource "Sorcerer/level02/Font of Magic"
+			}
 		}
 	}
 }
 /*
 Distant Spell
-When you cast a spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell.
 
-When you cast a spell that has a range of touch, you can spend 1 sorcery point to make the range of the spell 30 feet.
 */
 /*
 Empowered Spell

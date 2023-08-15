@@ -3,7 +3,7 @@ bundle category="Eldritch Invocation" name="Thief of Five Fates" {
 	mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
 		// TODO: cast using a slot, but only a fixed number of times
 		spell "spells/bane.kdl" use_slot=true {
-			limited_use {
+			limited_uses {
 				max_uses 1
 				reset_on (Rest)"Long"
 			}
