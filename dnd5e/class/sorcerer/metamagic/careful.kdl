@@ -1,0 +1,17 @@
+bundle category="Metamagic" name="Careful Spell" {
+	feature name="Careful Spell" parent="Sorcerer/level03/Metamagic" {
+		description {
+			short "1 Sorcery Point - Spell with Saving Throw - {amount} of affected creatures automatically succeed their saving throw"
+			section "When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell's full force. To do so, you spend 1 sorcery point and choose a number of those creatures up to your Charisma modifier ({amount}) (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell."
+			format-arg "amount" "int" (Evaluator)"math" "Add" min=1 {
+				value (Evaluator)"get_ability_modifier" (Ability)"Charisma"
+			}
+		}
+		action "Special" {
+			limited_uses {
+				cost 1
+				resource "Sorcerer/level02/Font of Magic"
+			}
+		}
+	}
+}

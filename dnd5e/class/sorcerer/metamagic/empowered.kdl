@@ -1,0 +1,18 @@
+bundle category="Metamagic" name="Empowered Spell" {
+	feature name="Empowered Spell" parent="Sorcerer/level03/Metamagic" {
+		description {
+			short "1 Sorcery Point - Reroll up to {amount} damage dice (must use new rolls)"
+			section "When you roll damage for a spell, you can spend 1 sorcery point to reroll a number of the damage dice up to your Charisma modifier (minimum of one). You must use the new rolls."
+			section "You can use Empowered Spell even if you have already used a different Metamagic option during the casting of the spell."
+			format-arg "amount" "int" (Evaluator)"math" "Add" min=1 {
+				value (Evaluator)"get_ability_modifier" (Ability)"Charisma"
+			}
+		}
+		action "Special" {
+			limited_uses {
+				cost 1
+				resource "Sorcerer/level02/Font of Magic"
+			}
+		}
+	}
+}
