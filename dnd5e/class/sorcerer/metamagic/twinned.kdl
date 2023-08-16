@@ -1,5 +1,5 @@
 bundle category="Metamagic" name="Twinned Spell" {
-	feature name="Twinned Spell" parent="Sorcerer/level03/Metamagic" {
+	mutator "feature" name="Twinned Spell" parent="Sorcerer/level03/Metamagic" {
 		description {
 			short "1 Sorcery Point per Spell Level (1 point for cantrips) - Spells which target 1 creature and range other than self - Target a second creature with the same casting"
 			section "When you cast a spell that targets only one creature and doesn't have a range of self, you can spend a number of sorcery points equal to the spell's level to target a second creature in range with the same spell (1 sorcery point if the spell is a cantrip)."

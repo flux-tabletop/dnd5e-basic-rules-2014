@@ -1,5 +1,5 @@
 bundle category="Metamagic" name="Quickened Spell" {
-	feature name="Quickened Spell" parent="Sorcerer/level03/Metamagic" {
+	mutator "feature" name="Quickened Spell" parent="Sorcerer/level03/Metamagic" {
 		description {
 			short "2 Sorcery Points - Casting time changes from 1 action to 1 bonus action"
 			section "When you cast a spell that has a casting time of 1 action, you can spend 2 sorcery points to change the casting time to 1 bonus action for this casting."

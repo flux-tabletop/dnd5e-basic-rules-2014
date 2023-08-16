@@ -1,5 +1,5 @@
 bundle category="Metamagic" name="Empowered Spell" {
-	feature name="Empowered Spell" parent="Sorcerer/level03/Metamagic" {
+	mutator "feature" name="Empowered Spell" parent="Sorcerer/level03/Metamagic" {
 		description {
 			short "1 Sorcery Point - Reroll up to {amount} damage dice (must use new rolls)"
 			section "When you roll damage for a spell, you can spend 1 sorcery point to reroll a number of the damage dice up to your Charisma modifier (minimum of one). You must use the new rolls."

@@ -1,5 +1,5 @@
 bundle category="Metamagic" name="Subtle Spell" {
-	feature name="Subtle Spell" parent="Sorcerer/level03/Metamagic" {
+	mutator "feature" name="Subtle Spell" parent="Sorcerer/level03/Metamagic" {
 		description {
 			short "1 Sorcery Point - Omit verbal and somatic components"
 			section "When you cast a spell, you can spend 1 sorcery point to cast it without any somatic or verbal components."

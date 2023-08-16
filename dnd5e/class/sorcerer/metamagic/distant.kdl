@@ -1,5 +1,5 @@
 bundle category="Metamagic" name="Distant Spell" {
-	feature name="Distant Spell" parent="Sorcerer/level03/Metamagic" {
+	mutator "feature" name="Distant Spell" parent="Sorcerer/level03/Metamagic" {
 		description {
 			short "1 Sorcery Point - Touch spell has 30 ft range or double the range of any spell with a range of 5+ feet"
 			section "When you cast a spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell."
