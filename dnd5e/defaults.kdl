@@ -14,7 +14,7 @@ defaults {
 			}
 		}
 		action "Action" {
-			attack {
+			attack class="UnarmedStrike" {
 				kind "Melee"
 				check "AttackRoll" (Ability)"Strength" proficient=true
 				damage base=1 {
