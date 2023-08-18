@@ -213,7 +213,6 @@ class name="Sorcerer" {
 				You can use only one Metamagic option on a spell when you cast it, unless otherwise noted."
 			}
 			mutator "add_bundle" category="Metamagic" {
-				// TODO: add_bundle suppport an evaluator for the number that can be selected
 				amount (Evaluator)"get_level" class="Sorcerer" {
 					level 3 2
 					level 10 3

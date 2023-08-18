@@ -162,8 +162,7 @@ class name="Warlock" {
 				section "In your study of occult lore, you have unearthed eldritch invocations, fragments of forbidden knowledge that imbue you with an abiding magical ability."
 				section "At 2nd level, you gain two eldritch invocations of your choice. When you gain certain warlock levels (5, 7, 9, 12, 15, & 18), you gain additional invocations of your choice. Additionally, when you gain a level in this class, you can choose one of the invocations you know and replace it with another invocation that you could learn at that level."
 			}
-			mutator "add_bundle" category="Eldritch Invocation" {
-				// TODO: add_bundle suppport an evaluator for the number that can be selected
+			mutator "add_bundle" category="Eldritch Invocation" propogate_parent=true {
 				amount (Evaluator)"get_level" class="Warlock" {
 					level 2 2
 					level 5 3
