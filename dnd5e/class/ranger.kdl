@@ -73,30 +73,31 @@ class name="Ranger" {
 			option "Stealth"
 			option "Survival"
 		}
-		/* TODO: Favored Enemy
-			Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy.
-
-			Choose a type of favored enemy: aberrations, beasts, celestials, constructs, dragons, elementals, fey, fiends, giants, monstrosities, oozes, plants, or undead. Alternatively, you can select two races of humanoid (such as gnolls and orcs) as favored enemies.
-
-			You have advantage on Wisdom (Survival) checks to track your favored enemies, as well as on Intelligence checks to recall information about them.
-
-			When you gain this feature, you also learn one language of your choice that is spoken by your favored enemies, if they speak one at all.
-
-			You choose one additional favored enemy, as well as an associated language, at 6th and 14th level. As you gain levels, your choices should reflect the types of monsters you have encountered on your adventures.
-		*/
-		/* TODO: Natural Explorer
-			You are particularly familiar with one type of natural environment and are adept at traveling and surviving in such regions. Choose one type of favored terrain: arctic, coast, desert, forest, grassland, mountain, swamp, or the Underdark. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you’re proficient in.
-
-			While traveling for an hour or more in your favored terrain, you gain the following benefits:
-
-			Difficult terrain doesn’t slow your group’s travel.
-			Your group can’t become lost except by magical means.
-			Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.
-			If you are traveling alone, you can move stealthily at a normal pace.
-			When you forage, you find twice as much food as you normally would.
-			While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.
-			You choose additional favored terrain types at 6th and 10th level.
-		*/
+		mutator "feature" name="Favored Enemy" {
+			description {
+				section "Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy."
+				section "Choose a type of favored enemy: aberrations, beasts, celestials, constructs, dragons, elementals, fey, fiends, giants, monstrosities, oozes, plants, or undead. Alternatively, you can select two races of humanoid (such as gnolls and orcs) as favored enemies."
+				section "You have advantage on Wisdom (Survival) checks to track your favored enemies, as well as on Intelligence checks to recall information about them."
+				section "When you gain this feature, you also learn one language of your choice that is spoken by your favored enemies, if they speak one at all."
+				section "You choose one additional favored enemy, as well as an associated language, at 6th and 14th level. As you gain levels, your choices should reflect the types of monsters you have encountered on your adventures."
+			}
+			// TODO: Add a notes field to all features that user's can add to
+			mutator "add_proficiency" (Language)"Any"
+		}
+		mutator "feature" name="Natural Explorer" {
+			description {
+				section "You are particularly familiar with one type of natural environment and are adept at traveling and surviving in such regions. Choose one type of favored terrain: arctic, coast, desert, forest, grassland, mountain, swamp, or the Underdark. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you're proficient in."
+				section "While traveling for an hour or more in your favored terrain, you gain the following benefits:" {
+					section "Difficult terrain doesn't slow your group's travel."
+					section "Your group can't become lost except by magical means."
+					section "Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger."
+					section "If you are traveling alone, you can move stealthily at a normal pace."
+					section "When you forage, you find twice as much food as you normally would."
+					section "While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area."
+					section "You choose additional favored terrain types at 6th and 10th level."
+				}
+			}
+		}
 	}
 	level 2 {
 		mutator "feature" name="Fighting Style" {
@@ -264,6 +265,11 @@ class name="Ranger" {
 			mutator "add_to_action_budget" "Attack" 1
 		}
 	}
+	level 6 {
+		mutator "feature" name="Favored Enemy" parent="Ranger/level01/Favored Enemy" {
+			mutator "add_proficiency" (Language)"Any"
+		}
+	}
 	level 8 {
 		mutator "pick" 1 name="Ability Score Improvement" {
 			option "Ability Score Increase" {
@@ -320,6 +326,9 @@ class name="Ranger" {
 		}
 	}
 	level 14 {
+		mutator "feature" name="Favored Enemy" parent="Ranger/level01/Favored Enemy" {
+			mutator "add_proficiency" (Language)"Any"
+		}
 		mutator "feature" name="Vanish" {
 			description "Starting at 14th level, you can use the Hide action as a bonus action on your turn. Also, you can't be tracked by nonmagical means, unless you choose to leave a trail."
 			mutator "feature" name="Hide" collapsed=true {

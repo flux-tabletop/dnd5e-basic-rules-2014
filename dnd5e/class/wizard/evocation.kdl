@@ -16,7 +16,15 @@ subclass class="Wizard" name="School of Evocation" {
 	level 10 {
 		mutator "feature" name="Empowered Evocation" {
 			description "Beginning at 10th level, you can add your Intelligence modifier to one damage roll of any wizard evocation spell you cast."
-			// TODO: mutator to add a bonus (evaluated) to all spells which: have the evocation tag, have the wizard tag, cause damage
+			mutator-todo "bonus" (Spell)"Damage" {
+				damage {
+					amount (Evaluator)"get_ability_modifier" (Ability)"Intelligence"
+				}
+				query {
+					tag "Evocation"
+					tag "Wizard"
+				}
+			}
 		}
 	}
 	level 14 {

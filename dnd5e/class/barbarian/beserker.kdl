@@ -9,7 +9,7 @@ subclass class="Barbarian" name="Path of the Beserker" {
 						name "Raging"
 					}
 				}
-				// TODO: add melee weapon attack as a bonus action when the rage condition is active
+				// TODO-QoL: add melee weapon attack as a bonus action when the rage condition is active
 			}
 		}
 	}

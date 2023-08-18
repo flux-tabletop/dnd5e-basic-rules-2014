@@ -42,7 +42,6 @@ item name="Amulet of the Planes" {
 	rarity "VeryRare"
 	tag "Wonderous"
 	kind "Equipment" requires_attunement=true {
-		// TODO: Spellcasting
 		mutator "feature" name="Plane Shift" {
 			description {
 				short "DC 15 INT check to cast Plane Shift. On failure, roll a d100; 1-60 random location on the plane, 61-100 random plane of existance."
@@ -50,6 +49,9 @@ item name="Amulet of the Planes" {
 				On a failure, you and each creature and object within 15 feet of you travel to a random destination. To determine the destination, roll a d100. On a 1-60, you travel to a random location on the plane you named. On a 61-100, you travel to a randomly determined plane of existence."
 			}
 			action "Action"
+			mutator "spellcasting" "add_prepared" ability="Intelligence" {
+				spell "spells/planeShift.kdl"
+			}
 		}
 	}
 }
