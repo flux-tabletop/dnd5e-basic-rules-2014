@@ -5,7 +5,7 @@ bundle category="Eldritch Invocation" name="Lifedrinker" {
 	}
 	description "When you hit a creature with your pact weapon, the creature takes extra necrotic damage equal to your Charisma modifier (minimum 1)."
 	mutator-todo "bonus" (Weapon)"Damage" {
-		restriction {
+		query {
 			tag "Pact Weapon" // TODO: there is no way to identify the pact weapon right now
 		}
 		damage {

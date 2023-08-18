@@ -103,7 +103,7 @@ class name="Barbarian" {
 									level 16 4
 								}
 							}
-							restriction {
+							query {
 								weapon "Simple" "Martial"
 								attack "Melee"
 								ability "Strength"

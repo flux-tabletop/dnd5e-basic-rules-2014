@@ -35,7 +35,7 @@ subclass class="Fighter" name="Champion" {
 						// You gain a +2 bonus to attack rolls you make with ranged weapons.
 						mutator "bonus" "WeaponAttackRoll" {
 							bonus 2
-							restriction {
+							query {
 								weapon "Simple" "Martial"
 								attack "Ranged"
 							}
@@ -55,14 +55,14 @@ subclass class="Fighter" name="Champion" {
 					mutator "feature" name="Dueling" {
 						// When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.'
 						mutator "apply_if" {
-							criteria (Evaluator)"has_weapon_equipped" max=1 {
+							criteria (Evaluator)"has_attack" max=1 {
 								weapon "Simple" "Martial"
 								attack "Melee"
 								property "TwoHanded" false
 							}
 							mutator "bonus" "WeaponDamage" {
 								damage 2
-								restriction {
+								query {
 									weapon "Simple" "Martial"
 									attack "Melee"
 									property "TwoHanded" false
