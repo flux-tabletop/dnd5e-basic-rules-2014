@@ -1,4 +1,4 @@
-bundle category="Eldritch Invocation" name="Voice of the Chain Master" {
+bundle category="Eldritch Invocation" name="Voice of the Chain Master" display_as_feature=true {
 	requirement-todo (Evaluator)"selected" {
 		option "Warlock/level03/Pact Boon" "Pact of the Chain"
 	}

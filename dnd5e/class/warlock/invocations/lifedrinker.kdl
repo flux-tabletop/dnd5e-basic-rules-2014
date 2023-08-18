@@ -1,4 +1,4 @@
-bundle category="Eldritch Invocation" name="Lifedrinker" {
+bundle category="Eldritch Invocation" name="Lifedrinker" display_as_feature=true {
 	requirement-todo (Evaluator)"level" class="Warlock" min=12
 	requirement-todo (Evaluator)"selected" {
 		option "Warlock/level03/Pact Boon" "Pact of the Blade"

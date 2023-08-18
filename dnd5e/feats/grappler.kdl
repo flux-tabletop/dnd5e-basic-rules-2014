@@ -1,11 +1,9 @@
-bundle category="Feat" name="Grappler" {
+bundle category="Feat" name="Grappler" display_as_feature=true {
 	requirement "Ability" "Strength" 13
-	description "You've developed the skills necessary to hold your own in close-quarters grappling."
-	mutator "feature" name="Grappler" {
-		description {
-			short "Adv on Attack Rolls while grappling your target. Pin your target by succeeding on another grapple check, causing you both to become Restrained until the grapple ends."
-			section "You have advantage on attack rolls against a creature you are grappling.
-			You can use your action to try to pin a creature grappled by you. To do so, make another grapple check. If you succeed, you and the creature are both restrained until the grapple ends."
-		}
+	description {
+		short "Adv on Attack Rolls while grappling your target. Pin your target by succeeding on another grapple check, causing you both to become Restrained until the grapple ends."
+		section "You've developed the skills necessary to hold your own in close-quarters grappling."
+		section "You have advantage on attack rolls against a creature you are grappling."
+		section "You can use your action to try to pin a creature grappled by you. To do so, make another grapple check. If you succeed, you and the creature are both restrained until the grapple ends."
 	}
 }

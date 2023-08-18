@@ -1,4 +1,4 @@
-bundle category="Eldritch Invocation" name="Repelling Blast" {
+bundle category="Eldritch Invocation" name="Repelling Blast" display_as_feature=true {
 	requirement-todo (Evaluator)"has_cantrip" "spells/eldritchBlast.kdl"
 	description "When you hit a creature with eldritch blast, you can push the creature up to 10 feet away from you in a straight line."
 	// TODO: How to add this context to the spell?

@@ -1,4 +1,4 @@
-bundle category="Eldritch Invocation" name="Eldritch Spear" {
+bundle category="Eldritch Invocation" name="Eldritch Spear" display_as_feature=true {
 	requirement-todo (Evaluator)"selected" {
 		spell "spells/eldritchBlast.kdl"
 	}

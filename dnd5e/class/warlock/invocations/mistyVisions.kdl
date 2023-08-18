@@ -1,4 +1,4 @@
-bundle category="Eldritch Invocation" name="Misty Visions" {
+bundle category="Eldritch Invocation" name="Misty Visions" display_as_feature=true {
 	description "You can cast silent image at will, without expending a spell slot or material components."
 	mutator "spellcasting" "add_prepared" ability="Charisma" {
 		spell "spells/silentImage.kdl"
