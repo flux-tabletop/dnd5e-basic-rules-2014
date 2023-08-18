@@ -95,7 +95,7 @@ class name="Barbarian" {
 						mutator "add_defense" "Resistance" (DamageType)"Specific" "Bludgeoning"
 						mutator "add_defense" "Resistance" (DamageType)"Specific" "Piercing"
 						mutator "add_defense" "Resistance" (DamageType)"Specific" "Slashing"
-						mutator "bonus" "WeaponDamage" {
+						mutator "bonus" (Attack)"Damage" {
 							damage {
 								amount (Evaluator)"get_level" class="Barbarian" {
 									level 1 2

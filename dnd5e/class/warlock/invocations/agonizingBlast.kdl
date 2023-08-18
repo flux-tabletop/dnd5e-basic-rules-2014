@@ -1,9 +1,9 @@
 bundle category="Eldritch Invocation" name="Agonizing Blast" {
 	requirement-todo (Evaluator)"has_cantrip" "spells/eldritchBlast.kdl"
 	description "When you cast eldritch blast, add your Charisma modifier to the damage it deals on a hit."
-	mutator-todo "bonus" "SpellDamage" {
+	mutator-todo "bonus" (Spell)"Damage" {
 		damage (Evaluator)"get_ability_modifier" (Ability)"Charisma"
-		restriction {
+		query {
 			spell "spells/eldritchBlast.kdl"
 		}
 	}

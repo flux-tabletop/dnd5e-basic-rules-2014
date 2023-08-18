@@ -96,36 +96,32 @@ class name="Monk" {
 			mutator "apply_if" {
 				criteria (Evaluator)"has_armor_equipped" inverted=true
 				// adds another ability type to the attack, so the attack will always use the higher modifier of dex or str for attack and damage rolls
-				mutator-todo "bonus" (Attack)"ModifierVariant" (Ability)"Dexterity" {
+				mutator "bonus" (Attack)"AbilityModifier" (Ability)"Dexterity" {
 					// Classification needs to be added to the attack data,
 					// and to the UnarmedStrike feature
-					restriction {
+					query {
 						class "UnarmedStrike"
-					}
-					restriction {
 						class "Shortsword"
 					}
-					restriction {
+					query {
 						weapon "Simple"
 						attack "Melee"
-						property "TwoHanded" inverted=true
-						property "Heavy" inverted=true
+						property "TwoHanded" false
+						property "Heavy" false
 					}
 				}
-				mutator-todo "bonus" (Attack)"DamageOption" {
-					restriction {
+				mutator "bonus" (Attack)"Damage" {
+					query {
 						class "UnarmedStrike"
-					}
-					restriction {
 						class "Shortsword"
 					}
-					restriction {
+					query {
 						weapon "Simple"
 						attack "Melee"
-						property "TwoHanded" inverted=true
-						property "Heavy" inverted=true
+						property "TwoHanded" false
+						property "Heavy" false
 					}
-					roll {
+					damage {
 						amount 1
 						die (Evaluator)"get_level" class="Monk" {
 							level 1 4

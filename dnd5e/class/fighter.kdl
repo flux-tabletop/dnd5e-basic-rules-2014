@@ -83,7 +83,7 @@ class name="Fighter" {
 				option "Archery" {
 					mutator "feature" name="Archery" {
 						description "You gain a +2 bonus to attack rolls you make with ranged weapons."
-						mutator "bonus" "WeaponAttackRoll" {
+						mutator "bonus" (Attack)"Roll" {
 							bonus 2
 							query {
 								weapon "Simple" "Martial"
@@ -110,7 +110,7 @@ class name="Fighter" {
 								attack "Melee"
 								property "TwoHanded" false
 							}
-							mutator "bonus" "WeaponDamage" {
+							mutator "bonus" (Attack)"Damage" {
 								damage 2
 								query {
 									weapon "Simple" "Martial"
