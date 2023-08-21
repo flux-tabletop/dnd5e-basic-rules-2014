@@ -103,8 +103,8 @@ class name="Rogue" {
 			}
 			mutator "pick" 1 name="Expertise Path" {
 				option "2 Skills" {
-					mutator "add_proficiency" (Skill)"Any" level="Double" min="Full"
-					mutator "add_proficiency" (Skill)"Any" level="Double" min="Full"
+					mutator "add_proficiency" (Skill)"Any" id="skillA" level="Double" min="Full"
+					mutator "add_proficiency" (Skill)"Any" id="skillB" level="Double" min="Full"
 				}
 				option "Skill + Thieves' Tools" {
 					mutator "add_proficiency" (Skill)"Any" level="Double" min="Full"
@@ -204,8 +204,8 @@ class name="Rogue" {
 			}
 			mutator "pick" 1 name="Expertise Path" {
 				option "2 Skills" {
-					mutator "add_proficiency" (Skill)"Any" level="Double" min="Full"
-					mutator "add_proficiency" (Skill)"Any" level="Double" min="Full"
+					mutator "add_proficiency" (Skill)"Any" id="skillA" level="Double" min="Full"
+					mutator "add_proficiency" (Skill)"Any" id="skillB" level="Double" min="Full"
 				}
 				option "Skill + Thieves' Tools" {
 					mutator "add_proficiency" (Skill)"Any" level="Double" min="Full"

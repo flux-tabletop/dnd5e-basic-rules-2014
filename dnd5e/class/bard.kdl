@@ -245,8 +245,8 @@ class name="Bard" {
 				short "Your proficiency bonus is doubled for 2 skill proficiencies."
 				section "At 3rd level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies."
 			}
-			mutator "add_proficiency" (Skill)"Any" level="Double" min="Full"
-			mutator "add_proficiency" (Skill)"Any" level="Double" min="Full"
+			mutator "add_proficiency" (Skill)"Any" id="skillA" level="Double" min="Full"
+			mutator "add_proficiency" (Skill)"Any" id="skillB" level="Double" min="Full"
 		}
 	}
 	level 4 {
@@ -306,8 +306,8 @@ class name="Bard" {
 				short "Your proficiency bonus is doubled for 2 skill proficiencies."
 				section "At 10th level, choose two more of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies."
 			}
-			mutator "add_proficiency" (Skill)"Any" level="Double" min="Full"
-			mutator "add_proficiency" (Skill)"Any" level="Double" min="Full"
+			mutator "add_proficiency" (Skill)"Any" id="skillA" level="Double" min="Full"
+			mutator "add_proficiency" (Skill)"Any" id="skillB" level="Double" min="Full"
 		}
 		mutator "feature" name="Magical Secrets" {
 			description {
