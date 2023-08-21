@@ -322,7 +322,8 @@ class name="Bard" {
 			mutator "by_level" class="Bard" {
 				level 10 {
 					mutator "spellcasting" "add_prepared" ability="Charisma" classified_as="Bard" {
-						options 2 use_slot=true {
+						options use_slot=true {
+							amount 2
 							filter {
 								tag "Bard"
 							}
@@ -331,7 +332,8 @@ class name="Bard" {
 				}
 				level 14 {
 					mutator "spellcasting" "add_prepared" ability="Charisma" classified_as="Bard" {
-						options 2 use_slot=true {
+						options use_slot=true {
+							amount 2
 							filter {
 								tag "Bard"
 							}
@@ -340,7 +342,8 @@ class name="Bard" {
 				}
 				level 18 {
 					mutator "spellcasting" "add_prepared" ability="Charisma" classified_as="Bard" {
-						options 2 use_slot=true {
+						options use_slot=true {
+							amount 2
 							filter {
 								tag "Bard"
 							}

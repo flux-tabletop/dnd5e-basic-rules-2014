@@ -7,7 +7,7 @@ subclass class="Druid" name="Circle of the Land" {
 				section "When you choose this circle at 2nd level, you learn one additional druid cantrip of your choice. This cantrip doesn't count against the number of druid cantrips you know."
 			}
 			mutator "spellcasting" "add_prepared" ability="Wisdom" {
-				options 1 {
+				options {
 					filter {
 						rank 0
 						tag "Druid"
