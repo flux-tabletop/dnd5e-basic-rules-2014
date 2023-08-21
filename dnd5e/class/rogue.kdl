@@ -101,14 +101,14 @@ class name="Rogue" {
 				short "Your proficiency bonus is doubled for either 2 skill proficiencies or a skill proficiency and thieves' tools."
 				section "At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves' tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies."
 			}
-			mutator "pick" 1 {
+			mutator "pick" 1 name="Expertise Path" {
 				option "2 Skills" {
 					mutator "add_proficiency" (Skill)"Any" level="Double" min="Full"
 					mutator "add_proficiency" (Skill)"Any" level="Double" min="Full"
 				}
 				option "Skill + Thieves' Tools" {
 					mutator "add_proficiency" (Skill)"Any" level="Double" min="Full"
-					mutator "add_proficiency" (Tool)"Theives' Tools" level="Double"
+					mutator "add_proficiency" (Tool)"Specific" "Theives' Tools" level="Double"
 				}
 			}
 		}
@@ -202,14 +202,14 @@ class name="Rogue" {
 				short "Your proficiency bonus is doubled for either 2 skill proficiencies or a skill proficiency and thieves' tools."
 				section "At 6th level, you can choose two more of your proficiencies (in skills or with thieves' tools) to gain this benefit."
 			}
-			mutator "pick" 1 {
+			mutator "pick" 1 name="Expertise Path" {
 				option "2 Skills" {
 					mutator "add_proficiency" (Skill)"Any" level="Double" min="Full"
 					mutator "add_proficiency" (Skill)"Any" level="Double" min="Full"
 				}
 				option "Skill + Thieves' Tools" {
 					mutator "add_proficiency" (Skill)"Any" level="Double" min="Full"
-					mutator "add_proficiency" (Tool)"Theives' Tools" level="Double"
+					mutator "add_proficiency" (Tool)"Specific" "Theives' Tools" level="Double"
 				}
 			}
 		}
