@@ -101,7 +101,16 @@ class name="Rogue" {
 				short "Your proficiency bonus is doubled for either 2 skill proficiencies or a skill proficiency and thieves' tools."
 				section "At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves' tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies."
 			}
-			// TODO: add_proficiency "Double" for 1 skill and either a skill or thieves' tools as long as the character is already proficient with those options. This will require some way to query what skills/items the character is already proficient with to be displayed a selection.
+			mutator "pick" 1 {
+				option "2 Skills" {
+					mutator "add_proficiency" (Skill)"Any" level="Double" min="Full"
+					mutator "add_proficiency" (Skill)"Any" level="Double" min="Full"
+				}
+				option "Skill + Thieves' Tools" {
+					mutator "add_proficiency" (Skill)"Any" level="Double" min="Full"
+					mutator "add_proficiency" (Tool)"Theives' Tools" level="Double"
+				}
+			}
 		}
 		mutator "feature" name="Sneak Attack" {
 			description {
@@ -188,12 +197,21 @@ class name="Rogue" {
 		}
 	}
 	level 6 {
-		mutator "feature" name="Expertise" {
+		mutator "feature" name="Expertise" parent="Rogue/level01/Expertise" {
 			description {
 				short "Your proficiency bonus is doubled for either 2 skill proficiencies or a skill proficiency and thieves' tools."
 				section "At 6th level, you can choose two more of your proficiencies (in skills or with thieves' tools) to gain this benefit."
 			}
-			// TODO: add_proficiency "Double" for 1 skill and either a skill or thieves' tools as long as the character is already proficient with those options. This will require some way to query what skills/items the character is already proficient with to be displayed a selection.
+			mutator "pick" 1 {
+				option "2 Skills" {
+					mutator "add_proficiency" (Skill)"Any" level="Double" min="Full"
+					mutator "add_proficiency" (Skill)"Any" level="Double" min="Full"
+				}
+				option "Skill + Thieves' Tools" {
+					mutator "add_proficiency" (Skill)"Any" level="Double" min="Full"
+					mutator "add_proficiency" (Tool)"Theives' Tools" level="Double"
+				}
+			}
 		}
 	}
 	level 7 {

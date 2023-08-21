@@ -245,10 +245,8 @@ class name="Bard" {
 				short "Your proficiency bonus is doubled for 2 skill proficiencies."
 				section "At 3rd level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies."
 			}
-			// TODO: add_proficiency "Double" for 2 skills that the character is already proficient with those options. This will require some way to query what skills/items the character is already proficient with to be displayed a selection.
-			mutator-todo "add_proficiency" (Skill)"Any" level="Double" {
-				min-level "Full"
-			}
+			mutator "add_proficiency" (Skill)"Any" level="Double" min="Full"
+			mutator "add_proficiency" (Skill)"Any" level="Double" min="Full"
 		}
 	}
 	level 4 {
@@ -303,12 +301,13 @@ class name="Bard" {
 		}
 	}
 	level 10 {
-		mutator "feature" name="Expertise" {
+		mutator "feature" name="Expertise" parent="Bard/level03/Expertise" {
 			description {
 				short "Your proficiency bonus is doubled for 2 skill proficiencies."
 				section "At 10th level, choose two more of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies."
 			}
-			// TODO: add_proficiency "Double" for 2 skills that the character is already proficient with those options. This will require some way to query what skills/items the character is already proficient with to be displayed a selection.
+			mutator "add_proficiency" (Skill)"Any" level="Double" min="Full"
+			mutator "add_proficiency" (Skill)"Any" level="Double" min="Full"
 		}
 		mutator "feature" name="Magical Secrets" {
 			description {
