@@ -17,7 +17,6 @@ class name="Paladin" {
 	mutator "add_proficiency" (SavingThrow)"Charisma"
 	mutator "add_proficiency" (Armor)"Heavy"
 	mutator "add_proficiency" (Skill)"AnyOf" id="skillA" {
-		cannot-match "skillB"
 		option "Athletics"
 		option "Insight"
 		option "Intimidation"
@@ -26,7 +25,6 @@ class name="Paladin" {
 		option "Religion"
 	}
 	mutator "add_proficiency" (Skill)"AnyOf" id="skillB" {
-		cannot-match "skillA"
 		option "Athletics"
 		option "Insight"
 		option "Intimidation"
@@ -273,13 +271,13 @@ class name="Paladin" {
 			option "Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
-						cannot-match "abilityB"
+						cannot_match "abilityB"
 					}
 					bonus 2
 				}
 				mutator "ability_score"  {
 					ability "Any" id="abilityB" {
-						cannot-match "abilityA"
+						cannot_match "abilityA"
 					}
 					bonus 1
 				}
@@ -320,13 +318,13 @@ class name="Paladin" {
 			option "Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
-						cannot-match "abilityB"
+						cannot_match "abilityB"
 					}
 					bonus 2
 				}
 				mutator "ability_score"  {
 					ability "Any" id="abilityB" {
-						cannot-match "abilityA"
+						cannot_match "abilityA"
 					}
 					bonus 1
 				}
@@ -371,13 +369,13 @@ class name="Paladin" {
 			option "Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
-						cannot-match "abilityB"
+						cannot_match "abilityB"
 					}
 					bonus 2
 				}
 				mutator "ability_score"  {
 					ability "Any" id="abilityB" {
-						cannot-match "abilityA"
+						cannot_match "abilityA"
 					}
 					bonus 1
 				}
@@ -410,13 +408,13 @@ class name="Paladin" {
 			option "Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
-						cannot-match "abilityB"
+						cannot_match "abilityB"
 					}
 					bonus 2
 				}
 				mutator "ability_score"  {
 					ability "Any" id="abilityB" {
-						cannot-match "abilityA"
+						cannot_match "abilityA"
 					}
 					bonus 1
 				}
@@ -431,13 +429,13 @@ class name="Paladin" {
 			option "Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
-						cannot-match "abilityB"
+						cannot_match "abilityB"
 					}
 					bonus 2
 				}
 				mutator "ability_score"  {
 					ability "Any" id="abilityB" {
-						cannot-match "abilityA"
+						cannot_match "abilityA"
 					}
 					bonus 1
 				}

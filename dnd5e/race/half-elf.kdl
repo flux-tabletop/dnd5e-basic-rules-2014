@@ -5,7 +5,7 @@ bundle category="Race" name="Half-Elf" {
 	}
 	mutator "ability_score" {
 		ability "AnyOf" id="abilityA" {
-			cannot-match "abilityB"
+			cannot_match "abilityB"
 			option "Strength"
 			option "Dexterity"
 			option "Constitution"
@@ -16,7 +16,7 @@ bundle category="Race" name="Half-Elf" {
 	}
 	mutator "ability_score" {
 		ability "AnyOf" id="abilityB" {
-			cannot-match "abilityA"
+			cannot_match "abilityA"
 			option "Strength"
 			option "Dexterity"
 			option "Constitution"
@@ -43,12 +43,8 @@ bundle category="Race" name="Half-Elf" {
 	mutator "add_proficiency" (Language)"Any"
 	mutator "feature" name="Skill Versatility" {
 		description "You gain proficiency in two skills of your choice."
-		mutator "add_proficiency" (Skill)"Any" id="skillA" {
-			cannot-match "skillB"
-		}
-		mutator "add_proficiency" (Skill)"Any" id="skillB" {
-			cannot-match "skillA"
-		}
+		mutator "add_proficiency" (Skill)"Any" id="skillA"
+		mutator "add_proficiency" (Skill)"Any" id="skillB"
 	}
 }
 /*

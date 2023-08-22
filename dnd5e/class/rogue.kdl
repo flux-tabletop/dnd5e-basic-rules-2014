@@ -13,8 +13,6 @@ class name="Rogue" {
 	mutator "add_proficiency" (Weapon)"Rapier"
 	mutator "add_proficiency" (Weapon)"Shortsword"
 	mutator "add_proficiency" (Skill)"AnyOf" id="skillA" {
-		cannot-match "skillB"
-		cannot-match "skillC"
 		option "Acrobatics"
 		option "Athletics"
 		option "Deception"
@@ -28,8 +26,6 @@ class name="Rogue" {
 		option "Stealth"
 	}
 	mutator "add_proficiency" (Skill)"AnyOf" id="skillB" {
-		cannot-match "skillA"
-		cannot-match "skillC"
 		option "Acrobatics"
 		option "Athletics"
 		option "Deception"
@@ -43,8 +39,6 @@ class name="Rogue" {
 		option "Stealth"
 	}
 	mutator "add_proficiency" (Skill)"AnyOf" id="skillC" {
-		cannot-match "skillA"
-		cannot-match "skillB"
 		option "Acrobatics"
 		option "Athletics"
 		option "Deception"
@@ -171,13 +165,13 @@ class name="Rogue" {
 			option "Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
-						cannot-match "abilityB"
+						cannot_match "abilityB"
 					}
 					bonus 2
 				}
 				mutator "ability_score"  {
 					ability "Any" id="abilityB" {
-						cannot-match "abilityA"
+						cannot_match "abilityA"
 					}
 					bonus 1
 				}
@@ -227,13 +221,13 @@ class name="Rogue" {
 			option "Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
-						cannot-match "abilityB"
+						cannot_match "abilityB"
 					}
 					bonus 2
 				}
 				mutator "ability_score"  {
 					ability "Any" id="abilityB" {
-						cannot-match "abilityA"
+						cannot_match "abilityA"
 					}
 					bonus 1
 				}
@@ -248,13 +242,13 @@ class name="Rogue" {
 			option "Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
-						cannot-match "abilityB"
+						cannot_match "abilityB"
 					}
 					bonus 2
 				}
 				mutator "ability_score"  {
 					ability "Any" id="abilityB" {
-						cannot-match "abilityA"
+						cannot_match "abilityA"
 					}
 					bonus 1
 				}
@@ -277,13 +271,13 @@ class name="Rogue" {
 			option "Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
-						cannot-match "abilityB"
+						cannot_match "abilityB"
 					}
 					bonus 2
 				}
 				mutator "ability_score"  {
 					ability "Any" id="abilityB" {
-						cannot-match "abilityA"
+						cannot_match "abilityA"
 					}
 					bonus 1
 				}
@@ -310,13 +304,13 @@ class name="Rogue" {
 			option "Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
-						cannot-match "abilityB"
+						cannot_match "abilityB"
 					}
 					bonus 2
 				}
 				mutator "ability_score"  {
 					ability "Any" id="abilityB" {
-						cannot-match "abilityA"
+						cannot_match "abilityA"
 					}
 					bonus 1
 				}
@@ -339,13 +333,13 @@ class name="Rogue" {
 			option "Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
-						cannot-match "abilityB"
+						cannot_match "abilityB"
 					}
 					bonus 2
 				}
 				mutator "ability_score"  {
 					ability "Any" id="abilityB" {
-						cannot-match "abilityA"
+						cannot_match "abilityA"
 					}
 					bonus 1
 				}

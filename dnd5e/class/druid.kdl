@@ -24,7 +24,6 @@ class name="Druid" {
 	mutator "add_proficiency" (Weapon)"Spear"
 	mutator "add_proficiency" (Tool)"Specific" "Herbalism Kit"
 	mutator "add_proficiency" (Skill)"AnyOf" id="skillA" {
-		cannot-match "skillB"
 		option "Arcana"
 		option "AnimalHandling"
 		option "Insight"
@@ -35,7 +34,6 @@ class name="Druid" {
 		option "Survival"
 	}
 	mutator "add_proficiency" (Skill)"AnyOf" id="skillB" {
-		cannot-match "skillA"
 		option "Arcana"
 		option "AnimalHandling"
 		option "Insight"
@@ -208,13 +206,13 @@ class name="Druid" {
 			option "Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
-						cannot-match "abilityB"
+						cannot_match "abilityB"
 					}
 					bonus 2
 				}
 				mutator "ability_score"  {
 					ability "Any" id="abilityB" {
-						cannot-match "abilityA"
+						cannot_match "abilityA"
 					}
 					bonus 1
 				}
@@ -229,13 +227,13 @@ class name="Druid" {
 			option "Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
-						cannot-match "abilityB"
+						cannot_match "abilityB"
 					}
 					bonus 2
 				}
 				mutator "ability_score"  {
 					ability "Any" id="abilityB" {
-						cannot-match "abilityA"
+						cannot_match "abilityA"
 					}
 					bonus 1
 				}
@@ -250,13 +248,13 @@ class name="Druid" {
 			option "Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
-						cannot-match "abilityB"
+						cannot_match "abilityB"
 					}
 					bonus 2
 				}
 				mutator "ability_score"  {
 					ability "Any" id="abilityB" {
-						cannot-match "abilityA"
+						cannot_match "abilityA"
 					}
 					bonus 1
 				}
@@ -271,13 +269,13 @@ class name="Druid" {
 			option "Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
-						cannot-match "abilityB"
+						cannot_match "abilityB"
 					}
 					bonus 2
 				}
 				mutator "ability_score"  {
 					ability "Any" id="abilityB" {
-						cannot-match "abilityA"
+						cannot_match "abilityA"
 					}
 					bonus 1
 				}
@@ -300,13 +298,13 @@ class name="Druid" {
 			option "Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
-						cannot-match "abilityB"
+						cannot_match "abilityB"
 					}
 					bonus 2
 				}
 				mutator "ability_score"  {
 					ability "Any" id="abilityB" {
-						cannot-match "abilityA"
+						cannot_match "abilityA"
 					}
 					bonus 1
 				}

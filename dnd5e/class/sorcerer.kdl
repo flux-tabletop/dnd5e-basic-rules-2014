@@ -19,7 +19,6 @@ class name="Sorcerer" {
 	mutator "add_proficiency" (Weapon)"Quarterstaff"
 	mutator "add_proficiency" (Weapon)"CrossbowLight"
 	mutator "add_proficiency" (Skill)"AnyOf" id="skillA" {
-		cannot-match "skillB"
 		option "Arcana"
 		option "Deception"
 		option "Insight"
@@ -28,7 +27,6 @@ class name="Sorcerer" {
 		option "Religion"
 	}
 	mutator "add_proficiency" (Skill)"AnyOf" id="skillB" {
-		cannot-match "skillA"
 		option "Arcana"
 		option "Deception"
 		option "Insight"
@@ -226,13 +224,13 @@ class name="Sorcerer" {
 			option "Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
-						cannot-match "abilityB"
+						cannot_match "abilityB"
 					}
 					bonus 2
 				}
 				mutator "ability_score"  {
 					ability "Any" id="abilityB" {
-						cannot-match "abilityA"
+						cannot_match "abilityA"
 					}
 					bonus 1
 				}
@@ -247,13 +245,13 @@ class name="Sorcerer" {
 			option "Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
-						cannot-match "abilityB"
+						cannot_match "abilityB"
 					}
 					bonus 2
 				}
 				mutator "ability_score"  {
 					ability "Any" id="abilityB" {
-						cannot-match "abilityA"
+						cannot_match "abilityA"
 					}
 					bonus 1
 				}
@@ -268,13 +266,13 @@ class name="Sorcerer" {
 			option "Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
-						cannot-match "abilityB"
+						cannot_match "abilityB"
 					}
 					bonus 2
 				}
 				mutator "ability_score"  {
 					ability "Any" id="abilityB" {
-						cannot-match "abilityA"
+						cannot_match "abilityA"
 					}
 					bonus 1
 				}
@@ -289,13 +287,13 @@ class name="Sorcerer" {
 			option "Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
-						cannot-match "abilityB"
+						cannot_match "abilityB"
 					}
 					bonus 2
 				}
 				mutator "ability_score"  {
 					ability "Any" id="abilityB" {
-						cannot-match "abilityA"
+						cannot_match "abilityA"
 					}
 					bonus 1
 				}
@@ -310,13 +308,13 @@ class name="Sorcerer" {
 			option "Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
-						cannot-match "abilityB"
+						cannot_match "abilityB"
 					}
 					bonus 2
 				}
 				mutator "ability_score"  {
 					ability "Any" id="abilityB" {
-						cannot-match "abilityA"
+						cannot_match "abilityA"
 					}
 					bonus 1
 				}

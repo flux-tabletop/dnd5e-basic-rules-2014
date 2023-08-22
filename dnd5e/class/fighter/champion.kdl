@@ -29,7 +29,7 @@ subclass class="Fighter" name="Champion" {
 				section "At 10th level, you can choose a second option from the Fighting Style class feature."
 			}
 			mutator "pick" 1 name="Fighting Style" {
-				cannot-match "Fighter/level01/Fighting Style"
+				cannot_match "/Fighter/level01/Fighting Style"
 				option "Archery" {
 					mutator "feature" name="Archery" {
 						// You gain a +2 bonus to attack rolls you make with ranged weapons.

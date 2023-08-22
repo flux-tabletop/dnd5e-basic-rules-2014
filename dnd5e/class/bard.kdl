@@ -254,13 +254,13 @@ class name="Bard" {
 			option "Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
-						cannot-match "abilityB"
+						cannot_match "abilityB"
 					}
 					bonus 2
 				}
 				mutator "ability_score"  {
 					ability "Any" id="abilityB" {
-						cannot-match "abilityA"
+						cannot_match "abilityA"
 					}
 					bonus 1
 				}
@@ -284,13 +284,13 @@ class name="Bard" {
 			option "Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
-						cannot-match "abilityB"
+						cannot_match "abilityB"
 					}
 					bonus 2
 				}
 				mutator "ability_score"  {
 					ability "Any" id="abilityB" {
-						cannot-match "abilityA"
+						cannot_match "abilityA"
 					}
 					bonus 1
 				}
@@ -357,13 +357,13 @@ class name="Bard" {
 			option "Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
-						cannot-match "abilityB"
+						cannot_match "abilityB"
 					}
 					bonus 2
 				}
 				mutator "ability_score"  {
 					ability "Any" id="abilityB" {
-						cannot-match "abilityA"
+						cannot_match "abilityA"
 					}
 					bonus 1
 				}
@@ -378,13 +378,13 @@ class name="Bard" {
 			option "Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
-						cannot-match "abilityB"
+						cannot_match "abilityB"
 					}
 					bonus 2
 				}
 				mutator "ability_score"  {
 					ability "Any" id="abilityB" {
-						cannot-match "abilityA"
+						cannot_match "abilityA"
 					}
 					bonus 1
 				}
@@ -399,13 +399,13 @@ class name="Bard" {
 			option "Ability Score Increase" {
 				mutator "ability_score"  {
 					ability "Any" id="abilityA" {
-						cannot-match "abilityB"
+						cannot_match "abilityB"
 					}
 					bonus 2
 				}
 				mutator "ability_score"  {
 					ability "Any" id="abilityB" {
-						cannot-match "abilityA"
+						cannot_match "abilityA"
 					}
 					bonus 1
 				}
