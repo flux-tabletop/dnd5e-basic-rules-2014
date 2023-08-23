@@ -1,7 +1,6 @@
 class name="Monk" {
 	description "A master of martial arts, harnessing the power of the body in pursuit of physical and spiritual perfection"
 	hit-die "d8"
-	subclass-level 3
 	multiclass-req "Dexterity" 13
 	multiclass-req "Wisdom" 13
 
@@ -198,6 +197,15 @@ class name="Monk" {
 		}
 	}
 	level 3 {
+		mutator "feature" name="Monastic Tradition" {
+			description {
+				short "When you reach 3rd level, you commit yourself to a monastic tradition."
+				section "Three traditions of monastic pursuit are common in the monasteries scattered across the multiverse. Most monasteries practice one tradition exclusively, but a few honor the three traditions and instruct each monk according to his or her aptitude and interest. All three traditions rely on the same basic techniques, diverging as the student grows more adept."
+			}
+			mutator "add_bundle" object="subclass" {
+				filter class="Monk"
+			}
+		}
 		mutator "feature" name="Deflect Missiles" {
 			description {
 				short "Deflect or catch a missile when you are hit by a ranged weapon attack. The damage you take from the attack is reduced by 1d10 + {damage}. If you reduce damage to 0 and have a free hand, you can spend 1 ki point to make a ranged attack (as with a monk weapon) with a range of 20/60."
@@ -229,7 +237,9 @@ class name="Monk" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 		mutator "feature" name="Slow Fall" {
@@ -308,7 +318,9 @@ class name="Monk" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -347,7 +359,9 @@ class name="Monk" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -397,7 +411,9 @@ class name="Monk" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -478,7 +494,9 @@ class name="Monk" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}

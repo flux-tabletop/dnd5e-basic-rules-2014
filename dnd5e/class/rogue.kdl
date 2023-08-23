@@ -1,7 +1,6 @@
 class name="Rogue" {
 	description "A scoundrel who uses stealth and trickery to overcome obstacles and enemies"
 	hit-die "d8"
-	subclass-level 3
 	multiclass-req "Dexterity" 13
 
 	// Mutators applied when this is a primary class
@@ -160,6 +159,17 @@ class name="Rogue" {
 			action "Bonus"
 		}
 	}
+	level 3 {
+		mutator "feature" name="Roguish Archetype" {
+			description {
+				short "At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities."
+				section "Rogues have many features in common, including their emphasis on perfecting their skills, their precise and deadly approach to combat, and their increasingly quick reflexes. But different rogues steer those talents in varying directions, embodied by the rogue archetypes. Your choice of archetype is a reflection of your focus—not necessarily an indication of your chosen profession, but a description of your preferred techniques."
+			}
+			mutator "add_bundle" object="subclass" {
+				filter class="Rogue"
+			}
+		}
+	}
 	level 4 {
 		mutator "pick" 1 name="Ability Score Improvement" {
 			option "Ability Score Increase" {
@@ -177,7 +187,9 @@ class name="Rogue" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -233,7 +245,9 @@ class name="Rogue" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -254,7 +268,9 @@ class name="Rogue" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -283,7 +299,9 @@ class name="Rogue" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -316,7 +334,9 @@ class name="Rogue" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -345,7 +365,9 @@ class name="Rogue" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}

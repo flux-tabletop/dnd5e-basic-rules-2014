@@ -1,7 +1,6 @@
 class name="Ranger" {
 	description "A warrior who uses martial prowess and nature magic to combat threats on the edges of civilization"
 	hit-die "d10"
-	subclass-level 3
 	multiclass-req "Dexterity" 13
 	multiclass-req "Wisdom" 13
 
@@ -229,6 +228,12 @@ class name="Ranger" {
 		}
 	}
 	level 3 {
+		mutator "feature" name="Ranger Archetype" {
+			description "At 3rd level, you choose an archetype that you strive to emulate."
+			mutator "add_bundle" object="subclass" {
+				filter class="Ranger"
+			}
+		}
 		mutator "feature" name="Primeval Awareness" {
 			description "Beginning at 3rd level, you can use your action and expend one ranger spell slot to focus your awareness on the region around you. For 1 minute per level of the spell slot you expend, you can sense whether the following types of creatures are present within 1 mile of you (or within up to 6 miles if you are in your favored terrain): aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature doesn't reveal the creatures' location or number."
 		}
@@ -250,7 +255,9 @@ class name="Ranger" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -285,7 +292,9 @@ class name="Ranger" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 		mutator "feature" name="Land's Stride" {
@@ -319,7 +328,9 @@ class name="Ranger" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -353,7 +364,9 @@ class name="Ranger" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -381,7 +394,9 @@ class name="Ranger" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}

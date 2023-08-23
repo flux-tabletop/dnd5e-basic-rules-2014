@@ -1,17 +1,6 @@
 class name="Cleric" {
 	description "A priestly champion who wields divine magic in service of a higher power"
 	hit-die "d8"
-	/* Divine Domain
-		Choose one domain related to your deity: Knowledge, Life, Light, Nature, Tempest, Trickery, or War. Each domain is detailed at the end of the class description, and each one provides examples of gods associated with it. Your choice grants you domain spells and other features when you choose it at 1st level. It also grants you additional ways to use Channel Divinity when you gain that feature at 2nd level, and additional benefits at 6th, 8th, and 17th levels.
-		
-		Divine Domains
-		In a pantheon, every deity has influence over different aspects of mortal life and civilization, called a deity's domain. All the domains over which a deity has influence are called the deity's portfolio. For example, the portfolio of the Greek god Apollo includes the domains of Knowledge, Life, and Light. As a cleric, you choose one aspect of your deity's portfolio to emphasize, and you are granted powers related to that domain.
-
-		Your choice might correspond to a particular sect dedicated to your deity. Apollo, for example, could be worshiped in one region as Phoebus (“radiant”) Apollo, emphasizing his influence over the Light domain, and in a different place as Apollo Acesius (“healing”), emphasizing his association with the Life domain. Alternatively, your choice of domain could simply be a matter of personal preference, the aspect of the deity that appeals to you most.
-
-		Each domain's description gives examples of deities who have influence over that domain. Gods are included from the worlds of the Forgotten Realms, Greyhawk, Dragonlance, and Eberron campaign settings, as well as from the Celtic, Greek, Norse, and Egyptian pantheons of antiquity.
-	*/
-	subclass-level 1
 	multiclass-req "Wisdom" 13
 
 	mutator "add_proficiency" (SavingThrow)"Wisdom"
@@ -68,6 +57,17 @@ class name="Cleric" {
 		mutator "add_proficiency" (Armor)"Light"
 		mutator "add_proficiency" (Armor)"Medium"
 		mutator "add_proficiency" (Armor)"Shield"
+		mutator "feature" name="Divine Domain" {
+			description {
+				short "As a cleric, you choose one aspect of your deity's portfolio to emphasize, and you are granted powers related to that domain."
+				section "In a pantheon, every deity has influence over different aspects of mortal life and civilization, called a deity's domain. All the domains over which a deity has influence are called the deity's portfolio. For example, the portfolio of the Greek god Apollo includes the domains of Knowledge, Life, and Light. As a cleric, you choose one aspect of your deity's portfolio to emphasize, and you are granted powers related to that domain."
+				section "Your choice might correspond to a particular sect dedicated to your deity. Apollo, for example, could be worshiped in one region as Phoebus (“radiant”) Apollo, emphasizing his influence over the Light domain, and in a different place as Apollo Acesius (“healing”), emphasizing his association with the Life domain. Alternatively, your choice of domain could simply be a matter of personal preference, the aspect of the deity that appeals to you most."
+				section "Each domain's description gives examples of deities who have influence over that domain. Gods are included from the worlds of the Forgotten Realms, Greyhawk, Dragonlance, and Eberron campaign settings, as well as from the Celtic, Greek, Norse, and Egyptian pantheons of antiquity."
+			}
+			mutator "add_bundle" object="subclass" {
+				filter class="Cleric"
+			}
+		}
 		mutator "feature" name="Spellcasting" {
 			description {
 				short "You can cast prepared cleric spells using Wisdom as your spellcasting modifier (Spell DC {DC}, Spell Attack +{atk}) and prepared cleric spells as rituals if they have the ritual tag. You can use a holy symbol as a spellcasting focus."
@@ -232,7 +232,9 @@ class name="Cleric" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -269,7 +271,9 @@ class name="Cleric" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -311,7 +315,9 @@ class name="Cleric" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -332,7 +338,9 @@ class name="Cleric" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -353,7 +361,9 @@ class name="Cleric" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}

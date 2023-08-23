@@ -1,7 +1,6 @@
 class name="Barbarian" {
 	description "A fierce warrior of primitive background who can enter a battle rage"
 	hit-die "d12"
-	subclass-level 3
 	multiclass-req "Strength" 13
 
 	// Mutators applied when this is a primary class
@@ -149,6 +148,14 @@ class name="Barbarian" {
 			}
 		}
 	}
+	level 3 {
+		mutator "feature" name="Primal Path" {
+			description "Rage burns in every barbarian's heart, a furnace that drives him or her toward greatness. Different barbarians attribute their rage to different sources, however. For some, it is an internal reservoir where pain, grief, and anger are forged into a fury hard as steel. Others see it as a spiritual blessing, a gift of a totem animal."
+			mutator "add_bundle" object="subclass" {
+				filter class="Barbarian"
+			}
+		}
+	}
 	level 4 {
 		mutator "pick" 1 name="Ability Score Improvement" {
 			option "Ability Score Increase" {
@@ -166,7 +173,9 @@ class name="Barbarian" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -212,7 +221,9 @@ class name="Barbarian" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -245,7 +256,9 @@ class name="Barbarian" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -271,7 +284,9 @@ class name="Barbarian" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -297,7 +312,9 @@ class name="Barbarian" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}

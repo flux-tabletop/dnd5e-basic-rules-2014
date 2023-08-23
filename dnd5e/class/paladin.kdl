@@ -1,14 +1,6 @@
 class name="Paladin" {
 	description "A holy warrior bound to a sacred oath"
 	hit-die "d10"
-	/* Sacred Oath
-		Becoming a paladin involves taking vows that commit the paladin to the cause of righteousness, an active path of fighting wickedness. The final oath, taken when he or she reaches 3rd level, is the culmination of all the paladin's training. Some characters with this class don't consider themselves true paladins until they have reached 3rd level and made this oath. For others, the actual swearing of the oath is a formality, an official stamp on what has always been true in the paladin's heart.
-
-		When you reach 3rd level, you swear the oath that binds you as a paladin forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it. Now you choose the Oath of Devotion, the Oath of the Ancients, or the Oath of Vengeance, all detailed at the end of the class description.
-
-		Your choice grants you features at 3rd level and again at 7th, 15th, and 20th level. Those features include oath spells and the Channel Divinity feature.
-	*/
-	subclass-level 3
 	multiclass-req "Strength" 13
 	multiclass-req "Charisma" 13
 
@@ -247,6 +239,16 @@ class name="Paladin" {
 		*/
 	}
 	level 3 {
+		mutator "feature" name="Sacred Oath" {
+			description {
+				short "When you reach 3rd level, you commit yourself to a monastic tradition."
+				section "Becoming a paladin involves taking vows that commit the paladin to the cause of righteousness, an active path of fighting wickedness. The final oath, taken when he or she reaches 3rd level, is the culmination of all the paladin's training. Some characters with this class don't consider themselves true paladins until they have reached 3rd level and made this oath. For others, the actual swearing of the oath is a formality, an official stamp on what has always been true in the paladin's heart."
+				section "When you reach 3rd level, you swear the oath that binds you as a paladin forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it."
+			}
+			mutator "add_bundle" object="subclass" {
+				filter class="Paladin"
+			}
+		}
 		mutator "feature" name="Divine Health" {
 			description {
 				short "You are immune to disease."
@@ -283,7 +285,9 @@ class name="Paladin" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -330,7 +334,9 @@ class name="Paladin" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -381,7 +387,9 @@ class name="Paladin" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -420,7 +428,9 @@ class name="Paladin" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -441,7 +451,9 @@ class name="Paladin" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}

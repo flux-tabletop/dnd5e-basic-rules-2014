@@ -1,7 +1,6 @@
 class name="Fighter" {
 	description "A master of martial combat, skilled with a variety of weapons and armor"
 	hit-die "d10"
-	subclass-level 3
 	multiclass-req {
 		option "Strength" 13
 		option "Dexterity" 13
@@ -180,6 +179,14 @@ class name="Fighter" {
 			}
 		}
 	}
+	level 3 {
+		mutator "feature" name="Martial Archetype" {
+			description "Different fighters choose different approaches to perfecting their fighting prowess. The martial archetype you choose to emulate reflects your approach."
+			mutator "add_bundle" object="subclass" {
+				filter class="Fighter"
+			}
+		}
+	}
 	level 4 {
 		mutator "pick" 1 name="Ability Score Improvement" {
 			option "Ability Score Increase" {
@@ -197,7 +204,9 @@ class name="Fighter" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -232,7 +241,9 @@ class name="Fighter" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -253,7 +264,9 @@ class name="Fighter" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -293,7 +306,9 @@ class name="Fighter" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -314,7 +329,9 @@ class name="Fighter" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -335,7 +352,9 @@ class name="Fighter" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -356,7 +375,9 @@ class name="Fighter" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}

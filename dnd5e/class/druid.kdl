@@ -1,13 +1,6 @@
 class name="Druid" {
 	description "A priest of the Old Faith, wielding the powers of nature — moonlight and plant growth, fire and lightning — and adopting animal forms"
 	hit-die "d8"
-
-	/* Druid Circle
-		Though their organization is invisible to most outsiders, druids are part of a society that spans the land, ignoring political borders. All druids are nominally members of this druidic society, though some individuals are so isolated that they have never seen any high-ranking members of the society or participated in druidic gatherings. Druids recognize each other as brothers and sisters. Like creatures of the wilderness, however, druids sometimes compete with or even prey on each other.
-
-		At a local scale, druids are organized into circles that share certain perspectives on nature, balance, and the way of the druid.
-	*/
-	subclass-level 2
 	multiclass-req "Wisdom" 13
 
 	mutator "add_proficiency" (SavingThrow)"Intelligence"
@@ -169,6 +162,16 @@ class name="Druid" {
 		}
 	}
 	level 2 {
+		mutator "feature" name="Druid Circle" {
+			description {
+				short "Druids are organized into circles that share certain perspectives on nature, balance, and the way of the druid."
+				section "Though their organization is invisible to most outsiders, druids are part of a society that spans the land, ignoring political borders. All druids are nominally members of this druidic society, though some individuals are so isolated that they have never seen any high-ranking members of the society or participated in druidic gatherings. Druids recognize each other as brothers and sisters. Like creatures of the wilderness, however, druids sometimes compete with or even prey on each other."
+				section "At a local scale, druids are organized into circles that share certain perspectives on nature, balance, and the way of the druid."
+			}
+			mutator "add_bundle" object="subclass" {
+				filter class="Druid"
+			}
+		}
 		mutator "feature" name="Wild Shape" {
 			description {
 				short "Take the shape of any Beast whose challenge rating is less than or equal to CR {min-cr-and-limits}."
@@ -218,7 +221,9 @@ class name="Druid" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -239,7 +244,9 @@ class name="Druid" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -260,7 +267,9 @@ class name="Druid" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -281,7 +290,9 @@ class name="Druid" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -310,7 +321,9 @@ class name="Druid" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}

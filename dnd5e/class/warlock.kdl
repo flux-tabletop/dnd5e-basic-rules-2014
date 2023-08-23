@@ -1,14 +1,6 @@
 class name="Warlock" {
 	description "A wielder of magic that is derived from a bargain with an extraplanar entity"
 	hit-die "d8"
-	/* Otherworldly Patron
-		At 1st level, you have struck a bargain with an otherworldly being of your choice: the Archfey, the Fiend, or the Great Old One, each of which is detailed at the end of the class description. Your choice grants you features at 1st level and again at 6th, 10th, and 14th level.
-		
-		The beings that serve as patrons for warlocks are mighty inhabitants of other planes of existence — not gods, but almost godlike in their power. Various patrons give their warlocks access to different powers and invocations, and expect significant favors in return.
-
-		Some patrons collect warlocks, doling out mystic knowledge relatively freely or boasting of their ability to bind mortals to their will. Other patrons bestow their power only grudgingly, and might make a pact with only one warlock. Warlocks who serve the same patron might view each other as allies, siblings, or rivals.
-	*/
-	subclass-level 1
 	multiclass-req "Charisma" 13
 
 	mutator "add_proficiency" (SavingThrow)"Wisdom"
@@ -62,6 +54,16 @@ class name="Warlock" {
 	level 1 {
 		mutator "add_proficiency" (Armor)"Light"
 		mutator "add_proficiency" (Weapon)"Simple"
+		mutator "feature" name="Otherworldly Patron" {
+			description {
+				short "At 1st level, you have struck a bargain with an otherworldly being of your choice."
+				section "The beings that serve as patrons for warlocks are mighty inhabitants of other planes of existence — not gods, but almost godlike in their power. Various patrons give their warlocks access to different powers and invocations, and expect significant favors in return."
+				section "Some patrons collect warlocks, doling out mystic knowledge relatively freely or boasting of their ability to bind mortals to their will. Other patrons bestow their power only grudgingly, and might make a pact with only one warlock. Warlocks who serve the same patron might view each other as allies, siblings, or rivals."
+			}
+			mutator "add_bundle" object="subclass" {
+				filter class="Warlock"
+			}
+		}
 		mutator "feature" name="Pact Magic" {
 			description {
 				short "You can cast known warlock spells using Charisma as your spellcasting modifier (Spell DC {DC}, Spell Attack +{atk}). You can use an arcane focus as a spellcasting focus."
@@ -160,7 +162,7 @@ class name="Warlock" {
 				section "In your study of occult lore, you have unearthed eldritch invocations, fragments of forbidden knowledge that imbue you with an abiding magical ability."
 				section "At 2nd level, you gain two eldritch invocations of your choice. When you gain certain warlock levels (5, 7, 9, 12, 15, & 18), you gain additional invocations of your choice. Additionally, when you gain a level in this class, you can choose one of the invocations you know and replace it with another invocation that you could learn at that level."
 			}
-			mutator "add_bundle" category="Eldritch Invocation" propogate_parent=true {
+			mutator "add_bundle" propogate_parent=true {
 				amount (Evaluator)"get_level" class="Warlock" {
 					level 2 2
 					level 5 3
@@ -170,6 +172,7 @@ class name="Warlock" {
 					level 15 7
 					level 18 8
 				}
+				filter category="Eldritch Invocation"
 			}
 		}
 	}
@@ -239,7 +242,9 @@ class name="Warlock" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -260,7 +265,9 @@ class name="Warlock" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -351,7 +358,9 @@ class name="Warlock" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -372,7 +381,9 @@ class name="Warlock" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -393,7 +404,9 @@ class name="Warlock" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}

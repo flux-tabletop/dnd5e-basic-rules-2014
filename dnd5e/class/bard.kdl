@@ -1,10 +1,6 @@
 class name="Bard" {
 	description "An inspiring magician whose power echoes the music of creation"
 	hit-die "d8"
-	/* Bard Colleges
-		The way of a bard is gregarious. Bards seek each other out to swap songs and stories, boast of their accomplishments, and share their knowledge. Bards form loose associations, which they call colleges, to facilitate their gatherings and preserve their traditions.
-	*/
-	subclass-level 3
 	multiclass-req "Charisma" 13
 
 	mutator "add_proficiency" (SavingThrow)"Dexterity"
@@ -240,6 +236,12 @@ class name="Bard" {
 		}
 	}
 	level 3 {
+		mutator "feature" name="Bard College" {
+			description "The way of a bard is gregarious. Bards seek each other out to swap songs and stories, boast of their accomplishments, and share their knowledge. Bards form loose associations, which they call colleges, to facilitate their gatherings and preserve their traditions."
+			mutator "add_bundle" object="subclass" {
+				filter class="Bard"
+			}
+		}
 		mutator "feature" name="Expertise" {
 			description {
 				short "Your proficiency bonus is doubled for 2 skill proficiencies."
@@ -266,7 +268,9 @@ class name="Bard" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -296,7 +300,9 @@ class name="Bard" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -369,7 +375,9 @@ class name="Bard" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -390,7 +398,9 @@ class name="Bard" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
@@ -411,7 +421,9 @@ class name="Bard" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" category="Feat"
+				mutator "add_bundle" {
+					filter category="Feat"
+				}
 			}
 		}
 	}
