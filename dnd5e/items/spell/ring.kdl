@@ -13,5 +13,8 @@ item name="Ring of Spell Storing" {
 		capacity {
 			rank min=1 max=5 total=5
 		}
+		casting {
+			consume_spell true
+		}
 	}
 }
