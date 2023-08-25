@@ -18,32 +18,32 @@ subclass class="Cleric" name="Life Domain" {
 			mutator "by_level" class="Cleric" {
 				level 1 {
 					mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Cleric" {
-						spell "spells/bless.kdl"
-						spell "spells/cureWounds.kdl"
+						spell "spells/bless.kdl" use_slot=true
+						spell "spells/cureWounds.kdl" use_slot=true
 					}
 				}
 				level 3 {
 					mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Cleric" {
-						spell "spells/lesserRestoration.kdl"
-						spell "spells/spiritualWeapon.kdl"
+						spell "spells/lesserRestoration.kdl" use_slot=true
+						spell "spells/spiritualWeapon.kdl" use_slot=true
 					}
 				}
 				level 5 {
 					mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Cleric" {
-						spell "spells/beaconOfHope.kdl"
-						spell "spells/revivify.kdl"
+						spell "spells/beaconOfHope.kdl" use_slot=true
+						spell "spells/revivify.kdl" use_slot=true
 					}
 				}
 				level 7 {
 					mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Cleric" {
-						spell "spells/deathWard.kdl"
-						spell "spells/guardianOfFaith.kdl"
+						spell "spells/deathWard.kdl" use_slot=true
+						spell "spells/guardianOfFaith.kdl" use_slot=true
 					}
 				}
 				level 9 {
 					mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Cleric" {
-						spell "spells/massCureWounds.kdl"
-						spell "spells/raiseDead.kdl"
+						spell "spells/massCureWounds.kdl" use_slot=true
+						spell "spells/raiseDead.kdl" use_slot=true
 					}
 				}
 			}
