@@ -105,6 +105,7 @@ class name="Wizard" {
 					level 4 4
 					level 10 5
 				}
+				source "Item"
 				/* Prepared caster
 					- spells must have the Wizard tag
 					- prepared when finishing long rest, spending 1 minute per spell level per spell
@@ -114,9 +115,6 @@ class name="Wizard" {
 					- learn 2 wizard spells on level up (of any rank you have a slot for)
 				*/
 				kind "Prepared" {
-					// prepared from any item which is a spell container with `prepared_from` flag,
-					// and adding spells to a container requires that they have the Wizard tag
-					source-todo container=true
 					container-todo {
 						transcribe {
 							restriction {
