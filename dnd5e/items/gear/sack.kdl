@@ -1,0 +1,8 @@
+item name="Sack" weight=1.0 {
+	worth 1 (Currency)"Copper"
+	kind "Simple"
+	items {
+		// 1 cubic foot/30 pounds of gear
+		capacity weight=30.0 volume=1.0
+	}
+}

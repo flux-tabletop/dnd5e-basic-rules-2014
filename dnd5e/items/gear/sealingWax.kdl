@@ -1,0 +1,4 @@
+item name="Sealing wax" {
+	worth 5 (Currency)"Silver"
+	kind "Simple"
+}

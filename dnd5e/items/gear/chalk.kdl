@@ -1,0 +1,4 @@
+item name="Chalk (1 piece)" {
+	worth 1 (Currency)"Copper"
+	kind "Simple"
+}

@@ -1,0 +1,4 @@
+item name="Ink pen" {
+	worth 2 (Currency)"Copper"
+	kind "Simple"
+}

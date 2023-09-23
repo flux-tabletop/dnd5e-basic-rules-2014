@@ -1,0 +1,5 @@
+item name="Rations (1 day)" weight=2.0 {
+	description "Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts."
+	worth 5 (Currency)"Silver"
+	kind "Simple"
+}

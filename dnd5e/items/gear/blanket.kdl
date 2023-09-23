@@ -1,0 +1,4 @@
+item name="Blanket" weight=3.0 {
+	worth 5 (Currency)"Silver"
+	kind "Simple"
+}

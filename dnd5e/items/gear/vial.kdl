@@ -1,0 +1,5 @@
+item name="Vial" {
+	description "4 ounces liquid"
+	worth 1 (Currency)"Gold"
+	kind "Simple"
+}

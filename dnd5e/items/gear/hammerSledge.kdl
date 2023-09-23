@@ -1,0 +1,4 @@
+item name="Sledge Hammer" weight=10.0 {
+	worth 2 (Currency)"Gold"
+	kind "Simple"
+}

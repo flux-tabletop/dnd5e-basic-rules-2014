@@ -1,0 +1,4 @@
+item name="Bell" {
+	worth 1 (Currency)"Gold"
+	kind "Simple"
+}

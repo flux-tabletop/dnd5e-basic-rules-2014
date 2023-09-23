@@ -1,0 +1,4 @@
+item name="Fine Clothes" weight=6.0 {
+	worth 15 (Currency)"Gold"
+	kind "Simple"
+}

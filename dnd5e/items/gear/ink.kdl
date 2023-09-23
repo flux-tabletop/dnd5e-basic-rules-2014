@@ -1,0 +1,4 @@
+item name="Ink (1 ounce bottle)" {
+	worth 10 (Currency)"Gold"
+	kind "Simple"
+}

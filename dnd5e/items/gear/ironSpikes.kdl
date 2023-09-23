@@ -1,0 +1,4 @@
+item name="Iron Spikes" weight=5.0 {
+	worth 1 (Currency)"Gold"
+	kind "Simple" count=10
+}

@@ -1,0 +1,4 @@
+item name="Hourglass" weight=1.0 {
+	worth 25 (Currency)"Gold"
+	kind "Simple"
+}

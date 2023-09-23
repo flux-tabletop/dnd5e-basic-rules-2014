@@ -1,0 +1,5 @@
+item name="Jug or pitcher" weight=4.0 {
+	description "Capacity: 1 gallon liquid"
+	worth 2 (Currency)"Copper"
+	kind "Simple"
+}

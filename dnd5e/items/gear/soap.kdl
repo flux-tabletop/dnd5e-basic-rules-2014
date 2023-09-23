@@ -1,0 +1,4 @@
+item name="Soap" {
+	worth 2 (Currency)"Copper"
+	kind "Simple"
+}

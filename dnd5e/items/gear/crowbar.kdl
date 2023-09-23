@@ -1,0 +1,5 @@
+item name="Crowbar" weight=5.0 {
+	description "Using a crowbar grants advantage to Strength checks where the crowbar's leverage can be applied."
+	worth 2 (Currency)"Gold"
+	kind "Simple"
+}

@@ -1,0 +1,5 @@
+item name="Spyglass" weight=1.0 {
+	description "Objects viewed through a spyglass are magnified to twice their size."
+	worth 1000 (Currency)"Gold"
+	kind "Simple"
+}

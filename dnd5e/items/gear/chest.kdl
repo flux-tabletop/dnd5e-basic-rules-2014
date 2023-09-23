@@ -1,0 +1,8 @@
+item name="Chest" weight=25.0 {
+	worth 5 (Currency)"Gold"
+	kind "Simple"
+	items {
+		// 12 cubic feet/300 pounds gear
+		capacity weight=300.0 volume=12.0
+	}
+}

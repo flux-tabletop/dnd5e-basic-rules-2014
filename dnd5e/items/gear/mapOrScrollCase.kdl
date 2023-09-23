@@ -1,0 +1,5 @@
+item name="Map or Scroll Case" weight=1.0 {
+	description "This cylindrical leather case can hold up to ten rolled-up sheets of paper or five rolled-up sheets of parchment."
+	worth 1 (Currency)"Gold"
+	kind "Simple"
+}

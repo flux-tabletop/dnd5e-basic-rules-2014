@@ -1,0 +1,5 @@
+item name="Chain (10 feet)" weight=10.0 {
+	description "A chain has 10 hit points. It can be burst with a successful DC 20 Strength check."
+	worth 5 (Currency)"Gold"
+	kind "Simple"
+}

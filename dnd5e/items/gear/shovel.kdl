@@ -1,0 +1,4 @@
+item name="Shovel" weight=5.0 {
+	worth 2 (Currency)"Gold"
+	kind "Simple"
+}

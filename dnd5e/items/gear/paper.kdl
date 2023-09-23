@@ -1,0 +1,4 @@
+item name="Paper (one sheet)" {
+	worth 2 (Currency)"Silver"
+	kind "Simple"
+}

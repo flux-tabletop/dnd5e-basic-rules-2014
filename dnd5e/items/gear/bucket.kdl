@@ -1,0 +1,8 @@
+item name="Bucket" weight=2.0 {
+	description "Capacity: 3 gallons liquid, 1/2 cubic foot solid"
+	worth 5 (Currency)"Copper"
+	kind "Simple"
+	items {
+		capacity volume=0.5
+	}
+}

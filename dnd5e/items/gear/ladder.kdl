@@ -1,0 +1,4 @@
+item name="Ladder (10 foot)" weight=25.0 {
+	worth 1 (Currency)"Silver"
+	kind "Simple"
+}

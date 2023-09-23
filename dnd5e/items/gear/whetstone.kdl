@@ -1,0 +1,4 @@
+item name="Whetstone" weight=1.0 {
+	worth 1 (Currency)"Copper"
+	kind "Simple"
+}

@@ -1,0 +1,5 @@
+item name="Flask" weight=1.0 {
+	description "Capacity: 1 pint liquid"
+	worth 2 (Currency)"Copper"
+	kind "Simple"
+}

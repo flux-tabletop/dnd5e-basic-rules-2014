@@ -1,0 +1,11 @@
+item name="Quiver" weight=1.0 {
+	description "A quiver can hold up to 20 arrows."
+	worth 1 (Currency)"Gold"
+	kind "Simple"
+	items {
+		capacity amount=20
+		restriction {
+			tag "Arrow"
+		}
+	}
+}

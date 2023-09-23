@@ -1,0 +1,5 @@
+item name="Book" weight=5.0 {
+	description "A book might contain poetry, historical accounts, information pertaining to a particular field of lore, diagrams and notes on gnomish contraptions, or just about anything else that can be represented using text or pictures."
+	worth 25 (Currency)"Gold"
+	kind "Simple"
+}

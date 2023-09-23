@@ -1,0 +1,5 @@
+item name="Tent" weight=20.0 {
+	description "A simple and portable canvas shelter, a tent sleeps two."
+	worth 2 (Currency)"Gold"
+	kind "Simple"
+}

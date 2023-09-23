@@ -1,0 +1,6 @@
+item name="Rope (Hempen)" weight=10.0 {
+	description "Rope, whether made of hemp or silk, has 2 hit points and can be burst with a DC 17 Strength check."
+	worth 1 (Currency)"Gold"
+	kind "Simple"
+	notes "50 ft."
+}

@@ -1,0 +1,5 @@
+item name="Waterskin" weight=5.0 {
+	description "4 pints liquid"
+	worth 2 (Currency)"Silver"
+	kind "Simple"
+}

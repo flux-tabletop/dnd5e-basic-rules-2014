@@ -1,0 +1,4 @@
+item name="Signal whistle" {
+	worth 5 (Currency)"Copper"
+	kind "Simple"
+}

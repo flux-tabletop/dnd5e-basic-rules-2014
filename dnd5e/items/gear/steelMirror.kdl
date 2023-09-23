@@ -1,0 +1,4 @@
+item name="Steel Mirror" weight=1.0 {
+	worth 5 (Currency)"Gold"
+	kind "Simple"
+}

@@ -1,0 +1,8 @@
+item name="Basket" weight=2.0 {
+	worth 4 (Currency)"Silver"
+	kind "Simple"
+	items {
+		// 2 cubic feet/40 pounds of gear
+		capacity weight=40.0 volume=2.0
+	}
+}

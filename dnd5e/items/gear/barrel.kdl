@@ -1,0 +1,9 @@
+item name="Barrel" weight=70.0 {
+	description "Capacity: 40 gallons liquid, 4 cubic feet solid"
+	worth 2 (Currency)"Gold"
+	kind "Simple"
+	items {
+		// 4 cubic feet
+		capacity volume=4.0
+	}
+}
