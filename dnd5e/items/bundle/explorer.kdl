@@ -1,0 +1,14 @@
+item "items/gear/backpack.kdl" name="Explorer's Pack" {
+	worth 40 (Currency)"Gold"
+	items {
+		templates {
+			item "Specific" "items/gear/bedroll.kdl"
+			item "Specific" "items/gear/messKit.kdl"
+			item "Specific" "items/gear/tinderbox.kdl"
+			item "Specific" "items/gear/torch.kdl" count=10
+			item "Specific" "items/gear/ration.kdl" count=10
+			item "Specific" "items/gear/waterskin.kdl"
+			item "Specific" "items/gear/ropeHempen.kdl" count=50
+		}
+	}
+}

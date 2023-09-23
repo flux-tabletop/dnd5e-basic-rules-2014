@@ -47,8 +47,8 @@ class name="Ranger" {
 			}
 		}
 		group pick=1 {
-			item "Specific" "items/bundles/dungeoneer.kdl"
-			item "Specific" "items/bundles/explorer.kdl"
+			item "Specific" "items/bundle/dungeoneer.kdl"
+			item "Specific" "items/bundle/explorer.kdl"
 		}
 		item "Specific" "items/weapons/longbow.kdl"
 		item "Specific" "items/ammunition/arrow.kdl" count=20

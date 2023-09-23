@@ -1,0 +1,13 @@
+item "items/gear/backpack.kdl" name="Scholar's Pack" {
+	worth 40 (Currency)"Gold"
+	items {
+		templates {
+			item "Specific" "items/gear/book.kdl" name="Book of Lore"
+			item "Specific" "items/gear/ink.kdl"
+			item "Specific" "items/gear/inkPen.kdl"
+			item "Specific" "items/gear/parchment.kdl" count=10
+			item "Custom" name="Little Bag of Sand"
+			item "Custom" name="Small Knife"
+		}
+	}
+}

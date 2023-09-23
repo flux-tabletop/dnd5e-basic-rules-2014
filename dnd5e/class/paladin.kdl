@@ -41,8 +41,8 @@ class name="Paladin" {
 			}
 		}
 		group pick=1 {
-			item "Specific" "items/bundles/priest.kdl"
-			item "Specific" "items/bundles/explorer.kdl"
+			item "Specific" "items/bundle/priest.kdl"
+			item "Specific" "items/bundle/explorer.kdl"
 		}
 		item "Specific" "items/armor/chain_mail.kdl"
 		item "Select" {

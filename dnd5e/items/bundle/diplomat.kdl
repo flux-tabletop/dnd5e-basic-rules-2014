@@ -1,0 +1,16 @@
+item "items/container/chest.kdl" name="Diplomat's Pack" {
+	worth 39 (Currency)"Gold"
+	items {
+		templates {
+			item "Specific" "items/gear/mapOrScrollCase.kdl" count=2
+			item "Specific" "items/gear/clothesFine.kdl"
+			item "Specific" "items/gear/ink.kdl"
+			item "Specific" "items/gear/inkPen.kdl"
+			item "Specific" "items/gear/lamp.kdl"
+			item "Specific" "items/gear/oilFlask.kdl" count=2
+			item "Specific" "items/gear/paper.kdl" count=5
+			item "Specific" "items/gear/perfume.kdl"
+			item "Specific" "items/gear/soap.kdl"
+		}
+	}
+}

@@ -1,0 +1,15 @@
+item "items/gear/backpack.kdl" name="Dungeoneer's Pack" {
+	worth 12 (Currency)"Gold"
+	items {
+		templates {
+			item "Specific" "items/gear/crowbar.kdl"
+			item "Specific" "items/gear/hammer.kdl"
+			item "Specific" "items/gear/piton.kdl" count=10
+			item "Specific" "items/gear/torch.kdl" count=10
+			item "Specific" "items/gear/tinderbox.kdl"
+			item "Specific" "items/gear/ration.kdl" count=10
+			item "Specific" "items/gear/waterskin.kdl"
+			item "Specific" "items/gear/ropeHempen.kdl" count=50
+		}
+	}
+}

@@ -38,8 +38,8 @@ class name="Wizard" {
 			}
 		}
 		group pick=1 {
-			item "Specific" "items/bundles/scholar.kdl"
-			item "Specific" "items/bundles/explorer.kdl"
+			item "Specific" "items/bundle/scholar.kdl"
+			item "Specific" "items/bundle/explorer.kdl"
 		}
 		item "Specific" "items/spell/book.kdl"
 	}

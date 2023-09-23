@@ -60,8 +60,8 @@ class name="Monk" {
 			}
 		}
 		group pick=1 {
-			item "Specific" "items/bundles/dungeoneer.kdl"
-			item "Specific" "items/bundles/explorer.kdl"
+			item "Specific" "items/bundle/dungeoneer.kdl"
+			item "Specific" "items/bundle/explorer.kdl"
 		}
 		item "Specific" "items/weapons/dart.kdl" count=10
 	}

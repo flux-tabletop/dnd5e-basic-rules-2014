@@ -40,8 +40,8 @@ class name="Warlock" {
 			}
 		}
 		group pick=1 {
-			item "Specific" "items/bundles/scholar.kdl"
-			item "Specific" "items/bundles/dungeoneer.kdl"
+			item "Specific" "items/bundle/scholar.kdl"
+			item "Specific" "items/bundle/dungeoneer.kdl"
 		}
 		item "Specific" "items/armor/leather.kdl"
 		item "Select" {

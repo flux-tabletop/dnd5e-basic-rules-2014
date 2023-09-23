@@ -50,7 +50,7 @@ class name="Druid" {
 			}
 		}
 		item "Specific" "items/armor/leather.kdl"
-		item "Specific" "items/bundles/explorer.kdl"
+		item "Specific" "items/bundle/explorer.kdl"
 		item "Select" {
 			tag "Druidic Focus"
 		}

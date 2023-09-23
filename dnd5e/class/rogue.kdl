@@ -63,9 +63,9 @@ class name="Rogue" {
 			item "Specific" "items/weapons/shortsword.kdl"
 		}
 		group pick=1 {
-			item "Specific" "items/bundles/burglar.kdl"
-			item "Specific" "items/bundles/dungeoneer.kdl"
-			item "Specific" "items/bundles/explorer.kdl"
+			item "Specific" "items/bundle/burglar.kdl"
+			item "Specific" "items/bundle/dungeoneer.kdl"
+			item "Specific" "items/bundle/explorer.kdl"
 		}
 		item "Specific" "items/armor/leather.kdl"
 		item "Specific" "items/weapon/dagger.kdl"

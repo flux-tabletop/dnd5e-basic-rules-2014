@@ -1,0 +1,13 @@
+item "items/gear/backpack.kdl" name="Entertainer's Pack" {
+	worth 40 (Currency)"Gold"
+	items {
+		templates {
+			item "Specific" "items/gear/bedroll.kdl"
+			item "Specific" "items/gear/clothesCostume.kdl" count=2
+			item "Specific" "items/gear/candle.kdl" count=5
+			item "Specific" "items/gear/ration.kdl" count=5
+			item "Specific" "items/gear/waterskin.kdl"
+			item "Specific" "items/tools/disguise.kdl"
+		}
+	}
+}

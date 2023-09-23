@@ -37,7 +37,7 @@ class name="Barbarian" {
 				weapon kind="Simple"
 			}
 		}
-		item "Specific" "items/bundles/explorer.kdl"
+		item "Specific" "items/bundle/explorer.kdl"
 		item "Specific" "items/weapons/javelin.kdl" count=4
 	}
 
