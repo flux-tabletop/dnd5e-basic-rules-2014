@@ -37,9 +37,9 @@ bundle category="Background" name="Folk Hero" {
 		item "Select" {
 			tag "Artisan's Tool"
 		}
-		item "Specific" "item/gear/shovel.kdl"
-		item "Specific" "item/gear/ironPot.kdl"
-		item "Specific" "item/gear/clothesCommon.kdl"
+		item "Specific" "items/gear/shovel.kdl"
+		item "Specific" "items/gear/ironPot.kdl"
+		item "Specific" "items/gear/clothesCommon.kdl"
 		currency 10 (Currency)"Gold"
 	}
 	mutator "feature" name="Rustic Hospitality" {
