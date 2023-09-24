@@ -35,7 +35,7 @@ bundle category="Background" name="Folk Hero" {
 	mutator "add_proficiency" (Tool)"Specific" "Vehicles (land)"
 	mutator "add_starting_equipment" {
 		item "Select" {
-			tag "Artisan's Tool"
+			tag "Artisan's Tools"
 		}
 		item "Specific" "items/gear/shovel.kdl"
 		item "Specific" "items/gear/ironPot.kdl"
