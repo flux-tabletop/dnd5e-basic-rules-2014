@@ -7,7 +7,7 @@ item name="Priest's Pack" weight=5.0 {
 		item_id "items/gear/blanket.kdl"
 		item_id "items/gear/candle.kdl" count=10
 		item_id "items/gear/tinderbox.kdl"
-		item_id "items/gear/ration.kdl" count=2
+		item_id "items/gear/rations.kdl" count=2
 		item_id "items/gear/waterskin.kdl"
 		item name="Alms Box"
 		item name="Block of Incense" {

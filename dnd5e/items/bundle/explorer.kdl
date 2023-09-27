@@ -8,8 +8,8 @@ item name="Explorer's Pack" weight=5.0 {
 		item_id "items/gear/messKit.kdl"
 		item_id "items/gear/tinderbox.kdl"
 		item_id "items/gear/torch.kdl" count=10
-		item_id "items/gear/ration.kdl" count=10
+		item_id "items/gear/rations.kdl" count=10
 		item_id "items/gear/waterskin.kdl"
-		item_id "items/gear/ropeHempen.kdl" count=50
+		item_id "items/gear/ropeHempen.kdl"
 	}
 }

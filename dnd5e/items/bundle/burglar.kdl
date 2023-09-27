@@ -12,10 +12,10 @@ item name="Burglar's Pack" weight=5.0 {
 		item_id "items/gear/piton.kdl" count=10
 		item_id "items/gear/lanternHooded.kdl"
 		item_id "items/gear/oilFlask.kdl" count=2
-		item_id "items/gear/ration.kdl" count=5
+		item_id "items/gear/rations.kdl" count=5
 		item_id "items/gear/tinderbox.kdl"
 		item_id "items/gear/waterskin.kdl"
-		item_id "items/gear/ropeHempen.kdl" count=50
+		item_id "items/gear/ropeHempen.kdl"
 		item name="String (ft.)" {
 			kind "Simple" count=10
 		}
