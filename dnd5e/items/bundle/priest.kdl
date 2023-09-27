@@ -1,18 +1,19 @@
-item "items/gear/backpack.kdl" name="Priest's Pack" {
+item name="Priest's Pack" weight=5.0 {
 	worth 19 (Currency)"Gold"
+	kind "Simple"
 	items {
-		templates {
-			item "Specific" "items/gear/blanket.kdl"
-			item "Specific" "items/gear/candle.kdl" count=10
-			item "Specific" "items/gear/tinderbox.kdl"
-			// an alms box
-			item "Custom" name="Block of Incense" {
-				kind "Simple" count=2
-			}
-			// a censer
-			item "Custom" name="Vestments"
-			item "Specific" "items/gear/ration.kdl" count=2
-			item "Specific" "items/gear/waterskin.kdl"
+		// 1 cubic foot
+		capacity weight=30.0 volume=1.0
+		item_id "items/gear/blanket.kdl"
+		item_id "items/gear/candle.kdl" count=10
+		item_id "items/gear/tinderbox.kdl"
+		item_id "items/gear/ration.kdl" count=2
+		item_id "items/gear/waterskin.kdl"
+		item name="Alms Box"
+		item name="Block of Incense" {
+			kind "Simple" count=2
 		}
+		item name="Censer"
+		item name="Vestments"
 	}
 }

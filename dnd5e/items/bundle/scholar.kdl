@@ -1,13 +1,14 @@
-item "items/gear/backpack.kdl" name="Scholar's Pack" {
+item name="Scholar's Pack" weight=5.0 {
 	worth 40 (Currency)"Gold"
+	kind "Simple"
 	items {
-		templates {
-			item "Specific" "items/gear/book.kdl" name="Book of Lore"
-			item "Specific" "items/gear/ink.kdl"
-			item "Specific" "items/gear/inkPen.kdl"
-			item "Specific" "items/gear/parchment.kdl" count=10
-			item "Custom" name="Little Bag of Sand"
-			item "Custom" name="Small Knife"
-		}
+		// 1 cubic foot
+		capacity weight=30.0 volume=1.0
+		item_id "items/gear/book.kdl" name="Book of Lore"
+		item_id "items/gear/ink.kdl"
+		item_id "items/gear/inkPen.kdl"
+		item_id "items/gear/parchment.kdl" count=10
+		item name="Little Bag of Sand"
+		item name="Small Knife"
 	}
 }

@@ -1,16 +1,17 @@
-item "items/container/chest.kdl" name="Diplomat's Pack" {
+item name="Diplomat's Pack" weight=5.0 {
 	worth 39 (Currency)"Gold"
+	kind "Simple"
 	items {
-		templates {
-			item "Specific" "items/gear/mapOrScrollCase.kdl" count=2
-			item "Specific" "items/gear/clothesFine.kdl"
-			item "Specific" "items/gear/ink.kdl"
-			item "Specific" "items/gear/inkPen.kdl"
-			item "Specific" "items/gear/lamp.kdl"
-			item "Specific" "items/gear/oilFlask.kdl" count=2
-			item "Specific" "items/gear/paper.kdl" count=5
-			item "Specific" "items/gear/perfume.kdl"
-			item "Specific" "items/gear/soap.kdl"
-		}
+		// 1 cubic foot
+		capacity weight=30.0 volume=1.0
+		item_id "items/gear/mapOrScrollCase.kdl" count=2
+		item_id "items/gear/clothesFine.kdl"
+		item_id "items/gear/ink.kdl"
+		item_id "items/gear/inkPen.kdl"
+		item_id "items/gear/lamp.kdl"
+		item_id "items/gear/oilFlask.kdl" count=2
+		item_id "items/gear/paper.kdl" count=5
+		item_id "items/gear/perfume.kdl"
+		item_id "items/gear/soap.kdl"
 	}
 }

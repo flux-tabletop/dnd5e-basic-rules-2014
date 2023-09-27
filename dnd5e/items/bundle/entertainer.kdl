@@ -1,13 +1,14 @@
-item "items/gear/backpack.kdl" name="Entertainer's Pack" {
+item name="Entertainer's Pack" weight=5.0 {
 	worth 40 (Currency)"Gold"
+	kind "Simple"
 	items {
-		templates {
-			item "Specific" "items/gear/bedroll.kdl"
-			item "Specific" "items/gear/clothesCostume.kdl" count=2
-			item "Specific" "items/gear/candle.kdl" count=5
-			item "Specific" "items/gear/ration.kdl" count=5
-			item "Specific" "items/gear/waterskin.kdl"
-			item "Specific" "items/tools/disguise.kdl"
-		}
+		// 1 cubic foot
+		capacity weight=30.0 volume=1.0
+		item_id "items/gear/bedroll.kdl"
+		item_id "items/gear/clothesCostume.kdl" count=2
+		item_id "items/gear/candle.kdl" count=5
+		item_id "items/gear/ration.kdl" count=5
+		item_id "items/gear/waterskin.kdl"
+		item_id "items/tools/disguise.kdl"
 	}
 }

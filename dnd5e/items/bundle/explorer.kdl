@@ -1,14 +1,15 @@
-item "items/gear/backpack.kdl" name="Explorer's Pack" {
+item name="Explorer's Pack" weight=5.0 {
 	worth 40 (Currency)"Gold"
+	kind "Simple"
 	items {
-		templates {
-			item "Specific" "items/gear/bedroll.kdl"
-			item "Specific" "items/gear/messKit.kdl"
-			item "Specific" "items/gear/tinderbox.kdl"
-			item "Specific" "items/gear/torch.kdl" count=10
-			item "Specific" "items/gear/ration.kdl" count=10
-			item "Specific" "items/gear/waterskin.kdl"
-			item "Specific" "items/gear/ropeHempen.kdl" count=50
-		}
+		// 1 cubic foot
+		capacity weight=30.0 volume=1.0
+			item_id "items/gear/bedroll.kdl"
+			item_id "items/gear/messKit.kdl"
+			item_id "items/gear/tinderbox.kdl"
+			item_id "items/gear/torch.kdl" count=10
+			item_id "items/gear/ration.kdl" count=10
+			item_id "items/gear/waterskin.kdl"
+			item_id "items/gear/ropeHempen.kdl" count=50
 	}
 }

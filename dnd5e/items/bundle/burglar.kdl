@@ -1,22 +1,23 @@
-item "items/gear/backpack.kdl" name="Burglar's Pack" {
+item name="Burglar's Pack" weight=5.0 {
 	worth 16 (Currency)"Gold"
+	kind "Simple"
 	items {
-		templates {
-			item "Specific" "items/gear/ballBearings.kdl" count=1000
-			item "Custom" name="String (ft.)" {
-				kind "Simple" count=10
-			}
-			item "Specific" "items/gear/bell.kdl"
-			item "Specific" "items/gear/candle.kdl" count=5
-			item "Specific" "items/gear/crowbar.kdl"
-			item "Specific" "items/gear/hammer.kdl"
-			item "Specific" "items/gear/piton.kdl" count=10
-			item "Specific" "items/gear/lanternHooded.kdl"
-			item "Specific" "items/gear/oilFlask.kdl" count=2
-			item "Specific" "items/gear/ration.kdl" count=5
-			item "Specific" "items/gear/tinderbox.kdl"
-			item "Specific" "items/gear/waterskin.kdl"
-			item "Specific" "items/gear/ropeHempen.kdl" count=50
+		// 1 cubic foot
+		capacity weight=30.0 volume=1.0
+		item_id "items/gear/ballBearings.kdl" count=1000
+		item_id "items/gear/bell.kdl"
+		item_id "items/gear/candle.kdl" count=5
+		item_id "items/gear/crowbar.kdl"
+		item_id "items/gear/hammer.kdl"
+		item_id "items/gear/piton.kdl" count=10
+		item_id "items/gear/lanternHooded.kdl"
+		item_id "items/gear/oilFlask.kdl" count=2
+		item_id "items/gear/ration.kdl" count=5
+		item_id "items/gear/tinderbox.kdl"
+		item_id "items/gear/waterskin.kdl"
+		item_id "items/gear/ropeHempen.kdl" count=50
+		item name="String (ft.)" {
+			kind "Simple" count=10
 		}
 	}
 }

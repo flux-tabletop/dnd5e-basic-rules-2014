@@ -1,15 +1,16 @@
-item "items/gear/backpack.kdl" name="Dungeoneer's Pack" {
+item name="Dungeoneer's Pack" weight=5.0 {
 	worth 12 (Currency)"Gold"
+	kind "Simple"
 	items {
-		templates {
-			item "Specific" "items/gear/crowbar.kdl"
-			item "Specific" "items/gear/hammer.kdl"
-			item "Specific" "items/gear/piton.kdl" count=10
-			item "Specific" "items/gear/torch.kdl" count=10
-			item "Specific" "items/gear/tinderbox.kdl"
-			item "Specific" "items/gear/ration.kdl" count=10
-			item "Specific" "items/gear/waterskin.kdl"
-			item "Specific" "items/gear/ropeHempen.kdl" count=50
-		}
+		// 1 cubic foot
+		capacity weight=30.0 volume=1.0
+		item_id "items/gear/crowbar.kdl"
+		item_id "items/gear/hammer.kdl"
+		item_id "items/gear/piton.kdl" count=10
+		item_id "items/gear/torch.kdl" count=10
+		item_id "items/gear/tinderbox.kdl"
+		item_id "items/gear/ration.kdl" count=10
+		item_id "items/gear/waterskin.kdl"
+		item_id "items/gear/ropeHempen.kdl" count=50
 	}
 }
