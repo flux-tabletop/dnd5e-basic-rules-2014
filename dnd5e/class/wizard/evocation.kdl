@@ -20,8 +20,8 @@ subclass class="Wizard" name="School of Evocation" {
 				damage {
 					amount (Evaluator)"get_ability_modifier" (Ability)"Intelligence"
 				}
-				query tags="All" {
-					tag "Evocation"
+				query {
+					school "Evocation"
 					tag "Wizard"
 				}
 			}
