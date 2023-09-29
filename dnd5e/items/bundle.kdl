@@ -1,2 +1,0 @@
-// TODO: Items have a special way to apply customizations/overrides, especially for packs/bundles.
-// When an item is parsed, if it has a string at the first value which is a source id, that item is cloned and the deserialized bits in this entry are overlaid on top of it. That means that the contents of the container, the name, and the worth are all overrides on top of the backpack itself.

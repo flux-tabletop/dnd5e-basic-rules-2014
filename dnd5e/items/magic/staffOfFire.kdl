@@ -16,9 +16,9 @@ item name="Staff of Fire" {
 		charges-todo 10 {
 			reset_on "Long" (Roll)"1d6" base=4
 			// TODO: use spell ability of class-spellcasting
-			usage 1 "spell" "basic-rules@dnd5e/spells/burningHands.kdl"
-			usage 3 "spell" "basic-rules@dnd5e/spells/fireball.kdl"
-			usage 4 "spell" "basic-rules@dnd5e/spells/wallOfFire.kdl"
+			usage 1 "spell" "spells/burningHands.kdl"
+			usage 3 "spell" "spells/fireball.kdl"
+			usage 4 "spell" "spells/wallOfFire.kdl"
 		}
 	}
 }

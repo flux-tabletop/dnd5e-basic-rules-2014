@@ -1,3 +1,4 @@
 condition name="Incapacitated" {
 	description "An incapacitated creature can't take actions or reactions."
+	// TODO: force actions and reactions to 0 (and bonus actions?)
 }
