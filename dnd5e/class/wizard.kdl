@@ -28,8 +28,8 @@ class name="Wizard" {
 	}
 	mutator "add_starting_equipment" {
 		group pick=1 {
-			item "Specific" "items/weapon/quarterstaff.kdl"
-			item "Specific" "items/weapon/dagger.kdl"
+			item "Specific" "items/weapons/quarterstaff.kdl"
+			item "Specific" "items/weapons/dagger.kdl"
 		}
 		group pick=1 {
 			item "Specific" "items/gear/componentPouch.kdl"

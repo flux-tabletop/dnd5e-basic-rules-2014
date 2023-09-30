@@ -68,8 +68,8 @@ class name="Rogue" {
 			item "Specific" "items/bundle/explorer.kdl"
 		}
 		item "Specific" "items/armor/leather.kdl"
-		item "Specific" "items/weapon/dagger.kdl"
-		item "Specific" "items/weapon/dagger.kdl"
+		item "Specific" "items/weapons/dagger.kdl"
+		item "Specific" "items/weapons/dagger.kdl"
 		item "Specific" "items/tools/thieves.kdl"
 	}
 

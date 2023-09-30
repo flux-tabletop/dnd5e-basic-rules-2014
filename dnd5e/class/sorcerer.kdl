@@ -46,8 +46,8 @@ class name="Sorcerer" {
 			item "Specific" "items/bundle/dungeoneer.kdl"
 			item "Specific" "items/bundle/explorer.kdl"
 		}
-		item "Specific" "items/weapon/dagger.kdl"
-		item "Specific" "items/weapon/dagger.kdl"
+		item "Specific" "items/weapons/dagger.kdl"
+		item "Specific" "items/weapons/dagger.kdl"
 	}
 
 	level 1 {

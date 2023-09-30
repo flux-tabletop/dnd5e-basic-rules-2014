@@ -44,7 +44,7 @@ class name="Druid" {
 			}
 		}
 		group pick=1 {
-			item "Specific" "items/weapon/scimitar.kdl"
+			item "Specific" "items/weapons/scimitar.kdl"
 			item "Select" {
 				weapon kind="Simple" has_melee=true
 			}

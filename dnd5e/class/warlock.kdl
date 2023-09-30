@@ -47,8 +47,8 @@ class name="Warlock" {
 		item "Select" {
 			weapon kind="Simple"
 		}
-		item "Specific" "items/weapon/dagger.kdl"
-		item "Specific" "items/weapon/dagger.kdl"
+		item "Specific" "items/weapons/dagger.kdl"
+		item "Specific" "items/weapons/dagger.kdl"
 	}
 
 	level 1 {

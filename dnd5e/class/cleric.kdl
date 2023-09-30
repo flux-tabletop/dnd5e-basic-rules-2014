@@ -22,8 +22,8 @@ class name="Cleric" {
 	}
 	mutator "add_starting_equipment" {
 		group pick=1 {
-			item "Specific" "items/weapon/mace.kdl"
-			item "Specific" "items/weapon/mace.kdl" {
+			item "Specific" "items/weapons/mace.kdl"
+			item "Specific" "items/weapons/mace.kdl" {
 				criteria (Evaluator)"is_proficient_with" (Weapon)"Warhammer"
 			}
 		}

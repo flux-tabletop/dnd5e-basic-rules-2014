@@ -54,8 +54,8 @@ class name="Fighter" {
 				item "Specific" "items/ammunition/crossbow_bolt.kdl" count=20
 			}
 			group {
-				item "Specific" "items/weapon/handaxe.kdl"
-				item "Specific" "items/weapon/handaxe.kdl"
+				item "Specific" "items/weapons/handaxe.kdl"
+				item "Specific" "items/weapons/handaxe.kdl"
 			}
 		}
 		group pick=1 {
