@@ -1205,40 +1205,40 @@ item name="Elven Chain" weight=20.0 {
 	// TODO: +1 bonus to AC
 	// TODO: proficient even if lacking proficiency
 }
-/*
-	Eversmoking Bottle
-	rarity "uncommon"
+item name="Eversmoking Bottle" weight=1.0 {
+	description {
+		section "Smoke leaks from the lead-stoppered mouth of this brass bottle, which weighs 1 pound. When you use an action to remove the stopper, a cloud of thick smoke pours out in a 60-foot radius from the bottle. The cloud's area is heavily obscured. Each minute the bottle remains open and within the cloud, the radius increases by 10 feet until it reaches its maximum radius of 120 feet."
+		section "The cloud persists as long as the bottle is open. Closing the bottle requires you to speak its command word as an action. Once the bottle is closed, the cloud disperses after 10 minutes. A moderate wind (11 to 20 miles per hour) can also disperse the smoke after 1 minute, and a strong wind (21 or more miles per hour) can do so after 1 round."
+	}
+	rarity "Uncommon"
 	tag "Wonderous"
-	attunement
-
-	Smoke leaks from the lead-stoppered mouth of this brass bottle, which weighs 1 pound. When you use an action to remove the stopper, a cloud of thick smoke pours out in a 60-foot radius from the bottle. The cloud's area is heavily obscured. Each minute the bottle remains open and within the cloud, the radius increases by 10 feet until it reaches its maximum radius of 120 feet.
-
-	The cloud persists as long as the bottle is open. Closing the bottle requires you to speak its command word as an action. Once the bottle is closed, the cloud disperses after 10 minutes. A moderate wind (11 to 20 miles per hour) can also disperse the smoke after 1 minute, and a strong wind (21 or more miles per hour) can do so after 1 round.
-*/
-/*
-	Eyes of Charming
-	rarity "uncommon"
+	kind "Equipment" requires_attunement=true
+	// TODO: Action to unleash the cloud
+}
+item name="Eyes of Charming" {
+	description {
+		section "These crystal lenses fit over the eyes. They have 3 charges. While wearing them, you can expend 1 charge as an action to cast the charm person spell (save DC 13) on a humanoid within 30 feet of you, provided that you and the target can see each other. The lenses regain all expended charges daily at dawn."
+	}
+	rarity "Uncommon"
 	tag "Wonderous"
-	attunement)
-
-	These crystal lenses fit over the eyes. They have 3 charges. While wearing them, you can expend 1 charge as an action to cast the charm person spell (save DC 13) on a humanoid within 30 feet of you, provided that you and the target can see each other. The lenses regain all expended charges daily at dawn.
-*/
-/*
-	Eyes of Minute Seeing
-	rarity "uncommon"
+	kind "Equipment" requires_attunement=true
+	// TODO: Charges
+	// TODO: Action using charges to cast Charm Person
+}
+item name="Eyes of Minute Seeing" {
+	description "These crystal lenses fit over the eyes. While wearing them, you can see much better than normal out to a range of 1 foot. You have advantage on Intelligence (Investigation) checks that rely on sight while searching an area or studying an object within that range."
+	rarity "Uncommon"
 	tag "Wonderous"
-	attunement
-
-	These crystal lenses fit over the eyes. While wearing them, you can see much better than normal out to a range of 1 foot. You have advantage on Intelligence (Investigation) checks that rely on sight while searching an area or studying an object within that range.
-*/
-/*
-	Eyes of the Eagle
-	rarity "uncommon"
+	kind "Equipment" requires_attunement=true
+	// TODO: Passive Buffs
+}
+item name="Eyes of the Eagle" {
+	description "These crystal lenses fit over the eyes. While wearing them, you have advantage on Wisdom (Perception) checks that rely on sight. In conditions of clear visibility, you can make out details of even extremely distant creatures and objects as small as 2 feet across."
+	rarity "Uncommon"
 	tag "Wonderous"
-	attunement)
-
-	These crystal lenses fit over the eyes. While wearing them, you have advantage on Wisdom (Perception) checks that rely on sight. In conditions of clear visibility, you can make out details of even extremely distant creatures and objects as small as 2 feet across.
-*/
+	kind "Equipment" requires_attunement=true
+	// TODO: Passive Buffs
+}
 /*
 	Feather Token
 	rarity "rare"
@@ -1329,31 +1329,28 @@ item name="Elven Chain" weight=20.0 {
 	Flame Tongue
 	rarity "rare"
 	weapon (any sword)
-	attunement)
+	attunement
 
 	You can use a bonus action to speak this magic sword's command word, causing flames to erupt from the blade. These flames shed bright light in a 40-foot radius and dim light for an additional 40 feet. While the sword is ablaze, it deals an extra 2d6 fire damage to any target it hits. The flames last until you use a bonus action to speak the command word again or until you drop or sheathe the sword.
 */
-/*
-	Folding Boat
-	rarity "rare"
+item name="Folding Boat" {
+	description {
+		section "This object appears as a wooden box that measures 12 inches long, 6 inches wide, and 6 inches deep. It weighs 4 pounds and floats. It can be opened to store items inside. This item also has three command words, each requiring you to use an action to speak it."
+		section "One command word causes the box to unfold into a boat 10 feet long, 4 feet wide, and 2 feet deep. The boat has one pair of oars, an anchor, a mast, and a lateen sail. The boat can hold up to four Medium creatures comfortably."
+		section "The second command word causes the box to unfold into a ship 24 feet long, 8 feet wide, and 6 feet deep. The ship has a deck, rowing seats, five sets of oars, a steering oar, an anchor, a deck cabin, and a mast with a square sail. The ship can hold fifteen Medium creatures comfortably."
+		section "When the box becomes a vessel, its weight becomes that of a normal vessel its size, and anything that was stored in the box remains in the boat."
+		section "The third command word causes the folding boat to fold back into a box, provided that no creatures are aboard. Any objects in the vessel that can't fit inside the box remain outside the box as it folds. Any objects in the vessel that can fit inside the box do so."
+	}
+	rarity "Rare"
 	tag "Wonderous"
-	attunement
-
-	This object appears as a wooden box that measures 12 inches long, 6 inches wide, and 6 inches deep. It weighs 4 pounds and floats. It can be opened to store items inside. This item also has three command words, each requiring you to use an action to speak it.
-
-	One command word causes the box to unfold into a boat 10 feet long, 4 feet wide, and 2 feet deep. The boat has one pair of oars, an anchor, a mast, and a lateen sail. The boat can hold up to four Medium creatures comfortably.
-
-	The second command word causes the box to unfold into a ship 24 feet long, 8 feet wide, and 6 feet deep. The ship has a deck, rowing seats, five sets of oars, a steering oar, an anchor, a deck cabin, and a mast with a square sail. The ship can hold fifteen Medium creatures comfortably.
-
-	When the box becomes a vessel, its weight becomes that of a normal vessel its size, and anything that was stored in the box remains in the boat.
-
-	The third command word causes the folding boat to fold back into a box, provided that no creatures are aboard. Any objects in the vessel that can't fit inside the box remain outside the box as it folds. Any objects in the vessel that can fit inside the box do so.
-*/
+	kind "Equipment" requires_attunement=true
+	// TODO: Command words / actions
+}
 /*
 	Frost Brand
 	rarity "very rare"
 	weapon (any sword)
-	attunement)
+	attunement
 
 	When you hit with an attack using this magic sword, the target takes an extra 1d6 cold damage. In addition, while you hold the sword, you have resistance to fire damage.
 
@@ -1361,75 +1358,70 @@ item name="Elven Chain" weight=20.0 {
 
 	When you draw this weapon, you can extinguish all nonmagical flames within 30 feet of you. This property can be used no more than once per hour.
 */
-/*
-	Gauntlets of Ogre Power
-	rarity "uncommon"
+item name="Gauntlets of Ogre Power" {
+	description "Your Strength score is 19 while you wear these gauntlets. They have no effect on you if your Strength is 19 or higher without them."
+	rarity "Uncommon"
 	tag "Wonderous"
-	attunement)
-
-	Your Strength score is 19 while you wear these gauntlets. They have no effect on you if your Strength is 19 or higher without them.
-*/
-/*
-	Gem of Brightness
-	rarity "uncommon"
+	kind "Equipment" requires_attunement=true
+	// TODO: Passive buff (strength at least 19)
+}
+item name="Gem of Brightness" {
+	description {
+		section "This prism has 50 charges. While you are holding it, you can use an action to speak one of three command words to cause one of the following effects:"
+		section "The first command word causes the gem to shed bright light in a 30-foot radius and dim light for an additional 30 feet. This effect doesn't expend a charge. It lasts until you use a bonus action to repeat the command word or until you use another function of the gem."
+		section "The second command word expends 1 charge and causes the gem to fire a brilliant beam of light at one creature you can see within 60 feet of you. The creature must succeed on a DC 15 Constitution saving throw or become blinded for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+		section "The third command word expends 5 charges and causes the gem to flare with blinding light in a 30-foot cone originating from it. Each creature in the cone must make a saving throw as if struck by the beam created with the second command word."
+		section "When all of the gem's charges are expended, the gem becomes a nonmagical jewel worth 50 gp."
+	}
+	rarity "Uncommon"
 	tag "Wonderous"
-	attunement
-
-	This prism has 50 charges. While you are holding it, you can use an action to speak one of three command words to cause one of the following effects:
-
-	The first command word causes the gem to shed bright light in a 30-foot radius and dim light for an additional 30 feet. This effect doesn't expend a charge. It lasts until you use a bonus action to repeat the command word or until you use another function of the gem.
-	The second command word expends 1 charge and causes the gem to fire a brilliant beam of light at one creature you can see within 60 feet of you. The creature must succeed on a DC 15 Constitution saving throw or become blinded for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
-	The third command word expends 5 charges and causes the gem to flare with blinding light in a 30-foot cone originating from it. Each creature in the cone must make a saving throw as if struck by the beam created with the second command word.
-	When all of the gem's charges are expended, the gem becomes a nonmagical jewel worth 50 gp.
-*/
-/*
-	Gem of Seeing
-	rarity "rare"
+	kind "Equipment" requires_attunement=true
+	// TODO: Charges and command words
+}
+item name="Gem of Seeing" {
+	description "This gem has 3 charges. As an action, you can speak the gem's command word and expend 1 charge. For the next 10 minutes, you have truesight out to 120 feet when you peer through the gem. The gem regains 1d3 expended charges daily at dawn."
+	rarity "Rare"
 	tag "Wonderous"
-	attunement)
-
-	This gem has 3 charges. As an action, you can speak the gem's command word and expend 1 charge. For the next 10 minutes, you have truesight out to 120 feet when you peer through the gem.
-
-	The gem regains 1d3 expended charges daily at dawn.
-*/
+	kind "Equipment" requires_attunement=true
+	// TODO: Charges and action
+}
 /*
-Giant Slayer
-Weapon (any axe or sword), rare
+	Giant Slayer
+	Weapon (any axe or sword), rare
 
-You gain a +1 bonus to attack and damage rolls made with this magic weapon.
+	You gain a +1 bonus to attack and damage rolls made with this magic weapon.
 
-When you hit a giant with it, the giant takes an extra 2d6 damage of the weapon's type and must succeed on a DC 15 Strength saving throw or fall prone. For the puffrpose of this weapon, “giant” refers to any creature with the giant type, including ettins and trolls.
+	When you hit a giant with it, the giant takes an extra 2d6 damage of the weapon's type and must succeed on a DC 15 Strength saving throw or fall prone. For the puffrpose of this weapon, “giant” refers to any creature with the giant type, including ettins and trolls.
 */
-/*
-	Glamoured Studded Leather
-	Armor (studded leather), rare
-
-	While wearing this armor, you gain a +1 bonus to AC. You can also use a bonus action to speak the armor's command word and cause the armor to assume the appearance of a normal set of clothing or some other kind of armor. You decide what it looks like, including color, style, and accessories, but the armor retains its normal bulk and weight. The illusory appearance lasts until you use this property again or remove the armor.
-*/
-/*
-	Gloves of Missile Snaring
-	rarity "uncommon"
+item name="Glamoured Studded Leather" {
+	description "While wearing this armor, you gain a +1 bonus to AC. You can also use a bonus action to speak the armor's command word and cause the armor to assume the appearance of a normal set of clothing or some other kind of armor. You decide what it looks like, including color, style, and accessories, but the armor retains its normal bulk and weight. The illusory appearance lasts until you use this property again or remove the armor."
+	rarity "Rare"
 	tag "Wonderous"
-	attunement)
-
-	These gloves seem to almost meld into your hands when you don them. When a ranged weapon attack hits you while you're wearing them, you can use your reaction to reduce the damage by 1d10 + your Dexterity modifier, provided that you have a free hand. If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in that hand.
-*/
-/*
-	Gloves of Swimming and Climbing
-	rarity "uncommon"
+	kind "Equipment" requires_attunement=true
+	// TODO: Armor (studded leather)
+	// TODO: AC+1, bonus action
+}
+item name="Gloves of Missile Snaring" {
+	description "These gloves seem to almost meld into your hands when you don them. When a ranged weapon attack hits you while you're wearing them, you can use your reaction to reduce the damage by 1d10 + your Dexterity modifier, provided that you have a free hand. If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in that hand."
+	rarity "Uncommon"
 	tag "Wonderous"
-	attunement)
-
-	While wearing these gloves, climbing and swimming don't cost you extra movement, and you gain a +5 bonus to Strength (Athletics) checks made to climb or swim.
-*/
-/*
-	Goggles of Night
-	rarity "uncommon"
+	kind "Equipment" requires_attunement=true
+	// TODO: Reaction
+}
+item name="Gloves of Swimming and Climbing" {
+	description "While wearing these gloves, climbing and swimming don't cost you extra movement, and you gain a +5 bonus to Strength (Athletics) checks made to climb or swim."
+	rarity "Uncommon"
 	tag "Wonderous"
-	attunement
-
-	While wearing these dark lenses, you have darkvision out to a range of 60 feet. If you already have darkvision, wearing the goggles increases its range by 60 feet.
-*/
+	kind "Equipment" requires_attunement=true
+	// TODO: +5 acrobatics for climb / swim
+	// TODO: swim and climb speed that match walking
+}
+item name="Goggles of Night" {
+	description "While wearing these dark lenses, you have darkvision out to a range of 60 feet. If you already have darkvision, wearing the goggles increases its range by 60 feet."
+	rarity "Uncommon"
+	tag "Wonderous"
+	kind "Equipment" requires_attunement=true
+}
 /*
 	Hammer of Thunderbolts
 	Weapon (maul), legendary
@@ -1440,78 +1432,71 @@ When you hit a giant with it, the giant takes an extra 2d6 damage of the weapon'
 
 	The hammer also has 5 charges. While attuned to it, you can expend 1 charge and make a ranged weapon attack with the hammer, hurling it as if it had the thrown property with a normal range of 20 feet and a long range of 60 feet. If the attack hits, the hammer unleashes a thunderclap audible out to 300 feet. The target and every creature within 30 feet of it must succeed on a DC 17 Constitution saving throw or be stunned until the end of your next turn. The hammer regains 1d4 + 1 expended charges daily at dawn.
 */
-/*
-	Handy Haversack
-	rarity "rare"
+item name="Handy Haversack" {
+	description {
+		section "This backpack has a central pouch and two side pouches, each of which is an extradimensional space. Each side pouch can hold up to 20 pounds of material, not exceeding a volume of 2 cubic feet. The large central pouch can hold up to 8 cubic feet or 80 pounds of material. The backpack always weighs 5 pounds, regardless of its contents."
+		section "Placing an object in the haversack follows the normal rules for interacting with objects. Retrieving an item from the haversack requires you to use an action. When you reach into the haversack for a specific item, the item is always magically on top."
+		section "The haversack has a few limitations. If it is overloaded, or if a sharp object pierces it or tears it, the haversack ruptures and is destroyed. If the haversack is destroyed, its contents are lost forever, although an artifact always turns up again somewhere. If the haversack is turned inside out, its contents spill forth, unharmed, and the haversack must be put right before it can be used again. If a breathing creature is placed within the haversack, the creature can survive for up to 10 minutes, after which time it begins to suffocate."
+		section "Placing the haversack inside an extradimensional space created by a bag of holding, portable hole, or similar item instantly destroys both items and opens a gate to the Astral Plane. The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate is sucked through it and deposited in a random location on the Astral Plane. The gate then closes. The gate is one-way only and can't be reopened."
+	}
+	rarity "Rare"
 	tag "Wonderous"
-	attunement
-
-	This backpack has a central pouch and two side pouches, each of which is an extradimensional space. Each side pouch can hold up to 20 pounds of material, not exceeding a volume of 2 cubic feet. The large central pouch can hold up to 8 cubic feet or 80 pounds of material. The backpack always weighs 5 pounds, regardless of its contents.
-
-	Placing an object in the haversack follows the normal rules for interacting with objects. Retrieving an item from the haversack requires you to use an action. When you reach into the haversack for a specific item, the item is always magically on top.
-
-	The haversack has a few limitations. If it is overloaded, or if a sharp object pierces it or tears it, the haversack ruptures and is destroyed. If the haversack is destroyed, its contents are lost forever, although an artifact always turns up again somewhere. If the haversack is turned inside out, its contents spill forth, unharmed, and the haversack must be put right before it can be used again. If a breathing creature is placed within the haversack, the creature can survive for up to 10 minutes, after which time it begins to suffocate.
-
-	Placing the haversack inside an extradimensional space created by a bag of holding, portable hole, or similar item instantly destroys both items and opens a gate to the Astral Plane. The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate is sucked through it and deposited in a random location on the Astral Plane. The gate then closes. The gate is one-way only and can't be reopened.
-*/
-/*
-	Hat of Disguise
-	rarity "uncommon"
+	kind "Equipment" requires_attunement=true
+	// TODO: Container for objcts
+}
+item name="Hat of Disguise" {
+	description "While wearing this hat, you can use an action to cast the disguise self spell from it at will. The spell ends if the hat is removed."
+	rarity "Uncommon"
 	tag "Wonderous"
-	attunement)
-
-	While wearing this hat, you can use an action to cast the disguise self spell from it at will. The spell ends if the hat is removed.
-*/
-/*
-	Headband of Intellect
-	rarity "uncommon"
+	kind "Equipment" requires_attunement=true
+	// TODO: Action Disguise Self at will
+}
+item name="Headband of Intellect" {
+	description "Your Intelligence score is 19 while you wear this headband. It has no effect on you if your Intelligence is 19 or higher without it."
+	rarity "Uncommon"
 	tag "Wonderous"
-	attunement)
-
-	Your Intelligence score is 19 while you wear this headband. It has no effect on you if your Intelligence is 19 or higher without it.
-*/
-/*
-	Helm of Brilliance
-	rarity "very rare"
+	kind "Equipment" requires_attunement=true
+	// TODO: intelligence = at least 19
+}
+item name="Helm of Brilliance" {
+	description "This dazzling helm is set with 1d10 diamonds, 2d10 rubies, 3d10 fire opals, and 4d10 opals. Any gem pried from the helm crumbles to dust. When all the gems are removed or destroyed, the helm loses its magic." {
+		section "You gain the following benefits while wearing it:"
+		section "You can use an action to cast one of the following spells (save DC 18), using one of the helm's gems of the specified type as a component: daylight (opal), fireball (fire opal), prismatic spray (diamond), or wall of fire (ruby). The gem is destroyed when the spell is cast and disappears from the helm."
+		section "As long as it has at least one diamond, the helm emits dim light in a 30-foot radius when at least one undead is within that area. Any undead that starts its turn in that area takes 1d6 radiant damage."
+		section "As long as the helm has at least one ruby, you have resistance to fire damage."
+		section "As long as the helm has at least one fire opal, you can use an action and speak a command word to cause one weapon you are holding to burst into flames. The flames emit bright light in a 10-foot radius and dim light for an additional 10 feet. The flames are harmless to you and the weapon. When you hit with an attack using the blazing weapon, the target takes an extra 1d6 fire damage. The flames last until you use a bonus action to speak the command word again or until you drop or stow the weapon."
+		section "Roll a d20 if you are wearing the helm and take fire damage as a result of failing a saving throw against a spell. On a roll of 1, the helm emits beams of light from its remaining gems. Each creature within 60 feet of the helm other than you must succeed on a DC 17 Dexterity saving throw or be struck by a beam, taking radiant damage equal to the number of gems in the helm. The helm and its gems are then destroyed."
+	}
+	rarity "VeryRare"
 	tag "Wonderous"
-	attunement)
-
-	This dazzling helm is set with 1d10 diamonds, 2d10 rubies, 3d10 fire opals, and 4d10 opals. Any gem pried from the helm crumbles to dust. When all the gems are removed or destroyed, the helm loses its magic.
-
-	You gain the following benefits while wearing it:
-
-	You can use an action to cast one of the following spells (save DC 18), using one of the helm's gems of the specified type as a component: daylight (opal), fireball (fire opal), prismatic spray (diamond), or wall of fire (ruby). The gem is destroyed when the spell is cast and disappears from the helm.
-	As long as it has at least one diamond, the helm emits dim light in a 30-foot radius when at least one undead is within that area. Any undead that starts its turn in that area takes 1d6 radiant damage.
-	As long as the helm has at least one ruby, you have resistance to fire damage.
-	As long as the helm has at least one fire opal, you can use an action and speak a command word to cause one weapon you are holding to burst into flames. The flames emit bright light in a 10-foot radius and dim light for an additional 10 feet. The flames are harmless to you and the weapon. When you hit with an attack using the blazing weapon, the target takes an extra 1d6 fire damage. The flames last until you use a bonus action to speak the command word again or until you drop or stow the weapon.
-	Roll a d20 if you are wearing the helm and take fire damage as a result of failing a saving throw against a spell. On a roll of 1, the helm emits beams of light from its remaining gems. Each creature within 60 feet of the helm other than you must succeed on a DC 17 Dexterity saving throw or be struck by a beam, taking radiant damage equal to the number of gems in the helm. The helm and its gems are then destroyed.
-*/
-/*
-	Helm of Comprehending Languages
-	rarity "uncommon"
+	kind "Equipment" requires_attunement=true
+	// TODO: actions for spells which consume different gems
+}
+item name="Helm of Comprehending Languages" {
+	description "While wearing this helm, you can use an action to cast the comprehend languages spell from it at will."
+	rarity "Uncommon"
 	tag "Wonderous"
-	attunement
-
-	While wearing this helm, you can use an action to cast the comprehend languages spell from it at will.
-*/
-/*
-	Helm of Telepathy
-	rarity "uncommon"
+	kind "Equipment" requires_attunement=true
+	// TODO: cast Comprehend Languages
+}
+item name="Helm of Telepathy" {
+	description {
+		section "While wearing this helm, you can use an action to cast the detect thoughts spell (save DC 13) from it. As long as you maintain concentration on the spell, you can use a bonus action to send a telepathic message to a creature you are focused on. It can reply—using a bonus action to do so—while your focus on it continues."
+		section "While focusing on a creature with detect thoughts, you can use an action to cast the suggestion spell (save DC 13) from the helm on that creature. Once used, the suggestion property can't be used again until the next dawn."
+	}
+	rarity "Uncommon"
 	tag "Wonderous"
-	attunement)
-
-	While wearing this helm, you can use an action to cast the detect thoughts spell (save DC 13) from it. As long as you maintain concentration on the spell, you can use a bonus action to send a telepathic message to a creature you are focused on. It can reply—using a bonus action to do so—while your focus on it continues.
-
-	While focusing on a creature with detect thoughts, you can use an action to cast the suggestion spell (save DC 13) from the helm on that creature. Once used, the suggestion property can't be used again until the next dawn.
-*/
-/*
-	Helm of Teleportation
-	rarity "rare"
+	kind "Equipment" requires_attunement=true
+	// TODO: Cast Detect Thoughts
+	// TODO: Cast Suggestion
+}
+item name="Helm of Teleportation" {
+	description "This helm has 3 charges. While wearing it, you can use an action and expend 1 charge to cast the teleport spell from it. The helm regains 1d3 expended charges daily at dawn."
+	rarity "Rare"
 	tag "Wonderous"
-	attunement)
-
-	This helm has 3 charges. While wearing it, you can use an action and expend 1 charge to cast the teleport spell from it. The helm regains 1d3 expended charges daily at dawn.
-*/
+	kind "Equipment" requires_attunement=true
+	// TODO: Charges, cast Teleport
+}
 /*
 	Holy Avenger
 	rarity "legendary"
@@ -1522,16 +1507,16 @@ When you hit a giant with it, the giant takes an extra 2d6 damage of the weapon'
 
 	While you hold the drawn sword, it creates an aura in a 10-foot radius around you. You and all creatures friendly to you in the aura have advantage on saving throws against spells and other magical effects. If you have 17 or more levels in the paladin class, the radius of the aura increases to 30 feet.
 */
-/*
-	Horn of Blasting
-	rarity "rare"
+item name="Horn of Blasting" {
+	description {
+		section "You can use an action to speak the horn's command word and then blow the horn, which emits a thunderous blast in a 30-foot cone that is audible 600 feet away. Each creature in the cone must make a DC 15 Constitution saving throw. On a failed save, a creature takes 5d6 thunder damage and is deafened for 1 minute. On a successful save, a creature takes half as much damage and isn't deafened. Creatures and objects made of glass or crystal have disadvantage on the saving throw and take 10d6 thunder damage instead of 5d6."
+		section "Each use of the horn's magic has a 20 percent chance of causing the horn to explode. The explosion deals 10d6 fire damage to the blower and destroys the horn."
+	}
+	rarity "Rare"
 	tag "Wonderous"
-	attunement
-
-	You can use an action to speak the horn's command word and then blow the horn, which emits a thunderous blast in a 30-foot cone that is audible 600 feet away. Each creature in the cone must make a DC 15 Constitution saving throw. On a failed save, a creature takes 5d6 thunder damage and is deafened for 1 minute. On a successful save, a creature takes half as much damage and isn't deafened. Creatures and objects made of glass or crystal have disadvantage on the saving throw and take 10d6 thunder damage instead of 5d6.
-
-	Each use of the horn's magic has a 20 percent chance of causing the horn to explode. The explosion deals 10d6 fire damage to the blower and destroys the horn.
-*/
+	kind "Equipment" requires_attunement=true
+	// TODO: actions
+}
 /*
 	Horn of Valhalla
 	rarity "rare (silver or brass), very rare (bronze), or legendary (iron)"
@@ -1549,42 +1534,36 @@ When you hit a giant with it, the giant takes an extra 2d6 damage of the weapon'
 	91-00	Iron	5d4 + 5	Proficiency with all martial weapons
 	If you blow the horn without meeting its requirement, the summoned berserkers attack you. If you meet the requirement, they are friendly to you and your companions and follow your commands.
 */
-/*
-	Horseshoes of a Zephyr
-	rarity "very rare"
+item name="Horseshoes of a Zephyr" {
+	description "These iron horseshoes come in a set of four. While all four shoes are affixed to the hooves of a horse or similar creature, they allow the creature to move normally while floating 4 inches above the ground. This effect means the creature can cross or stand above nonsolid or unstable surfaces, such as water or lava. The creature leaves no tracks and ignores difficult terrain. In addition, the creature can move at normal speed for up to 12 hours a day without suffering exhaustion from a forced march."
+	rarity "VeryRare"
 	tag "Wonderous"
-	attunement
-
-	These iron horseshoes come in a set of four. While all four shoes are affixed to the hooves of a horse or similar creature, they allow the creature to move normally while floating 4 inches above the ground. This effect means the creature can cross or stand above nonsolid or unstable surfaces, such as water or lava. The creature leaves no tracks and ignores difficult terrain. In addition, the creature can move at normal speed for up to 12 hours a day without suffering exhaustion from a forced march.
-*/
-/*
-	Horseshoes of Speed
-	rarity "rare"
+	kind "Equipment" requires_attunement=true
+}
+item name="Horseshoes of Speed" {
+	description "These iron horseshoes come in a set of four. While all four shoes are affixed to the hooves of a horse or similar creature, they increase the creature's walking speed by 30 feet."
+	rarity "Rare"
 	tag "Wonderous"
-	attunement
-
-	These iron horseshoes come in a set of four. While all four shoes are affixed to the hooves of a horse or similar creature, they increase the creature's walking speed by 30 feet.
-*/
-/*
-	Immovable Rod
-	Rod, uncommon
-
-	This flat iron rod has a button on one end. You can use an action to press the button, which causes the rod to become magically fixed in place. Until you or another creature uses an action to push the button again, the rod doesn't move, even if it is defying gravity. The rod can hold up to 8,000 pounds of weight. More weight causes the rod to deactivate and fall. A creature can use an action to make a DC 30 Strength check, moving the fixed rod up to 10 feet on a success.
-*/
-/*
-	Instant Fortress
-	rarity "rare"
+	kind "Equipment" requires_attunement=true
+}
+item name="Immovable Rod" {
+	description "This flat iron rod has a button on one end. You can use an action to press the button, which causes the rod to become magically fixed in place. Until you or another creature uses an action to push the button again, the rod doesn't move, even if it is defying gravity. The rod can hold up to 8,000 pounds of weight. More weight causes the rod to deactivate and fall. A creature can use an action to make a DC 30 Strength check, moving the fixed rod up to 10 feet on a success."
+	rarity "Uncommon"
+	tag "Rod"
+	// TODO: Action to activate
+}
+item name="Instant Fortress" {
+	description {
+		section "You can use an action to place this 1-inch metal cube on the ground and speak its command word. The cube rapidly grows into a fortress that remains until you use an action to speak the command word that dismisses it, which works only if the fortress is empty."
+		section "The fortress is a square tower, 20 feet on a side and 30 feet high, with arrow slits on all sides and a battlement atop it. Its interior is divided into two floors, with a ladder running along one wall to connect them. The ladder ends at a trapdoor leading to the roof. When activated, the tower has a small door on the side facing you. The door opens only at your command, which you can speak as a bonus action. It is immune to the knock spell and similar magic, such as that of a chime of opening."
+		section "Each creature in the area where the fortress appears must make a DC 15 Dexterity saving throw, taking 10d10 bludgeoning damage on a failed save, or half as much damage on a successful one. In either case, the creature is pushed to an unoccupied space outside but next to the fortress. Objects in the area that aren't being worn or carried take this damage and are pushed automatically."
+		section "The tower is made of adamantine, and its magic prevents it from being tipped over. The roof, the door, and the walls each have 100 hit points, immunity to damage from nonmagical weapons excluding siege weapons, and resistance to all other damage. Only a wish spell can repair the fortress (this use of the spell counts as replicating a spell of 8th level or lower). Each casting ofwish causes the roof, the door, or one wall to regain 50 hit points."
+	}
+	rarity "Rare"
 	tag "Wonderous"
-	attunement
-
-	You can use an action to place this 1-inch metal cube on the ground and speak its command word. The cube rapidly grows into a fortress that remains until you use an action to speak the command word that dismisses it, which works only if the fortress is empty.
-
-	The fortress is a square tower, 20 feet on a side and 30 feet high, with arrow slits on all sides and a battlement atop it. Its interior is divided into two floors, with a ladder running along one wall to connect them. The ladder ends at a trapdoor leading to the roof. When activated, the tower has a small door on the side facing you. The door opens only at your command, which you can speak as a bonus action. It is immune to the knock spell and similar magic, such as that of a chime of opening.
-
-	Each creature in the area where the fortress appears must make a DC 15 Dexterity saving throw, taking 10d10 bludgeoning damage on a failed save, or half as much damage on a successful one. In either case, the creature is pushed to an unoccupied space outside but next to the fortress. Objects in the area that aren't being worn or carried take this damage and are pushed automatically.
-
-	The tower is made of adamantine, and its magic prevents it from being tipped over. The roof, the door, and the walls each have 100 hit points, immunity to damage from nonmagical weapons excluding siege weapons, and resistance to all other damage. Only a wish spell can repair the fortress (this use of the spell counts as replicating a spell of 8th level or lower). Each casting ofwish causes the roof, the door, or one wall to regain 50 hit points.
-*/
+	kind "Equipment" requires_attunement=true
+	// TODO: Action
+}
 /*
 	Ioun Stone
 	rarity "rarity varies"
@@ -1633,90 +1612,88 @@ When you hit a giant with it, the giant takes an extra 2d6 damage of the weapon'
 
 	Sustenance (Rare). You don't need to eat or drink while this clear spindle orbits your head.
 */
-/*
-	Iron Bands of Binding
-	rarity "rare"
+item name="Iron Bands of Binding" {
+	description {
+		section "This rusty iron sphere measures 3 inches in diameter and weighs 1 pound. You can use an action to speak the command word and throw the sphere at a Huge or smaller creature you can see within 60 feet of you. As the sphere moves through the air, it opens into a tangle of metal bands."
+		section "Make a ranged attack roll with an attack bonus equal to your Dexterity modifier plus your proficiency bonus. On a hit, the target is restrained until you take a bonus action to speak the command word again to release it. Doing so, or missing with the attack, causes the bands to contract and become a sphere once more."
+		section "A creature, including the one restrained, can use an action to make a DC 20 Strength check to break the iron bands. On a success, the item is destroyed, and the restrained creature is freed. If the check fails, any further attempts made by that creature automatically fail until 24 hours have elapsed."
+		section "Once the bands are used, they can't be used again until the next dawn."
+	}
+	rarity "Rare"
 	tag "Wonderous"
-	attunement
-
-	This rusty iron sphere measures 3 inches in diameter and weighs 1 pound. You can use an action to speak the command word and throw the sphere at a Huge or smaller creature you can see within 60 feet of you. As the sphere moves through the air, it opens into a tangle of metal bands.
-
-	Make a ranged attack roll with an attack bonus equal to your Dexterity modifier plus your proficiency bonus. On a hit, the target is restrained until you take a bonus action to speak the command word again to release it. Doing so, or missing with the attack, causes the bands to contract and become a sphere once more.
-
-	A creature, including the one restrained, can use an action to make a DC 20 Strength check to break the iron bands. On a success, the item is destroyed, and the restrained creature is freed. If the check fails, any further attempts made by that creature automatically fail until 24 hours have elapsed.
-
-	Once the bands are used, they can't be used again until the next dawn.
-*/
-/*
-	Iron Flask
-	rarity "legendary"
+	kind "Equipment" requires_attunement=true
+	// TODO: action to use, ranged attack
+}
+item name="Iron Flask" {
+	description {
+		section "This iron bottle has a brass stopper. You can use an action to speak the flask's command word, targeting a creature that you can see within 60 feet of you. If the target is native to a plane of existence other than the one you're on, the target must succeed on a DC 17 Wisdom saving throw or be trapped in the flask. If the target has been trapped by the flask before, it has advantage on the saving throw. Once trapped, a creature remains in the flask until released. The flask can hold only one creature at a time. A creature trapped in the flask doesn't need to breathe, eat, or drink and doesn't age."
+		section "You can use an action to remove the flask's stopper and release the creature the flask contains. The creature is friendly to you and your companions for 1 hour and obeys your commands for that duration. If you give no commands or give it a command that is likely to result in its death, it defends itself but otherwise takes no actions. At the end of the duration, the creature acts in accordance with its normal disposition and alignment."
+		section "An identify spell reveals that a creature is inside the flask, but the only way to determine the type of creature is to open the flask. A newly discovered bottle might already contain a creature chosen by the DM or determined randomly."
+		section table=true {
+			headers "d100" "Contents"
+			row "01-50" "Empty"
+			row "51" "Arcanaloth"
+			row "52" "Cambion"
+			row "53-54" "Dao"
+			row "55-57" "Demon (type 1)"
+			row "58-60" "Demon (type 2)"
+			row "61-62" "Demon (type 3)"
+			row "63-64" "Demon (type 4)"
+			row "65" "Demon (type 5)"
+			row "66" "Demon (type 6)"
+			row "67" "Deva"
+			row "68-69" "Devil (greater)"
+			row "70-72" "Devil (lesser)"
+			row "73-74" "Djinni"
+			row "75-76" "Efreeti"
+			row "77-78" "Elemental (any)"
+			row "79" "Githyanki knight"
+			row "80" "Githzerai zerth"
+			row "81-82" "Invisible stalker"
+			row "83-84" "Marid"
+			row "85-86" "Mezzoloth"
+			row "87-88" "Night hag"
+			row "89-90" "Nycaloth"
+			row "91" "Planetar"
+			row "92-93" "Salamander"
+			row "94-95" "Slaad (any)"
+			row "96" "Solar"
+			row "97-98" "Succubus/incubus"
+			row "99" "Ultroloth"
+			row "00" "Xorn"
+		}
+	}
+	rarity "Legendary"
 	tag "Wonderous"
-	attunement
-
-	This iron bottle has a brass stopper. You can use an action to speak the flask's command word, targeting a creature that you can see within 60 feet of you. If the target is native to a plane of existence other than the one you're on, the target must succeed on a DC 17 Wisdom saving throw or be trapped in the flask. If the target has been trapped by the flask before, it has advantage on the saving throw. Once trapped, a creature remains in the flask until released. The flask can hold only one creature at a time. A creature trapped in the flask doesn't need to breathe, eat, or drink and doesn't age.
-
-	You can use an action to remove the flask's stopper and release the creature the flask contains. The creature is friendly to you and your companions for 1 hour and obeys your commands for that duration. If you give no commands or give it a command that is likely to result in its death, it defends itself but otherwise takes no actions. At the end of the duration, the creature acts in accordance with its normal disposition and alignment.
-
-	An identify spell reveals that a creature is inside the flask, but the only way to determine the type of creature is to open the flask. A newly discovered bottle might already contain a creature chosen by the DM or determined randomly.
-
-	headers "d100" "Contents"
-	row "01-50" "Empty"
-	row "51" "Arcanaloth"
-	row "52" "Cambion"
-	row "53-54" "Dao"
-	row "55-57" "Demon (type 1)"
-	row "58-60" "Demon (type 2)"
-	row "61-62" "Demon (type 3)"
-	row "63-64" "Demon (type 4)"
-	row "65" "Demon (type 5)"
-	row "66" "Demon (type 6)"
-	row "67" "Deva"
-	row "68-69" "Devil (greater)"
-	row "70-72" "Devil (lesser)"
-	row "73-74" "Djinni"
-	row "75-76" "Efreeti"
-	row "77-78" "Elemental (any)"
-	row "79" "Githyanki knight"
-	row "80" "Githzerai zerth"
-	row "81-82" "Invisible stalker"
-	row "83-84" "Marid"
-	row "85-86" "Mezzoloth"
-	row "87-88" "Night hag"
-	row "89-90" "Nycaloth"
-	row "91" "Planetar"
-	row "92-93" "Salamander"
-	row "94-95" "Slaad (any)"
-	row "96" "Solar"
-	row "97-98" "Succubus/incubus"
-	row "99" "Ultroloth"
-	row "00" "Xorn"
-*/
-/*
-	Javelin of Lightning
-	Weapon (javelin), uncommon
-
-	This javelin is a magic weapon. When you hurl it and speak its command word, it transforms into a bolt of lightning, forming a line 5 feet wide that extends out from you to a target within 120 feet. Each creature in the line excluding you and the target must make a DC 13 Dexterity saving throw, taking 4d6 lightning damage on a failed save, and half as much damage on a successful one. The lightning bolt turns back into a javelin when it reaches the target. Make a ranged weapon attack against the target. On a hit, the target takes damage from the javelin plus 4d6 lightning damage.
-
-	The javelin's property can't be used again until the next dawn. In the meantime, the javelin can still be used as a magic weapon.
-*/
-/*
-	Keoghtom's Ointment
-	rarity "uncommon"
+	kind "Equipment" requires_attunement=true
+	// TODO: action to use
+	// TODO: Custom info for the contained creature
+}
+item name="Javelin of Lightning" {
+	description {
+		section "This javelin is a magic weapon. When you hurl it and speak its command word, it transforms into a bolt of lightning, forming a line 5 feet wide that extends out from you to a target within 120 feet. Each creature in the line excluding you and the target must make a DC 13 Dexterity saving throw, taking 4d6 lightning damage on a failed save, and half as much damage on a successful one. The lightning bolt turns back into a javelin when it reaches the target. Make a ranged weapon attack against the target. On a hit, the target takes damage from the javelin plus 4d6 lightning damage."
+		section "The javelin's property can't be used again until the next dawn. In the meantime, the javelin can still be used as a magic weapon."
+	}
+	rarity "Uncommon"
+	kind "Equipment"
+	// TODO: Weapon (javelin)
+}
+item name="Keoghtom's Ointment" {
+	description {
+		section "This glass jar, 3 inches in diameter, contains 1d4 + 1 doses of a thick mixture that smells faintly of aloe. The jar and its contents weigh 1/2 pound."
+		section "As an action, one dose of the ointment can be swallowed or applied to the skin. The creature that receives it regains 2d8 + 2 hit points, ceases to be poisoned, and is cured of any disease."
+	}
+	rarity "Uncommon"
 	tag "Wonderous"
-	attunement
-
-	This glass jar, 3 inches in diameter, contains 1d4 + 1 doses of a thick mixture that smells faintly of aloe. The jar and its contents weigh 1/2 pound.
-
-	As an action, one dose of the ointment can be swallowed or applied to the skin. The creature that receives it regains 2d8 + 2 hit points, ceases to be poisoned, and is cured of any disease.
-*/
-/*
-	Lantern of Revealing
-	rarity "uncommon"
+	kind "Equipment" requires_attunement=true
+	// TODO: Charges + Action
+}
+item name="Lantern of Revealing" {
+	description "While lit, this hooded lantern burns for 6 hours on 1 pint of oil, shedding bright light in a 30-foot radius and dim light for an additional 30 feet. Invisible creatures and objects are visible as long as they are in the lantern's bright light. You can use an action to lower the hood, reducing the light to dim light in a 5-foot radius."
+	rarity "Uncommon"
 	tag "Wonderous"
-	attunement
-
-	While lit, this hooded lantern burns for 6 hours on 1 pint of oil, shedding bright light in a 30-foot radius and dim light for an additional 30 feet. Invisible creatures and objects are visible as long as they are in the lantern's bright light. You can use an action to lower the hood, reducing the light to dim light in a 5-foot radius.
-*/
+	kind "Equipment" requires_attunement=true
+}
 /*
 	Luck Blade
 	rarity "legendary"
@@ -1733,7 +1710,7 @@ When you hit a giant with it, the giant takes an extra 2d6 damage of the weapon'
 	Mace of Disruption
 	rarity "rare"
 	weapon (mace)
-	attunement)
+	attunement
 
 	When you hit a fiend or an undead with this magic weapon, that creature takes an extra 2d6 radiant damage. If the target has 25 hit points or fewer after taking this damage, it must succeed on a DC 15 Wisdom saving throw or be destroyed. On a successful save, the creature becomes frightened of you until the end of your next turn.
 
@@ -1751,36 +1728,33 @@ When you hit a giant with it, the giant takes an extra 2d6 damage of the weapon'
 	Mace of Terror
 	rarity "rare"
 	weapon (mace)
-	attunement)
+	attunement
 
 	This magic weapon has 3 charges. While holding it, you can use an action and expend 1 charge to release a wave of terror. Each creature of your choice in a 30-foot radius extending from you must succeed on a DC 15 Wisdom saving throw or become frightened of you for 1 minute. While it is frightened in this way, a creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If it has nowhere it can move, the creature can use the Dodge action. At the end of each of its turns, a creature can repeat the saving throw, ending the effect on itself on a success.
 
 	The mace regains 1d3 expended charges daily at dawn.
 */
-/*
-	Mantle of Spell Resistance
-	rarity "rare"
+item name="Mantle of Spell Resistance" {
+	description "You have advantage on saving throws against spells while you wear this cloak."
+	rarity "Rare"
 	tag "Wonderous"
-	attunement)
-
-	You have advantage on saving throws against spells while you wear this cloak.
-*/
-/*
-	Manual of Bodily Health
-	rarity "very rare"
+	kind "Equipment" requires_attunement=true
+	// TODO: passive adv on spell saves
+}
+item name="Manual of Bodily Health" {
+	description "This book contains health and diet tips, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Constitution score increases by 2, as does your maximum for that score. The manual then loses its magic, but regains it in a century."
+	rarity "VeryRare"
 	tag "Wonderous"
-	attunement
-
-	This book contains health and diet tips, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Constitution score increases by 2, as does your maximum for that score. The manual then loses its magic, but regains it in a century.
-*/
-/*
-	Manual of Gainful Exercise
-	rarity "very rare"
+	kind "Equipment" requires_attunement=true
+	// TODO: button to consume book and apply feat, with a charge that indicates if that action can be done
+}
+item name="Manual of Gainful Exercise" {
+	description "This book describes fitness exercises, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Strength score increases by 2, as does your maximum for that score. The manual then loses its magic, but regains it in a century."
+	rarity "VeryRare"
 	tag "Wonderous"
-	attunement
-
-	This book describes fitness exercises, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Strength score increases by 2, as does your maximum for that score. The manual then loses its magic, but regains it in a century.
-*/
+	kind "Equipment" requires_attunement=true
+	// TODO: button to consume book and apply feat, with a charge that indicates if that action can be done
+}
 /*
 	Manual of Golems
 	rarity "very rare"
@@ -1798,80 +1772,66 @@ When you hit a giant with it, the giant takes an extra 2d6 damage of the weapon'
 
 	Once you finish creating the golem, the book is consumed in eldritch flames. The golem becomes animate when the ashes of the manual are sprinkled on it. It is under your control, and it understands and obeys your spoken commands. See the Monster Manual for its game statistics.
 */
-/*
-	Manual of Quickness of Action
-	rarity "very rare"
+item name="Manual of Quickness of Action" {
+	description "This book contains coordination and balance exercises, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Dexterity score increases by 2, as does your maximum for that score. The manual then loses its magic, but regains it in a century."
+	rarity "VeryRare"
 	tag "Wonderous"
-	attunement
-
-	This book contains coordination and balance exercises, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Dexterity score increases by 2, as does your maximum for that score. The manual then loses its magic, but regains it in a century.
-*/
-/*
-	Marvelous Pigments
-	rarity "very rare"
+	kind "Equipment" requires_attunement=true
+	// TODO: button to consume book and apply feat, with a charge that indicates if that action can be done
+}
+item name="Marvelous Pigments" {
+	description {
+		section "Typically found in 1d4 pots inside a fine wooden box with a brush (weighing 1 pound in total), these pigments allow you to create three-dimensional objects by painting them in two dimensions. The paint flows from the brush to form the desired object as you concentrate on its image."
+		section "Each pot of paint is sufficient to cover 1,000 square feet of a surface, which lets you create inanimate objects or terrain features—such as a door, a pit, flowers, trees, cells, rooms, or weapons—that are up to 10,000 cubic feet. It takes 10 minutes to cover 100 square feet."
+		section "When you complete the painting, the object or terrain feature depicted becomes a real, nonmagical object. Thus, painting a door on a wall creates an actual door that can be opened to whatever is beyond. Painting a pit on a floor creates a real pit, and its depth counts against the total area of objects you create."
+		section "Nothing created by the pigments can have a value greater than 25 gp. If you paint an object of greater value (such as a diamond or a pile of gold), the object looks authentic, but close inspection reveals it is made from paste, bone, or some other worthless material."
+	}
+	rarity "VeryRare"
 	tag "Wonderous"
-	attunement
-
-	Typically found in 1d4 pots inside a fine wooden box with a brush (weighing 1 pound in total), these pigments allow you to create three-dimensional objects by painting them in two dimensions. The paint flows from the brush to form the desired object as you concentrate on its image.
-
-	Each pot of paint is sufficient to cover 1,000 square feet of a surface, which lets you create inanimate objects or terrain features—such as a door, a pit, flowers, trees, cells, rooms, or weapons—that are up to 10,000 cubic feet. It takes 10 minutes to cover 100 square feet.
-
-	When you complete the painting, the object or terrain feature depicted becomes a real, nonmagical object. Thus, painting a door on a wall creates an actual door that can be opened to whatever is beyond. Painting a pit on a floor creates a real pit, and its depth counts against the total area of objects you create.
-
-	Nothing created by the pigments can have a value greater than 25 gp. If you paint an object of greater value (such as a diamond or a pile of gold), the object looks authentic, but close inspection reveals it is made from paste, bone, or some other worthless material.
-*/
-/*
-	Medallion of Thoughts
-	rarity "uncommon"
+	kind "Equipment" requires_attunement=true
+}
+item name="Medallion of Thoughts" {
+	description "The medallion has 3 charges. While wearing it, you can use an action and expend 1 charge to cast the detect thoughts spell (save DC 13) from it. The medallion regains 1d3 expended charges daily at dawn."
+	rarity "Uncommon"
 	tag "Wonderous"
-	attunement)
-
-	The medallion has 3 charges. While wearing it, you can use an action and expend 1 charge to cast the detect thoughts spell (save DC 13) from it. The medallion regains 1d3 expended charges daily at dawn.
-*/
-/*
-	Mirror of Life Trapping
-	rarity "very rare"
+	kind "Equipment" requires_attunement=true
+	// TODO: Charges, Detect Thoughts
+}
+item name="Mirror of Life Trapping" {
+	description {
+		section "When this 4-foot-tall mirror is viewed indirectly, its surface shows faint images of creatures. The mirror weighs 50 pounds, and it has AC 11, 10 hit points, and vulnerability to bludgeoning damage. It shatters and is destroyed when reduced to 0 hit points."
+		section "If the mirror is hanging on a vertical surface and you are within 5 feet of it, you can use an action to speak its command word and activate it. It remains activated until you use an action to speak the command word again."
+		section "Any creature other than you that sees its reflection in the activated mirror while within 30 feet of it must succeed on a DC 15 Charisma saving throw or be trapped, along with anything it is wearing or carrying, in one of the mirror's twelve extradimensional cells. This saving throw is made with advantage if the creature knows the mirror's nature, and constructs succeed on the saving throw automatically."
+		section "An extradimensional cell is an infinite expanse filled with thick fog that reduces visibility to 10 feet. Creatures trapped in the mirror's cells don't age, and they don't need to eat, drink, or sleep. A creature trapped within a cell can escape using magic that permits planar travel. Otherwise, the creature is confined to the cell until freed."
+		section "If the mirror traps a creature but its twelve extradimensional cells are already occupied, the mirror frees one trapped creature at random to accommodate the new prisoner. A freed creature appears in an unoccupied space within sight of the mirror but facing away from it. If the mirror is shattered, all creatures it contains are freed and appear in unoccupied spaces near it."
+		section "While within 5 feet of the mirror, you can use an action to speak the name of one creature trapped in it or call out a particular cell by number. The creature named or contained in the named cell appears as an image on the mirror's surface. You and the creature can then communicate normally."
+		section "In a similar way, you can use an action to speak a second command word and free one creature trapped in the mirror. The freed creature appears, along with its possessions, in the unoccupied space nearest to the mirror and facing away from it."
+	}
+	rarity "VeryRare"
 	tag "Wonderous"
-	attunement
-
-	When this 4-foot-tall mirror is viewed indirectly, its surface shows faint images of creatures. The mirror weighs 50 pounds, and it has AC 11, 10 hit points, and vulnerability to bludgeoning damage. It shatters and is destroyed when reduced to 0 hit points.
-
-	If the mirror is hanging on a vertical surface and you are within 5 feet of it, you can use an action to speak its command word and activate it. It remains activated until you use an action to speak the command word again.
-
-	Any creature other than you that sees its reflection in the activated mirror while within 30 feet of it must succeed on a DC 15 Charisma saving throw or be trapped, along with anything it is wearing or carrying, in one of the mirror's twelve extradimensional cells. This saving throw is made with advantage if the creature knows the mirror's nature, and constructs succeed on the saving throw automatically.
-
-	An extradimensional cell is an infinite expanse filled with thick fog that reduces visibility to 10 feet. Creatures trapped in the mirror's cells don't age, and they don't need to eat, drink, or sleep. A creature trapped within a cell can escape using magic that permits planar travel. Otherwise, the creature is confined to the cell until freed.
-
-	If the mirror traps a creature but its twelve extradimensional cells are already occupied, the mirror frees one trapped creature at random to accommodate the new prisoner. A freed creature appears in an unoccupied space within sight of the mirror but facing away from it. If the mirror is shattered, all creatures it contains are freed and appear in unoccupied spaces near it.
-
-	While within 5 feet of the mirror, you can use an action to speak the name of one creature trapped in it or call out a particular cell by number. The creature named or contained in the named cell appears as an image on the mirror's surface. You and the creature can then communicate normally.
-
-	In a similar way, you can use an action to speak a second command word and free one creature trapped in the mirror. The freed creature appears, along with its possessions, in the unoccupied space nearest to the mirror and facing away from it.
-*/
+	kind "Equipment" requires_attunement=true
+}
 /*
 	Mithral Armor
 	Armor (medium or heavy, but not hide), uncommon
 
 	Mithral is a light, flexible metal. A mithral chain shirt or breastplate can be worn under normal clothes. If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithral version of the armor doesn't.
 */
-/*
-	Necklace of Adaptation
-	rarity "uncommon"
+item name="Necklace of Adaptation" {
+	description "While wearing this necklace, you can breathe normally in any environment, and you have advantage on saving throws made against harmful gases and vapors (such as cloudkill and stinking cloud effects, inhaled poisons, and the breath weapons of some dragons)."
+	rarity "Uncommon"
 	tag "Wonderous"
-	attunement)
-
-	While wearing this necklace, you can breathe normally in any environment, and you have advantage on saving throws made against harmful gases and vapors (such as cloudkill and stinking cloud effects, inhaled poisons, and the breath weapons of some dragons).
-*/
-/*
-	Necklace of Fireballs
-	rarity "rare"
+	kind "Equipment" requires_attunement=true
+}
+item name="Necklace of Fireballs" {
+	description {
+		section "This necklace has 1d6 + 3 beads hanging from it. You can use an action to detach a bead and throw it up to 60 feet away. When it reaches the end of its trajectory, the bead detonates as a 3rd-level fireball spell (save DC 15)."
+		section "You can hurl multiple beads, or even the whole necklace, as one action. When you do so, increase the level of the fireball by 1 for each bead beyond the first."
+	}
+	rarity "Rare"
 	tag "Wonderous"
-	attunement
-
-	This necklace has 1d6 + 3 beads hanging from it. You can use an action to detach a bead and throw it up to 60 feet away. When it reaches the end of its trajectory, the bead detonates as a 3rd-level fireball spell (save DC 15).
-
-	You can hurl multiple beads, or even the whole necklace, as one action. When you do so, increase the level of the fireball by 1 for each bead beyond the first.
-*/
+	kind "Equipment" requires_attunement=true
+}
 /*
 	Necklace of Prayer Beads
 	rarity "rare"
@@ -1912,142 +1872,119 @@ When you hit a giant with it, the giant takes an extra 2d6 damage of the weapon'
 
 	While your sworn enemy lives, you have disadvantage on attack rolls with all other weapons.
 */
-/*
-	Oil of Etherealness
-	Potion, rare
-
-	Beads of this cloudy gray oil form on the outside of its container and quickly evaporate. The oil can cover a Medium or smaller creature, along with the equipment it's wearing and carrying (one additional vial is required for each size category above Medium). Applying the oil takes 10 minutes. The affected creature then gains the effect of the etherealness spell for 1 hour.
-*/
-/*
-	Oil of Sharpness
-	Potion, very rare
-
-	This clear, gelatinous oil sparkles with tiny, ultrathin silver shards. The oil can coat one slashing or piercing weapon or up to 5 pieces of slashing or piercing ammunition. Applying the oil takes 1 minute. For 1 hour, the coated item is magical and has a +3 bonus to attack and damage rolls.
-*/
-/*
-	Oil of Slipperiness
-	Potion, uncommon
-
-	This sticky black unguent is thick and heavy in the container, but it flows quickly when poured. The oil can cover a Medium or smaller creature, along with the equipment it's wearing and carrying (one additional vial is required for each size category above Medium). Applying the oil takes 10 minutes. The affected creature then gains the effect of a freedom of movement spell for 8 hours.
-
-	Alternatively, the oil can be poured on the ground as an action, where it covers a 10-foot square, duplicating the effect of the grease spell in that area for 8 hours.
-*/
-/*
-	Pearl of Power
-	rarity "uncommon"
+item name="Oil of Etherealness" {
+	description "Beads of this cloudy gray oil form on the outside of its container and quickly evaporate. The oil can cover a Medium or smaller creature, along with the equipment it's wearing and carrying (one additional vial is required for each size category above Medium). Applying the oil takes 10 minutes. The affected creature then gains the effect of the etherealness spell for 1 hour."
+	rarity "Rare"
+	tag "Potion"
+}
+item name="Oil of Sharpness" {
+	description "This clear, gelatinous oil sparkles with tiny, ultrathin silver shards. The oil can coat one slashing or piercing weapon or up to 5 pieces of slashing or piercing ammunition. Applying the oil takes 1 minute. For 1 hour, the coated item is magical and has a +3 bonus to attack and damage rolls."
+	rarity "VeryRare"
+	tag "Potion"
+}
+item name="Oil of Slipperiness" {
+	description {
+		section "This sticky black unguent is thick and heavy in the container, but it flows quickly when poured. The oil can cover a Medium or smaller creature, along with the equipment it's wearing and carrying (one additional vial is required for each size category above Medium). Applying the oil takes 10 minutes. The affected creature then gains the effect of a freedom of movement spell for 8 hours."
+		section "Alternatively, the oil can be poured on the ground as an action, where it covers a 10-foot square, duplicating the effect of the grease spell in that area for 8 hours."
+	}
+	rarity "Uncommon"
+	tag "Potion"
+}
+item name="Pearl of Power" {
+	description "While this pearl is on your person, you can use an action to speak its command word and regain one expended spell slot. If the expended slot was of 4th level or higher, the new slot is 3rd level. Once you have used the pearl, it can't be used again until the next dawn."
+	rarity "Uncommon"
 	tag "Wonderous"
-	attunement by a spellcaster)
-
-	While this pearl is on your person, you can use an action to speak its command word and regain one expended spell slot. If the expended slot was of 4th level or higher, the new slot is 3rd level. Once you have used the pearl, it can't be used again until the next dawn.
-*/
-/*
-	Periapt of Health
-	rarity "uncommon"
+	kind "Equipment" requires_attunement=true // by spellcaster only
+}
+item name="Periapt of Health" {
+	description "You are immune to contracting any disease while you wear this pendant. If you are already infected with a disease, the effects of the disease are suppressed while you wear the pendant."
+	rarity "Uncommon"
 	tag "Wonderous"
-	attunement
-
-	You are immune to contracting any disease while you wear this pendant. If you are already infected with a disease, the effects of the disease are suppressed while you wear the pendant.
-*/
-/*
-	Periapt of Proof against Poison
-	rarity "rare"
+	kind "Equipment" requires_attunement=true
+}
+item name="Periapt of Proof against Poison" {
+	description "This delicate silver chain has a brilliant-cut black gem pendant. While you wear it, poisons have no effect on you. You are immune to the poisoned condition and have immunity to poison damage."
+	rarity "Rare"
 	tag "Wonderous"
-	attunement
-
-	This delicate silver chain has a brilliant-cut black gem pendant. While you wear it, poisons have no effect on you. You are immune to the poisoned condition and have immunity to poison damage.
-*/
-/*
-	Periapt of Wound Closure
-	rarity "uncommon"
+	kind "Equipment" requires_attunement=true
+}
+item name="Periapt of Wound Closure" {
+	description "While you wear this pendant, you stabilize whenever you are dying at the start of your turn. In addition, whenever you roll a Hit Die to regain hit points, double the number of hit points it restores."
+	rarity "Uncommon"
 	tag "Wonderous"
-	attunement)
-
-	While you wear this pendant, you stabilize whenever you are dying at the start of your turn. In addition, whenever you roll a Hit Die to regain hit points, double the number of hit points it restores.
-*/
-/*
-	Philter of Love
-	Potion, uncommon
-
-	The next time you see a creature within 10 minutes after drinking this philter, you become charmed by that creature for 1 hour. If the creature is of a species and gender you are normally attracted to, you regard it as your true love while you are charmed. This potion's rose-hued, effervescent liquid contains one easy-to-miss bubble shaped like a heart.
-*/
-/*
-	Pipes of Haunting
-	rarity "uncommon"
+	kind "Equipment" requires_attunement=true
+}
+item name="Philter of Love" {
+	description "The next time you see a creature within 10 minutes after drinking this philter, you become charmed by that creature for 1 hour. If the creature is of a species and gender you are normally attracted to, you regard it as your true love while you are charmed. This potion's rose-hued, effervescent liquid contains one easy-to-miss bubble shaped like a heart."
+	rarity "Uncommon"
+	tag "Potion"
+}
+item name="Pipes of Haunting" {
+	description "You must be proficient with wind instruments to use these pipes. They have 3 charges. You can use an action to play them and expend 1 charge to create an eerie, spellbinding tune. Each creature within 30 feet of you that hears you play must succeed on a DC 15 Wisdom saving throw or become frightened of you for 1 minute. If you wish, all creatures in the area that aren't hostile toward you automatically succeed on the saving throw. A creature that fails the saving throw can repeat it at the end of each of its turns, ending the effect on itself on a success. A creature that succeeds on its saving throw is immune to the effect of these pipes for 24 hours. The pipes regain 1d3 expended charges daily at dawn."
+	rarity "Uncommon"
 	tag "Wonderous"
-	attunement
-
-	You must be proficient with wind instruments to use these pipes. They have 3 charges. You can use an action to play them and expend 1 charge to create an eerie, spellbinding tune. Each creature within 30 feet of you that hears you play must succeed on a DC 15 Wisdom saving throw or become frightened of you for 1 minute. If you wish, all creatures in the area that aren't hostile toward you automatically succeed on the saving throw. A creature that fails the saving throw can repeat it at the end of each of its turns, ending the effect on itself on a success. A creature that succeeds on its saving throw is immune to the effect of these pipes for 24 hours. The pipes regain 1d3 expended charges daily at dawn.
-*/
-/*
-	Pipes of the Sewers
-	rarity "uncommon"
+	kind "Equipment" requires_attunement=true
+}
+item name="Pipes of the Sewers" {
+	description {
+		section "You must be proficient with wind instruments to use these pipes. While you are attuned to the pipes, ordinary rats and giant rats are indifferent toward you and will not attack you unless you threaten or harm them."
+		section "The pipes have 3 charges. If you play the pipes as an action, you can use a bonus action to expend 1 to 3 charges, calling forth one swarm of rats (see the Monster Manual for statistics) with each expended charge, provided that enough rats are within half a mile of you to be called in this fashion (as determined by the DM). If there aren't enough rats to form a swarm, the charge is wasted. Called swarms move toward the music by the shortest available route but aren't under your control otherwise. The pipes regain 1d3 expended charges daily at dawn."
+		section "Whenever a swarm of rats that isn't under another creature's control comes within 30 feet of you while you are playing the pipes, you can make a Charisma check contested by the swarm's Wisdom check. If you lose the contest, the swarm behaves as it normally would and can't be swayed by the pipes' music for the next 24 hours. If you win the contest, the swarm is swayed by the pipes' music and becomes friendly to you and your companions for as long as you continue to play the pipes each round as an action. A friendly swarm obeys your commands. If you issue no commands to a friendly swarm, it defends itself but otherwise takes no actions. If a friendly swarm starts its turn and can't hear the pipes' music, your control over that swarm ends, and the swarm behaves as it normally would and can't be swayed by the pipes' music for the next 24 hours."
+	}
+	rarity "Uncommon"
 	tag "Wonderous"
-	attunement)
-
-	You must be proficient with wind instruments to use these pipes. While you are attuned to the pipes, ordinary rats and giant rats are indifferent toward you and will not attack you unless you threaten or harm them.
-
-	The pipes have 3 charges. If you play the pipes as an action, you can use a bonus action to expend 1 to 3 charges, calling forth one swarm of rats (see the Monster Manual for statistics) with each expended charge, provided that enough rats are within half a mile of you to be called in this fashion (as determined by the DM). If there aren't enough rats to form a swarm, the charge is wasted. Called swarms move toward the music by the shortest available route but aren't under your control otherwise. The pipes regain 1d3 expended charges daily at dawn.
-
-	Whenever a swarm of rats that isn't under another creature's control comes within 30 feet of you while you are playing the pipes, you can make a Charisma check contested by the swarm's Wisdom check. If you lose the contest, the swarm behaves as it normally would and can't be swayed by the pipes' music for the next 24 hours. If you win the contest, the swarm is swayed by the pipes' music and becomes friendly to you and your companions for as long as you continue to play the pipes each round as an action. A friendly swarm obeys your commands. If you issue no commands to a friendly swarm, it defends itself but otherwise takes no actions. If a friendly swarm starts its turn and can't hear the pipes' music, your control over that swarm ends, and the swarm behaves as it normally would and can't be swayed by the pipes' music for the next 24 hours.
-*/
+	kind "Equipment" requires_attunement=true
+}
 /*
 	Plate Armor of Etherealness
 	Armor (plate), legendary (requires attunement)
 
 	While you're wearing this armor, you can speak its command word as an action to gain the effect of the etherealness spell, which last for 10 minutes or until you remove the armor or use an action to speak the command word again. This property of the armor can't be used again until the next dawn.
 */
-/*
-	Portable Hole
-	rarity "rare"
+item name="Portable Hole" {
+	description "This fine black cloth, soft as silk, is folded up to the dimensions of a handkerchief. It unfolds into a circular sheet 6 feet in diameter."{
+		section "You can use an action to unfold a portable hole and place it on or against a solid surface, whereupon the portable hole creates an extradimensional hole 10 feet deep. The cylindrical space within the hole exists on a different plane, so it can't be used to create open passages. Any creature inside an open portable hole can exit the hole by climbing out of it."
+		section "You can use an action to close a portable hole by taking hold of the edges of the cloth and folding it up. Folding the cloth closes the hole, and any creatures or objects within remain in the extradimensional space. No matter what's in it, the hole weighs next to nothing."
+		section "If the hole is folded up, a creature within the hole's extradimensional space can use an action to make a DC 10 Strength check. On a successful check, the creature forces its way out and appears within 5 feet of the portable hole or the creature carrying it. A breathing creature within a closed portable hole can survive for up to 10 minutes, after which time it begins to suffocate."
+		section "Placing a portable hole inside an extradimensional space created by a bag of holding, handy haversack, or similar item instantly destroys both items and opens a gate to the Astral Plane. The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate is sucked through it and deposited in a random location on the Astral Plane. The gate then closes. The gate is one-way only and can't be reopened."
+	}
+	rarity "Rare"
 	tag "Wonderous"
-	attunement
-
-	This fine black cloth, soft as silk, is folded up to the dimensions of a handkerchief. It unfolds into a circular sheet 6 feet in diameter.
-
-	You can use an action to unfold a portable hole and place it on or against a solid surface, whereupon the portable hole creates an extradimensional hole 10 feet deep. The cylindrical space within the hole exists on a different plane, so it can't be used to create open passages. Any creature inside an open portable hole can exit the hole by climbing out of it.
-
-	You can use an action to close a portable hole by taking hold of the edges of the cloth and folding it up. Folding the cloth closes the hole, and any creatures or objects within remain in the extradimensional space. No matter what's in it, the hole weighs next to nothing.
-
-	If the hole is folded up, a creature within the hole's extradimensional space can use an action to make a DC 10 Strength check. On a successful check, the creature forces its way out and appears within 5 feet of the portable hole or the creature carrying it. A breathing creature within a closed portable hole can survive for up to 10 minutes, after which time it begins to suffocate.
-
-	Placing a portable hole inside an extradimensional space created by a bag of holding, handy haversack, or similar item instantly destroys both items and opens a gate to the Astral Plane. The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate is sucked through it and deposited in a random location on the Astral Plane. The gate then closes. The gate is one-way only and can't be reopened.
-*/
-/*
-	Potion of Animal Friendship
-	Potion, uncommon
-
-	When you drink this potion, you can cast the animal friendship spell (save DC 13) for 1 hour at will. Agitating this muddy liquid brings little bits into view: a fish scale, a hummingbird tongue, a cat claw, or a squirrel hair.
-*/
-/*
-	Potion of Clairvoyance
-	Potion, rare
-
-	When you drink this potion, you gain the effect of the clairvoyance spell. An eyeball bobs in this yellowish liquid but vanishes when the potion is opened.
-*/
-/*
-	Potion of Climbing
-	Potion, common
-
-	When you drink this potion, you gain a climbing speed equal to your walking speed for 1 hour. During this time, you have advantage on Strength (Athletics) checks you make to climb. The potion is separated into brown, silver, and gray layers resembling bands of stone. Shaking the bottle fails to mix the colors.
-*/
-/*
-	Potion of Diminution
-	Potion, rare
-
-	When you drink this potion, you gain the “reduce” effect of the enlarge/reduce spell for 1d4 hours (no concentration required). The red in the potion's liquid continuously contracts to a tiny bead and then expands to color the clear liquid around it. Shaking the bottle fails to interrupt this process.
-*/
-/*
-	Potion of Flying
-	Potion, very rare
-
-	When you drink this potion, you gain a flying speed equal to your walking speed for 1 hour and can hover. If you're in the air when the potion wears off, you fall unless you have some other means of staying aloft. This potion's clear liquid floats at the top of its container and has cloudy white impurities drifting in it.
-*/
-/*
-	Potion of Gaseous Form
-	Potion, rare
-
-	When you drink this potion, you gain the effect of the gaseous form spell for 1 hour (no concentration required) or until you end the effect as a bonus action. This potion's container seems to hold fog that moves and pours like water.
-*/
+	kind "Equipment" requires_attunement=true
+}
+item name="Potion of Animal Friendship" {
+	description "When you drink this potion, you can cast the animal friendship spell (save DC 13) for 1 hour at will. Agitating this muddy liquid brings little bits into view: a fish scale, a hummingbird tongue, a cat claw, or a squirrel hair."
+	rarity "Uncommon"
+	tag "Potion"
+}
+item name="Potion of Clairvoyance" {
+	description "When you drink this potion, you gain the effect of the clairvoyance spell. An eyeball bobs in this yellowish liquid but vanishes when the potion is opened."
+	rarity "Rare"
+	tag "Potion"
+}
+item name="Potion of Climbing" {
+	description "When you drink this potion, you gain a climbing speed equal to your walking speed for 1 hour. During this time, you have advantage on Strength (Athletics) checks you make to climb. The potion is separated into brown, silver, and gray layers resembling bands of stone. Shaking the bottle fails to mix the colors."
+	rarity "Common"
+	tag "Potion"
+	kind "Equipment" requires_attunement=true
+}
+item name="Potion of Diminution" {
+	description "When you drink this potion, you gain the “reduce” effect of the enlarge/reduce spell for 1d4 hours (no concentration required). The red in the potion's liquid continuously contracts to a tiny bead and then expands to color the clear liquid around it. Shaking the bottle fails to interrupt this process."
+	rarity "Rare"
+	tag "Potion"
+}
+item name="Potion of Flying" {
+	description "When you drink this potion, you gain a flying speed equal to your walking speed for 1 hour and can hover. If you're in the air when the potion wears off, you fall unless you have some other means of staying aloft. This potion's clear liquid floats at the top of its container and has cloudy white impurities drifting in it."
+	rarity "VeryRare"
+	tag "Potion"
+	kind "Equipment" requires_attunement=true
+}
+item name="Potion of Gaseous Form" {
+	description "When you drink this potion, you gain the effect of the gaseous form spell for 1 hour (no concentration required) or until you end the effect as a bonus action. This potion's container seems to hold fog that moves and pours like water."
+	rarity "Rare"
+	tag "Potion"
+	kind "Equipment" requires_attunement=true
+}
 /*
 	Potion of Giant Strength
 	Potion, rarity varies
@@ -2086,26 +2023,24 @@ When you hit a giant with it, the giant takes an extra 2d6 damage of the weapon'
 
 	For 1 hour after drinking it, you gain 10 temporary hit points that last for 1 hour. For the same duration, you are under the effect of the bless spell (no concentration required). This blue potion bubbles and steams as if boiling.
 */
-/*
-	Potion of Invisibility
-	Potion, very rare
-
-	This potion's container looks empty but feels as though it holds liquid. When you drink it, you become invisible for 1 hour. Anything you wear or carry is invisible with you. The effect ends early if you attack or cast a spell.
-*/
-/*
-	Potion of Mind Reading
-	Potion, rare
-
-	When you drink this potion, you gain the effect of the detect thoughts spell (save DC 13). The potion's dense, purple liquid has an ovoid cloud of pink floating in it.
-*/
-/*
-	Potion of Poison
-	Potion, uncommon
-
-	This concoction looks, smells, and tastes like a potion of healing or other beneficial potion. However, it is actually poison masked by illusion magic. An identify spell reveals its true nature.
-
-	If you drink it, you take 3d6 poison damage, and you must succeed on a DC 13 Constitution saving throw or be poisoned. At the start of each of your turns while you are poisoned in this way, you take 3d6 poison damage. At the end of each of your turns, you can repeat the saving throw. On a successful save, the poison damage you take on your subsequent turns decreases by 1d6. The poison ends when the damage decreases to 0.
-*/
+item name="Potion of Invisibility" {
+	description "This potion's container looks empty but feels as though it holds liquid. When you drink it, you become invisible for 1 hour. Anything you wear or carry is invisible with you. The effect ends early if you attack or cast a spell."
+	rarity "VeryRare"
+	tag "Potion"
+	kind "Equipment" requires_attunement=true
+}
+item name="Potion of Mind Reading" {
+	description "When you drink this potion, you gain the effect of the detect thoughts spell (save DC 13). The potion's dense, purple liquid has an ovoid cloud of pink floating in it."
+	rarity "Rare"
+	tag "Potion"
+}
+item name="Potion of Poison" {
+	description "This concoction looks, smells, and tastes like a potion of healing or other beneficial potion. However, it is actually poison masked by illusion magic. An identify spell reveals its true nature." {
+		section "If you drink it, you take 3d6 poison damage, and you must succeed on a DC 13 Constitution saving throw or be poisoned. At the start of each of your turns while you are poisoned in this way, you take 3d6 poison damage. At the end of each of your turns, you can repeat the saving throw. On a successful save, the poison damage you take on your subsequent turns decreases by 1d6. The poison ends when the damage decreases to 0."
+	}
+	rarity "Uncommon"
+	tag "Potion"
+}
 /*
 	Potion of Resistance
 	Potion, uncommon
@@ -2118,41 +2053,43 @@ When you hit a giant with it, the giant takes an extra 2d6 damage of the weapon'
 	3	Fire	8	Psychic
 	4	Force	9	Radiant
 	5	Lightning	10	Thunder
-	Potion of Speed
-	Potion, very rare
-
-	When you drink this potion, you gain the effect of the haste spell for 1 minute (no concentration required). The potion's yellow fluid is streaked with black and swirls on its own.
 */
-/*
-	Potion of Vitality
-	Potion, very rare
-
-	When you drink this potion, it removes any exhaustion you are suffering and cures any disease or poison affecting you. For the next 24 hours, you regain the maximum number of hit points for any Hit Die you spend. The potion's crimson liquid regularly pulses with dull light, calling to mind a heartbeat.
-*/
-/*
-	Potion of Water Breathing
-	Potion, uncommon
-
-	You can breathe underwater for 1 hour after drinking this potion. Its cloudy green fluid smells of the sea and has a jellyfish-like bubble floating in it.
-*/
-/*
-	Ring of Animal Influence
-	Ring, rare
-
-	This ring has 3 charges, and it regains 1d3 expended charges daily at dawn. While wearing the ring, you can use an action to expend 1 of its charges to cast one of the following spells:
-
-	Animal friendship (save DC 13)
-	Fear (save DC 13), targeting only beasts that have an Intelligence of 3 or lower
-	Speak with animals
-	Ring of Djinni Summoning
-	Ring, legendary (requires attunement)
-
-	While wearing this ring, you can speak its command word as an action to summon a particular djinni from the Elemental Plane of Air. The djinni appears in an unoccupied space you choose within 120 feet of you. It remains as long as you concentrate (as if concentrating on a spell), to a maximum of 1 hour, or until it drops to 0 hit points. It then returns to its home plane.
-
-	While summoned, the djinni is friendly to you and your companions. It obeys any commands you give it, no matter what language you use. If you fail to command it, the djinni defends itself against attackers but takes no other actions.
-
-	After the djinni departs, it can't be summoned again for 24 hours, and the ring becomes nonmagical if the djinni dies.
-*/
+item name="Potion of Speed" {
+	description "When you drink this potion, you gain the effect of the haste spell for 1 minute (no concentration required). The potion's yellow fluid is streaked with black and swirls on its own."
+	rarity "VeryRare"
+	tag "Potion"
+}
+item name="Potion of Vitality" {
+	description "When you drink this potion, it removes any exhaustion you are suffering and cures any disease or poison affecting you. For the next 24 hours, you regain the maximum number of hit points for any Hit Die you spend. The potion's crimson liquid regularly pulses with dull light, calling to mind a heartbeat."
+	rarity "VeryRare"
+	tag "Potion"
+}
+item name="Potion of Water Breathing" {
+	description "You can breathe underwater for 1 hour after drinking this potion. Its cloudy green fluid smells of the sea and has a jellyfish-like bubble floating in it."
+	rarity "Uncommon"
+	tag "Potion"
+}
+item name="Ring of Animal Influence" {
+	description {
+		section "This ring has 3 charges, and it regains 1d3 expended charges daily at dawn. While wearing the ring, you can use an action to expend 1 of its charges to cast one of the following spells:"
+		section "Animal friendship (save DC 13)"
+		section "Fear (save DC 13), targeting only beasts that have an Intelligence of 3 or lower"
+		section "Speak with animals"
+	}
+	rarity "Uncommon"
+	tag "Ring"
+	kind "Equipment"
+}
+item name="Ring of Djinni Summoning" {
+	description {
+		section "While wearing this ring, you can speak its command word as an action to summon a particular djinni from the Elemental Plane of Air. The djinni appears in an unoccupied space you choose within 120 feet of you. It remains as long as you concentrate (as if concentrating on a spell), to a maximum of 1 hour, or until it drops to 0 hit points. It then returns to its home plane."
+		section "While summoned, the djinni is friendly to you and your companions. It obeys any commands you give it, no matter what language you use. If you fail to command it, the djinni defends itself against attackers but takes no other actions."
+		section "After the djinni departs, it can't be summoned again for 24 hours, and the ring becomes nonmagical if the djinni dies."
+	}
+	rarity "Legendary"
+	tag "Ring"
+	kind "Equipment" requires_attunement=true
+}
 /*
 	Ring of Elemental Command
 	Ring, legendary (requires attunement)
@@ -2193,58 +2130,58 @@ When you hit a giant with it, the giant takes an extra 2d6 damage of the weapon'
 	You can breathe underwater and have a swimming speed equal to your walking speed.
 	You can cast the following spells from the ring, expending the necessary number of charges: create or destroy water (1 charge), control water (3 charges), ice storm (2 charges), or wall of ice (3 charges).
 */
-/*
-	Ring of Evasion
-	Ring, rare (requires attunement)
-
-	This ring has 3 charges, and it regains 1d3 expended charges daily at dawn. When you fail a Dexterity saving throw while wearing it, you can use your reaction to expend 1 of its charges to succeed on that saving throw instead.
-*/
-/*
-	Ring of Feather Falling
-	Ring, rare (requires attunement)
-
-	When you fall while wearing this ring, you descend 60 feet per round and take no damage from falling.
-*/
-/*
-	Ring of Free Action
-	Ring, rare (requires attunement)
-
-	While you wear this ring, difficult terrain doesn't cost you extra movement. In addition, magic can neither reduce your speed nor cause you to be paralyzed or restrained.
-*/
-/*
-	Ring of Invisibility
-	Ring, legendary (requires attunement)
-
-	While wearing this ring, you can turn invisible as an action. Anything you are wearing or carrying is invisible with you. You remain invisible until the ring is removed, until you attack or cast a spell, or until you use a bonus action to become visible again.
-*/
-/*
-	Ring of Jumping
-	Ring, uncommon (requires attunement)
-
-	While wearing this ring, you can cast the jump spell from it as a bonus action at will, but can target only yourself when you do so.
-*/
-/*
-	Ring of Mind Shielding
-	Ring, uncommon (requires attunement)
-
-	While wearing this ring, you are immune to magic that allows other creatures to read your thoughts, determine whether you are lying, know your alignment, or know your creature type. Creatures can telepathically communicate with you only if you allow it.
-
-	You can use an action to cause the ring to become invisible until you use another action to make it visible, until you remove the ring, or until you die.
-
-	If you die while wearing the ring, your soul enters it, unless it already houses a soul. You can remain in the ring or depart for the afterlife. As long as your soul is in the ring, you can telepathically communicate with any creature wearing it. A wearer can't prevent this telepathic communication.
-*/
-/*
-	Ring of Protection
-	Ring, rare (requires attunement)
-
-	You gain a +1 bonus to AC and saving throws while wearing this ring.
-*/
-/*
-	Ring of Regeneration
-	Ring, very rare (requires attunement)
-
-	While wearing this ring, you regain 1d6 hit points every 10 minutes, provided that you have at least 1 hit point. If you lose a body part, the ring causes the missing part to regrow and return to full functionality after 1d6 + 1 days if you have at least 1 hit point the whole time.
-*/
+item name="Ring of Evasion" {
+	description "This ring has 3 charges, and it regains 1d3 expended charges daily at dawn. When you fail a Dexterity saving throw while wearing it, you can use your reaction to expend 1 of its charges to succeed on that saving throw instead."
+	rarity "Rare"
+	tag "Ring"
+	kind "Equipment" requires_attunement=true
+}
+item name="Ring of Feather Falling" {
+	description "When you fall while wearing this ring, you descend 60 feet per round and take no damage from falling."
+	rarity "Rare"
+	tag "Ring"
+	kind "Equipment" requires_attunement=true
+}
+item name="Ring of Free Action" {
+	description "While you wear this ring, difficult terrain doesn't cost you extra movement. In addition, magic can neither reduce your speed nor cause you to be paralyzed or restrained."
+	rarity "Rare"
+	tag "Ring"
+	kind "Equipment" requires_attunement=true
+}
+item name="Ring of Invisibility" {
+	description "While wearing this ring, you can turn invisible as an action. Anything you are wearing or carrying is invisible with you. You remain invisible until the ring is removed, until you attack or cast a spell, or until you use a bonus action to become visible again."
+	rarity "Legendary"
+	tag "Ring"
+	kind "Equipment" requires_attunement=true
+}
+item name="Ring of Jumping" {
+	description "While wearing this ring, you can cast the jump spell from it as a bonus action at will, but can target only yourself when you do so."
+	rarity "Uncommon"
+	tag "Ring"
+	kind "Equipment" requires_attunement=true
+}
+item name="Ring of Mind Shielding" {
+	description {
+		section "While wearing this ring, you are immune to magic that allows other creatures to read your thoughts, determine whether you are lying, know your alignment, or know your creature type. Creatures can telepathically communicate with you only if you allow it."
+		section "You can use an action to cause the ring to become invisible until you use another action to make it visible, until you remove the ring, or until you die."
+		section "If you die while wearing the ring, your soul enters it, unless it already houses a soul. You can remain in the ring or depart for the afterlife. As long as your soul is in the ring, you can telepathically communicate with any creature wearing it. A wearer can't prevent this telepathic communication."
+	}
+	rarity "Uncommon"
+	tag "Ring"
+	kind "Equipment" requires_attunement=true
+}
+item name="Ring of Protection" {
+	description "You gain a +1 bonus to AC and saving throws while wearing this ring."
+	rarity "Rare"
+	tag "Ring"
+	kind "Equipment" requires_attunement=true
+}
+item name="Ring of Regeneration" {
+	description "While wearing this ring, you regain 1d6 hit points every 10 minutes, provided that you have at least 1 hit point. If you lose a body part, the ring causes the missing part to regrow and return to full functionality after 1d6 + 1 days if you have at least 1 hit point the whole time."
+	rarity "VeryRare"
+	tag "Ring"
+	kind "Equipment" requires_attunement=true
+}
 /*
 	Ring of Resistance
 	Ring, rare (requires attunement)
@@ -2286,93 +2223,89 @@ When you hit a giant with it, the giant takes an extra 2d6 damage of the weapon'
 	1	4d12
 	Shooting Stars. You can expend 1 to 3 charges as an action. For every charge you expend, you launch a glowing mote of light from the ring at a point you can see within 60 feet of you. Each creature within a 15-foot cube originating from that point is showered in sparks and must make a DC 15 Dexterity saving throw, taking 5d4 fire damage on a failed save, or half as much damage on a successful one.
 */
-/*
-	Ring of Spell Turning
-	Ring, legendary (requires attunement)
-
-	While wearing this ring, you have advantage on saving throws against any spell that targets only you (not in an area of effect). In addition, if you roll a 20 for the save and the spell is 7th level or lower, the spell has no effect on you and instead targets the caster, using the slot level, spell save DC, attack bonus, and spellcasting ability of the caster.
-*/
-/*
-	Ring of Swimming
-	Ring, uncommon
-
-	You have a swimming speed of 40 feet while wearing this ring.
-*/
-/*
-	Ring of Telekinesis
-	Ring, very rare (requires attunement)
-
-	While wearing this ring, you can cast the telekinesis spell at will, but you can target only objects that aren't being worn or carried.
-*/
-/*
-	Ring of the Ram
-	Ring, rare (requires attunement)
-
-	This ring has 3 charges, and it regains 1d3 expended charges daily at dawn. While wearing the ring, you can use an action to expend 1 to 3 of its charges to make a ranged spell attack against one creature you can see within 60 feet of you. The ring produces a spectral ram's head and makes its attack roll with a +7 bonus. On a hit, for each charge you spend, the target takes 2d10 force damage and is pushed 5 feet awayfrom you.
-
-	Alternatively, you can expend 1 to 3 of the ring's charges as an action to try to break an object you can see within 60 feet of you that isn't being worn or carried. The ring makes a Strength check with a +5 bonus for each charge you spend.
-*/
-/*
-	Ring of Three Wishes
-	Ring, legendary
-
-	While wearing this ring, you can use an action to expend 1 of its 3 charges to cast the wish spell from it. The ring becomes nonmagical when you use the last charge.
-*/
-/*
-	Ring of Warmth
-	Ring, uncommon (requires attunement)
-
-	While wearing this ring, you have resistance to cold damage. In addition, you and everything you wear and carry are unharmed by temperatures as low as −50 degrees Fahrenheit.
-*/
-/*
-	Ring of Water Walking
-	Ring, uncommon
-
-	While wearing this ring, you can stand on and move across any liquid surface as if it were solid ground.
-*/
-/*
-	Ring of X-ray Vision
-	Ring, rare (requires attunement)
-
-	While wearing this ring, you can use an action to speak its command word. When you do so, you can see into and through solid matter for 1 minute. This vision has a radius of 30 feet. To you, solid objects within that radius appear transparent and don't prevent light from passing through them. The vision can penetrate 1 foot of stone, 1 inch of common metal, or up to 3 feet of wood or dirt. Thicker substances block the vision, as does a thin sheet of lead.
-
-	Whenever you use the ring again before taking a long rest, you must succeed on a DC 15 Constitution saving throw or gain one level of exhaustion.
-*/
-/*
-	Robe of Eyes
-	rarity "rare"
+item name="Ring of Spell Turning" {
+	description "While wearing this ring, you have advantage on saving throws against any spell that targets only you (not in an area of effect). In addition, if you roll a 20 for the save and the spell is 7th level or lower, the spell has no effect on you and instead targets the caster, using the slot level, spell save DC, attack bonus, and spellcasting ability of the caster."
+	rarity "Legendary"
+	tag "Ring"
+	kind "Equipment" requires_attunement=true
+}
+item name="Ring of Swimming" {
+	description "You have a swimming speed of 40 feet while wearing this ring."
+	rarity "Uncommon"
+	tag "Ring"
+	kind "Equipment"
+}
+item name="Ring of Telekinesis" {
+	description "While wearing this ring, you can cast the telekinesis spell at will, but you can target only objects that aren't being worn or carried."
+	rarity "VeryRare"
+	tag "Ring"
+	kind "Equipment" requires_attunement=true
+}
+item name="Ring of the Ram" {
+	description {
+		section "This ring has 3 charges, and it regains 1d3 expended charges daily at dawn. While wearing the ring, you can use an action to expend 1 to 3 of its charges to make a ranged spell attack against one creature you can see within 60 feet of you. The ring produces a spectral ram's head and makes its attack roll with a +7 bonus. On a hit, for each charge you spend, the target takes 2d10 force damage and is pushed 5 feet awayfrom you."
+		section "Alternatively, you can expend 1 to 3 of the ring's charges as an action to try to break an object you can see within 60 feet of you that isn't being worn or carried. The ring makes a Strength check with a +5 bonus for each charge you spend."
+	}
+	rarity "Rare"
+	tag "Ring"
+	kind "Equipment" requires_attunement=true
+}
+item name="Ring of Three Wishes" {
+	description "While wearing this ring, you can use an action to expend 1 of its 3 charges to cast the wish spell from it. The ring becomes nonmagical when you use the last charge."
+	rarity "Legendary"
+	tag "Ring"
+	kind "Equipment"
+}
+item name="Ring of Warmth" {
+	description "While wearing this ring, you have resistance to cold damage. In addition, you and everything you wear and carry are unharmed by temperatures as low as −50 degrees Fahrenheit."
+	rarity "Uncommon"
+	tag "Ring"
+	kind "Equipment" requires_attunement=true
+}
+item name="Ring of Water Walking" {
+	description "While wearing this ring, you can stand on and move across any liquid surface as if it were solid ground."
+	rarity "Uncommon"
+	tag "Ring"
+	kind "Equipment"
+}
+item name="Ring of X-ray Vision" {
+	description {
+		section "While wearing this ring, you can use an action to speak its command word. When you do so, you can see into and through solid matter for 1 minute. This vision has a radius of 30 feet. To you, solid objects within that radius appear transparent and don't prevent light from passing through them. The vision can penetrate 1 foot of stone, 1 inch of common metal, or up to 3 feet of wood or dirt. Thicker substances block the vision, as does a thin sheet of lead."
+		section "Whenever you use the ring again before taking a long rest, you must succeed on a DC 15 Constitution saving throw or gain one level of exhaustion."
+	}
+	rarity "Rare"
+	tag "Ring"
+	kind "Equipment" requires_attunement=true
+}
+item name="Robe of Eyes" {
+	description {
+		section "This robe is adorned with eyelike patterns. While you wear the robe, you gain the following benefits:"
+		section "The robe lets you see in all directions, and you have advantage on Wisdom (Perception) checks that rely on sight."
+		section "You have darkvision out to a range of 120 feet."
+		section "You can see invisible creatures and objects, as well as see into the Ethereal Plane, out to a range of 120 feet.
+	The eyes on the robe can't be closed or averted. Although you can close or avert your own eyes, you are never considered to be doing so while wearing this robe."
+		section "A light spell cast on the robe or a daylight spell cast within 5 feet of the robe causes you to be blinded for 1 minute. At the end of each of your turns, you can make a Constitution saving throw (DC 11 for light or DC 15 for daylight), ending the blindness on a success."
+	}
+	rarity "Rare"
 	tag "Wonderous"
-	attunement)
-
-	This robe is adorned with eyelike patterns. While you wear the robe, you gain the following benefits:
-
-	The robe lets you see in all directions, and you have advantage on Wisdom (Perception) checks that rely on sight.
-	You have darkvision out to a range of 120 feet.
-	You can see invisible creatures and objects, as well as see into the Ethereal Plane, out to a range of 120 feet.
-	The eyes on the robe can't be closed or averted. Although you can close or avert your own eyes, you are never considered to be doing so while wearing this robe.
-
-	A light spell cast on the robe or a daylight spell cast within 5 feet of the robe causes you to be blinded for 1 minute. At the end of each of your turns, you can make a Constitution saving throw (DC 11 for light or DC 15 for daylight), ending the blindness on a success.
-*/
-/*
-	Robe of Scintillating Colors
-	rarity "very rare"
+	kind "Equipment" requires_attunement=true
+}
+item name="Robe of Scintillating Colors" {
+	description "This robe has 3 charges, and it regains 1d3 expended charges daily at dawn. While you wear it, you can use an action and expend 1 charge to cause the garment to display a shifting pattern of dazzling hues until the end of your next turn. During this time, the robe sheds bright light in a 30-foot radius and dim light for an additional 30 feet. Creatures that can see you have disadvantage on attack rolls against you. In addition, any creature in the bright light that can see you when the robe's power is activated must succeed on a DC 15 Wisdom saving throw or become stunned until the effect ends."
+	rarity "VeryRare"
 	tag "Wonderous"
-	attunement)
-
-	This robe has 3 charges, and it regains 1d3 expended charges daily at dawn. While you wear it, you can use an action and expend 1 charge to cause the garment to display a shifting pattern of dazzling hues until the end of your next turn. During this time, the robe sheds bright light in a 30-foot radius and dim light for an additional 30 feet. Creatures that can see you have disadvantage on attack rolls against you. In addition, any creature in the bright light that can see you when the robe's power is activated must succeed on a DC 15 Wisdom saving throw or become stunned until the effect ends.
-*/
-/*
-	Robe of Stars
-	rarity "very rare"
+	kind "Equipment" requires_attunement=true
+}
+item name="Robe of Stars" {
+	description {
+		section "This black or dark blue robe is embroidered with small white or silver stars. You gain a +1 bonus to saving throws while you wear it."
+		section "Six stars, located on the robe's upper front portion, are particularly large. While wearing this robe, you can use an action to pull off one of the stars and use it to cast magic missile as a 5th-level spell. Daily at dusk, 1d6 removed stars reappear on the robe."
+		section "While you wear the robe, you can use an action to enter the Astral Plane along with everything you are wearing and carrying. You remain there until you use an action to return to the plane you were on. You reappear in the last space you occupied, or if that space is occupied, the nearest unoccupied space."
+	}
+	rarity "VeryRare"
 	tag "Wonderous"
-	attunement)
-
-	This black or dark blue robe is embroidered with small white or silver stars. You gain a +1 bonus to saving throws while you wear it.
-
-	Six stars, located on the robe's upper front portion, are particularly large. While wearing this robe, you can use an action to pull off one of the stars and use it to cast magic missile as a 5th-level spell. Daily at dusk, 1d6 removed stars reappear on the robe.
-
-	While you wear the robe, you can use an action to enter the Astral Plane along with everything you are wearing and carrying. You remain there until you use an action to return to the plane you were on. You reappear in the last space you occupied, or if that space is occupied, the nearest unoccupied space.
-*/
+	kind "Equipment" requires_attunement=true
+}
 /*
 	Robe of the Archmagi
 	rarity "legendary"
@@ -2470,55 +2403,50 @@ When you hit a giant with it, the giant takes an extra 2d6 damage of the weapon'
 
 	Terrify. While holding the rod, you can use an action to force each creature you can see within 30 feet of you to make a DC 17 Wisdom saving throw. On a failure, a target is frightened of you for 1 minute. A frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. This property can't be used again until the next dawn.
 */
-/*
-	Rod of Rulership
-	Rod, rare (requires attunement)
-
-	You can use an action to present the rod and command obedience from each creature of your choice that you can see within 120 feet of you. Each target must succeed on a DC 15 Wisdom saving throw or be charmed by you for 8 hours. While charmed in this way, the creature regards you as its trusted leader. If harmed by you or your companions, or commanded to do something contrary to its nature, a target ceases to be charmed in this way. The rod can't be used again until the next dawn.
-*/
-/*
-	Rod of Security
-	Rod, very rare
-
-	While holding this rod, you can use an action to activate it. The rod then instantly transports you and up to 199 other willing creatures you can see to a paradise that exists in an extraplanar space. You choose the form that the paradise takes. It could be a tranquil garden, lovely glade, cheery tavern, immense palace, tropical island, fantastic carnival, or whatever else you can imagine. Regardless of its nature, the paradise contains enough water and food to sustain its visitors. Everything else that can be interacted with inside the extraplanar space can exist only there. For example, a flower picked from a garden in the paradise disappears if it is taken outside the extraplanar space.
-
-	For each hour spent in the paradise, a visitor regains hit points as if it had spent 1 Hit Die. Also, creatures don't age while in the paradise, although time passes normally. Visitors can remain in the paradise for up to 200 days divided by the number of creatures present (round down).
-
-	When the time runs out or you use an action to end it, all visitors reappear in the location they occupied when you activated the rod, or an unoccupied space nearest that location. The rod can't be used again until ten days have passed.
-*/
-/*
-	Rope of Climbing
-	rarity "uncommon"
+item name="Rod of Rulership" {
+	description "You can use an action to present the rod and command obedience from each creature of your choice that you can see within 120 feet of you. Each target must succeed on a DC 15 Wisdom saving throw or be charmed by you for 8 hours. While charmed in this way, the creature regards you as its trusted leader. If harmed by you or your companions, or commanded to do something contrary to its nature, a target ceases to be charmed in this way. The rod can't be used again until the next dawn."
+	rarity "Rare"
+	tag "Rod"
+	kind "Equipment" requires_attunement=true
+}
+item name="Rod of Security" {
+	description {
+		section "While holding this rod, you can use an action to activate it. The rod then instantly transports you and up to 199 other willing creatures you can see to a paradise that exists in an extraplanar space. You choose the form that the paradise takes. It could be a tranquil garden, lovely glade, cheery tavern, immense palace, tropical island, fantastic carnival, or whatever else you can imagine. Regardless of its nature, the paradise contains enough water and food to sustain its visitors. Everything else that can be interacted with inside the extraplanar space can exist only there. For example, a flower picked from a garden in the paradise disappears if it is taken outside the extraplanar space."
+		section "For each hour spent in the paradise, a visitor regains hit points as if it had spent 1 Hit Die. Also, creatures don't age while in the paradise, although time passes normally. Visitors can remain in the paradise for up to 200 days divided by the number of creatures present (round down)."
+		section "When the time runs out or you use an action to end it, all visitors reappear in the location they occupied when you activated the rod, or an unoccupied space nearest that location. The rod can't be used again until ten days have passed."
+	}
+	rarity "VeryRare"
+	tag "Rod"
+}
+item name="Rope of Climbing" {
+	description {
+		section "This 60-foot length of silk rope weighs 3 pounds and can hold up to 3,000 pounds. If you hold one end of the rope and use an action to speak the command word, the rope animates. As a bonus action, you can command the other end to move toward a destination you choose. That end moves 10 feet on your turn when you first command it and 10 feet on each of your turns until reaching its destination, up to its maximum length away, or until you tell it to stop. You can also tell the rope to fasten itself securely to an object or to unfasten itself, to knot or unknot itself, or to coil itself for carrying."
+		section "If you tell the rope to knot, large knots appear at 1-foot intervals along the rope. While knotted, the rope shortens to a 50-foot length and grants advantage on checks made to climb it."
+		section "The rope has AC 20 and 20 hit points. It regains 1 hit point every 5 minutes as long as it has at least 1 hit point. If the rope drops to 0 hit points, it is destroyed."
+	}
+	rarity "Uncommon"
 	tag "Wonderous"
-	attunement
-
-	This 60-foot length of silk rope weighs 3 pounds and can hold up to 3,000 pounds. If you hold one end of the rope and use an action to speak the command word, the rope animates. As a bonus action, you can command the other end to move toward a destination you choose. That end moves 10 feet on your turn when you first command it and 10 feet on each of your turns until reaching its destination, up to its maximum length away, or until you tell it to stop. You can also tell the rope to fasten itself securely to an object or to unfasten itself, to knot or unknot itself, or to coil itself for carrying.
-
-	If you tell the rope to knot, large knots appear at 1-foot intervals along the rope. While knotted, the rope shortens to a 50-foot length and grants advantage on checks made to climb it.
-
-	The rope has AC 20 and 20 hit points. It regains 1 hit point every 5 minutes as long as it has at least 1 hit point. If the rope drops to 0 hit points, it is destroyed.
-*/
-/*
-	Rope of Entanglement
-	rarity "rare"
+	kind "Equipment" requires_attunement=true
+}
+item name="Rope of Entanglement" {
+	description {
+		section "This rope is 30 feet long and weighs 3 pounds. If you hold one end of the rope and use an action to speak its command word, the other end darts forward to entangle a creature you can see within 20 feet of you. The target must succeed on a DC 15 Dexterity saving throw or become restrained."
+		section "You can release the creature by using a bonus action to speak a second command word. A target restrained by the rope can use an action to make a DC 15 Strength or Dexterity check (target's choice). On a success, the creature is no longer restrained by the rope."
+	}
+	rarity "Rare"
 	tag "Wonderous"
-	attunement
-
-	This rope is 30 feet long and weighs 3 pounds. If you hold one end of the rope and use an action to speak its command word, the other end darts forward to entangle a creature you can see within 20 feet of you. The target must succeed on a DC 15 Dexterity saving throw or become restrained.
-
-	You can release the creature by using a bonus action to speak a second command word. A target restrained by the rope can use an action to make a DC 15 Strength or Dexterity check (target's choice). On a success, the creature is no longer restrained by the rope.
-*/
-/*
-	Scarab of Protection
-	rarity "legendary"
+	kind "Equipment" requires_attunement=true
+}
+item name="Scarab of Protection" {
+	description {
+		section "If you hold this beetle-shaped medallion in your hand for 1 round, an inscription appears on its surface revealing its magical nature. It provides two benefits while it is on your person:"
+		section "You have advantage on saving throws against spells."
+		section "The scarab has 12 charges. If you fail a saving throw against a necromancy spell or a harmful effect originating from an undead creature, you can use your reaction to expend 1 charge and turn the failed save into a successful one. The scarab crumbles into powder and is destroyed when its last charge is expended."
+	}
+	rarity "Legendary"
 	tag "Wonderous"
-	attunement)
-
-	If you hold this beetle-shaped medallion in your hand for 1 round, an inscription appears on its surface revealing its magical nature. It provides two benefits while it is on your person:
-
-	You have advantage on saving throws against spells.
-	The scarab has 12 charges. If you fail a saving throw against a necromancy spell or a harmful effect originating from an undead creature, you can use your reaction to expend 1 charge and turn the failed save into a successful one. The scarab crumbles into powder and is destroyed when its last charge is expended.
-*/
+	kind "Equipment" requires_attunement=true
+}
 /*
 	Scimitar of Speed
 	rarity "very rare"
@@ -2541,24 +2469,21 @@ When you hit a giant with it, the giant takes an extra 2d6 damage of the weapon'
 
 	Curse. This shield is cursed. Attuning to it curses you until you are targeted by the remove curse spell or similar magic. Removing the shield fails to end the curse on you. Whenever a ranged weapon attack is made against a target within 10 feet of you, the curse causes you to become the target instead.
 */
-/*
-	Slippers of Spider Climbing
-	rarity "uncommon"
+item name="Slippers of Spider Climbing" {
+	description "While you wear these light shoes, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free. You have a climbing speed equal to your walking speed. However, the slippers don't allow you to move this way on a slippery surface, such as one covered by ice or oil."
+	rarity "Uncommon"
 	tag "Wonderous"
-	attunement)
-
-	While you wear these light shoes, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free. You have a climbing speed equal to your walking speed. However, the slippers don't allow you to move this way on a slippery surface, such as one covered by ice or oil.
-*/
-/*
-	Sovereign Glue
-	rarity "legendary"
+	kind "Equipment" requires_attunement=true
+}
+item name="Sovereign Glue" {
+	description {
+		section "This viscous, milky-white substance can form a permanent adhesive bond between any two objects. It must be stored in a jar or flask that has been coated inside with oil of slipperiness. When found, a container contains 1d6 + 1 ounces."
+		section "One ounce of the glue can cover a 1-foot square surface. The glue takes 1 minute to set. Once it has done so, the bond it creates can be broken only by the application of universal solvent or oil of etherealness, or with a wish spell."
+	}
+	rarity "Legendary"
 	tag "Wonderous"
-	attunement
-
-	This viscous, milky-white substance can form a permanent adhesive bond between any two objects. It must be stored in a jar or flask that has been coated inside with oil of slipperiness. When found, a container contains 1d6 + 1 ounces.
-
-	One ounce of the glue can cover a 1-foot square surface. The glue takes 1 minute to set. Once it has done so, the bond it creates can be broken only by the application of universal solvent or oil of etherealness, or with a wish spell.
-*/
+	kind "Equipment" requires_attunement=true
+}
 /*
 	Spellguard Shield
 	Armor (shield), very rare (requires attunement)
@@ -2720,22 +2645,18 @@ When you hit a giant with it, the giant takes an extra 2d6 damage of the weapon'
 
 	The staff can be wielded as a magic quarterstaff. On a hit, it deals damage as a normal quarterstaff, and you can expend 1 charge to deal an extra 2d10 necrotic damage to the target. In addition, the target must succeed on a DC 15 Constitution saving throw or have disadvantage for 1 hour on any ability check or saving throw that uses Strength or Constitution.
 */
-/*
-	Stone of Controlling Earth Elementals
-	rarity "rare"
+item name="Stone of Controlling Earth Elementals" {
+	description "If the stone is touching the ground, you can use an action to speak its command word and summon an earth elemental, as if you had cast the conjure elemental spell. The stone can't be used this way again until the next dawn. The stone weighs 5 pounds."
+	rarity "Rare"
 	tag "Wonderous"
-	attunement
-
-	If the stone is touching the ground, you can use an action to speak its command word and summon an earth elemental, as if you had cast the conjure elemental spell. The stone can't be used this way again until the next dawn. The stone weighs 5 pounds.
-*/
-/*
-	Stone of Good Luck (Luckstone)
-	rarity "uncommon"
+	kind "Equipment" requires_attunement=true
+}
+item name="Stone of Good Luck (Luckstone)" {
+	description "While this polished agate is on your person, you gain a +1 bonus to ability checks and saving throws."
+	rarity "Uncommon"
 	tag "Wonderous"
-	attunement)
-
-	While this polished agate is on your person, you gain a +1 bonus to ability checks and saving throws.
-*/
+	kind "Equipment" requires_attunement=true
+}
 /*
 	Sun Blade
 	rarity "rare"
@@ -2790,14 +2711,12 @@ When you hit a giant with it, the giant takes an extra 2d6 damage of the weapon'
 
 	The talisman has 7 charges. If you are wearing or holding it, you can use an action to expend 1 charge from it and choose one creature you can see on the ground within 120 feet of you. If the target is of evil alignment, a flaming fissure opens under it. The target must succeed on a DC 20 Dexterity saving throw or fall into the fissure and be destroyed, leaving no remains. The fissure then closes, leaving no trace of its existence. When you expend the last charge, the talisman disperses into motes of golden light and is destroyed.
 */
-/*
-	Talisman of the Sphere
-	rarity "legendary"
+item name="Talisman of the Sphere" {
+	description "When you make an Intelligence (Arcana) check to control a sphere of annihilation while you are holding this talisman, you double your proficiency bonus on the check. In addition, when you start your turn with control over a sphere of annihilation, you can use an action to levitate it 10 feet plus a number of additional feet equal to 10 x your Intelligence modifier."
+	rarity "Legendary"
 	tag "Wonderous"
-	attunement)
-
-	When you make an Intelligence (Arcana) check to control a sphere of annihilation while you are holding this talisman, you double your proficiency bonus on the check. In addition, when you start your turn with control over a sphere of annihilation, you can use an action to levitate it 10 feet plus a number of additional feet equal to 10 × your Intelligence modifier.
-*/
+	kind "Equipment" requires_attunement=true
+}
 /*
 	Talisman of Ultimate Evil
 	rarity "legendary"
@@ -2810,30 +2729,24 @@ When you hit a giant with it, the giant takes an extra 2d6 damage of the weapon'
 
 	The talisman has 6 charges. If you are wearing or holding it, you can use an action to expend 1 charge from the talisman and choose one creature you can see on the ground within 120 feet of you. If the target is of good alignment, a flaming fissure opens under it. The target must succeed on a DC 20 Dexterity saving throw or fall into the fissure and be destroyed, leaving no remains. The fissure then closes, leaving no trace of its existence. When you expend the last charge, the talisman dissolves into foul-smelling slime and is destroyed.
 */
-/*
-	Tome of Clear Thought
-	rarity "very rare"
+item name="Tome of Clear Thought" {
+	description "This book contains memory and logic exercises, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Intelligence score increases by 2, as does your maximum for that score. The manual then loses its magic, but regains it in a century."
+	rarity "VeryRare"
 	tag "Wonderous"
-	attunement
-
-	This book contains memory and logic exercises, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Intelligence score increases by 2, as does your maximum for that score. The manual then loses its magic, but regains it in a century.
-*/
-/*
-	Tome of Leadership and Influence
-	rarity "very rare"
+	kind "Equipment" requires_attunement=true
+}
+item name="Tome of Leadership and Influence" {
+	description "This book contains guidelines for influencing and charming others, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Charisma score increases by 2, as does your maximum for that score. The manual then loses its magic, but regains it in a century."
+	rarity "VeryRare"
 	tag "Wonderous"
-	attunement
-
-	This book contains guidelines for influencing and charming others, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Charisma score increases by 2, as does your maximum for that score. The manual then loses its magic, but regains it in a century.
-*/
-/*
-	Tome of Understanding
-	rarity "very rare"
+	kind "Equipment" requires_attunement=true
+}
+item name="Tome of Understanding" {
+	description "This book contains intuition and insight exercises, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Wisdom score increases by 2, as does your maximum for that score. The manual then loses its magic, but regains it in a century."
+	rarity "VeryRare"
 	tag "Wonderous"
-	attunement
-
-	This book contains intuition and insight exercises, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Wisdom score increases by 2, as does your maximum for that score. The manual then loses its magic, but regains it in a century.
-*/
+	kind "Equipment" requires_attunement=true
+}
 /*
 	Trident of Fish Command
 	rarity "uncommon"
