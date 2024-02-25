@@ -3,4 +3,5 @@ item name="Tome of Understanding" {
 	rarity "VeryRare"
 	tag "Wonderous"
 	kind "Equipment" requires_attunement=true
+	// TODO: button to consume book and apply feat, with a charge that indicates if that action can be done
 }

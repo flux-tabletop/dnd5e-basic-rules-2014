@@ -1,0 +1,103 @@
+// TODO: generator for Belt of * Giant Strength
+item name="Belt of Cloud Giant Strength" {
+	description "While wearing this belt, your Strength score is 27 if your Strength without the belt is less than 27.
+	Six varieties of this belt exist, corresponding with and having rarity according to the six kinds of true giants. The belt of stone giant strength and the belt of frost giant strength look different, but they have the same effect."
+	rarity "Legendary"
+	tag "Wonderous"
+	kind "Equipment" requires_attunement=true {
+		/*
+		criteria (Evaluator)"check_ability_score" {
+			max 27
+		}
+		*/
+		mutator "ability_score" {
+			ability "Specific" "Strength"
+			fixed 27 // TODO: fixed ability score
+		}
+	}
+}
+item name="Belt of Fire Giant Strength" {
+	description "While wearing this belt, your Strength score is 25 if your Strength without the belt is less than 25.
+	Six varieties of this belt exist, corresponding with and having rarity according to the six kinds of true giants. The belt of stone giant strength and the belt of frost giant strength look different, but they have the same effect."
+	rarity "VeryRare"
+	tag "Wonderous"
+	kind "Equipment" requires_attunement=true {
+		/*
+		criteria (Evaluator)"check_ability_score" {
+			max 25
+		}
+		*/
+		mutator "ability_score" {
+			ability "Specific" "Strength"
+			fixed 25 // TODO: fixed ability score
+		}
+	}
+}
+item name="Belt of Frost Giant Strength" {
+	description "While wearing this belt, your Strength score is 23 if your Strength without the belt is less than 23.
+	Six varieties of this belt exist, corresponding with and having rarity according to the six kinds of true giants. The belt of stone giant strength and the belt of frost giant strength look different, but they have the same effect."
+	rarity "VeryRare"
+	tag "Wonderous"
+	kind "Equipment" requires_attunement=true {
+		/*
+		criteria (Evaluator)"check_ability_score" {
+			max 23
+		}
+		*/
+		mutator "ability_score" {
+			ability "Specific" "Strength"
+			fixed 23 // TODO: fixed ability score
+		}
+	}
+}
+item name="Belt of Hill Giant Strength" {
+	description "While wearing this belt, your Strength score is 21 if your Strength without the belt is less than 21.
+	Six varieties of this belt exist, corresponding with and having rarity according to the six kinds of true giants. The belt of stone giant strength and the belt of frost giant strength look different, but they have the same effect."
+	rarity "Rare"
+	tag "Wonderous"
+	kind "Equipment" requires_attunement=true {
+		/*
+		criteria (Evaluator)"check_ability_score" {
+			max 21
+		}
+		*/
+		mutator "ability_score" {
+			ability "Specific" "Strength"
+			fixed 21 // TODO: fixed ability score
+		}
+	}
+}
+item name="Belt of Stone Giant Strength" {
+	description "While wearing this belt, your Strength score is 23 if your Strength without the belt is less than 23.
+	Six varieties of this belt exist, corresponding with and having rarity according to the six kinds of true giants. The belt of stone giant strength and the belt of frost giant strength look different, but they have the same effect."
+	rarity "VeryRare"
+	tag "Wonderous"
+	kind "Equipment" requires_attunement=true {
+		/*
+		criteria (Evaluator)"check_ability_score" {
+			max 23
+		}
+		*/
+		mutator "ability_score" {
+			ability "Specific" "Strength"
+			fixed 23 // TODO: fixed ability score
+		}
+	}
+}
+item name="Belt of Storm Giant Strength" {
+	description "While wearing this belt, your Strength score is 29 if your Strength without the belt is less than 29.
+	Six varieties of this belt exist, corresponding with and having rarity according to the six kinds of true giants. The belt of stone giant strength and the belt of frost giant strength look different, but they have the same effect."
+	rarity "Legendary"
+	tag "Wonderous"
+	kind "Equipment" requires_attunement=true {
+		/*
+		criteria (Evaluator)"check_ability_score" {
+			max 29
+		}
+		*/
+		mutator "ability_score" {
+			ability "Specific" "Strength"
+			fixed 29 // TODO: fixed ability score
+		}
+	}
+}
