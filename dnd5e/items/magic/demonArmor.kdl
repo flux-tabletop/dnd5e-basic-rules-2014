@@ -1,0 +1,18 @@
+item name="Demon Armor" weight=65.0 {
+	description "Plate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body." {
+		section "While wearing this armor, you gain a +1 bonus to AC, and you can understand and speak Abyssal. In addition, the armor's clawed gauntlets turn unarmed strikes with your hands into magic weapons that deal slashing damage, with a +1 bonus to attack rolls and damage rolls and a damage die of 1d8."
+		section (Title)"Curse" "Once you don this cursed armor, you can't doff it unless you are targeted by the remove curse spell or similar magic. While wearing the armor, you have disadvantage on attack rolls against demons and on saving throws against their spells and special abilities."
+	}
+	rarity "VeryRare"
+	kind "Equipment" requires_attunement=true {
+		armor "Heavy" {
+			formula base=18
+			min-strength 15
+		}
+		mutator "add_modifier" "Disadvantage" (Skill)"Specific" "Stealth"
+		// TODO: Demon Armor modifiers
+		// 		+1 AC bonus
+		// 		understand and speak Abyssal
+		// 		unarmed strikes are magic and deal slashing damage (+1 bonus to attack and damage rolls, damage is 1d8)
+	}
+}

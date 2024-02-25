@@ -1,0 +1,9 @@
+item name="Bracers of Archery" {
+	description "While wearing these bracers, you have proficiency with the longbow and shortbow, and you gain a +2 bonus to damage rolls on ranged attacks made with such weapons."
+	rarity "Uncommon"
+	tag "Wonderous"
+	kind "Equipment" requires-attunement=true {
+		// TODO: proficiency with long & short bows
+		// TODO: +2 on damage rolls with long and short bows
+	}
+}

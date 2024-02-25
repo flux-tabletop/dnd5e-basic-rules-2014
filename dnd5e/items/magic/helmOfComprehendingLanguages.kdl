@@ -1,0 +1,7 @@
+item name="Helm of Comprehending Languages" {
+	description "While wearing this helm, you can use an action to cast the comprehend languages spell from it at will."
+	rarity "Uncommon"
+	tag "Wonderous"
+	kind "Equipment" requires_attunement=true
+	// TODO: cast Comprehend Languages
+}

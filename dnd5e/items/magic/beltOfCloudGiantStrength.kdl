@@ -1,0 +1,17 @@
+item name="Belt of Cloud Giant Strength" {
+	description "While wearing this belt, your Strength score is 27 if your Strength without the belt is less than 27.
+	Six varieties of this belt exist, corresponding with and having rarity according to the six kinds of true giants. The belt of stone giant strength and the belt of frost giant strength look different, but they have the same effect."
+	rarity "Legendary"
+	tag "Wonderous"
+	kind "Equipment" requires_attunement=true {
+		/*
+		criteria (Evaluator)"check_ability_score" {
+			max 27
+		}
+		*/
+		mutator "ability_score" {
+			ability "Specific" "Strength"
+			fixed 27 // TODO: fixed ability score
+		}
+	}
+}

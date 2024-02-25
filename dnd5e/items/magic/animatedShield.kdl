@@ -1,0 +1,14 @@
+item name="Animated Shield" {
+	description "While holding this shield, you can speak its command word as a bonus action to cause it to animate. The shield leaps into the air and hovers in your space to protect you as if you were wielding it, leaving your hands free. The shield remains animated for 1 minute, until you use a bonus action to end this effect, or until you are incapacitated or die, at which point the shield falls to the ground or into your hand if you have one free."
+	rarity "VeryRare"
+	kind "Equipment" requires_attunement=true {
+		shield bonus=2
+		mutator "feature" name="Animate Shield" {
+			description {
+				short "Speak command word to animate shield. Your hands are free and the shield protects you as if you were wielding it for 1 minute. Can end using a bonus action, otherwise ends when you are incapacitated or die."
+				section "Speak a command word to cause the animated shield to animate. The shield leaps into the air and hovers in your space to protect you as if you were wielding it, leaving your hands free. The shield remains animated for 1 minute, until you use a bonus action to end this effect, or until you are incapacitated or die, at which point the shield falls to the ground or into your hand if you have one free."
+			}
+			action "Bonus"
+		}
+	}
+}

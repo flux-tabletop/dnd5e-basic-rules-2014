@@ -1,0 +1,6 @@
+item name="Ring of Feather Falling" {
+	description "When you fall while wearing this ring, you descend 60 feet per round and take no damage from falling."
+	rarity "Rare"
+	tag "Ring"
+	kind "Equipment" requires_attunement=true
+}

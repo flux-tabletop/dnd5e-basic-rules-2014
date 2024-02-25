@@ -1,0 +1,17 @@
+item name="Bowl of Commanding Fire Elementals" {
+	description "While a fire burns in this brass brazier, you can use an action to speak the brazier's command word and summon a fire elemental, as if you had cast the conjure elemental spell. The brazier can't be used this way again until the next dawn.
+	The brazier weighs 5 pounds."
+	rarity "Rare"
+	tag "Wonderous"
+	kind "Equipment" {
+		mutator "feature" name="Summon Fire Elemental" {
+			action "Action" {
+				// TODO: Spellcasting (Conjure Elemental Spirit for Fire)
+				limited_uses {
+					max_uses 1
+					reset_on "Long"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,8 @@
+item name="Crystal Ball" {
+	description "The typical crystal ball is about 6 inches in diameter. While touching it, you can cast the scrying spell (save DC 17) with it."
+	rarity "VeryRare"
+	tag "Wonderous"
+	kind "Equipment" requires-attunement=true {
+		// TODO: Spellcasting Scrying (save DC 17)
+	}
+}

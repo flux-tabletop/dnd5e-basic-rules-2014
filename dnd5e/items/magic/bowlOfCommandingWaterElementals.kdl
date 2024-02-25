@@ -1,0 +1,18 @@
+item name="Bowl of Commanding Water Elementals" {
+	description "While this bowl is filled with water, you can use an action to speak the bowl's command word and summon a water elemental, as if you had cast the conjure elemental spell. The bowl can't be used this way again until the next dawn.
+
+	The bowl is about 1 foot in diameter and half as deep. It weighs 3 pounds and holds about 3 gallons."
+	rarity "Rare"
+	tag "Wonderous"
+	kind "Equipment" {
+		mutator "feature" name="Summon Water Elemental" {
+			action "Action" {
+				// TODO: Spellcasting (Conjure Elemental Spirit for Water)
+				limited_uses {
+					max_uses 1
+					reset_on "Long"
+				}
+			}
+		}
+	}
+}

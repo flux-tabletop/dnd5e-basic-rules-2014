@@ -1,0 +1,9 @@
+item name="Efficient Quiver" {
+	description "Each of the quiver's three compartments connects to an extradimensional space that allows the quiver to hold numerous items while never weighing more than 2 pounds. The shortest compartment can hold up to sixty arrows, bolts, or similar objects. The midsize compartment holds up to eighteen javelins or similar objects. The longest compartment holds up to six long objects, such as bows, quarterstaffs, or spears." {
+		section "You can draw any item the quiver contains as if doing so from a regular quiver or scabbard."
+	}
+	rarity "Uncommon"
+	tag "Wonderous"
+	kind "Equipment" requires_attunement=true
+	// TODO: Container inventory (x3?)
+}

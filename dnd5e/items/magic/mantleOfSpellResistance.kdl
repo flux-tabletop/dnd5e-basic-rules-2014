@@ -1,0 +1,7 @@
+item name="Mantle of Spell Resistance" {
+	description "You have advantage on saving throws against spells while you wear this cloak."
+	rarity "Rare"
+	tag "Wonderous"
+	kind "Equipment" requires_attunement=true
+	// TODO: passive adv on spell saves
+}

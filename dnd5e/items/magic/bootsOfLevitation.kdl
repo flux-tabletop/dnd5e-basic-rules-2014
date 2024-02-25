@@ -1,0 +1,12 @@
+item name="Boots of Levitation" {
+	description "While you wear these boots, you can use an action to cast the levitate spell on yourself at will."
+	rarity "Rare"
+	tag "Wonderous"
+	kind "Equipment" requires_attunement=true {
+		mutator "spellcasting" "add_prepared" ability="Dexterity" {
+			spell "github://flux-tabletop:dnd5e-basic-rules@dnd5e/spells/levitate.kdl" {
+				range "Self"
+			}
+		}
+	}
+}
