@@ -1,0 +1,47 @@
+/*
+	Armor, +1, +2, or +3
+	Armor (light, medium, or heavy), rare (+1), very rare (+2), or legendary (+3)
+	You have a bonus to AC while wearing this armor. The bonus is determined by its rarity.
+*/
+generator "item" {
+	// any armor which does not have a rarity (i.e. not magical items)
+	filter {
+		armor "light" "medium" "heavy"
+		rarity "None" // note: must determine if the value is "None" string to filter for no-rarity
+	}
+	// Each variant generates a new item for every item which matches the filter
+	variant {
+		// replaces the name with a formatted string ("{name}" being the original item name)
+		extend "name" "{name} (+1)"
+		// replaces the rarity
+		extend "rarity" "Rare"
+		// adds description section
+		extend "description" "You have a bonus +1 to AC while wearing this armor."
+		// changes the base value of the armor formula for equipement items by +1
+		extend "equipment" {
+			armor {
+				formula "base-bonus" 1
+			}
+		}
+	}
+	variant {
+		extend "name" "{name} (+2)"
+		extend "rarity" "VeryRare"
+		extend "description" "You have a bonus +2 to AC while wearing this armor."
+		extend "equipment" {
+			armor {
+				formula "base-bonus" 2
+			}
+		}
+	}
+	variant {
+		extend "name" "{name} (+3)"
+		extend "rarity" "Legendary"
+		extend "description" "You have a bonus +3 to AC while wearing this armor."
+		extend "equipment" {
+			armor {
+				formula "base-bonus" 3
+			}
+		}
+	}
+}

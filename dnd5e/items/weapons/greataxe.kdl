@@ -1,5 +1,6 @@
 item name="Greataxe" weight=7.0 {
 	worth 30 (Currency)"Gold"
+	tag "Axe"
 	kind "Equipment" {
 		weapon "Martial" class="Greataxe" {
 			damage "Slashing" roll="1d12"

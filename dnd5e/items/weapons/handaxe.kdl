@@ -1,5 +1,6 @@
 item name="Handaxe" weight=2.0 {
 	worth 5 (Currency)"Gold"
+	tag "Axe"
 	kind "Equipment" {
 		weapon "Simple" class="Handaxe" {
 			damage "Slashing" roll="1d6"

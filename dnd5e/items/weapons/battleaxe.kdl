@@ -1,5 +1,6 @@
 item name="Battleaxe" weight=4.0 {
 	worth 10 (Currency)"Gold"
+	tag "Axe"
 	kind "Equipment" {
 		weapon "Martial" class="Battleaxe" {
 			damage "Slashing" roll="1d8"
