@@ -4,17 +4,9 @@ item name="Amulet of Health" {
 	tag "Wonderous"
 	kind "Equipment" requires_attunement=true {
 		// TODO: Dont apply mutators if item is not attuned
-		mutator "apply_if" {
-			// TODO: Ability score cannot be 19 or larger
-			/*
-			criteria (Evaluator)"check_ability_score" {
-				max 19
-			}
-			*/
-			mutator "ability_score" {
-				ability "Specific" "Constitution"
-				fixed 19 // TODO: fixed ability score
-			}
+		mutator "ability_score" {
+			ability "Specific" "Constitution"
+			minimum 19 // TODO: minimum ability score
 		}
 	}
 }
