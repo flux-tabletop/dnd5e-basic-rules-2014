@@ -3,7 +3,7 @@
 	Armor (light, medium, or heavy), rare (+1), very rare (+2), or legendary (+3)
 	You have a bonus to AC while wearing this armor. The bonus is determined by its rarity.
 */
-generator "item" {
+generator "object" "item" {
 	// any armor which does not have a rarity (i.e. not magical items)
 	filter {
 		armor "light" "medium" "heavy"
@@ -20,7 +20,7 @@ generator "item" {
 		// changes the base value of the armor formula for equipement items by +1
 		extend "equipment" {
 			armor {
-				formula "base-bonus" 1
+				formula base_bonus=1
 			}
 		}
 	}
@@ -30,7 +30,7 @@ generator "item" {
 		extend "description" "You have a bonus +2 to AC while wearing this armor."
 		extend "equipment" {
 			armor {
-				formula "base-bonus" 2
+				formula base_bonus=2
 			}
 		}
 	}
@@ -40,7 +40,7 @@ generator "item" {
 		extend "description" "You have a bonus +3 to AC while wearing this armor."
 		extend "equipment" {
 			armor {
-				formula "base-bonus" 3
+				formula base_bonus=3
 			}
 		}
 	}

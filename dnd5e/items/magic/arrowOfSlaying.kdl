@@ -1,4 +1,4 @@
-generator "item" {
+generator "object" "item" {
 	filter {
 		tag "Arrow"
 	}
