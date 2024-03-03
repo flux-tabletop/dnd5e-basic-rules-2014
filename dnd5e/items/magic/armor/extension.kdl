@@ -3,7 +3,7 @@
 	Armor (light, medium, or heavy), rare (+1), very rare (+2), or legendary (+3)
 	You have a bonus to AC while wearing this armor. The bonus is determined by its rarity.
 */
-generator "object" "item" {
+generator "item" {
 	// any armor which does not have a rarity (i.e. not magical items)
 	filter {
 		armor "light" "medium" "heavy"

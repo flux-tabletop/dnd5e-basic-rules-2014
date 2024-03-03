@@ -1,4 +1,4 @@
-generator "kdl" {
+generator "block" {
 	base {
 		item name="Belt of {TYPE} Giant Strength" {
 			description "While wearing this belt, your Strength score is {SCORE} if your Strength without the belt is less than {SCORE}." {

@@ -2,10 +2,10 @@
 // The contents of the `base` block are turned into a string (exactly like when a document is saved to text),
 // substrings in that string are replaced using the key-value pairs in each variant,
 // and the resulting document string is re-parsed as kdl for further processing.
-generator "kdl" {
+generator "block" {
 	base {
 		// in this sample, the kdl generator creates new item generator for armor types.
-		generator "object" "item" {
+		generator "item" {
 			filter {
 				armor "light" "medium" "heavy"
 			}
