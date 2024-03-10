@@ -10,7 +10,7 @@ generator "block" "armorOfResistanceBase" {
 				armor "light" "medium" "heavy"
 			}
 			variant "" {
-				extend "name" "{name} Armor of {DMG_TYPE} Resistance"
+				extend "name" "{name} of {DMG_TYPE} Resistance"
 				extend "rarity" "Rare"
 				extend "description" "You have resistance to {DMG_TYPE} damage while you wear this armor."
 				// extending equipment allows us to override attunement and add mutators of the item when its equipped
