@@ -6,5 +6,7 @@ item name="Rope of Climbing" {
 	}
 	rarity "Uncommon"
 	tag "Wonderous"
-	kind "Equipment" requires_attunement=true
+	kind "Equipment" {
+		attunement required=true
+	}
 }

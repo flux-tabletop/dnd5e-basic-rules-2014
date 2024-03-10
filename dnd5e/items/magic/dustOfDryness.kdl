@@ -5,6 +5,8 @@ item name="Dust of Dryness" {
 	}
 	rarity "Uncommon"
 	tag "Wonderous"
-	kind "Equipment" requires_attunement=true
+	kind "Equipment" {
+		attunement required=true
+	}
 	// TODO: Charges on Dust of Dryness
 }

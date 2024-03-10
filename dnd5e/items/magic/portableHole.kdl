@@ -7,5 +7,7 @@ item name="Portable Hole" {
 	}
 	rarity "Rare"
 	tag "Wonderous"
-	kind "Equipment" requires_attunement=true
+	kind "Equipment" {
+		attunement required=true
+	}
 }

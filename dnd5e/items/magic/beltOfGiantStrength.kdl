@@ -1,4 +1,4 @@
-generator "block" {
+generator "block" "beltOfGiantStrength" {
 	base {
 		item name="Belt of {TYPE} Giant Strength" {
 			description "While wearing this belt, your Strength score is {SCORE} if your Strength without the belt is less than {SCORE}." {
@@ -6,7 +6,8 @@ generator "block" {
 			}
 			rarity "{RARITY}"
 			tag "Wonderous"
-			kind "Equipment" requires_attunement=true {
+			kind "Equipment" {
+				attunement required=true
 				mutator "ability_score" {
 					ability "Specific" "Strength"
 					// TODO: minimum ability score
@@ -16,32 +17,32 @@ generator "block" {
 			}
 		}
 	}
-	variant {
+	variant "hill" {
 		entry "TYPE" "Hill"
 		entry "RARITY" "Rare"
 		entry "SCORE" 21
 	}
-	variant {
+	variant "stone" {
 		entry "TYPE" "Stone"
 		entry "RARITY" "VeryRare"
 		entry "SCORE" 23
 	}
-	variant {
+	variant "frost" {
 		entry "TYPE" "Frost"
 		entry "RARITY" "VeryRare"
 		entry "SCORE" 23
 	}
-	variant {
+	variant "fire" {
 		entry "TYPE" "Fire"
 		entry "RARITY" "VeryRare"
 		entry "SCORE" 25
 	}
-	variant {
+	variant "cloud" {
 		entry "TYPE" "Cloud"
 		entry "RARITY" "Legendary"
 		entry "SCORE" 27
 	}
-	variant {
+	variant "storm" {
 		entry "TYPE" "Storm"
 		entry "RARITY" "Legendary"
 		entry "SCORE" 29

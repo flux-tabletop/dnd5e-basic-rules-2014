@@ -5,6 +5,8 @@ item name="Horn of Blasting" {
 	}
 	rarity "Rare"
 	tag "Wonderous"
-	kind "Equipment" requires_attunement=true
+	kind "Equipment" {
+		attunement required=true
+	}
 	// TODO: actions
 }

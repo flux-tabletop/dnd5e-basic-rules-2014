@@ -10,7 +10,9 @@ item name="Elemental Gem" {
 	}
 	rarity "Uncommon"
 	tag "Wonderous"
-	kind "Equipment" requires_attunement=true
+	kind "Equipment" {
+		attunement required=true
+	}
 	// TODO: Action to summon elemental
 	// TODO: Separate gems by type
 }

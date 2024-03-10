@@ -2,5 +2,7 @@ item name="Ring of Protection" {
 	description "You gain a +1 bonus to AC and saving throws while wearing this ring."
 	rarity "Rare"
 	tag "Ring"
-	kind "Equipment" requires_attunement=true
+	kind "Equipment" {
+		attunement required=true
+	}
 }

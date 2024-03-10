@@ -1,8 +1,8 @@
-generator "item" {
+generator "item" "arrowOfSlaying" {
 	filter {
 		tag "Arrow"
 	}
-	variant {
+	variant "" {
 		extend "name" "Arrow of Slaying ({name})"
 		extend "rarity" "VeryRare"
 		extend "description" {

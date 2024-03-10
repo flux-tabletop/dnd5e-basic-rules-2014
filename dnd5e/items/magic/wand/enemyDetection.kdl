@@ -5,6 +5,8 @@ item name="Wand of Enemy Detection" {
 	}
 	rarity "Rare"
 	tag "Wand"
-	kind "Equipment" requires_attunement=true
+	kind "Equipment" {
+		attunement required=true
+	}
 	// TODO: Charges
 }

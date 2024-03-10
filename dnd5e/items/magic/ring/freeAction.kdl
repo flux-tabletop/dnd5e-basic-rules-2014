@@ -2,5 +2,7 @@ item name="Ring of Free Action" {
 	description "While you wear this ring, difficult terrain doesn't cost you extra movement. In addition, magic can neither reduce your speed nor cause you to be paralyzed or restrained."
 	rarity "Rare"
 	tag "Ring"
-	kind "Equipment" requires_attunement=true
+	kind "Equipment" {
+		attunement required=true
+	}
 }

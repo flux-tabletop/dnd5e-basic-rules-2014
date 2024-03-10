@@ -2,7 +2,9 @@ item name="Gloves of Swimming and Climbing" {
 	description "While wearing these gloves, climbing and swimming don't cost you extra movement, and you gain a +5 bonus to Strength (Athletics) checks made to climb or swim."
 	rarity "Uncommon"
 	tag "Wonderous"
-	kind "Equipment" requires_attunement=true
+	kind "Equipment" {
+		attunement required=true
+	}
 	// TODO: +5 acrobatics for climb / swim
 	// TODO: swim and climb speed that match walking
 }

@@ -2,5 +2,7 @@ item name="Potion of Gaseous Form" {
 	description "When you drink this potion, you gain the effect of the gaseous form spell for 1 hour (no concentration required) or until you end the effect as a bonus action. This potion's container seems to hold fog that moves and pours like water."
 	rarity "Rare"
 	tag "Potion"
-	kind "Equipment" requires_attunement=true
+	kind "Equipment" {
+		attunement required=true
+	}
 }

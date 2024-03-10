@@ -5,7 +5,8 @@ item name="Boots of the Winterlands" {
 	- You can tolerate temperatures as low as -50 degrees Fahrenheit without any additional protection. If you wear heavy clothes, you can tolerate temperatures as low as -100 degrees Fahrenheit."
 	rarity "Uncommon"
 	tag "Wonderous"
-	kind "Equipment" requires_attunement=true {
+	kind "Equipment" {
+		attunement required=true
 		mutator "add_defense" "Resistance" (DamageType)"Specific" "Cold"
 	}
 }

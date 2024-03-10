@@ -4,7 +4,8 @@ item name="Boots of Speed" {
 	When the boots' property has been used for a total of 10 minutes, the magic ceases to function until you finish a long rest."
 	rarity "Rare"
 	tag "Wonderous"
-	kind "Equipment" requires_attunement=true {
+	kind "Equipment" {
+		attunement required=true
 		mutator "feature" name="Double Speed" {
 			description {
 				short "Walking speed doubled & opportunity attacks have disadvantage against you. Can use for 10 minutes cumulatively per long rest."

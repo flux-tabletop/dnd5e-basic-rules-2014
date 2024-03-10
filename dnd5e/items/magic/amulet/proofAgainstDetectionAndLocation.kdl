@@ -2,5 +2,7 @@ item name="Amulet of Proof against Detection and Location" {
 	description "While wearing this amulet, you are hidden from divination magic. You can't be targeted by such magic or perceived through magical scrying sensors."
 	rarity "Uncommon"
 	tag "Wonderous"
-	kind "Equipment" requires_attunement=true
+	kind "Equipment" {
+		attunement required=true
+	}
 }

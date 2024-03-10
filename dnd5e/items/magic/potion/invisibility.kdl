@@ -2,5 +2,7 @@ item name="Potion of Invisibility" {
 	description "This potion's container looks empty but feels as though it holds liquid. When you drink it, you become invisible for 1 hour. Anything you wear or carry is invisible with you. The effect ends early if you attack or cast a spell."
 	rarity "VeryRare"
 	tag "Potion"
-	kind "Equipment" requires_attunement=true
+	kind "Equipment" {
+		attunement required=true
+	}
 }

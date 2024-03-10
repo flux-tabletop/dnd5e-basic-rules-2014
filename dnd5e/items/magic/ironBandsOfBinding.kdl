@@ -7,6 +7,8 @@ item name="Iron Bands of Binding" {
 	}
 	rarity "Rare"
 	tag "Wonderous"
-	kind "Equipment" requires_attunement=true
+	kind "Equipment" {
+		attunement required=true
+	}
 	// TODO: action to use, ranged attack
 }

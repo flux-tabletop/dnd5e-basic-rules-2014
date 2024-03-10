@@ -10,7 +10,8 @@ item name="Belt of Dwarvenkind" {
 	- You can speak, read, and write Dwarvish."
 	rarity "Rare"
 	tag "Wonderous"
-	kind "Equipment" requires_attunement=true {
+	kind "Equipment" {
+		attunement required=true
 		mutator "ability_score" {
 			ability "Specific" (Ability)"Constitution"
 			bonus 2

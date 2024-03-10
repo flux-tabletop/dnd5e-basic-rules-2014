@@ -6,5 +6,7 @@ item name="Ring of Djinni Summoning" {
 	}
 	rarity "Legendary"
 	tag "Ring"
-	kind "Equipment" requires_attunement=true
+	kind "Equipment" {
+		attunement required=true
+	}
 }

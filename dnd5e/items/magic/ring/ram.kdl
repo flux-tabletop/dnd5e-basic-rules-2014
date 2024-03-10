@@ -5,5 +5,7 @@ item name="Ring of the Ram" {
 	}
 	rarity "Rare"
 	tag "Ring"
-	kind "Equipment" requires_attunement=true
+	kind "Equipment" {
+		attunement required=true
+	}
 }

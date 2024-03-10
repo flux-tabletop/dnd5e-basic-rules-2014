@@ -5,6 +5,8 @@ item name="Eversmoking Bottle" weight=1.0 {
 	}
 	rarity "Uncommon"
 	tag "Wonderous"
-	kind "Equipment" requires_attunement=true
+	kind "Equipment" {
+		attunement required=true
+	}
 	// TODO: Action to unleash the cloud
 }

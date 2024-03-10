@@ -2,7 +2,8 @@ item name="Amulet of the Planes" {
 	description "While wearing this amulet, you can use an action to name a location that you are familiar with on another plane of existence. Then make a DC 15 Intelligence check. On a successful check, you cast the plane shift spell. On a failure, you and each creature and object within 15 feet of you travel to a random destination.	Roll a d100. On a 1-60, you travel to a random location on the plane you named. On a 61-100, you travel to a randomly determined plane of existence."
 	rarity "VeryRare"
 	tag "Wonderous"
-	kind "Equipment" requires_attunement=true {
+	kind "Equipment" {
+		attunement required=true
 		mutator "feature" name="Plane Shift" {
 			description {
 				short "DC 15 INT check to cast Plane Shift. On failure, roll a d100; 1-60 random location on the plane, 61-100 random plane of existance."

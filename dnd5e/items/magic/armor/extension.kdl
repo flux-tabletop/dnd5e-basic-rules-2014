@@ -3,14 +3,14 @@
 	Armor (light, medium, or heavy), rare (+1), very rare (+2), or legendary (+3)
 	You have a bonus to AC while wearing this armor. The bonus is determined by its rarity.
 */
-generator "item" {
+generator "item" "armorPlus" {
 	// any armor which does not have a rarity (i.e. not magical items)
 	filter {
 		armor "light" "medium" "heavy"
 		rarity "None" // note: must determine if the value is "None" string to filter for no-rarity
 	}
 	// Each variant generates a new item for every item which matches the filter
-	variant {
+	variant "1" {
 		// replaces the name with a formatted string ("{name}" being the original item name)
 		extend "name" "{name} (+1)"
 		// replaces the rarity
@@ -24,7 +24,7 @@ generator "item" {
 			}
 		}
 	}
-	variant {
+	variant "2" {
 		extend "name" "{name} (+2)"
 		extend "rarity" "VeryRare"
 		extend "description" "You have a bonus +2 to AC while wearing this armor."
@@ -34,7 +34,7 @@ generator "item" {
 			}
 		}
 	}
-	variant {
+	variant "3" {
 		extend "name" "{name} (+3)"
 		extend "rarity" "Legendary"
 		extend "description" "You have a bonus +3 to AC while wearing this armor."

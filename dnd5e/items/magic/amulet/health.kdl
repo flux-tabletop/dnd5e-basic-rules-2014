@@ -2,7 +2,8 @@ item name="Amulet of Health" {
 	description "Your Constitution score is 19 while you wear this amulet. It has no effect on you if your Constitution is 19 or higher without it."
 	rarity "Rare"
 	tag "Wonderous"
-	kind "Equipment" requires_attunement=true {
+	kind "Equipment" {
+		attunement required=true
 		// TODO: Dont apply mutators if item is not attuned
 		mutator "ability_score" {
 			ability "Specific" "Constitution"

@@ -4,7 +4,8 @@ item name="Demon Armor" weight=65.0 {
 		section (Title)"Curse" "Once you don this cursed armor, you can't doff it unless you are targeted by the remove curse spell or similar magic. While wearing the armor, you have disadvantage on attack rolls against demons and on saving throws against their spells and special abilities."
 	}
 	rarity "VeryRare"
-	kind "Equipment" requires_attunement=true {
+	kind "Equipment" {
+		attunement required=true
 		armor "Heavy" {
 			formula base=18
 			min-strength 15
