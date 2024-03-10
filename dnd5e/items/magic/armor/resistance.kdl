@@ -8,6 +8,7 @@ generator "block" "armorOfResistanceBase" {
 		generator "item" "armorOfResistance{DMG_TYPE}" {
 			filter {
 				armor "light" "medium" "heavy"
+				rarity "None"
 			}
 			variant "" {
 				extend "name" "{name} of {DMG_TYPE} Resistance"
