@@ -1,0 +1,96 @@
+generator "block" "spellScroll" {
+	base {
+		item name="Spell Scroll ({NAME})" {
+			description {
+				section "A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list, you can read the scroll and cast its spell without providing any material components. Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost."
+				section "If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + the spell's level. On a failed check, the spell disappears from the scroll with no other effect."
+				section "Once the spell is cast, the words on the scroll fade, and the scroll itself crumbles to dust."
+				section "A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed."
+			}
+			tag "Scroll"
+			rarity "{RARITY}"
+			kind "Equipment"
+			spells {
+				capacity 1 {
+					rank min="RANK" max="RANK"
+				}
+				casting {
+					consume_item true
+					consume_spell true
+					save_dc "SAVE_DC"
+					atk_bonus "ATK_BONUS"
+				}
+			}
+		}
+	}
+	variant "0" {
+		entry "NAME" "Cantrip"
+		entry "RARITY" "Common"
+		entry "RANK" 0
+		entry "SAVE_DC" 13
+		entry "ATK_BONUS" 5
+	}
+	variant "1" {
+		entry "NAME" "1st Level"
+		entry "RARITY" "Common"
+		entry "RANK" 1
+		entry "SAVE_DC" 13
+		entry "ATK_BONUS" 5
+	}
+	variant "2" {
+		entry "NAME" "2nd Level"
+		entry "RARITY" "Uncommon"
+		entry "RANK" 2
+		entry "SAVE_DC" 13
+		entry "ATK_BONUS" 5
+	}
+	variant "3" {
+		entry "NAME" "3rd Level"
+		entry "RARITY" "Uncommon"
+		entry "RANK" 3
+		entry "SAVE_DC" 15
+		entry "ATK_BONUS" 7
+	}
+	variant "4" {
+		entry "NAME" "4th Level"
+		entry "RARITY" "Rare"
+		entry "RANK" 4
+		entry "SAVE_DC" 15
+		entry "ATK_BONUS" 7
+	}
+	variant "5" {
+		entry "NAME" "5th Level"
+		entry "RARITY" "Rare"
+		entry "RANK" 5
+		entry "SAVE_DC" 17
+		entry "ATK_BONUS" 9
+	}
+	variant "6" {
+		entry "NAME" "6th Level"
+		entry "RARITY" "VeryRare"
+		entry "RANK" 6
+		entry "SAVE_DC" 17
+		entry "ATK_BONUS" 9
+	}
+	variant "7" {
+		entry "NAME" "7th Level"
+		entry "RARITY" "VeryRare"
+		entry "RANK" 7
+		entry "SAVE_DC" 18
+		entry "ATK_BONUS" 10
+	}
+	variant "8" {
+		entry "NAME" "8th Level"
+		entry "RARITY" "VeryRare"
+		entry "RANK" 8
+		entry "SAVE_DC" 18
+		entry "ATK_BONUS" 10
+	}
+	variant "9" {
+		entry "NAME" "9th Level"
+		entry "RARITY" "Legendary"
+		entry "RANK" 9
+		entry "SAVE_DC" 19
+		entry "ATK_BONUS" 11
+	}
+}

@@ -2,7 +2,8 @@ item name="Bracers of Defense" {
 	description "While wearing these bracers, you gain a +2 bonus to AC if you are wearing no armor and using no shield."
 	rarity "Rare"
 	tag "Wonderous"
-	kind "Equipment" requires-attunement=true {
+	kind "Equipment" {
+		attunement required=true
 		// TODO: +2 bonus to AC w/o armor & shield
 	}
 }

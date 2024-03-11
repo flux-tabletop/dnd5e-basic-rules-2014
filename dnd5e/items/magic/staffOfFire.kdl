@@ -7,12 +7,14 @@ item name="Staff of Fire" {
 	rarity "VeryRare"
 	tag "Staff"
 	kind "Equipment" {
+		// TODO: attunement
 		attunement-todo {
 			class "Druid"
 			class "Sorcerer"
 			class "Warlock"
 			class "Wizard"
 		}
+		// TODO: charges
 		charges-todo 10 {
 			reset_on "Long" (Roll)"1d6" base=4
 			// TODO: use spell ability of class-spellcasting

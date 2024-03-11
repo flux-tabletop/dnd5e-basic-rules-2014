@@ -10,7 +10,6 @@ item name="Efreeti Bottle" {
 	}
 	rarity "VeryRare"
 	tag "Wonderous"
-	kind "Equipment" {
-		attunement required=true
-	}
+	kind "Equipment"
+	// TODO: action to use
 }

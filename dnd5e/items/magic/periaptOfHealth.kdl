@@ -3,6 +3,6 @@ item name="Periapt of Health" {
 	rarity "Uncommon"
 	tag "Wonderous"
 	kind "Equipment" {
-		attunement required=true
+		// TODO: immune to disease
 	}
 }

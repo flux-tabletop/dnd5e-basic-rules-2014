@@ -4,7 +4,5 @@ item name="Dimensional Shackles" {
 	} 
 	rarity "Rare"
 	tag "Wonderous"
-	kind "Equipment" {
-		attunement required=true
-	}
+	kind "Equipment"
 }

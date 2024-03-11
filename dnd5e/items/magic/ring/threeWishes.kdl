@@ -3,4 +3,5 @@ item name="Ring of Three Wishes" {
 	rarity "Legendary"
 	tag "Ring"
 	kind "Equipment"
+	// TODO: action + charges
 }

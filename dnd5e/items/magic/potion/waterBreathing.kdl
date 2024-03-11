@@ -2,4 +2,5 @@ item name="Potion of Water Breathing" {
 	description "You can breathe underwater for 1 hour after drinking this potion. Its cloudy green fluid smells of the sea and has a jellyfish-like bubble floating in it."
 	rarity "Uncommon"
 	tag "Potion"
+	// TODO: grants breathing underwater via condition
 }

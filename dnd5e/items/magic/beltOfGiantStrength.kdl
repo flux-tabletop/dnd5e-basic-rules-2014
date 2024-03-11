@@ -11,7 +11,6 @@ generator "block" "beltOfGiantStrength" {
 				mutator "ability_score" {
 					ability "Specific" "Strength"
 					// TODO: minimum ability score
-					// TODO: generator replacement for both {VAR} and "VAR" (the former replaces within strings, the latter replaces the string itself with the value)
 					minimum "SCORE"
 				}
 			}

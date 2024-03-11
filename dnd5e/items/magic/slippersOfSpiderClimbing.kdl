@@ -4,5 +4,6 @@ item name="Slippers of Spider Climbing" {
 	tag "Wonderous"
 	kind "Equipment" {
 		attunement required=true
+		// TODO: climbing speed
 	}
 }

@@ -4,5 +4,6 @@ item name="Stone of Good Luck (Luckstone)" {
 	tag "Wonderous"
 	kind "Equipment" {
 		attunement required=true
+		// TODO: +1 to ability checks and saving throws
 	}
 }

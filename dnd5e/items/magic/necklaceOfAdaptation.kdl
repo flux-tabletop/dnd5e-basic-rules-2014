@@ -5,4 +5,5 @@ item name="Necklace of Adaptation" {
 	kind "Equipment" {
 		attunement required=true
 	}
+	// TODO: adv on saves against harmful gases
 }

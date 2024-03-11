@@ -4,5 +4,7 @@ item name="Ring of Evasion" {
 	tag "Ring"
 	kind "Equipment" {
 		attunement required=true
+		// TODO: charges
+		// TODO: reaction
 	}
 }

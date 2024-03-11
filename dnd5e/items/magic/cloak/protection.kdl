@@ -2,7 +2,8 @@ item name="Cloak of Protection" {
 	description "You gain a +1 bonus to AC and saving throws while you wear this cloak."
 	rarity "Uncommon"
 	tag "Wonderous"
-	kind "Equipment" requires-attunement=true {
+	kind "Equipment" {
+		attunement required=true
 		// TODO: +1 AC and saving throws
 	}
 }

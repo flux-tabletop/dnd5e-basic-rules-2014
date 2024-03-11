@@ -7,4 +7,5 @@ item name="Bead of Force" {
 	rarity "Rare"
 	tag "Wonderous"
 	kind "Simple"
+	// TODO: action to throw the bead (therefore using it)
 }

@@ -7,5 +7,6 @@ item name="Winged Boots" {
 	tag "Wonderous"
 	kind "Equipment" {
 		attunement required=true
+		// TODO: flying speed, charges
 	}
 }

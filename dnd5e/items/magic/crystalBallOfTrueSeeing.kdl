@@ -4,7 +4,8 @@ item name="Crystal Ball of True Seeing" {
 	}
 	rarity "Legendary"
 	tag "Wonderous"
-	kind "Equipment" requires-attunement=true {
+	kind "Equipment" {
+		attunement required=true
 		// TODO: Spellcasting Scrying (save DC 17)
 	}
 }

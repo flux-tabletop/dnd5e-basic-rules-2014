@@ -8,4 +8,5 @@ item name="Ring of Animal Influence" {
 	rarity "Uncommon"
 	tag "Ring"
 	kind "Equipment"
+	// TODO: charges for casting spells
 }

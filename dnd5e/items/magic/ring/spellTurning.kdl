@@ -4,5 +4,6 @@ item name="Ring of Spell Turning" {
 	tag "Ring"
 	kind "Equipment" {
 		attunement required=true
+		// TODO: advantage on spell saves
 	}
 }

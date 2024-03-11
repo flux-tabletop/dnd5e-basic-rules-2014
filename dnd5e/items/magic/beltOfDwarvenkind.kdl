@@ -12,6 +12,7 @@ item name="Belt of Dwarvenkind" {
 	tag "Wonderous"
 	kind "Equipment" {
 		attunement required=true
+		// TODO: mutaors should only be if attuned
 		mutator "ability_score" {
 			ability "Specific" (Ability)"Constitution"
 			bonus 2

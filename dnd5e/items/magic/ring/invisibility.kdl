@@ -4,5 +4,6 @@ item name="Ring of Invisibility" {
 	tag "Ring"
 	kind "Equipment" {
 		attunement required=true
+		// TODO: action + granted condition
 	}
 }

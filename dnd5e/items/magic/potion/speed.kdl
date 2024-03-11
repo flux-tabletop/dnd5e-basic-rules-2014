@@ -2,4 +2,5 @@ item name="Potion of Speed" {
 	description "When you drink this potion, you gain the effect of the haste spell for 1 minute (no concentration required). The potion's yellow fluid is streaked with black and swirls on its own."
 	rarity "VeryRare"
 	tag "Potion"
+	// TODO: grants spell effect via condition
 }

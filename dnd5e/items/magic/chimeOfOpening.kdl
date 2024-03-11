@@ -5,6 +5,7 @@ item name="Chime of Opening" {
 	rarity "Rare"
 	tag "Wonderous"
 	kind "Equipment" {
+		// TODO: charges
 		charges-todo 10
 	}
 }

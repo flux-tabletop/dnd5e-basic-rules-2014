@@ -39,9 +39,7 @@ item name="Iron Flask" {
 	}
 	rarity "Legendary"
 	tag "Wonderous"
-	kind "Equipment" {
-		attunement required=true
-	}
+	kind "Equipment"
 	// TODO: action to use
 	// TODO: Custom info for the contained creature
 }

@@ -4,5 +4,6 @@ item name="Wings of Flying" {
 	tag "Wonderous"
 	kind "Equipment" {
 		attunement required=true
+		// TODO: action
 	}
 }

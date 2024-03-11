@@ -3,6 +3,7 @@ item name="Pipes of Haunting" {
 	rarity "Uncommon"
 	tag "Wonderous"
 	kind "Equipment" {
-		attunement required=true
+		// TODO: charges, action
+		// TODO: limited to those with pipes proficiency
 	}
 }

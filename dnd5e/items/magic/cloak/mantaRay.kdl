@@ -3,5 +3,6 @@ item name="Cloak of the Manta Ray" {
 	rarity "Uncommon"
 	tag "Wonderous"
 	kind "Equipment" {
+		// TODO: can breath underwater, swim speed 60ft
 	}
 }

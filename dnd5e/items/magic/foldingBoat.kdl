@@ -8,8 +8,6 @@ item name="Folding Boat" {
 	}
 	rarity "Rare"
 	tag "Wonderous"
-	kind "Equipment" {
-		attunement required=true
-	}
+	kind "Equipment"
 	// TODO: Command words / actions
 }

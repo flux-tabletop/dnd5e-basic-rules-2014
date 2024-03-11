@@ -5,7 +5,6 @@ item name="Rope of Entanglement" {
 	}
 	rarity "Rare"
 	tag "Wonderous"
-	kind "Equipment" {
-		attunement required=true
-	}
+	kind "Equipment"
+	// TODO: action/bonus action
 }

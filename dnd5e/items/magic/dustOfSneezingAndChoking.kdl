@@ -4,7 +4,6 @@ item name="Dust of Sneezing and Choking" {
 	}
 	rarity "Uncommon"
 	tag "Wonderous"
-	kind "Equipment" {
-		attunement required=true
-	}
+	kind "Equipment"
+	// TODO: action to use the dust
 }

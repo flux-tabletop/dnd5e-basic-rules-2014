@@ -3,4 +3,5 @@ item name="Ring of Swimming" {
 	rarity "Uncommon"
 	tag "Ring"
 	kind "Equipment"
+	// TODO: swim speed
 }

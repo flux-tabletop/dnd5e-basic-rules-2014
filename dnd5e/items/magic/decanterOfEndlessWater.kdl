@@ -9,5 +9,7 @@ item name="Decanter of Endless Water" {
 	}
 	rarity "Uncommon"
 	tag "Wonderous"
-	kind "Equipment" requires-attunement=true
+	kind "Equipment" {
+		attunement required=true
+	}
 }

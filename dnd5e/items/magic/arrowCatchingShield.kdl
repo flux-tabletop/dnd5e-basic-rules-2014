@@ -4,6 +4,7 @@ item name="Arrow-Catching Shield" {
 	kind "Equipment" {
 		attunement required=true
 		shield bonus=2
+		// TODO: these mutators are attunement only
 		mutator "bonus" "ArmorClass" 2 context="ranged attacks"
 		mutator "feature" name="Intercept Ranged Attack" {
 			description {

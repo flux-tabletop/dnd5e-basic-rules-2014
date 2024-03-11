@@ -8,5 +8,7 @@ item name="Pipes of the Sewers" {
 	tag "Wonderous"
 	kind "Equipment" {
 		attunement required=true
+		// TODO: requires proficiency with pipes
+		// TOOD: charges/action
 	}
 }

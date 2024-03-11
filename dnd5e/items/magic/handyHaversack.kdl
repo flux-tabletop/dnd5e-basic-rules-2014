@@ -7,8 +7,6 @@ item name="Handy Haversack" {
 	}
 	rarity "Rare"
 	tag "Wonderous"
-	kind "Equipment" {
-		attunement required=true
-	}
+	kind "Equipment"
 	// TODO: Container for objcts
 }

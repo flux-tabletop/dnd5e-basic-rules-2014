@@ -4,5 +4,6 @@ item name="Ring of Regeneration" {
 	tag "Ring"
 	kind "Equipment" {
 		attunement required=true
+		// TODO: regain HP via condition
 	}
 }

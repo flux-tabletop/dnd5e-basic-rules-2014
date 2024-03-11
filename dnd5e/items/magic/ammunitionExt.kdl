@@ -1,0 +1,22 @@
+generator "item" "ammunitionPlus" {
+	filter {
+		tag "Ammunition"
+		rarity "None"
+	}
+	// TODO: create weapon attack variants for each ammo type in the inventory, using an attack consumes the ammo
+	variant "1" {
+		extend "name" "{name} (+1)"
+		extend "rarity" "Uncommon"
+		extend "description" "You have a +1 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical."
+	}
+	variant "2" {
+		extend "name" "{name} (+2)"
+		extend "rarity" "Rare"
+		extend "description" "You have a +2 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical."
+	}
+	variant "3" {
+		extend "name" "{name} (+3)"
+		extend "rarity" "VeryRare"
+		extend "description" "You have a +3 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical."
+	}
+}

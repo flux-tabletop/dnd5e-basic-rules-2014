@@ -8,5 +8,7 @@ item name="Robe of Stars" {
 	tag "Wonderous"
 	kind "Equipment" {
 		attunement required=true
+		// TODO: +1 to saving throws
+		// TODO: actions
 	}
 }

@@ -6,6 +6,7 @@ item name="Cubic Gate" {
 	rarity "Legendary"
 	tag "Wonderous"
 	kind "Equipment" {
+		// TODO: charges + action for gate spell based on the side
 		charges 3 {
 			reset_on "Long" (Roll)"1d3"
 		}

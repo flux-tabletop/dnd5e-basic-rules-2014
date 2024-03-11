@@ -4,5 +4,6 @@ item name="Amulet of Proof against Detection and Location" {
 	tag "Wonderous"
 	kind "Equipment" {
 		attunement required=true
+		// TODO: apply condition that you are hidden from divination magic
 	}
 }

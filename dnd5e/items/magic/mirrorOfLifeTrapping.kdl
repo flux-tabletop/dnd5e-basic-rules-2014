@@ -10,7 +10,5 @@ item name="Mirror of Life Trapping" {
 	}
 	rarity "VeryRare"
 	tag "Wonderous"
-	kind "Equipment" {
-		attunement required=true
-	}
+	kind "Equipment"
 }

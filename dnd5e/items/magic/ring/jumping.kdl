@@ -4,5 +4,6 @@ item name="Ring of Jumping" {
 	tag "Ring"
 	kind "Equipment" {
 		attunement required=true
+		// TODO: grant jump spell as bonus action for self only
 	}
 }

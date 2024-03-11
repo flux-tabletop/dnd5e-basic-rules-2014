@@ -7,7 +7,5 @@ item name="Marvelous Pigments" {
 	}
 	rarity "VeryRare"
 	tag "Wonderous"
-	kind "Equipment" {
-		attunement required=true
-	}
+	kind "Equipment"
 }

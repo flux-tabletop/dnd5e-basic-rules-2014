@@ -1,0 +1,37 @@
+generator "block" "abilityBook" {
+	base {
+		item name="{NAME}" {
+			description "This book contains guidelines for influencing and charming others, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your {ABILITY} score increases by 2, as does your maximum for that score. The manual then loses its magic, but regains it in a century."
+			rarity "VeryRare"
+			tag "Wonderous"
+			kind "Equipment" {
+				attunement required=true
+			}
+			// TODO: button to consume book and apply feat, with a charge that indicates if that action can be done
+		}
+	}
+	variant "str" {
+		entry "NAME" "Manual of Gainful Exercise"
+		entry "ABILITY" "Strength"
+	}
+	variant "dex" {
+		entry "NAME" "Manual of Quickness of Action"
+		entry "ABILITY" "Dexterity"
+	}
+	variant "con" {
+		entry "NAME" "Manual of Bodily Health"
+		entry "ABILITY" "Constitution"
+	}
+	variant "int" {
+		entry "NAME" "Tome of Clear Thought"
+		entry "ABILITY" "Intelligence"
+	}
+	variant "wis" {
+		entry "NAME" "Tome of Understanding"
+		entry "ABILITY" "Wisdom"
+	}
+	variant "cha" {
+		entry "NAME" "Tome of Leadership and Influence"
+		entry "ABILITY" "Charisma"
+	}
+}

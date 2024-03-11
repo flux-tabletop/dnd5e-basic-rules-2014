@@ -8,5 +8,6 @@ item name="Scarab of Protection" {
 	tag "Wonderous"
 	kind "Equipment" {
 		attunement required=true
+		// TODO: charges
 	}
 }

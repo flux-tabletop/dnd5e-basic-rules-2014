@@ -2,7 +2,6 @@ item name="Goggles of Night" {
 	description "While wearing these dark lenses, you have darkvision out to a range of 60 feet. If you already have darkvision, wearing the goggles increases its range by 60 feet."
 	rarity "Uncommon"
 	tag "Wonderous"
-	kind "Equipment" {
-		attunement required=true
-	}
+	kind "Equipment"
+	// TODO: darkvision minimum range
 }

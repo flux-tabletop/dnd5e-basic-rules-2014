@@ -7,8 +7,6 @@ item name="Instant Fortress" {
 	}
 	rarity "Rare"
 	tag "Wonderous"
-	kind "Equipment" {
-		attunement required=true
-	}
+	kind "Equipment"
 	// TODO: Action
 }

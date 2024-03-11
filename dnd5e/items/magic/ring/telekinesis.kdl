@@ -4,5 +4,6 @@ item name="Ring of Telekinesis" {
 	tag "Ring"
 	kind "Equipment" {
 		attunement required=true
+		// TODO: cast telekinesis at will
 	}
 }

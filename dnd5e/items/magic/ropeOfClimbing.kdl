@@ -6,7 +6,6 @@ item name="Rope of Climbing" {
 	}
 	rarity "Uncommon"
 	tag "Wonderous"
-	kind "Equipment" {
-		attunement required=true
-	}
+	kind "Equipment"
+	// TODO: bonus action
 }

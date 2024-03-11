@@ -4,7 +4,8 @@ item name="Cloak of the Bat" {
 	While wearing the cloak in an area of dim light or darkness, you can use your action to cast polymorph on yourself, transforming into a bat. While you are in the form of the bat, you retain your Intelligence, Wisdom, and Charisma scores. The cloak can't be used this way again until the next dawn."
 	rarity "Rare"
 	tag "Wonderous"
-	kind "Equipment" requires-attunement=true {
+	kind "Equipment" {
+		attunement required=true
 		// TODO: adv on stealth checks
 		// TODO: spellcasting Polymorph on self to turn into a Bat? 1/long rest
 	}

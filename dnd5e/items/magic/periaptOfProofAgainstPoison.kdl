@@ -3,6 +3,6 @@ item name="Periapt of Proof against Poison" {
 	rarity "Rare"
 	tag "Wonderous"
 	kind "Equipment" {
-		attunement required=true
+		// TODO: immune to poisons and poison damage
 	}
 }

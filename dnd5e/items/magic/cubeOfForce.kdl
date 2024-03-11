@@ -24,7 +24,9 @@ item name="Cube of Force" {
 	}
 	rarity "Rare"
 	tag "Wonderous"
-	kind "Equipment" requires-attunement=true {
+	kind "Equipment" {
+		attunement required=true
+		// TODO: charges
 		charges 36 {
 			reset_on "Long" (Roll)"1d20"
 		}

@@ -1,10 +1,5 @@
-// A kdl generator looks at the base block and generates new entries for the module using each variant block.
-// The contents of the `base` block are turned into a string (exactly like when a document is saved to text),
-// substrings in that string are replaced using the key-value pairs in each variant,
-// and the resulting document string is re-parsed as kdl for further processing.
 generator "block" "armorOfResistanceBase" {
 	base {
-		// in this sample, the kdl generator creates new item generator for armor types.
 		generator "item" "armorOfResistance{DMG_TYPE}" {
 			filter {
 				armor "light" "medium" "heavy"
@@ -14,7 +9,6 @@ generator "block" "armorOfResistanceBase" {
 				extend "name" "{name} of {DMG_TYPE} Resistance"
 				extend "rarity" "Rare"
 				extend "description" "You have resistance to {DMG_TYPE} damage while you wear this armor."
-				// extending equipment allows us to override attunement and add mutators of the item when its equipped
 				extend "equipment" {
 					attunement required=true
 					mutator "add_defense" "Resistance" (DamageType)"Specific" "{DMG_TYPE}"
@@ -22,8 +16,6 @@ generator "block" "armorOfResistanceBase" {
 			}
 		}
 	}
-	// variant can be short-handed to just have 1 key-value entry.
-	// it is equivalent to `variant { entry "key" "value" }`
 	variant "Acid" "DMG_TYPE" "Acid"
 	variant "Cold" "DMG_TYPE" "Cold"
 	variant "Fire" "DMG_TYPE" "Fire"

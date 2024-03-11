@@ -6,4 +6,5 @@ item name="Rod of Security" {
 	}
 	rarity "VeryRare"
 	tag "Rod"
+	// TODO: action
 }

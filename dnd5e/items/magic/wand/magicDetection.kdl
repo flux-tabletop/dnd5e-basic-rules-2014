@@ -3,4 +3,5 @@ item name="Wand of Magic Detection" {
 	rarity "Uncommon"
 	tag "Wand"
 	kind "Equipment"
+	// TODO: charges
 }

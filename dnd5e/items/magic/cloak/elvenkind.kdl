@@ -2,7 +2,9 @@ item name="Cloak of Elvenkind" {
 	description "While you wear this cloak with its hood up, Wisdom (Perception) checks made to see you have disadvantage, and you have advantage on Dexterity (Stealth) checks made to hide, as the cloak's color shifts to camouflage you. Pulling the hood up or down requires an action."
 	rarity "Uncommon"
 	tag "Wonderous"
-	kind "Equipment" requires-attunement=true {
+	kind "Equipment" {
+		attunement required=true
 		// TODO: adv on stealth checks to hide
+		// TODO: cause disadvantage on checks to see you (perception)
 	}
 }

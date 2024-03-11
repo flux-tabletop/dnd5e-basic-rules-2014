@@ -1,6 +1,0 @@
-item name="Crossbow Bolt (+2)" weight=0.075 {
-	description "You have a +2 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical."
-	rarity "Rare"
-	kind "Simple" count=1
-	tag "Bolt"
-}

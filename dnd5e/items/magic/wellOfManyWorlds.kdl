@@ -4,7 +4,6 @@ item name="Well of Many Worlds" {
 	}
 	rarity "Legendary"
 	tag "Wonderous"
-	kind "Equipment" {
-		attunement required=true
-	}
+	kind "Equipment"
+	// TODO: action
 }

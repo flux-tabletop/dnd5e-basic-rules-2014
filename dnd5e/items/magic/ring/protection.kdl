@@ -4,5 +4,6 @@ item name="Ring of Protection" {
 	tag "Ring"
 	kind "Equipment" {
 		attunement required=true
+		// TODO: +1 to AC and saving throws
 	}
 }

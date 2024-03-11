@@ -2,7 +2,8 @@ item name="Brooch of Shielding" {
 	description "While wearing this brooch, you have resistance to force damage, and you have immunity to damage from the magic missile spell."
 	rarity "Uncommon"
 	tag "Wonderous"
-	kind "Equipment" requires-attunement=true {
+	kind "Equipment" {
+		attunement required=true
 		// TODO: resistance to force damage
 		// TODO: immunity to magic missle damage
 	}

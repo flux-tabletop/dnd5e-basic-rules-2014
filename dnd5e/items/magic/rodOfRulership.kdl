@@ -4,5 +4,6 @@ item name="Rod of Rulership" {
 	tag "Rod"
 	kind "Equipment" {
 		attunement required=true
+		// TODO: action
 	}
 }
