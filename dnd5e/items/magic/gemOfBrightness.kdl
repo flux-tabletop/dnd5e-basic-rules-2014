@@ -8,6 +8,8 @@ item name="Gem of Brightness" {
 	}
 	rarity "Uncommon"
 	tag "Wonderous"
-	kind "Equipment"
-	// TODO: Charges and command words
+	kind "Equipment" {
+		// TODO: command words
+		charges 50
+	}
 }

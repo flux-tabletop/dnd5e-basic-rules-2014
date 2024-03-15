@@ -210,7 +210,7 @@ class name="Cleric" {
 			}
 			action "Action" {
 				limited_uses {
-					resource "Cleric/level02/Channel Divinity"
+					resource "/Cleric/level02/Channel Divinity"
 				}
 			}
 		}

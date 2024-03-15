@@ -4,6 +4,9 @@ item name="Pearl of Power" {
 	tag "Wonderous"
 	kind "Equipment" {
 		attunement required=true // TODO: by spellcaster only
-		// TODO: charges/action to regain spell slot
+		// TODO: action to regain spell slot
+		charges 1 {
+			reset "Long"
+		}
 	}
 }

@@ -69,7 +69,7 @@ subclass class="Paladin" name="Oath of Devotion" {
 			}
 			action "Action" {
 				limited_uses {
-					resource "Paladin/level03/Channel Divinity"
+					resource "/Paladin/level03/Channel Divinity"
 				}
 			}
 		}
@@ -93,7 +93,7 @@ subclass class="Paladin" name="Oath of Devotion" {
 			}
 			action "Action" {
 				limited_uses {
-					resource "Paladin/level03/Channel Divinity"
+					resource "/Paladin/level03/Channel Divinity"
 				}
 			}
 		}

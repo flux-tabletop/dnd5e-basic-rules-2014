@@ -7,7 +7,7 @@ bundle category="Metamagic" name="Extended Spell" {
 		action "Special" {
 			limited_uses {
 				cost 1
-				resource "Sorcerer/level02/Font of Magic"
+				resource "/Sorcerer/level02/Font of Magic"
 			}
 		}
 	}

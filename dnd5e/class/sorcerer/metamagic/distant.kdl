@@ -8,7 +8,7 @@ bundle category="Metamagic" name="Distant Spell" {
 		action "Special" {
 			limited_uses {
 				cost 1
-				resource "Sorcerer/level02/Font of Magic"
+				resource "/Sorcerer/level02/Font of Magic"
 			}
 		}
 	}

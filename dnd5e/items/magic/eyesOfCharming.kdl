@@ -6,7 +6,12 @@ item name="Eyes of Charming" {
 	tag "Wonderous"
 	kind "Equipment" {
 		attunement required=true
+		// TODO: Action using charges to cast Charm Person
+		charges 3 {
+			reset_on {
+				rest "Long"
+				rate "3"
+			}
+		}
 	}
-	// TODO: Charges
-	// TODO: Action using charges to cast Charm Person
 }

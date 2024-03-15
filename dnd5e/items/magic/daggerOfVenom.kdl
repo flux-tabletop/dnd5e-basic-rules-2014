@@ -11,6 +11,6 @@ item name="Dagger of Venom" weight=1.0 {
 			property "Light"
 			property "Thrown" 20 60
 		}
-		// TODO: charges
+		// TODO: action which resets on long rest
 	}
 }

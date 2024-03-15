@@ -438,7 +438,7 @@ class name="Monk" {
 				action "Action" {
 					limited_uses {
 						cost 4
-						resource "Monk/level02/Ki"
+						resource "/Monk/level02/Ki"
 					}
 					condition "Custom" name="Invisibility (Empty Body)" {
 						description "Ki-based Invisibility and Damage Resistance"
@@ -464,14 +464,14 @@ class name="Monk" {
 				action "Action" {
 					limited_uses {
 						cost 8
-						resource "Monk/level02/Ki"
+						resource "/Monk/level02/Ki"
 					}
 				}
 				mutator "spellcasting" "add_prepared" ability="Wisdom" {
 					spell "spells/astralProjection.kdl"
 					limited_uses {
 						cost 8
-						resource "Monk/level02/Ki"
+						resource "/Monk/level02/Ki"
 					}
 				}
 			}

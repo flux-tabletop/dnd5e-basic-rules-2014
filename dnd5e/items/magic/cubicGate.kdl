@@ -6,9 +6,12 @@ item name="Cubic Gate" {
 	rarity "Legendary"
 	tag "Wonderous"
 	kind "Equipment" {
-		// TODO: charges + action for gate spell based on the side
+		// TODO: action for gate spell based on the side
 		charges 3 {
-			reset_on "Long" (Roll)"1d3"
+			reset_on {
+				rest "Long"
+				rate "1d4" // TODO: 1d3 isn't a valid natural die
+			}
 		}
 	}
 }

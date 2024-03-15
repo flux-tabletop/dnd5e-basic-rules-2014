@@ -4,6 +4,12 @@ item name="Medallion of Thoughts" {
 	tag "Wonderous"
 	kind "Equipment" {
 		attunement required=true
+		charges 3 {
+			reset {
+				rest "Long"
+				rate "1d4" // TODO: 1d3 isn't a valid natural die
+			}
+		}
 	}
 	// TODO: Charges, Detect Thoughts
 }

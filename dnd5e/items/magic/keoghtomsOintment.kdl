@@ -6,5 +6,5 @@ item name="Keoghtom's Ointment" {
 	rarity "Uncommon"
 	tag "Wonderous"
 	kind "Equipment"
-	// TODO: Charges + Action
+	// TODO: Charges (with customizable initial amt) + Action
 }

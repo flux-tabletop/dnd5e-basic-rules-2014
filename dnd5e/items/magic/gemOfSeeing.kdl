@@ -4,6 +4,12 @@ item name="Gem of Seeing" {
 	tag "Wonderous"
 	kind "Equipment" {
 		attunement required=true
+		// TODO: action
+		charges 3 {
+			reset_on {
+				rest "Long"
+				rate "1d4" // TODO: 1d3 isn't a valid natural die
+			}
+		}
 	}
-	// TODO: Charges and action
 }

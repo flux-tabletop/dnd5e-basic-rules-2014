@@ -26,9 +26,12 @@ item name="Cube of Force" {
 	tag "Wonderous"
 	kind "Equipment" {
 		attunement required=true
-		// TODO: charges
+		// TODO: actions for expending charges
 		charges 36 {
-			reset_on "Long" (Roll)"1d20"
+			reset_on {
+				rest "Long"
+				rate "1d20"
+			}
 		}
 	}
 }

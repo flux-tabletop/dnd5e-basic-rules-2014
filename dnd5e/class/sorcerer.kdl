@@ -343,7 +343,7 @@ class name="Sorcerer" {
 			// Mutator which adds a rest entry to reset n number of uses of a resource
 			mutator-todo-qol "restore_uses" reset_on="Short" {
 				amount 4
-				resource "Sorcerer/level02/Font of Magic"
+				resource "/Sorcerer/level02/Font of Magic"
 			}
 		}
 	}

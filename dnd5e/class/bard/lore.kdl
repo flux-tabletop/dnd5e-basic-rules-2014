@@ -18,7 +18,7 @@ subclass class="Bard" name="College of Lore" {
 			}
 			action "Reaction" {
 				limited_uses {
-					resource "Bard/level01/Bardic Inspiration"
+					resource "/Bard/level01/Bardic Inspiration"
 				}
 			}
 		}
@@ -44,7 +44,7 @@ subclass class="Bard" name="College of Lore" {
 			}
 			action "Special" {
 				limited_uses {
-					resource "Bard/level01/Bardic Inspiration"
+					resource "/Bard/level01/Bardic Inspiration"
 				}
 			}
 		}
