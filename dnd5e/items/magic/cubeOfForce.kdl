@@ -26,11 +26,55 @@ item name="Cube of Force" {
 	tag "Wonderous"
 	kind "Equipment" {
 		attunement required=true
-		// TODO: actions for expending charges
 		charges 36 {
 			reset_on {
 				rest "Long"
 				rate "1d20"
+			}
+		}
+		mutator "feature" name="Face 1 - Block Fumes" {
+			description "Gases, wind, and fog can't pass through the barrier"
+			action "Action" {
+				limited_uses {
+					resource "../uses"
+					cost 1
+				}
+			}
+		}
+		mutator "feature" name="Face 2 - Block Objects" {
+			description "Nonliving matter can't pass through the barrier. Walls, floors, and ceilings can pass through at your discretion."
+			action "Action" {
+				limited_uses {
+					resource "../uses"
+					cost 2
+				}
+			}
+		}
+		mutator "feature" name="Face 3 - Block Creatures" {
+			description "Living matter can't pass through the barrier."
+			action "Action" {
+				limited_uses {
+					resource "../uses"
+					cost 3
+				}
+			}
+		}
+		mutator "feature" name="Face 4 - Block Spells" {
+			description "Spell effects can't pass through the barrier."
+			action "Action" {
+				limited_uses {
+					resource "../uses"
+					cost 4
+				}
+			}
+		}
+		mutator "feature" name="Face 5 - Block Everything" {
+			description "Nothing can pass through the barrier. Walls, floors, and ceilings can pass through at your discretion."
+			action "Action" {
+				limited_uses {
+					resource "../uses"
+					cost 5
+				}
 			}
 		}
 	}
