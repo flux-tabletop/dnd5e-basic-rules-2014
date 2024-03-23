@@ -1,4 +1,7 @@
 condition name="Poisoned" {
 	description "A poisoned creature has disadvantage on attack rolls and ability checks."
-	// TODO: DisAdv on all attack rolls and ability checks
+	mutator "modify" (Ability)"All" "Disadvantage"
+	mutator "modify" (Attack)"Roll" {
+		modify "Disadvantage"
+	}
 }

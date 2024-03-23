@@ -3,6 +3,9 @@ condition name="Restrained" {
 	Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage. 
 	The creature has disadvantage on Dexterity saving throws."
 	// TODO: Speed override to 0
-	// TODO: Disadvantage on all attack rolls
-	// TODO: Disadvantage on dex saves
+	mutator-todo "speed" "All" (Maximum)0
+	mutator "modify" (Attack)"Roll" {
+		modify "Disadvantage"
+	}
+	mutator "modify" (SavingThrow)"All" "Disadvantage"
 }

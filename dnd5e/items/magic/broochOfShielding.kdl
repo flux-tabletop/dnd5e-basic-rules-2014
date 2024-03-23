@@ -4,7 +4,7 @@ item name="Brooch of Shielding" {
 	tag "Wonderous"
 	kind "Equipment" {
 		attunement required=true
-		// TODO: resistance to force damage
-		// TODO: immunity to magic missle damage
+		mutator "add_defense" "Resistance" (DamageType)"Specific" "Force"
+		mutator "add_defense" "Immunity" context="magic missle damage"
 	}
 }

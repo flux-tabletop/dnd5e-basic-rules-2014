@@ -4,5 +4,6 @@ item name="Glamoured Studded Leather" {
 	tag "Wonderous"
 	kind "Equipment"
 	// TODO: Armor (studded leather)
-	// TODO: AC+1, bonus action
+	// TODO: bonus action
+	mutator "modify" "ArmorClass" 1
 }

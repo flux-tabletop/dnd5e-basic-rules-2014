@@ -12,20 +12,36 @@ condition name="Exhasted" {
 		}
 		option "Level 2" {
 			description "Speed halved"
+			mutator "modify" (Ability)"All" "Disadvantage"
 			mutator-todo "speed" "All" (Divide)2 round="floor"
 		}
 		option "Level 3" {
 			description "Disadvantage on attack rolls and saving throws"
-			// TODO: modifier on all attack rolls
-			mutator-todo "add_modifier" "Disadvantage" (AttackRoll)""
+			mutator "modify" (Ability)"All" "Disadvantage"
 			mutator "modify" (SavingThrow)"All" "Disadvantage"
+			mutator "modify" (Attack)"Roll" {
+				modifier "Disadvantage"
+			}
+			// TODO: half speed
 		}
 		option "Level 4" {
 			description "Hit point maximum halved"
+			mutator "modify" (Ability)"All" "Disadvantage"
+			mutator "modify" (SavingThrow)"All" "Disadvantage"
+			mutator "modify" (Attack)"Roll" {
+				modifier "Disadvantage"
+			}
+			// TODO: half speed
 			mutator-todo "hit_point_max" (Divide)2 round="floor"
 		}
 		option "Level 5" {
 			description "Speed reduced to 0"
+			mutator "modify" (Ability)"All" "Disadvantage"
+			mutator "modify" (SavingThrow)"All" "Disadvantage"
+			mutator "modify" (Attack)"Roll" {
+				modifier "Disadvantage"
+			}
+			mutator-todo "hit_point_max" (Divide)2 round="floor"
 			mutator-todo "speed" "All" (Maximum)0
 		}
 		option "Level 6" {

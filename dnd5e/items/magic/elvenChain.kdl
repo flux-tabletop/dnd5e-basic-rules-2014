@@ -10,6 +10,6 @@ item name="Elven Chain" weight=20.0 {
 			}
 		}
 	}
-	// TODO: +1 bonus to AC
+	mutator "modify" "ArmorClass" 1
 	// TODO: proficient even if lacking proficiency
 }

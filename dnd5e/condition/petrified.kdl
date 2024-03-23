@@ -6,5 +6,5 @@ condition name="Petrified" {
 	The creature has resistance to all damage. 
 	The creature is immune to poison and disease, although a poison or disease already in its system is suspended, not neutralized."
 	implies "condition/incapacitated.kdl"
-	// TODO: Resistance to all damage
+	mutator "add_defense" "Resistance"
 }

@@ -12,7 +12,15 @@ generator "item" "beserkerAxe" {
 		}
 		extend "equipment" {
 			attunement required=true
-			// TODO: mutators: +1 bonus to attack and damage rolls made with this magic weapon, hit point maximum increases by 1 for each level
+			mutator-todo "modify" (Attack)"Roll" {
+				bonus 1
+				// TODO: attack query for only actions created by this item
+			}
+			mutator-todo "modify" (Attack)"Damage" {
+				bonus 1
+				// TODO: attack query for only actions created by this item
+			}
+			// TODO: hit point maximum increases by 1 for each level
 			// TODO: add feats for curse & beserker
 		}
 	}

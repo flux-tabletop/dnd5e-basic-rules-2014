@@ -5,6 +5,6 @@ item name="Bracers of Archery" {
 	kind "Equipment" {
 		attunement required=true
 		// TODO: add_proficiency with long & short bows
-		// TODO: Bonus::AttackDamage; +2 on damage rolls with long and short bows
+		// TODO: Modify::AttackDamage; +2 on damage rolls with long and short bows
 	}
 }

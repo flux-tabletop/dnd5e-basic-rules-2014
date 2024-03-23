@@ -5,6 +5,6 @@ item name="Gloves of Swimming and Climbing" {
 	kind "Equipment" {
 		attunement required=true
 	}
-	// TODO: +5 acrobatics for climb / swim
+	// TODO: +5 athletics for climb / swim
 	// TODO: swim and climb speed that match walking
 }
