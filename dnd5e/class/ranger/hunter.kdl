@@ -35,7 +35,7 @@ subclass class="Ranger" name="Hunter" {
 				}
 			}
 			option "Steel Will" {
-				mutator "add_modifier" "Advantage" (SavingThrow)"All" context="bring frightened"
+				mutator "modify" (SavingThrow)"All" "Advantage" context="bring frightened"
 			}
 		}
 	}

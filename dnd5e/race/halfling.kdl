@@ -16,7 +16,7 @@ bundle category="Race" name="Halfling" {
 	}
 	mutator "feature" name="Brave" {
 		description "You have advantage on saving throws against being frightened."
-		mutator "add_modifier" "Advantage" (SavingThrow)"All" context="being frightened"
+		mutator "modify" (SavingThrow)"All" "Advantage" context="being frightened"
 	}
 	mutator "feature" name="Halfling Nimbleness" {
 		description "You can move through the space of any creature that is of a size larger than yours."

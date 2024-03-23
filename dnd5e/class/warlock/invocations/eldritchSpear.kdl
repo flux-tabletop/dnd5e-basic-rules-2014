@@ -1,7 +1,8 @@
 bundle category="Eldritch Invocation" name="Eldritch Spear" display_as_feature=true {
 	requirement-todo (Evaluator)"has_cantrip" "spells/eldritchBlast.kdl"
 	description "When you cast eldritch blast, its range is 300 feet."
-	mutator-todo "bonus" (Spell)"Range" 300 {
+	// TODO: modify (Spell)Range
+	mutator-todo "modify" (Spell)"Range" 300 {
 		spell "spells/eldritchBlast.kdl"
 	}
 }

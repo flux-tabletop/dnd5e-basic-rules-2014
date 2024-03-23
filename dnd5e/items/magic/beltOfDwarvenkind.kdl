@@ -17,8 +17,8 @@ item name="Belt of Dwarvenkind" {
 			ability "Specific" (Ability)"Constitution"
 			bonus 2
 		}
-		mutator "add_modifier" "Advantage" (Skill)"Specific" "Persuasion" context="when interacting with dwarves"
-		mutator "add_modifier" "Advantage" (SavingThrow)"All" context="Poison"
+		mutator "modify" (Skill)"Specific" "Persuasion" "Advantage" context="when interacting with dwarves"
+		mutator "modify" (SavingThrow)"All" "Advantage" context="Poison"
 		mutator "add_defense" "Resistance" (DamageType)"Specific" "Poison"
 		mutator "sense" "Darkvision" (Minimum)60
 		mutator "add_proficiency" (Language)"Specific" "Dwarvish"

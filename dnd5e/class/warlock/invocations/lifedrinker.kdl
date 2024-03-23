@@ -4,15 +4,15 @@ bundle category="Eldritch Invocation" name="Lifedrinker" display_as_feature=true
 		option "Warlock/level03/Pact Boon" "Pact of the Blade"
 	}
 	description "When you hit a creature with your pact weapon, the creature takes extra necrotic damage equal to your Charisma modifier (minimum 1)."
-	mutator-todo "bonus" (Attack)"Damage" {
-		query {
-			tag "Pact Weapon" // TODO: there is no way to identify the pact weapon right now
-		}
+	mutator "modify" (Attack)"Damage" {
 		damage {
 			amount (Evaluator)"math" "Add" min=1 {
 				value (Evaluator)"get_ability_modifier" (Ability)"Charisma"
 			}
 		}
 		damage_type "Necrotic"
+		query {
+			tag "Pact Weapon" // TODO: there is no way to identify the pact weapon right now
+		}
 	}
 }

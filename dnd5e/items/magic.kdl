@@ -472,7 +472,7 @@ item_ name="" {
 				formula base=18
 				min-strength 15
 			}
-			mutator "add_modifier" "Disadvantage" (Skill)"Specific" "Stealth"
+			mutator "modify" (Skill)"Specific" "Stealth" "Disadvantage"
 			mutator "add_defense" "Resistance" (DamageType)"Specific" "Bludgeoning"
 			mutator "add_defense" "Vulnerability" (DamageType)"Specific" "Piercing"
 			mutator "add_defense" "Vulnerability" (DamageType)"Specific" "Slashing"
@@ -491,7 +491,7 @@ item_ name="" {
 				formula base=18
 				min-strength 15
 			}
-			mutator "add_modifier" "Disadvantage" (Skill)"Specific" "Stealth"
+			mutator "modify" (Skill)"Specific" "Stealth" "Disadvantage"
 			mutator "add_defense" "Vulnerability" (DamageType)"Specific" "Bludgeoning"
 			mutator "add_defense" "Resistance" (DamageType)"Specific" "Piercing"
 			mutator "add_defense" "Vulnerability" (DamageType)"Specific" "Slashing"
@@ -510,7 +510,7 @@ item_ name="" {
 				formula base=18
 				min-strength 15
 			}
-			mutator "add_modifier" "Disadvantage" (Skill)"Specific" "Stealth"
+			mutator "modify" (Skill)"Specific" "Stealth" "Disadvantage"
 			mutator "add_defense" "Vulnerability" (DamageType)"Specific" "Bludgeoning"
 			mutator "add_defense" "Vulnerability" (DamageType)"Specific" "Piercing"
 			mutator "add_defense" "Resistance" (DamageType)"Specific" "Slashing"

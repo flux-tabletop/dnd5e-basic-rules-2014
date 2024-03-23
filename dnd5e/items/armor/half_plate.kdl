@@ -7,6 +7,6 @@ item name="Half Plate" weight=40.0 {
 				bonus (Ability)"Dexterity" max=2
 			}
 		}
-		mutator "add_modifier" "Disadvantage" (Skill)"Specific" "Stealth"
+		mutator "modify" (Skill)"Specific" "Stealth" "Disadvantage"
 	}
 }

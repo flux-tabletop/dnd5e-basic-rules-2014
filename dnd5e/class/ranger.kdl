@@ -106,7 +106,7 @@ class name="Ranger" {
 				option "Archery" {
 					mutator "feature" name="Archery" {
 						// You gain a +2 bonus to attack rolls you make with ranged weapons.
-						mutator "bonus" (Attack)"Roll" {
+						mutator "modify" (Attack)"Roll" {
 							bonus 2
 							query {
 								weapon "Simple" "Martial"
@@ -120,7 +120,7 @@ class name="Ranger" {
 						// While you are wearing armor, you gain a +1 bonus to AC.
 						mutator "apply_if" {
 							criteria (Evaluator)"has_armor_equipped"
-							mutator "bonus" "ArmorClass" 1
+							mutator "modify" "ArmorClass" 1
 						}
 					}
 				}
@@ -133,7 +133,7 @@ class name="Ranger" {
 								attack "Melee"
 								property "TwoHanded" false
 							}
-							mutator "bonus" (Attack)"Damage" {
+							mutator "modify" (Attack)"Damage" {
 								damage 2
 								query {
 									weapon "Simple" "Martial"
@@ -301,7 +301,7 @@ class name="Ranger" {
 			description "Starting at 8th level, moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.
 
 			In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the entangle spell."
-			mutator "add_modifier" "Advantage" (SavingThrow)"All" context="plants which impede movement"
+			mutator "modify" (SavingThrow)"All" "Advantage" context="plants which impede movement"
 		}
 	}
 	level 10 {

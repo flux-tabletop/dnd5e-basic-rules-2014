@@ -6,6 +6,6 @@ item name="Plate Armor" weight=65.0 {
 			formula base=18
 			min-strength 15
 		}
-		mutator "add_modifier" "Disadvantage" (Skill)"Specific" "Stealth"
+		mutator "modify" (Skill)"Specific" "Stealth" "Disadvantage"
 	}
 }

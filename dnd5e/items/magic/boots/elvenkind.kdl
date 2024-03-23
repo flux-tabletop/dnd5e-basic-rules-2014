@@ -3,6 +3,6 @@ item name="Boots of Elvenkind" {
 	rarity "Uncommon"
 	tag "Wonderous"
 	kind "Equipment" {
-		mutator "add_modifier" "Advantage" (Skill)"Specific" "Stealth" context="that rely on moving silently"
+		mutator "modify" (Skill)"Specific" "Stealth" "Advantage" context="that rely on moving silently"
 	}
 }

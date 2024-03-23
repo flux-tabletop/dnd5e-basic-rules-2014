@@ -93,7 +93,8 @@ class name="Monk" {
 			mutator "apply_if" {
 				criteria (Evaluator)"has_armor_equipped" inverted=true
 				// adds another ability type to the attack, so the attack will always use the higher modifier of dex or str for attack and damage rolls
-				mutator "bonus" (Attack)"AbilityModifier" (Ability)"Dexterity" {
+				mutator "modify" (Attack)"Roll" {
+					ability (Ability)"Dexterity"
 					query {
 						class "UnarmedStrike"
 						class "Shortsword"
@@ -105,7 +106,7 @@ class name="Monk" {
 						property "Heavy" false
 					}
 				}
-				mutator "bonus" (Attack)"Damage" {
+				mutator "modify" (Attack)"Damage" {
 					query {
 						class "UnarmedStrike"
 						class "Shortsword"
