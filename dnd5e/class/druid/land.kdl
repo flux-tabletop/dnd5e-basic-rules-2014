@@ -329,7 +329,7 @@ subclass class="Druid" name="Circle of the Land" {
 
 				In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the entangle spell."
 			}
-			mutator "modify" (SavingThrow)"All" "Advantage" context="plants that are magically created or manipulated to impede movement (e.g. Entangle)"
+			mutator "modify" (SavingThrow)"All" modifier="Advantage" context="plants that are magically created or manipulated to impede movement (e.g. Entangle)"
 		}
 	}
 	level 10 {

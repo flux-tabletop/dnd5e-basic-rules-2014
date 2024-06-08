@@ -88,7 +88,7 @@ class name="Barbarian" {
 							kind "Heavy"
 						}
 						mutator "modify" (Ability)"Specific" "Strength" "Advantage"
-						mutator "modify" (SavingThrow)"Specific" "Strength" "Advantage"
+						mutator "modify" (SavingThrow)"Specific" "Strength" modifier="Advantage"
 						mutator "add_defense" "Resistance" (DamageType)"Specific" "Bludgeoning"
 						mutator "add_defense" "Resistance" (DamageType)"Specific" "Piercing"
 						mutator "add_defense" "Resistance" (DamageType)"Specific" "Slashing"
@@ -144,7 +144,7 @@ class name="Barbarian" {
 						id "condition/incapacitated.kdl"
 					}
 				}
-				mutator "modify" (SavingThrow)"Specific" "Dexterity" "Advantage" context="effects you can see"
+				mutator "modify" (SavingThrow)"Specific" "Dexterity" modifier="Advantage" context="effects you can see"
 			}
 		}
 	}
@@ -201,7 +201,7 @@ class name="Barbarian" {
 		mutator "feature" name="Feral Instinct" {
 			description "By 7th level, your instincts are so honed that you have advantage on initiative rolls.
 			Additionally, if you are surprised at the beginning of combat and aren't incapacitated, you can act normally on your first turn, but only if you enter your rage before doing anything else on that turn."
-			mutator "modify" "Initiative" "Advantage"
+			mutator "modify" "Initiative" modifier="Advantage"
 		}
 	}
 	level 8 {

@@ -18,7 +18,7 @@ condition name="Exhasted" {
 		option "Level 3" {
 			description "Disadvantage on attack rolls and saving throws"
 			mutator "modify" (Ability)"All" "Disadvantage"
-			mutator "modify" (SavingThrow)"All" "Disadvantage"
+			mutator "modify" (SavingThrow)"All" modifier="Disadvantage"
 			mutator "modify" (Attack)"Roll" {
 				modifier "Disadvantage"
 			}
@@ -27,7 +27,7 @@ condition name="Exhasted" {
 		option "Level 4" {
 			description "Hit point maximum halved"
 			mutator "modify" (Ability)"All" "Disadvantage"
-			mutator "modify" (SavingThrow)"All" "Disadvantage"
+			mutator "modify" (SavingThrow)"All" modifier="Disadvantage"
 			mutator "modify" (Attack)"Roll" {
 				modifier "Disadvantage"
 			}
@@ -37,7 +37,7 @@ condition name="Exhasted" {
 		option "Level 5" {
 			description "Speed reduced to 0"
 			mutator "modify" (Ability)"All" "Disadvantage"
-			mutator "modify" (SavingThrow)"All" "Disadvantage"
+			mutator "modify" (SavingThrow)"All" modifier="Disadvantage"
 			mutator "modify" (Attack)"Roll" {
 				modifier "Disadvantage"
 			}

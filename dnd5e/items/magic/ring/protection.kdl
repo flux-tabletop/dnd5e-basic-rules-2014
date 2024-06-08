@@ -4,6 +4,8 @@ item name="Ring of Protection" {
 	tag "Ring"
 	kind "Equipment" {
 		attunement required=true
-		// TODO: +1 to AC and saving throws
+		mutator "modify" "ArmorClass" 1
+		// TODO: +1 instead of adv/disadv to saving throws
+		mutator-todo "modify" (SavingThrow)"All" 1
 	}
 }

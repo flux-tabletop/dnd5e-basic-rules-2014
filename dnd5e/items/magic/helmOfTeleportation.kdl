@@ -4,6 +4,15 @@ item name="Helm of Teleportation" {
 	tag "Wonderous"
 	kind "Equipment" {
 		attunement required=true
+		mutator "spellcasting" "add_prepared" ability="Wisdom" {
+			spell "github://flux-tabletop:dnd5e-basic-rules@dnd5e/spells/teleport.kdl"
+			limited_uses {
+				max_uses 1
+				reset {
+					rest "Long"
+					rate "1d4" // TODO: 1d3 isn't a valid natural die
+				}
+			}
+		}
 	}
-	// TODO: Charges, cast Teleport
 }

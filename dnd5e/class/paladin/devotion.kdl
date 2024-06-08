@@ -137,7 +137,7 @@ subclass class="Paladin" name="Oath of Devotion" {
 					- bright light shines from you in a 30-foot radius, and dim light shines for 30 feet beyond that
 					- at the start of their turn, any enemy creatures who are in the bright light take 10 radius damage
 					- you have advantage on saving throws against spells cast by fiends or undead"
-					mutator "modify" (SavingThrow)"All" "Advantage" context="spells cast by fiends or undead"
+					mutator "modify" (SavingThrow)"All" modifier="Advantage" context="spells cast by fiends or undead"
 				}
 			}
 		}

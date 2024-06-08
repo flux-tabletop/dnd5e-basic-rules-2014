@@ -4,6 +4,10 @@ item name="Headband of Intellect" {
 	tag "Wonderous"
 	kind "Equipment" {
 		attunement required=true
+		mutator "ability_score" {
+			ability "Specific" "Intelligence"
+			// TODO: minimum ability score
+			minimum 19
+		}
 	}
-	// TODO: intelligence = at least 19
 }

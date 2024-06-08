@@ -2,6 +2,9 @@ item name="Helm of Comprehending Languages" {
 	description "While wearing this helm, you can use an action to cast the comprehend languages spell from it at will."
 	rarity "Uncommon"
 	tag "Wonderous"
-	kind "Equipment"
-	// TODO: cast Comprehend Languages
+	kind "Equipment" {
+		mutator "spellcasting" "add_prepared" ability="Wisdom" {
+			spell "github://flux-tabletop:dnd5e-basic-rules@dnd5e/spells/comprehendLanguages.kdl"
+		}
+	}
 }

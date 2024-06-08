@@ -2,13 +2,14 @@ item name="Dwarven Thrower" weight=2.0 {
 	description "You gain a +3 bonus to attack and damage rolls made with this magic weapon. It has the thrown property with a normal range of 20 feet and a long range of 60 feet. When you hit with a ranged attack using this weapon, it deals an extra 1d8 damage or, if the target is a giant, 2d8 damage. Immediately after the attack, the weapon flies back to your hand."
 	rarity "VeryRare"
 	kind "Equipment" {
+		// TODO: attunement by a dwarf
 		attunement required=true
 		weapon "Martial" class="Warhammer" {
-			damage "Bludgeoning" roll="1d8"
+			// TODO: +3 to attack roll
+			attack 3
+			damage "Bludgeoning" roll="1d8" base=3
 			property "Versatile" "1d10"
+			property "Thrown" 20 60
 		}
-		// TODO: attunement by a dwarf
-		// TODO: +3 bonus to attack and damage rolls
-		// TODO: It has the thrown property with a normal range of 20 feet and a long range of 60 feet.
 	}
 }

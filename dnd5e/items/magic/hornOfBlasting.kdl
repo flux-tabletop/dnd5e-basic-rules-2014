@@ -5,7 +5,7 @@ item name="Horn of Blasting" {
 	}
 	rarity "Rare"
 	tag "Wonderous"
-	kind "Equipment"
-	// TODO: actions
-	// TODO: charges
+	kind "Equipment" {
+		// TODO: actions
+	}
 }

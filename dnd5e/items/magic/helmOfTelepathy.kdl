@@ -7,7 +7,18 @@ item name="Helm of Telepathy" {
 	tag "Wonderous"
 	kind "Equipment" {
 		attunement required=true
+		mutator "spellcasting" "add_prepared" ability="Wisdom" {
+			spell "github://flux-tabletop:dnd5e-basic-rules@dnd5e/spells/detectThoughts.kdl" {
+				// TODO: PreparedInfo saving throw DC
+				save_dc 13
+			}
+		}
+		mutator "spellcasting" "add_prepared" ability="Wisdom" {
+			spell "github://flux-tabletop:dnd5e-basic-rules@dnd5e/spells/suggestion.kdl"
+			limited_uses {
+				max_uses 1
+				reset_on "Long"
+			}
+		}
 	}
-	// TODO: Cast Detect Thoughts
-	// TODO: Cast Suggestion
 }

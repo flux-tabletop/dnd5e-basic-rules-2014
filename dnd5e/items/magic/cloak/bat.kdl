@@ -6,7 +6,7 @@ item name="Cloak of the Bat" {
 	tag "Wonderous"
 	kind "Equipment" {
 		attunement required=true
-		// TODO: adv on stealth checks
+		mutator "modify" (Skill)"Specific" "Stealth" "Advantage"
 		// TODO: spellcasting Polymorph on self to turn into a Bat? 1/long rest
 	}
 }

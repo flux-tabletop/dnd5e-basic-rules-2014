@@ -11,7 +11,7 @@ item name="Robe of Eyes" {
 	tag "Wonderous"
 	kind "Equipment" {
 		attunement required=true
-		// TODO: adv on perception checks via sight
-		// TODO: darkvision range minimum
+		mutator "modify" (Skill)"Specific" "Perception" "Advantage" context="that rely on sight"
+		mutator "sense" "Darkvision" (Base)120
 	}
 }

@@ -4,6 +4,8 @@ item name="Stone of Good Luck (Luckstone)" {
 	tag "Wonderous"
 	kind "Equipment" {
 		attunement required=true
-		// TODO: +1 to ability checks and saving throws
+		// TODO: +1 instead of adv/disadv to ability checks and saving throws
+		mutator-todo "modify" (Ability)"All" 1
+		mutator-todo "modify" (SavingThrow)"All" 1
 	}
 }

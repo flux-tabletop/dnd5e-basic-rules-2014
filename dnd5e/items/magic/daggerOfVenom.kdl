@@ -5,12 +5,16 @@ item name="Dagger of Venom" weight=1.0 {
 	rarity "Rare"
 	kind "Equipment" {
 		weapon "Simple" class="Dagger" {
-			// TODO: +1 bonus to attack and damage rolls
-			damage "Piercing" roll="1d4"
+			// TODO: +1 bonus to attack rolls
+			attack 1
+			damage "Piercing" roll="1d4" base=1
 			property "Finesse"
 			property "Light"
 			property "Thrown" 20 60
 		}
-		// TODO: action which resets on long rest
+		charges {
+			max_uses 1
+			reset_on "Long"
+		}
 	}
 }

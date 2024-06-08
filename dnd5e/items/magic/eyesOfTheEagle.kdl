@@ -4,6 +4,6 @@ item name="Eyes of the Eagle" {
 	tag "Wonderous"
 	kind "Equipment" {
 		attunement required=true
+		mutator "modify" (Skill)"Specific" "Perception" "Advantage" context="that rely on sight"
 	}
-	// TODO: Passive Buffs
 }

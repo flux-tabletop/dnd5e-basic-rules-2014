@@ -78,7 +78,6 @@ class name="Ranger" {
 				section "When you gain this feature, you also learn one language of your choice that is spoken by your favored enemies, if they speak one at all."
 				section "You choose one additional favored enemy, as well as an associated language, at 6th and 14th level. As you gain levels, your choices should reflect the types of monsters you have encountered on your adventures."
 			}
-			// TODO: Add a notes field to all features that user's can add to
 			mutator "add_proficiency" (Language)"Any"
 		}
 		mutator "feature" name="Natural Explorer" {
@@ -301,7 +300,7 @@ class name="Ranger" {
 			description "Starting at 8th level, moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.
 
 			In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the entangle spell."
-			mutator "modify" (SavingThrow)"All" "Advantage" context="plants which impede movement"
+			mutator "modify" (SavingThrow)"All" modifier="Advantage" context="plants which impede movement"
 		}
 	}
 	level 10 {

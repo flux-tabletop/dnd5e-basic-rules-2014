@@ -4,7 +4,14 @@ item name="Bracers of Archery" {
 	tag "Wonderous"
 	kind "Equipment" {
 		attunement required=true
-		// TODO: add_proficiency with long & short bows
-		// TODO: Modify::AttackDamage; +2 on damage rolls with long and short bows
+		mutator "add_proficiency" (Weapon)"Shortbow"
+		mutator "add_proficiency" (Weapon)"Longbow"
+		mutator "modify" (Attack)"Damage" {
+			damage 2
+			query {
+				class "Shortbow"
+				class "Longbow"
+			}
+		}
 	}
 }

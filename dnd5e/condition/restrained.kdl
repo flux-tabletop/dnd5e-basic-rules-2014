@@ -7,5 +7,5 @@ condition name="Restrained" {
 	mutator "modify" (Attack)"Roll" {
 		modify "Disadvantage"
 	}
-	mutator "modify" (SavingThrow)"All" "Disadvantage"
+	mutator "modify" (SavingThrow)"All" modifier="Disadvantage"
 }
