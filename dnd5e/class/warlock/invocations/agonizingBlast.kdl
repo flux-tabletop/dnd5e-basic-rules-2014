@@ -1,11 +1,12 @@
 bundle category="Eldritch Invocation" name="Agonizing Blast" display_as_feature=true {
 	requirement-todo (Evaluator)"has_cantrip" "spells/eldritchBlast.kdl"
 	description "When you cast eldritch blast, add your Charisma modifier to the damage it deals on a hit."
-	mutator-todo "modify" (Spell)"Damage" {
-		damage (Evaluator)"get_ability_modifier" (Ability)"Charisma"
-		// TODO: spellcasting::Filter queries can specify specific spell ids
+	mutator "modify" (Spell)"Damage" {
+		damage {
+			amount (Evaluator)"get_ability_modifier" (Ability)"Charisma"
+		}
 		query {
-			spell "spells/eldritchBlast.kdl"
+			spell "github://flux-tabletop:dnd5e-basic-rules@dnd5e/spells/eldritchBlast.kdl"
 		}
 	}
 }
