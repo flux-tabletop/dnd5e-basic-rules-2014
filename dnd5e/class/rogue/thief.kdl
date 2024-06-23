@@ -29,8 +29,7 @@ subclass class="Rogue" name="Thief" {
 				In addition, when you make a running jump, the distance you cover increases by a number of feet equal to your Dexterity modifier."
 				format-arg "modifier" "int" (Evaluator)"get_ability_modifier" (Ability)"Dexterity"
 			}
-			// TODO: grant a climbing speed equal to walking speed.
-			// this could quickly become a circular dependency of a "speed" mutator relying on other "speed" mutators.
+			mutator "speed" "Climbing" (Minimum)"Walking"
 		}
 	}
 	level 9 {

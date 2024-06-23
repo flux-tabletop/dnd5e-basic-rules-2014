@@ -47,10 +47,8 @@ subclass class="Sorcerer" name="Draconic Bloodline" {
 			You can't manifest your wings while wearing armor unless the armor is made to accommodate them, and clothing not made to accommodate your wings might be destroyed when you manifest them."
 			action "Bonus" {
 				condition "Custom" name="Dragon Wings" {
-					// TODO: grant a flying speed equal to walking speed.
-					// this could quickly become a circular dependency of a "speed" mutator relying on other "speed" mutators.
+					mutator "speed" "Flying" (Minimum)"Walking"
 				}
-				condition "Custom" name="Dragon Wings"
 			}
 		}
 	}
