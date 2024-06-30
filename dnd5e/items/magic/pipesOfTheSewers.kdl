@@ -7,8 +7,9 @@ item name="Pipes of the Sewers" {
 	rarity "Uncommon"
 	tag "Wonderous"
 	kind "Equipment" {
-		attunement required=true
-		// TODO: requires proficiency with pipes
-		// TOOD: charges/action
+		attunement {
+			// TODO: attunement requires proficiency with pipes
+			// TOOD: charges/action
+		}
 	}
 }

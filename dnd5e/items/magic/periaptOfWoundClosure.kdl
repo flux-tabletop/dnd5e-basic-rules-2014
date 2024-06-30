@@ -3,7 +3,8 @@ item name="Periapt of Wound Closure" {
 	rarity "Uncommon"
 	tag "Wonderous"
 	kind "Equipment" {
-		attunement required=true
-		// TODO: autostabilize, double hit points gained from hit dice
+		attunement {
+			// TODO: autostabilize, double hit points gained from hit dice
+		}
 	}
 }

@@ -3,7 +3,8 @@ item name="Ring of Spell Turning" {
 	rarity "Legendary"
 	tag "Ring"
 	kind "Equipment" {
-		attunement required=true
-		// TODO: advantage on spell saves
+		attunement {
+			mutator "modify" (SavingThrow)"All" modifier="Advantage" context="spells which target only you"
+		}
 	}
 }

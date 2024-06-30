@@ -7,24 +7,24 @@ item name="Robe of Stars" {
 	rarity "VeryRare"
 	tag "Wonderous"
 	kind "Equipment" {
-		attunement required=true
-		// TODO: +1 to saving throws
-		mutator-todo "modify" (SavingThrow)"All" 1
-		mutator "spellcasting" "add_prepared" ability="Wisdom" {
-			spell "github://flux-tabletop:dnd5e-basic-rules@dnd5e/spells/magicMissle.kdl" {
-				rank 5
-			}
-			limited_uses {
-				max_uses 6
-				reset {
-					rest "Long"
-					rate "1d6"
+		attunement {
+			mutator "modify" (SavingThrow)"All" bonus=1
+			mutator "spellcasting" "add_prepared" ability="Wisdom" {
+				spell "github://flux-tabletop:dnd5e-basic-rules@dnd5e/spells/magicMissle.kdl" {
+					rank 5
+				}
+				limited_uses {
+					max_uses 6
+					reset {
+						rest "Long"
+						rate "1d6"
+					}
 				}
 			}
-		}
-		mutator "feature" name="Enter Astral Plane" {
-			description "While you wear the robe, you can use an action to enter the Astral Plane along with everything you are wearing and carrying. You remain there until you use an action to return to the plane you were on. You reappear in the last space you occupied, or if that space is occupied, the nearest unoccupied space."
-			action "Action"
+			mutator "feature" name="Enter Astral Plane" {
+				description "While you wear the robe, you can use an action to enter the Astral Plane along with everything you are wearing and carrying. You remain there until you use an action to return to the plane you were on. You reappear in the last space you occupied, or if that space is occupied, the nearest unoccupied space."
+				action "Action"
+			}
 		}
 	}
 }

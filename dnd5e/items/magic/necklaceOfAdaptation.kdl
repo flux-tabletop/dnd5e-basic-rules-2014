@@ -3,7 +3,8 @@ item name="Necklace of Adaptation" {
 	rarity "Uncommon"
 	tag "Wonderous"
 	kind "Equipment" {
-		attunement required=true
+		attunement {
+			// TODO: adv on saves against harmful gases
+		}
 	}
-	// TODO: adv on saves against harmful gases
 }

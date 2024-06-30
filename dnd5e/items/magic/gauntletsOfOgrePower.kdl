@@ -3,7 +3,8 @@ item name="Gauntlets of Ogre Power" {
 	rarity "Uncommon"
 	tag "Wonderous"
 	kind "Equipment" {
-		attunement required=true
+		attunement {
+			// TODO: Passive buff (strength at least 19)
+		}
 	}
-	// TODO: Passive buff (strength at least 19)
 }

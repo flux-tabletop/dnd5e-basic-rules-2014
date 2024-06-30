@@ -7,9 +7,10 @@ item name="Scarab of Protection" {
 	rarity "Legendary"
 	tag "Wonderous"
 	kind "Equipment" {
-		attunement required=true
-		// TODO: bonus for adv on spell saves
-		// TODO: feature/action
+		attunement {
+			mutator "modify" (SavingThrow)"All" modifier="Advantage" context="spells"
+			// TODO: feature/action
+		}
 		charges 12
 	}
 }

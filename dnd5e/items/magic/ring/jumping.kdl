@@ -3,7 +3,7 @@ item name="Ring of Jumping" {
 	rarity "Uncommon"
 	tag "Ring"
 	kind "Equipment" {
-		attunement required=true
+		attunement
 		// TODO: grant jump spell as bonus action for self only
 	}
 }

@@ -3,7 +3,7 @@ item name="Robe of Scintillating Colors" {
 	rarity "VeryRare"
 	tag "Wonderous"
 	kind "Equipment" {
-		attunement required=true
+		attunement
 		// TODO: charges + action
 	}
 }

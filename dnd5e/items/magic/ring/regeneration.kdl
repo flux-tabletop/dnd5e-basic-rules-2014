@@ -3,7 +3,7 @@ item name="Ring of Regeneration" {
 	rarity "VeryRare"
 	tag "Ring"
 	kind "Equipment" {
-		attunement required=true
+		attunement
 		// TODO: regain HP via condition
 	}
 }

@@ -11,9 +11,10 @@ item name="Cloak of Arachnida" {
 	rarity "VeryRare"
 	tag "Wonderous"
 	kind "Equipment" {
-		attunement required=true
-		// TODO: Poison damage resistance
-		// TODO: climbing speed min is walking speed
-		// TODO: spellcasting Web (save DC 13), twice normal area, 1/long rest
+		attunement {
+			mutator "speed" "Climbing" (Minimum)"Walking"
+			// TODO: Poison damage resistance
+			// TODO: spellcasting Web (save DC 13), twice normal area, 1/long rest
+		}
 	}
 }

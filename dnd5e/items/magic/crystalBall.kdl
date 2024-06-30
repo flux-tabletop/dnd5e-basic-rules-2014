@@ -3,11 +3,12 @@ item name="Crystal Ball" {
 	rarity "VeryRare"
 	tag "Wonderous"
 	kind "Equipment" {
-		attunement required=true
-		mutator "spellcasting" "add_prepared" ability="Wisdom" {
-			spell "github://flux-tabletop:dnd5e-basic-rules@dnd5e/spells/scrying.kdl" {
-				// TODO: PreparedInfo saving throw DC
-				save_dc 17
+		attunement {
+			mutator "spellcasting" "add_prepared" ability="Wisdom" {
+				spell "github://flux-tabletop:dnd5e-basic-rules@dnd5e/spells/scrying.kdl" {
+					// TODO: PreparedInfo saving throw DC
+					save_dc 17
+				}
 			}
 		}
 	}

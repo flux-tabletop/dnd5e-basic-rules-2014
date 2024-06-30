@@ -3,7 +3,8 @@ item name="Medallion of Thoughts" {
 	rarity "Uncommon"
 	tag "Wonderous"
 	kind "Equipment" {
-		attunement required=true
+		attunement
+		// TODO: Charges, Detect Thoughts
 		charges 3 {
 			reset {
 				rest "Long"
@@ -11,5 +12,4 @@ item name="Medallion of Thoughts" {
 			}
 		}
 	}
-	// TODO: Charges, Detect Thoughts
 }

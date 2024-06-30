@@ -5,15 +5,29 @@ item name="Demon Armor" weight=65.0 {
 	}
 	rarity "VeryRare"
 	kind "Equipment" {
-		attunement required=true
 		armor "Heavy" {
 			formula base=18
 			min-strength 15
 		}
-		mutator "modify" (Skill)"Specific" "Stealth" "Disadvantage"
-		// TODO: Demon Armor modifiers
-		// 		+1 AC bonus
-		// 		understand and speak Abyssal
-		// 		unarmed strikes are magic and deal slashing damage (+1 bonus to attack and damage rolls, damage is 1d8)
+		attunement {
+			mutator "modify" (Skill)"Specific" "Stealth" "Disadvantage"
+			mutator "modify" "ArmorClass" 1
+			mutator "add_proficiency" (Language)"Specific" "Abyssal"
+			// TODO: Unarmed Strikes should be marked as magical
+			// TODO: Unarmed Strikes use a 1d8 die instead of the base 1 hp
+			mutator "modify" (Attack)"Roll" {
+				bonus 1
+				query {
+					class "UnarmedStrike"
+				}
+			}
+			mutator "modify" (Attack)"Damage" {
+				damage 1
+				damage_type "Slashing"
+				query {
+					class "UnarmedStrike"
+				}
+			}
+		}
 	}
 }

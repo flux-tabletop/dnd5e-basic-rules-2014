@@ -3,7 +3,7 @@ item name="Ring of Telekinesis" {
 	rarity "VeryRare"
 	tag "Ring"
 	kind "Equipment" {
-		attunement required=true
+		attunement
 		// TODO: cast telekinesis at will
 	}
 }

@@ -3,10 +3,11 @@ item name="Bracers of Defense" {
 	rarity "Rare"
 	tag "Wonderous"
 	kind "Equipment" {
-		attunement required=true
-		mutator "apply_if" {
-			criteria (Evaluator)"has_armor_equipped" inverted=true
-			mutator "modify" "ArmorClass" 2
+		attunement {
+			mutator "apply_if" {
+				criteria (Evaluator)"has_armor_equipped" inverted=true
+				mutator "modify" "ArmorClass" 2
+			}
 		}
 	}
 }

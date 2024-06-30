@@ -7,7 +7,7 @@ item name="Wand of Fear" {
 	rarity "Rare"
 	tag "Wand"
 	kind "Equipment" {
-		attunement required=true
+		attunement
 	}
 	// TODO: Charges
 }

@@ -11,16 +11,16 @@ item name="Belt of Dwarvenkind" {
 	rarity "Rare"
 	tag "Wonderous"
 	kind "Equipment" {
-		attunement required=true
-		// TODO: mutaors should only be if attuned
-		mutator "ability_score" {
-			ability "Specific" (Ability)"Constitution"
-			bonus 2
+		attunement {
+			mutator "ability_score" {
+				ability "Specific" (Ability)"Constitution"
+				bonus 2
+			}
+			mutator "modify" (Skill)"Specific" "Persuasion" "Advantage" context="when interacting with dwarves"
+			mutator "modify" (SavingThrow)"All" modifier="Advantage" context="Poison"
+			mutator "add_defense" "Resistance" (DamageType)"Specific" "Poison"
+			mutator "sense" "Darkvision" (Minimum)60
+			mutator "add_proficiency" (Language)"Specific" "Dwarvish"
 		}
-		mutator "modify" (Skill)"Specific" "Persuasion" "Advantage" context="when interacting with dwarves"
-		mutator "modify" (SavingThrow)"All" modifier="Advantage" context="Poison"
-		mutator "add_defense" "Resistance" (DamageType)"Specific" "Poison"
-		mutator "sense" "Darkvision" (Minimum)60
-		mutator "add_proficiency" (Language)"Specific" "Dwarvish"
 	}
 }

@@ -6,7 +6,9 @@ item name="Winged Boots" {
 	rarity "Uncommon"
 	tag "Wonderous"
 	kind "Equipment" {
-		attunement required=true
-		// TODO: flying speed, charges
+		attunement {
+			mutator "speed" "Flying" (Minimum)"Walking"
+		}
+		// TODO: charges
 	}
 }

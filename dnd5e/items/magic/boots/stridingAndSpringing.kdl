@@ -3,8 +3,9 @@ item name="Boots of Striding and Springing" {
 	rarity "Uncommon"
 	tag "Wonderous"
 	kind "Equipment" {
-		attunement required=true
-		mutator "speed" "Walking" (Minimum)30
-		// TODO: speed isn't reduced if encumbered or wearing heavy armor
+		attunement {
+			mutator "speed" "Walking" (Minimum)30
+			// TODO: speed isn't reduced if encumbered or wearing heavy armor
+		}
 	}
 }

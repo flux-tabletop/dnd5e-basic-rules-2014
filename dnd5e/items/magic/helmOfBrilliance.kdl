@@ -10,7 +10,8 @@ item name="Helm of Brilliance" {
 	rarity "VeryRare"
 	tag "Wonderous"
 	kind "Equipment" {
-		attunement required=true
+		attunement {
+			// TODO: actions for spells which consume different gems
+		}
 	}
-	// TODO: actions for spells which consume different gems
 }

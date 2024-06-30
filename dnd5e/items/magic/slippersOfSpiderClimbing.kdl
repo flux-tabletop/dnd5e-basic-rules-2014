@@ -3,7 +3,8 @@ item name="Slippers of Spider Climbing" {
 	rarity "Uncommon"
 	tag "Wonderous"
 	kind "Equipment" {
-		attunement required=true
-		// TODO: climbing speed
+		attunement {
+			mutator "speed" "Climbing" (Minimum)"Walking"
+		}
 	}
 }

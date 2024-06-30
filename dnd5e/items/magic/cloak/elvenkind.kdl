@@ -3,8 +3,9 @@ item name="Cloak of Elvenkind" {
 	rarity "Uncommon"
 	tag "Wonderous"
 	kind "Equipment" {
-		attunement required=true
-		// TODO: adv on stealth checks to hide
-		// TODO: cause disadvantage on checks to see you (perception)
+		attunement {
+			// TODO: adv on stealth checks to hide
+			// TODO: cause disadvantage on checks to see you (perception)
+		}
 	}
 }

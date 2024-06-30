@@ -3,7 +3,8 @@ item name="Hat of Disguise" {
 	rarity "Uncommon"
 	tag "Wonderous"
 	kind "Equipment" {
-		attunement required=true
+		attunement {
+			// TODO: Action Disguise Self at will
+		}
 	}
-	// TODO: Action Disguise Self at will
 }

@@ -21,7 +21,8 @@ item name="Candle of Invocation" {
 	rarity "VeryRare"
 	tag "Wonderous"
 	kind "Equipment" {
-		attunement required=true
-		// TODO: action, custom condition, maybe gate spell?
+		attunement {
+			// TODO: action, custom condition, maybe gate spell?
+		}
 	}
 }

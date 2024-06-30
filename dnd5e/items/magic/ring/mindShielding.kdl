@@ -7,7 +7,7 @@ item name="Ring of Mind Shielding" {
 	rarity "Uncommon"
 	tag "Ring"
 	kind "Equipment" {
-		attunement required=true
+		attunement
 		// TODO: actions
 	}
 }

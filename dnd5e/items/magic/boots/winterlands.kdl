@@ -6,7 +6,8 @@ item name="Boots of the Winterlands" {
 	rarity "Uncommon"
 	tag "Wonderous"
 	kind "Equipment" {
-		attunement required=true
-		mutator "add_defense" "Resistance" (DamageType)"Specific" "Cold"
+		attunement {
+			mutator "add_defense" "Resistance" (DamageType)"Specific" "Cold"
+		}
 	}
 }

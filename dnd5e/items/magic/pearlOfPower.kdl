@@ -3,7 +3,12 @@ item name="Pearl of Power" {
 	rarity "Uncommon"
 	tag "Wonderous"
 	kind "Equipment" {
-		attunement required=true // TODO: by spellcaster only
+		attunement {
+			query {
+				// TODO: attunement by spellcaster only
+				tag "Spellcaster"
+			}
+		}
 		// TODO: action to regain spell slot
 		charges 1 {
 			reset "Long"

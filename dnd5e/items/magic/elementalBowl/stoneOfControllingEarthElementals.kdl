@@ -3,6 +3,7 @@ item name="Stone of Controlling Earth Elementals" {
 	rarity "Rare"
 	tag "Wonderous"
 	kind "Equipment" {
-		attunement required=true
+		attunement
+		// TODO: action
 	}
 }

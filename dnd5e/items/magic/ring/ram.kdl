@@ -6,7 +6,7 @@ item name="Ring of the Ram" {
 	rarity "Rare"
 	tag "Ring"
 	kind "Equipment" {
-		attunement required=true
+		attunement
 		// TODO: charges
 	}
 }

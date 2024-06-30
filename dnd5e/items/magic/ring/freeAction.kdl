@@ -3,6 +3,6 @@ item name="Ring of Free Action" {
 	rarity "Rare"
 	tag "Ring"
 	kind "Equipment" {
-		attunement required=true
+		attunement
 	}
 }

@@ -3,7 +3,8 @@ item name="Gloves of Missile Snaring" {
 	rarity "Uncommon"
 	tag "Wonderous"
 	kind "Equipment" {
-		attunement required=true
+		attunement {
+			// TODO: Reaction
+		}
 	}
-	// TODO: Reaction
 }

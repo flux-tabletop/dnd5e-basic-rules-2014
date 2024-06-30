@@ -5,14 +5,15 @@ item name="Boots of Speed" {
 	rarity "Rare"
 	tag "Wonderous"
 	kind "Equipment" {
-		attunement required=true
-		mutator "feature" name="Double Speed" {
-			description {
-				short "Walking speed doubled & opportunity attacks have disadvantage against you. Can use for 10 minutes cumulatively per long rest."
-				section "Your walking speed is doubled and opportunity attacks against you have disadvantage on the attack roll for up to 10 minutes or until you end the effect. When this has been used for a cumulative 10 minutes, you cannot use this feature again until you finish a long rest."
+		attunement {
+			mutator "feature" name="Double Speed" {
+				description {
+					short "Walking speed doubled & opportunity attacks have disadvantage against you. Can use for 10 minutes cumulatively per long rest."
+					section "Your walking speed is doubled and opportunity attacks against you have disadvantage on the attack roll for up to 10 minutes or until you end the effect. When this has been used for a cumulative 10 minutes, you cannot use this feature again until you finish a long rest."
+				}
+				// TODO: Condition for Double Speed
+				action "Bonus"
 			}
-			// TODO: Condition for Double Speed
-			action "Bonus"
 		}
 	}
 }

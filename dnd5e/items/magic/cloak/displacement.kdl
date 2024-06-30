@@ -3,7 +3,8 @@ item name="Cloak of Displacement" {
 	rarity "Rare"
 	tag "Wonderous"
 	kind "Equipment" {
-		attunement required=true
-		// TODO: cause others to have disadvantage on attack rolls against you, custom condition for this?, only granted if you can move	
+		attunement {
+			// TODO: cause others to have disadvantage on attack rolls against you, custom condition for this?, only granted if you can move
+		}
 	}
 }

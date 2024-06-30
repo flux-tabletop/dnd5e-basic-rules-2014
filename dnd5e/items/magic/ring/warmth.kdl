@@ -3,7 +3,7 @@ item name="Ring of Warmth" {
 	rarity "Uncommon"
 	tag "Ring"
 	kind "Equipment" {
-		attunement required=true
+		attunement
 		// TODO: resistance to cold damage
 	}
 }

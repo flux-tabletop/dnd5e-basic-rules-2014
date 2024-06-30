@@ -3,7 +3,7 @@ item name="Amulet of Proof against Detection and Location" {
 	rarity "Uncommon"
 	tag "Wonderous"
 	kind "Equipment" {
-		attunement required=true
+		attunement
 		// TODO: apply condition that you are hidden from divination magic
 	}
 }

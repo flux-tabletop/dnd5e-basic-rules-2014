@@ -7,7 +7,7 @@ item name="Ring of Spell Storing" {
 	tag "Ring"
 	rarity "Rare"
 	kind "Equipment" {
-		attunement required=true
+		attunement
 	}
 	spells {
 		capacity {

@@ -5,7 +5,7 @@ item name="Eyes of Charming" {
 	rarity "Uncommon"
 	tag "Wonderous"
 	kind "Equipment" {
-		attunement required=true
+		attunement
 		// TODO: Action using charges to cast Charm Person
 		charges 3 {
 			reset_on {

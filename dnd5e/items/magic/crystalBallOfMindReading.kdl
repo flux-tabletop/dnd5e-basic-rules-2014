@@ -5,16 +5,17 @@ item name="Crystal Ball of Mind Reading" {
 	rarity "Legendary"
 	tag "Wonderous"
 	kind "Equipment" {
-		attunement required=true
-		mutator "spellcasting" "add_prepared" ability="Wisdom" {
-			spell "github://flux-tabletop:dnd5e-basic-rules@dnd5e/spells/scrying.kdl" {
-				// TODO: PreparedInfo saving throw DC
-				save_dc 17
-			}
-			// TODO: note that detect thoughts can only be case while scrying
-			spell "github://flux-tabletop:dnd5e-basic-rules@dnd5e/spells/detectThoughts.kdl" {
-				// TODO: PreparedInfo saving throw DC
-				save_dc 17
+		attunement {
+			mutator "spellcasting" "add_prepared" ability="Wisdom" {
+				spell "github://flux-tabletop:dnd5e-basic-rules@dnd5e/spells/scrying.kdl" {
+					// TODO: PreparedInfo saving throw DC
+					save_dc 17
+				}
+				// TODO: note that detect thoughts can only be case while scrying
+				spell "github://flux-tabletop:dnd5e-basic-rules@dnd5e/spells/detectThoughts.kdl" {
+					// TODO: PreparedInfo saving throw DC
+					save_dc 17
+				}
 			}
 		}
 	}

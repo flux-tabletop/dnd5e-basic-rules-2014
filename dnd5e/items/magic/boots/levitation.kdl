@@ -3,10 +3,11 @@ item name="Boots of Levitation" {
 	rarity "Rare"
 	tag "Wonderous"
 	kind "Equipment" {
-		attunement required=true
-		mutator "spellcasting" "add_prepared" ability="Dexterity" {
-			spell "github://flux-tabletop:dnd5e-basic-rules@dnd5e/spells/levitate.kdl" {
-				range "Self"
+		attunement {
+			mutator "spellcasting" "add_prepared" ability="Dexterity" {
+				spell "github://flux-tabletop:dnd5e-basic-rules@dnd5e/spells/levitate.kdl" {
+					range "Self"
+				}
 			}
 		}
 	}

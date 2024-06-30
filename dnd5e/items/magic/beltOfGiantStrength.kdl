@@ -7,11 +7,12 @@ generator "block" "beltOfGiantStrength" {
 			rarity "{RARITY}"
 			tag "Wonderous"
 			kind "Equipment" {
-				attunement required=true
-				mutator "ability_score" {
-					ability "Specific" "Strength"
-					// TODO: minimum ability score
-					minimum "SCORE"
+				attunement {
+					mutator "ability_score" {
+						ability "Specific" "Strength"
+						// TODO: minimum ability score
+						minimum "SCORE"
+					}
 				}
 			}
 		}

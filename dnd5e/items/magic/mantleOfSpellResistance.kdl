@@ -3,7 +3,8 @@ item name="Mantle of Spell Resistance" {
 	rarity "Rare"
 	tag "Wonderous"
 	kind "Equipment" {
-		attunement required=true
+		attunement {
+			// TODO: passive adv on spell saves
+		}
 	}
-	// TODO: passive adv on spell saves
 }

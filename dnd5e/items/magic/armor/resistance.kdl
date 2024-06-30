@@ -10,8 +10,9 @@ generator "block" "armorOfResistanceBase" {
 				extend "rarity" "Rare"
 				extend "description" "You have resistance to {DMG_TYPE} damage while you wear this armor."
 				extend "equipment" {
-					attunement required=true
-					mutator "add_defense" "Resistance" (DamageType)"Specific" "{DMG_TYPE}"
+					attunement {
+						mutator "add_defense" "Resistance" (DamageType)"Specific" "{DMG_TYPE}"
+					}
 				}
 			}
 		}

@@ -3,11 +3,11 @@ item name="Amulet of Health" {
 	rarity "Rare"
 	tag "Wonderous"
 	kind "Equipment" {
-		attunement required=true
-		// TODO: Dont apply mutators if item is not attuned
-		mutator "ability_score" {
-			ability "Specific" "Constitution"
-			minimum 19 // TODO: minimum ability score
+		attunement {
+			mutator "ability_score" {
+				ability "Specific" "Constitution"
+				minimum 19 // TODO: minimum ability score
+			}
 		}
 	}
 }

@@ -3,7 +3,8 @@ item name="Rod of Rulership" {
 	rarity "Rare"
 	tag "Rod"
 	kind "Equipment" {
-		attunement required=true
-		// TODO: action
+		attunement {
+			// TODO: action
+		}
 	}
 }

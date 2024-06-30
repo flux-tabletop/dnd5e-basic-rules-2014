@@ -6,7 +6,7 @@ item name="Ring of X-ray Vision" {
 	rarity "Rare"
 	tag "Ring"
 	kind "Equipment" {
-		attunement required=true
+		attunement
 		// TODO: action
 	}
 }
