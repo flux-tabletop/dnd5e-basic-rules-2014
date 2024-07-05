@@ -10,7 +10,6 @@ generator "block" "beltOfGiantStrength" {
 				attunement {
 					mutator "ability_score" {
 						ability "Specific" "Strength"
-						// TODO: minimum ability score
 						minimum "SCORE"
 					}
 				}

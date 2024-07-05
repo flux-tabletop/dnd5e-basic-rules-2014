@@ -6,7 +6,6 @@ item name="Headband of Intellect" {
 		attunement {
 			mutator "ability_score" {
 				ability "Specific" "Intelligence"
-				// TODO: minimum ability score
 				minimum 19
 			}
 		}

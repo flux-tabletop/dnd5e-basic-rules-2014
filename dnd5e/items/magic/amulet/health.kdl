@@ -6,7 +6,7 @@ item name="Amulet of Health" {
 		attunement {
 			mutator "ability_score" {
 				ability "Specific" "Constitution"
-				minimum 19 // TODO: minimum ability score
+				minimum 19
 			}
 		}
 	}
