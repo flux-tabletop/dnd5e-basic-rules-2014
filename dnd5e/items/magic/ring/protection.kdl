@@ -1,5 +1,5 @@
 item name="Ring of Protection" {
-	description "You gain a +1 bonus to AC and saving throws while wearing this ring."
+	description "You gain a +1 bonus to AC and saving throws while attuned to this ring."
 	rarity "Rare"
 	tag "Ring"
 	kind "Equipment" {
