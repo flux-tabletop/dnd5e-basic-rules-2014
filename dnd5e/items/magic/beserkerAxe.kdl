@@ -15,10 +15,8 @@ generator "item" "beserkerAxe" {
 				mutator "add_max_hit_points" (Evaluator)"get_level"
 			}
 			weapon {
-				attack {
-					roll bonus=1
-					damage bonus=1
-				}
+				attack-roll bonus=1
+				attack-damage bonus=1
 			}
 		}
 	}
