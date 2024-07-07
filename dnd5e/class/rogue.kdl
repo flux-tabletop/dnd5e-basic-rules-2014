@@ -1,6 +1,6 @@
 class name="Rogue" {
 	description "A scoundrel who uses stealth and trickery to overcome obstacles and enemies"
-	hit-die "d8"
+	die "d8"
 	multiclass-req "Dexterity" 13
 
 	// Mutators applied when this is a primary class
@@ -74,6 +74,10 @@ class name="Rogue" {
 	}
 
 	level 1 {
+		mutator "hit_dice" {
+			amount (Evaluator)"get_level" class="Rogue"
+			die 8
+		}
 		mutator "add_proficiency" (Armor)"Light"
 		mutator "add_proficiency" (Tool)"Specific" "Thieves' Tools"
 		mutator "add_proficiency" (Skill)"AnyOf" id="skillD" {

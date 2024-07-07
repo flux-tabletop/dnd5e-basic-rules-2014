@@ -1,6 +1,6 @@
 class name="Warlock" {
 	description "A wielder of magic that is derived from a bargain with an extraplanar entity"
-	hit-die "d8"
+	die "d8"
 	multiclass-req "Charisma" 13
 
 	mutator "add_proficiency" (SavingThrow)"Wisdom"
@@ -52,6 +52,10 @@ class name="Warlock" {
 	}
 
 	level 1 {
+		mutator "hit_dice" {
+			amount (Evaluator)"get_level" class="Warlock"
+			die 8
+		}
 		mutator "add_proficiency" (Armor)"Light"
 		mutator "add_proficiency" (Weapon)"Simple"
 		mutator "feature" name="Otherworldly Patron" {

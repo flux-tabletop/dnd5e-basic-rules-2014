@@ -1,6 +1,6 @@
 class name="Cleric" {
 	description "A priestly champion who wields divine magic in service of a higher power"
-	hit-die "d8"
+	die "d8"
 	multiclass-req "Wisdom" 13
 
 	mutator "add_proficiency" (SavingThrow)"Wisdom"
@@ -54,6 +54,10 @@ class name="Cleric" {
 	}
 
 	level 1 {
+		mutator "hit_dice" {
+			amount (Evaluator)"get_level" class="Cleric"
+			die 8
+		}
 		mutator "add_proficiency" (Armor)"Light"
 		mutator "add_proficiency" (Armor)"Medium"
 		mutator "add_proficiency" (Armor)"Shield"

@@ -1,6 +1,6 @@
 class name="Bard" {
 	description "An inspiring magician whose power echoes the music of creation"
-	hit-die "d8"
+	die "d8"
 	multiclass-req "Charisma" 13
 
 	mutator "add_proficiency" (SavingThrow)"Dexterity"
@@ -52,6 +52,10 @@ class name="Bard" {
 	}
 
 	level 1 {
+		mutator "hit_dice" {
+			amount (Evaluator)"get_level" class="Bard"
+			die 8
+		}
 		mutator "add_proficiency" (Armor)"Light"
 		mutator "add_proficiency" (Skill)"Any" id="skillC"
 		mutator "add_proficiency" (Tool)"AnyOf" id="toolC" {

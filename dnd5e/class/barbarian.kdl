@@ -1,6 +1,6 @@
 class name="Barbarian" {
 	description "A fierce warrior of primitive background who can enter a battle rage"
-	hit-die "d12"
+	die "d12"
 	multiclass-req "Strength" 13
 
 	// Mutators applied when this is a primary class
@@ -44,6 +44,10 @@ class name="Barbarian" {
 	// Levels
 	level 1 {
 		// Mutators applied for primary or multiclassing
+		mutator "hit_dice" {
+			amount (Evaluator)"get_level" class="Barbarian"
+			die 12
+		}
 		mutator "add_proficiency" (Armor)"Shield"
 		mutator "add_proficiency" (Weapon)"Simple"
 		mutator "add_proficiency" (Weapon)"Martial"

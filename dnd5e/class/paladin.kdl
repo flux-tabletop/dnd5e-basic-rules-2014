@@ -1,6 +1,6 @@
 class name="Paladin" {
 	description "A holy warrior bound to a sacred oath"
-	hit-die "d10"
+	die "d10"
 	multiclass-req "Strength" 13
 	multiclass-req "Charisma" 13
 
@@ -51,6 +51,10 @@ class name="Paladin" {
 	}
 
 	level 1 {
+		mutator "hit_dice" {
+			amount (Evaluator)"get_level" class="Paladin"
+			die 10
+		}
 		mutator "add_proficiency" (Armor)"Light"
 		mutator "add_proficiency" (Armor)"Medium"
 		mutator "add_proficiency" (Armor)"Shield"

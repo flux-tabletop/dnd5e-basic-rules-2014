@@ -1,6 +1,6 @@
 class name="Wizard" {
 	description "A scholarly magic-user capable of manipulating the structures of reality"
-	hit-die "d6"
+	die "d6"
 	multiclass-req "Intelligence" 13
 
 	mutator "add_proficiency" (SavingThrow)"Intelligence"
@@ -45,6 +45,10 @@ class name="Wizard" {
 	}
 
 	level 1 {
+		mutator "hit_dice" {
+			amount (Evaluator)"get_level" class="Wizard"
+			die 6
+		}
 		// TODO-QoL: I'd be really cool to be able to have a "Transcribe" button on spell containers which allow spells to be "copied" from, so moving a spell from a scroll to spellbook (consuming some cost) would be just a button click (assuming the inks and gold were present in inventory).
 		mutator "feature" name="Spellcasting" {
 			description {

@@ -1,6 +1,6 @@
 class name="Druid" {
 	description "A priest of the Old Faith, wielding the powers of nature — moonlight and plant growth, fire and lightning — and adopting animal forms"
-	hit-die "d8"
+	die "d8"
 	multiclass-req "Wisdom" 13
 
 	mutator "add_proficiency" (SavingThrow)"Intelligence"
@@ -57,6 +57,10 @@ class name="Druid" {
 	}
 
 	level 1 {
+		mutator "hit_dice" {
+			amount (Evaluator)"get_level" class="Druid"
+			die 8
+		}
 		mutator "add_proficiency" (Armor)"Light" "nonmetal"
 		mutator "add_proficiency" (Armor)"Medium" "nonmetal"
 		mutator "add_proficiency" (Armor)"Shield" "nonmetal"

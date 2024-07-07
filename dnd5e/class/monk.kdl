@@ -1,6 +1,6 @@
 class name="Monk" {
 	description "A master of martial arts, harnessing the power of the body in pursuit of physical and spiritual perfection"
-	hit-die "d8"
+	die "d8"
 	multiclass-req "Dexterity" 13
 	multiclass-req "Wisdom" 13
 
@@ -67,6 +67,10 @@ class name="Monk" {
 	}
 
 	level 1 {
+		mutator "hit_dice" {
+			amount (Evaluator)"get_level" class="Monk"
+			die 8
+		}
 		mutator "add_proficiency" (Weapon)"Simple"
 		mutator "add_proficiency" (Weapon)"Shortsword"
 		mutator "feature" name="Unarmored Defense" unique=true {

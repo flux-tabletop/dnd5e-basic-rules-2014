@@ -1,6 +1,6 @@
 class name="Sorcerer" {
 	description "A spellcaster who draws on inherent magic from a gift or bloodline"
-	hit-die "d6"
+	die "d6"
 	multiclass-req "Charisma" 13
 
 	mutator "add_proficiency" (SavingThrow)"Constitution"
@@ -51,6 +51,10 @@ class name="Sorcerer" {
 	}
 
 	level 1 {
+		mutator "hit_dice" {
+			amount (Evaluator)"get_level" class="Sorcerer"
+			die 6
+		}
 		mutator "feature" name="Sorcerous Origin" {
 			description {
 				short "Choose a sorcerous origin, which describes the source of your innate magical power."
