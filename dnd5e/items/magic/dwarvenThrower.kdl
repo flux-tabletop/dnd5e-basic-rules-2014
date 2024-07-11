@@ -9,8 +9,7 @@ item name="Dwarven Thrower" weight=2.0 {
 			}
 		}
 		weapon "Martial" class="Warhammer" {
-			// TODO: +3 to attack roll
-			attack 3
+			attack-roll bonus=3
 			damage "Bludgeoning" roll="1d8" base=3
 			property "Versatile" "1d10"
 			property "Thrown" 20 60

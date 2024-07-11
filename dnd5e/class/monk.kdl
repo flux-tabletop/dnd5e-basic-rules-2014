@@ -447,7 +447,6 @@ class name="Monk" {
 					}
 					condition "Custom" name="Invisibility (Empty Body)" {
 						description "Ki-based Invisibility and Damage Resistance"
-						// TODO: conditions can imply/cause other conditions
 						implies "condition/invisible.kdl"
 						mutator "add_defense" "Resistance" (DamageType)"Specific" "Acid"
 						mutator "add_defense" "Resistance" (DamageType)"Specific" "Bludgeoning"
