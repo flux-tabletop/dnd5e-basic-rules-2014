@@ -10,7 +10,7 @@ item name="Demon Armor" weight=65.0 {
 			min-strength 15
 		}
 		attunement {
-			mutator "modify" (Skill)"Specific" "Stealth" "Disadvantage"
+			mutator "modify" (Skill)"Specific" "Stealth" modifier="Disadvantage"
 			mutator "modify" "ArmorClass" 1
 			mutator "add_proficiency" (Language)"Specific" "Abyssal"
 			// TODO: Unarmed Strikes should be marked as magical

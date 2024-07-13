@@ -91,7 +91,7 @@ class name="Barbarian" {
 						criteria (Evaluator)"has_armor_equipped" inverted=true {
 							kind "Heavy"
 						}
-						mutator "modify" (Ability)"Specific" "Strength" "Advantage"
+						mutator "modify" (Ability)"Specific" "Strength" modifier="Advantage"
 						mutator "modify" (SavingThrow)"Specific" "Strength" modifier="Advantage"
 						mutator "add_defense" "Resistance" (DamageType)"Specific" "Bludgeoning"
 						mutator "add_defense" "Resistance" (DamageType)"Specific" "Piercing"

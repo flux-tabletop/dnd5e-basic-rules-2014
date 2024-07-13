@@ -473,7 +473,7 @@ item_ name="" {
 				min-strength 15
 			}
 			attunement {
-				mutator "modify" (Skill)"Specific" "Stealth" "Disadvantage"
+				mutator "modify" (Skill)"Specific" "Stealth" modifier="Disadvantage"
 				mutator "add_defense" "Resistance" (DamageType)"Specific" "Bludgeoning"
 				mutator "add_defense" "Vulnerability" (DamageType)"Specific" "Piercing"
 				mutator "add_defense" "Vulnerability" (DamageType)"Specific" "Slashing"
@@ -493,7 +493,7 @@ item_ name="" {
 				min-strength 15
 			}
 			attunement {
-				mutator "modify" (Skill)"Specific" "Stealth" "Disadvantage"
+				mutator "modify" (Skill)"Specific" "Stealth" modifier="Disadvantage"
 				mutator "add_defense" "Vulnerability" (DamageType)"Specific" "Bludgeoning"
 				mutator "add_defense" "Resistance" (DamageType)"Specific" "Piercing"
 				mutator "add_defense" "Vulnerability" (DamageType)"Specific" "Slashing"
@@ -513,7 +513,7 @@ item_ name="" {
 				min-strength 15
 			}
 			attunement {
-				mutator "modify" (Skill)"Specific" "Stealth" "Disadvantage"
+				mutator "modify" (Skill)"Specific" "Stealth" modifier="Disadvantage"
 				mutator "add_defense" "Vulnerability" (DamageType)"Specific" "Bludgeoning"
 				mutator "add_defense" "Vulnerability" (DamageType)"Specific" "Piercing"
 				mutator "add_defense" "Resistance" (DamageType)"Specific" "Slashing"

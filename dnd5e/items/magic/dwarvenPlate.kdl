@@ -6,7 +6,7 @@ item name="Dwarven Plate" weight=65.0 {
 			formula base=18
 			min-strength 15
 		}
-		mutator "modify" (Skill)"Specific" "Stealth" "Disadvantage"
+		mutator "modify" (Skill)"Specific" "Stealth" modifier="Disadvantage"
 		mutator "modify" "ArmorClass" 2
 		// TODO: Reaction - if an effect moves you against your will along the ground, reduce the distance you are moved by up to 10 feet
 	}

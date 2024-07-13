@@ -7,6 +7,6 @@ item name="Scale Mail" weight=45.0 {
 				bonus (Ability)"Dexterity" max=2
 			}
 		}
-		mutator "modify" (Skill)"Specific" "Stealth" "Disadvantage"
+		mutator "modify" (Skill)"Specific" "Stealth" modifier="Disadvantage"
 	}
 }

@@ -4,8 +4,7 @@ item name="Gloves of Swimming and Climbing" {
 	tag "Wonderous"
 	kind "Equipment" {
 		attunement {
-			// TODO: +5 bonus instead of adv/disadv
-			mutator-todo "modify" (Skill)"Specific" "Athletics" 5 context="to climb or swim"
+			mutator "modify" (Skill)"Specific" "Athletics" bonus=5 context="to climb or swim"
 		}
 	}
 }

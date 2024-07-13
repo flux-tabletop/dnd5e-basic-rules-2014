@@ -8,16 +8,16 @@ condition name="Exhasted" {
 		// TODO: higher levels should include the mutators of lower levels
 		option "Level 1" {
 			description "Disadvantage on ability checks"
-			mutator "modify" (Ability)"All" "Disadvantage"
+			mutator "modify" (Ability)"All" modifier="Disadvantage"
 		}
 		option "Level 2" {
 			description "Speed halved"
-			mutator "modify" (Ability)"All" "Disadvantage"
+			mutator "modify" (Ability)"All" modifier="Disadvantage"
 			mutator-todo "speed" "All" (Divide)2 round="floor"
 		}
 		option "Level 3" {
 			description "Disadvantage on attack rolls and saving throws"
-			mutator "modify" (Ability)"All" "Disadvantage"
+			mutator "modify" (Ability)"All" modifier="Disadvantage"
 			mutator "modify" (SavingThrow)"All" modifier="Disadvantage"
 			mutator "modify" (Attack)"Roll" {
 				modifier "Disadvantage"
@@ -26,7 +26,7 @@ condition name="Exhasted" {
 		}
 		option "Level 4" {
 			description "Hit point maximum halved"
-			mutator "modify" (Ability)"All" "Disadvantage"
+			mutator "modify" (Ability)"All" modifier="Disadvantage"
 			mutator "modify" (SavingThrow)"All" modifier="Disadvantage"
 			mutator "modify" (Attack)"Roll" {
 				modifier "Disadvantage"
@@ -36,7 +36,7 @@ condition name="Exhasted" {
 		}
 		option "Level 5" {
 			description "Speed reduced to 0"
-			mutator "modify" (Ability)"All" "Disadvantage"
+			mutator "modify" (Ability)"All" modifier="Disadvantage"
 			mutator "modify" (SavingThrow)"All" modifier="Disadvantage"
 			mutator "modify" (Attack)"Roll" {
 				modifier "Disadvantage"

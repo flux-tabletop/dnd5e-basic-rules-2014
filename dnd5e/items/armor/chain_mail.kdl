@@ -6,6 +6,6 @@ item name="Chain Mail" weight=55.0 {
 			formula base=16
 			min-strength 13
 		}
-		mutator "modify" (Skill)"Specific" "Stealth" "Disadvantage"
+		mutator "modify" (Skill)"Specific" "Stealth" modifier="Disadvantage"
 	}
 }

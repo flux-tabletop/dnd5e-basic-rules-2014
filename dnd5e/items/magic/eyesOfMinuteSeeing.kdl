@@ -3,6 +3,6 @@ item name="Eyes of Minute Seeing" {
 	rarity "Uncommon"
 	tag "Wonderous"
 	kind "Equipment" {
-		mutator "modify" (Skill)"Specific" "Investigation" "Advantage" context="that rely on sight while searching an area or studying an object within 1 foot"
+		mutator "modify" (Skill)"Specific" "Investigation" modifier="Advantage" context="that rely on sight while searching an area or studying an object within 1 foot"
 	}
 }

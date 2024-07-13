@@ -5,6 +5,6 @@ item name="Ring Mail" weight=40.0 {
 		armor "Heavy" {
 			formula base=14
 		}
-		mutator "modify" (Skill)"Specific" "Stealth" "Disadvantage"
+		mutator "modify" (Skill)"Specific" "Stealth" modifier="Disadvantage"
 	}
 }

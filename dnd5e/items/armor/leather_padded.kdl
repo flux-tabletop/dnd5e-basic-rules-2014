@@ -7,6 +7,6 @@ item name="Padded Leather Armor" weight=8.0 {
 				bonus (Ability)"Dexterity"
 			}
 		}
-		mutator "modify" (Skill)"Specific" "Stealth" "Disadvantage"
+		mutator "modify" (Skill)"Specific" "Stealth" modifier="Disadvantage"
 	}
 }
