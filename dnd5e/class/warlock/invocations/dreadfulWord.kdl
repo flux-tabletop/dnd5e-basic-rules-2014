@@ -1,5 +1,5 @@
 bundle category="Eldritch Invocation" name="Dreadful Word" display_as_feature=true {
-	requirement-todo (Evaluator)"level" class="Warlock" min=7
+	requirement (Evaluator)"level" class="Warlock" min=7
 	description "You can cast confusion once using a warlock spell slot. You can't do so again until you finish a long rest."
 	mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
 		// TODO: cast using a slot, but only a fixed number of times

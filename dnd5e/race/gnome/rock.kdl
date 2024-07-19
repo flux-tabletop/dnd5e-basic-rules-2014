@@ -1,5 +1,5 @@
 bundle category="RaceVariant" name="Rock Gnome" {
-	requirement "Bundle" "Race" "Gnome"
+	requirement (Evaluator)"bundle" (Race)"Gnome"
 	description "As a rock gnome, you have a natural inventiveness and hardiness beyond that of other gnomes. Most gnomes in the worlds of D&D are rock gnomes."
 	mutator "ability_score" {
 		ability "Specific" (Ability)"Constitution"

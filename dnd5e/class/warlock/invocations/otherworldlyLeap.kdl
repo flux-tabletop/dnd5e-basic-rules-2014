@@ -1,5 +1,5 @@
 bundle category="Eldritch Invocation" name="Otherworldly Leap" display_as_feature=true {
-	requirement-todo (Evaluator)"level" class="Warlock" min=9
+	requirement (Evaluator)"level" class="Warlock" min=9
 	description "You can cast jump on yourself at will, without expending a spell slot or material components."
 	mutator "spellcasting" "add_prepared" ability="Charisma" {
 		spell "spells/jump.kdl"

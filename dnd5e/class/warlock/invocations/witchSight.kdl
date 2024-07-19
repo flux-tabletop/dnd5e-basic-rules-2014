@@ -1,4 +1,4 @@
 bundle category="Eldritch Invocation" name="Witch Sight" display_as_feature=true {
-	requirement-todo (Evaluator)"level" class="Warlock" min=15
+	requirement (Evaluator)"level" class="Warlock" min=15
 	description "You can see the true form of any shapechanger or creature concealed by illusion or transmutation magic while the creature is within 30 feet of you and within line of sight."
 }

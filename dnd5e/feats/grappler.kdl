@@ -1,5 +1,5 @@
 bundle category="Feat" name="Grappler" display_as_feature=true {
-	requirement "Ability" "Strength" 13
+	requirement (Evaluator)"stat" (AbilityScore)"Strength" 13
 	description {
 		short "Adv on Attack Rolls while grappling your target. Pin your target by succeeding on another grapple check, causing you both to become Restrained until the grapple ends."
 		section "You've developed the skills necessary to hold your own in close-quarters grappling."

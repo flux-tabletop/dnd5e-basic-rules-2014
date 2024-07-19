@@ -1,5 +1,5 @@
 bundle category="Eldritch Invocation" name="Mire the Mind" display_as_feature=true {
-	requirement-todo (Evaluator)"level" class="Warlock" min=5
+	requirement (Evaluator)"level" class="Warlock" min=5
 	description "You can cast slow once using a warlock spell slot. You can't do so again until you finish a long rest."
 	mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
 		// TODO: cast using a slot, but only a fixed number of times
