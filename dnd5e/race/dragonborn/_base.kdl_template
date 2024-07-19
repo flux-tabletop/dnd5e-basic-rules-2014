@@ -1,4 +1,4 @@
-bundle category="RaceVariant" name="Dragonborn: {color} Dragon Ancestry" {
+bundle category="Race Variant" name="Dragonborn: {color} Dragon Ancestry" {
 	requirement (Evaluator)"bundle" (Race)"Dragonborn"
 	mutator "add_defense" "Resistance" (DamageType)"Specific" "{damage_type}"
 	mutator "feature" name="Breath Weapon" {
