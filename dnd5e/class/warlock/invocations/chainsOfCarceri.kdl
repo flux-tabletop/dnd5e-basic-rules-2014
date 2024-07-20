@@ -1,8 +1,6 @@
 bundle category="Eldritch Invocation" name="Chains of Carceri" display_as_feature=true {
 	requirement (Evaluator)"level" class="Warlock" min=15
-	requirement-todo (Evaluator)"has_selection" {
-		option "Warlock/level03/Pact Boon" "Pact of the Chain"
-	}
+	requirement (Evaluator)"has_selection" "Warlock/level03/Pact Boon" "Pact of the Chain"
 	description "You can cast hold monster at will — targeting a celestial, fiend, or elemental — without expending a spell slot or material components. You must finish a long rest before you can use this invocation on the same creature again."
 	// TODO: Spellcasting for Chains of Carceri
 }

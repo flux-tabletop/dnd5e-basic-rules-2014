@@ -24,14 +24,14 @@ class name="Cleric" {
 		group pick=1 {
 			item "Specific" "items/weapons/mace.kdl"
 			item "Specific" "items/weapons/mace.kdl" {
-				criteria (Evaluator)"is_proficient_with" (Weapon)"Warhammer"
+				criteria (Evaluator)"has_proficiency" (Weapon)"Warhammer"
 			}
 		}
 		group pick=1 {
 			item "Specific" "items/armor/scale_mail.kdl"
 			item "Specific" "items/armor/leather.kdl"
 			item "Specific" "items/armor/chain_mail.kdl" {
-				criteria (Evaluator)"is_proficient_with" (Weapon)"Chain Mail"
+				criteria (Evaluator)"has_proficiency" (Weapon)"Chain Mail"
 			}
 		}
 		group pick=1 {
