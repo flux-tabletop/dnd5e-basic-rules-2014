@@ -9,7 +9,6 @@ item name="Helm of Telepathy" {
 		attunement {
 			mutator "spellcasting" "add_prepared" ability="Wisdom" {
 				spell "github://flux-tabletop:dnd5e-basic-rules@dnd5e/spells/detectThoughts.kdl" {
-					// TODO: PreparedInfo saving throw DC
 					save_dc 13
 				}
 			}
