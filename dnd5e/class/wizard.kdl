@@ -310,6 +310,28 @@ class name="Wizard" {
 				By spending 8 hours in study, you can exchange one or both of the spells you chose for different spells of the same levels."
 			}
 			// TODO-QoL: 2 selectors (1st and 2nd level spells in the character's spellbook). Grant those spells for at-will casting at their base level when they are prepared.
+			mutator-todo "spellcasting" "add_prepared" ability="Intelligence" {
+				options {
+					amount 1
+					filter {
+						rank 1
+						tag "Wizard"
+						// TODO: must be in spellbook and prepared. if selected and not prepared, this fails
+						selected_by class="Wizard"
+					}
+				}
+			}
+			mutator-todo "spellcasting" "add_prepared" ability="Intelligence" {
+				options {
+					amount 1
+					filter {
+						rank 2
+						tag "Wizard"
+						// TODO: must be in spellbook and prepared. if selected and not prepared, this fails
+						selected_by class="Wizard"
+					}
+				}
+			}
 		}
 	}
 	level 19 {
