@@ -121,6 +121,7 @@ class name="Monk" {
 						property "TwoHanded" false
 						property "Heavy" false
 					}
+					// TODO: this should replace damage, not add to it
 					damage {
 						amount 1
 						die (Evaluator)"get_level" class="Monk" {
