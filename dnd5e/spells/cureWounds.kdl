@@ -12,8 +12,8 @@ spell name="Cure Wounds" {
 	component "Somatic"
 	duration "Instantaneous"
 	healing {
-		amount "1d8" // TODO: plus the spellcasting ability modifier
-		bonus-per-rank "1d8"
+		amount "1d8" ability=true
+		amount (Upcast)"1d8"
 	}
 	description {
 		section "A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs."

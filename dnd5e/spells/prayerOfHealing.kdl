@@ -7,8 +7,8 @@ spell name="Prayer of Healing" {
 	component "Verbal"
 	duration "Instantaneous"
 	healing {
-		amount "2d8" // plus spellcasting modifier
-		bonus-per-rank "1d8"
+		amount "2d8" ability=true
+		amount (Upcast)"1d8"
 	}
 	description {
 		section "Up to six creatures of your choice that you can see within range each regain hit points equal to 2d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs."
