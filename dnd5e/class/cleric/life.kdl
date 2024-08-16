@@ -59,7 +59,7 @@ subclass class="Cleric" name="Life Domain" {
 			mutator "modify" (Spell)"Healing" {
 				query {
 					rank "range" min=1
-					has "Healing"
+					capability "Healing"
 				}
 				amount (Roll)"2"
 				amount (SpellRank)1
