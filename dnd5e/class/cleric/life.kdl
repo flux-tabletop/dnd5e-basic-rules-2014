@@ -52,8 +52,18 @@ subclass class="Cleric" name="Life Domain" {
 			mutator "add_proficiency" (Armor)"Heavy"
 		}
 		mutator "feature" name="Disciple of Life" {
-			description "Also starting at 1st level, your healing spells are more effective. Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains additional hit points equal to 2 + the spell's level."
-			// TODO-QoL: Find a way to increase the roll/value of healing spells
+			description {
+				short "Spells of 1st level or higher which restore hit points grant an additional 2 + the spell's level per creature."
+				section "Also starting at 1st level, your healing spells are more effective. Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains additional hit points equal to 2 + the spell's level."
+			}
+			mutator "modify" (Spell)"Healing" {
+				query {
+					rank "range" min=1
+					has "Healing"
+				}
+				amount (Roll)"2"
+				amount (SpellRank)1
+			}
 		}
 	}
 	level 2 {
