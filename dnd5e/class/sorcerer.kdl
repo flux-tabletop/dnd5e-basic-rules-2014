@@ -343,9 +343,7 @@ class name="Sorcerer" {
 	level 20 {
 		mutator "feature" name="Sorcerous Restoration" {
 			description "At 20th level, you regain 4 expended sorcery points whenever you finish a short rest."
-			// TODO: tasks/add-restore-uses-mutator.md
-			// Mutator which adds a rest entry to reset n number of uses of a resource
-			mutator-todo-qol "restore_uses" reset_on="Short" {
+			mutator "rest" "Short" "GrantUses" {
 				amount 4
 				resource "/Sorcerer/level02/Font of Magic"
 			}
