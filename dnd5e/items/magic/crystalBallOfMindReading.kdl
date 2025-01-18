@@ -7,11 +7,11 @@ item name="Crystal Ball of Mind Reading" {
 	kind "Equipment" {
 		attunement {
 			mutator "spellcasting" "add_prepared" ability="Wisdom" {
-				spell "github://flux-tabletop:dnd5e-basic-rules@dnd5e/spells/scrying.kdl" {
+				spell "github://flux-tabletop:dnd5e-basic-rules-2014@dnd5e/spells/scrying.kdl" {
 					save_dc 17
 				}
 				// TODO: note that detect thoughts can only be case while scrying
-				spell "github://flux-tabletop:dnd5e-basic-rules@dnd5e/spells/detectThoughts.kdl" {
+				spell "github://flux-tabletop:dnd5e-basic-rules-2014@dnd5e/spells/detectThoughts.kdl" {
 					save_dc 17
 				}
 			}

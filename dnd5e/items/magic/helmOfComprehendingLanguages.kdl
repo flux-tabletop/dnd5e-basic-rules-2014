@@ -4,7 +4,7 @@ item name="Helm of Comprehending Languages" {
 	tag "Wonderous"
 	kind "Equipment" {
 		mutator "spellcasting" "add_prepared" ability="Wisdom" {
-			spell "github://flux-tabletop:dnd5e-basic-rules@dnd5e/spells/comprehendLanguages.kdl"
+			spell "github://flux-tabletop:dnd5e-basic-rules-2014@dnd5e/spells/comprehendLanguages.kdl"
 		}
 	}
 }

@@ -7,13 +7,13 @@ item name="Crystal Ball of Telepathy" {
 	kind "Equipment" {
 		attunement {
 			mutator "spellcasting" "add_prepared" ability="Wisdom" {
-				spell "github://flux-tabletop:dnd5e-basic-rules@dnd5e/spells/scrying.kdl" {
+				spell "github://flux-tabletop:dnd5e-basic-rules-2014@dnd5e/spells/scrying.kdl" {
 					save_dc 17
 				}
 			}
 			mutator "spellcasting" "add_prepared" ability="Wisdom" {
 				// TODO: note that detect thoughts can only be case while scrying
-				spell "github://flux-tabletop:dnd5e-basic-rules@dnd5e/spells/suggestion.kdl" {
+				spell "github://flux-tabletop:dnd5e-basic-rules-2014@dnd5e/spells/suggestion.kdl" {
 					save_dc 17
 				}
 				limited_uses {

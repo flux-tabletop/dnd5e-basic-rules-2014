@@ -7,7 +7,7 @@ item name="Crystal Ball of True Seeing" {
 	kind "Equipment" {
 		attunement {
 			mutator "spellcasting" "add_prepared" ability="Wisdom" {
-				spell "github://flux-tabletop:dnd5e-basic-rules@dnd5e/spells/scrying.kdl" {
+				spell "github://flux-tabletop:dnd5e-basic-rules-2014@dnd5e/spells/scrying.kdl" {
 					save_dc 17
 				}
 			}

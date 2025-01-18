@@ -8,12 +8,12 @@ item name="Helm of Telepathy" {
 	kind "Equipment" {
 		attunement {
 			mutator "spellcasting" "add_prepared" ability="Wisdom" {
-				spell "github://flux-tabletop:dnd5e-basic-rules@dnd5e/spells/detectThoughts.kdl" {
+				spell "github://flux-tabletop:dnd5e-basic-rules-2014@dnd5e/spells/detectThoughts.kdl" {
 					save_dc 13
 				}
 			}
 			mutator "spellcasting" "add_prepared" ability="Wisdom" {
-				spell "github://flux-tabletop:dnd5e-basic-rules@dnd5e/spells/suggestion.kdl"
+				spell "github://flux-tabletop:dnd5e-basic-rules-2014@dnd5e/spells/suggestion.kdl"
 				limited_uses {
 					max_uses 1
 					reset_on "Long"

@@ -1,12 +1,12 @@
 bundle category="Eldritch Invocation" name="Agonizing Blast" display_as_feature=true {
-	requirement (Evaluator)"has_spell" "github://flux-tabletop:dnd5e-basic-rules@dnd5e/spells/eldritchBlast.kdl"
+	requirement (Evaluator)"has_spell" "github://flux-tabletop:dnd5e-basic-rules-2014@dnd5e/spells/eldritchBlast.kdl"
 	description "When you cast eldritch blast, add your Charisma modifier to the damage it deals on a hit."
 	mutator "modify" (Spell)"Damage" {
 		damage {
 			amount (Evaluator)"get_ability_modifier" (Ability)"Charisma"
 		}
 		query {
-			spell "github://flux-tabletop:dnd5e-basic-rules@dnd5e/spells/eldritchBlast.kdl"
+			spell "github://flux-tabletop:dnd5e-basic-rules-2014@dnd5e/spells/eldritchBlast.kdl"
 		}
 	}
 }
