@@ -206,7 +206,9 @@ class name="Warlock" {
 						Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack of its own with its reaction."
 					}
 					mutator "spellcasting" "add_prepared" ability="Charisma" classified_as="Warlock" {
-						spell "spells/findFamiliar.kdl" use_ritual=true
+						entry use_ritual=true {
+							spell "spells/findFamiliar.kdl"
+						}
 					}
 				}
 			}
