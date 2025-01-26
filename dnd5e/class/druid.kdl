@@ -38,19 +38,27 @@ class name="Druid" {
 	}
 	mutator "add_starting_equipment" {
 		group pick=1 {
-			item "Specific" "items/armor/shield.kdl"
+			item "Specific" {
+				item "items/armor/shield.kdl"
+			}
 			item "Select" {
 				weapon kind="Simple"
 			}
 		}
 		group pick=1 {
-			item "Specific" "items/weapons/scimitar.kdl"
+			item "Specific" {
+				item "items/weapons/scimitar.kdl"
+			}
 			item "Select" {
 				weapon kind="Simple" has_melee=true
 			}
 		}
-		item "Specific" "items/armor/leather.kdl"
-		item "Specific" "items/bundle/explorer.kdl"
+		item "Specific" {
+			item "items/armor/leather.kdl"
+		}
+		item "Specific" {
+			item "items/bundle/explorer.kdl"
+		}
 		item "Select" {
 			tag "Druidic Focus"
 		}
@@ -172,9 +180,7 @@ class name="Druid" {
 				section "Though their organization is invisible to most outsiders, druids are part of a society that spans the land, ignoring political borders. All druids are nominally members of this druidic society, though some individuals are so isolated that they have never seen any high-ranking members of the society or participated in druidic gatherings. Druids recognize each other as brothers and sisters. Like creatures of the wilderness, however, druids sometimes compete with or even prey on each other."
 				section "At a local scale, druids are organized into circles that share certain perspectives on nature, balance, and the way of the druid."
 			}
-			mutator "add_bundle" object="subclass" {
-				filter class="Druid"
-			}
+			mutator "add_subclass" class="Druid"
 		}
 		mutator "feature" name="Wild Shape" {
 			description {
@@ -225,9 +231,7 @@ class name="Druid" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -248,9 +252,7 @@ class name="Druid" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -271,9 +273,7 @@ class name="Druid" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -294,9 +294,7 @@ class name="Druid" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -325,9 +323,7 @@ class name="Druid" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}

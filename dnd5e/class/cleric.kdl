@@ -22,32 +22,52 @@ class name="Cleric" {
 	}
 	mutator "add_starting_equipment" {
 		group pick=1 {
-			item "Specific" "items/weapons/mace.kdl"
-			item "Specific" "items/weapons/mace.kdl" {
+			item "Specific" {
+				item "items/weapons/mace.kdl"
+			}
+			item "Specific" {
+				item "items/weapons/mace.kdl"
+			} {
 				criteria (Evaluator)"has_proficiency" (Weapon)"Warhammer"
 			}
 		}
 		group pick=1 {
-			item "Specific" "items/armor/scale_mail.kdl"
-			item "Specific" "items/armor/leather.kdl"
-			item "Specific" "items/armor/chain_mail.kdl" {
+			item "Specific" {
+				item "items/armor/scale_mail.kdl"
+			}
+			item "Specific" {
+				item "items/armor/leather.kdl"
+			}
+			item "Specific" {
+				item "items/armor/chain_mail.kdl"
+			} {
 				criteria (Evaluator)"has_proficiency" (Weapon)"Chain Mail"
 			}
 		}
 		group pick=1 {
 			group {
-				item "Specific" "items/weapons/crossbow_light.kdl"
-				item "Specific" "items/ammunition/crossbow_bolt.kdl" count=20
+				item "Specific" {
+					item "items/weapons/crossbow_light.kdl"
+				}
+				item "Specific" count=20 {
+					item "items/ammunition/crossbow_bolt.kdl"
+				}
 			}
 			item "Select" {
 				weapon kind="Simple"
 			}
 		}
 		group pick=1 {
-			item "Specific" "items/bundle/priest.kdl"
-			item "Specific" "items/bundle/explorer.kdl"
+			item "Specific" {
+				item "items/bundle/priest.kdl"
+			}
+			item "Specific" {
+				item "items/bundle/explorer.kdl"
+			}
 		}
-		item "Specific" "items/armor/shield.kdl"
+		item "Specific" {
+			item "items/armor/shield.kdl"
+		}
 		item "Select" {
 			tag "Holy Symbol"
 		}
@@ -68,9 +88,7 @@ class name="Cleric" {
 				section "Your choice might correspond to a particular sect dedicated to your deity. Apollo, for example, could be worshiped in one region as Phoebus (“radiant”) Apollo, emphasizing his influence over the Light domain, and in a different place as Apollo Acesius (“healing”), emphasizing his association with the Life domain. Alternatively, your choice of domain could simply be a matter of personal preference, the aspect of the deity that appeals to you most."
 				section "Each domain's description gives examples of deities who have influence over that domain. Gods are included from the worlds of the Forgotten Realms, Greyhawk, Dragonlance, and Eberron campaign settings, as well as from the Celtic, Greek, Norse, and Egyptian pantheons of antiquity."
 			}
-			mutator "add_bundle" object="subclass" {
-				filter class="Cleric"
-			}
+			mutator "add_subclass" class="Cleric"
 		}
 		mutator "feature" name="Spellcasting" {
 			description {
@@ -236,9 +254,7 @@ class name="Cleric" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -275,9 +291,7 @@ class name="Cleric" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -319,9 +333,7 @@ class name="Cleric" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -342,9 +354,7 @@ class name="Cleric" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -365,9 +375,7 @@ class name="Cleric" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}

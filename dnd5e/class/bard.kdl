@@ -38,8 +38,12 @@ class name="Bard" {
 	}
 	mutator "add_starting_equipment" {
 		group pick=1 {
-			item "Specific" "items/weapons/rapier.kdl"
-			item "Specific" "items/weapons/longsword.kdl"
+			item "Specific" {
+				item "items/weapons/rapier.kdl"
+			}
+			item "Specific" {
+				item "items/weapons/longsword.kdl"
+			}
 			item "Select" {
 				weapon kind="Simple"
 			}
@@ -47,8 +51,12 @@ class name="Bard" {
 		item "Select" {
 			tag "Musical Instrument"
 		}
-		item "Specific" "items/armor/leather.kdl"
-		item "Specific" "items/weapons/dagger.kdl"
+		item "Specific" {
+			item "items/armor/leather.kdl"
+		}
+		item "Specific" {
+			item "items/weapons/dagger.kdl"
+		}
 	}
 
 	level 1 {
@@ -242,9 +250,7 @@ class name="Bard" {
 	level 3 {
 		mutator "feature" name="Bard College" {
 			description "The way of a bard is gregarious. Bards seek each other out to swap songs and stories, boast of their accomplishments, and share their knowledge. Bards form loose associations, which they call colleges, to facilitate their gatherings and preserve their traditions."
-			mutator "add_bundle" object="subclass" {
-				filter class="Bard"
-			}
+			mutator "add_subclass" class="Bard"
 		}
 		mutator "feature" name="Expertise" {
 			description {
@@ -272,9 +278,7 @@ class name="Bard" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -304,9 +308,7 @@ class name="Bard" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -379,9 +381,7 @@ class name="Bard" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -402,9 +402,7 @@ class name="Bard" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -425,9 +423,7 @@ class name="Bard" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}

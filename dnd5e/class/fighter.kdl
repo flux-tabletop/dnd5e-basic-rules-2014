@@ -32,35 +32,57 @@ class name="Fighter" {
 	}
 	mutator "add_starting_equipment" {
 		group pick=1 {
-			item "Specific" "items/armor/chain_mail.kdl"
+			item "Specific" {
+				item "items/armor/chain_mail.kdl"
+			}
 			group {
-				item "Specific" "items/armor/leather.kdl"
-				item "Specific" "items/weapons/longbow.kdl"
-				item "Specific" "items/ammunition/arrow.kdl" count=20
+				item "Specific" {
+					item "items/armor/leather.kdl"
+				}
+				item "Specific" {
+					item "items/weapons/longbow.kdl"
+				}
+				item "Specific" count=20 {
+					item "items/ammunition/arrow.kdl"
+				}
 			}
 		}
 		item "Select" {
 			weapon kind="Martial"
 		}
 		group pick=1 {
-			item "Specific" "items/armor/shield.kdl"
+			item "Specific" {
+				item "items/armor/shield.kdl"
+			}
 			item "Select" {
 				weapon kind="Martial"
 			}
 		}
 		group pick=1 {
 			group {
-				item "Specific" "items/weapons/crossbow_light.kdl"
-				item "Specific" "items/ammunition/crossbow_bolt.kdl" count=20
+				item "Specific" {
+					item "items/weapons/crossbow_light.kdl"
+				}
+				item "Specific" count=20 {
+					item "items/ammunition/crossbow_bolt.kdl"
+				}
 			}
 			group {
-				item "Specific" "items/weapons/handaxe.kdl"
-				item "Specific" "items/weapons/handaxe.kdl"
+				item "Specific" {
+					item "items/weapons/handaxe.kdl"
+				}
+				item "Specific" {
+					item "items/weapons/handaxe.kdl"
+				}
 			}
 		}
 		group pick=1 {
-			item "Specific" "items/bundle/dungeoneer.kdl"
-			item "Specific" "items/bundle/explorer.kdl"
+			item "Specific" {
+				item "items/bundle/dungeoneer.kdl"
+			}
+			item "Specific" {
+				item "items/bundle/explorer.kdl"
+			}
 		}
 	}
 
@@ -186,9 +208,7 @@ class name="Fighter" {
 	level 3 {
 		mutator "feature" name="Martial Archetype" {
 			description "Different fighters choose different approaches to perfecting their fighting prowess. The martial archetype you choose to emulate reflects your approach."
-			mutator "add_bundle" object="subclass" {
-				filter class="Fighter"
-			}
+			mutator "add_subclass" class="Fighter"
 		}
 	}
 	level 4 {
@@ -208,9 +228,7 @@ class name="Fighter" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -245,9 +263,7 @@ class name="Fighter" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -268,9 +284,7 @@ class name="Fighter" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -310,9 +324,7 @@ class name="Fighter" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -333,9 +345,7 @@ class name="Fighter" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -356,9 +366,7 @@ class name="Fighter" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -379,9 +387,7 @@ class name="Fighter" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}

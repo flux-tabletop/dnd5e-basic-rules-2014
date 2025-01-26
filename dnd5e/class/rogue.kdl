@@ -52,25 +52,49 @@ class name="Rogue" {
 	}
 	mutator "add_starting_equipment" {
 		group pick=1 {
-			item "Specific" "items/weapons/rapier.kdl"
-			item "Specific" "items/weapons/shortsword.kdl"
+			item "Specific" {
+				item "items/weapons/rapier.kdl"
+			}
+			item "Specific" {
+				item "items/weapons/shortsword.kdl"
+			}
 		}
 		group pick=1 {
 			group {
-				item "Specific" "items/weapons/shortbow.kdl"
-				item "Specific" "items/ammunition/arrow.kdl" count=20
+				item "Specific" {
+					item "items/weapons/shortbow.kdl"
+				}
+				item "Specific" count=20 {
+					item "items/ammunition/arrow.kdl"
+				}
 			}
-			item "Specific" "items/weapons/shortsword.kdl"
+			item "Specific" {
+				item "items/weapons/shortsword.kdl"
+			}
 		}
 		group pick=1 {
-			item "Specific" "items/bundle/burglar.kdl"
-			item "Specific" "items/bundle/dungeoneer.kdl"
-			item "Specific" "items/bundle/explorer.kdl"
+			item "Specific" {
+				item "items/bundle/burglar.kdl"
+			}
+			item "Specific" {
+				item "items/bundle/dungeoneer.kdl"
+			}
+			item "Specific" {
+				item "items/bundle/explorer.kdl"
+			}
 		}
-		item "Specific" "items/armor/leather.kdl"
-		item "Specific" "items/weapons/dagger.kdl"
-		item "Specific" "items/weapons/dagger.kdl"
-		item "Specific" "items/tools/thieves.kdl"
+		item "Specific" {
+			item "items/armor/leather.kdl"
+		}
+		item "Specific" {
+			item "items/weapons/dagger.kdl"
+		}
+		item "Specific" {
+			item "items/weapons/dagger.kdl"
+		}
+		item "Specific" {
+			item "items/tools/thieves.kdl"
+		}
 	}
 
 	level 1 {
@@ -169,9 +193,7 @@ class name="Rogue" {
 				short "At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities."
 				section "Rogues have many features in common, including their emphasis on perfecting their skills, their precise and deadly approach to combat, and their increasingly quick reflexes. But different rogues steer those talents in varying directions, embodied by the rogue archetypes. Your choice of archetype is a reflection of your focus—not necessarily an indication of your chosen profession, but a description of your preferred techniques."
 			}
-			mutator "add_bundle" object="subclass" {
-				filter class="Rogue"
-			}
+			mutator "add_subclass" class="Rogue"
 		}
 	}
 	level 4 {
@@ -191,9 +213,7 @@ class name="Rogue" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -249,9 +269,7 @@ class name="Rogue" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -272,9 +290,7 @@ class name="Rogue" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -303,9 +319,7 @@ class name="Rogue" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -338,9 +352,7 @@ class name="Rogue" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -369,9 +381,7 @@ class name="Rogue" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}

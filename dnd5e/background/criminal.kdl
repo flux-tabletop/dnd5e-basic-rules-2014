@@ -11,7 +11,9 @@ bundle category="Background" name="Criminal" {
 	}
 	mutator "add_proficiency" (Tool)"Specific" "Thieves' Tools"
 	mutator "add_starting_equipment" {
-		item "Specific" "items/gear/crowbar.kdl"
+		item "Specific" {
+			item "items/gear/crowbar.kdl"
+		}
 		item "Custom" name="Common Clothes" {
 			notes "Dark, includes a hood"
 		}

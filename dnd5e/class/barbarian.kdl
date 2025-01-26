@@ -26,19 +26,27 @@ class name="Barbarian" {
 	}
 	mutator "add_starting_equipment" {
 		group pick=1 {
-			item "Specific" "items/weapons/greataxe.kdl"
+			item "Specific" {
+				item "items/weapons/greataxe.kdl"
+			}
 			item "Select" {
 				weapon kind="Martial" has_melee=true
 			}
 		}
 		group pick=1 {
-			item "Specific" "items/weapons/handaxe.kdl" count=2
+			item "Specific" count=2 {
+				item "items/weapons/handaxe.kdl"
+			}
 			item "Select" {
 				weapon kind="Simple"
 			}
 		}
-		item "Specific" "items/bundle/explorer.kdl"
-		item "Specific" "items/weapons/javelin.kdl" count=4
+		item "Specific" {
+			item "items/bundle/explorer.kdl"
+		}
+		item "Specific" count=4 {
+			item "items/weapons/javelin.kdl"
+		}
 	}
 
 	// Levels
@@ -155,9 +163,7 @@ class name="Barbarian" {
 	level 3 {
 		mutator "feature" name="Primal Path" {
 			description "Rage burns in every barbarian's heart, a furnace that drives him or her toward greatness. Different barbarians attribute their rage to different sources, however. For some, it is an internal reservoir where pain, grief, and anger are forged into a fury hard as steel. Others see it as a spiritual blessing, a gift of a totem animal."
-			mutator "add_bundle" object="subclass" {
-				filter class="Barbarian"
-			}
+			mutator "add_subclass" class="Barbarian"
 		}
 	}
 	level 4 {
@@ -177,9 +183,7 @@ class name="Barbarian" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -225,9 +229,7 @@ class name="Barbarian" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -260,9 +262,7 @@ class name="Barbarian" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -288,9 +288,7 @@ class name="Barbarian" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -316,9 +314,7 @@ class name="Barbarian" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}

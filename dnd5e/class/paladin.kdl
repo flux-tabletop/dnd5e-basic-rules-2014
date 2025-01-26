@@ -32,19 +32,29 @@ class name="Paladin" {
 			item "Select" {
 				weapon kind="Martial"
 			}
-			item "Specific" "items/armor/shield.kdl"
+			item "Specific" {
+				item "items/armor/shield.kdl"
+			}
 		}
 		group pick=1 {
-			item "Specific" "items/weapons/javelin.kdl" count=5
+			item "Specific" count=5 {
+				item "items/weapons/javelin.kdl"
+			}
 			item "Select" {
 				weapon kind="Simple" has_melee=true
 			}
 		}
 		group pick=1 {
-			item "Specific" "items/bundle/priest.kdl"
-			item "Specific" "items/bundle/explorer.kdl"
+			item "Specific" {
+				item "items/bundle/priest.kdl"
+			}
+			item "Specific" {
+				item "items/bundle/explorer.kdl"
+			}
 		}
-		item "Specific" "items/armor/chain_mail.kdl"
+		item "Specific" {
+			item "items/armor/chain_mail.kdl"
+		}
 		item "Select" {
 			tag "Holy Symbol"
 		}
@@ -249,9 +259,7 @@ class name="Paladin" {
 				section "Becoming a paladin involves taking vows that commit the paladin to the cause of righteousness, an active path of fighting wickedness. The final oath, taken when he or she reaches 3rd level, is the culmination of all the paladin's training. Some characters with this class don't consider themselves true paladins until they have reached 3rd level and made this oath. For others, the actual swearing of the oath is a formality, an official stamp on what has always been true in the paladin's heart."
 				section "When you reach 3rd level, you swear the oath that binds you as a paladin forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it."
 			}
-			mutator "add_bundle" object="subclass" {
-				filter class="Paladin"
-			}
+			mutator "add_subclass" class="Paladin"
 		}
 		mutator "feature" name="Divine Health" {
 			description {
@@ -289,9 +297,7 @@ class name="Paladin" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -338,9 +344,7 @@ class name="Paladin" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -391,9 +395,7 @@ class name="Paladin" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -432,9 +434,7 @@ class name="Paladin" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -455,9 +455,7 @@ class name="Paladin" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}

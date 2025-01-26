@@ -54,16 +54,24 @@ class name="Monk" {
 
 	mutator "add_starting_equipment" {
 		group pick=1 {
-			item "Specific" "items/weapons/shortsword.kdl"
+			item "Specific" {
+				item "items/weapons/shortsword.kdl"
+			}
 			item "Select" {
 				weapon kind="Simple"
 			}
 		}
 		group pick=1 {
-			item "Specific" "items/bundle/dungeoneer.kdl"
-			item "Specific" "items/bundle/explorer.kdl"
+			item "Specific" {
+				item "items/bundle/dungeoneer.kdl"
+			}
+			item "Specific" {
+				item "items/bundle/explorer.kdl"
+			}
 		}
-		item "Specific" "items/weapons/dart.kdl" count=10
+		item "Specific" count=10 {
+			item "items/weapons/dart.kdl"
+		}
 	}
 
 	level 1 {
@@ -208,9 +216,7 @@ class name="Monk" {
 				short "When you reach 3rd level, you commit yourself to a monastic tradition."
 				section "Three traditions of monastic pursuit are common in the monasteries scattered across the multiverse. Most monasteries practice one tradition exclusively, but a few honor the three traditions and instruct each monk according to his or her aptitude and interest. All three traditions rely on the same basic techniques, diverging as the student grows more adept."
 			}
-			mutator "add_bundle" object="subclass" {
-				filter class="Monk"
-			}
+			mutator "add_subclass" class="Monk"
 		}
 		mutator "feature" name="Deflect Missiles" {
 			description {
@@ -243,9 +249,7 @@ class name="Monk" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 		mutator "feature" name="Slow Fall" {
@@ -324,9 +328,7 @@ class name="Monk" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -365,9 +367,7 @@ class name="Monk" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -417,9 +417,7 @@ class name="Monk" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -448,7 +446,7 @@ class name="Monk" {
 					}
 					condition "Custom" name="Invisibility (Empty Body)" {
 						description "Ki-based Invisibility and Damage Resistance"
-						implies "condition/invisible.kdl"
+						mutator "grant_condition" "condition/invisible.kdl"
 						mutator "add_defense" "Resistance" (DamageType)"Specific" "Acid"
 						mutator "add_defense" "Resistance" (DamageType)"Specific" "Bludgeoning"
 						mutator "add_defense" "Resistance" (DamageType)"Specific" "Cold"
@@ -499,9 +497,7 @@ class name="Monk" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}

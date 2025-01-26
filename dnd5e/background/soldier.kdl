@@ -12,7 +12,9 @@ bundle category="Background" name="Soldier" {
 	}
 	mutator "add_proficiency" (Tool)"Specific" "Vehicles (land)"
 	mutator "add_starting_equipment" {
-		item "Specific" "items/gear/clothesCommon.kdl"
+		item "Specific" {
+			item "items/gear/clothesCommon.kdl"
+		}
 		item "Custom" name="Insignia of Rank"
 		item "Custom" name="Trophy" {
 			description "trophy taken from a fallen enemy (a dagger, broken blade, or piece of a banner)"

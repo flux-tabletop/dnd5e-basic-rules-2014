@@ -29,25 +29,39 @@ class name="Sorcerer" {
 	mutator "add_starting_equipment" {
 		group pick=1 {
 			group {
-				item "Specific" "items/weapons/crossbow_light.kdl"
-				item "Specific" "items/ammunition/crossbow_bolt.kdl" count=20
+				item "Specific" {
+					item "items/weapons/crossbow_light.kdl"
+				}
+				item "Specific" count=20 {
+					item "items/ammunition/crossbow_bolt.kdl"
+				}
 			}
 			item "Select" {
 				weapon kind="Simple"
 			}
 		}
 		group pick=1 {
-			item "Specific" "items/gear/componentPouch.kdl"
+			item "Specific" {
+				item "items/gear/componentPouch.kdl"
+			}
 			item "Select" {
 				tag "Arcane Focus"
 			}
 		}
 		group pick=1 {
-			item "Specific" "items/bundle/dungeoneer.kdl"
-			item "Specific" "items/bundle/explorer.kdl"
+			item "Specific" {
+				item "items/bundle/dungeoneer.kdl"
+			}
+			item "Specific" {
+				item "items/bundle/explorer.kdl"
+			}
 		}
-		item "Specific" "items/weapons/dagger.kdl"
-		item "Specific" "items/weapons/dagger.kdl"
+		item "Specific" {
+			item "items/weapons/dagger.kdl"
+		}
+		item "Specific" {
+			item "items/weapons/dagger.kdl"
+		}
 	}
 
 	level 1 {
@@ -60,9 +74,7 @@ class name="Sorcerer" {
 				short "Choose a sorcerous origin, which describes the source of your innate magical power."
 				section "Different sorcerers claim different origins for their innate magic. Although many variations exist, most of these origins fall into two categories: a bloodline or wild magic."
 			}
-			mutator "add_bundle" object="subclass" {
-				filter class="Sorcerer"
-			}
+			mutator "add_subclass" class="Sorcerer"
 		}
 		mutator "feature" name="Spellcasting" {
 			description {
@@ -215,13 +227,12 @@ class name="Sorcerer" {
 				section "At 3rd level, you gain the ability to twist your spells to suit your needs. You gain two of the following Metamagic options of your choice. You gain another one at 10th and 17th level.
 				You can use only one Metamagic option on a spell when you cast it, unless otherwise noted."
 			}
-			mutator "add_bundle" {
+			mutator "add_bundle" category="Metamagic" {
 				amount (Evaluator)"get_level" class="Sorcerer" {
 					level 3 2
 					level 10 3
 					level 17 4
 				}
-				filter category="Metamagic"
 			}
 		}
 	}
@@ -242,9 +253,7 @@ class name="Sorcerer" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -265,9 +274,7 @@ class name="Sorcerer" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -288,9 +295,7 @@ class name="Sorcerer" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -311,9 +316,7 @@ class name="Sorcerer" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}
@@ -334,9 +337,7 @@ class name="Sorcerer" {
 				}
 			}
 			option "Feat" {
-				mutator "add_bundle" {
-					filter category="Feat"
-				}
+				mutator "add_bundle" category="Feat"
 			}
 		}
 	}

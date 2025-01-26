@@ -1,5 +1,5 @@
 bundle category="Eldritch Invocation" name="Thirsting Blade" display_as_feature=true {
 	requirement (Evaluator)"level" class="Warlock" min=5
-	requirement (Evaluator)"has_selection" "Warlock/level03/Pact Boon" "Pact of the Blade"
+	// TODO: requirement (Evaluator)"has_selection" "Warlock/level03/Pact Boon" "Pact of the Blade"
 	description "You can attack with your pact weapon twice, instead of once, whenever you take the Attack action on your turn."
 }
