@@ -115,7 +115,7 @@ subclass class="Paladin" name="Oath of Devotion" {
 	level 15 {
 		mutator "feature" name="Purity of Spirit" {
 			description "Beginning at 15th level, you are always under the effects of a protection from evil and good spell."
-			mutator "grant_condition" "Specific" "spells/protectionFromEvilAndGood_condition.kdl"
+			mutator "grant_condition" "spells/protectionFromEvilAndGood_condition.kdl"
 		}
 	}
 	level 20 {
