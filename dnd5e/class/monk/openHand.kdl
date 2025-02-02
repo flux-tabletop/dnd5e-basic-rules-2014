@@ -48,7 +48,13 @@ subclass class="Monk" name="Way of the Open Hand" {
 					value (Evaluator)"get_proficiency_bonus"
 				}
 			}
-			// TODO-QoL: Some way to apply the sanctuary spell condition when this is used
+			mutator "rest" "Long" "GrantCondition" "Specific" "spells/sanctuary_condition.kdl" {
+				selection "DC" "int" (Evaluator)"math" "Add" {
+					value 8
+					value (Evaluator)"get_ability_modifier" (Ability)"Wisdom"
+					value (Evaluator)"get_proficiency_bonus"
+				}
+			}
 		}
 	}
 	level 17 {

@@ -1,0 +1,3 @@
+condition name="Protection from Evil and Good" {
+	description "You are protected from creatures with the types: aberrations, celestials, elementals, fey, fiends, and undead. Creatures of those types have disadvantage on attack rolls against you. You can't be charmed, frightened, or possessed by them. If you are already charmed, frightened, or possessed by such a creature, you have advantage on any new saving throw against the relevant effect."
+}
