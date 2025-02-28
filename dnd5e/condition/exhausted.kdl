@@ -4,52 +4,48 @@ condition name="Exhasted" {
 		section "If an already exhausted creature suffers another effect that causes exhaustion, its current level of exhaustion increases by the amount specified in the effect's description. A creature suffers the effect of its current level of exhaustion as well as all lower levels. For example, a creature suffering level 2 exhaustion has its speed halved and has disadvantage on ability checks."
 		section "An effect that removes exhaustion reduces its level as specified in the effect's description, with all exhaustion effects ending if a creature's exhaustion level is reduced below 1. Finishing a long rest reduces a creature's exhaustion level by 1, provided that the creature has also ingested some food and drink."
 	}
-	// TODO: remove 1 level of exhaustion per long rest
-	// mutator "rest" "Long" "RemoveCondition" "<exhausted>" 1
-	mutator "pick" 1 name="Degree" {
-		// TODO: higher levels should include the mutators of lower levels
-		option "Level 1" {
-			description "Disadvantage on ability checks"
-			mutator "modify" (Ability)"All" modifier="Disadvantage"
+	mutator "rest" "Long" "RemoveCondition" "condition/exhausted.kdl" 1
+	level 1 {
+		description "Disadvantage on ability checks"
+		mutator "modify" (Ability)"All" modifier="Disadvantage"
+	}
+	level 2 {
+		description "Speed halved"
+		mutator "modify" (Ability)"All" modifier="Disadvantage"
+		mutator "speed" "All" (Divide)2 round="floor"
+	}
+	level 3 {
+		description "Disadvantage on attack rolls and saving throws"
+		mutator "modify" (Ability)"All" modifier="Disadvantage"
+		mutator "speed" "All" (Divide)2 round="floor"
+		mutator "modify" (SavingThrow)"All" modifier="Disadvantage"
+		mutator "modify" (Attack)"Roll" {
+			modifier "Disadvantage"
 		}
-		option "Level 2" {
-			description "Speed halved"
-			mutator "modify" (Ability)"All" modifier="Disadvantage"
-			mutator "speed" "All" (Divide)2 round="floor"
+	}
+	level 4 {
+		description "Hit point maximum halved"
+		mutator "modify" (Ability)"All" modifier="Disadvantage"
+		mutator "speed" "All" (Divide)2 round="floor"
+		mutator "modify" (SavingThrow)"All" modifier="Disadvantage"
+		mutator "modify" (Attack)"Roll" {
+			modifier "Disadvantage"
 		}
-		option "Level 3" {
-			description "Disadvantage on attack rolls and saving throws"
-			mutator "modify" (Ability)"All" modifier="Disadvantage"
-			mutator "speed" "All" (Divide)2 round="floor"
-			mutator "modify" (SavingThrow)"All" modifier="Disadvantage"
-			mutator "modify" (Attack)"Roll" {
-				modifier "Disadvantage"
-			}
+		mutator-todo "hit_point_max" (Divide)2 round="floor"
+	}
+	level 5 {
+		description "Speed reduced to 0"
+		mutator "modify" (Ability)"All" modifier="Disadvantage"
+		mutator "modify" (SavingThrow)"All" modifier="Disadvantage"
+		mutator "modify" (Attack)"Roll" {
+			modifier "Disadvantage"
 		}
-		option "Level 4" {
-			description "Hit point maximum halved"
-			mutator "modify" (Ability)"All" modifier="Disadvantage"
-			mutator "speed" "All" (Divide)2 round="floor"
-			mutator "modify" (SavingThrow)"All" modifier="Disadvantage"
-			mutator "modify" (Attack)"Roll" {
-				modifier "Disadvantage"
-			}
-			mutator-todo "hit_point_max" (Divide)2 round="floor"
-		}
-		option "Level 5" {
-			description "Speed reduced to 0"
-			mutator "modify" (Ability)"All" modifier="Disadvantage"
-			mutator "modify" (SavingThrow)"All" modifier="Disadvantage"
-			mutator "modify" (Attack)"Roll" {
-				modifier "Disadvantage"
-			}
-			mutator-todo "hit_point_max" (Divide)2 round="floor"
-			mutator "speed" "All" (Maximum)0
-		}
-		option "Level 6" {
-			description "You're character is dead."
-			// todo: hit point max of 0?
-			mutator-todo "hit_point_max" (Maximum)0
-		}
+		mutator-todo "hit_point_max" (Divide)2 round="floor"
+		mutator "speed" "All" (Maximum)0
+	}
+	level 6 {
+		description "You're character is dead."
+		// todo: hit point max of 0?
+		mutator-todo "hit_point_max" (Maximum)0
 	}
 }
