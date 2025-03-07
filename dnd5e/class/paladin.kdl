@@ -407,7 +407,7 @@ class name="Paladin" {
 
 				You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain expended uses when you finish a long rest."
 			}
-			activation "Action" {
+			action "Action" {
 				limited_uses {
 					max_uses (Evaluator)"math" "Add" min=1 {
 						value (Evaluator)"get_ability_modifier" (Ability)"Charisma"

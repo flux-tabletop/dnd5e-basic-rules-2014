@@ -47,7 +47,7 @@ subclass class="Ranger" name="Hunter" {
 						short "Make a ranged attack against creatures within 10 feet of a point you can see within range. Make separate attack roles and ammunition for each target."
 						section "You can use your action to make a ranged attack against any number of creatures within 10 feet of a point you can see within your weapon's range. You must have ammunition for each target, as normal, and you make a separate attack roll for each target."
 					}
-					activation "Action"
+					action "Action"
 				}
 			}
 			option "Whirlwind Attack" {
@@ -56,7 +56,7 @@ subclass class="Ranger" name="Hunter" {
 						short "Make a melee attack against creatures within 5 feet you. Make separate attack roles for each target."
 						section "You can use your action to make a melee attack against any number of creatures within 5 feet of you, with a separate attack roll for each target."
 					}
-					activation "Action"
+					action "Action"
 				}
 			}
 		}
@@ -77,7 +77,7 @@ subclass class="Ranger" name="Hunter" {
 						short "Redirect a failed melee attack against you onto another creature within range."
 						section "When a hostile creature misses you with a melee attack, you can use your reaction to force that creature to repeat the same attack against another creature (other than itself) of your choice."
 					}
-					activation "Reaction"
+					action "Reaction"
 				}
 			}
 			option "Uncanny Dodge" {
@@ -86,7 +86,7 @@ subclass class="Ranger" name="Hunter" {
 						short "Halve the damage you take from an attack that you can see."
 						section "When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you."
 					}
-					activation "Reaction"
+					action "Reaction"
 				}
 			}
 		}
