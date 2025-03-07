@@ -3,7 +3,7 @@ item name="Quiver" weight=1.0 {
 	worth 1 (Currency)"Gold"
 	kind "Simple"
 	items {
-		capacity amount=20
+		capacity count=20
 		restriction {
 			tag "Arrow"
 		}
