@@ -1,10 +1,10 @@
 bundle category="Eldritch Invocation" name="Eldritch Spear" display_as_feature=true {
-	requirement (Evaluator)"has_spell" "github://flux-tabletop:dnd5e-basic-rules-2014@dnd5e/spells/eldritchBlast.kdl"
+	requirement (Evaluator)"has_spell" "spells/eldritchBlast.kdl"
 	description "When you cast eldritch blast, its range is 300 feet."
 	mutator "modify" (Spell)"Range" {
 		distance 300
 		query {
-			spell "github://flux-tabletop:dnd5e-basic-rules-2014@dnd5e/spells/eldritchBlast.kdl"
+			spell "spells/eldritchBlast.kdl"
 		}
 	}
 }

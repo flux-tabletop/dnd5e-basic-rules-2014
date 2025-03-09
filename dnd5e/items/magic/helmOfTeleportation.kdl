@@ -5,7 +5,7 @@ item name="Helm of Teleportation" {
 	kind "Equipment" {
 		attunement {
 			mutator "spellcasting" "add_prepared" ability="Wisdom" {
-				spell "github://flux-tabletop:dnd5e-basic-rules-2014@dnd5e/spells/teleport.kdl"
+				spell "spells/teleport.kdl"
 				limited_uses {
 					max_uses 1
 					reset {

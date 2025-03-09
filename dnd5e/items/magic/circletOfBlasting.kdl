@@ -4,7 +4,7 @@ item name="Circlet of Blasting" {
 	tag "Wonderous"
 	kind "Equipment" {
 		mutator "spellcasting" "add_prepared" ability="Wisdom" {
-			spell "github://flux-tabletop:dnd5e-basic-rules-2014@dnd5e/spells/scorchingRay.kdl" {
+			spell "spells/scorchingRay.kdl" {
 				attack_bonus 5
 			}
 			limited_uses {

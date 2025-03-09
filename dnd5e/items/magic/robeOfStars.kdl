@@ -10,7 +10,7 @@ item name="Robe of Stars" {
 		attunement {
 			mutator "modify" (SavingThrow)"All" bonus=1
 			mutator "spellcasting" "add_prepared" ability="Wisdom" {
-				spell "github://flux-tabletop:dnd5e-basic-rules-2014@dnd5e/spells/magicMissle.kdl" {
+				spell "spells/magicMissle.kdl" {
 					rank 5
 				}
 				limited_uses {
