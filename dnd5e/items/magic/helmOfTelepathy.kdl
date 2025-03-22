@@ -7,16 +7,21 @@ item name="Helm of Telepathy" {
 	tag "Wonderous"
 	kind "Equipment" {
 		attunement {
-			mutator "spellcasting" "add_prepared" ability="Wisdom" {
-				spell "spells/detectThoughts.kdl" {
-					save_dc 13
+			mutator "spellcasting2" "innate" context="using your Helm of Telepath" {
+				method "AtWill"
+				spells save_dc=13 {
+					spell "spells/detectThoughts.kdl"
 				}
 			}
-			mutator "spellcasting" "add_prepared" ability="Wisdom" {
-				spell "spells/suggestion.kdl"
-				limited_uses {
-					max_uses 1
-					reset_on "Long"
+			mutator "spellcasting2" "innate" context="detecting thoughts with your Helm of Telepathy" {
+				method "Uses" {
+					limited_uses {
+						max_uses 1
+						reset_on "Long"
+					}
+				}
+				spells save_dc=17 {
+					spell "spells/suggestion.kdl"
 				}
 			}
 		}

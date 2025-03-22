@@ -6,13 +6,16 @@ item name="Crystal Ball of Mind Reading" {
 	tag "Wonderous"
 	kind "Equipment" {
 		attunement {
-			mutator "spellcasting" "add_prepared" ability="Wisdom" {
-				spell "spells/scrying.kdl" {
-					save_dc 17
+			mutator "spellcasting2" "innate" context="using your Crystal Ball" {
+				method "AtWill"
+				spells save_dc=17 {
+					spell "spells/scrying.kdl"
 				}
-				// TODO: note that detect thoughts can only be case while scrying
-				spell "spells/detectThoughts.kdl" {
-					save_dc 17
+			}
+			mutator "spellcasting2" "innate" context="scrying with your Crystal Ball" {
+				method "AtWill"
+				spells save_dc=17 {
+					spell "spells/detectThoughts.kdl"
 				}
 			}
 		}

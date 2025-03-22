@@ -1,6 +1,9 @@
 bundle category="Eldritch Invocation" name="Fiendish Vigor" display_as_feature=true {
 	description "You can cast false life on yourself at will as a 1st-level spell, without expending a spell slot or material components."
-	mutator "spellcasting" "add_prepared" ability="Charisma" {
-		spell "spells/falseLife.kdl" rank=1
+	mutator "spellcasting2" "innate" {
+		method "AtWill"
+		spells caster="Warlock" {
+			spell "spells/falseLife.kdl"
+		}
 	}
 }

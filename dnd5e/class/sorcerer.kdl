@@ -105,79 +105,37 @@ class name="Sorcerer" {
 				Spell attack modifier = your proficiency bonus + your Charisma modifier"
 				section (Title)"Spellcasting Focus" "You can use an arcane focus as a spellcasting focus for your sorcerer spells."
 			}
-			mutator "spellcasting" ability="Charisma" class="Sorcerer" {
-				focus-todo {
-					tag "Arcane Focus"
-				}
-				restriction {
-					tag "Sorcerer"
-				}
-				cantrips {
+			mutator "spellcasting2" "caster" "Sorcerer" ability="Charisma" {
+				method "Known"
+			}
+			mutator "spellcasting2" "access" caster="Sorcerer" {
+				tag "Sorcerer"
+			}
+			mutator "spellcasting2" "capacity" caster="Sorcerer" {
+				cantrips (Evaluator)"get_level" class="Sorcerer" {
 					level 1 4
 					level 4 5
 					level 10 6
 				}
-				/* Known caster (spells are added to the character at level up, when cantrips or spells-known increases)
-					- must be spells with the Sorcerer tag
-					- on any level up: can remove 1 spell from current known and replace it with any other Sorcerer spell
-				*/
-				kind "Known" {
-					capacity {
-						level 1 2
-						level 2 3
-						level 3 4
-						level 4 5
-						level 5 6
-						level 6 7
-						level 7 8
-						level 8 9
-						level 9 10
-						level 10 11
-						level 11 12
-						level 13 13
-						level 15 14
-						level 17 15
-					}
+				ranked (Evaluator)"get_level" class="Sorcerer" {
+					level 1 2
+					level 2 3
+					level 3 4
+					level 4 5
+					level 5 6
+					level 6 7
+					level 7 8
+					level 8 9
+					level 9 10
+					level 10 11
+					level 11 12
+					level 13 13
+					level 14 14
+					level 17 15
 				}
-				slots "Standard" {
-					rank 1 {
-						level 1 2
-						level 2 3
-						level 3 4
-					}
-					rank 2 {
-						level 3 2
-						level 4 3
-					}
-					rank 3 {
-						level 5 2
-						level 6 3
-					}
-					rank 4 {
-						level 7 1
-						level 8 2
-						level 9 3
-					}
-					rank 5 {
-						level 9 1
-						level 10 2
-						level 18 3
-					}
-					rank 6 {
-						level 11 1
-						level 19 2
-					}
-					rank 7 {
-						level 13 1
-						level 20 2
-					}
-					rank 8 {
-						level 15 1
-					}
-					rank 9 {
-						level 17 1
-					}
-				}
+			}
+			mutator "spellcasting2" "slots" "Standard" {
+				value (Evaluator)"get_level" class="Sorcerer"
 			}
 		}
 	}

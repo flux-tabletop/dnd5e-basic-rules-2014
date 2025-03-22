@@ -4,9 +4,10 @@ item name="Crystal Ball" {
 	tag "Wonderous"
 	kind "Equipment" {
 		attunement {
-			mutator "spellcasting" "add_prepared" ability="Wisdom" {
-				spell "spells/scrying.kdl" {
-					save_dc 17
+			mutator "spellcasting2" "innate" {
+				method "AtWill"
+				spells save_dc=17 {
+					spell "spells/scrying.kdl"
 				}
 			}
 		}

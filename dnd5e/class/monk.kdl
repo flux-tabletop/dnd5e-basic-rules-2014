@@ -470,11 +470,15 @@ class name="Monk" {
 						resource "/Monk/level02/Ki"
 					}
 				}
-				mutator "spellcasting" "add_prepared" ability="Wisdom" {
-					spell "spells/astralProjection.kdl"
-					limited_uses {
-						cost 8
-						resource "/Monk/level02/Ki"
+				mutator "spellcasting2" "innate" {
+					method "Uses" {
+						limited_uses {
+							cost 8
+							resource "/Monk/level02/Ki"
+						}
+					}
+					spells ability="Wisdom" {
+						spell "spells/astralProjection.kdl"
 					}
 				}
 			}

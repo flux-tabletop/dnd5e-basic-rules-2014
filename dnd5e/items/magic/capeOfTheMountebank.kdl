@@ -5,11 +5,15 @@ item name="Cape of the Mountebank" {
 	rarity "Rare"
 	tag "Wonderous"
 	kind "Equipment" {
-		mutator "spellcasting" "add_prepared" ability="Wisdom" {
-			spell "spells/dimensionDoor.kdl"
-			limited_uses {
-				max_uses 1
-				reset_on "Long"
+		mutator "spellcasting2" "innate" {
+			method "Uses" {
+				limited_uses {
+					max_uses 1
+					reset_on "Long"
+				}
+			}
+			spells {
+				spell "spells/dimensionDoor.kdl"
 			}
 		}
 	}

@@ -1,6 +1,9 @@
 bundle category="Eldritch Invocation" name="Beast Speech" display_as_feature=true {
 	description "You can cast speak with animals at will, without expending a spell slot."
-	mutator "spellcasting" "add_prepared" ability="Charisma" {
-		spell "spells/speakWithAnimals.kdl"
+	mutator "spellcasting2" "innate" {
+		method "AtWill"
+		spells caster="Warlock" {
+			spell "spells/speakWithAnimals.kdl"
+		}
 	}
 }

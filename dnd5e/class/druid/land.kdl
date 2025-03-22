@@ -6,8 +6,10 @@ subclass class="Druid" name="Circle of the Land" {
 				short "You gain one additional druid cantrip of your choice."
 				section "When you choose this circle at 2nd level, you learn one additional druid cantrip of your choice. This cantrip doesn't count against the number of druid cantrips you know."
 			}
-			mutator "spellcasting" "add_prepared" ability="Wisdom" {
-				options {
+			mutator "spellcasting2" "innate" {
+				method "AtWill"
+				spells caster="Druid" {
+					amount 1
 					filter {
 						rank 0
 						tag "Druid"
@@ -49,27 +51,39 @@ subclass class="Druid" name="Circle of the Land" {
 				}
 				mutator "by_level" class="Druid" {
 					level 3 {
-						mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Druid" {
-							spell "spells/holdPerson.kdl"
-							spell "spells/spikeGrowth.kdl"
+						mutator "spellcasting2" "innate" {
+							method "Slot"
+							spells caster="Druid" {
+								spell "spells/holdPerson.kdl"
+								spell "spells/spikeGrowth.kdl"
+							}
 						}
 					}
 					level 5 {
-						mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Druid" {
-							spell "spells/sleetStorm.kdl"
-							spell "spells/slow.kdl"
+						mutator "spellcasting2" "innate" {
+							method "Slot"
+							spells caster="Druid" {
+								spell "spells/sleetStorm.kdl"
+								spell "spells/slow.kdl"
+							}
 						}
 					}
 					level 7 {
-						mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Druid" {
-							spell "spells/freedomOfMovement.kdl"
-							spell "spells/iceStorm.kdl"
+						mutator "spellcasting2" "innate" {
+							method "Slot"
+							spells caster="Druid" {
+								spell "spells/freedomOfMovement.kdl"
+								spell "spells/iceStorm.kdl"
+							}
 						}
 					}
 					level 9 {
-						mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Druid" {
-							spell "spells/communeWithNature.kdl"
-							spell "spells/coneOfCold.kdl"
+						mutator "spellcasting2" "innate" {
+							method "Slot"
+							spells caster="Druid" {
+								spell "spells/communeWithNature.kdl"
+								spell "spells/coneOfCold.kdl"
+							}
 						}
 					}
 				}
@@ -84,27 +98,39 @@ subclass class="Druid" name="Circle of the Land" {
 				}
 				mutator "by_level" class="Druid" {
 					level 3 {
-						mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Druid" {
-							spell "spells/mirrorImage.kdl"
-							spell "spells/mistyStep.kdl"
+						mutator "spellcasting2" "innate" {
+							method "Slot"
+							spells caster="Druid" {
+								spell "spells/mirrorImage.kdl"
+								spell "spells/mistyStep.kdl"
+							}
 						}
 					}
 					level 5 {
-						mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Druid" {
-							spell "spells/waterBreathing.kdl"
-							spell "spells/waterWalk.kdl"
+						mutator "spellcasting2" "innate" {
+							method "Slot"
+							spells caster="Druid" {
+								spell "spells/waterBreathing.kdl"
+								spell "spells/waterWalk.kdl"
+							}
 						}
 					}
 					level 7 {
-						mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Druid" {
-							spell "spells/controlWater.kdl"
-							spell "spells/freedomOfMovement.kdl"
+						mutator "spellcasting2" "innate" {
+							method "Slot"
+							spells caster="Druid" {
+								spell "spells/controlWater.kdl"
+								spell "spells/freedomOfMovement.kdl"
+							}
 						}
 					}
 					level 9 {
-						mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Druid" {
-							spell "spells/conjureElemental.kdl"
-							spell "spells/scrying.kdl"
+						mutator "spellcasting2" "innate" {
+							method "Slot"
+							spells caster="Druid" {
+								spell "spells/conjureElemental.kdl"
+								spell "spells/scrying.kdl"
+							}
 						}
 					}
 				}
@@ -119,27 +145,39 @@ subclass class="Druid" name="Circle of the Land" {
 				}
 				mutator "by_level" class="Druid" {
 					level 3 {
-						mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Druid" {
-							spell "spells/blur.kdl"
-							spell "spells/silence.kdl"
+						mutator "spellcasting2" "innate" {
+							method "Slot"
+							spells caster="Druid" {
+								spell "spells/blur.kdl"
+								spell "spells/silence.kdl"
+							}
 						}
 					}
 					level 5 {
-						mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Druid" {
-							spell "spells/createFoodAndWater.kdl"
-							spell "spells/protectionFromEnergy.kdl"
+						mutator "spellcasting2" "innate" {
+							method "Slot"
+							spells caster="Druid" {
+								spell "spells/createFoodAndWater.kdl"
+								spell "spells/protectionFromEnergy.kdl"
+							}
 						}
 					}
 					level 7 {
-						mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Druid" {
-							spell "spells/blight.kdl"
-							spell "spells/hallucinatoryTerrain.kdl"
+						mutator "spellcasting2" "innate" {
+							method "Slot"
+							spells caster="Druid" {
+								spell "spells/blight.kdl"
+								spell "spells/hallucinatoryTerrain.kdl"
+							}
 						}
 					}
 					level 9 {
-						mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Druid" {
-							spell "spells/insectPlague.kdl"
-							spell "spells/wallOfStone.kdl"
+						mutator "spellcasting2" "innate" {
+							method "Slot"
+							spells caster="Druid" {
+								spell "spells/insectPlague.kdl"
+								spell "spells/wallOfStone.kdl"
+							}
 						}
 					}
 				}
@@ -154,27 +192,39 @@ subclass class="Druid" name="Circle of the Land" {
 				}
 				mutator "by_level" class="Druid" {
 					level 3 {
-						mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Druid" {
-							spell "spells/barkskin.kdl"
-							spell "spells/spiderClimb.kdl"
+						mutator "spellcasting2" "innate" {
+							method "Slot"
+							spells caster="Druid" {
+								spell "spells/barkskin.kdl"
+								spell "spells/spiderClimb.kdl"
+							}
 						}
 					}
 					level 5 {
-						mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Druid" {
-							spell "spells/callLightning.kdl"
-							spell "spells/plantGrowth.kdl"
+						mutator "spellcasting2" "innate" {
+							method "Slot"
+							spells caster="Druid" {
+								spell "spells/callLightning.kdl"
+								spell "spells/plantGrowth.kdl"
+							}
 						}
 					}
 					level 7 {
-						mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Druid" {
-							spell "spells/divination.kdl"
-							spell "spells/freedomOfMovement.kdl"
+						mutator "spellcasting2" "innate" {
+							method "Slot"
+							spells caster="Druid" {
+								spell "spells/divination.kdl"
+								spell "spells/freedomOfMovement.kdl"
+							}
 						}
 					}
 					level 9 {
-						mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Druid" {
-							spell "spells/communeWithNature.kdl"
-							spell "spells/treeStride.kdl"
+						mutator "spellcasting2" "innate" {
+							method "Slot"
+							spells caster="Druid" {
+								spell "spells/communeWithNature.kdl"
+								spell "spells/treeStride.kdl"
+							}
 						}
 					}
 				}
@@ -189,27 +239,39 @@ subclass class="Druid" name="Circle of the Land" {
 				}
 				mutator "by_level" class="Druid" {
 					level 3 {
-						mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Druid" {
-							spell "spells/invisibility.kdl"
-							spell "spells/passWithoutTrace.kdl"
+						mutator "spellcasting2" "innate" {
+							method "Slot"
+							spells caster="Druid" {
+								spell "spells/invisibility.kdl"
+								spell "spells/passWithoutTrace.kdl"
+							}
 						}
 					}
 					level 5 {
-						mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Druid" {
-							spell "spells/daylight.kdl"
-							spell "spells/haste.kdl"
+						mutator "spellcasting2" "innate" {
+							method "Slot"
+							spells caster="Druid" {
+								spell "spells/daylight.kdl"
+								spell "spells/haste.kdl"
+							}
 						}
 					}
 					level 7 {
-						mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Druid" {
-							spell "spells/divination.kdl"
-							spell "spells/freedomOfMovement.kdl"
+						mutator "spellcasting2" "innate" {
+							method "Slot"
+							spells caster="Druid" {
+								spell "spells/divination.kdl"
+								spell "spells/freedomOfMovement.kdl"
+							}
 						}
 					}
 					level 9 {
-						mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Druid" {
-							spell "spells/dream.kdl"
-							spell "spells/insectPlague.kdl"
+						mutator "spellcasting2" "innate" {
+							method "Slot"
+							spells caster="Druid" {
+								spell "spells/dream.kdl"
+								spell "spells/insectPlague.kdl"
+							}
 						}
 					}
 				}
@@ -224,27 +286,39 @@ subclass class="Druid" name="Circle of the Land" {
 				}
 				mutator "by_level" class="Druid" {
 					level 3 {
-						mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Druid" {
-							spell "spells/spiderClimb.kdl"
-							spell "spells/spikeGrowth.kdl"
+						mutator "spellcasting2" "innate" {
+							method "Slot"
+							spells caster="Druid" {
+								spell "spells/spiderClimb.kdl"
+								spell "spells/spikeGrowth.kdl"
+							}
 						}
 					}
 					level 5 {
-						mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Druid" {
-							spell "spells/lightningBolt.kdl"
-							spell "spells/meldIntoStone.kdl"
+						mutator "spellcasting2" "innate" {
+							method "Slot"
+							spells caster="Druid" {
+								spell "spells/lightningBolt.kdl"
+								spell "spells/meldIntoStone.kdl"
+							}
 						}
 					}
 					level 7 {
-						mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Druid" {
-							spell "spells/stoneShape.kdl"
-							spell "spells/stoneskin.kdl"
+						mutator "spellcasting2" "innate" {
+							method "Slot"
+							spells caster="Druid" {
+								spell "spells/stoneShape.kdl"
+								spell "spells/stoneskin.kdl"
+							}
 						}
 					}
 					level 9 {
-						mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Druid" {
-							spell "spells/passwall.kdl"
-							spell "spells/wallOfStone.kdl"
+						mutator "spellcasting2" "innate" {
+							method "Slot"
+							spells caster="Druid" {
+								spell "spells/passwall.kdl"
+								spell "spells/wallOfStone.kdl"
+							}
 						}
 					}
 				}
@@ -259,27 +333,39 @@ subclass class="Druid" name="Circle of the Land" {
 				}
 				mutator "by_level" class="Druid" {
 					level 3 {
-						mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Druid" {
-							spell "spells/darkness.kdl"
-							spell "spells/acidArrow.kdl"
+						mutator "spellcasting2" "innate" {
+							method "Slot"
+							spells caster="Druid" {
+								spell "spells/darkness.kdl"
+								spell "spells/acidArrow.kdl"
+							}
 						}
 					}
 					level 5 {
-						mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Druid" {
-							spell "spells/waterWalk.kdl"
-							spell "spells/stinkingCloud.kdl"
+						mutator "spellcasting2" "innate" {
+							method "Slot"
+							spells caster="Druid" {
+								spell "spells/waterWalk.kdl"
+								spell "spells/stinkingCloud.kdl"
+							}
 						}
 					}
 					level 7 {
-						mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Druid" {
-							spell "spells/freedomOfMovement.kdl"
-							spell "spells/locateCreature.kdl"
+						mutator "spellcasting2" "innate" {
+							method "Slot"
+							spells caster="Druid" {
+								spell "spells/freedomOfMovement.kdl"
+								spell "spells/locateCreature.kdl"
+							}
 						}
 					}
 					level 9 {
-						mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Druid" {
-							spell "spells/insectPlague.kdl"
-							spell "spells/scrying.kdl"
+						mutator "spellcasting2" "innate" {
+							method "Slot"
+							spells caster="Druid" {
+								spell "spells/insectPlague.kdl"
+								spell "spells/scrying.kdl"
+							}
 						}
 					}
 				}
@@ -294,27 +380,39 @@ subclass class="Druid" name="Circle of the Land" {
 				}
 				mutator "by_level" class="Druid" {
 					level 3 {
-						mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Druid" {
-							spell "spells/spiderClimb.kdl"
-							spell "spells/web.kdl"
+						mutator "spellcasting2" "innate" {
+							method "Slot"
+							spells caster="Druid" {
+								spell "spells/spiderClimb.kdl"
+								spell "spells/web.kdl"
+							}
 						}
 					}
 					level 5 {
-						mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Druid" {
-							spell "spells/gaseousForm.kdl"
-							spell "spells/stinkingCloud.kdl"
+						mutator "spellcasting2" "innate" {
+							method "Slot"
+							spells caster="Druid" {
+								spell "spells/gaseousForm.kdl"
+								spell "spells/stinkingCloud.kdl"
+							}
 						}
 					}
 					level 7 {
-						mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Druid" {
-							spell "spells/greaterInvisibility.kdl"
-							spell "spells/stoneShape.kdl"
+						mutator "spellcasting2" "innate" {
+							method "Slot"
+							spells caster="Druid" {
+								spell "spells/greaterInvisibility.kdl"
+								spell "spells/stoneShape.kdl"
+							}
 						}
 					}
 					level 9 {
-						mutator "spellcasting" "add_prepared" ability="Wisdom" classified_as="Druid" {
-							spell "spells/cloudkill.kdl"
-							spell "spells/insectPlague.kdl"
+						mutator "spellcasting2" "innate" {
+							method "Slot"
+							spells caster="Druid" {
+								spell "spells/cloudkill.kdl"
+								spell "spells/insectPlague.kdl"
+							}
 						}
 					}
 				}

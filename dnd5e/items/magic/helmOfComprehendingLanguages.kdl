@@ -3,8 +3,11 @@ item name="Helm of Comprehending Languages" {
 	rarity "Uncommon"
 	tag "Wonderous"
 	kind "Equipment" {
-		mutator "spellcasting" "add_prepared" ability="Wisdom" {
-			spell "pells/comprehendLanguages.kdl"
+		mutator "spellcasting2" "innate" {
+			method "AtWill"
+			spells ability="Wisdom" {
+				spell "pells/comprehendLanguages.kdl"
+			}
 		}
 	}
 }

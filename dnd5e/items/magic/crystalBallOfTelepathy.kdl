@@ -6,19 +6,21 @@ item name="Crystal Ball of Telepathy" {
 	tag "Wonderous"
 	kind "Equipment" {
 		attunement {
-			mutator "spellcasting" "add_prepared" ability="Wisdom" {
-				spell "spells/scrying.kdl" {
-					save_dc 17
+			mutator "spellcasting2" "innate" context="using your Crystal Ball" {
+				method "AtWill"
+				spells save_dc=17 {
+					spell "spells/scrying.kdl"
 				}
 			}
-			mutator "spellcasting" "add_prepared" ability="Wisdom" {
-				// TODO: note that detect thoughts can only be case while scrying
-				spell "spells/suggestion.kdl" {
-					save_dc 17
+			mutator "spellcasting2" "innate" context="scrying with your Crystal Ball" {
+				method "Uses" {
+					limited_uses {
+						max_uses 1
+						reset_on "Long"
+					}
 				}
-				limited_uses {
-					max_uses 1
-					reset_on "Long"
+				spells save_dc=17 {
+					spell "spells/suggestion.kdl"
 				}
 			}
 		}

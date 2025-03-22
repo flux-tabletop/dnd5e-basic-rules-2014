@@ -9,16 +9,18 @@ item name="Robe of Stars" {
 	kind "Equipment" {
 		attunement {
 			mutator "modify" (SavingThrow)"All" bonus=1
-			mutator "spellcasting" "add_prepared" ability="Wisdom" {
-				spell "spells/magicMissle.kdl" {
-					rank 5
-				}
-				limited_uses {
-					max_uses 6
-					reset {
-						rest "Long"
-						rate "1d6"
+			mutator "spellcasting2" "innate" {
+				method "Uses" {
+					limited_uses {
+						max_uses 6
+						reset {
+							rest "Long"
+							rate "1d6"
+						}
 					}
+				}
+				spells rank=5 {
+					spell "spells/magicMissle.kdl"
 				}
 			}
 			mutator "feature" name="Enter Astral Plane" {

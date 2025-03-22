@@ -1,7 +1,10 @@
 bundle category="Eldritch Invocation" name="Ascendant Step" display_as_feature=true {
 	requirement (Evaluator)"level" class="Warlock" min=9
 	description "You can cast levitate on yourself at will, without expending a spell slot or material components."
-	mutator "spellcasting" "add_prepared" ability="Charisma" {
-		spell "spells/levitate.kdl"
+	mutator "spellcasting2" "innate" {
+		method "AtWill"
+		spells caster="Warlock" {
+			spell "spells/levitate.kdl"
+		}
 	}
 }
