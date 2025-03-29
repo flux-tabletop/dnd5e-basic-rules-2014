@@ -4,7 +4,7 @@ item name="Crystal Ball" {
 	tag "Wonderous"
 	kind "Equipment" {
 		attunement {
-			mutator "spellcasting2" "innate" {
+			mutator "spellcasting" "innate" {
 				method "AtWill"
 				spells save_dc=17 {
 					spell "spells/scrying.kdl"

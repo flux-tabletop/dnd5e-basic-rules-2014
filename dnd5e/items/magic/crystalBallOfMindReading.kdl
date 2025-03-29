@@ -6,13 +6,13 @@ item name="Crystal Ball of Mind Reading" {
 	tag "Wonderous"
 	kind "Equipment" {
 		attunement {
-			mutator "spellcasting2" "innate" context="using your Crystal Ball" {
+			mutator "spellcasting" "innate" context="using your Crystal Ball" {
 				method "AtWill"
 				spells save_dc=17 {
 					spell "spells/scrying.kdl"
 				}
 			}
-			mutator "spellcasting2" "innate" context="scrying with your Crystal Ball" {
+			mutator "spellcasting" "innate" context="scrying with your Crystal Ball" {
 				method "AtWill"
 				spells save_dc=17 {
 					spell "spells/detectThoughts.kdl"

@@ -1,7 +1,7 @@
 bundle category="Eldritch Invocation" name="Sculptor of Flesh" display_as_feature=true {
 	requirement (Evaluator)"level" class="Warlock" min=7
 	description "You can cast polymorph once using a warlock spell slot. You can't do so again until you finish a long rest."
-	mutator "spellcasting2" "innate" {
+	mutator "spellcasting" "innate" {
 		method "Slot" {
 			limited_uses {
 				max_uses 1

@@ -15,7 +15,7 @@ bundle category="Race Variant" name="High Elf" {
 	}
 	mutator "feature" name="Cantrip" {
 		description "You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it."
-		mutator "spellcasting2" "innate" {
+		mutator "spellcasting" "innate" {
 			method "AtWill"
 			spells ability="Intelligence" {
 				amount 1

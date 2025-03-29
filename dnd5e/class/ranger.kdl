@@ -197,13 +197,13 @@ class name="Ranger" {
 
 				Spell attack modifier = your proficiency bonus + your Wisdom modifier"
 			}
-			mutator "spellcasting2" "caster" "Ranger" ability="Wisdom" {
+			mutator "spellcasting" "caster" "Ranger" ability="Wisdom" {
 				method "Known"
 			}
-			mutator "spellcasting2" "access" caster="Ranger" {
+			mutator "spellcasting" "access" caster="Ranger" {
 				tag "Ranger"
 			}
-			mutator "spellcasting2" "capacity" caster="Ranger" {
+			mutator "spellcasting" "capacity" caster="Ranger" {
 				cantrips 0
 				ranked (Evaluator)"get_level" class="Ranger" {
 					level 1 0
@@ -219,7 +219,7 @@ class name="Ranger" {
 					level 19 11
 				}
 			}
-			mutator "spellcasting2" "slots" "Standard" half_caster=true {
+			mutator "spellcasting" "slots" "Standard" half_caster=true {
 				value (Evaluator)"get_level" class="Ranger"
 			}
 		}

@@ -11,7 +11,7 @@ item name="Amulet of the Planes" {
 					On a failure, you and each creature and object within 15 feet of you travel to a random destination. To determine the destination, roll a d100. On a 1-60, you travel to a random location on the plane you named. On a 61-100, you travel to a randomly determined plane of existence."
 				}
 				action "Action"
-				mutator "spellcasting2" "innate" {
+				mutator "spellcasting" "innate" {
 					method "AtWill"
 					spells ability="Intelligence" {
 						spell "spells/planeShift.kdl"

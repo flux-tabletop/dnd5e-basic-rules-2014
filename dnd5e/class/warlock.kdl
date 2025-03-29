@@ -111,13 +111,13 @@ class name="Warlock" {
 				Spell attack modifier = your proficiency bonus + your Charisma modifier"
 				section (Title)"Spellcasting Focus" "You can use an arcane focus as a spellcasting focus for your warlock spells."
 			}
-			mutator "spellcasting2" "caster" "Warlock" ability="Charisma" {
+			mutator "spellcasting" "caster" "Warlock" ability="Charisma" {
 				method "Known" swap=1
 			}
-			mutator "spellcasting2" "access" caster="Warlock" {
+			mutator "spellcasting" "access" caster="Warlock" {
 				tag "Warlock"
 			}
-			mutator "spellcasting2" "capacity" caster="Warlock" {
+			mutator "spellcasting" "capacity" caster="Warlock" {
 				cantrips (Evaluator)"get_level" class="Warlock" {
 					level 1 2
 					level 4 3
@@ -141,7 +141,7 @@ class name="Warlock" {
 					level 19 15
 				}
 			}
-			mutator "spellcasting2" "slots" "Bonus" reset_on="Short" {
+			mutator "spellcasting" "slots" "Bonus" reset_on="Short" {
 				value (Evaluator)"get_level" class="Warlock"
 				level 1 {
 					rank 1 1
@@ -201,7 +201,7 @@ class name="Warlock" {
 						When you cast the spell, you can choose one of the normal forms for your familiar or one of the following special forms: imp, pseudodragon, quasit, or sprite.
 						Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack of its own with its reaction."
 					}
-					mutator "spellcasting2" "innate" {
+					mutator "spellcasting" "innate" {
 						method "Ritual"
 						spells caster="Warlock" {
 							spell "spells/findFamiliar.kdl"
@@ -234,7 +234,7 @@ class name="Warlock" {
 						section "Your patron gives you a grimoire called a Book of Shadows. When you gain this feature, choose three cantrips from any class's spell list (the three needn't be from the same list). While the book is on your person, you can cast those cantrips at will. They don't count against your number of cantrips known. If they don't appear on the warlock spell list, they are nonetheless warlock spells for you."
 						section "If you lose your Book of Shadows, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous book. The book turns to ash when you die."
 					}
-					mutator "spellcasting2" "innate" {
+					mutator "spellcasting" "innate" {
 						method "AtWill"
 						spells caster="Warlock" {
 							amount 3
@@ -301,7 +301,7 @@ class name="Warlock" {
 			}
 			mutator "by_level" class="Warlock" {
 				level 11 {
-					mutator "spellcasting2" "innate" {
+					mutator "spellcasting" "innate" {
 						method "Uses" {
 							limited_uses {
 								max_uses 1
@@ -318,7 +318,7 @@ class name="Warlock" {
 					}
 				}
 				level 13 {
-					mutator "spellcasting2" "innate" {
+					mutator "spellcasting" "innate" {
 						method "Uses" {
 							limited_uses {
 								max_uses 1
@@ -335,7 +335,7 @@ class name="Warlock" {
 					}
 				}
 				level 15 {
-					mutator "spellcasting2" "innate" {
+					mutator "spellcasting" "innate" {
 						method "Uses" {
 							limited_uses {
 								max_uses 1
@@ -352,7 +352,7 @@ class name="Warlock" {
 					}
 				}
 				level 17 {
-					mutator "spellcasting2" "innate" {
+					mutator "spellcasting" "innate" {
 						method "Uses" {
 							limited_uses {
 								max_uses 1

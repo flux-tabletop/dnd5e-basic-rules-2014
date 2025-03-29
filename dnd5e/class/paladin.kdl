@@ -199,13 +199,13 @@ class name="Paladin" {
 				Spell attack modifier = your proficiency bonus + your Charisma modifier"
 				section (Title)"Spellcasting Focus" "You can use a holy symbol as a spellcasting focus for your paladin spells."
 			}
-			mutator "spellcasting2" "caster" "Paladin" ability="Charisma" {
+			mutator "spellcasting" "caster" "Paladin" ability="Charisma" {
 				method "Prepared"
 			}
-			mutator "spellcasting2" "access" caster="Paladin" {
+			mutator "spellcasting" "access" caster="Paladin" {
 				tag "Paladin"
 			}
-			mutator "spellcasting2" "capacity" caster="Paladin" {
+			mutator "spellcasting" "capacity" caster="Paladin" {
 				cantrips 0
 				ranked (Evaluator)"math" "Add" min=1 {
 					value (Evaluator)"get_ability_modifier" (Ability)"Charisma"
@@ -215,7 +215,7 @@ class name="Paladin" {
 					}
 				}
 			}
-			mutator "spellcasting2" "slots" "Standard" half_caster=true {
+			mutator "spellcasting" "slots" "Standard" half_caster=true {
 				value (Evaluator)"get_level" class="Paladin"
 			}
 		}

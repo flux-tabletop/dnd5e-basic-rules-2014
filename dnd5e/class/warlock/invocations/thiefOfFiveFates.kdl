@@ -1,6 +1,6 @@
 bundle category="Eldritch Invocation" name="Thief of Five Fates" display_as_feature=true {
 	description "You can cast bane once using a warlock spell slot. You can't do so again until you finish a long rest."
-	mutator "spellcasting2" "innate" {
+	mutator "spellcasting" "innate" {
 		method "Slot" {
 			limited_uses {
 				max_uses 1

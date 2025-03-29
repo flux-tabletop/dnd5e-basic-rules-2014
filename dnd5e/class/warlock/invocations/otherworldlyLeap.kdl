@@ -1,7 +1,7 @@
 bundle category="Eldritch Invocation" name="Otherworldly Leap" display_as_feature=true {
 	requirement (Evaluator)"level" class="Warlock" min=9
 	description "You can cast jump on yourself at will, without expending a spell slot or material components."
-	mutator "spellcasting2" "innate" {
+	mutator "spellcasting" "innate" {
 		method "AtWill"
 		spells caster="Warlock" {
 			spell "spells/jump.kdl"

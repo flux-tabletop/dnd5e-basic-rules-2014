@@ -26,7 +26,7 @@ subclass class="Bard" name="College of Lore" {
 	level 6 {
 		mutator "feature" name="Additional Magical Secrets" {
 			description "At 6th level, you learn two spells of your choice from any class. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip. The chosen spells count as bard spells for you but don't count against the number of bard spells you know."
-			mutator "spellcasting2" "innate" {
+			mutator "spellcasting" "innate" {
 				method "Slot"
 				spells caster="Bard" {
 					amount 2

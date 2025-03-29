@@ -6,7 +6,7 @@ item name="Crystal Ball of True Seeing" {
 	tag "Wonderous"
 	kind "Equipment" {
 		attunement {
-			mutator "spellcasting2" "innate" context="using your Crystal Ball" {
+			mutator "spellcasting" "innate" context="using your Crystal Ball" {
 				method "AtWill"
 				spells save_dc=17 {
 					spell "spells/scrying.kdl"

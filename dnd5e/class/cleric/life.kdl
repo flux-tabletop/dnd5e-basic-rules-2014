@@ -17,7 +17,7 @@ subclass class="Cleric" name="Life Domain" {
 			}
 			mutator "by_level" class="Cleric" {
 				level 1 {
-					mutator "spellcasting2" "innate" {
+					mutator "spellcasting" "innate" {
 						method "Slot"
 						spells caster="Cleric" {
 							spell "spells/bless.kdl"
@@ -26,7 +26,7 @@ subclass class="Cleric" name="Life Domain" {
 					}
 				}
 				level 3 {
-					mutator "spellcasting2" "innate" {
+					mutator "spellcasting" "innate" {
 						method "Slot"
 						spells caster="Cleric" {
 							spell "spells/lesserRestoration.kdl"
@@ -35,7 +35,7 @@ subclass class="Cleric" name="Life Domain" {
 					}
 				}
 				level 5 {
-					mutator "spellcasting2" "innate" {
+					mutator "spellcasting" "innate" {
 						method "Slot"
 						spells caster="Cleric" {
 							spell "spells/beaconOfHope.kdl"
@@ -44,7 +44,7 @@ subclass class="Cleric" name="Life Domain" {
 					}
 				}
 				level 7 {
-					mutator "spellcasting2" "innate" {
+					mutator "spellcasting" "innate" {
 						method "Slot"
 						spells caster="Cleric" {
 							spell "spells/deathWard.kdl"
@@ -53,7 +53,7 @@ subclass class="Cleric" name="Life Domain" {
 					}
 				}
 				level 9 {
-					mutator "spellcasting2" "innate" {
+					mutator "spellcasting" "innate" {
 						method "Slot"
 						spells caster="Cleric" {
 							spell "spells/massCureWounds.kdl"

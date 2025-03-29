@@ -24,7 +24,7 @@ subclass class="Paladin" name="Oath of Devotion" {
 			}
 			mutator "by_level" class="Paladin" {
 				level 3 {
-					mutator "spellcasting2" "innate" {
+					mutator "spellcasting" "innate" {
 						method "Slot"
 						spells caster="Paladin" {
 							spell "spells/protectionFromEvilAndGood.kdl"
@@ -33,7 +33,7 @@ subclass class="Paladin" name="Oath of Devotion" {
 					}
 				}
 				level 5 {
-					mutator "spellcasting2" "innate" {
+					mutator "spellcasting" "innate" {
 						method "Slot"
 						spells caster="Paladin" {
 							spell "spells/lesserRestoration.kdl"
@@ -42,7 +42,7 @@ subclass class="Paladin" name="Oath of Devotion" {
 					}
 				}
 				level 9 {
-					mutator "spellcasting2" "innate" {
+					mutator "spellcasting" "innate" {
 						method "Slot"
 						spells caster="Paladin" {
 							spell "spells/beaconOfHope.kdl"
@@ -51,7 +51,7 @@ subclass class="Paladin" name="Oath of Devotion" {
 					}
 				}
 				level 13 {
-					mutator "spellcasting2" "innate" {
+					mutator "spellcasting" "innate" {
 						method "Slot"
 						spells caster="Paladin" {
 							spell "spells/freedomOfMovement.kdl"
@@ -60,7 +60,7 @@ subclass class="Paladin" name="Oath of Devotion" {
 					}
 				}
 				level 17 {
-					mutator "spellcasting2" "innate" {
+					mutator "spellcasting" "innate" {
 						method "Slot"
 						spells caster="Paladin" {
 							spell "spells/commune.kdl"

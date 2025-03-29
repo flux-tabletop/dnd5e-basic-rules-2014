@@ -105,14 +105,14 @@ class name="Druid" {
 				section (Title)"Ritual Casting" "You can cast a druid spell as a ritual if that spell has the ritual tag and you have the spell prepared."
 				section (Title)"Spellcasting Focus" "You can use a druidic focus as a spellcasting focus for your druid spells."
 			}
-			mutator "spellcasting2" "caster" "Druid" ability="Wisdom" {
+			mutator "spellcasting" "caster" "Druid" ability="Wisdom" {
 				method "Prepared"
 				ritual "Selected"
 			}
-			mutator "spellcasting2" "access" caster="Druid" {
+			mutator "spellcasting" "access" caster="Druid" {
 				tag "Druid"
 			}
-			mutator "spellcasting2" "capacity" caster="Cleric" {
+			mutator "spellcasting" "capacity" caster="Cleric" {
 				cantrips (Evaluator)"get_level" class="Cleric" {
 					level 1 2
 					level 4 3
@@ -123,7 +123,7 @@ class name="Druid" {
 					value (Evaluator)"get_level" class="Druid"
 				}
 			}
-			mutator "spellcasting2" "slots" "Standard" {
+			mutator "spellcasting" "slots" "Standard" {
 				value (Evaluator)"get_level" class="Druid"
 			}
 		}

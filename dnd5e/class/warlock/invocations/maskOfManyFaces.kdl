@@ -1,6 +1,6 @@
 bundle category="Eldritch Invocation" name="Mask of Many Faces" display_as_feature=true {
 	description "You can cast disguise self at will, without expending a spell slot."
-	mutator "spellcasting2" "innate" {
+	mutator "spellcasting" "innate" {
 		method "AtWill"
 		spells caster="Warlock" {
 			spell "spells/disguiseSelf.kdl"

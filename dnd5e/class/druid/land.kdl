@@ -6,7 +6,7 @@ subclass class="Druid" name="Circle of the Land" {
 				short "You gain one additional druid cantrip of your choice."
 				section "When you choose this circle at 2nd level, you learn one additional druid cantrip of your choice. This cantrip doesn't count against the number of druid cantrips you know."
 			}
-			mutator "spellcasting2" "innate" {
+			mutator "spellcasting" "innate" {
 				method "AtWill"
 				spells caster="Druid" {
 					amount 1
@@ -51,7 +51,7 @@ subclass class="Druid" name="Circle of the Land" {
 				}
 				mutator "by_level" class="Druid" {
 					level 3 {
-						mutator "spellcasting2" "innate" {
+						mutator "spellcasting" "innate" {
 							method "Slot"
 							spells caster="Druid" {
 								spell "spells/holdPerson.kdl"
@@ -60,7 +60,7 @@ subclass class="Druid" name="Circle of the Land" {
 						}
 					}
 					level 5 {
-						mutator "spellcasting2" "innate" {
+						mutator "spellcasting" "innate" {
 							method "Slot"
 							spells caster="Druid" {
 								spell "spells/sleetStorm.kdl"
@@ -69,7 +69,7 @@ subclass class="Druid" name="Circle of the Land" {
 						}
 					}
 					level 7 {
-						mutator "spellcasting2" "innate" {
+						mutator "spellcasting" "innate" {
 							method "Slot"
 							spells caster="Druid" {
 								spell "spells/freedomOfMovement.kdl"
@@ -78,7 +78,7 @@ subclass class="Druid" name="Circle of the Land" {
 						}
 					}
 					level 9 {
-						mutator "spellcasting2" "innate" {
+						mutator "spellcasting" "innate" {
 							method "Slot"
 							spells caster="Druid" {
 								spell "spells/communeWithNature.kdl"
@@ -98,7 +98,7 @@ subclass class="Druid" name="Circle of the Land" {
 				}
 				mutator "by_level" class="Druid" {
 					level 3 {
-						mutator "spellcasting2" "innate" {
+						mutator "spellcasting" "innate" {
 							method "Slot"
 							spells caster="Druid" {
 								spell "spells/mirrorImage.kdl"
@@ -107,7 +107,7 @@ subclass class="Druid" name="Circle of the Land" {
 						}
 					}
 					level 5 {
-						mutator "spellcasting2" "innate" {
+						mutator "spellcasting" "innate" {
 							method "Slot"
 							spells caster="Druid" {
 								spell "spells/waterBreathing.kdl"
@@ -116,7 +116,7 @@ subclass class="Druid" name="Circle of the Land" {
 						}
 					}
 					level 7 {
-						mutator "spellcasting2" "innate" {
+						mutator "spellcasting" "innate" {
 							method "Slot"
 							spells caster="Druid" {
 								spell "spells/controlWater.kdl"
@@ -125,7 +125,7 @@ subclass class="Druid" name="Circle of the Land" {
 						}
 					}
 					level 9 {
-						mutator "spellcasting2" "innate" {
+						mutator "spellcasting" "innate" {
 							method "Slot"
 							spells caster="Druid" {
 								spell "spells/conjureElemental.kdl"
@@ -145,7 +145,7 @@ subclass class="Druid" name="Circle of the Land" {
 				}
 				mutator "by_level" class="Druid" {
 					level 3 {
-						mutator "spellcasting2" "innate" {
+						mutator "spellcasting" "innate" {
 							method "Slot"
 							spells caster="Druid" {
 								spell "spells/blur.kdl"
@@ -154,7 +154,7 @@ subclass class="Druid" name="Circle of the Land" {
 						}
 					}
 					level 5 {
-						mutator "spellcasting2" "innate" {
+						mutator "spellcasting" "innate" {
 							method "Slot"
 							spells caster="Druid" {
 								spell "spells/createFoodAndWater.kdl"
@@ -163,7 +163,7 @@ subclass class="Druid" name="Circle of the Land" {
 						}
 					}
 					level 7 {
-						mutator "spellcasting2" "innate" {
+						mutator "spellcasting" "innate" {
 							method "Slot"
 							spells caster="Druid" {
 								spell "spells/blight.kdl"
@@ -172,7 +172,7 @@ subclass class="Druid" name="Circle of the Land" {
 						}
 					}
 					level 9 {
-						mutator "spellcasting2" "innate" {
+						mutator "spellcasting" "innate" {
 							method "Slot"
 							spells caster="Druid" {
 								spell "spells/insectPlague.kdl"
@@ -192,7 +192,7 @@ subclass class="Druid" name="Circle of the Land" {
 				}
 				mutator "by_level" class="Druid" {
 					level 3 {
-						mutator "spellcasting2" "innate" {
+						mutator "spellcasting" "innate" {
 							method "Slot"
 							spells caster="Druid" {
 								spell "spells/barkskin.kdl"
@@ -201,7 +201,7 @@ subclass class="Druid" name="Circle of the Land" {
 						}
 					}
 					level 5 {
-						mutator "spellcasting2" "innate" {
+						mutator "spellcasting" "innate" {
 							method "Slot"
 							spells caster="Druid" {
 								spell "spells/callLightning.kdl"
@@ -210,7 +210,7 @@ subclass class="Druid" name="Circle of the Land" {
 						}
 					}
 					level 7 {
-						mutator "spellcasting2" "innate" {
+						mutator "spellcasting" "innate" {
 							method "Slot"
 							spells caster="Druid" {
 								spell "spells/divination.kdl"
@@ -219,7 +219,7 @@ subclass class="Druid" name="Circle of the Land" {
 						}
 					}
 					level 9 {
-						mutator "spellcasting2" "innate" {
+						mutator "spellcasting" "innate" {
 							method "Slot"
 							spells caster="Druid" {
 								spell "spells/communeWithNature.kdl"
@@ -239,7 +239,7 @@ subclass class="Druid" name="Circle of the Land" {
 				}
 				mutator "by_level" class="Druid" {
 					level 3 {
-						mutator "spellcasting2" "innate" {
+						mutator "spellcasting" "innate" {
 							method "Slot"
 							spells caster="Druid" {
 								spell "spells/invisibility.kdl"
@@ -248,7 +248,7 @@ subclass class="Druid" name="Circle of the Land" {
 						}
 					}
 					level 5 {
-						mutator "spellcasting2" "innate" {
+						mutator "spellcasting" "innate" {
 							method "Slot"
 							spells caster="Druid" {
 								spell "spells/daylight.kdl"
@@ -257,7 +257,7 @@ subclass class="Druid" name="Circle of the Land" {
 						}
 					}
 					level 7 {
-						mutator "spellcasting2" "innate" {
+						mutator "spellcasting" "innate" {
 							method "Slot"
 							spells caster="Druid" {
 								spell "spells/divination.kdl"
@@ -266,7 +266,7 @@ subclass class="Druid" name="Circle of the Land" {
 						}
 					}
 					level 9 {
-						mutator "spellcasting2" "innate" {
+						mutator "spellcasting" "innate" {
 							method "Slot"
 							spells caster="Druid" {
 								spell "spells/dream.kdl"
@@ -286,7 +286,7 @@ subclass class="Druid" name="Circle of the Land" {
 				}
 				mutator "by_level" class="Druid" {
 					level 3 {
-						mutator "spellcasting2" "innate" {
+						mutator "spellcasting" "innate" {
 							method "Slot"
 							spells caster="Druid" {
 								spell "spells/spiderClimb.kdl"
@@ -295,7 +295,7 @@ subclass class="Druid" name="Circle of the Land" {
 						}
 					}
 					level 5 {
-						mutator "spellcasting2" "innate" {
+						mutator "spellcasting" "innate" {
 							method "Slot"
 							spells caster="Druid" {
 								spell "spells/lightningBolt.kdl"
@@ -304,7 +304,7 @@ subclass class="Druid" name="Circle of the Land" {
 						}
 					}
 					level 7 {
-						mutator "spellcasting2" "innate" {
+						mutator "spellcasting" "innate" {
 							method "Slot"
 							spells caster="Druid" {
 								spell "spells/stoneShape.kdl"
@@ -313,7 +313,7 @@ subclass class="Druid" name="Circle of the Land" {
 						}
 					}
 					level 9 {
-						mutator "spellcasting2" "innate" {
+						mutator "spellcasting" "innate" {
 							method "Slot"
 							spells caster="Druid" {
 								spell "spells/passwall.kdl"
@@ -333,7 +333,7 @@ subclass class="Druid" name="Circle of the Land" {
 				}
 				mutator "by_level" class="Druid" {
 					level 3 {
-						mutator "spellcasting2" "innate" {
+						mutator "spellcasting" "innate" {
 							method "Slot"
 							spells caster="Druid" {
 								spell "spells/darkness.kdl"
@@ -342,7 +342,7 @@ subclass class="Druid" name="Circle of the Land" {
 						}
 					}
 					level 5 {
-						mutator "spellcasting2" "innate" {
+						mutator "spellcasting" "innate" {
 							method "Slot"
 							spells caster="Druid" {
 								spell "spells/waterWalk.kdl"
@@ -351,7 +351,7 @@ subclass class="Druid" name="Circle of the Land" {
 						}
 					}
 					level 7 {
-						mutator "spellcasting2" "innate" {
+						mutator "spellcasting" "innate" {
 							method "Slot"
 							spells caster="Druid" {
 								spell "spells/freedomOfMovement.kdl"
@@ -360,7 +360,7 @@ subclass class="Druid" name="Circle of the Land" {
 						}
 					}
 					level 9 {
-						mutator "spellcasting2" "innate" {
+						mutator "spellcasting" "innate" {
 							method "Slot"
 							spells caster="Druid" {
 								spell "spells/insectPlague.kdl"
@@ -380,7 +380,7 @@ subclass class="Druid" name="Circle of the Land" {
 				}
 				mutator "by_level" class="Druid" {
 					level 3 {
-						mutator "spellcasting2" "innate" {
+						mutator "spellcasting" "innate" {
 							method "Slot"
 							spells caster="Druid" {
 								spell "spells/spiderClimb.kdl"
@@ -389,7 +389,7 @@ subclass class="Druid" name="Circle of the Land" {
 						}
 					}
 					level 5 {
-						mutator "spellcasting2" "innate" {
+						mutator "spellcasting" "innate" {
 							method "Slot"
 							spells caster="Druid" {
 								spell "spells/gaseousForm.kdl"
@@ -398,7 +398,7 @@ subclass class="Druid" name="Circle of the Land" {
 						}
 					}
 					level 7 {
-						mutator "spellcasting2" "innate" {
+						mutator "spellcasting" "innate" {
 							method "Slot"
 							spells caster="Druid" {
 								spell "spells/greaterInvisibility.kdl"
@@ -407,7 +407,7 @@ subclass class="Druid" name="Circle of the Land" {
 						}
 					}
 					level 9 {
-						mutator "spellcasting2" "innate" {
+						mutator "spellcasting" "innate" {
 							method "Slot"
 							spells caster="Druid" {
 								spell "spells/cloudkill.kdl"

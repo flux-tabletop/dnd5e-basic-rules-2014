@@ -105,13 +105,13 @@ class name="Sorcerer" {
 				Spell attack modifier = your proficiency bonus + your Charisma modifier"
 				section (Title)"Spellcasting Focus" "You can use an arcane focus as a spellcasting focus for your sorcerer spells."
 			}
-			mutator "spellcasting2" "caster" "Sorcerer" ability="Charisma" {
+			mutator "spellcasting" "caster" "Sorcerer" ability="Charisma" {
 				method "Known"
 			}
-			mutator "spellcasting2" "access" caster="Sorcerer" {
+			mutator "spellcasting" "access" caster="Sorcerer" {
 				tag "Sorcerer"
 			}
-			mutator "spellcasting2" "capacity" caster="Sorcerer" {
+			mutator "spellcasting" "capacity" caster="Sorcerer" {
 				cantrips (Evaluator)"get_level" class="Sorcerer" {
 					level 1 4
 					level 4 5
@@ -134,7 +134,7 @@ class name="Sorcerer" {
 					level 17 15
 				}
 			}
-			mutator "spellcasting2" "slots" "Standard" {
+			mutator "spellcasting" "slots" "Standard" {
 				value (Evaluator)"get_level" class="Sorcerer"
 			}
 		}

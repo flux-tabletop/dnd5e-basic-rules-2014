@@ -108,14 +108,14 @@ class name="Bard" {
 				section (Title)"Ritual Casting" "You can cast any bard spell you know as a ritual if that spell has the ritual tag."
 				section (Title)"Spellcasting Focus" "You can use a musical instrument as a spellcasting focus for your bard spells."
 			}
-			mutator "spellcasting2" "caster" "Bard" ability="Charisma" {
+			mutator "spellcasting" "caster" "Bard" ability="Charisma" {
 				method "Known" swap=1
 				ritual "Selected"
 			}
-			mutator "spellcasting2" "access" caster="Bard" {
+			mutator "spellcasting" "access" caster="Bard" {
 				tag "Bard"
 			}
-			mutator "spellcasting2" "capacity" caster="Bard" {
+			mutator "spellcasting" "capacity" caster="Bard" {
 				cantrips (Evaluator)"get_level" class="Bard" {
 					level 1 2
 					level 4 3
@@ -143,7 +143,7 @@ class name="Bard" {
 					level 20 16
 				}
 			}
-			mutator "spellcasting2" "slots" "Standard" {
+			mutator "spellcasting" "slots" "Standard" {
 				value (Evaluator)"get_level" class="Bard"
 			}
 		}
@@ -291,7 +291,7 @@ class name="Bard" {
 			}
 			mutator "by_level" class="Bard" {
 				level 10 {
-					mutator "spellcasting2" "innate" {
+					mutator "spellcasting" "innate" {
 						method "Slot"
 						spells caster="Bard" {
 							amount 2
@@ -299,7 +299,7 @@ class name="Bard" {
 					}
 				}
 				level 14 {
-					mutator "spellcasting2" "innate" {
+					mutator "spellcasting" "innate" {
 						method "Slot"
 						spells caster="Bard" {
 							amount 2
@@ -307,7 +307,7 @@ class name="Bard" {
 					}
 				}
 				level 18 {
-					mutator "spellcasting2" "innate" {
+					mutator "spellcasting" "innate" {
 						method "Slot"
 						spells caster="Bard" {
 							amount 2
