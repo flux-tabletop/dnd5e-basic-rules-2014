@@ -1,13 +1,15 @@
 bundle category="Eldritch Invocation" name="Bewitching Whispers" display_as_feature=true {
 	requirement (Evaluator)"level" class="Warlock" min=7
 	description "You can cast compulsion once using a warlock spell slot. You can't do so again until you finish a long rest."
-	mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
-		// TODO: cast using a slot, but only a fixed number of times
-		spell "spells/compulsion.kdl" use_slot=true {
+	mutator "spellcasting" "innate" {
+		method "Slot" {
 			limited_uses {
 				max_uses 1
 				reset_on (Rest)"Long"
 			}
+		}
+		spells caster="Warlock" {
+			spell "spells/compulsion.kdl"
 		}
 	}
 }

@@ -1,7 +1,10 @@
 bundle category="Eldritch Invocation" name="Whispers of the Grave" display_as_feature=true {
 	requirement (Evaluator)"level" class="Warlock" min=9
 	description "You can cast speak with dead at will, without expending a spell slot."
-	mutator "spellcasting" "add_prepared" ability="Charisma" {
-		spell "spells/speakWithDead.kdl"
+	mutator "spellcasting" "innate" {
+		method "AtWill"
+		spells caster="Warlock" {
+			spell "spells/speakWithDead.kdl"
+		}
 	}
 }

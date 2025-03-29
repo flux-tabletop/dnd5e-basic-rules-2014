@@ -1,7 +1,10 @@
 bundle category="Eldritch Invocation" name="Master of Myriad Forms" display_as_feature=true {
 	requirement (Evaluator)"level" class="Warlock" min=15
 	description "You can cast alter self at will, without expending a spell slot."
-	mutator "spellcasting" "add_prepared" ability="Charisma" {
-		spell "spells/alterSelf.kdl"
+	mutator "spellcasting" "innate" {
+		method "AtWill"
+		spells caster="Warlock" {
+			spell "spells/alterSelf.kdl"
+		}
 	}
 }

@@ -4,9 +4,11 @@ item name="Boots of Levitation" {
 	tag "Wonderous"
 	kind "Equipment" {
 		attunement {
-			mutator "spellcasting" "add_prepared" ability="Dexterity" {
-				spell "spells/levitate.kdl" {
+			mutator "spellcasting" "innate" {
+				method "AtWill"
+				spells {
 					range "Self"
+					spell "spells/levitate.kdl"
 				}
 			}
 		}

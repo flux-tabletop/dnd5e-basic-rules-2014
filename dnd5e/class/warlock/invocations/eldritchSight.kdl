@@ -1,6 +1,9 @@
 bundle category="Eldritch Invocation" name="Eldritch Sight" display_as_feature=true {
 	description "You can cast detect magic at will, without expending a spell slot."
-	mutator "spellcasting" "add_prepared" ability="Charisma" {
-		spell "spells/detectMagic.kdl"
+	mutator "spellcasting" "innate" {
+		method "AtWill"
+		spells caster="Warlock" {
+			spell "spells/detectMagic.kdl"
+		}
 	}
 }

@@ -7,8 +7,11 @@ bundle category="Race Variant" name="Forest Gnome" {
 	}
 	mutator "feature" name="Natural Illusionist" {
 		description "You know the minor illusion cantrip. Intelligence is your spellcasting ability for it."
-		mutator "spellcasting" "add_prepared" ability="Intelligence" {
-			spell "spells/minorIllusion.kdl"
+		mutator "spellcasting" "innate" {
+			method "AtWill"
+			spells ability="Intelligence" {
+				spell "spells/minorIllusion.kdl"
+			}
 		}
 	}
 	mutator "feature" name="Speak with Small Beasts" {

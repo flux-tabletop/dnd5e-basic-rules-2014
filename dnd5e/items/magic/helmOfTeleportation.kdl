@@ -4,14 +4,18 @@ item name="Helm of Teleportation" {
 	tag "Wonderous"
 	kind "Equipment" {
 		attunement {
-			mutator "spellcasting" "add_prepared" ability="Wisdom" {
-				spell "spells/teleport.kdl"
-				limited_uses {
-					max_uses 1
-					reset {
-						rest "Long"
-						rate "1d4" // TODO: 1d3 isn't a valid natural die
+			mutator "spellcasting" "innate" {
+				method "Uses" {
+					limited_uses {
+						max_uses 1
+						reset {
+							rest "Long"
+							rate "1d4" // TODO: 1d3 isn't a valid natural die
+						}
 					}
+				}
+				spells {
+					spell "spells/teleport.kdl"
 				}
 			}
 		}

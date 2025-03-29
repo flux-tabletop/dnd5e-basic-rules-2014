@@ -111,65 +111,61 @@ class name="Warlock" {
 				Spell attack modifier = your proficiency bonus + your Charisma modifier"
 				section (Title)"Spellcasting Focus" "You can use an arcane focus as a spellcasting focus for your warlock spells."
 			}
-			mutator "spellcasting" ability="Charisma" class="Warlock" {
-				focus-todo {
-					tag "Arcane Focus"
-				}
-				restriction {
-					tag "Warlock"
-				}
-				cantrips {
+			mutator "spellcasting" "caster" "Warlock" ability="Charisma" {
+				method "Known" swap=1
+			}
+			mutator "spellcasting" "access" caster="Warlock" {
+				tag "Warlock"
+			}
+			mutator "spellcasting" "capacity" caster="Warlock" {
+				cantrips (Evaluator)"get_level" class="Warlock" {
 					level 1 2
 					level 4 3
 					level 10 4
 				}
-				/* Known caster (spells are added to the character at level up, when cantrips or spells-known increases)
-					- must be spells with the Warlock tag
-					- on any level up: can remove 1 spell from current known and replace it with any other Warlock spell
-				*/
-				kind "Known" {
-					capacity {
-						level 1 2
-						level 2 3
-						level 3 4
-						level 4 5
-						level 5 6
-						level 6 7
-						level 7 8
-						level 8 9
-						level 9 10
-						level 11 11
-						level 13 12
-						level 15 13
-						level 17 14
-						level 19 15
-					}
+				ranked (Evaluator)"get_level" class="Warlock" {
+					level 1 2
+					level 2 3
+					level 3 4
+					level 4 5
+					level 5 6
+					level 6 7
+					level 7 8
+					level 8 9
+					level 9 10
+					level 10 10
+					level 11 11
+					level 13 12
+					level 15 13
+					level 17 14
+					level 19 15
 				}
-				slots "Bonus" reset_on="Short" {
-					level 1 {
-						rank 1 1
-					}
-					level 2 {
-						rank 1 2
-					}
-					level 3 {
-						rank 2 2
-					}
-					level 5 {
-						rank 3 2
-					}
-					level 7 {
-						rank 4 2
-					}
-					level 9 {
-						rank 5 2
-					}
-					level 11 {
-						rank 5 3
-					}
-					level 17 {
-						rank 5 4
-					}
+			}
+			mutator "spellcasting" "slots" "Bonus" reset_on="Short" {
+				value (Evaluator)"get_level" class="Warlock"
+				level 1 {
+					rank 1 1
+				}
+				level 2 {
+					rank 1 2
+				}
+				level 3 {
+					rank 2 2
+				}
+				level 5 {
+					rank 3 2
+				}
+				level 7 {
+					rank 4 2
+				}
+				level 9 {
+					rank 5 2
+				}
+				level 11 {
+					rank 5 3
+				}
+				level 17 {
+					rank 5 4
 				}
 			}
 		}
@@ -205,8 +201,9 @@ class name="Warlock" {
 						When you cast the spell, you can choose one of the normal forms for your familiar or one of the following special forms: imp, pseudodragon, quasit, or sprite.
 						Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack of its own with its reaction."
 					}
-					mutator "spellcasting" "add_prepared" ability="Charisma" classified_as="Warlock" {
-						entry use_ritual=true {
+					mutator "spellcasting" "innate" {
+						method "Ritual"
+						spells caster="Warlock" {
 							spell "spells/findFamiliar.kdl"
 						}
 					}
@@ -237,8 +234,9 @@ class name="Warlock" {
 						section "Your patron gives you a grimoire called a Book of Shadows. When you gain this feature, choose three cantrips from any class's spell list (the three needn't be from the same list). While the book is on your person, you can cast those cantrips at will. They don't count against your number of cantrips known. If they don't appear on the warlock spell list, they are nonetheless warlock spells for you."
 						section "If you lose your Book of Shadows, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous book. The book turns to ash when you die."
 					}
-					mutator "spellcasting" "add_prepared" ability="Charisma" classified_as="Warlock" {
-						options {
+					mutator "spellcasting" "innate" {
+						method "AtWill"
+						spells caster="Warlock" {
 							amount 3
 							filter {
 								rank 0
@@ -303,58 +301,70 @@ class name="Warlock" {
 			}
 			mutator "by_level" class="Warlock" {
 				level 11 {
-					mutator "spellcasting" "add_prepared" ability="Charisma" {
-						options {
+					mutator "spellcasting" "innate" {
+						method "Uses" {
+							limited_uses {
+								max_uses 1
+								reset_on "Long"
+							}
+						}
+						method "Slot"
+						spells caster="Warlock" {
 							filter {
 								rank 6
 								tag "Warlock"
 							}
 						}
-						limited_uses {
-							max_uses 1
-							reset_on "Long"
-						}
 					}
 				}
 				level 13 {
-					mutator "spellcasting" "add_prepared" ability="Charisma" {
-						options {
+					mutator "spellcasting" "innate" {
+						method "Uses" {
+							limited_uses {
+								max_uses 1
+								reset_on "Long"
+							}
+						}
+						method "Slot"
+						spells caster="Warlock" {
 							filter {
 								rank 7
 								tag "Warlock"
 							}
 						}
-						limited_uses {
-							max_uses 1
-							reset_on "Long"
-						}
 					}
 				}
 				level 15 {
-					mutator "spellcasting" "add_prepared" ability="Charisma" {
-						options {
+					mutator "spellcasting" "innate" {
+						method "Uses" {
+							limited_uses {
+								max_uses 1
+								reset_on "Long"
+							}
+						}
+						method "Slot"
+						spells caster="Warlock" {
 							filter {
 								rank 8
 								tag "Warlock"
 							}
 						}
-						limited_uses {
-							max_uses 1
-							reset_on "Long"
-						}
 					}
 				}
 				level 17 {
-					mutator "spellcasting" "add_prepared" ability="Charisma" {
-						options {
+					mutator "spellcasting" "innate" {
+						method "Uses" {
+							limited_uses {
+								max_uses 1
+								reset_on "Long"
+							}
+						}
+						method "Slot"
+						spells caster="Warlock" {
 							filter {
 								rank 9
 								tag "Warlock"
 							}
-						}
-						limited_uses {
-							max_uses 1
-							reset_on "Long"
 						}
 					}
 				}

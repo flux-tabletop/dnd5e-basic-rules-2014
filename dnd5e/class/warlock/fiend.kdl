@@ -12,7 +12,7 @@ subclass class="Warlock" name="The Fiend" {
 					row "5th" "flame strike, hallow"
 				}
 			}
-			mutator "spellcasting" "add_source" class="Warlock" {
+			mutator "spellcasting" "access" caster="Warlock" {
 				spell "spells/burningHands.kdl"
 				spell "spells/command.kdl"
 				spell "spells/blindnessDeafness.kdl"
