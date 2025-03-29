@@ -1,12 +1,14 @@
 bundle category="Eldritch Invocation" name="Thief of Five Fates" display_as_feature=true {
 	description "You can cast bane once using a warlock spell slot. You can't do so again until you finish a long rest."
-	mutator-todo "spellcasting" "add_prepared" ability="Charisma" {
-		// TODO: cast using a slot, but only a fixed number of times
-		spell "spells/bane.kdl" use_slot=true {
+	mutator "spellcasting2" "innate" {
+		method "Slot" {
 			limited_uses {
 				max_uses 1
 				reset_on (Rest)"Long"
 			}
+		}
+		spells caster="Warlock" {
+			spell "spells/bane.kdl"
 		}
 	}
 }
